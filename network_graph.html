@@ -5,16 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nomological Network  – AI Construct Lexis</title>
     <link rel="stylesheet" href="view_network.css">
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
     <style>
         body {
             background: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
         }
 
         .graph-container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 20px;
-            min-height: 100vh;
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
             box-sizing: border-box;
             display: flex;
             flex-direction: column;
@@ -23,9 +28,8 @@
         .graph-header {
             background: #ffffff;
             padding: 16px 20px;
-            border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            margin-bottom: 16px;
+            margin: 0;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -99,93 +103,30 @@
             background: #c2185b;
         }
 
-        #network {
-            flex: 1 1 auto;
-            min-height: 300px;
+        .graph-controls {
             background: #ffffff;
-            border-radius: 8px;
+            padding: 10px 16px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            padding: 16px;
-            box-sizing: border-box;
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+            margin: 0;
+            display: flex;
             gap: 12px;
-            align-content: start;
-        }
-
-        .node-card {
-            border-radius: 8px;
-            padding: 10px 12px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-            border: 1px solid rgba(0,0,0,0.06);
-            font-size: 12px;
-            display: flex;
-            flex-direction: column;
-            gap: 4px;
-            background: #fafbfc;
-        }
-
-        .node-header {
-            display: flex;
             align-items: center;
-            gap: 8px;
-        }
-
-        .node-pill {
-            width: 18px;
-            height: 18px;
-            border-radius: 4px;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 10px;
-            font-weight: 700;
-            color: #ffffff;
+            flex-wrap: wrap;
             flex-shrink: 0;
         }
 
-        .node-pill.construct {
-            background: #2e7d32;
-        }
-
-        .node-pill.measurement {
-            background: #1565c0;
-        }
-
-        .node-pill.behavior {
-            background: #c2185b;
-        }
-
-        .node-title {
-            font-size: 12px;
-            font-weight: 500;
-            color: #2c3e50;
-        }
-
-        .node-type-label {
-            font-size: 11px;
-            color: #7f8c8d;
-        }
-
-        .node-meta {
-            font-size: 11px;
-            color: #95a5a6;
-            margin-top: 2px;
-        }
-
         .graph-search {
-            display: flex;
-            gap: 8px;
-            align-items: center;
-            margin-top: 8px;
+            flex: 1;
+            min-width: 200px;
         }
 
         .graph-search input {
-            flex: 1;
+            width: 100%;
             padding: 6px 10px;
             border-radius: 6px;
             border: 1px solid #ddd;
             font-size: 13px;
+            box-sizing: border-box;
         }
 
         .graph-search input:focus {
@@ -193,12 +134,36 @@
             border-color: #3498db;
         }
 
+        .graph-controls button {
+            padding: 6px 12px;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+            background: #ecf0f1;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .graph-controls button:hover {
+            background: #dde3e6;
+        }
+
+        #network {
+            flex: 1 1 auto;
+            width: 100%;
+            height: 100%;
+            background: #ffffff;
+            border: none;
+        }
+
         .graph-footer {
-            margin-top: 8px;
+            padding: 8px 16px;
             font-size: 11px;
             color: #7f8c8d;
             text-align: right;
             flex-shrink: 0;
+            background: #ffffff;
+            box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
         }
     </style>
     <!-- Theme overrides (visual-only). Loaded after inline styles to win cascade. -->
@@ -213,7 +178,7 @@
                 </div>
                 <div class="graph-title">Nomological Network</div>
                 <div class="graph-subtitle">
-                    Nodes only: constructs, measurement instruments, and behaviors/tasks (no edges) - full graph in progress.
+                    Click a node to highlight its connections • Double-click to view details • Click empty space to reset
                 </div>
             </div>
             <div class="legend">
@@ -228,16 +193,24 @@
                 </div>
             </div>
         </div>
-        <div class="graph-header" style="margin-top: -8px; margin-bottom: 12px; padding: 10px 16px;">
-            <div class="graph-search" style="width: 100%;">
-                <input id="graphSearchInput" type="text" placeholder="Filter by name across constructs, measurements, and behaviors/tasks…" />
+        <div class="graph-controls">
+            <div class="graph-search">
+                <input id="graphSearchInput" type="text" placeholder="Search nodes…" />
             </div>
+            <button id="resetViewBtn" type="button">Reset View</button>
+            <button id="togglePhysicsBtn" type="button">Pause Physics</button>
         </div>
         <div id="network"></div>
         <div class="graph-footer" id="graphStats"></div>
     </div>
 
     <script>
+        let network = null;
+        let allNodesData = [];
+        let allEdgesData = [];
+        let nodeMap = new Map(); // canonical_name -> node data
+        let nameToCanonical = new Map(); // any name/alias -> canonical_name
+
         async function fetchFromPossiblePaths(relativePath) {
             const pathParts = window.location.pathname.split('/').filter(p => p);
             const baseParts = pathParts.slice(0, -2);
@@ -259,92 +232,48 @@
         }
 
         function getDisplayNameFromConfig(cfg, type) {
-            // Constructs always show canonical_name; other types can use the shortest alias for readability
             if (type === 'construct') return cfg.canonical_name || '';
             const candidates = [cfg.canonical_name].concat(cfg.names || []);
             const valid = candidates.filter(Boolean);
             return valid.length ? valid.reduce(function (a, b) { return a.length <= b.length ? a : b; }) : (cfg.canonical_name || '');
         }
 
+        function getNodeId(type, canonicalName) {
+            return type + '::' + canonicalName;
+        }
+
         async function loadConfigs(index, type, folder) {
             const files = index[folder] || [];
-            const list = [];
+            const configs = [];
             for (const file of files) {
                 try {
                     const text = await fetchFromPossiblePaths('nomological_network_data/' + folder + '/' + file);
                     const cfg = JSON.parse(text);
-                    const name = cfg.canonical_name || file.replace('.json', '');
+                    const canonicalName = cfg.canonical_name || file.replace('.json', '');
                     const displayName = getDisplayNameFromConfig(cfg, type);
-                    // Lightweight relationship summary for digestible graph context
-                    let relC = 0, relM = 0, relB = 0;
-                    if (Array.isArray(cfg.relationships)) {
-                        cfg.relationships.forEach(function (rel) {
-                            var t = rel.other_type || '';
-                            if (t.includes('construct')) relC += 1;
-                            else if (t.includes('measurement')) relM += 1;
-                            else if (t.includes('behavior')) relB += 1;
-                        });
-                    }
-
-                    list.push({
-                        name: name,
+                    
+                    configs.push({
+                        canonicalName: canonicalName,
                         displayName: displayName,
                         type: type,
-                        relCounts: { constructs: relC, measurements: relM, behaviors: relB }
+                        config: cfg
                     });
+
+                    // Build name mappings
+                    nodeMap.set(canonicalName, { canonicalName, displayName, type, config: cfg });
+                    nameToCanonical.set(canonicalName, canonicalName);
+                    if (Array.isArray(cfg.names)) {
+                        cfg.names.forEach(name => {
+                            if (name && name !== canonicalName) {
+                                nameToCanonical.set(name, canonicalName);
+                            }
+                        });
+                    }
                 } catch (e) {
                     console.warn('Failed to load', file, e);
                 }
             }
-            return list;
-        }
-
-        function createNodeCard(node) {
-            const displayName = node.displayName != null ? node.displayName : node.name;
-            const link = document.createElement('a');
-            link.href = 'view_network.html?node=' + encodeURIComponent(node.name) + '&type=' + encodeURIComponent(node.type);
-            link.style.textDecoration = 'none';
-            link.style.color = 'inherit';
-
-            const card = document.createElement('div');
-            card.className = 'node-card';
-
-            const header = document.createElement('div');
-            header.className = 'node-header';
-
-            const pill = document.createElement('div');
-            pill.className = 'node-pill ' + node.type;
-            pill.textContent = node.type === 'construct' ? 'C' : node.type === 'measurement' ? 'M' : 'B';
-
-            const title = document.createElement('div');
-            title.className = 'node-title';
-            title.textContent = displayName;
-
-            header.appendChild(pill);
-            header.appendChild(title);
-            card.appendChild(header);
-
-            const typeLabel = document.createElement('div');
-            typeLabel.className = 'node-type-label';
-            typeLabel.textContent = node.type === 'construct' ? 'Construct' : node.type === 'measurement' ? 'Measurement instrument' : 'Behavior / task';
-            card.appendChild(typeLabel);
-
-            // Small relationship summary line for context (without drawing edges)
-            if (node.relCounts) {
-                var parts = [];
-                if (node.relCounts.constructs) parts.push('C: ' + node.relCounts.constructs);
-                if (node.relCounts.measurements) parts.push('M: ' + node.relCounts.measurements);
-                if (node.relCounts.behaviors) parts.push('B: ' + node.relCounts.behaviors);
-                if (parts.length) {
-                    const meta = document.createElement('div');
-                    meta.className = 'node-meta';
-                    meta.textContent = 'Links → ' + parts.join(' · ');
-                    card.appendChild(meta);
-                }
-            }
-
-            link.appendChild(card);
-            return link;
+            return configs;
         }
 
         async function buildGraph() {
@@ -355,41 +284,398 @@
             const measurements = await loadConfigs(index, 'measurement', 'measurements');
             const behaviors = await loadConfigs(index, 'behavior', 'behaviors_tasks');
 
-            const allNodes = constructs.concat(measurements).concat(behaviors);
+            const allConfigs = constructs.concat(measurements).concat(behaviors);
+            const indexCanonicalNames = new Set(allConfigs.map(c => c.canonicalName));
 
-            function render(filter) {
-                var container = document.getElementById('network');
-                if (!container) return;
-                container.innerHTML = '';
-                var q = (filter || '').toLowerCase();
-                var shown = 0;
-                for (var i = 0; i < allNodes.length; i++) {
-                    var node = allNodes[i];
-                    if (q) {
-                        var dn = (node.displayName || node.name || '').toLowerCase();
-                        if (dn.indexOf(q) === -1) continue;
-                    }
-                    container.appendChild(createNodeCard(node));
-                    shown++;
-                }
-                var statsEl = document.getElementById('graphStats');
-                if (statsEl) {
-                    statsEl.textContent =
-                        'Constructs: ' + constructs.length +
-                        ' · Measurements: ' + measurements.length +
-                        ' · Behaviors/Tasks: ' + behaviors.length +
-                        (q ? ' · Showing: ' + shown : '');
-                }
+            // Helper function to create HTML tooltip element with wrapping
+            function createTooltip(name, type, definition) {
+                const element = document.createElement('div');
+                element.style.maxWidth = '400px';
+                element.style.lineHeight = '1.5';
+                element.style.padding = '8px';
+                element.style.wordWrap = 'break-word';
+                element.style.whiteSpace = 'normal';
+                element.innerHTML = '<strong>' + name + '</strong> (' + type + ')<br><br>' + definition;
+                return element;
             }
 
-            // Initial render (no filter)
-            render('');
+            // Build vis-network nodes
+            const visNodes = [];
+            const nodeIdToType = new Map();
 
-            // Hook up search box
-            var searchEl = document.getElementById('graphSearchInput');
+            allConfigs.forEach(cfg => {
+                const nodeId = getNodeId(cfg.type, cfg.canonicalName);
+                nodeIdToType.set(nodeId, cfg.type);
+
+                const colors = {
+                    construct: { background: '#2e7d32', border: '#1b5e20' },
+                    measurement: { background: '#1565c0', border: '#0d47a1' },
+                    behavior: { background: '#c2185b', border: '#880e4f' }
+                };
+
+                // Build tooltip with definition
+                const definition = cfg.config.canonical_definition || 'No definition available';
+                const tooltip = createTooltip(cfg.canonicalName, cfg.type, definition);
+
+                visNodes.push({
+                    id: nodeId,
+                    label: cfg.displayName,
+                    title: tooltip,
+                    color: colors[cfg.type],
+                    font: { size: 12, color: '#ffffff' },
+                    shape: 'box',
+                    margin: 8,
+                    size: 20
+                });
+            });
+
+            // Build vis-network edges (only between nodes that exist in index)
+            const visEdges = [];
+            const edgeSet = new Set(); // Avoid duplicates
+
+            allConfigs.forEach(cfg => {
+                const sourceId = getNodeId(cfg.type, cfg.canonicalName);
+                const relationships = cfg.config.relationships || [];
+
+                relationships.forEach(rel => {
+                    const rawOther = rel.other_canonical_name;
+                    if (!rawOther) return;
+
+                    const otherCanonical = nameToCanonical.get(rawOther) || rawOther;
+                    if (!indexCanonicalNames.has(otherCanonical)) return;
+
+                    // Determine other node's type from relationships
+                    const otherType = rel.other_type || 'construct';
+                    const otherTypeShort = otherType.includes('construct') ? 'construct' :
+                                          otherType.includes('measurement') ? 'measurement' :
+                                          otherType.includes('behavior') ? 'behavior' : 'construct';
+
+                    const targetId = getNodeId(otherTypeShort, otherCanonical);
+                    if (!nodeIdToType.has(targetId)) return;
+
+                    // Avoid duplicate edges
+                    const edgeKey = sourceId < targetId ? sourceId + '|' + targetId : targetId + '|' + sourceId;
+                    if (edgeSet.has(edgeKey)) return;
+                    edgeSet.add(edgeKey);
+
+                    visEdges.push({
+                        from: sourceId,
+                        to: targetId,
+                        color: { color: '#95a5a6', highlight: '#3498db' },
+                        width: 1,
+                        smooth: { type: 'continuous', roundness: 0.2 }
+                    });
+                });
+            });
+
+            allNodesData = visNodes;
+            allEdgesData = visEdges;
+
+            // Store original edge data for reset
+            const originalEdgeData = visEdges.map(edge => ({
+                from: edge.from,
+                to: edge.to,
+                color: JSON.parse(JSON.stringify(edge.color)),
+                width: edge.width
+            }));
+
+            // Create network
+            const container = document.getElementById('network');
+            const data = { nodes: visNodes, edges: visEdges };
+
+            const options = {
+                nodes: {
+                    borderWidth: 2,
+                    shadow: true,
+                    font: { size: 12 }
+                },
+                edges: {
+                    width: 1.5,
+                    smooth: { type: 'continuous', roundness: 0.2 }
+                },
+                physics: {
+                    enabled: true,
+                    stabilization: { iterations: 200 },
+                    barnesHut: {
+                        gravitationalConstant: -2200,
+                        centralGravity: 0.03,
+                        springLength: 280,
+                        springConstant: 0.018,
+                        damping: 0.25
+                    }
+                },
+                interaction: {
+                    dragNodes: true,
+                    dragView: true,
+                    zoomView: true,
+                    hover: true,
+                    tooltipDelay: 100
+                }
+            };
+
+            network = new vis.Network(container, data, options);
+
+            // After initial layout stabilizes, turn off physics so dragging doesn't snap nodes back
+            network.on('stabilizationIterationsDone', function () {
+                network.setOptions({ physics: { enabled: false } });
+            });
+
+            // Store original node data for reset
+            const originalNodeData = new Map();
+            visNodes.forEach(node => {
+                originalNodeData.set(node.id, {
+                    color: JSON.parse(JSON.stringify(node.color)),
+                    opacity: 1,
+                    size: node.size || 20,
+                    font: JSON.parse(JSON.stringify(node.font))
+                });
+            });
+
+            let selectedNodeId = null;
+            let doubleClickFlag = false;
+
+            function resetHighlighting() {
+                // Reset all nodes to full opacity and original appearance
+                const updateNodes = visNodes.map(node => {
+                    const original = originalNodeData.get(node.id);
+                    return {
+                        id: node.id,
+                        label: node.label,
+                        title: node.title,
+                        color: original.color,
+                        font: original.font,
+                        shape: node.shape,
+                        margin: node.margin,
+                        size: original.size,
+                        opacity: 1.0
+                    };
+                });
+                // Reset edges to original
+                const resetEdges = originalEdgeData.map(edge => ({
+                    from: edge.from,
+                    to: edge.to,
+                    color: edge.color,
+                    width: edge.width,
+                    smooth: { type: 'continuous', roundness: 0.2 }
+                }));
+                network.setData({ nodes: updateNodes, edges: resetEdges });
+                selectedNodeId = null;
+            }
+
+            function highlightNodeAndNeighbors(nodeId) {
+                selectedNodeId = nodeId;
+                
+                // Find all neighbors (nodes connected to selected node)
+                const connectedNodeIds = new Set([nodeId]);
+                visEdges.forEach(edge => {
+                    if (edge.from === nodeId) connectedNodeIds.add(edge.to);
+                    if (edge.to === nodeId) connectedNodeIds.add(edge.from);
+                });
+
+                // Update nodes: connected nodes stay fully visible, others muted (box + dim label)
+                const mutedFontColor = '#999999'; // Dim gray so muted labels don't overlap as bright white
+                const updateNodes = visNodes.map(node => {
+                    const original = originalNodeData.get(node.id);
+                    const isConnected = connectedNodeIds.has(node.id);
+                    const font = isConnected
+                        ? original.font
+                        : { ...original.font, color: mutedFontColor };
+                    return {
+                        id: node.id,
+                        label: node.label,
+                        title: node.title,
+                        color: original.color,
+                        font: font,
+                        shape: node.shape,
+                        margin: node.margin,
+                        size: original.size,
+                        opacity: isConnected ? 1.0 : 0.08,  // Connected: full opacity, others: very muted
+                        isConnected: isConnected
+                    };
+                });
+                // Draw muted nodes first (background), connected nodes last (foreground) so they don't overlay
+                updateNodes.sort(function (a, b) { return (a.isConnected ? 1 : 0) - (b.isConnected ? 1 : 0); });
+                updateNodes.forEach(n => delete n.isConnected);
+
+                // Update edges: dim edges first (background), highlighted edges last (foreground)
+                const updateEdges = [];
+                visEdges.forEach(edge => {
+                    const isHighlighted = edge.from === nodeId || edge.to === nodeId;
+                    if (isHighlighted) {
+                        updateEdges.push({
+                            from: edge.from,
+                            to: edge.to,
+                            color: { color: '#3498db', highlight: '#2980b9' },
+                            width: 4,
+                            smooth: { type: 'continuous', roundness: 0.2 },
+                            _highlight: true
+                        });
+                    } else {
+                        updateEdges.push({
+                            from: edge.from,
+                            to: edge.to,
+                            color: { color: '#e0e0e0', highlight: '#95a5a6' },
+                            width: 0.5,
+                            smooth: { type: 'continuous', roundness: 0.2 },
+                            _highlight: false
+                        });
+                    }
+                });
+                updateEdges.sort(function (a, b) { return (a._highlight ? 1 : 0) - (b._highlight ? 1 : 0); });
+                updateEdges.forEach(e => delete e._highlight);
+
+                network.setData({ nodes: updateNodes, edges: updateEdges });
+                
+                // Focus on selected node
+                network.focus(nodeId, {
+                    scale: 1.5,
+                    animation: {
+                        duration: 500,
+                        easingFunction: 'easeInOutQuad'
+                    }
+                });
+            }
+
+            // Double-click: navigate to detail page (register first to set flag)
+            network.on('doubleClick', function (params) {
+                doubleClickFlag = true;
+                if (params.nodes.length > 0) {
+                    const nodeId = params.nodes[0];
+                    const parts = nodeId.split('::');
+                    if (parts.length === 2) {
+                        const [type, canonicalName] = parts;
+                        window.location.href = 'view_network.html?node=' + encodeURIComponent(canonicalName) + '&type=' + encodeURIComponent(type);
+                    }
+                }
+            });
+
+            // Click handler: highlight node and neighbors, focus (delayed to avoid double-click interference)
+            network.on('click', function (params) {
+                setTimeout(function() {
+                    if (!doubleClickFlag) {
+                        if (params.nodes.length > 0) {
+                            const nodeId = params.nodes[0];
+                            highlightNodeAndNeighbors(nodeId);
+                        } else {
+                            // Click on empty space: reset highlighting
+                            resetHighlighting();
+                        }
+                    } else {
+                        doubleClickFlag = false;
+                    }
+                }, 300);
+            });
+
+            // Update stats
+            const statsEl = document.getElementById('graphStats');
+            if (statsEl) {
+                statsEl.textContent = 'Constructs: ' + constructs.length +
+                    ' · Measurements: ' + measurements.length +
+                    ' · Behaviors/Tasks: ' + behaviors.length +
+                    ' · Edges: ' + visEdges.length;
+            }
+
+            // Search filter
+            const searchEl = document.getElementById('graphSearchInput');
             if (searchEl) {
                 searchEl.addEventListener('input', function () {
-                    render(searchEl.value || '');
+                    const query = (this.value || '').toLowerCase().trim();
+                    if (!query) {
+                        resetHighlighting();
+                        return;
+                    }
+
+                    // Find matching nodes
+                    const matchedNodeIds = new Set();
+                    visNodes.forEach(node => {
+                        const label = (node.label || '').toLowerCase();
+                        const title = (node.title || '').toLowerCase();
+                        if (label.includes(query) || title.includes(query)) {
+                            matchedNodeIds.add(node.id);
+                        }
+                    });
+
+                    // Find all nodes connected to matches (neighbors)
+                    const connectedNodeIds = new Set(matchedNodeIds);
+                    visEdges.forEach(edge => {
+                        if (matchedNodeIds.has(edge.from)) connectedNodeIds.add(edge.to);
+                        if (matchedNodeIds.has(edge.to)) connectedNodeIds.add(edge.from);
+                    });
+
+                    // Update all nodes: matching nodes + their neighbors stay fully visible, others muted
+                    const mutedFontColor = '#999999';
+                    const updateNodes = visNodes.map(node => {
+                        const original = originalNodeData.get(node.id);
+                        const isConnected = connectedNodeIds.has(node.id);
+                        const font = isConnected
+                            ? original.font
+                            : { ...original.font, color: mutedFontColor };
+                        return {
+                            id: node.id,
+                            label: node.label,
+                            title: node.title,
+                            color: original.color,
+                            font: font,
+                            shape: node.shape,
+                            margin: node.margin,
+                            size: original.size,
+                            opacity: isConnected ? 1.0 : 0.08,
+                            isConnected: isConnected
+                        };
+                    });
+                    // Draw muted nodes first (background), connected nodes last (foreground)
+                    updateNodes.sort(function (a, b) { return (a.isConnected ? 1 : 0) - (b.isConnected ? 1 : 0); });
+                    updateNodes.forEach(n => delete n.isConnected);
+
+                    // Update edges: highlight edges connected to matches, dim others
+                    const updateEdges = [];
+                    visEdges.forEach(edge => {
+                        const isHighlighted = matchedNodeIds.has(edge.from) || matchedNodeIds.has(edge.to);
+                        if (isHighlighted) {
+                            updateEdges.push({
+                                from: edge.from,
+                                to: edge.to,
+                                color: { color: '#3498db', highlight: '#2980b9' },
+                                width: 4,
+                                smooth: { type: 'continuous', roundness: 0.2 },
+                                _highlight: true
+                            });
+                        } else {
+                            updateEdges.push({
+                                from: edge.from,
+                                to: edge.to,
+                                color: { color: '#e0e0e0', highlight: '#95a5a6' },
+                                width: 0.5,
+                                smooth: { type: 'continuous', roundness: 0.2 },
+                                _highlight: false
+                            });
+                        }
+                    });
+                    updateEdges.sort(function (a, b) { return (a._highlight ? 1 : 0) - (b._highlight ? 1 : 0); });
+                    updateEdges.forEach(e => delete e._highlight);
+
+                    network.setData({ nodes: updateNodes, edges: updateEdges });
+                    selectedNodeId = null; // Clear any selected node
+                });
+            }
+
+            // Reset view button
+            const resetBtn = document.getElementById('resetViewBtn');
+            if (resetBtn) {
+                resetBtn.addEventListener('click', function () {
+                    resetHighlighting();
+                    network.fit({ animation: true });
+                });
+            }
+
+            // Toggle physics button
+            let physicsEnabled = true;
+            const toggleBtn = document.getElementById('togglePhysicsBtn');
+            if (toggleBtn) {
+                toggleBtn.addEventListener('click', function () {
+                    physicsEnabled = !physicsEnabled;
+                    network.setOptions({ physics: { enabled: physicsEnabled } });
+                    this.textContent = physicsEnabled ? 'Pause Physics' : 'Resume Physics';
                 });
             }
         }
@@ -397,9 +683,9 @@
         (function init() {
             buildGraph().catch(function (e) {
                 console.error('Failed to build graph:', e);
-                var container = document.getElementById('network');
+                const container = document.getElementById('network');
                 if (container) {
-                    container.innerHTML = '<div class="empty-state" style="padding:40px; color:#e74c3c;"><h3>Unable to load graph</h3><p>' + e.message + '</p></div>';
+                    container.innerHTML = '<div style="padding:40px; color:#e74c3c; text-align:center;"><h3>Unable to load graph</h3><p>' + e.message + '</p></div>';
                 }
             });
         })();

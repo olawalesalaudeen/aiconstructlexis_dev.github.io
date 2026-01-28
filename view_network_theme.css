@@ -271,7 +271,8 @@ h1{
   left: 50%;
   bottom: calc(100% + 10px);
   transform: translateX(-50%);
-  width: max-content;
+  /* Allow multiline wrapping (instead of one long line) */
+  width: min(360px, 70vw);
   max-width: min(360px, 70vw);
   padding: 10px 12px;
   border-radius: 10px;
@@ -279,7 +280,9 @@ h1{
   color: #f8fafc;
   font-size: 12px;
   font-weight: 500;
-  line-height: 1.35;
+  line-height: 1.5;
+  white-space: normal;
+  overflow-wrap: anywhere;
   border: 1px solid rgba(255,255,255,0.14);
   box-shadow: 0 14px 38px rgba(2, 8, 23, 0.35);
   z-index: 50;

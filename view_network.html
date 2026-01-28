@@ -1540,36 +1540,9 @@
                 </div>`;
             }
 
-            // Related Constructs (always show)
+            // Measurement Instruments (always show)
             html += `<div class="category-section">
-                <h3 class="category-title">Related Constructs (${deduplicatedConstructs.length})</h3>`;
-            if (deduplicatedConstructs.length > 0) {
-                html += `<div class="relationship-list">
-                    ${deduplicatedConstructs.map(agg => {
-                    const paperCount = agg.papers.size;
-                    const evidenceText = agg.evidence.length > 0 ? agg.evidence[0] : '';
-
-                    // Escape for use in onclick (use canonical nodeName for selection)
-                    const escapedName = agg.nodeName.replace(/'/g, "\\'").replace(/"/g, '\\"');
-                    return `
-                        <div class="relationship-item construct" onclick="selectNodeByName('${escapedName}', '${agg.nodeType}')">
-                            <div class="relationship-nodes">
-                                <strong>${escapeHtml(agg.displayName)}</strong>
-                            </div>
-                            <div class="result-definition" style="margin-top: 5px; margin-bottom: 5px;">${paperCount} paper${paperCount !== 1 ? 's' : ''}</div>
-                            ${evidenceText ? `<div class="relationship-evidence">${escapeHtml(evidenceText)}</div>` : ''}
-                </div>
-            `;
-                }).join('')}
-                </div>`;
-            } else {
-                html += '<div class="empty-state" style="padding: 20px;"><p>No related constructs</p></div>';
-            }
-            html += `</div>`;
-
-            // Related Measurement Instruments (always show)
-            html += `<div class="category-section">
-                <h3 class="category-title">Related Measurement Instruments (${deduplicatedMeasurements.length})</h3>`;
+                <h3 class="category-title">Measurement Instruments (${deduplicatedMeasurements.length})</h3>`;
             if (deduplicatedMeasurements.length > 0) {
                 html += `<div class="relationship-list">
                     ${deduplicatedMeasurements.map(agg => {
@@ -1618,6 +1591,33 @@
                     </div>
                 </div>`;
             }
+
+            // Related Constructs (always show)
+            html += `<div class="category-section">
+                <h3 class="category-title">Related Constructs (${deduplicatedConstructs.length})</h3>`;
+            if (deduplicatedConstructs.length > 0) {
+                html += `<div class="relationship-list">
+                    ${deduplicatedConstructs.map(agg => {
+                    const paperCount = agg.papers.size;
+                    const evidenceText = agg.evidence.length > 0 ? agg.evidence[0] : '';
+
+                    // Escape for use in onclick (use canonical nodeName for selection)
+                    const escapedName = agg.nodeName.replace(/'/g, "\\'").replace(/"/g, '\\"');
+                    return `
+                        <div class="relationship-item construct" onclick="selectNodeByName('${escapedName}', '${agg.nodeType}')">
+                            <div class="relationship-nodes">
+                                <strong>${escapeHtml(agg.displayName)}</strong>
+                            </div>
+                            <div class="result-definition" style="margin-top: 5px; margin-bottom: 5px;">${paperCount} paper${paperCount !== 1 ? 's' : ''}</div>
+                            ${evidenceText ? `<div class="relationship-evidence">${escapeHtml(evidenceText)}</div>` : ''}
+                </div>
+            `;
+                }).join('')}
+                </div>`;
+            } else {
+                html += '<div class="empty-state" style="padding: 20px;"><p>No related constructs</p></div>';
+            }
+            html += `</div>`;
 
             // Raw config (JSON) viewer for full node config
             if (node.rawConfig) {
