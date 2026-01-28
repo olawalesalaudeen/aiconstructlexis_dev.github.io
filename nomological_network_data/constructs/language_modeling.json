@@ -1,0 +1,506 @@
+{
+  "canonical_name": "Language Modeling",
+  "type": "construct",
+  "canonical_definition": "Language Modeling is the ability of a computational system to model and predict next-token distributions in text sequences, typically operationalized through autoregressive language modeling where the model learns to predict subsequent tokens based on preceding context. This capability is most commonly evaluated using perplexity metrics across diverse text corpora, reflecting the model's capacity to capture statistical patterns and generate grammatically structured continuations, though some definitions emphasize its role in downstream task generalization or text completion rather than purely next-token prediction.",
+  "expert_reviewed": false,
+  "names": [
+    "Language Modeling"
+  ],
+  "papers": [
+    "4M-21: An Any-to-Any Vision Model for Tens of Tasks and Modalities",
+    "Accelerating Blockwise Parallel Language Models with Draft Refinement",
+    "Algorithmic Capabilities of Random Transformers",
+    "AmoebaLLM: Constructing Any-Shape Large Language Models for Efficient and Instant Deployment",
+    "BAM! Just Like That: Simple and Efficient Parameter Upcycling for Mixture of Experts",
+    "DAPE: Data-Adaptive Positional Encoding for Length Extrapolation",
+    "DDK: Distilling Domain Knowledge for Efficient Large Language Models",
+    "DHA: Learning Decoupled-Head Attention from Transformer Checkpoints via Adaptive Heads Fusion",
+    "DISP-LLM: Dimension-Independent Structural Pruning for Large Language Models",
+    "Discovering Sparsity Allocation for  Layer-wise Pruning of Large Language Models",
+    "DropBP: Accelerating Fine-Tuning of Large Language Models by Dropping Backward Propagation",
+    "Initialization is Critical to Whether Transformers Fit Composite Functions by Reasoning or Memorizing",
+    "Learning from Teaching Regularization: Generalizable Correlations Should be Easy to Imitate",
+    "LoQT: Low-Rank Adapters for Quantized Pretraining",
+    "MambaTree: Tree Topology is All You Need in State Space Model",
+    "Mixture of Tokens: Continuous MoE through Cross-Example Aggregation",
+    "Nearest Neighbor Speculative Decoding for LLM Generation and Attribution",
+    "Scaling Retrieval-Based Language Models with a Trillion-Token Datastore",
+    "Search for Efficient Large Language Models",
+    "Selective Attention: Enhancing Transformer through Principled Context Control",
+    "SlimGPT: Layer-wise Structured Pruning for Large Language Models",
+    "Sparse maximal update parameterization: A holistic approach to sparse training dynamics",
+    "Stacking Your Transformers: A Closer Look at Model Growth for Efficient LLM Pre-Training",
+    "VideoLLM-MoD: Efficient Video-Language Streaming with Mixture-of-Depths Vision Computation"
+  ],
+  "paper_count": 24,
+  "group_ids": [
+    385,
+    1493,
+    1529,
+    1659,
+    1833,
+    1901,
+    2557,
+    2596,
+    3248,
+    3256,
+    3470,
+    3868,
+    4059,
+    4207,
+    4360,
+    4542,
+    5552,
+    6010,
+    6299,
+    6318
+  ],
+  "definitions": [
+    {
+      "text": "Language Modeling",
+      "paper": "DropBP: Accelerating Fine-Tuning of Large Language Models by Dropping Backward Propagation"
+    },
+    {
+      "text": "Language Modeling",
+      "paper": "Stacking Your Transformers: A Closer Look at Model Growth for Efficient LLM Pre-Training"
+    },
+    {
+      "text": "Language Modeling",
+      "paper": "Learning from Teaching Regularization: Generalizable Correlations Should be Easy to Imitate"
+    },
+    {
+      "text": "Language Modeling",
+      "paper": "Search for Efficient Large Language Models"
+    },
+    {
+      "text": "Language Modeling",
+      "paper": "DHA: Learning Decoupled-Head Attention from Transformer Checkpoints via Adaptive Heads Fusion"
+    },
+    {
+      "text": "Assessed via validation perplexity on C4 during pretraining of LLaMA-based models. ",
+      "paper": "LoQT: Low-Rank Adapters for Quantized Pretraining"
+    },
+    {
+      "text": "Ability to model next-token distributions; evaluated with perplexity on Wikitext2; noted to be easier to recover via fine-tuning than factual knowledge after compression  .",
+      "paper": "AmoebaLLM: Constructing Any-Shape Large Language Models for Efficient and Instant Deployment"
+    },
+    {
+      "text": "Next‑token prediction competence; assessed via perplexity across domains .",
+      "paper": "DDK: Distilling Domain Knowledge for Efficient Large Language Models"
+    },
+    {
+      "text": "Ability to model and predict next tokens in a sequence via autoregressive language modeling; the paper focuses its evaluation on this setting .",
+      "paper": "Mixture of Tokens: Continuous MoE through Cross-Example Aggregation"
+    },
+    {
+      "text": "Language generation/understanding quality of the LLM component, optimized with LM loss and evaluated by LM‑PPL/LM‑Correctness  .",
+      "paper": "VideoLLM-MoD: Efficient Video-Language Streaming with Mixture-of-Depths Vision Computation"
+    },
+    {
+      "text": "Modeling next-token distributions and generalizing across downstream tasks, evaluated by perplexity/accuracy on standard corpora and zero-shot tasks .",
+      "paper": "Selective Attention: Enhancing Transformer through Principled Context Control"
+    },
+    {
+      "text": "Ability to predict next tokens; evaluated via perplexity on WikiText‑2 under sparsity settings .",
+      "paper": "Discovering Sparsity Allocation for  Layer-wise Pruning of Large Language Models"
+    },
+    {
+      "text": "Ability to model next-token distributions and produce grammatical structured sequences. ",
+      "paper": "Algorithmic Capabilities of Random Transformers"
+    },
+    {
+      "text": "Predictive modeling of next tokens in text sequences (as assessed by perplexity)",
+      "paper": "Nearest Neighbor Speculative Decoding for LLM Generation and Attribution"
+    },
+    {
+      "text": "Ability to predict next tokens in text; evaluated via perplexity and found to benefit monotonically from datastore scaling (retrieval reduces perplexity) .",
+      "paper": "Scaling Retrieval-Based Language Models with a Trillion-Token Datastore"
+    },
+    {
+      "text": "Training objective over large text corpora (e.g., C4) used during co‑training with the multimodal model .",
+      "paper": "4M-21: An Any-to-Any Vision Model for Tens of Tasks and Modalities"
+    },
+    {
+      "text": "Predicting the next word in a sequence; optimized via a language modeling loss for next‑word prediction. ",
+      "paper": "DISP-LLM: Dimension-Independent Structural Pruning for Large Language Models"
+    },
+    {
+      "text": "Ability reflected by validation loss during large-scale language model pretraining ",
+      "paper": "Sparse maximal update parameterization: A holistic approach to sparse training dynamics"
+    },
+    {
+      "text": "Predictive modeling of text sequences, commonly evaluated by perplexity on large corpora (e.g., SlimPajama) .",
+      "paper": "Initialization is Critical to Whether Transformers Fit Composite Functions by Reasoning or Memorizing"
+    },
+    {
+      "text": "Ability to predict and generate natural text continuations (evaluated on LAMBADA) .",
+      "paper": "Accelerating Blockwise Parallel Language Models with Draft Refinement"
+    },
+    {
+      "text": "Ability to model next-token distributions; in this paper evaluated as language modeling performance on WikiText2. ",
+      "paper": "SlimGPT: Layer-wise Structured Pruning for Large Language Models"
+    },
+    {
+      "text": "Ability to predict next tokens in text, operationalized via perplexity over domain corpora.",
+      "paper": "BAM! Just Like That: Simple and Efficient Parameter Upcycling for Mixture of Experts"
+    },
+    {
+      "text": "Ability to predict or complete text sequences; evaluated with LAMBADA perplexity (LAM‑ppl). ",
+      "paper": "MambaTree: Tree Topology is All You Need in State Space Model"
+    },
+    {
+      "text": "Ability to predict next tokens with low perplexity over varying sequence lengths; evaluated zero-shot on validation tokens across lengths .",
+      "paper": "DAPE: Data-Adaptive Positional Encoding for Length Extrapolation"
+    }
+  ],
+  "definition_count": 24,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "C4 Validation Perplexity",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "LoQT: Low-Rank Adapters for Quantized Pretraining",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Wikitext2 Perplexity (PPL)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "AmoebaLLM: Constructing Any-Shape Large Language Models for Efficient and Instant Deployment",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge Preservation under Compression",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "AmoebaLLM: Constructing Any-Shape Large Language Models for Efficient and Instant Deployment",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Factual Knowledge",
+      "other_type": "constructs",
+      "relationship_type": "harder-to-recover-than",
+      "paper": "AmoebaLLM: Constructing Any-Shape Large Language Models for Efficient and Instant Deployment",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Perplexity by Domain",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "DDK: Distilling Domain Knowledge for Efficient Large Language Models",
+      "evidence": "Figure 1 reports domain‑wise perplexity to characterize modeling performance across domains ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "C4 Language Modeling (Perplexity/Eval Loss)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Mixture of Tokens: Continuous MoE through Cross-Example Aggregation",
+      "evidence": "“To measure model quality, we pretrain models for a fixed number of tokens and compare final perplexity… In all experiments, the models are trained on the C4 dataset.”"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Validation Perplexity (Alpaca)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "DropBP: Accelerating Fine-Tuning of Large Language Models by Dropping Backward Propagation",
+      "evidence": "DropBP accelerates convergence to the same validation perplexity (e.g., 1.5× faster on LLaMA2-70B) and shows faster PPL reduction curves during fine-tuning  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Ego4D Narration Stream LM-PPL",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "VideoLLM-MoD: Efficient Video-Language Streaming with Mixture-of-Depths Vision Computation",
+      "evidence": "We use LM-PPL to evaluate the language modeling capability at the given timestamp ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Ego4D Narration Stream LM-Correctness",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "VideoLLM-MoD: Efficient Video-Language Streaming with Mixture-of-Depths Vision Computation",
+      "evidence": "We use LM-Correctness to evaluate the language modeling capability at the given timestamp ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Wikitext Perplexity (ppl)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Stacking Your Transformers: A Closer Look at Model Growth for Efficient LLM Pre-Training",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "General NLP Task Performance",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Stacking Your Transformers: A Closer Look at Model Growth for Efficient LLM Pre-Training",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Penn Treebank Perplexity (PPL)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Learning from Teaching Regularization: Generalizable Correlations Should be Easy to Imitate",
+      "evidence": "PTB PPL is reported to assess language modeling under LOT vs Teacher‑only (Table 1) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Penn Treebank Perplexity (PPL)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Learning from Teaching Regularization: Generalizable Correlations Should be Easy to Imitate",
+      "evidence": "WikiText‑103 PPL is reported to assess language modeling under LOT vs Teacher‑only (Table 1) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WikiText2 Perplexity (2048)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Search for Efficient Large Language Models",
+      "evidence": "The paper compares perplexity on the WikiText2 dataset with a 2048 sequence length ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PTB Perplexity (2048)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Search for Efficient Large Language Models",
+      "evidence": "The paper compares perplexity on the PTB dataset with a 2048 sequence length ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Wikitext Perplexity (ppl)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Selective Attention: Enhancing Transformer through Principled Context Control",
+      "evidence": "Wikitext perplexity used to evaluate language modeling performance, showing improvements with SSA  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Attention Selectivity",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Selective Attention: Enhancing Transformer through Principled Context Control",
+      "evidence": "Incorporating SSA consistently enhances accuracy/perplexity across language modeling benchmarks and model scales  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WikiText‑2 Perplexity at 65–80% Sparsity",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Discovering Sparsity Allocation for  Layer-wise Pruning of Large Language Models",
+      "evidence": "WikiText‑2 perplexity is used to compare sparsity allocation methods across high sparsity rates (Table 5) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Memorization Capacity",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Algorithmic Capabilities of Random Transformers",
+      "evidence": "Modeling natural language requires memorization of arbitrary associations."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Syntactic Structure Processing",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Algorithmic Capabilities of Random Transformers",
+      "evidence": "Modeling natural language requires structured sequence generation (e.g., closing quotes, agreement), akin to Dyck-like structure."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TinyStories Language Modeling Loss",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Algorithmic Capabilities of Random Transformers",
+      "evidence": "Cross-entropy/log-perplexity on TinyStories evaluates LM quality."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Grammatical Text Production (qualitative)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Algorithmic Capabilities of Random Transformers",
+      "evidence": "Random transformers can produce grammatical, though nonsensical, text."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WikiText-103 Language Modeling Perplexity",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Nearest Neighbor Speculative Decoding for LLM Generation and Attribution",
+      "evidence": "Perplexity on WikiText‑103 is used to assess LM quality."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Web Language Modeling Perplexity (RedPajama)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Scaling Retrieval-Based Language Models with a Trillion-Token Datastore",
+      "evidence": "Evaluation uses web-data perplexity; retrieval monotonically reduces perplexity as datastore scales ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Scientific Language Modeling Perplexity (S2ORC)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Scaling Retrieval-Based Language Models with a Trillion-Token Datastore",
+      "evidence": "Evaluation uses scientific-paper perplexity; retrieval reduces perplexity with increasing datastore size ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "External Knowledge Utilization",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Scaling Retrieval-Based Language Models with a Trillion-Token Datastore",
+      "evidence": "Retrieval is strictly beneficial for language modeling; scaling the datastore reduces perplexity without saturation ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Language Modeling on C4",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "4M-21: An Any-to-Any Vision Model for Tens of Tasks and Modalities",
+      "evidence": "The training includes the C4 corpus and performs language modeling during co‑training ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WikiText-2 Perplexity (PPL)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "DISP-LLM: Dimension-Independent Structural Pruning for Large Language Models",
+      "evidence": "The paper reports perplexity on WikiText‑2 for pruned models as the language modeling metric."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Validation Loss (LM Pretraining)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Sparse maximal update parameterization: A holistic approach to sparse training dynamics",
+      "evidence": "Validation loss is reported for the large-scale language model pretraining experiments (Figure 3)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Pretraining Loss",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Sparse maximal update parameterization: A holistic approach to sparse training dynamics",
+      "evidence": "Pretraining loss is tracked to compare parameterizations during LM pretraining"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SlimPajama Perplexity (lower is better)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Initialization is Critical to Whether Transformers Fit Composite Functions by Reasoning or Memorizing",
+      "evidence": "GPT-2 Medium trained on SlimPajama subsets; smaller init achieved lower perplexity ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LAMBADA Perplexity",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Accelerating Blockwise Parallel Language Models with Draft Refinement",
+      "evidence": "Language modeling quality is evaluated via LAMBADA perplexity ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Block Efficiency",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Accelerating Blockwise Parallel Language Models with Draft Refinement",
+      "evidence": "LM task (LAMBADA) achieves the highest block efficiency among tasks in this study  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Language Modeling (WikiText2)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SlimGPT: Layer-wise Structured Pruning for Large Language Models",
+      "evidence": "Language modeling performance is evaluated on the WikiText2 validation set."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Perplexity (Domain-wise)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "BAM! Just Like That: Simple and Efficient Parameter Upcycling for Mixture of Experts",
+      "evidence": "The paper evaluates perplexity across Pretrain, Code, Law, and Math domains to assess model quality ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Causal Language Modeling",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MambaTree: Tree Topology is All You Need in State Space Model",
+      "evidence": "For textual tasks, the method performs unidirectional aggregation \"in adherence to the causal nature of language,\" a core facet of autoregressive language modeling."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long‑Range Context Modeling",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MambaTree: Tree Topology is All You Need in State Space Model",
+      "evidence": "The authors position Mamba/MambaTree as modeling dependencies over sequences and emphasize improved long‑range interactions for text processing."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LAMBADA Perplexity (LAM‑ppl)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MambaTree: Tree Topology is All You Need in State Space Model",
+      "evidence": "The paper explicitly reports LAMBADA as LAM‑ppl among its language model benchmarks."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Associative Recall",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "DAPE: Data-Adaptive Positional Encoding for Length Extrapolation",
+      "evidence": "Associate recall accounts for most of the perplexity difference between architectures; thus recall influences language modeling performance ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ArXiv Long-Context Perplexity",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "DAPE: Data-Adaptive Positional Encoding for Length Extrapolation",
+      "evidence": "Language modeling performance is evaluated by zero-shot perplexity across input lengths on ArXiv, with protocol specifying last-256-token perplexity after full-sequence processing  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ArXiv Long-Context Perplexity",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "DAPE: Data-Adaptive Positional Encoding for Length Extrapolation",
+      "evidence": "Perplexity across lengths on Books3 is used to compare positional encodings and assess language modeling performance in long-context settings ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Foundational Capabilities",
+      "other_type": "constructs",
+      "relationship_type": "component-of",
+      "paper": "DHA: Learning Decoupled-Head Attention from Transformer Checkpoints via Adaptive Heads Fusion",
+      "evidence": "Foundational capabilities include LAMBADA, reflecting language modeling ability."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LAMBADA 0-shot Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "DHA: Learning Decoupled-Head Attention from Transformer Checkpoints via Adaptive Heads Fusion",
+      "evidence": "LAMBADA is included in the 0-shot evaluations."
+    }
+  ],
+  "relationship_count": 43,
+  "incoming_relationship_count": 9,
+  "outgoing_relationship_count": 34
+}

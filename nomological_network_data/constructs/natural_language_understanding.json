@@ -1,0 +1,417 @@
+{
+  "canonical_name": "Natural Language Understanding",
+  "type": "construct",
+  "canonical_definition": "Natural Language Understanding (NLU) refers to the ability to comprehend and process natural language across a range of tasks, often operationalized through evaluation on the GLUE benchmark. While some definitions emphasize general language competence that persists after model fine-tuning or adaptation, others specify narrower requirements for tasks like linguistic acceptability, sentiment analysis, paraphrase detection, or semantic inference. Disagreements exist in scope: certain papers frame NLU as a broad capability for language comprehension (including code intent analysis or caption generation), while others tie it more strictly to standardized NLP benchmarks.",
+  "expert_reviewed": false,
+  "names": [
+    "Natural Language Understanding",
+    "Natural Language Understanding (NLU)"
+  ],
+  "papers": [
+    "3-in-1: 2D Rotary Adaptation for Efficient Finetuning, Efficient Batching and Composability",
+    "LLMDFA: Analyzing Dataflow in Code with Large Language Models",
+    "LoQT: Low-Rank Adapters for Quantized Pretraining",
+    "OW-VISCapTor: Abstractors for Open-World Video Instance Segmentation and Captioning",
+    "PiSSA: Principal Singular Values and Singular Vectors Adaptation of Large Language Models",
+    "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation",
+    "Reinforcing LLM Agents via Policy Optimization with Action Decomposition",
+    "SVFT: Parameter-Efficient Fine-Tuning with Singular Vectors",
+    "Unveiling LoRA Intrinsic Ranks via Salience Analysis",
+    "VB-LoRA: Extreme Parameter Efficient Fine-Tuning with Vector Banks"
+  ],
+  "paper_count": 10,
+  "group_ids": [
+    352,
+    386,
+    1343,
+    2924,
+    3060,
+    3300,
+    4904,
+    6271
+  ],
+  "definitions": [
+    {
+      "text": "Natural Language Understanding",
+      "paper": "SVFT: Parameter-Efficient Fine-Tuning with Singular Vectors"
+    },
+    {
+      "text": "Natural Language Understanding (NLU)",
+      "paper": "Unveiling LoRA Intrinsic Ranks via Salience Analysis"
+    },
+    {
+      "text": "Natural Language Understanding",
+      "paper": "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation"
+    },
+    {
+      "text": "Understanding and inference over natural language across multiple tasks; evaluated on GLUE. ",
+      "paper": "PiSSA: Principal Singular Values and Singular Vectors Adaptation of Large Language Models"
+    },
+    {
+      "text": "Evaluated using the GLUE benchmark tasks. ",
+      "paper": "LoQT: Low-Rank Adapters for Quantized Pretraining"
+    },
+    {
+      "text": "General language ability that the authors check remains intact after RL fine‑tuning, using standard NLP benchmarks .",
+      "paper": "Reinforcing LLM Agents via Policy Optimization with Action Decomposition"
+    },
+    {
+      "text": "Ability to comprehend developers’ intents from natural-language specifications of sources and sinks for customizing analysis .",
+      "paper": "LLMDFA: Analyzing Dataflow in Code with Large Language Models"
+    },
+    {
+      "text": "Ability required for producing meaningful object-centric captions; the paper states that generating free-form object-centric captions requires strong natural language understanding .",
+      "paper": "OW-VISCapTor: Abstractors for Open-World Video Instance Segmentation and Captioning"
+    },
+    {
+      "text": "Ability to understand and process natural language; evaluated on GLUE for its ability of NLU. ",
+      "paper": "3-in-1: 2D Rotary Adaptation for Efficient Finetuning, Efficient Batching and Composability"
+    },
+    {
+      "text": "Ability to perform understanding tasks such as linguistic acceptability, sentiment, paraphrase, semantic similarity, and inference as evaluated on GLUE .",
+      "paper": "VB-LoRA: Extreme Parameter Efficient Fine-Tuning with Vector Banks"
+    }
+  ],
+  "definition_count": 10,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GLUE/SST-2 Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Prompt Tuning Strikes Back: Customizing Foundation Models with Low-Rank Prompt Adaptation",
+      "evidence": "The paper evaluates six GLUE NLU tasks and reports accuracy/F1; SST‑2 is one of the GLUE tasks (Table 1, Eval details)   ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GLUE/MNLI Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Prompt Tuning Strikes Back: Customizing Foundation Models with Low-Rank Prompt Adaptation",
+      "evidence": "GLUE tasks used to evaluate NLU, including MNLI (Table 1, Eval details)  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GLUE/MRPC Avg(Acc,F1)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Prompt Tuning Strikes Back: Customizing Foundation Models with Low-Rank Prompt Adaptation",
+      "evidence": "MRPC reported as average of accuracy and F1 for NLU evaluation (Table 1) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GLUE/MNLI Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Prompt Tuning Strikes Back: Customizing Foundation Models with Low-Rank Prompt Adaptation",
+      "evidence": "QNLI included among GLUE tasks for NLU evaluation (Table 1, Eval details)  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GLUE/QNLI Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Prompt Tuning Strikes Back: Customizing Foundation Models with Low-Rank Prompt Adaptation",
+      "evidence": "QNLI included among GLUE tasks for NLU evaluation (Table 1, Eval details)  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GLUE/MRPC Avg(Acc,F1)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Prompt Tuning Strikes Back: Customizing Foundation Models with Low-Rank Prompt Adaptation",
+      "evidence": "QQP reported as average of accuracy and F1 for NLU evaluation (Table 1) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GLUE/RTE Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Prompt Tuning Strikes Back: Customizing Foundation Models with Low-Rank Prompt Adaptation",
+      "evidence": "RTE included among GLUE tasks for NLU evaluation (Table 1, Eval details)  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GLUE/QNLI Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Prompt Tuning Strikes Back: Customizing Foundation Models with Low-Rank Prompt Adaptation",
+      "evidence": "RTE included among GLUE tasks for NLU evaluation (Table 1, Eval details)  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GLUE Aggregate (8 tasks)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "PiSSA: Principal Singular Values and Singular Vectors Adaptation of Large Language Models",
+      "evidence": "NLU capability was evaluated on the GLUE benchmark across 8 tasks."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GLUE (MNLI, RTE, QNLI, MRPC, QQP, SST‑2, CoLA, STS‑B)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "LoQT: Low-Rank Adapters for Quantized Pretraining",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GLUE Average Score (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Bridging The Gap between Low-rank and Orthogonal Adaptation via Householder Reflection Adaptation",
+      "evidence": "Section 4.1 explicitly evaluates NLU with GLUE, showing comparisons across tasks and average score (Figure 1b)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MRPC Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Bridging The Gap between Low-rank and Orthogonal Adaptation via Householder Reflection Adaptation",
+      "evidence": "HRA robustness to λ is examined on MRPC, a GLUE paraphrase task, within the NLU section."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC Challenge Zero-shot Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Reinforcing LLM Agents via Policy Optimization with Action Decomposition",
+      "evidence": "The authors use LM Evaluation Harness tasks to check that general language ability (NLU) remains intact after RL fine‑tuning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HellaSwag Zero‑shot Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Reinforcing LLM Agents via Policy Optimization with Action Decomposition",
+      "evidence": "Zero‑shot HellaSwag is used to monitor general language ability post‑training ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA Zero‑shot Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Reinforcing LLM Agents via Policy Optimization with Action Decomposition",
+      "evidence": "PIQA zero‑shot accuracy is reported to assess any loss in general ability ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU Zero-shot Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Reinforcing LLM Agents via Policy Optimization with Action Decomposition",
+      "evidence": "MMLU scores are used alongside other harness tasks to gauge general NLU after alignment ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Reinforcing LLM Agents via Policy Optimization with Action Decomposition",
+      "evidence": "Common Sense Reasoning tasks are presented as part of the LM Evaluation Harness used to assess general language ability  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multitask Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Reinforcing LLM Agents via Policy Optimization with Action Decomposition",
+      "evidence": "Massive Multitask Language Understanding reflects a component of broader language understanding assessed after RL alignment  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BBH (NLU)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Synthesize, Partition, then Adapt: Eliciting Diverse Samples from Foundation Models",
+      "evidence": "NLU domain evaluation includes BBH to analyze output diversity on NLU tasks."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GPQA (NLU)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Synthesize, Partition, then Adapt: Eliciting Diverse Samples from Foundation Models",
+      "evidence": "NLU domain evaluation includes GPQA to analyze output diversity on NLU tasks."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU (NLU)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Synthesize, Partition, then Adapt: Eliciting Diverse Samples from Foundation Models",
+      "evidence": "NLU domain evaluation includes MMLU to analyze output diversity on NLU tasks."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande (NLU)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Synthesize, Partition, then Adapt: Eliciting Diverse Samples from Foundation Models",
+      "evidence": "NLU domain evaluation includes WinoGrande to analyze output diversity on NLU tasks."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GLUE Tasks (MNLI, SST-2, MRPC, CoLA, QNLI, QQP, RTE, STS-B)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SVFT: Parameter-Efficient Fine-Tuning with Singular Vectors",
+      "evidence": "Results on the GLUE benchmark are summarized by the authors; task list and setup are provided in the appendix hyperparameters table  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Source/Sink Extraction (Phase I)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "LLMDFA: Analyzing Dataflow in Code with Large Language Models",
+      "evidence": "LLMs can comprehend natural-language source/sink specs to customize extraction; performance is measured by diffing identified vs labeled items  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CoLA (GLUE) MCC",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Unveiling LoRA Intrinsic Ranks via Salience Analysis",
+      "evidence": "The paper evaluates NLU and reports CoLA MCC and runtime in Figure 1, indicating CoLA is part of the NLU evaluation  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MRPC (GLUE) Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Unveiling LoRA Intrinsic Ranks via Salience Analysis",
+      "evidence": "Table 7 presents Accuracy on MRPC within the NLU experiments ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Object-Centric Caption Generation",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "OW-VISCapTor: Abstractors for Open-World Video Instance Segmentation and Captioning",
+      "evidence": "Generating free-form object-centric captions requires strong natural language understanding ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Natural Language Inference",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation",
+      "evidence": "RTE appears among the paper’s natural language understanding tasks."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SST‑2",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation",
+      "evidence": "GLUE/NU tasks (SST-2) are used as natural language understanding benchmarks (Table F.7)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SST-5 Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation",
+      "evidence": "GLUE/NU tasks (SST-2) are used as natural language understanding benchmarks (Table F.7)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MRPC Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation",
+      "evidence": "GLUE MRPC reported in Table F.7."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CoLA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation",
+      "evidence": "GLUE CoLA reported in Table F.7."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "STS-B Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation",
+      "evidence": "GLUE STS-B reported in Table F.7."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GLUE (NLU)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "3-in-1: 2D Rotary Adaptation for Efficient Finetuning, Efficient Batching and Composability",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Standard NLU Benchmark Scores",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "An Efficient Recipe for Long Context Extension via Middle-Focused Positional Encoding",
+      "evidence": "The paper evaluates WinoGrande, TruthfulQA, PIQA, BoolQ, ARC-C, HellaSwag to assess NLU retention."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language Modeling Ability",
+      "other_type": "constructs",
+      "relationship_type": "does-not-reliably-predict",
+      "paper": "An Efficient Recipe for Long Context Extension via Middle-Focused Positional Encoding",
+      "evidence": "The authors note that lower perplexity does not necessarily imply better performance on downstream tasks, motivating separate NLU evaluation."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Linguistic Acceptability",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "VB-LoRA: Extreme Parameter Efficient Fine-Tuning with Vector Banks",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Sentiment Analysis",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "VB-LoRA: Extreme Parameter Efficient Fine-Tuning with Vector Banks",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Paraphrase Detection",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "VB-LoRA: Extreme Parameter Efficient Fine-Tuning with Vector Banks",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Semantic Textual Similarity",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "VB-LoRA: Extreme Parameter Efficient Fine-Tuning with Vector Banks",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Natural Language Inference",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "VB-LoRA: Extreme Parameter Efficient Fine-Tuning with Vector Banks",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GLUE Overall Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Would I Lie To You? Inference Time Alignment of Language Models using Direct Preference Heads",
+      "evidence": "\"For general NLU we make use of the standard GLUE benchmark\" and report overall scores ."
+    }
+  ],
+  "relationship_count": 42,
+  "incoming_relationship_count": 9,
+  "outgoing_relationship_count": 33
+}

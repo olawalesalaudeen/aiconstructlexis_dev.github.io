@@ -1,0 +1,316 @@
+{
+  "canonical_name": "Image Captioning",
+  "type": "behavior",
+  "canonical_definition": "Image captioning is the task of generating textual descriptions from visual inputs such as images or videos, requiring cross-modal understanding between vision and language. It often serves as a benchmark for evaluating multimodal understanding/generation, visual perception and cognition, and alignment capabilities in vision-language models, with variants including contextual captioning, zero-shot approaches, and object/region-level descriptions that demand varying degrees of logical reasoning and common sense understanding.",
+  "expert_reviewed": false,
+  "names": [
+    "Image Captioning"
+  ],
+  "papers": [
+    "An eye for an ear: zero-shot audio description leveraging an image captioner with audio-visual token distribution matching",
+    "CALVIN: Improved Contextual Video Captioning via Instruction Tuning",
+    "CogVLM: Visual Expert for Pretrained Language Models",
+    "Humor in AI: Massive Scale Crowd-Sourced Preferences and Benchmarks for Cartoon Captioning",
+    "LLMs Can Evolve Continually on Modality for $\\mathbb{X}$-Modal Reasoning",
+    "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens",
+    "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models",
+    "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding",
+    "Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment",
+    "ShareGPT4Video: Improving Video Understanding and Generation with Better Captions",
+    "SlowFocus: Enhancing Fine-grained Temporal Understanding in Video LLM",
+    "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models",
+    "Unveiling Encoder-Free Vision-Language Models",
+    "VLM4Bio: A Benchmark Dataset to Evaluate Pretrained Vision-Language Models for Trait Discovery from Biological Images",
+    "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks"
+  ],
+  "paper_count": 15,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Few-shot fine-tuning at test time improves captioning versus no-context scenarios .",
+      "paper": "CALVIN: Improved Contextual Video Captioning via Instruction Tuning"
+    },
+    {
+      "text": "Benchmarks are jointly used under 'Common Sense and Language Understanding' in the figure caption",
+      "paper": "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models"
+    },
+    {
+      "text": "Logical reasoning is cited as a needed capability for caption generation.",
+      "paper": "Humor in AI: Massive Scale Crowd-Sourced Preferences and Benchmarks for Cartoon Captioning"
+    },
+    {
+      "text": "Contextual, dense-caption, and zero-shot CoT prompting are examined as ways to enhance reasoning performance on biological questions .",
+      "paper": "VLM4Bio: A Benchmark Dataset to Evaluate Pretrained Vision-Language Models for Trait Discovery from Biological Images"
+    },
+    {
+      "text": "Image captioning on COCO is included among reported metrics to evaluate multimodal understanding/generation .",
+      "paper": "LLMs Can Evolve Continually on Modality for $\\mathbb{X}$-Modal Reasoning"
+    },
+    {
+      "text": "Audio captioning on Clotho is reported, reflecting audio‑language understanding/generation .",
+      "paper": "LLMs Can Evolve Continually on Modality for $\\mathbb{X}$-Modal Reasoning"
+    },
+    {
+      "text": "Captioning is a primary benchmarked capability for VLMs .",
+      "paper": "Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment"
+    },
+    {
+      "text": "Alignment is framed as the core problem for cross-modal understanding; improving alignment yields gains across VQA, captioning, and grounding  .",
+      "paper": "Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment"
+    },
+    {
+      "text": "Captioning tasks are core VL capabilities included in the evaluation suite .",
+      "paper": "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models"
+    },
+    {
+      "text": "Captioning tasks are core VL capabilities included in the evaluation suite .",
+      "paper": "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models"
+    },
+    {
+      "text": "Captioning is used alongside VQA in the multimodal in‑context evaluations.",
+      "paper": "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens"
+    },
+    {
+      "text": "General capability of Vid‑LLMs to analyze video data and extend reasoning and interactive skills to video‑level tasks (e.g., captioning, QA), establishing video‑language correspondence .",
+      "paper": "SlowFocus: Enhancing Fine-grained Temporal Understanding in Video LLM"
+    },
+    {
+      "text": "Integrating high-quality video-caption data improves alignment and yields consistent gains across LVLMs and benchmarks, especially those requiring temporal understanding.",
+      "paper": "ShareGPT4Video: Improving Video Understanding and Generation with Better Captions"
+    },
+    {
+      "text": "Movie scene descriptions require deeper contextual understanding than general-purpose video captioning .",
+      "paper": "CALVIN: Improved Contextual Video Captioning via Instruction Tuning"
+    },
+    {
+      "text": "Narrative focus on actions and outcomes important to the plot distinguishes contextual captioning from generic captioning  .",
+      "paper": "CALVIN: Improved Contextual Video Captioning via Instruction Tuning"
+    },
+    {
+      "text": "A video projection layer integrates vision tokens into an LLM; training unifies image QA and video captioning  .",
+      "paper": "CALVIN: Improved Contextual Video Captioning via Instruction Tuning"
+    },
+    {
+      "text": "REG requires both captioning and visual grounding abilities .",
+      "paper": "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models"
+    },
+    {
+      "text": "Ability for visual perception and cognition in tasks like VQA and captioning .",
+      "paper": "Unveiling Encoder-Free Vision-Language Models"
+    },
+    {
+      "text": "Understanding images at image-level and region-level for VQA, captioning, and commonsense reasoning; established via image/region vision-language alignment  .",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks"
+    },
+    {
+      "text": "Visual description (captioning) is an assessed capability in LVLM benchmarks .",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models"
+    },
+    {
+      "text": "Image-level tasks like caption and conversation are included in the unified tasks .",
+      "paper": "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding"
+    },
+    {
+      "text": "Object-level tasks like region caption and visual prompt-based conversation are unified .",
+      "paper": "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding"
+    },
+    {
+      "text": "Zero-shot audio captioning is defined as generating audio captions without training on manually assembled audio-caption pairs, a specific setting of the audio captioning construct .",
+      "paper": "An eye for an ear: zero-shot audio description leveraging an image captioner with audio-visual token distribution matching"
+    },
+    {
+      "text": "Benchmarks are jointly used under 'Common Sense and Language Understanding' in the figure caption",
+      "paper": "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models"
+    }
+  ],
+  "definition_count": 24,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-Context Learning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "CALVIN: Improved Contextual Video Captioning via Instruction Tuning",
+      "evidence": "Few-shot fine-tuning at test time improves captioning versus no-context scenarios ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models",
+      "evidence": "Benchmarks are jointly used under 'Common Sense and Language Understanding' in the figure caption"
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Logical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Humor in AI: Massive Scale Crowd-Sourced Preferences and Benchmarks for Cartoon Captioning",
+      "evidence": "Logical reasoning is cited as a needed capability for caption generation."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "VLM4Bio: A Benchmark Dataset to Evaluate Pretrained Vision-Language Models for Trait Discovery from Biological Images",
+      "evidence": "Contextual, dense-caption, and zero-shot CoT prompting are examined as ways to enhance reasoning performance on biological questions ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "LLMs Can Evolve Continually on Modality for $\\mathbb{X}$-Modal Reasoning",
+      "evidence": "Image captioning on COCO is included among reported metrics to evaluate multimodal understanding/generation ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "LLMs Can Evolve Continually on Modality for $\\mathbb{X}$-Modal Reasoning",
+      "evidence": "Audio captioning on Clotho is reported, reflecting audio‑language understanding/generation ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment",
+      "evidence": "Captioning is a primary benchmarked capability for VLMs ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment",
+      "evidence": "Alignment is framed as the core problem for cross-modal understanding; improving alignment yields gains across VQA, captioning, and grounding  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models",
+      "evidence": "Captioning tasks are core VL capabilities included in the evaluation suite ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens",
+      "evidence": "Captioning is used alongside VQA in the multimodal in‑context evaluations."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Video Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "SlowFocus: Enhancing Fine-grained Temporal Understanding in Video LLM",
+      "evidence": "General capability of Vid‑LLMs to analyze video data and extend reasoning and interactive skills to video‑level tasks (e.g., captioning, QA), establishing video‑language correspondence ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Video Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "ShareGPT4Video: Improving Video Understanding and Generation with Better Captions",
+      "evidence": "Integrating high-quality video-caption data improves alignment and yields consistent gains across LVLMs and benchmarks, especially those requiring temporal understanding."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Video Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "CALVIN: Improved Contextual Video Captioning via Instruction Tuning",
+      "evidence": "Movie scene descriptions require deeper contextual understanding than general-purpose video captioning ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Video Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "CALVIN: Improved Contextual Video Captioning via Instruction Tuning",
+      "evidence": "Narrative focus on actions and outcomes important to the plot distinguishes contextual captioning from generic captioning  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Video Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "CALVIN: Improved Contextual Video Captioning via Instruction Tuning",
+      "evidence": "A video projection layer integrates vision tokens into an LLM; training unifies image QA and video captioning  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Grounding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models",
+      "evidence": "REG requires both captioning and visual grounding abilities ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Perception",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Unveiling Encoder-Free Vision-Language Models",
+      "evidence": "Ability for visual perception and cognition in tasks like VQA and captioning ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "evidence": "Understanding images at image-level and region-level for VQA, captioning, and commonsense reasoning; established via image/region vision-language alignment  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models",
+      "evidence": "Visual description (captioning) is an assessed capability in LVLM benchmarks ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding",
+      "evidence": "Image-level tasks like caption and conversation are included in the unified tasks ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding",
+      "evidence": "Object-level tasks like region caption and visual prompt-based conversation are unified ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Zero-shot Generalization",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "An eye for an ear: zero-shot audio description leveraging an image captioner with audio-visual token distribution matching",
+      "evidence": "Zero-shot audio captioning is defined as generating audio captions without training on manually assembled audio-caption pairs, a specific setting of the audio captioning construct ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models",
+      "evidence": "Benchmarks are jointly used under 'Common Sense and Language Understanding' in the figure caption"
+    }
+  ],
+  "relationship_count": 23,
+  "incoming_relationship_count": 22,
+  "outgoing_relationship_count": 1
+}

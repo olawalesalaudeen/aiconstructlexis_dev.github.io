@@ -1,0 +1,2409 @@
+{
+  "canonical_name": "Commonsense Reasoning",
+  "type": "construct",
+  "canonical_definition": "Commonsense Reasoning refers to the ability to reason about everyday physical and social situations using general world knowledge, often operationalized via benchmarks like HellaSwag, PIQA, Winogrande, or ARC that assess plausibility judgments, multi-hop inference, or zero-shot task performance. While some definitions emphasize selecting contextually appropriate continuations or answers requiring implicit reasoning strategies, others extend to multimodal contexts (e.g., visual commonsense for scene interpretation) or structured reasoning over explanation graphs, reflecting variations in scope but shared focus on grounding in everyday knowledge.",
+  "expert_reviewed": false,
+  "names": [
+    "Commonsense Reasoning"
+  ],
+  "papers": [
+    "3-in-1: 2D Rotary Adaptation for Efficient Finetuning, Efficient Batching and Composability",
+    "AdaSociety: An Adaptive Environment with Social Structures for Multi-Agent Decision-Making",
+    "Adaptable Logical Control for Large Language Models",
+    "Adversarial Moment-Matching Distillation of Large Language Models",
+    "AmoebaLLM: Constructing Any-Shape Large Language Models for Efficient and Instant Deployment",
+    "AutoMix: Automatically Mixing Language Models",
+    "Automating Dataset Updates Towards Reliable and Timely Evaluation of Large Language Models",
+    "BERTs are Generative In-Context Learners",
+    "Benchmarking LLMs via Uncertainty Quantification",
+    "Chain-of-Thought Reasoning Without Prompting",
+    "Cooperation, Competition, and Maliciousness: LLM-Stakeholders Interactive Negotiation",
+    "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models",
+    "DHA: Learning Decoupled-Head Attention from Transformer Checkpoints via Adaptive Heads Fusion",
+    "DISP-LLM: Dimension-Independent Structural Pruning for Large Language Models",
+    "Dataset Decomposition: Faster LLM Training with Variable Sequence Length Curriculum",
+    "Decompose, Analyze and Rethink: Solving Intricate Problems with Human-like Reasoning Cycle",
+    "DropBP: Accelerating Fine-Tuning of Large Language Models by Dropping Backward Propagation",
+    "Efficient Contextual LLM Cascades through Budget-Constrained Policy Learning",
+    "Ensemble Learning for Heterogeneous Large Language Models with Deep Parallel Collaboration",
+    "FouRA: Fourier Low-Rank Adaptation",
+    "G-Retriever: Retrieval-Augmented Generation for Textual Graph Understanding and Question Answering",
+    "GAMap: Zero-Shot Object Goal Navigation with Multi-Scale Geometric-Affordance Guidance",
+    "Graph-based Unsupervised Disentangled Representation Learning via Multimodal Large Language Models",
+    "Instruction Tuning With Loss Over Instructions",
+    "KnowGPT: Knowledge Graph based Prompting for Large Language Models",
+    "KptLLM: Unveiling the Power of Large Language Model for Keypoint Comprehension",
+    "Learning to Reason via Program Generation, Emulation, and Search",
+    "LoFiT: Localized Fine-tuning on LLM Representations",
+    "MLLM-CompBench: A Comparative Reasoning Benchmark for Multimodal LLMs",
+    "MMBench-Video: A Long-Form Multi-Shot Benchmark for Holistic Video Understanding",
+    "MO-DDN: A Coarse-to-Fine Attribute-based Exploration Agent for Multi-Object Demand-driven Navigation",
+    "MambaTree: Tree Topology is All You Need in State Space Model",
+    "MindMerger: Efficiently Boosting LLM Reasoning in non-English Languages",
+    "MiniCache: KV Cache Compression in Depth Dimension for Large Language Models",
+    "MixEval: Deriving Wisdom of the Crowd from LLM Benchmark Mixtures",
+    "Mixture of Demonstrations for In-Context Learning",
+    "Multi-modal Situated Reasoning in 3D Scenes",
+    "NewTerm: Benchmarking Real-Time New Terms for Large Language Models with Annual Updates",
+    "Not All Tokens Are What You Need for Pretraining",
+    "Observational Scaling Laws and the Predictability of Langauge Model Performance",
+    "OneBit: Towards Extremely Low-bit Large Language Models",
+    "Order-Independence Without Fine Tuning",
+    "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation",
+    "Reasons and Solutions for the Decline in Model Performance after Editing",
+    "Reinforcing LLM Agents via Policy Optimization with Action Decomposition",
+    "Reranking Laws for Language Generation: A Communication-Theoretic Perspective",
+    "Richelieu: Self-Evolving LLM-Based Agents for AI Diplomacy",
+    "RoboMamba: Efficient Vision-Language-Action Model for Robotic Reasoning and Manipulation",
+    "S$^{2}$FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity",
+    "SG-Nav: Online 3D Scene Graph Prompting for LLM-based Zero-shot Object Navigation",
+    "SGLang: Efficient Execution of Structured Language Model Programs",
+    "SIRIUS : Contexual Sparisty with Correction for Efficient LLMs",
+    "SVFT: Parameter-Efficient Fine-Tuning with Singular Vectors",
+    "Search for Efficient Large Language Models",
+    "Self-Guiding Exploration for Combinatorial Problems",
+    "Self-playing Adversarial Language Game Enhances LLM Reasoning",
+    "Should We Really Edit Language Models? On the Evaluation of Edited Language Models",
+    "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+    "SlimGPT: Layer-wise Structured Pruning for Large Language Models",
+    "Sparse High Rank Adapters",
+    "Sparse maximal update parameterization: A holistic approach to sparse training dynamics",
+    "Spectral Editing of Activations for Large Language Model Alignment",
+    "Stacking Your Transformers: A Closer Look at Model Growth for Efficient LLM Pre-Training",
+    "StrategyLLM: Large Language Models as Strategy Generators, Executors, Optimizers, and Evaluators for Problem Solving",
+    "TAIA: Large Language Models are Out-of-Distribution Data Learners",
+    "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models",
+    "Unchosen Experts Can Contribute Too: Unleashing MoE Models’ Power by Self-Contrast",
+    "Unveiling Causal Reasoning in Large Language Models: Reality or Mirage?",
+    "Visual Riddles: a Commonsense and World Knowledge Challenge for Large Vision and Language Models",
+    "WizardArena: Post-training Large Language Models via Simulated Offline Chatbot Arena",
+    "Would I Lie To You? Inference Time Alignment of Language Models using Direct Preference Heads"
+  ],
+  "paper_count": 71,
+  "group_ids": [
+    137,
+    212,
+    258,
+    308,
+    405,
+    502,
+    614,
+    799,
+    890,
+    970,
+    980,
+    1002,
+    1134,
+    1302,
+    1308,
+    1344,
+    1390,
+    1492,
+    1498,
+    1515,
+    1830,
+    1835,
+    1966,
+    1979,
+    2037,
+    2221,
+    2228,
+    2261,
+    2383,
+    2522,
+    2783,
+    2941,
+    2956,
+    3319,
+    3680,
+    3759,
+    4062,
+    4208,
+    4237,
+    4264,
+    4272,
+    4300,
+    4370,
+    4385,
+    4823,
+    4905,
+    4916,
+    5086,
+    5091,
+    5101,
+    5236,
+    5343,
+    5385,
+    5488,
+    5495,
+    5553,
+    5636,
+    5738,
+    5763,
+    6038,
+    6043,
+    6297,
+    6343,
+    6347
+  ],
+  "definitions": [
+    {
+      "text": "Commonsense Reasoning",
+      "paper": "DropBP: Accelerating Fine-Tuning of Large Language Models by Dropping Backward Propagation"
+    },
+    {
+      "text": "Commonsense Reasoning",
+      "paper": "Stacking Your Transformers: A Closer Look at Model Growth for Efficient LLM Pre-Training"
+    },
+    {
+      "text": "Commonsense Reasoning",
+      "paper": "SVFT: Parameter-Efficient Fine-Tuning with Singular Vectors"
+    },
+    {
+      "text": "Commonsense Reasoning",
+      "paper": "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models"
+    },
+    {
+      "text": "Commonsense Reasoning",
+      "paper": "Adversarial Moment-Matching Distillation of Large Language Models"
+    },
+    {
+      "text": "Commonsense Reasoning",
+      "paper": "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation"
+    },
+    {
+      "text": "Commonsense Reasoning",
+      "paper": "Sparse High Rank Adapters"
+    },
+    {
+      "text": "Commonsense Reasoning",
+      "paper": "DHA: Learning Decoupled-Head Attention from Transformer Checkpoints via Adaptive Heads Fusion"
+    },
+    {
+      "text": "Ability to reason about everyday physical and social situations, operationalized via a suite of six zero-shot tasks (e.g., HellaSwag, PIQA, Winogrande, BoolQ, ARC-e/c) ",
+      "paper": "OneBit: Towards Extremely Low-bit Large Language Models"
+    },
+    {
+      "text": "Capability to answer simple commonsense queries such as determining year parity. ",
+      "paper": "Chain-of-Thought Reasoning Without Prompting"
+    },
+    {
+      "text": "Ability to select plausible continuations or answers requiring everyday world knowledge .",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment"
+    },
+    {
+      "text": "Using everyday knowledge and experience to reason; provided as background context on reasoning types in LLMs .",
+      "paper": "Unveiling Causal Reasoning in Large Language Models: Reality or Mirage?"
+    },
+    {
+      "text": "Use of commonsense knowledge to assist localization and to distinguish visually ambiguous keypoints (e.g., left vs. right). ",
+      "paper": "KptLLM: Unveiling the Power of Large Language Model for Keypoint Comprehension"
+    },
+    {
+      "text": "Inferring multi‑hop strategies to answer questions (e.g., StrategyQA) .",
+      "paper": "StrategyLLM: Large Language Models as Strategy Generators, Executors, Optimizers, and Evaluators for Problem Solving"
+    },
+    {
+      "text": "Ability to answer questions requiring implicit reasoning strategies (evaluated via StrategyQA accuracy)  .",
+      "paper": "Unchosen Experts Can Contribute Too: Unleashing MoE Models’ Power by Self-Contrast"
+    },
+    {
+      "text": "Background commonsense needed to infer temporal order or changes across images .",
+      "paper": "MLLM-CompBench: A Comparative Reasoning Benchmark for Multimodal LLMs"
+    },
+    {
+      "text": "Structured commonsense reasoning over explanation graphs. ",
+      "paper": "G-Retriever: Retrieval-Augmented Generation for Textual Graph Understanding and Question Answering"
+    },
+    {
+      "text": "Leveraging general world knowledge for categories like affordance and room type, where zero-shot models perform relatively well .",
+      "paper": "Multi-modal Situated Reasoning in 3D Scenes"
+    },
+    {
+      "text": "Ability to apply everyday and physical commonsense to choose plausible answers in natural language settings .",
+      "paper": "Not All Tokens Are What You Need for Pretraining"
+    },
+    {
+      "text": "Reasoning about everyday physical and social situations (e.g., ARC, HellaSwag, PIQA) .",
+      "paper": "WizardArena: Post-training Large Language Models via Simulated Offline Chatbot Arena"
+    },
+    {
+      "text": "Reasoning about everyday knowledge not tightly tied to explicit context; noted as out of scope for this method. ",
+      "paper": "AutoMix: Automatically Mixing Language Models"
+    },
+    {
+      "text": "Everyday/social commonsense understanding required by datasets like SIQA .",
+      "paper": "LoFiT: Localized Fine-tuning on LLM Representations"
+    },
+    {
+      "text": "Reasoning about everyday situations and implicit knowledge, as instantiated in commonsense QA/abduction tasks. ",
+      "paper": "Mixture of Demonstrations for In-Context Learning"
+    },
+    {
+      "text": "Reasoning about everyday situations, operationalized via common sense benchmarks in the LM Evaluation Harness .",
+      "paper": "Reinforcing LLM Agents via Policy Optimization with Action Decomposition"
+    },
+    {
+      "text": "Generating text that reflects commonsense relations when conditioned on keyphrases (CommonGen) .",
+      "paper": "Adaptable Logical Control for Large Language Models"
+    },
+    {
+      "text": "A subtype of reasoning assessed via tasks like BoolQ, PIQA, and HellaSwag; the paper reports average commonsense reasoning accuracy and uses it in accuracy–latency trade-offs  .",
+      "paper": "AmoebaLLM: Constructing Any-Shape Large Language Models for Efficient and Instant Deployment"
+    },
+    {
+      "text": "Analyzing commonsense relations such as object co‑occurrence to guide waypoint selection .",
+      "paper": "GAMap: Zero-Shot Object Goal Navigation with Multi-Scale Geometric-Affordance Guidance"
+    },
+    {
+      "text": "Ability to infer everyday plausibility and commonsense; associated in the paper with benchmarks like HellaSwag and CommonSenseQA .",
+      "paper": "MixEval: Deriving Wisdom of the Crowd from LLM Benchmark Mixtures"
+    },
+    {
+      "text": "Everyday multi-step inference within the broader reasoning capability .",
+      "paper": "Decompose, Analyze and Rethink: Solving Intricate Problems with Human-like Reasoning Cycle"
+    },
+    {
+      "text": "Everyday plausibility and commonsense inference assessed via choice/blank‑filling tasks (e.g., HellaSwag, WinoGrande) .",
+      "paper": "Reasons and Solutions for the Decline in Model Performance after Editing"
+    },
+    {
+      "text": "Visual common sense understanding used in general scenarios and robotic contexts .",
+      "paper": "RoboMamba: Efficient Vision-Language-Action Model for Robotic Reasoning and Manipulation"
+    },
+    {
+      "text": "Ability to integrate necessary commonsense knowledge into reasoning processes. ",
+      "paper": "MMBench-Video: A Long-Form Multi-Shot Benchmark for Holistic Video Understanding"
+    },
+    {
+      "text": "Emergent reasoning ability in LLMs that benefits communication and planning in agents .",
+      "paper": "Richelieu: Self-Evolving LLM-Based Agents for AI Diplomacy"
+    },
+    {
+      "text": "Ability to reason about everyday scenarios, evaluated with WSC, WinoGrande, ARC, and CoQA .",
+      "paper": "Instruction Tuning With Loss Over Instructions"
+    },
+    {
+      "text": "Performance on common reasoning zero-shot classification tasks.",
+      "paper": "Search for Efficient Large Language Models"
+    },
+    {
+      "text": "Ability to answer commonsense questions expressed in natural language .",
+      "paper": "Should We Really Edit Language Models? On the Evaluation of Edited Language Models"
+    },
+    {
+      "text": "Reasoning about everyday situations and pragmatic knowledge assessed via multiple-choice tasks.",
+      "paper": "S$^{2}$FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity"
+    },
+    {
+      "text": "Explicit task category in the experiments (e.g., PIQA, SIQA, OBQA)  .",
+      "paper": "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models"
+    },
+    {
+      "text": "Reasoning about everyday physical/commonsense situations. ",
+      "paper": "Ensemble Learning for Heterogeneous Large Language Models with Deep Parallel Collaboration"
+    },
+    {
+      "text": "Applying everyday commonsense to interpret and explain visual scenes .",
+      "paper": "Visual Riddles: a Commonsense and World Knowledge Challenge for Large Vision and Language Models"
+    },
+    {
+      "text": "Degree of common sense exhibited by the model on everyday knowledge tasks .",
+      "paper": "BERTs are Generative In-Context Learners"
+    },
+    {
+      "text": "Answering multiple-choice questions about everyday situations using commonsense knowledge. ",
+      "paper": "Efficient Contextual LLM Cascades through Budget-Constrained Policy Learning"
+    },
+    {
+      "text": "Ability to apply everyday knowledge to answer questions across benchmarks such as BoolQ, PIQA, SIQA, HellaSwag, WinoGrande, ARC, and OBQA; evaluated with accuracy.  ",
+      "paper": "FouRA: Fourier Low-Rank Adaptation"
+    },
+    {
+      "text": "Ability to apply common‑sense knowledge; PIQA specifically targets physical common‑sense. ",
+      "paper": "DISP-LLM: Dimension-Independent Structural Pruning for Large Language Models"
+    },
+    {
+      "text": "Operationalized via downstream tasks that collectively test common sense reasoning ",
+      "paper": "Sparse maximal update parameterization: A holistic approach to sparse training dynamics"
+    },
+    {
+      "text": "Inferring everyday plausibility to complete sentences and scenarios. ",
+      "paper": "SGLang: Efficient Execution of Structured Language Model Programs"
+    },
+    {
+      "text": "Commonsense inference and sentence-completion abilities. ",
+      "paper": "SimPO: Simple Preference Optimization with a Reference-Free Reward"
+    },
+    {
+      "text": "Reasoning over everyday knowledge and implicit strategies (e.g., CSQA, StrategyQA, BIG-bench Date/Sports). ",
+      "paper": "SIRIUS : Contexual Sparisty with Correction for Efficient LLMs"
+    },
+    {
+      "text": "Use of commonsense knowledge to answer questions; CommonsenseQA targets this capability. ",
+      "paper": "Order-Independence Without Fine Tuning"
+    },
+    {
+      "text": "Ability to answer everyday and scientific commonsense questions (e.g., physical, causal, or general-knowledge reasoning) .",
+      "paper": "MiniCache: KV Cache Compression in Depth Dimension for Large Language Models"
+    },
+    {
+      "text": "Reasoning about everyday commonsense in multilingual settings (task referenced as X‑CSQA) .",
+      "paper": "MindMerger: Efficiently Boosting LLM Reasoning in non-English Languages"
+    },
+    {
+      "text": "Applying general world knowledge to interpret issue and party semantics in negotiation tasks .",
+      "paper": "Cooperation, Competition, and Maliciousness: LLM-Stakeholders Interactive Negotiation"
+    },
+    {
+      "text": "Ability to answer questions requiring background commonsense knowledge; assessed across eight representative tasks. ",
+      "paper": "3-in-1: 2D Rotary Adaptation for Efficient Finetuning, Efficient Batching and Composability"
+    },
+    {
+      "text": "LLM addresses various commonsense reasoning problems in the zero-shot setting .",
+      "paper": "SG-Nav: Online 3D Scene Graph Prompting for LLM-based Zero-shot Object Navigation"
+    },
+    {
+      "text": "LLMs are reported to show human‑comparable performance in commonsense reasoning .",
+      "paper": "MO-DDN: A Coarse-to-Fine Attribute-based Exploration Agent for Multi-Object Demand-driven Navigation"
+    },
+    {
+      "text": "Embedded everyday knowledge used to guide high‑level plans and decisions in interactive tasks. Evidence: the authors attribute LLM‑C’s strong results to embedded commonsense reasoning. ",
+      "paper": "AdaSociety: An Adaptive Environment with Social Structures for Multi-Agent Decision-Making"
+    },
+    {
+      "text": "Ability to understand and reason about relationships between concepts/events using commonsense and background knowledge .",
+      "paper": "Benchmarking LLMs via Uncertainty Quantification"
+    },
+    {
+      "text": "Using everyday knowledge to resolve ambiguity and select plausible answers. ",
+      "paper": "Self-playing Adversarial Language Game Enhances LLM Reasoning"
+    },
+    {
+      "text": "Ability to judge the plausibility of sentences (here, containing new terms) without helpful context .",
+      "paper": "NewTerm: Benchmarking Real-Time New Terms for Large Language Models with Annual Updates"
+    },
+    {
+      "text": "Everyday reasoning ability assessed by ARC‑Challenge, HellaSwag, and Winogrande .",
+      "paper": "Observational Scaling Laws and the Predictability of Langauge Model Performance"
+    },
+    {
+      "text": "General knowledge‑driven reasoning enabling discovery and ranking of semantic interrelations among attributes when leveraged within GEM’s MLLM branch ",
+      "paper": "Graph-based Unsupervised Disentangled Representation Learning via Multimodal Large Language Models"
+    },
+    {
+      "text": "Ability to answer commonsense questions as evaluated by benchmarks like CommonsenseQA and OpenBookQA .",
+      "paper": "KnowGPT: Knowledge Graph based Prompting for Large Language Models"
+    },
+    {
+      "text": "Capability assessed under zero-shot evaluations on a suite of commonsense reasoning datasets (BoolQ, PIQA, HellaSwag, WinoGrande, ARC-easy, ARC-challenge, OpenBookQA). ",
+      "paper": "SlimGPT: Layer-wise Structured Pruning for Large Language Models"
+    },
+    {
+      "text": "Capability assessed via a category of benchmarks grouped under regular evaluations. ",
+      "paper": "Dataset Decomposition: Faster LLM Training with Variable Sequence Length Curriculum"
+    },
+    {
+      "text": "Using broad world knowledge to answer questions (e.g., CommonsenseQA, Social IQa) .",
+      "paper": "Learning to Reason via Program Generation, Emulation, and Search"
+    },
+    {
+      "text": "Applying everyday world knowledge to choose plausible answers. ",
+      "paper": "TAIA: Large Language Models are Out-of-Distribution Data Learners"
+    },
+    {
+      "text": "Discernment of plausible vs. implausible statements about everyday/specific entities; included among expected LLM abilities .",
+      "paper": "Automating Dataset Updates Towards Reliable and Timely Evaluation of Large Language Models"
+    },
+    {
+      "text": "Everyday knowledge reasoning assessed on common LLM benchmarks .",
+      "paper": "Self-Guiding Exploration for Combinatorial Problems"
+    },
+    {
+      "text": "Ability to apply everyday knowledge and infer implicit facts; ARC is cited as a reasoning challenge and related benchmarks are used.  ",
+      "paper": "MambaTree: Tree Topology is All You Need in State Space Model"
+    },
+    {
+      "text": "Ability to answer commonsense questions; evaluated with self‑consistency on StrategyQA  .",
+      "paper": "Reranking Laws for Language Generation: A Communication-Theoretic Perspective"
+    },
+    {
+      "text": "Reasoning about everyday situations; evaluated with sentence-completion style tasks (e.g., HellaSwag, WinoGrande, PIQA)  .",
+      "paper": "Would I Lie To You? Inference Time Alignment of Language Models using Direct Preference Heads"
+    }
+  ],
+  "definition_count": 71,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Problem Solving Ability",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "OneBit: Towards Extremely Low-bit Large Language Models",
+      "evidence": "The paper analyzes problem solving via two crucial abilities: commonsense reasoning and world knowledge"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande Zero‑shot Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "OneBit: Towards Extremely Low-bit Large Language Models",
+      "evidence": "Commonsense reasoning is evaluated using six zero-shot tasks including Winogrande"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HellaSwag Zero‑shot Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "OneBit: Towards Extremely Low-bit Large Language Models",
+      "evidence": "HellaSwag is one of the six zero-shot tasks used to assess commonsense reasoning"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA Zero‑shot Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "OneBit: Towards Extremely Low-bit Large Language Models",
+      "evidence": "PIQA is included among the commonsense reasoning tasks"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BoolQ Zero-shot Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "OneBit: Towards Extremely Low-bit Large Language Models",
+      "evidence": "BoolQ is part of the six zero-shot tasks used in the commonsense reasoning suite"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-e Zero-shot Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "OneBit: Towards Extremely Low-bit Large Language Models",
+      "evidence": "ARC-e is reported among the zero-shot tasks used to evaluate capabilities"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-e Zero-shot Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "OneBit: Towards Extremely Low-bit Large Language Models",
+      "evidence": "ARC-c is reported among the zero-shot tasks used to evaluate capabilities"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Average Zero‑shot Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "OneBit: Towards Extremely Low-bit Large Language Models",
+      "evidence": "The paper reports the average accuracy across the six zero-shot tasks as a summary of capability retention"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Year Parity Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Chain-of-Thought Reasoning Without Prompting",
+      "evidence": "Year Parity serves as a commonsense reasoning benchmark."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HellaSwag Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment",
+      "evidence": "HellaSwag is used to assess commonsense reasoning as a control task ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment",
+      "evidence": "Linear SEA edits to improve truthfulness have only limited impact on other capabilities such as commonsense reasoning ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment",
+      "evidence": "Linear SEA edits to improve truthfulness have only limited impact on other capabilities such as commonsense reasoning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Keypoint Localization",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "KptLLM: Unveiling the Power of Large Language Model for Keypoint Comprehension",
+      "evidence": "Harnessing LLM commonsense assists localization of novel categories."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Spatial Disambiguation",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "KptLLM: Unveiling the Power of Large Language Model for Keypoint Comprehension",
+      "evidence": "Commonsense knowledge helps distinguish visually ambiguous keypoints (e.g., left/right)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "StrategyLLM: Large Language Models as Strategy Generators, Executors, Optimizers, and Evaluators for Problem Solving",
+      "evidence": "Evaluations span commonsense reasoning tasks ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "StrategyQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "StrategyLLM: Large Language Models as Strategy Generators, Executors, Optimizers, and Evaluators for Problem Solving",
+      "evidence": "StrategyQA requires multi‑hop commonsense inference ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Date Understanding (DU) Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "StrategyLLM: Large Language Models as Strategy Generators, Executors, Optimizers, and Evaluators for Problem Solving",
+      "evidence": "DU assesses inferring dates from context (commonsense) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Unchosen Experts Can Contribute Too: Unleashing MoE Models’ Power by Self-Contrast",
+      "evidence": "Paper frames commonsense reasoning as a specific reasoning subtype and reports explicit gains on StrategyQA  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "StrategyQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Unchosen Experts Can Contribute Too: Unleashing MoE Models’ Power by Self-Contrast",
+      "evidence": "StrategyQA evaluates commonsense reasoning with implicit strategies; accuracy is reported; SCMoE improves this score   ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Temporal Relativity",
+      "other_type": "constructs",
+      "relationship_type": "depends-on",
+      "paper": "MLLM-CompBench: A Comparative Reasoning Benchmark for Multimodal LLMs",
+      "evidence": "Temporal relativity requires commonsense ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Graph Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "G-Retriever: Retrieval-Augmented Generation for Textual Graph Understanding and Question Answering",
+      "evidence": "GraphQA targets commonsense reasoning as one of the core graph QA domains."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ExplaGraphs Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "G-Retriever: Retrieval-Augmented Generation for Textual Graph Understanding and Question Answering",
+      "evidence": "ExplaGraphs evaluates structured commonsense reasoning with Accuracy."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MSQA Others Correctness (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Multi-modal Situated Reasoning in 3D Scenes",
+      "evidence": "Zero-shot models excel on Others (affordance, room type), attributed to LLMs’ natural language proficiency ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Not All Tokens Are What You Need for Pretraining",
+      "evidence": "General evaluation cites PIQA as a commonsense benchmark used in the paper’s suite  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HellaSwag Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Not All Tokens Are What You Need for Pretraining",
+      "evidence": "General evaluation cites HellaSwag as a commonsense benchmark used in the paper’s suite  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Not All Tokens Are What You Need for Pretraining",
+      "evidence": "General evaluation cites Winogrande as a commonsense benchmark used in the paper’s suite  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "WizardArena: Post-training Large Language Models via Simulated Offline Chatbot Arena",
+      "evidence": "Reasoning category includes commonsense benchmarks ARC, HellaSwag, PIQA ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HellaSwag Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "WizardArena: Post-training Large Language Models via Simulated Offline Chatbot Arena",
+      "evidence": "HellaSwag is listed under reasoning (commonsense) benchmarks ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "WizardArena: Post-training Large Language Models via Simulated Offline Chatbot Arena",
+      "evidence": "PIQA is cited as a physical commonsense reasoning benchmark ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-easy Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "WizardArena: Post-training Large Language Models via Simulated Offline Chatbot Arena",
+      "evidence": "PIQA is cited as a physical commonsense reasoning benchmark ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Self-Verification (Answer Consistency Judgement)",
+      "other_type": "constructs",
+      "relationship_type": "not-designed-for",
+      "paper": "AutoMix: Automatically Mixing Language Models",
+      "evidence": "The authors note the approach does not include commonsense reasoning tasks."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "LoFiT: Localized Fine-tuning on LLM Representations",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SIQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "LoFiT: Localized Fine-tuning on LLM Representations",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge Retrieval",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "LoFiT: Localized Fine-tuning on LLM Representations",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CommonsenseQA (CMSQA) Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Mixture of Demonstrations for In-Context Learning",
+      "evidence": "CMSQA is listed as a Commonsense Reasoning dataset (Table 1)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HellaSwag Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Mixture of Demonstrations for In-Context Learning",
+      "evidence": "HellaSwag is listed as Commonsense Reasoning (Table 1)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC Challenge Zero-shot Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Reinforcing LLM Agents via Policy Optimization with Action Decomposition",
+      "evidence": "ARC_C is included as a common sense reasoning task in the LM Evaluation Harness ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HellaSwag Zero‑shot Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Reinforcing LLM Agents via Policy Optimization with Action Decomposition",
+      "evidence": "HellaSwag is used as a common sense reasoning benchmark ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA Zero‑shot Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Reinforcing LLM Agents via Policy Optimization with Action Decomposition",
+      "evidence": "PIQA is included among common sense reasoning tasks in the evaluation harness ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Natural Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Reinforcing LLM Agents via Policy Optimization with Action Decomposition",
+      "evidence": "Common Sense Reasoning tasks are presented as part of the LM Evaluation Harness used to assess general language ability  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CommonGen Performance",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Adaptable Logical Control for Large Language Models",
+      "evidence": "CommonGen evaluates generative commonsense reasoning with keyphrase constraints using standard text quality metrics and constraint rate ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "AmoebaLLM: Constructing Any-Shape Large Language Models for Efficient and Instant Deployment",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Average Commonsense Reasoning Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "AmoebaLLM: Constructing Any-Shape Large Language Models for Efficient and Instant Deployment",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BoolQ Zero-shot Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "AmoebaLLM: Constructing Any-Shape Large Language Models for Efficient and Instant Deployment",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BoolQ",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "AmoebaLLM: Constructing Any-Shape Large Language Models for Efficient and Instant Deployment",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "AmoebaLLM: Constructing Any-Shape Large Language Models for Efficient and Instant Deployment",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HellaSwag Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "AmoebaLLM: Constructing Any-Shape Large Language Models for Efficient and Instant Deployment",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Computational Efficiency",
+      "other_type": "constructs",
+      "relationship_type": "trade-off-with",
+      "paper": "AmoebaLLM: Constructing Any-Shape Large Language Models for Efficient and Instant Deployment",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "GAMap: Zero-Shot Object Goal Navigation with Multi-Scale Geometric-Affordance Guidance",
+      "evidence": "Prior work “exploited the reasoning capabilities of LLMs to strategically select waypoints by analyzing commonsense, such as object co‑occurrence relationships” ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HellaSwag Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MixEval: Deriving Wisdom of the Crowd from LLM Benchmark Mixtures",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CommonsenseQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MixEval: Deriving Wisdom of the Crowd from LLM Benchmark Mixtures",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Commonsense Reasoning (0-shot) Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "DropBP: Accelerating Fine-Tuning of Large Language Models by Dropping Backward Propagation",
+      "evidence": "Across settings, DropBP maintains comparable accuracy on the 0-shot commonsense reasoning tasks, with deviations less than 1% in several cases ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Decompose, Analyze and Rethink: Solving Intricate Problems with Human-like Reasoning Cycle",
+      "evidence": "Intricate reasoning includes commonsense reasoning as a category ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Robustness to Knowledge Editing (Post‑edit Performance Stability)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Reasons and Solutions for the Decline in Model Performance after Editing",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HellaSwag Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Reasons and Solutions for the Decline in Model Performance after Editing",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Reasons and Solutions for the Decline in Model Performance after Editing",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning (General)",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "RoboMamba: Efficient Vision-Language-Action Model for Robotic Reasoning and Manipulation",
+      "evidence": "The model aims to possess visual common sense alongside robotic-related reasoning, both contributing to overall reasoning ability ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OKVQA Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "RoboMamba: Efficient Vision-Language-Action Model for Robotic Reasoning and Manipulation",
+      "evidence": "OKVQA probes common-sense knowledge in VQA; the paper reports OKVQA as part of its general reasoning evaluation (Table 1) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "POPE Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "RoboMamba: Efficient Vision-Language-Action Model for Robotic Reasoning and Manipulation",
+      "evidence": "POPE is included among general reasoning/robustness metrics reported (Table 1) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "MMBench-Video: A Long-Form Multi-Shot Benchmark for Holistic Video Understanding",
+      "evidence": "Commonsense Reasoning is added as an L-2 reasoning capability in the taxonomy."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMBench-Video Commonsense Reasoning Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MMBench-Video: A Long-Form Multi-Shot Benchmark for Holistic Video Understanding",
+      "evidence": "Commonsense Reasoning is explicitly scored as part of the taxonomy."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Stacking Your Transformers: A Closer Look at Model Growth for Efficient LLM Pre-Training",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Stacking Your Transformers: A Closer Look at Model Growth for Efficient LLM Pre-Training",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "General NLP Task Performance",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Stacking Your Transformers: A Closer Look at Model Growth for Efficient LLM Pre-Training",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Strategic Planning",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Richelieu: Self-Evolving LLM-Based Agents for AI Diplomacy",
+      "evidence": "LLM agents’ communication and planning benefit from emergent commonsense reasoning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Natural Language Communication",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Richelieu: Self-Evolving LLM-Based Agents for AI Diplomacy",
+      "evidence": "Communication benefits from LLMs’ emergent commonsense reasoning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Winograd Schema Challenge (WSC)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Instruction Tuning With Loss Over Instructions",
+      "evidence": "WSC is included under Commonsense Reasoning in the evaluation ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Instruction Tuning With Loss Over Instructions",
+      "evidence": "WinoGrande is included under Commonsense Reasoning in the evaluation ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Instruction Tuning With Loss Over Instructions",
+      "evidence": "ARC is included under Commonsense Reasoning in the evaluation ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CoQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Instruction Tuning With Loss Over Instructions",
+      "evidence": "CoQA is included under Commonsense Reasoning in the evaluation ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BoolQ Zero-shot Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Search for Efficient Large Language Models",
+      "evidence": "Zero-shot accuracy is reported on common reasoning datasets including BoolQ ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA Zero‑shot Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Search for Efficient Large Language Models",
+      "evidence": "Zero-shot accuracy is reported on common reasoning datasets including PIQA ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HellaSwag Zero‑shot Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Search for Efficient Large Language Models",
+      "evidence": "Zero-shot accuracy is reported on common reasoning datasets including HellaSwag ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande Zero‑shot Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Search for Efficient Large Language Models",
+      "evidence": "Zero-shot accuracy is reported on common reasoning datasets including WinoGrande ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-easy Zero-shot Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Search for Efficient Large Language Models",
+      "evidence": "Zero-shot accuracy is reported on common reasoning datasets including ARC-easy ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-easy Zero-shot Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Search for Efficient Large Language Models",
+      "evidence": "Zero-shot accuracy is reported on common reasoning datasets including ARC-challenge ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OpenBookQA Zero-shot Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Search for Efficient Large Language Models",
+      "evidence": "Zero-shot accuracy is reported on common reasoning datasets including OpenBookQA ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Average Zero‑shot Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Search for Efficient Large Language Models",
+      "evidence": "The paper computes an average across seven classification datasets as a summary metric ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "General Capabilities",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Should We Really Edit Language Models? On the Evaluation of Edited Language Models",
+      "evidence": "Commonsense reasoning is a key area of general capabilities ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CommonsenseQA 7-shot Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Should We Really Edit Language Models? On the Evaluation of Edited Language Models",
+      "evidence": "CommonsenseQA (7-shot) accuracy measures commonsense reasoning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "S$^{2}$FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity",
+      "evidence": "The paper evaluates LLMs on eight commonsense reasoning tasks as a core reasoning facet ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BoolQ Zero-shot Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "S$^{2}$FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity",
+      "evidence": "BoolQ is among the eight commonsense reasoning tasks reported in Table 1 ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BoolQ",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "S$^{2}$FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity",
+      "evidence": "BoolQ is among the eight commonsense reasoning tasks reported in Table 1 ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "S$^{2}$FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity",
+      "evidence": "PIQA is included in the commonsense evaluation suite (Table 1) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "S$^{2}$FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity",
+      "evidence": "SIQA appears in the commonsense tasks list (Table 1) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SIQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "S$^{2}$FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity",
+      "evidence": "SIQA appears in the commonsense tasks list (Table 1) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HellaSwag Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "S$^{2}$FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity",
+      "evidence": "HellaSwag is one of the core commonsense benchmarks used (Table 1) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "S$^{2}$FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity",
+      "evidence": "Wino(Grande) is listed among the eight commonsense tasks (Table 1) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-e Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "S$^{2}$FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity",
+      "evidence": "ARC-e is part of the commonsense evaluation battery (Table 1) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-e Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "S$^{2}$FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity",
+      "evidence": "ARC-c (challenge) is included in the commonsense task set (Table 1) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-c Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "S$^{2}$FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity",
+      "evidence": "ARC-c (challenge) is included in the commonsense task set (Table 1) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OpenBookQA (OBQA) Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "S$^{2}$FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity",
+      "evidence": "OBQA is part of the commonsense tasks evaluated (Table 1) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Logical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models",
+      "evidence": "Commonsense reasoning is treated as an evaluated reasoning category in the experiments (PIQA, SIQA, OBQA)  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Resource-Efficient Inference",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models",
+      "evidence": "Up to ~50% cost reductions are reported on commonsense reasoning tasks without performance degradation ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "SVFT: Parameter-Efficient Fine-Tuning with Singular Vectors",
+      "evidence": "The paper evaluates commonsense reasoning as a reasoning category alongside mathematical reasoning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BoolQ",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SVFT: Parameter-Efficient Fine-Tuning with Singular Vectors",
+      "evidence": "BOOLQ appears in the paper’s commonsense evaluation table with accuracy reported ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SVFT: Parameter-Efficient Fine-Tuning with Singular Vectors",
+      "evidence": "PIQA appears in the commonsense evaluation table with accuracy reported ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SVFT: Parameter-Efficient Fine-Tuning with Singular Vectors",
+      "evidence": "SIQA appears in the commonsense evaluation table with accuracy reported ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SIQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SVFT: Parameter-Efficient Fine-Tuning with Singular Vectors",
+      "evidence": "SIQA appears in the commonsense evaluation table with accuracy reported ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HellaSwag Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SVFT: Parameter-Efficient Fine-Tuning with Singular Vectors",
+      "evidence": "HellaSwag appears in the commonsense evaluation table with accuracy reported ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SVFT: Parameter-Efficient Fine-Tuning with Singular Vectors",
+      "evidence": "WinoGrande appears in the commonsense evaluation table with accuracy reported ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SVFT: Parameter-Efficient Fine-Tuning with Singular Vectors",
+      "evidence": "ARC-E appears in the commonsense evaluation table with accuracy reported ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-e Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SVFT: Parameter-Efficient Fine-Tuning with Singular Vectors",
+      "evidence": "ARC-E appears in the commonsense evaluation table with accuracy reported ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-c Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SVFT: Parameter-Efficient Fine-Tuning with Singular Vectors",
+      "evidence": "ARC-C appears in the commonsense evaluation table with accuracy reported ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-challenge Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SVFT: Parameter-Efficient Fine-Tuning with Singular Vectors",
+      "evidence": "ARC-C appears in the commonsense evaluation table with accuracy reported ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SVFT: Parameter-Efficient Fine-Tuning with Singular Vectors",
+      "evidence": "OBQA appears in the commonsense evaluation table with accuracy reported ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OpenBookQA (OBQA) Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SVFT: Parameter-Efficient Fine-Tuning with Singular Vectors",
+      "evidence": "OBQA appears in the commonsense evaluation table with accuracy reported ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OpenBookQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SVFT: Parameter-Efficient Fine-Tuning with Singular Vectors",
+      "evidence": "OBQA appears in the commonsense evaluation table with accuracy reported ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Ensemble Learning for Heterogeneous Large Language Models with Deep Parallel Collaboration",
+      "evidence": "The paper lists reasoning capabilities and evaluates them via PIQA (commonsense)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Ensemble Learning for Heterogeneous Large Language Models with Deep Parallel Collaboration",
+      "evidence": "PIQA is a commonsense reasoning dataset scored by accuracy on multiple‑choice answers."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Riddle Solving Ability",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "Visual Riddles: a Commonsense and World Knowledge Challenge for Large Vision and Language Models",
+      "evidence": "Solving requires integrating visual clues with commonsense reasoning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual Riddle Solving Ability",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Visual Riddles: a Commonsense and World Knowledge Challenge for Large Vision and Language Models",
+      "evidence": "Even with perfect (human) captions, models underperform humans, indicating a 32% reasoning gap that constrains overall solving accuracy ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Caption→LLM Gap Analysis (Recognition vs. Reasoning)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Visual Riddles: a Commonsense and World Knowledge Challenge for Large Vision and Language Models",
+      "evidence": "The ‘reasoning gap’ persists even with perfect captions, isolating reasoning limitations ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Common Sense and Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models",
+      "evidence": "The figure aggregates Winogrande/ARC/PIQA/HellaSwag under 'Common Sense and Language Understanding,' implying commonsense reasoning as a component"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models",
+      "evidence": "Winogrande is one of the benchmarks used in the composite capability analysis"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-e Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models",
+      "evidence": "ARC-E contributes to the composite capability evaluation"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-e Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models",
+      "evidence": "ARC-C contributes to the composite capability evaluation"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-c Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models",
+      "evidence": "ARC-C contributes to the composite capability evaluation"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models",
+      "evidence": "PIQA contributes to the composite capability evaluation"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HellaSwag Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models",
+      "evidence": "HellaSwag contributes to the composite capability evaluation"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "StrategyQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Adversarial Moment-Matching Distillation of Large Language Models",
+      "evidence": "Commonsense reasoning is evaluated on StrategyQA using accuracy."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Physical Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "BERTs are Generative In-Context Learners",
+      "evidence": "PIQA is listed as part of a subcategory of commonsense reasoning datasets ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Scientific/Grade-School Science Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "BERTs are Generative In-Context Learners",
+      "evidence": "ARC (Easy/Challenge) is used to evaluate knowledge and reasoning abilities within the commonsense group ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Common Knowledge Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "BERTs are Generative In-Context Learners",
+      "evidence": "OpenBookQA evaluates the understanding of common knowledge and is grouped under commonsense tasks ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Efficient Contextual LLM Cascades through Budget-Constrained Policy Learning",
+      "evidence": "Commonsense QA (CSQA) is one of the reasoning tasks evaluated alongside math and LLC."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CSQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Efficient Contextual LLM Cascades through Budget-Constrained Policy Learning",
+      "evidence": "CSQA measures accuracy on multiple-choice commonsense questions."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BoolQ",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "FouRA: Fourier Low-Rank Adaptation",
+      "evidence": "Commonsense evaluation includes BoolQ with accuracy."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "FouRA: Fourier Low-Rank Adaptation",
+      "evidence": "PIQA is part of the eight commonsense tasks; accuracy reported."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-easy Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "FouRA: Fourier Low-Rank Adaptation",
+      "evidence": "PIQA is part of the eight commonsense tasks; accuracy reported."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "FouRA: Fourier Low-Rank Adaptation",
+      "evidence": "SIQA is included; accuracy reported."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HellaSwag Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "FouRA: Fourier Low-Rank Adaptation",
+      "evidence": "HellaSwag is included; accuracy reported."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "FouRA: Fourier Low-Rank Adaptation",
+      "evidence": "WinoGrande is included; accuracy reported."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-easy Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "FouRA: Fourier Low-Rank Adaptation",
+      "evidence": "ARC‑e is included; accuracy reported."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-easy Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "FouRA: Fourier Low-Rank Adaptation",
+      "evidence": "ARC‑c is included; accuracy reported."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-challenge Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "FouRA: Fourier Low-Rank Adaptation",
+      "evidence": "ARC‑c is included; accuracy reported."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OBQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "FouRA: Fourier Low-Rank Adaptation",
+      "evidence": "OBQA is included; accuracy reported."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation",
+      "evidence": "The paper evaluates reasoning via commonsense reasoning tasks among others."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BoolQ Zero-shot Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation",
+      "evidence": "BoolQ included among eight downstream commonsense tasks (Table 3)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BoolQ",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation",
+      "evidence": "BoolQ included among eight downstream commonsense tasks (Table 3)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation",
+      "evidence": "PIQA included among eight downstream commonsense tasks (Table 3)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation",
+      "evidence": "SIQA included among eight downstream commonsense tasks (Table 3)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SIQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation",
+      "evidence": "SIQA included among eight downstream commonsense tasks (Table 3)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HellaSwag Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation",
+      "evidence": "HellaSwag included among eight downstream commonsense tasks (Table 3)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation",
+      "evidence": "WinoGrande included among eight downstream commonsense tasks (Table 3)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-e Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation",
+      "evidence": "ARC-e included among eight downstream commonsense tasks (Table 3)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-e Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation",
+      "evidence": "ARC-c included among eight downstream commonsense tasks (Table 3)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-c Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation",
+      "evidence": "ARC-c included among eight downstream commonsense tasks (Table 3)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OBQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation",
+      "evidence": "OBQA included among eight downstream commonsense tasks (Table 3)."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "DISP-LLM: Dimension-Independent Structural Pruning for Large Language Models",
+      "evidence": "PIQA is introduced as reasoning about physical common‑sense, indicating a commonsense subset of reasoning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA Zero‑shot Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "DISP-LLM: Dimension-Independent Structural Pruning for Large Language Models",
+      "evidence": "PIQA is described as reasoning about physical common‑sense, making it a measure of commonsense reasoning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BoolQ Zero-shot Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Sparse High Rank Adapters",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BoolQ",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Sparse High Rank Adapters",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Sparse High Rank Adapters",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Sparse High Rank Adapters",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-e Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Sparse High Rank Adapters",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-c Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Sparse High Rank Adapters",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-challenge Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Sparse High Rank Adapters",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Sparse High Rank Adapters",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Sparse High Rank Adapters",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OpenBookQA (OBQA) Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Sparse High Rank Adapters",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OpenBookQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Sparse High Rank Adapters",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HellaSwag Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Sparse High Rank Adapters",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Sparse High Rank Adapters",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Average Downstream Task Accuracy (ARC‑easy, LAMBADA, RACE, PIQA, BoolQ)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Sparse maximal update parameterization: A holistic approach to sparse training dynamics",
+      "evidence": "The five-task suite collectively tests for common sense reasoning"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "SGLang: Efficient Execution of Structured Language Model Programs",
+      "evidence": "HellaSwag (used here) targets sentence completion plausibility, a commonsense reasoning task."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HellaSwag 20-shot",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SGLang: Efficient Execution of Structured Language Model Programs",
+      "evidence": "HellaSwag (20-shot here) is a commonsense sentence completion benchmark; answers are selected by highest probability."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HellaSwag Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+      "evidence": "HellaSwag is included among evaluated downstream tasks."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Coreference Resolution",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+      "evidence": "Winograd requires commonsense for pronoun disambiguation."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "SIRIUS : Contexual Sparisty with Correction for Efficient LLMs",
+      "evidence": "Commonsense reasoning tasks (CSQA, StrategyQA, BIG-bench Date/Sports) are highlighted as a reasoning category."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Commonsense QA (CSQA)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SIRIUS : Contexual Sparisty with Correction for Efficient LLMs",
+      "evidence": "CSQA is used to assess commonsense reasoning and to show SIRIUS recovery."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "StrategyQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SIRIUS : Contexual Sparisty with Correction for Efficient LLMs",
+      "evidence": "StrategyQA is listed among commonsense reasoning tasks."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BIG-bench Date Reasoning",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SIRIUS : Contexual Sparisty with Correction for Efficient LLMs",
+      "evidence": "BIG-bench Date is included under commonsense reasoning evaluations."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BIG-bench Date Reasoning",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SIRIUS : Contexual Sparisty with Correction for Efficient LLMs",
+      "evidence": "BIG-bench Sports is included under commonsense reasoning evaluations."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CommonsenseQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Order-Independence Without Fine Tuning",
+      "evidence": "CommonsenseQA targets commonsense knowledge, so its accuracy measures this capability."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MiniCache: KV Cache Compression in Depth Dimension for Large Language Models",
+      "evidence": "PIQA is included among evaluated tasks via lm-eval-harness ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "COPA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MiniCache: KV Cache Compression in Depth Dimension for Large Language Models",
+      "evidence": "COPA is among the sampled tasks to evaluate QA/commonsense performance ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MiniCache: KV Cache Compression in Depth Dimension for Large Language Models",
+      "evidence": "OpenBookQA is included in the task suite ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OpenBookQA (OBQA) Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MiniCache: KV Cache Compression in Depth Dimension for Large Language Models",
+      "evidence": "OpenBookQA is included in the task suite ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OpenBookQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MiniCache: KV Cache Compression in Depth Dimension for Large Language Models",
+      "evidence": "OpenBookQA is included in the task suite ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MiniCache: KV Cache Compression in Depth Dimension for Large Language Models",
+      "evidence": "WinoGrande is listed among the evaluated datasets ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MindMerger: Efficiently Boosting LLM Reasoning in non-English Languages",
+      "evidence": "Commonsense reasoning is evaluated as a distinct reasoning task (X‑CSQA) within the broader reasoning construct ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "X-CSQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MindMerger: Efficiently Boosting LLM Reasoning in non-English Languages",
+      "evidence": "X‑CSQA is used to assess multilingual commonsense reasoning; accuracy is the metric ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Negotiation (Interactive Multi‑Agent Negotiation Capability)",
+      "other_type": "constructs",
+      "relationship_type": "component-of",
+      "paper": "Cooperation, Competition, and Maliciousness: LLM-Stakeholders Interactive Negotiation",
+      "evidence": "Negotiation sub‑tasks span commonsense reasoning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Commonsense Reasoning (8 tasks)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "3-in-1: 2D Rotary Adaptation for Efficient Finetuning, Efficient Batching and Composability",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "SG-Nav: Online 3D Scene Graph Prompting for LLM-based Zero-shot Object Navigation",
+      "evidence": "LLM is leveraged to address various common-sense reasoning problems in zero-shot, as part of its reasoning used for navigation ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "World Knowledge",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "SG-Nav: Online 3D Scene Graph Prompting for LLM-based Zero-shot Object Navigation",
+      "evidence": "LLM’s extensive knowledge helps address commonsense reasoning problems in the zero-shot setting  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Social Structure (Mini‑game) — Performance Metrics",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "AdaSociety: An Adaptive Environment with Social Structures for Multi-Agent Decision-Making",
+      "evidence": "Authors attribute LLM‑C’s strong mini‑game performance to embedded commonsense reasoning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Contract (Mini‑game, Easy)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "AdaSociety: An Adaptive Environment with Social Structures for Multi-Agent Decision-Making",
+      "evidence": "Performance gains in Contract are linked to embedded commonsense reasoning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Contract (Mini‑game, Hard)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "AdaSociety: An Adaptive Environment with Social Structures for Multi-Agent Decision-Making",
+      "evidence": "Same attribution applies to Hard Contract results."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Negotiation (Mini‑game, Easy)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "AdaSociety: An Adaptive Environment with Social Structures for Multi-Agent Decision-Making",
+      "evidence": "Negotiation outcomes benefit from embedded commonsense reasoning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Negotiation (Mini‑game, Hard)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "AdaSociety: An Adaptive Environment with Social Structures for Multi-Agent Decision-Making",
+      "evidence": "As above for Hard negotiation."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Benchmarking LLMs via Uncertainty Quantification",
+      "evidence": "Commonsense inference assesses reasoning about relationships using background knowledge in language ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Commonsense Inference (HellaSwag) MCQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Benchmarking LLMs via Uncertainty Quantification",
+      "evidence": "HellaSwag targets commonsense natural language inference ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Self-playing Adversarial Language Game Enhances LLM Reasoning",
+      "evidence": "WinoGrande and PIQA evaluate commonsense abilities within broader reasoning."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Physical Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Self-playing Adversarial Language Game Enhances LLM Reasoning",
+      "evidence": "PIQA is designed to test physical commonsense reasoning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Self-playing Adversarial Language Game Enhances LLM Reasoning",
+      "evidence": "WinoGrande is a commonsense reasoning dataset."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "New Term Comprehension",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "NewTerm: Benchmarking Real-Time New Terms for Large Language Models with Annual Updates",
+      "evidence": "CSJ evaluates plausibility judgments with new terms absent helpful context ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CSJ Accuracy (NewTerm 2022/2023)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "NewTerm: Benchmarking Real-Time New Terms for Large Language Models with Annual Updates",
+      "evidence": "CSJ presents plausibility judgments with new terms and possibly misleading context ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-challenge Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Observational Scaling Laws and the Predictability of Langauge Model Performance",
+      "evidence": "ARC‑C is included as a commonsense reasoning benchmark ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HellaSwag Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Observational Scaling Laws and the Predictability of Langauge Model Performance",
+      "evidence": "HellaSwag is used as a commonsense reasoning benchmark ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Observational Scaling Laws and the Predictability of Langauge Model Performance",
+      "evidence": "Winogrande is used as a commonsense reasoning benchmark ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Relational Reasoning (Semantic Attributes)",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "Graph-based Unsupervised Disentangled Representation Learning via Multimodal Large Language Models",
+      "evidence": "The paper leverages the commonsense reasoning of MLLMs specifically to discover and rank semantic interrelations among attributes"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Qualitative Disentanglement Assessment",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "Graph-based Unsupervised Disentangled Representation Learning via Multimodal Large Language Models",
+      "evidence": "By leveraging MLLM commonsense to discover and rank interrelations, GEM achieves fine‑grained, relation‑aware disentanglement in experiments"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Enhanced Interpretability (Behavior)",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "Graph-based Unsupervised Disentangled Representation Learning via Multimodal Large Language Models",
+      "evidence": "The model is endowed with enhanced interpretability derived from MLLMs"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Generalizability in Complex Data (Behavior)",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "Graph-based Unsupervised Disentangled Representation Learning via Multimodal Large Language Models",
+      "evidence": "The model is endowed with enhanced generalizability derived from MLLMs"
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "KnowGPT: Knowledge Graph based Prompting for Large Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "External Knowledge Integration (KG-grounded prompting)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "KnowGPT: Knowledge Graph based Prompting for Large Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CommonsenseQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "KnowGPT: Knowledge Graph based Prompting for Large Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "KnowGPT: Knowledge Graph based Prompting for Large Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OpenBookQA (OBQA) Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "KnowGPT: Knowledge Graph based Prompting for Large Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OpenBookQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "KnowGPT: Knowledge Graph based Prompting for Large Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OpenBookQA Leaderboard Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "KnowGPT: Knowledge Graph based Prompting for Large Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Zero-shot Average (Commonsense Reasoning)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SlimGPT: Layer-wise Structured Pruning for Large Language Models",
+      "evidence": "Commonsense reasoning capability is evaluated as a zero-shot average across seven datasets via lm-eval-harness."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Boolean QA (Commonsense)",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "SlimGPT: Layer-wise Structured Pruning for Large Language Models",
+      "evidence": "BoolQ is included among the commonsense reasoning subtasks."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Physical Commonsense",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "SlimGPT: Layer-wise Structured Pruning for Large Language Models",
+      "evidence": "PIQA is included among the commonsense reasoning subtasks."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Sentence Completion Plausibility",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "SlimGPT: Layer-wise Structured Pruning for Large Language Models",
+      "evidence": "HellaSwag is included among the commonsense reasoning subtasks."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Coreference Commonsense",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "SlimGPT: Layer-wise Structured Pruning for Large Language Models",
+      "evidence": "WinoGrande is included among the commonsense reasoning subtasks."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Science Question Answering (Easy)",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "SlimGPT: Layer-wise Structured Pruning for Large Language Models",
+      "evidence": "ARC-easy is included among the commonsense reasoning subtasks."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Science Question Answering (Easy)",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "SlimGPT: Layer-wise Structured Pruning for Large Language Models",
+      "evidence": "ARC-challenge is included among the commonsense reasoning subtasks."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Open-book Question Answering",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "SlimGPT: Layer-wise Structured Pruning for Large Language Models",
+      "evidence": "OpenBookQA is included among the commonsense reasoning subtasks."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA (0-shot)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Dataset Decomposition: Faster LLM Training with Variable Sequence Length Curriculum",
+      "evidence": "PIQA (0‑shot) is listed under the Commonsense Reasoning category in regular evaluations."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "COPA (0-shot)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Dataset Decomposition: Faster LLM Training with Variable Sequence Length Curriculum",
+      "evidence": "COPA (0‑shot) is included under Commonsense Reasoning in the evaluation suite."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OpenBookQA (10-shot)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Dataset Decomposition: Faster LLM Training with Variable Sequence Length Curriculum",
+      "evidence": "OpenBookQA (10‑shot) is grouped under Commonsense Reasoning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Learning to Reason via Program Generation, Emulation, and Search",
+      "evidence": "CommonsenseQA and Social IQa are included as commonsense reasoning benchmarks ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Social Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Learning to Reason via Program Generation, Emulation, and Search",
+      "evidence": "Social IQa evaluates commonsense reasoning about social interactions ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CommonsenseQA MC Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Learning to Reason via Program Generation, Emulation, and Search",
+      "evidence": "CommonsenseQA evaluated as a 4-way MC commonsense benchmark ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "TAIA: Large Language Models are Out-of-Distribution Data Learners",
+      "evidence": "CommonsenseQA is used among reasoning evaluations."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CommonsenseQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "TAIA: Large Language Models are Out-of-Distribution Data Learners",
+      "evidence": "CommonsenseQA measures commonsense reasoning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Sports Understanding (Mimicked)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Automating Dataset Updates Towards Reliable and Timely Evaluation of Large Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subconstruct",
+      "paper": "Self-Guiding Exploration for Combinatorial Problems",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Commonsense Reasoning Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Self-Guiding Exploration for Combinatorial Problems",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MambaTree: Tree Topology is All You Need in State Space Model",
+      "evidence": "PIQA appears in the paper’s language model benchmarks table; ARC is cited as a reasoning challenge, implying commonsense QA evaluation alongside PIQA."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-easy Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MambaTree: Tree Topology is All You Need in State Space Model",
+      "evidence": "PIQA appears in the paper’s language model benchmarks table; ARC is cited as a reasoning challenge, implying commonsense QA evaluation alongside PIQA."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-easy Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MambaTree: Tree Topology is All You Need in State Space Model",
+      "evidence": "ARC is referenced as a reasoning challenge and evaluated in the language benchmarks (ARC‑Easy)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MambaTree: Tree Topology is All You Need in State Space Model",
+      "evidence": "WinoGrande is included among the language benchmarks the paper evaluates, reflecting commonsense/coreference reasoning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OpenBookQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MambaTree: Tree Topology is All You Need in State Space Model",
+      "evidence": "OpenBookQA appears among the evaluated tasks; along with ARC’s explicit billing as a reasoning challenge, this strongly implies commonsense QA evaluation."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MambaTree: Tree Topology is All You Need in State Space Model",
+      "evidence": "Commonsense‑oriented benchmarks (ARC‑Easy, PIQA, WinoGrande) are part of the language evaluation suite used, indicating this as a sub‑facet of language understanding."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Foundational Capabilities",
+      "other_type": "constructs",
+      "relationship_type": "component-of",
+      "paper": "DHA: Learning Decoupled-Head Attention from Transformer Checkpoints via Adaptive Heads Fusion",
+      "evidence": "The paper reports \"foundational capabilities\" via downstream tasks including PiQA and Winogrande, which index commonsense."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA (0-shot)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "DHA: Learning Decoupled-Head Attention from Transformer Checkpoints via Adaptive Heads Fusion",
+      "evidence": "PiQA accuracy is used in the reported 0-shot evaluation table."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande (0-shot)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "DHA: Learning Decoupled-Head Attention from Transformer Checkpoints via Adaptive Heads Fusion",
+      "evidence": "Winogrande accuracy is included among the evaluated tasks."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Commonsense Reasoning: StrategyQA Self-Consistency Failure Rate",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Reranking Laws for Language Generation: A Communication-Theoretic Perspective",
+      "evidence": "Appendix reports log failure rate vs N for StrategyQA under self‑consistency, fitting the reranking laws  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Would I Lie To You? Inference Time Alignment of Language Models using Direct Preference Heads",
+      "evidence": "The paper evaluates \"commonsense reasoning\" tasks as a category of reasoning, including HellaSwag, WinoGrande, and PIQA  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HellaSwag Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Would I Lie To You? Inference Time Alignment of Language Models using Direct Preference Heads",
+      "evidence": "HellaSwag is included among the sentence-completion tasks used in evaluation/ablations ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Would I Lie To You? Inference Time Alignment of Language Models using Direct Preference Heads",
+      "evidence": "WinoGrande is included among the sentence-completion tasks used in evaluation/ablations ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Would I Lie To You? Inference Time Alignment of Language Models using Direct Preference Heads",
+      "evidence": "PIQA is included among the sentence-completion tasks used in evaluation/ablations ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-easy Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Would I Lie To You? Inference Time Alignment of Language Models using Direct Preference Heads",
+      "evidence": "PIQA is included among the sentence-completion tasks used in evaluation/ablations ."
+    }
+  ],
+  "relationship_count": 246,
+  "incoming_relationship_count": 27,
+  "outgoing_relationship_count": 219
+}

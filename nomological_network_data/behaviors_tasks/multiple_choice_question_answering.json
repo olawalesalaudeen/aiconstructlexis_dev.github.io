@@ -1,0 +1,566 @@
+{
+  "canonical_name": "Multiple-Choice Question Answering",
+  "type": "behavior",
+  "canonical_definition": "Multiple-Choice Question Answering is a behavior where a system selects one correct answer from a fixed set of options (typically five) in response to a question, often operationalized as a benchmark task to assess capabilities such as reasoning, commonsense knowledge, factual/encyclopedic knowledge, truthfulness, or instruction-following ability. This format appears in diverse contexts including science (e.g., ARC-Challenge), long-context understanding (e.g., TOEFL, ∞-Bench), multimodal reasoning (e.g., CVQA), and domain-general evaluations (e.g., MMLU), with some papers framing it as a proxy for real-world problem-solving and others critiquing its limitations in capturing generative potential.",
+  "expert_reviewed": false,
+  "names": [
+    "Multiple-Choice Question Answering"
+  ],
+  "papers": [
+    "$\\textit{Trans-LoRA}$: towards data-free Transferable Parameter Efficient Finetuning",
+    "$\\texttt{Model-GLUE}$: Democratized LLM Scaling for A Large Model Zoo in the Wild",
+    "Adversarial Representation Engineering: A General Model Editing Framework for Large Language Models",
+    "BERTs are Generative In-Context Learners",
+    "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark",
+    "Compact Language Models via Pruning and Knowledge Distillation",
+    "Delving into the Reversal Curse: How Far Can Large Language Models Generalize?",
+    "DropBP: Accelerating Fine-Tuning of Large Language Models by Dropping Backward Propagation",
+    "Efficient Contextual LLM Cascades through Budget-Constrained Policy Learning",
+    "Exploiting LLM Quantization",
+    "IDGen: Item Discrimination Induced Prompt Generation for LLM Evaluation",
+    "InfLLM: Training-Free Long-Context Extrapolation for LLMs with an Efficient Context Memory",
+    "LLM Circuit Analyses Are Consistent Across Training and Scale",
+    "LLMCBench: Benchmarking Large Language Model Compression for Efficient Deployment",
+    "MMLU-Pro: A More Robust and Challenging Multi-Task Language Understanding Benchmark",
+    "MathPile: A Billion-Token-Scale Pretraining Corpus for Math",
+    "Mixture of In-Context Experts Enhance LLMs' Long Context Awareness",
+    "NYU CTF Bench: A Scalable Open-Source Benchmark Dataset for Evaluating LLMs in Offensive Security",
+    "Not All Tokens Are What You Need for Pretraining",
+    "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation",
+    "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models",
+    "S$^{2}$FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity",
+    "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+    "Should We Really Edit Language Models? On the Evaluation of Edited Language Models",
+    "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+    "Stacking Your Transformers: A Closer Look at Model Growth for Efficient LLM Pre-Training",
+    "TSDS: Data Selection for Task-Specific Model Finetuning",
+    "UltraMedical: Building Specialized Generalists in Biomedicine",
+    "fMRI predictors based on language models of increasing complexity recover brain left lateralization"
+  ],
+  "paper_count": 29,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Arithmetic evaluation includes AQuA; noted as multiple-choice with five options.",
+      "paper": "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation"
+    },
+    {
+      "text": "Reasoning about everyday situations and pragmatic knowledge assessed via multiple-choice tasks.",
+      "paper": "S$^{2}$FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity"
+    },
+    {
+      "text": "Answering multiple-choice questions about everyday situations using commonsense knowledge.",
+      "paper": "Efficient Contextual LLM Cascades through Budget-Constrained Policy Learning"
+    },
+    {
+      "text": "CSQA measures accuracy on multiple-choice commonsense questions.",
+      "paper": "Efficient Contextual LLM Cascades through Budget-Constrained Policy Learning"
+    },
+    {
+      "text": "Open‑QA D2N shows near‑perfect performance in some cases yet MCQ failure under reversed structure, highlighting limits of expressive generalization .",
+      "paper": "Delving into the Reversal Curse: How Far Can Large Language Models Generalize?"
+    },
+    {
+      "text": "The paper argues MCQ benchmarks overlook the full generative potential, including instruction‑following ability .",
+      "paper": "IDGen: Item Discrimination Induced Prompt Generation for LLM Evaluation"
+    },
+    {
+      "text": "TruthfulQA (0-shot) multiple-choice accuracy evaluates truthfulness  .",
+      "paper": "Should We Really Edit Language Models? On the Evaluation of Edited Language Models"
+    },
+    {
+      "text": "Fixed multiple-choice answer formats detect instruction following on MMLU .",
+      "paper": "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models"
+    },
+    {
+      "text": "The paper argues MCQ benchmarks overlook the full generative potential, including instruction‑following ability .",
+      "paper": "IDGen: Item Discrimination Induced Prompt Generation for LLM Evaluation"
+    },
+    {
+      "text": "Fixed multiple-choice answer formats detect instruction following on MMLU .",
+      "paper": "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models"
+    },
+    {
+      "text": "Chosen multiple-choice benchmarks require strong reasoning ability .",
+      "paper": "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models"
+    },
+    {
+      "text": "TOEFL long‑context MCQ tasks use exact match in L‑Eval  .",
+      "paper": "Mixture of In-Context Experts Enhance LLMs' Long Context Awareness"
+    },
+    {
+      "text": "∞‑Bench multiple-choice tasks assess understanding over extended context.",
+      "paper": "InfLLM: Training-Free Long-Context Extrapolation for LLMs with an Efficient Context Memory"
+    },
+    {
+      "text": "VQA measures understanding in multimodal settings; CVQA uses multiple-choice accuracy as the performance metric  .",
+      "paper": "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark"
+    },
+    {
+      "text": "Capability to derive answers on challenging multiple-choice tasks that require strong reasoning ability .",
+      "paper": "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models"
+    },
+    {
+      "text": "Capability to solve challenging reasoning problems across formats (multiple-choice, QA, short response), as represented by BBH’s hard reasoning tasks .",
+      "paper": "$\\textit{Trans-LoRA}$: towards data-free Transferable Parameter Efficient Finetuning"
+    },
+    {
+      "text": "Chosen multiple-choice benchmarks require strong reasoning ability .",
+      "paper": "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models"
+    },
+    {
+      "text": "Multiple-choice tests require reasoning; MMLU is used accordingly .",
+      "paper": "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models"
+    },
+    {
+      "text": "TruthfulQA (0-shot) multiple-choice accuracy evaluates truthfulness  .",
+      "paper": "Should We Really Edit Language Models? On the Evaluation of Edited Language Models"
+    },
+    {
+      "text": "Encyclopedic/factual knowledge assessed via multiple-choice tasks .",
+      "paper": "Should We Really Edit Language Models? On the Evaluation of Edited Language Models"
+    },
+    {
+      "text": "World knowledge is measured with MMLU (5-shot) using multiple-choice accuracy .",
+      "paper": "Should We Really Edit Language Models? On the Evaluation of Edited Language Models"
+    },
+    {
+      "text": "Challenging multiple-choice science questions. ARC-challenge Accuracy (%)",
+      "paper": "LLMCBench: Benchmarking Large Language Model Compression for Efficient Deployment"
+    },
+    {
+      "text": "Science and reasoning multiple-choice QA ARC (Challenge) Accuracy (%) (lm-eval-harness default)",
+      "paper": "Not All Tokens Are What You Need for Pretraining"
+    },
+    {
+      "text": "Science multiple-choice reasoning. ARC-Challenge Accuracy (%)",
+      "paper": "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?"
+    },
+    {
+      "text": "Multiple-choice grade-school science questions (hard split); higher is better. ARC-c Accuracy (%)",
+      "paper": "Stacking Your Transformers: A Closer Look at Model Growth for Efficient LLM Pre-Training"
+    }
+  ],
+  "definition_count": 25,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Arithmetic Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation",
+      "evidence": "Arithmetic evaluation includes AQuA; noted as multiple-choice with five options."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "S$^{2}$FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity",
+      "evidence": "Reasoning about everyday situations and pragmatic knowledge assessed via multiple-choice tasks."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Efficient Contextual LLM Cascades through Budget-Constrained Policy Learning",
+      "evidence": "Answering multiple-choice questions about everyday situations using commonsense knowledge."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Efficient Contextual LLM Cascades through Budget-Constrained Policy Learning",
+      "evidence": "CSQA measures accuracy on multiple-choice commonsense questions."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Delving into the Reversal Curse: How Far Can Large Language Models Generalize?",
+      "evidence": "Open‑QA D2N shows near‑perfect performance in some cases yet MCQ failure under reversed structure, highlighting limits of expressive generalization ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "IDGen: Item Discrimination Induced Prompt Generation for LLM Evaluation",
+      "evidence": "The paper argues MCQ benchmarks overlook the full generative potential, including instruction‑following ability ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Should We Really Edit Language Models? On the Evaluation of Edited Language Models",
+      "evidence": "TruthfulQA (0-shot) multiple-choice accuracy evaluates truthfulness  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models",
+      "evidence": "Fixed multiple-choice answer formats detect instruction following on MMLU ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction Following",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "IDGen: Item Discrimination Induced Prompt Generation for LLM Evaluation",
+      "evidence": "The paper argues MCQ benchmarks overlook the full generative potential, including instruction‑following ability ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction Following",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models",
+      "evidence": "Fixed multiple-choice answer formats detect instruction following on MMLU ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models",
+      "evidence": "Chosen multiple-choice benchmarks require strong reasoning ability ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-Context Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Mixture of In-Context Experts Enhance LLMs' Long Context Awareness",
+      "evidence": "TOEFL long‑context MCQ tasks use exact match in L‑Eval  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-Context Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "InfLLM: Training-Free Long-Context Extrapolation for LLMs with an Efficient Context Memory",
+      "evidence": "∞‑Bench multiple-choice tasks assess understanding over extended context."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark",
+      "evidence": "VQA measures understanding in multimodal settings; CVQA uses multiple-choice accuracy as the performance metric  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models",
+      "evidence": "Capability to derive answers on challenging multiple-choice tasks that require strong reasoning ability ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "$\\textit{Trans-LoRA}$: towards data-free Transferable Parameter Efficient Finetuning",
+      "evidence": "Capability to solve challenging reasoning problems across formats (multiple-choice, QA, short response), as represented by BBH’s hard reasoning tasks ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models",
+      "evidence": "Chosen multiple-choice benchmarks require strong reasoning ability ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models",
+      "evidence": "Multiple-choice tests require reasoning; MMLU is used accordingly ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Should We Really Edit Language Models? On the Evaluation of Edited Language Models",
+      "evidence": "TruthfulQA (0-shot) multiple-choice accuracy evaluates truthfulness  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "World Knowledge",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Should We Really Edit Language Models? On the Evaluation of Edited Language Models",
+      "evidence": "Encyclopedic/factual knowledge assessed via multiple-choice tasks ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "World Knowledge",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Should We Really Edit Language Models? On the Evaluation of Edited Language Models",
+      "evidence": "World knowledge is measured with MMLU (5-shot) using multiple-choice accuracy ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-challenge",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "LLMCBench: Benchmarking Large Language Model Compression for Efficient Deployment",
+      "evidence": "Challenging multiple-choice science questions. ARC-challenge Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-challenge",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Not All Tokens Are What You Need for Pretraining",
+      "evidence": "Science and reasoning multiple-choice QA ARC (Challenge) Accuracy (%) (lm-eval-harness default)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-challenge",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+      "evidence": "Science multiple-choice reasoning. ARC-Challenge Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-challenge",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Stacking Your Transformers: A Closer Look at Model Growth for Efficient LLM Pre-Training",
+      "evidence": "Multiple-choice grade-school science questions (hard split); higher is better. ARC-c Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-challenge",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Stacking Your Transformers: A Closer Look at Model Growth for Efficient LLM Pre-Training",
+      "evidence": "Multiple-choice grade-school science questions (easy split); higher is better. ARC-e Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-challenge",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "BERTs are Generative In-Context Learners",
+      "evidence": "Difficult split of grade-school science multiple-choice questions ARC (Challenge) Accuracy (%) under 0/1/few-shot ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-challenge",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+      "evidence": "Multiple-choice science and reasoning challenge. ARC Challenge Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-challenge",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MathPile: A Billion-Token-Scale Pretraining Corpus for Math",
+      "evidence": "Difficult multiple-choice science/commonsense QA ARC-Challenge Accuracy (acc_norm)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-challenge",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "BERTs are Generative In-Context Learners",
+      "evidence": "ARC questions are handled as multiple-choice and ranked by likelihood under ICL prompting ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HellaSwag Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "fMRI predictors based on language models of increasing complexity recover brain left lateralization",
+      "evidence": "Multiple-choice commonsense/inference benchmark used as a language-understanding metric that correlates with brain fit.  HellaSwag Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HellaSwag Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "$\\texttt{Model-GLUE}$: Democratized LLM Scaling for A Large Model Zoo in the Wild",
+      "evidence": "Multiple-choice commonsense inference reported for stacking experiments. HellaSwag Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "UltraMedical: Building Specialized Generalists in Biomedicine",
+      "evidence": "General multi-task language understanding (MCQ) MMLU Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "NYU CTF Bench: A Scalable Open-Source Benchmark Dataset for Evaluating LLMs in Offensive Security",
+      "evidence": "Multiple-choice multi-task language understanding accuracy. MMLU Accuracy (%) on MCQ format."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "TSDS: Data Selection for Task-Specific Model Finetuning",
+      "evidence": "Multiple-choice evaluation across many subjects MMLU 5-shot Accuracy (%) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models",
+      "evidence": "Massive Multitask Language Understanding multiple-choice accuracy MMLU Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MMLU-Pro: A More Robust and Challenging Multi-Task Language Understanding Benchmark",
+      "evidence": "Accuracy on 4-option multiple-choice questions across 57 subjects; de facto standard prior to saturation. MMLU Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "DropBP: Accelerating Fine-Tuning of Large Language Models by Dropping Backward Propagation",
+      "evidence": "Multiple-choice performance across diverse academic subjects using 5-shot prompting. MMLU 5-shot Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Should We Really Edit Language Models? On the Evaluation of Edited Language Models",
+      "evidence": "Multiple-choice test of broad world knowledge across many domains MMLU 5-shot Accuracy (%) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Compact Language Models via Pruning and Knowledge Distillation",
+      "evidence": "Multiple-choice test of massive multitask language understanding MMLU 5-shot Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Exploiting LLM Quantization",
+      "evidence": "Multiple-choice performance on a broad set of academic tasks with 5 in-context examples, greedy sampling. MMLU 5-shot Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "NYU CTF Bench: A Scalable Open-Source Benchmark Dataset for Evaluating LLMs in Offensive Security",
+      "evidence": "Multiple-choice evaluations like MMLU are referenced as comparative reasoning assessments."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "TSDS: Data Selection for Task-Specific Model Finetuning",
+      "evidence": "Table 1 specifies MMLU as a multiple-choice benchmark evaluated with 5-shot accuracy ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models",
+      "evidence": "Multiple-choice tests require reasoning; MMLU is used accordingly ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models",
+      "evidence": "Fixed multiple-choice answer formats detect instruction following on MMLU ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Should We Really Edit Language Models? On the Evaluation of Edited Language Models",
+      "evidence": "World knowledge is measured with MMLU (5-shot) using multiple-choice accuracy ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "LLM Circuit Analyses Are Consistent Across Training and Scale",
+      "evidence": "Physical commonsense reasoning via multiple-choice questions PIQA Accuracy (%) via top-choice logit ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models",
+      "evidence": "Physical commonsense reasoning multiple-choice accuracy PIQA Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "BERTs are Generative In-Context Learners",
+      "evidence": "Physical commonsense multiple-choice reasoning PIQA Accuracy (%) under 0/1/few-shot ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "BERTs are Generative In-Context Learners",
+      "evidence": "The paper solves many multiple-choice tasks via ranking with pseudo log-likelihood; PIQA is such a task ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Adversarial Representation Engineering: A General Model Editing Framework for Large Language Models",
+      "evidence": "Multiple-choice QA accuracy on TruthfulQA measuring truthful answering behavior. TruthfulQA Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "$\\texttt{Model-GLUE}$: Democratized LLM Scaling for A Large Model Zoo in the Wild",
+      "evidence": "Winograd-style multiple-choice reasoning reported by the paper. WinoGrande Accuracy (%)"
+    }
+  ],
+  "relationship_count": 52,
+  "incoming_relationship_count": 21,
+  "outgoing_relationship_count": 31
+}

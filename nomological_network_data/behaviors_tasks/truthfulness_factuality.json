@@ -1,0 +1,1392 @@
+{
+  "canonical_name": "Truthfulness / Factuality",
+  "type": "behavior",
+  "canonical_definition": "Truthfulness/factuality refers to the capability of a language model to generate responses that are factually accurate and avoid hallucinations. This behavior is often operationalized through benchmarks like TruthfulQA that evaluate the model's ability to produce long-form, factually correct responses, with performance metrics including MC1 scores, F1, and ROUGE-L. The trait reflects a system's reliability in providing accurate information while balancing informativeness and avoiding unsupported claims.",
+  "expert_reviewed": false,
+  "names": [
+    "Truthfulness / Factuality"
+  ],
+  "papers": [
+    "$\\texttt{Model-GLUE}$: Democratized LLM Scaling for A Large Model Zoo in the Wild",
+    "Adversarial Representation Engineering: A General Model Editing Framework for Large Language Models",
+    "Alignment for Honesty",
+    "AmoebaLLM: Constructing Any-Shape Large Language Models for Efficient and Instant Deployment",
+    "BAM! Just Like That: Simple and Efficient Parameter Upcycling for Mixture of Experts",
+    "CRAG - Comprehensive RAG Benchmark",
+    "Delta-CoMe: Training-Free Delta-Compression with Mixed-Precision for Large Language Models",
+    "Does Reasoning Emerge? Examining the Probabilities of Causation in Large Language Models",
+    "Ensemble Learning for Heterogeneous Large Language Models with Deep Parallel Collaboration",
+    "Exploiting LLM Quantization",
+    "Improving Alignment and Robustness with Circuit Breakers",
+    "Instruction Tuning With Loss Over Instructions",
+    "LACIE: Listener-Aware Finetuning for Calibration in Large Language Models",
+    "LLM-Check: Investigating Detection of Hallucinations in Large Language Models",
+    "LLMCBench: Benchmarking Large Language Model Compression for Efficient Deployment",
+    "LoFiT: Localized Fine-tuning on LLM Representations",
+    "Long-form factuality in large language models",
+    "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models",
+    "MiniCache: KV Cache Compression in Depth Dimension for Large Language Models",
+    "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models",
+    "Observational Scaling Laws and the Predictability of Langauge Model Performance",
+    "On the Power of Decision Trees in Auto-Regressive Language Modeling",
+    "OneBit: Towards Extremely Low-bit Large Language Models",
+    "Personalized Steering of Large Language Models: Versatile Steering Vectors Through Bi-directional Preference Optimization",
+    "Private Attribute Inference from Images with Vision-Language Models",
+    "Reasons and Solutions for the Decline in Model Performance after Editing",
+    "SLED: Self Logits Evolution Decoding for Improving Factuality in Large Language Models",
+    "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+    "Scaling Retrieval-Based Language Models with a Trillion-Token Datastore",
+    "SeafloorAI: A Large-scale Vision-Language Dataset for Seafloor Geological Survey",
+    "SelectIT: Selective Instruction Tuning for LLMs via Uncertainty-Aware Self-Reflection",
+    "Self-playing Adversarial Language Game Enhances LLM Reasoning",
+    "Should We Really Edit Language Models? On the Evaluation of Edited Language Models",
+    "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+    "Spectral Editing of Activations for Large Language Model Alignment",
+    "The Art of Saying No: Contextual Noncompliance in Language Models",
+    "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback",
+    "WizardArena: Post-training Large Language Models via Simulated Offline Chatbot Arena",
+    "xRAG: Extreme Context Compression for Retrieval-augmented Generation with One Token"
+  ],
+  "paper_count": 39,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Linear SEA edits to improve truthfulness have only limited impact on other capabilities such as commonsense reasoning .",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment"
+    },
+    {
+      "text": "Linear SEA edits to improve truthfulness have only limited impact on other capabilities such as commonsense reasoning .",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment"
+    },
+    {
+      "text": "Linear SEA shows limited degradation on MMLU under truthfulness edits .",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment"
+    },
+    {
+      "text": "Linear SEA shows limited degradation on MMLU under truthfulness edits .",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment"
+    },
+    {
+      "text": "Tendency to generate unsupported content that can degrade factual quality.",
+      "paper": "SeafloorAI: A Large-scale Vision-Language Dataset for Seafloor Geological Survey"
+    },
+    {
+      "text": "GPT‑4 performs worse on factual completeness potentially due to hallucinations.",
+      "paper": "SeafloorAI: A Large-scale Vision-Language Dataset for Seafloor Geological Survey"
+    },
+    {
+      "text": "Variations in internal representations between truthful and hallucinated cases are leveraged for single-response hallucination detection .",
+      "paper": "LLM-Check: Investigating Detection of Hallucinations in Large Language Models"
+    },
+    {
+      "text": "Hallucinations are contrasted with truthful, grounded responses; higher factuality implies lower hallucination presence  .",
+      "paper": "LLM-Check: Investigating Detection of Hallucinations in Large Language Models"
+    },
+    {
+      "text": "MiniGPT‑v2 shows strong safety across several dimensions but underperforms on Truthfulness, suggesting a potential honesty–harmlessness trade‑off .",
+      "paper": "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models"
+    },
+    {
+      "text": "MiniGPT‑v2 shows strong safety across several dimensions but underperforms on Truthfulness, suggesting a potential honesty–harmlessness trade‑off .",
+      "paper": "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models"
+    },
+    {
+      "text": "Usefulness of responses balancing truthfulness and informativeness while avoiding refusals; a purely truthful but non-informative reply (e.g., \"I have no comment\") is not helpful .",
+      "paper": "SLED: Self Logits Evolution Decoding for Improving Factuality in Large Language Models"
+    },
+    {
+      "text": "Alignment method aims to improve truthfulness (reducing hallucinations) alongside fairness .",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment"
+    },
+    {
+      "text": "Truthfulness is evaluated via TruthfulQA, with MC1 reported and improved by SEA  .",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment"
+    },
+    {
+      "text": "Layer‑wise signatures indicate where truthfulness information is concentrated, predominantly in top layers for most models .",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment"
+    },
+    {
+      "text": "Improving factual accuracy supports trusted deployment of LLMs in real‑world applications .",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment"
+    },
+    {
+      "text": "Making LLMs more truthful could help curb the flow of inaccurate information from AI systems .",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment"
+    },
+    {
+      "text": "Linear SEA edits to improve truthfulness have only limited impact on other capabilities such as commonsense reasoning .",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment"
+    },
+    {
+      "text": "Linear SEA’s truthfulness edits almost do not hurt mathematical tasks (GSM8K, MathQA) .",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment"
+    },
+    {
+      "text": "Linear SEA’s truthfulness edits show limited impact on NQ performance .",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment"
+    },
+    {
+      "text": "Linear SEA shows limited degradation on MMLU under truthfulness edits .",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment"
+    },
+    {
+      "text": "TruthfulQA requires the generation of long‑form and truthful responses; evaluated with F1 .",
+      "paper": "xRAG: Extreme Context Compression for Retrieval-augmented Generation with One Token"
+    },
+    {
+      "text": "TruthfulQA includes ROUGE‑L as an evaluation for long‑form, truthful responses .",
+      "paper": "xRAG: Extreme Context Compression for Retrieval-augmented Generation with One Token"
+    },
+    {
+      "text": "Trustworthiness is divided into robustness and truthfulness.",
+      "paper": "LLMCBench: Benchmarking Large Language Model Compression for Efficient Deployment"
+    },
+    {
+      "text": "TruthfulQA is used to evaluate truthfulness.",
+      "paper": "LLMCBench: Benchmarking Large Language Model Compression for Efficient Deployment"
+    },
+    {
+      "text": "TruthfulQA is listed under safety and truthfulness evaluations; results are reported in Table 6  .",
+      "paper": "WizardArena: Post-training Large Language Models via Simulated Offline Chatbot Arena"
+    }
+  ],
+  "definition_count": 25,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment",
+      "evidence": "Linear SEA edits to improve truthfulness have only limited impact on other capabilities such as commonsense reasoning ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment",
+      "evidence": "Linear SEA shows limited degradation on MMLU under truthfulness edits ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Propensity",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "SeafloorAI: A Large-scale Vision-Language Dataset for Seafloor Geological Survey",
+      "evidence": "Tendency to generate unsupported content that can degrade factual quality."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Propensity",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "SeafloorAI: A Large-scale Vision-Language Dataset for Seafloor Geological Survey",
+      "evidence": "GPT‑4 performs worse on factual completeness potentially due to hallucinations."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Propensity",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "LLM-Check: Investigating Detection of Hallucinations in Large Language Models",
+      "evidence": "Variations in internal representations between truthful and hallucinated cases are leveraged for single-response hallucination detection ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Propensity",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "LLM-Check: Investigating Detection of Hallucinations in Large Language Models",
+      "evidence": "Hallucinations are contrasted with truthful, grounded responses; higher factuality implies lower hallucination presence  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Harmlessness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models",
+      "evidence": "MiniGPT‑v2 shows strong safety across several dimensions but underperforms on Truthfulness, suggesting a potential honesty–harmlessness trade‑off ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "SLED: Self Logits Evolution Decoding for Improving Factuality in Large Language Models",
+      "evidence": "Usefulness of responses balancing truthfulness and informativeness while avoiding refusals; a purely truthful but non-informative reply (e.g., \"I have no comment\") is not helpful ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment",
+      "evidence": "Alignment method aims to improve truthfulness (reducing hallucinations) alongside fairness ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment",
+      "evidence": "Truthfulness is evaluated via TruthfulQA, with MC1 reported and improved by SEA  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment",
+      "evidence": "Layer‑wise signatures indicate where truthfulness information is concentrated, predominantly in top layers for most models ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment",
+      "evidence": "Improving factual accuracy supports trusted deployment of LLMs in real‑world applications ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment",
+      "evidence": "Making LLMs more truthful could help curb the flow of inaccurate information from AI systems ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment",
+      "evidence": "Linear SEA edits to improve truthfulness have only limited impact on other capabilities such as commonsense reasoning ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment",
+      "evidence": "Linear SEA’s truthfulness edits almost do not hurt mathematical tasks (GSM8K, MathQA) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment",
+      "evidence": "Linear SEA’s truthfulness edits show limited impact on NQ performance ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment",
+      "evidence": "Linear SEA shows limited degradation on MMLU under truthfulness edits ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "xRAG: Extreme Context Compression for Retrieval-augmented Generation with One Token",
+      "evidence": "TruthfulQA requires the generation of long‑form and truthful responses; evaluated with F1 ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "xRAG: Extreme Context Compression for Retrieval-augmented Generation with One Token",
+      "evidence": "TruthfulQA includes ROUGE‑L as an evaluation for long‑form, truthful responses ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "LLMCBench: Benchmarking Large Language Model Compression for Efficient Deployment",
+      "evidence": "Trustworthiness is divided into robustness and truthfulness."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "LLMCBench: Benchmarking Large Language Model Compression for Efficient Deployment",
+      "evidence": "TruthfulQA is used to evaluate truthfulness."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "WizardArena: Post-training Large Language Models via Simulated Offline Chatbot Arena",
+      "evidence": "TruthfulQA is listed under safety and truthfulness evaluations; results are reported in Table 6  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models",
+      "evidence": "Trustworthiness rankings are reported per aspect (Truthfulness, Safety, Robustness, Fairness, Privacy) and overall in MultiTrust ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models",
+      "evidence": "Truthfulness is divided into inherent deficiency and misguided mistakes ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+      "evidence": "Truthfulness in generation correlates with capability (base>chat) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Personalized Steering of Large Language Models: Versatile Steering Vectors Through Bi-directional Preference Optimization",
+      "evidence": "Truthfulness is treated as an alignment‑related scenario."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Personalized Steering of Large Language Models: Versatile Steering Vectors Through Bi-directional Preference Optimization",
+      "evidence": "Truthfulness assessed via TruthfulQA MC1 accuracy."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Personalized Steering of Large Language Models: Versatile Steering Vectors Through Bi-directional Preference Optimization",
+      "evidence": "Truthfulness assessed via TruthfulQA MC2 accuracy."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Should We Really Edit Language Models? On the Evaluation of Edited Language Models",
+      "evidence": "Safety evaluations concentrate on truthfulness, toxicity, and bias ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Should We Really Edit Language Models? On the Evaluation of Edited Language Models",
+      "evidence": "TruthfulQA (0-shot) multiple-choice accuracy evaluates truthfulness  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Exploiting LLM Quantization",
+      "evidence": "Truthfulness is tracked using TruthfulQA in the utility evaluation."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Long-form factuality in large language models",
+      "evidence": "Irrelevant facts are disregarded in F1@K and are said to reflect instruction-following more than factuality ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Long-form factuality in large language models",
+      "evidence": "Paper contends irrelevant facts better measure instruction-following ability than factuality ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "LACIE: Listener-Aware Finetuning for Calibration in Large Language Models",
+      "evidence": "Truthfulness is evaluated on TruthfulQA; the method yields a 28% absolute improvement in truthfulness."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Adversarial Representation Engineering: A General Model Editing Framework for Large Language Models",
+      "evidence": "The authors aim to enhance accuracy and truthfulness to mitigate hallucinations."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Adversarial Representation Engineering: A General Model Editing Framework for Large Language Models",
+      "evidence": "TruthfulQA is used to assess truthful answering; ARE attains SOTA accuracy after editing."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Alignment for Honesty",
+      "evidence": "Truthfulness requires stating what is objectively true, while honesty is about stating what the model believes/knows ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "SLED: Self Logits Evolution Decoding for Improving Factuality in Large Language Models",
+      "evidence": "Authors introduce %Truth × Info to avoid trivial truthful but unhelpful responses and to reflect helpfulness ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Observational Scaling Laws and the Predictability of Langauge Model Performance",
+      "evidence": "TruthfulQA evaluates truthfulness of LMs ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models",
+      "evidence": "Truthfulness is one of the five assessed safety dimensions in MLLMGUARD ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models",
+      "evidence": "Truthfulness involves a dual consideration of hallucination and robustness ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models",
+      "evidence": "Truthfulness evaluates consistency under noise injection and position swapping as part of robustness ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models",
+      "evidence": "PAR is reported for Truthfulness across models and languages in the benchmark tables and figures ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models",
+      "evidence": "ASD is reported for Truthfulness across red-teaming techniques and models (e.g., Table 20, Figure 2)  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models",
+      "evidence": "Non-existent Query is a truthfulness red-teaming technique with ASD reported per model  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models",
+      "evidence": "Position Swapping significantly impacts model selection behavior under truthfulness attacks; ASD is reported ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models",
+      "evidence": "Noise Injection robustness is evaluated via ASD for truthfulness across models ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models",
+      "evidence": "Truthfulness analysis cites issues such as hallucinations, selection bias, and noise harming accuracy, which bear on perceived reliability ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models",
+      "evidence": "MiniGPT‑v2 shows strong safety across several dimensions but underperforms on Truthfulness, suggesting a potential honesty–harmlessness trade‑off ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction Following",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Long-form factuality in large language models",
+      "evidence": "Ability to follow prompts and avoid irrelevant content; irrelevant facts indicate instruction-following more than factuality ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction Following",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Long-form factuality in large language models",
+      "evidence": "Irrelevant facts are disregarded in F1@K and are said to reflect instruction-following more than factuality ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction Following",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Long-form factuality in large language models",
+      "evidence": "Paper contends irrelevant facts better measure instruction-following ability than factuality ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language Modeling",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "AmoebaLLM: Constructing Any-Shape Large Language Models for Efficient and Instant Deployment",
+      "evidence": "Ability to model next-token distributions; evaluated with perplexity on Wikitext2; noted to be easier to recover via fine-tuning than factual knowledge after compression  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multi-hop Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "CRAG - Comprehensive RAG Benchmark",
+      "evidence": "CRAG defines multi-hop and reports lower truthfulness on such queries  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "xRAG: Extreme Context Compression for Retrieval-augmented Generation with One Token",
+      "evidence": "Ability to derive correct answers via systematic multi‑step or complex inference over provided evidence; instantiated as multi‑hop and factual verification reasoning in the paper ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "AmoebaLLM: Constructing Any-Shape Large Language Models for Efficient and Instant Deployment",
+      "evidence": "General capability to draw inferences; explicitly mentioned alongside factual knowledge as a core capability to preserve in subnets ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Scaling Retrieval-Based Language Models with a Trillion-Token Datastore",
+      "evidence": "Capability for reasoning-heavy tasks (e.g., multi-subject MMLU; medical reasoning in MedQA), beyond pure factual recall ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "xRAG: Extreme Context Compression for Retrieval-augmented Generation with One Token",
+      "evidence": "FactKG challenges the model to use complex reasoning to determine factual accuracy, a form of reasoning ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Does Reasoning Emerge? Examining the Probabilities of Causation in Large Language Models",
+      "evidence": "The study uses FIR to assess reasoning abilities on factual queries ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Scaling Retrieval-Based Language Models with a Trillion-Token Datastore",
+      "evidence": "MedQA is oriented toward reasoning rather than pure factual recall ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "On the Power of Decision Trees in Auto-Regressive Language Modeling",
+      "evidence": "Tasks often involve evaluating truthfulness of propositions ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Safety",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Instruction Tuning With Loss Over Instructions",
+      "evidence": "Safety-related behavior such as truthfulness, toxicity avoidance, and ethical judgment, captured by TruthfulQA, ToxiGen, and Hendrycks Ethics ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Safety",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Should We Really Edit Language Models? On the Evaluation of Edited Language Models",
+      "evidence": "Safety evaluations focus on truthfulness, toxicity, and bias ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Safety",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Should We Really Edit Language Models? On the Evaluation of Edited Language Models",
+      "evidence": "Safety evaluations concentrate on truthfulness, toxicity, and bias ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Temporal Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "CRAG - Comprehensive RAG Benchmark",
+      "evidence": "CRAG reports truthfulness across real-time and fast-changing slices, where performance is notably lower ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment",
+      "evidence": "Tendency to generate factual, non‑hallucinated content; a desirable property targeted by the method  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "xRAG: Extreme Context Compression for Retrieval-augmented Generation with One Token",
+      "evidence": "Ability to produce long‑form and truthful responses, as tested by TruthfulQA ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "WizardArena: Post-training Large Language Models via Simulated Offline Chatbot Arena",
+      "evidence": "Producing non-misleading, truthful answers (e.g., TruthfulQA) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "LoFiT: Localized Fine-tuning on LLM Representations",
+      "evidence": "Propensity to produce factually correct, non-misleading answers; targeted by interventions to improve factuality/truthful responses  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+      "evidence": "Tendency to produce factually correct, truthful responses; generally improves with capability though correlations differ by model class ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Personalized Steering of Large Language Models: Versatile Steering Vectors Through Bi-directional Preference Optimization",
+      "evidence": "Ability to provide accurate, non‑misconception‑based answers on factual queries (e.g., TruthfulQA). ;"
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Should We Really Edit Language Models? On the Evaluation of Edited Language Models",
+      "evidence": "Extent to which model answers are truthful (a key dimension of safety) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Exploiting LLM Quantization",
+      "evidence": "Tendency to produce truthful answers rather than mimic human falsehoods."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "LACIE: Listener-Aware Finetuning for Calibration in Large Language Models",
+      "evidence": "Tendency to avoid falsehoods and produce truthful content."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MiniCache: KV Cache Compression in Depth Dimension for Large Language Models",
+      "evidence": "Ability to avoid falsehoods and provide truthful answers ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Adversarial Representation Engineering: A General Model Editing Framework for Large Language Models",
+      "evidence": "Producing accurate, truthful answers that avoid mimicking human falsehoods (e.g., as assessed by TruthfulQA)."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback",
+      "evidence": "Truthfulness"
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment",
+      "evidence": "Alignment method aims to improve truthfulness (reducing hallucinations) alongside fairness ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment",
+      "evidence": "Truthfulness is evaluated via TruthfulQA, with MC1 reported and improved by SEA  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment",
+      "evidence": "Layer‑wise signatures indicate where truthfulness information is concentrated, predominantly in top layers for most models ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment",
+      "evidence": "Improving factual accuracy supports trusted deployment of LLMs in real‑world applications ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment",
+      "evidence": "Making LLMs more truthful could help curb the flow of inaccurate information from AI systems ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment",
+      "evidence": "Linear SEA edits to improve truthfulness have only limited impact on other capabilities such as commonsense reasoning ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment",
+      "evidence": "Linear SEA’s truthfulness edits almost do not hurt mathematical tasks (GSM8K, MathQA) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment",
+      "evidence": "Linear SEA’s truthfulness edits show limited impact on NQ performance ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment",
+      "evidence": "Linear SEA shows limited degradation on MMLU under truthfulness edits ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "xRAG: Extreme Context Compression for Retrieval-augmented Generation with One Token",
+      "evidence": "TruthfulQA requires the generation of long‑form and truthful responses; evaluated with F1 ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "xRAG: Extreme Context Compression for Retrieval-augmented Generation with One Token",
+      "evidence": "TruthfulQA includes ROUGE‑L as an evaluation for long‑form, truthful responses ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "LLMCBench: Benchmarking Large Language Model Compression for Efficient Deployment",
+      "evidence": "Trustworthiness is divided into robustness and truthfulness."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "LLMCBench: Benchmarking Large Language Model Compression for Efficient Deployment",
+      "evidence": "TruthfulQA is used to evaluate truthfulness."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "WizardArena: Post-training Large Language Models via Simulated Offline Chatbot Arena",
+      "evidence": "TruthfulQA is listed under safety and truthfulness evaluations; results are reported in Table 6  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models",
+      "evidence": "Trustworthiness rankings are reported per aspect (Truthfulness, Safety, Robustness, Fairness, Privacy) and overall in MultiTrust ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models",
+      "evidence": "Truthfulness is divided into inherent deficiency and misguided mistakes ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+      "evidence": "Truthfulness in generation correlates with capability (base>chat) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Personalized Steering of Large Language Models: Versatile Steering Vectors Through Bi-directional Preference Optimization",
+      "evidence": "Truthfulness is treated as an alignment‑related scenario."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Personalized Steering of Large Language Models: Versatile Steering Vectors Through Bi-directional Preference Optimization",
+      "evidence": "Truthfulness assessed via TruthfulQA MC1 accuracy."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Personalized Steering of Large Language Models: Versatile Steering Vectors Through Bi-directional Preference Optimization",
+      "evidence": "Truthfulness assessed via TruthfulQA MC2 accuracy."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Should We Really Edit Language Models? On the Evaluation of Edited Language Models",
+      "evidence": "Safety evaluations concentrate on truthfulness, toxicity, and bias ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Should We Really Edit Language Models? On the Evaluation of Edited Language Models",
+      "evidence": "TruthfulQA (0-shot) multiple-choice accuracy evaluates truthfulness  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Exploiting LLM Quantization",
+      "evidence": "Truthfulness is tracked using TruthfulQA in the utility evaluation."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "LACIE: Listener-Aware Finetuning for Calibration in Large Language Models",
+      "evidence": "Truthfulness is evaluated on TruthfulQA; the method yields a 28% absolute improvement in truthfulness."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Adversarial Representation Engineering: A General Model Editing Framework for Large Language Models",
+      "evidence": "The authors aim to enhance accuracy and truthfulness to mitigate hallucinations."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Adversarial Representation Engineering: A General Model Editing Framework for Large Language Models",
+      "evidence": "TruthfulQA is used to assess truthful answering; ARE attains SOTA accuracy after editing."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Alignment for Honesty",
+      "evidence": "Truthfulness requires stating what is objectively true, while honesty is about stating what the model believes/knows ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Observational Scaling Laws and the Predictability of Langauge Model Performance",
+      "evidence": "TruthfulQA evaluates truthfulness of LMs ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models",
+      "evidence": "Truthfulness is one of the five assessed safety dimensions in MLLMGUARD ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models",
+      "evidence": "Truthfulness involves a dual consideration of hallucination and robustness ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models",
+      "evidence": "Truthfulness evaluates consistency under noise injection and position swapping as part of robustness ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models",
+      "evidence": "PAR is reported for Truthfulness across models and languages in the benchmark tables and figures ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models",
+      "evidence": "ASD is reported for Truthfulness across red-teaming techniques and models (e.g., Table 20, Figure 2)  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models",
+      "evidence": "Non-existent Query is a truthfulness red-teaming technique with ASD reported per model  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models",
+      "evidence": "Position Swapping significantly impacts model selection behavior under truthfulness attacks; ASD is reported ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models",
+      "evidence": "Noise Injection robustness is evaluated via ASD for truthfulness across models ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models",
+      "evidence": "Truthfulness analysis cites issues such as hallucinations, selection bias, and noise harming accuracy, which bear on perceived reliability ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models",
+      "evidence": "MiniGPT‑v2 shows strong safety across several dimensions but underperforms on Truthfulness, suggesting a potential honesty–harmlessness trade‑off ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "World Knowledge",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "OneBit: Towards Extremely Low-bit Large Language Models",
+      "evidence": "Breadth of factual and domain knowledge across wide areas, examined via MMLU which spans many domains"
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "World Knowledge",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Private Attribute Inference from Images with Vision-Language Models",
+      "evidence": "Use of broad factual/commonsense knowledge to support inferences ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "World Knowledge",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Instruction Tuning With Loss Over Instructions",
+      "evidence": "Factual/academic knowledge assessed alongside language understanding through tasks like MMLU and OpenbookQA in the paper’s evaluation suite ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "World Knowledge",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Should We Really Edit Language Models? On the Evaluation of Edited Language Models",
+      "evidence": "Encyclopedic/factual knowledge assessed via multiple-choice tasks ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "World Knowledge",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Ensemble Learning for Heterogeneous Large Language Models with Deep Parallel Collaboration",
+      "evidence": "Open‑domain factual knowledge and question answering capability."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "World Knowledge",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "LLM-Check: Investigating Detection of Hallucinations in Large Language Models",
+      "evidence": "An LLM’s appreciable degree of world-knowledge grounded on truthful facts from pretraining ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "World Knowledge",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Self-playing Adversarial Language Game Enhances LLM Reasoning",
+      "evidence": "Extensive factual and domain knowledge required for multi‑task question answering."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "World Knowledge",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "BAM! Just Like That: Simple and Efficient Parameter Upcycling for Mixture of Experts",
+      "evidence": "Recall and use general factual knowledge in question answering."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "World Knowledge",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "LLM-Check: Investigating Detection of Hallucinations in Large Language Models",
+      "evidence": "The model is sensitive to non-factual content in responses which would otherwise be truthful, based on grounded precepts learned during training; differences appear in hidden activations and attention maps  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "World Knowledge",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "LLM-Check: Investigating Detection of Hallucinations in Large Language Models",
+      "evidence": "LLMs retain an appreciable degree of world-knowledge grounded on truthful facts encountered during training, supporting truthful, grounded responses ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "LLMCBench: Benchmarking Large Language Model Compression for Efficient Deployment",
+      "evidence": "Massive multitask knowledge evaluation for factual and domain knowledge. MMLU Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "AmoebaLLM: Constructing Any-Shape Large Language Models for Efficient and Instant Deployment",
+      "evidence": "Accuracy on the Multi-Task Language Understanding benchmark used here as a factual knowledge evaluation and calibration signal  . MMLU Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback",
+      "evidence": "0-shot accuracy averaged across MMLU subjects (used as a factuality metric) . MMLU Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SelectIT: Selective Instruction Tuning for LLMs via Uncertainty-Aware Self-Reflection",
+      "evidence": "Massive Multitask Language Understanding to assess factual knowledge with 5-shot evaluation. MMLU 5-shot accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SelectIT: Selective Instruction Tuning for LLMs via Uncertainty-Aware Self-Reflection",
+      "evidence": "MMLU assesses the factual knowledge of LLMs and reports 5-shot results."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Exploiting LLM Quantization",
+      "evidence": "Utility is evaluated along general knowledge (with language understanding and truthfulness) using MMLU in 5-shot settings."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "WizardArena: Post-training Large Language Models via Simulated Offline Chatbot Arena",
+      "evidence": "Truthfulness in generated answers TruthfulQA Accuracy (%) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MiniCache: KV Cache Compression in Depth Dimension for Large Language Models",
+      "evidence": "Truthfulness of responses TruthfulQA Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "xRAG: Extreme Context Compression for Retrieval-augmented Generation with One Token",
+      "evidence": "Long‑form QA emphasizing truthful responses TruthfulQA F1 score ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "xRAG: Extreme Context Compression for Retrieval-augmented Generation with One Token",
+      "evidence": "Long‑form QA emphasizing truthful responses TruthfulQA ROUGE‑L ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "LLMCBench: Benchmarking Large Language Model Compression for Efficient Deployment",
+      "evidence": "Truthfulness under misleading prompts. TruthfulQA Accuracy/Truthfulness (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "The Art of Saying No: Contextual Noncompliance in Language Models",
+      "evidence": "Truthfulness under misleading prompts (capability retention).  TruthfulQA Benchmark-defined metric (see Appendix B.1)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Reasons and Solutions for the Decline in Model Performance after Editing",
+      "evidence": "Truthfulness under prompts likely to elicit falsehoods TruthfulQA Accuracy/Truthfulness score (%) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Instruction Tuning With Loss Over Instructions",
+      "evidence": "Truthfulness under adversarial prompts, used in Safety & Helpfulness category . TruthfulQA Accuracy/Score"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Delta-CoMe: Training-Free Delta-Compression with Mixed-Precision for Large Language Models",
+      "evidence": "Chat helpfulness/truthfulness multiple‑choice evaluation TruthfulQA Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "$\\texttt{Model-GLUE}$: Democratized LLM Scaling for A Large Model Zoo in the Wild",
+      "evidence": "Truthfulness-oriented QA benchmark reported for stacking. TruthfulQA Accuracy/Truthfulness score (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+      "evidence": "Evaluates truthfulness of model responses. TruthfulQA Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Adversarial Representation Engineering: A General Model Editing Framework for Large Language Models",
+      "evidence": "Multiple-choice QA accuracy on TruthfulQA measuring truthful answering behavior. TruthfulQA Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Improving Alignment and Robustness with Circuit Breakers",
+      "evidence": "Truthfulness under misleading prompts TruthfulQA Score/Accuracy (higher is better)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Observational Scaling Laws and the Predictability of Langauge Model Performance",
+      "evidence": "Truthfulness evaluation TruthfulQA Accuracy normalized to [0,1]"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "xRAG: Extreme Context Compression for Retrieval-augmented Generation with One Token",
+      "evidence": "TruthfulQA requires the generation of long‑form and truthful responses; evaluated with F1 ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "xRAG: Extreme Context Compression for Retrieval-augmented Generation with One Token",
+      "evidence": "TruthfulQA includes ROUGE‑L as an evaluation for long‑form, truthful responses ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "LLMCBench: Benchmarking Large Language Model Compression for Efficient Deployment",
+      "evidence": "TruthfulQA is used to evaluate truthfulness."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "WizardArena: Post-training Large Language Models via Simulated Offline Chatbot Arena",
+      "evidence": "TruthfulQA is listed under safety and truthfulness evaluations; results are reported in Table 6  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Delta-CoMe: Training-Free Delta-Compression with Mixed-Precision for Large Language Models",
+      "evidence": "Sec. 4.1 uses TruthfulQA to measure chat helpfulness/truthfulness with accuracy ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "$\\texttt{Model-GLUE}$: Democratized LLM Scaling for A Large Model Zoo in the Wild",
+      "evidence": "TruthfulQA appears in the stacking comparison table to assess truthful answering ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Adversarial Representation Engineering: A General Model Editing Framework for Large Language Models",
+      "evidence": "TruthfulQA is used to assess truthful answering; ARE attains SOTA accuracy after editing."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Observational Scaling Laws and the Predictability of Langauge Model Performance",
+      "evidence": "TruthfulQA evaluates truthfulness of LMs ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Delta-CoMe: Training-Free Delta-Compression with Mixed-Precision for Large Language Models",
+      "evidence": "Sec. 4.1 uses TruthfulQA to measure chat helpfulness/truthfulness with accuracy ."
+    }
+  ],
+  "relationship_count": 154,
+  "incoming_relationship_count": 125,
+  "outgoing_relationship_count": 29
+}

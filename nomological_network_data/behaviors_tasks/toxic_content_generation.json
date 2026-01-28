@@ -1,0 +1,85 @@
+{
+  "canonical_name": "Toxic Content Generation",
+  "type": "behavior",
+  "canonical_definition": "Toxic Content Generation refers to the behavior of avoiding the production of harmful, toxic, or unsafe language in response to inputs, often operationalized as a safety-critical task in alignment and trustworthiness benchmarks. It involves resisting adversarial prompts (e.g., jailbreaking attempts), maintaining balanced caution to prevent overcautious refusals, and undergoing detoxification processes to ensure outputs adhere to safety constraints. This behavior is commonly used to evaluate a system's alignment with ethical guidelines and its capability to maintain harmlessness in real-world or multimodal scenarios.",
+  "expert_reviewed": false,
+  "names": [
+    "Toxic Content Generation"
+  ],
+  "papers": [
+    "CARES: A Comprehensive Benchmark of Trustworthiness in Medical Vision Language Models",
+    "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models",
+    "PaCE: Parsimonious Concept Engineering for Large Language Models",
+    "Stepwise Alignment for Constrained Language Model Policy Optimization"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Avoidance of toxic, biased, or unsafe content; primary target of the safety constraint.",
+      "paper": "Stepwise Alignment for Constrained Language Model Policy Optimization"
+    },
+    {
+      "text": "Guardrails to refuse toxic/NSFW inputs, identify risks, and resist jailbreaking attacks in multimodal scenarios  .",
+      "paper": "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models"
+    },
+    {
+      "text": "Resistance to adversarial prompts (jailbreak), balanced caution (avoiding overcautious refusals), and avoidance of toxic outputs.",
+      "paper": "CARES: A Comprehensive Benchmark of Trustworthiness in Medical Vision Language Models"
+    },
+    {
+      "text": "Ability to avoid generating harmful or toxic content; targeted via response detoxification .",
+      "paper": "PaCE: Parsimonious Concept Engineering for Large Language Models"
+    },
+    {
+      "text": "Alignment aims to prevent undesirable responses such as toxic language; detoxification evaluates safety  .",
+      "paper": "PaCE: Parsimonious Concept Engineering for Large Language Models"
+    }
+  ],
+  "definition_count": 5,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Harmlessness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Stepwise Alignment for Constrained Language Model Policy Optimization",
+      "evidence": "Avoidance of toxic, biased, or unsafe content; primary target of the safety constraint."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Safety",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models",
+      "evidence": "Guardrails to refuse toxic/NSFW inputs, identify risks, and resist jailbreaking attacks in multimodal scenarios  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Safety",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "CARES: A Comprehensive Benchmark of Trustworthiness in Medical Vision Language Models",
+      "evidence": "Resistance to adversarial prompts (jailbreak), balanced caution (avoiding overcautious refusals), and avoidance of toxic outputs."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Safety",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "PaCE: Parsimonious Concept Engineering for Large Language Models",
+      "evidence": "Ability to avoid generating harmful or toxic content; targeted via response detoxification ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Safety",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "PaCE: Parsimonious Concept Engineering for Large Language Models",
+      "evidence": "Alignment aims to prevent undesirable responses such as toxic language; detoxification evaluates safety  ."
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 5,
+  "outgoing_relationship_count": 0
+}

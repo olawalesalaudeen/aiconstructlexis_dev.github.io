@@ -1,0 +1,332 @@
+{
+  "canonical_name": "TruthfulQA",
+  "type": "measurement",
+  "canonical_definition": "N/A",
+  "expert_reviewed": false,
+  "names": [
+    "TruthfulQA",
+    "TruthfulQA Accuracy",
+    "TruthfulQA Accuracy (%)",
+    "TruthfulQA Accuracy (normalized)",
+    "TruthfulQA F1",
+    "TruthfulQA ROUGE‑L",
+    "TruthfulQA Score",
+    "TruthfulQA Score (%)"
+  ],
+  "papers": [
+    "$\\texttt{Model-GLUE}$: Democratized LLM Scaling for A Large Model Zoo in the Wild",
+    "Adversarial Representation Engineering: A General Model Editing Framework for Large Language Models",
+    "Delta-CoMe: Training-Free Delta-Compression with Mixed-Precision for Large Language Models",
+    "Distributional Preference Alignment of LLMs via Optimal Transport",
+    "Improving Alignment and Robustness with Circuit Breakers",
+    "Instruction Tuning With Loss Over Instructions",
+    "LLMCBench: Benchmarking Large Language Model Compression for Efficient Deployment",
+    "MiniCache: KV Cache Compression in Depth Dimension for Large Language Models",
+    "Observational Scaling Laws and the Predictability of Langauge Model Performance",
+    "Reasons and Solutions for the Decline in Model Performance after Editing",
+    "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+    "The Art of Saying No: Contextual Noncompliance in Language Models",
+    "WizardArena: Post-training Large Language Models via Simulated Offline Chatbot Arena",
+    "xRAG: Extreme Context Compression for Retrieval-augmented Generation with One Token"
+  ],
+  "paper_count": 14,
+  "group_ids": [
+    465,
+    783,
+    978,
+    1832,
+    1845,
+    2063,
+    2365,
+    3297,
+    3667,
+    3944,
+    4253,
+    4345,
+    5032
+  ],
+  "definitions": [
+    {
+      "text": "Truthfulness in generated answers TruthfulQA Accuracy (%) .",
+      "paper": "WizardArena: Post-training Large Language Models via Simulated Offline Chatbot Arena"
+    },
+    {
+      "text": "Truthfulness of responses TruthfulQA Accuracy (%)",
+      "paper": "MiniCache: KV Cache Compression in Depth Dimension for Large Language Models"
+    },
+    {
+      "text": "Long‑form QA emphasizing truthful responses TruthfulQA F1 score .",
+      "paper": "xRAG: Extreme Context Compression for Retrieval-augmented Generation with One Token"
+    },
+    {
+      "text": "Long‑form QA emphasizing truthful responses TruthfulQA ROUGE‑L .",
+      "paper": "xRAG: Extreme Context Compression for Retrieval-augmented Generation with One Token"
+    },
+    {
+      "text": "Truthfulness under misleading prompts. TruthfulQA Accuracy/Truthfulness (%)",
+      "paper": "LLMCBench: Benchmarking Large Language Model Compression for Efficient Deployment"
+    },
+    {
+      "text": "Truthfulness under misleading prompts (capability retention).  TruthfulQA Benchmark-defined metric (see Appendix B.1)",
+      "paper": "The Art of Saying No: Contextual Noncompliance in Language Models"
+    },
+    {
+      "text": "Truthfulness under prompts likely to elicit falsehoods TruthfulQA Accuracy/Truthfulness score (%) .",
+      "paper": "Reasons and Solutions for the Decline in Model Performance after Editing"
+    },
+    {
+      "text": "Truthfulness under adversarial prompts, used in Safety & Helpfulness category . TruthfulQA Accuracy/Score",
+      "paper": "Instruction Tuning With Loss Over Instructions"
+    },
+    {
+      "text": "Chat helpfulness/truthfulness multiple‑choice evaluation TruthfulQA Accuracy (%)",
+      "paper": "Delta-CoMe: Training-Free Delta-Compression with Mixed-Precision for Large Language Models"
+    },
+    {
+      "text": "Open LLM Leaderboard evaluation on TruthfulQA. TruthfulQA Accuracy (%)",
+      "paper": "Distributional Preference Alignment of LLMs via Optimal Transport"
+    },
+    {
+      "text": "Truthfulness-oriented QA benchmark reported for stacking. TruthfulQA Accuracy/Truthfulness score (%)",
+      "paper": "$\\texttt{Model-GLUE}$: Democratized LLM Scaling for A Large Model Zoo in the Wild"
+    },
+    {
+      "text": "Evaluates truthfulness of model responses. TruthfulQA Accuracy (%)",
+      "paper": "SimPO: Simple Preference Optimization with a Reference-Free Reward"
+    },
+    {
+      "text": "Multiple-choice QA accuracy on TruthfulQA measuring truthful answering behavior. TruthfulQA Accuracy (%)",
+      "paper": "Adversarial Representation Engineering: A General Model Editing Framework for Large Language Models"
+    },
+    {
+      "text": "Truthfulness under misleading prompts TruthfulQA Score/Accuracy (higher is better)",
+      "paper": "Improving Alignment and Robustness with Circuit Breakers"
+    },
+    {
+      "text": "Truthfulness evaluation TruthfulQA Accuracy normalized to [0,1]",
+      "paper": "Observational Scaling Laws and the Predictability of Langauge Model Performance"
+    }
+  ],
+  "definition_count": 15,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "xRAG: Extreme Context Compression for Retrieval-augmented Generation with One Token",
+      "evidence": "TruthfulQA requires the generation of long‑form and truthful responses; evaluated with F1 ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "xRAG: Extreme Context Compression for Retrieval-augmented Generation with One Token",
+      "evidence": "TruthfulQA requires the generation of long‑form and truthful responses; evaluated with F1 ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "xRAG: Extreme Context Compression for Retrieval-augmented Generation with One Token",
+      "evidence": "TruthfulQA includes ROUGE‑L as an evaluation for long‑form, truthful responses ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "xRAG: Extreme Context Compression for Retrieval-augmented Generation with One Token",
+      "evidence": "TruthfulQA includes ROUGE‑L as an evaluation for long‑form, truthful responses ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge Retrieval and Integration",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "xRAG: Extreme Context Compression for Retrieval-augmented Generation with One Token",
+      "evidence": "TruthfulQA (long‑form QA) is included among knowledge‑intensive tasks evaluated under RAG ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge Retrieval and Integration",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "xRAG: Extreme Context Compression for Retrieval-augmented Generation with One Token",
+      "evidence": "TruthfulQA ROUGE‑L is used to evaluate long‑form outputs in knowledge‑intensive settings ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "LLMCBench: Benchmarking Large Language Model Compression for Efficient Deployment",
+      "evidence": "TruthfulQA is used to evaluate truthfulness."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "LLMCBench: Benchmarking Large Language Model Compression for Efficient Deployment",
+      "evidence": "TruthfulQA is used to evaluate truthfulness."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "WizardArena: Post-training Large Language Models via Simulated Offline Chatbot Arena",
+      "evidence": "TruthfulQA is listed under safety and truthfulness evaluations; results are reported in Table 6  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "WizardArena: Post-training Large Language Models via Simulated Offline Chatbot Arena",
+      "evidence": "TruthfulQA is listed under safety and truthfulness evaluations; results are reported in Table 6  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Capabilities",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "The Art of Saying No: Contextual Noncompliance in Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Robustness to Knowledge Editing (Post‑edit Performance Stability)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Reasons and Solutions for the Decline in Model Performance after Editing",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Reasons and Solutions for the Decline in Model Performance after Editing",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Reasons and Solutions for the Decline in Model Performance after Editing",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Safety",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Instruction Tuning With Loss Over Instructions",
+      "evidence": "TruthfulQA appears in the Safety & Helpfulness category used in the paper ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Chat Helpfulness/Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Delta-CoMe: Training-Free Delta-Compression with Mixed-Precision for Large Language Models",
+      "evidence": "Sec. 4.1 uses TruthfulQA to measure chat helpfulness/truthfulness with accuracy ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Language Understanding and Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Distributional Preference Alignment of LLMs via Optimal Transport",
+      "evidence": "Reported as part of Open LLM Leaderboard evaluations."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness in QA",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "$\\texttt{Model-GLUE}$: Democratized LLM Scaling for A Large Model Zoo in the Wild",
+      "evidence": "TruthfulQA appears in the stacking comparison table to assess truthful answering ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+      "evidence": "TruthfulQA evaluates whether models avoid mimicking falsehoods."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+      "evidence": "TruthfulQA evaluates whether models avoid mimicking falsehoods."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "MiniCache: KV Cache Compression in Depth Dimension for Large Language Models",
+      "evidence": "TruthfulQA is used as a benchmark in the evaluations ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "MiniCache: KV Cache Compression in Depth Dimension for Large Language Models",
+      "evidence": "TruthfulQA is used as a benchmark in the evaluations ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Adversarial Representation Engineering: A General Model Editing Framework for Large Language Models",
+      "evidence": "TruthfulQA is used to assess truthful answering; ARE attains SOTA accuracy after editing."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Adversarial Representation Engineering: A General Model Editing Framework for Large Language Models",
+      "evidence": "TruthfulQA is used to assess truthful answering; ARE attains SOTA accuracy after editing."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Abilities",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "IRCAN: Mitigating Knowledge Conflicts in LLM Generation via Identifying and Reweighting Context-Aware Neurons",
+      "evidence": "Monitored to ensure general capabilities are retained ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Observational Scaling Laws and the Predictability of Langauge Model Performance",
+      "evidence": "TruthfulQA evaluates truthfulness of LMs ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Observational Scaling Laws and the Predictability of Langauge Model Performance",
+      "evidence": "TruthfulQA evaluates truthfulness of LMs ."
+    }
+  ],
+  "relationship_count": 27,
+  "incoming_relationship_count": 27,
+  "outgoing_relationship_count": 0
+}

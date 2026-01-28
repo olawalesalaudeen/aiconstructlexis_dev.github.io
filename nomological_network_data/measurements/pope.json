@@ -1,0 +1,229 @@
+{
+  "canonical_name": "POPE",
+  "type": "measurement",
+  "canonical_definition": "POPE (Pointing Out False Entities) is a benchmark designed to evaluate object hallucination in vision-language models (VLMs) through adversarial question-answering tasks. It assesses the model's ability to resist hallucinating objects not present in images by testing on subsets including random, popular, and adversarial configurations. The benchmark focuses on robustness against false entity generation, with higher scores indicating fewer hallucinations.",
+  "expert_reviewed": false,
+  "names": [
+    "POPE",
+    "POPE Accuracy",
+    "POPE Accuracy (%)",
+    "POPE F1",
+    "POPE Performance",
+    "POPE Score",
+    "POPE Score (%)"
+  ],
+  "papers": [
+    "CogVLM: Visual Expert for Pretrained Language Models",
+    "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts",
+    "Efficient Large Multi-modal Models via Visual Context Compression",
+    "Instruction-Guided Visual Masking",
+    "LOVA3: Learning to Visual Question Answering, Asking and Assessment",
+    "Matryoshka Query Transformer for Large Vision-Language Models",
+    "Meteor: Mamba-based Traversal of Rationale for Large Language and Vision Models",
+    "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+    "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding",
+    "RoboMamba: Efficient Vision-Language-Action Model for Robotic Reasoning and Manipulation",
+    "Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment",
+    "Unified Generative and Discriminative Training for Multi-modal Large Language Models",
+    "VisMin: Visual Minimal-Change Understanding",
+    "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+    "Web2Code: A Large-scale Webpage-to-Code Dataset and Evaluation Framework for Multimodal LLMs"
+  ],
+  "paper_count": 15,
+  "group_ids": [
+    723,
+    1519,
+    1765,
+    1802,
+    1860,
+    1973,
+    2008,
+    2273,
+    2508,
+    2843,
+    3548,
+    4617,
+    5425,
+    5678
+  ],
+  "definitions": [
+    {
+      "text": "Object hallucination evaluation POPE Score (higher is better per table reporting)",
+      "paper": "Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment"
+    },
+    {
+      "text": "Object hallucination evaluation POPE Benchmark score; higher is better per paper table context",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks"
+    },
+    {
+      "text": "Hallucination adversarial QA measuring resistance to hallucination. POPE Accuracy (%)",
+      "paper": "Instruction-Guided Visual Masking"
+    },
+    {
+      "text": "Non-fine-grained evaluation included in zero-shot checks alongside MMMU. POPE Benchmark-specific score",
+      "paper": "VisMin: Visual Minimal-Change Understanding"
+    },
+    {
+      "text": "Object hallucination evaluation (POPE) reported in the comparison table; POPE evaluates object hallucination in LVLMs . POPE Score",
+      "paper": "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts"
+    },
+    {
+      "text": "Object hallucination evaluation (random/popular/adversarial subsets) POPE Accuracy/Score (%)",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models"
+    },
+    {
+      "text": "Evaluation of perception/hallucination robustness for MLLMs POPE Score",
+      "paper": "RoboMamba: Efficient Vision-Language-Action Model for Robotic Reasoning and Manipulation"
+    },
+    {
+      "text": "Object hallucination evaluation POPE Higher score indicates fewer hallucinations",
+      "paper": "Meteor: Mamba-based Traversal of Rationale for Large Language and Vision Models"
+    },
+    {
+      "text": "Benchmark score on POPE POPE Score (as reported)",
+      "paper": "Matryoshka Query Transformer for Large Vision-Language Models"
+    },
+    {
+      "text": "Object hallucination evaluation POPE F1 (%)",
+      "paper": "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding"
+    },
+    {
+      "text": "Anti-hallucination evaluation on object presence/absence POPE POPE score as reported in comparisons .",
+      "paper": "Web2Code: A Large-scale Webpage-to-Code Dataset and Evaluation Framework for Multimodal LLMs"
+    },
+    {
+      "text": "Object hallucinations detection POPE Accuracy (%)",
+      "paper": "Unified Generative and Discriminative Training for Multi-modal Large Language Models"
+    },
+    {
+      "text": "Object hallucination evaluation for vision-language models POPE Score",
+      "paper": "Efficient Large Multi-modal Models via Visual Context Compression"
+    },
+    {
+      "text": "Object hallucination detection/robustness POPE Score (higher indicates fewer hallucinations)",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context"
+    },
+    {
+      "text": "Benchmark included in ablations POPE Score",
+      "paper": "LOVA3: Learning to Visual Question Answering, Asking and Assessment"
+    }
+  ],
+  "definition_count": 15,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Resistance",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Instruction-Guided Visual Masking",
+      "evidence": "POPE is a hallucination adversarial QA benchmark used in the paper's evaluations."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Object Hallucination Control",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Resistance",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models",
+      "evidence": "POPE evaluates object hallucination with multiple subsets (random/popular/adversarial) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "RoboMamba: Efficient Vision-Language-Action Model for Robotic Reasoning and Manipulation",
+      "evidence": "POPE is included among general reasoning/robustness metrics reported (Table 1) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SAPIEN Manipulation Success Rate (%)",
+      "other_type": "measurements",
+      "relationship_type": "predicts",
+      "paper": "RoboMamba: Efficient Vision-Language-Action Model for Robotic Reasoning and Manipulation",
+      "evidence": "Ablation Figure 3b plots POPE alongside manipulation accuracy, indicating proportionality ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Robustness",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Meteor: Mamba-based Traversal of Rationale for Large Language and Vision Models",
+      "evidence": "POPE is used to evaluate hallucination; authors note reductions with rationale  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment",
+      "evidence": "POPE appears among evaluated metrics; CAL variants are compared on it ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Multimodal Capability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding",
+      "evidence": "POPE F1 reported in comparison table ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction Following (Multimodal)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "evidence": "POPE listed among instruction-following/diagnostic benchmarks in Table 1 ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Robustness",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Web2Code: A Large-scale Webpage-to-Code Dataset and Evaluation Framework for Multimodal LLMs",
+      "evidence": "POPE assesses anti-hallucination ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Resistance",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Unified Generative and Discriminative Training for Multi-modal Large Language Models",
+      "evidence": "POPE evaluates object hallucinations detection; Sugar reports SOTA on this benchmark ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Avoidance",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Efficient Large Multi-modal Models via Visual Context Compression",
+      "evidence": "POPE evaluates object hallucination in a stable and flexible way ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Object Hallucination Robustness",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "evidence": "POPE is listed as the object hallucination evaluation criterion ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Answering Ability (Visual Question Answering)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "LOVA3: Learning to Visual Question Answering, Asking and Assessment",
+      "evidence": ""
+    }
+  ],
+  "relationship_count": 14,
+  "incoming_relationship_count": 13,
+  "outgoing_relationship_count": 1
+}

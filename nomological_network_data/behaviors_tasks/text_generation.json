@@ -1,0 +1,1212 @@
+{
+  "canonical_name": "Text Generation",
+  "type": "behavior",
+  "canonical_definition": "Text Generation is the behavior involving production of textual outputs (including code, explanations, or simulation components) from prompts or inputs, often requiring decomposition into sub-tasks, articulation of intermediate reasoning steps, or use of chain-of-thought prompting; it encompasses code generation tasks evaluated via benchmarks like MBPP or HumanEval (using metrics such as pass@1) and long-context generation where positional encoding adaptivity impacts performance.",
+  "expert_reviewed": false,
+  "names": [
+    "Text Generation"
+  ],
+  "papers": [
+    "$\\textit{Trans-LoRA}$: towards data-free Transferable Parameter Efficient Finetuning",
+    "ALI-Agent: Assessing LLMs'  Alignment with Human Values via Agent-based Evaluation",
+    "AP-Adapter: Improving Generalization of Automatic Prompts on Unseen Text-to-Image Diffusion Models",
+    "Adversarial Representation Engineering: A General Model Editing Framework for Large Language Models",
+    "AlchemistCoder: Harmonizing and Eliciting Code Capability by Hindsight Tuning on Multi-source Data",
+    "Algorithmic Capabilities of Random Transformers",
+    "AlphaMath Almost Zero: Process Supervision without Process",
+    "AmoebaLLM: Constructing Any-Shape Large Language Models for Efficient and Instant Deployment",
+    "BAM! Just Like That: Simple and Efficient Parameter Upcycling for Mixture of Experts",
+    "BERTs are Generative In-Context Learners",
+    "Buffer of Thoughts: Thought-Augmented Reasoning with Large Language Models",
+    "Chain-of-Thought Reasoning Without Prompting",
+    "CogVLM: Visual Expert for Pretrained Language Models",
+    "Compact Language Models via Pruning and Knowledge Distillation",
+    "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning",
+    "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models",
+    "DAPE: Data-Adaptive Positional Encoding for Length Extrapolation",
+    "DDK: Distilling Domain Knowledge for Efficient Large Language Models",
+    "DISP-LLM: Dimension-Independent Structural Pruning for Large Language Models",
+    "DTGB: A Comprehensive Benchmark for Dynamic Text-Attributed Graphs",
+    "Delta-CoMe: Training-Free Delta-Compression with Mixed-Precision for Large Language Models",
+    "Delving into the Reversal Curse: How Far Can Large Language Models Generalize?",
+    "Enhancing LLM Reasoning via Vision-Augmented Prompting",
+    "Ensemble Learning for Heterogeneous Large Language Models with Deep Parallel Collaboration",
+    "Exploring the Role of Large Language Models in Prompt Encoding for Diffusion Models",
+    "FEDMEKI: A Benchmark for Scaling Medical Foundation Models via Federated Knowledge Injection",
+    "FactorSim: Generative Simulation via Factorized Representation",
+    "G-Retriever: Retrieval-Augmented Generation for Textual Graph Understanding and Question Answering",
+    "GameTraversalBenchmark: Evaluating Planning Abilities Of Large Language Models Through Traversing 2D Game Maps",
+    "Generating Code World Models with Large Language Models Guided by Monte Carlo Tree Search",
+    "HARMONIC: Harnessing LLMs for Tabular Data Synthesis and Privacy Protection",
+    "Hints-In-Browser: Benchmarking Language Models for Programming Feedback Generation",
+    "Humor in AI: Massive Scale Crowd-Sourced Preferences and Benchmarks for Cartoon Captioning",
+    "Instruction Tuning With Loss Over Instructions",
+    "Keeping LLMs Aligned After Fine-tuning: The Crucial Role of Prompt Templates",
+    "LLM-based Skill Diffusion for Zero-shot Policy Adaptation",
+    "LLMs Can Evolve Continually on Modality for $\\mathbb{X}$-Modal Reasoning",
+    "LOVA3: Learning to Visual Question Answering, Asking and Assessment",
+    "Language-Driven Interactive Traffic Trajectory Generation",
+    "Learning to Reason via Program Generation, Emulation, and Search",
+    "MAGIS: LLM-Based Multi-Agent Framework for GitHub Issue Resolution",
+    "MAmmoTH2: Scaling Instructions from the Web",
+    "MaVEn: An Effective Multi-granularity Hybrid Visual Encoding Framework for Multimodal Large Language Model",
+    "MedCalc-Bench: Evaluating Large Language Models for Medical Calculations",
+    "MindMerger: Efficiently Boosting LLM Reasoning in non-English Languages",
+    "MiniCache: KV Cache Compression in Depth Dimension for Large Language Models",
+    "Mitigating Object Hallucination via Concentric Causal Attention",
+    "Mixture of Demonstrations for In-Context Learning",
+    "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models",
+    "Neuro-Symbolic Data Generation for Math Reasoning",
+    "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding",
+    "OccamLLM: Fast and Exact Language Model Arithmetic in a Single Step",
+    "On the Power of Decision Trees in Auto-Regressive Language Modeling",
+    "Optimized Feature Generation for Tabular Data via LLMs with Decision Tree Reasoning",
+    "Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks",
+    "Personalized Steering of Large Language Models: Versatile Steering Vectors Through Bi-directional Preference Optimization",
+    "Prompt Tuning Strikes Back: Customizing Foundation Models with Low-Rank Prompt Adaptation",
+    "PromptFix: You Prompt and We Fix the Photo",
+    "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models",
+    "RouterDC: Query-Based Router by Dual Contrastive Learning for Assembling Large Language Models",
+    "SLED: Self Logits Evolution Decoding for Improving Factuality in Large Language Models",
+    "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+    "SciCode: A Research Coding Benchmark Curated by Scientists",
+    "Selective Generation for Controllable Language Models",
+    "Self-Healing Machine Learning: A Framework for Autonomous Adaptation in Real-World Environments",
+    "SelfCodeAlign: Self-Alignment for Code Generation",
+    "Spider2-V: How Far Are Multimodal Agents From Automating Data Science and Engineering Workflows?",
+    "Synthesize, Partition, then Adapt: Eliciting Diverse Samples from Foundation Models",
+    "The Factorization Curse: Which Tokens You Predict Underlie the Reversal Curse and More",
+    "Trace is the Next AutoDiff: Generative Optimization with Rich Feedback, Execution Traces, and LLMs",
+    "Unchosen Experts Can Contribute Too: Unleashing MoE Models’ Power by Self-Contrast",
+    "VideoLLM-MoD: Efficient Video-Language Streaming with Mixture-of-Depths Vision Computation",
+    "VideoTetris: Towards Compositional Text-to-Video Generation",
+    "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+    "xRAG: Extreme Context Compression for Retrieval-augmented Generation with One Token"
+  ],
+  "paper_count": 75,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Static positional encodings’ lack of adaptivity leads to performance degradation especially in tasks involving long-context generation and reasoning, implying long-context capability affects reasoning performance when long ranges are involved .",
+      "paper": "DAPE: Data-Adaptive Positional Encoding for Length Extrapolation"
+    },
+    {
+      "text": "Deriving and following a step-by-step plan from a prompt to break complex generation into sub-tasks.",
+      "paper": "FactorSim: Generative Simulation via Factorized Representation"
+    },
+    {
+      "text": "Articulating intermediate reasoning steps during generation; reported to produce more accurate suggestions than without explicit reasoning .",
+      "paper": "VideoTetris: Towards Compositional Text-to-Video Generation"
+    },
+    {
+      "text": "Generation of auxiliary detailed explanations (X) during hint production as part of chain-of-thought prompting",
+      "paper": "Hints-In-Browser: Benchmarking Language Models for Programming Feedback Generation"
+    },
+    {
+      "text": "Breaking generation into stepwise plans aids progressive construction of the simulation.",
+      "paper": "FactorSim: Generative Simulation via Factorized Representation"
+    },
+    {
+      "text": "Diagnosis generation uses a CoT module with self-reflection to produce candidate reasons",
+      "paper": "Self-Healing Machine Learning: A Framework for Autonomous Adaptation in Real-World Environments"
+    },
+    {
+      "text": "Assessed via MBPP pass@1 (code generation/completion) in this paper  .",
+      "paper": "Prompt Tuning Strikes Back: Customizing Foundation Models with Low-Rank Prompt Adaptation"
+    },
+    {
+      "text": "Code Generation",
+      "paper": "Mixture of Demonstrations for In-Context Learning"
+    },
+    {
+      "text": "Generation of SQL and Python to accomplish data tasks within professional tools .",
+      "paper": "Spider2-V: How Far Are Multimodal Agents From Automating Data Science and Engineering Workflows?"
+    },
+    {
+      "text": "Ability to generate correct code from problem descriptions; encompasses function-level and class-level generation.",
+      "paper": "SelfCodeAlign: Self-Alignment for Code Generation"
+    },
+    {
+      "text": "MBPP is used as an out-of-distribution code generation task in the experiments .",
+      "paper": "RouterDC: Query-Based Router by Dual Contrastive Learning for Assembling Large Language Models"
+    },
+    {
+      "text": "MBPP is used in the paper for code generation/completion and is reported via pass@1  .",
+      "paper": "Prompt Tuning Strikes Back: Customizing Foundation Models with Low-Rank Prompt Adaptation"
+    },
+    {
+      "text": "MBPP is used to measure code generation using pass@1; SCMoE improves pass@1  .",
+      "paper": "Unchosen Experts Can Contribute Too: Unleashing MoE Models’ Power by Self-Contrast"
+    },
+    {
+      "text": "HumanEval is used to measure code generation using pass@1; SCMoE improves pass@1  .",
+      "paper": "Unchosen Experts Can Contribute Too: Unleashing MoE Models’ Power by Self-Contrast"
+    },
+    {
+      "text": "GeoQuery and NL2Bash are listed as Code Generation (Table 1).",
+      "paper": "Mixture of Demonstrations for In-Context Learning"
+    },
+    {
+      "text": "GeoQuery and NL2Bash are listed as Code Generation (Table 1).",
+      "paper": "Mixture of Demonstrations for In-Context Learning"
+    },
+    {
+      "text": "Code generation capability is evaluated on HumanEval.",
+      "paper": "Synthesize, Partition, then Adapt: Eliciting Diverse Samples from Foundation Models"
+    },
+    {
+      "text": "Code generation capability is evaluated on MBPP.",
+      "paper": "Synthesize, Partition, then Adapt: Eliciting Diverse Samples from Foundation Models"
+    },
+    {
+      "text": "Sec. 4.1 uses HumanEval with pass@1 to evaluate code generation .",
+      "paper": "Delta-CoMe: Training-Free Delta-Compression with Mixed-Precision for Large Language Models"
+    },
+    {
+      "text": "Sec. 4.1 uses MBPP with pass@1 to evaluate code generation .",
+      "paper": "Delta-CoMe: Training-Free Delta-Compression with Mixed-Precision for Large Language Models"
+    },
+    {
+      "text": "APPS Competition strict accuracy captures code generation skill; GIF-MCTS achieves state of the art with Llama 3 70B.",
+      "paper": "Generating Code World Models with Large Language Models Guided by Monte Carlo Tree Search"
+    },
+    {
+      "text": "HumanEval(+) average accuracy reported to summarize code generation performance .",
+      "paper": "MAmmoTH2: Scaling Instructions from the Web"
+    },
+    {
+      "text": "The work advances code intelligence and showcases enhanced code generation capability.",
+      "paper": "AlchemistCoder: Harmonizing and Eliciting Code Capability by Hindsight Tuning on Multi-source Data"
+    },
+    {
+      "text": "MBPP/MBPP+ evaluate code synthesis with test cases, reflecting code-generation capability .",
+      "paper": "$\\textit{Trans-LoRA}$: towards data-free Transferable Parameter Efficient Finetuning"
+    },
+    {
+      "text": "MBPP is a set of Python code generation problems with test cases; MBPP+ uses stricter evaluations and added tests .",
+      "paper": "$\\textit{Trans-LoRA}$: towards data-free Transferable Parameter Efficient Finetuning"
+    }
+  ],
+  "definition_count": 25,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Algorithmic Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "DAPE: Data-Adaptive Positional Encoding for Length Extrapolation",
+      "evidence": "Static positional encodings’ lack of adaptivity leads to performance degradation especially in tasks involving long-context generation and reasoning, implying long-context capability affects reasoning performance when long ranges are involved ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Chain-of-Thought Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "FactorSim: Generative Simulation via Factorized Representation",
+      "evidence": "Deriving and following a step-by-step plan from a prompt to break complex generation into sub-tasks."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Chain-of-Thought Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "VideoTetris: Towards Compositional Text-to-Video Generation",
+      "evidence": "Articulating intermediate reasoning steps during generation; reported to produce more accurate suggestions than without explicit reasoning ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Chain-of-Thought Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Hints-In-Browser: Benchmarking Language Models for Programming Feedback Generation",
+      "evidence": "Generation of auxiliary detailed explanations (X) during hint production as part of chain-of-thought prompting"
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Chain-of-Thought Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "FactorSim: Generative Simulation via Factorized Representation",
+      "evidence": "Breaking generation into stepwise plans aids progressive construction of the simulation."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Chain-of-Thought Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Self-Healing Machine Learning: A Framework for Autonomous Adaptation in Real-World Environments",
+      "evidence": "Diagnosis generation uses a CoT module with self-reflection to produce candidate reasons"
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code Generation",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Prompt Tuning Strikes Back: Customizing Foundation Models with Low-Rank Prompt Adaptation",
+      "evidence": "Assessed via MBPP pass@1 (code generation/completion) in this paper  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code Generation",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Mixture of Demonstrations for In-Context Learning",
+      "evidence": "Code Generation"
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code Generation",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Spider2-V: How Far Are Multimodal Agents From Automating Data Science and Engineering Workflows?",
+      "evidence": "Generation of SQL and Python to accomplish data tasks within professional tools ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code Generation",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "SelfCodeAlign: Self-Alignment for Code Generation",
+      "evidence": "Ability to generate correct code from problem descriptions; encompasses function-level and class-level generation."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code Generation",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "RouterDC: Query-Based Router by Dual Contrastive Learning for Assembling Large Language Models",
+      "evidence": "MBPP is used as an out-of-distribution code generation task in the experiments ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code Generation",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Prompt Tuning Strikes Back: Customizing Foundation Models with Low-Rank Prompt Adaptation",
+      "evidence": "MBPP is used in the paper for code generation/completion and is reported via pass@1  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code Generation",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Unchosen Experts Can Contribute Too: Unleashing MoE Models’ Power by Self-Contrast",
+      "evidence": "MBPP is used to measure code generation using pass@1; SCMoE improves pass@1  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code Generation",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Unchosen Experts Can Contribute Too: Unleashing MoE Models’ Power by Self-Contrast",
+      "evidence": "HumanEval is used to measure code generation using pass@1; SCMoE improves pass@1  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code Generation",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Mixture of Demonstrations for In-Context Learning",
+      "evidence": "GeoQuery and NL2Bash are listed as Code Generation (Table 1)."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code Generation",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Synthesize, Partition, then Adapt: Eliciting Diverse Samples from Foundation Models",
+      "evidence": "Code generation capability is evaluated on HumanEval."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code Generation",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Synthesize, Partition, then Adapt: Eliciting Diverse Samples from Foundation Models",
+      "evidence": "Code generation capability is evaluated on MBPP."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code Generation",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Delta-CoMe: Training-Free Delta-Compression with Mixed-Precision for Large Language Models",
+      "evidence": "Sec. 4.1 uses HumanEval with pass@1 to evaluate code generation ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code Generation",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Delta-CoMe: Training-Free Delta-Compression with Mixed-Precision for Large Language Models",
+      "evidence": "Sec. 4.1 uses MBPP with pass@1 to evaluate code generation ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code Generation",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Generating Code World Models with Large Language Models Guided by Monte Carlo Tree Search",
+      "evidence": "APPS Competition strict accuracy captures code generation skill; GIF-MCTS achieves state of the art with Llama 3 70B."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code Generation",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MAmmoTH2: Scaling Instructions from the Web",
+      "evidence": "HumanEval(+) average accuracy reported to summarize code generation performance ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code Generation",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "AlchemistCoder: Harmonizing and Eliciting Code Capability by Hindsight Tuning on Multi-source Data",
+      "evidence": "The work advances code intelligence and showcases enhanced code generation capability."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code Generation",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "$\\textit{Trans-LoRA}$: towards data-free Transferable Parameter Efficient Finetuning",
+      "evidence": "MBPP/MBPP+ evaluate code synthesis with test cases, reflecting code-generation capability ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code Generation",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "$\\textit{Trans-LoRA}$: towards data-free Transferable Parameter Efficient Finetuning",
+      "evidence": "MBPP is a set of Python code generation problems with test cases; MBPP+ uses stricter evaluations and added tests ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code Generation",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Trace is the Next AutoDiff: Generative Optimization with Rich Feedback, Execution Traces, and LLMs",
+      "evidence": "Trace unifies prompt optimization and code generation in end-to-end workflow optimization."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code Generation",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning",
+      "evidence": "HumanEval is used to evaluate code generation ability"
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code Generation",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning",
+      "evidence": "MBPP is used to evaluate code generation ability"
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code Generation",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "SelfCodeAlign: Self-Alignment for Code Generation",
+      "evidence": "Main evaluation decomposes code generation into function-level tasks checked by tests."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code Generation",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "SelfCodeAlign: Self-Alignment for Code Generation",
+      "evidence": "Main evaluation separately assesses class-level generation with class- and method-level tests."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code Generation",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "SelfCodeAlign: Self-Alignment for Code Generation",
+      "evidence": "Instruction tuning is stated to boost following instructions and solving software tasks; SelfCodeAlign significantly improves code generation across benchmarks."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code Generation",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "BAM! Just Like That: Simple and Efficient Parameter Upcycling for Mixture of Experts",
+      "evidence": "For code generation, they evaluate on HumanEval (0-shot) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code Generation",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "BAM! Just Like That: Simple and Efficient Parameter Upcycling for Mixture of Experts",
+      "evidence": "For code generation, they evaluate on MBPP (3-shot) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Computational Efficiency",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "AmoebaLLM: Constructing Any-Shape Large Language Models for Efficient and Instant Deployment",
+      "evidence": "Execution efficiency of LLM inference across devices and deployment flows; operationalized as generation latency on real hardware ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Delving into the Reversal Curse: How Far Can Large Language Models Generalize?",
+      "evidence": "Open‑QA results mirror the reversal curse and can reflect failure to generalize in free‑form generation ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Propensity",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Personalized Steering of Large Language Models: Versatile Steering Vectors Through Bi-directional Preference Optimization",
+      "evidence": "Tendency to produce fabricated or false statements in open‑ended generation."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Propensity",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Mitigating Object Hallucination via Concentric Causal Attention",
+      "evidence": "CHAIR evaluates hallucinations in open-ended image-grounded generation with CS/CI metrics."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Resistance",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models",
+      "evidence": "Robustness against object hallucination in multimodal generation/understanding, as evaluated by POPE ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Resistance",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Selective Generation for Controllable Language Models",
+      "evidence": "Selective generation provides certified control over the occurrence of hallucinated (wrong, high‑confidence) content, addressing reliable deployment obstacles ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Harmlessness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Adversarial Representation Engineering: A General Model Editing Framework for Large Language Models",
+      "evidence": "Avoiding generation of harmful content; operationalized via refusal of malicious prompts."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "xRAG: Extreme Context Compression for Retrieval-augmented Generation with One Token",
+      "evidence": "TruthfulQA requires the generation of long‑form and truthful responses; evaluated with F1 ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+      "evidence": "Truthfulness in generation correlates with capability (base>chat) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+      "evidence": "TruthfulQA generation correlates with capability (stronger for base than chat) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "PromptFix: You Prompt and We Fix the Photo",
+      "evidence": "Prior and backgrounded evidence indicates LLM-grounded diffusion enhances prompt understanding, improving instruction-driven generation/editing."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "SciCode: A Research Coding Benchmark Curated by Scientists",
+      "evidence": "This setting evaluates models’ capabilities to faithfully follow instructions provided in the background as well as their code‑generation performance ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-Context Learning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "HARMONIC: Harnessing LLMs for Tabular Data Synthesis and Privacy Protection",
+      "evidence": "Ability to leverage provided examples (e.g., kNN neighbors) to condition and guide generation without memorizing inputs."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-Context Learning (ICL)",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "AP-Adapter: Improving Generalization of Automatic Prompts on Unseen Text-to-Image Diffusion Models",
+      "evidence": "LLM ability to use semantically similar demonstrations to guide generation of reliable keyword prompts for text-to-image models  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-Context Learning (ICL)",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "ALI-Agent: Assessing LLMs'  Alignment with Human Values via Agent-based Evaluation",
+      "evidence": "Ability to use retrieved evaluation records as in-context demonstrations to adapt scenario generation to the current misconduct."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-Context Learning (ICL)",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Mixture of Demonstrations for In-Context Learning",
+      "evidence": "EM is used for generation tasks under ICL evaluation."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-Context Learning (ICL)",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Mixture of Demonstrations for In-Context Learning",
+      "evidence": "EM is used for generation tasks under ICL evaluation; SMCalFlow is a semantic parsing benchmark."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-Context Learning (ICL)",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "BERTs are Generative In-Context Learners",
+      "evidence": "The paper frames two ways to solve ICL tasks: text generation (prompt completion) and ranking ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-Context Learning (ICL)",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "ALI-Agent: Assessing LLMs'  Alignment with Human Values via Agent-based Evaluation",
+      "evidence": "Scenario generation leverages ICL from retrieved records; human judges rated over 85% of scenarios as high quality."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Inference Efficiency",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "On the Power of Decision Trees in Auto-Regressive Language Modeling",
+      "evidence": "Efficient generation at inference (logarithmic scaling with tree depth; measured wall-clock throughput)  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Inference Efficiency",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "SLED: Self Logits Evolution Decoding for Improving Factuality in Large Language Models",
+      "evidence": "Speed/latency characteristics of generation at inference time ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction Following",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "PromptFix: You Prompt and We Fix the Photo",
+      "evidence": "Prior and backgrounded evidence indicates LLM-grounded diffusion enhances prompt understanding, improving instruction-driven generation/editing."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction Following",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "SciCode: A Research Coding Benchmark Curated by Scientists",
+      "evidence": "This setting evaluates models’ capabilities to faithfully follow instructions provided in the background as well as their code‑generation performance ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language Modeling",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "VideoLLM-MoD: Efficient Video-Language Streaming with Mixture-of-Depths Vision Computation",
+      "evidence": "Language generation/understanding quality of the LLM component, optimized with LM loss and evaluated by LM‑PPL/LM‑Correctness  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language Modeling",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Algorithmic Capabilities of Random Transformers",
+      "evidence": "Modeling natural language requires structured sequence generation (e.g., closing quotes, agreement), akin to Dyck-like structure."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "G-Retriever: Retrieval-Augmented Generation for Textual Graph Understanding and Question Answering",
+      "evidence": "Text reasoning capability needed to comprehend textualized graphs and queries for generation."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models",
+      "evidence": "LLMs exhibit excellent understanding on generation tasks, as noted in the abstract ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Ensemble Learning for Heterogeneous Large Language Models with Deep Parallel Collaboration",
+      "evidence": "General ability of LLMs to comprehend natural language; the paper motivates ensembling in the context of LLMs’ strong understanding and generation abilities."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "DTGB: A Comprehensive Benchmark for Dynamic Text-Attributed Graphs",
+      "evidence": "Capability to understand natural language content; invoked to justify using LLMs as backbones for textual relation generation ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "DISP-LLM: Dimension-Independent Structural Pruning for Large Language Models",
+      "evidence": "General ability to comprehend text, cited as a core LLM capability alongside modeling and generation."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "G-Retriever: Retrieval-Augmented Generation for Textual Graph Understanding and Question Answering",
+      "evidence": "The approach textualizes the retrieved subgraph and combines it with the query to leverage LLM text-reasoning for answer generation."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models",
+      "evidence": "Common downstream tasks are categorized into language understanding and generation ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models",
+      "evidence": "Perplexity on Alpaca is reported among datasets assessing generation quality ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MindMerger: Efficiently Boosting LLM Reasoning in non-English Languages",
+      "evidence": "Authors argue understanding is the basis for generation and show translation gains, linking stronger understanding to translation performance ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Logical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Exploring the Role of Large Language Models in Prompt Encoding for Diffusion Models",
+      "evidence": "Capability to perform logical reasoning over text; cited as a strength of LLMs but not manifested in prompt encoding for image generation here."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Logical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Humor in AI: Massive Scale Crowd-Sourced Preferences and Benchmarks for Cartoon Captioning",
+      "evidence": "Logical reasoning is cited as a needed capability for caption generation."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-Context Handling",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MiniCache: KV Cache Compression in Depth Dimension for Large Language Models",
+      "evidence": "Ability to maintain quality in long-sequence generation tasks ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-Context Handling",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MiniCache: KV Cache Compression in Depth Dimension for Large Language Models",
+      "evidence": "LongBench is used to assess long-sequence generation performance and quality ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-Context Handling",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MiniCache: KV Cache Compression in Depth Dimension for Large Language Models",
+      "evidence": "Optimizing KV-cache memory demand enhances long-context generation quality and scalability for real-world applications  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "AlphaMath Almost Zero: Process Supervision without Process",
+      "evidence": "Ability to solve complex, symbolic, multi-step mathematical problems via rigorously structured analysis and/or code generation  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Neuro-Symbolic Data Generation for Math Reasoning",
+      "evidence": "Evaluation on MATH quantifies competition-level reasoning improvements from the proposed data generation approach  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "LOVA3: Learning to Visual Question Answering, Asking and Assessment",
+      "evidence": "Ability to integrate visual and textual cues for complex question answering, evaluated across dimensions such as recognition, OCR, knowledge, language generation, and spatial awareness ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "LLM-based Skill Diffusion for Zero-shot Policy Adaptation",
+      "evidence": "Interpreting multimodal contexts (beyond text) for loss generation, instantiated with GPT-4 for multimodal cases ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MaVEn: An Effective Multi-granularity Hybrid Visual Encoding Framework for Multimodal Large Language Model",
+      "evidence": "MaVEn also enhances single‑image visual comprehension and generation."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MaVEn: An Effective Multi-granularity Hybrid Visual Encoding Framework for Multimodal Large Language Model",
+      "evidence": "Stage‑2 cross‑modal generation (image↔text discrete tokens) is used to align modalities."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "LLMs Can Evolve Continually on Modality for $\\mathbb{X}$-Modal Reasoning",
+      "evidence": "Image captioning on COCO is included among reported metrics to evaluate multimodal understanding/generation ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "LLMs Can Evolve Continually on Modality for $\\mathbb{X}$-Modal Reasoning",
+      "evidence": "Audio captioning on Clotho is reported, reflecting audio‑language understanding/generation ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks",
+      "evidence": "Planner integrates visual observations as conditions for environment-aware sub-goal generation ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "FEDMEKI: A Benchmark for Scaling Medical Foundation Models via Federated Knowledge Injection",
+      "evidence": "MedVQA involves image–text pairs, requiring multimodal comprehension and generation."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models",
+      "evidence": "REG is a core VL generation ability included in the grouped evaluation ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Planning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Enhancing LLM Reasoning via Vision-Augmented Prompting",
+      "evidence": "High-level plan generation that specifies tool selection, image initialization, iteration prompts, and termination criteria for downstream reasoning ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Planning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "GameTraversalBenchmark: Evaluating Planning Abilities Of Large Language Models Through Traversing 2D Game Maps",
+      "evidence": "Ability of an LLM to generate a sequence of actions to reach target objectives on a 2D map while minimizing steps and generation errors; success is defined by traversal with minimal steps/errors  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Planning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks",
+      "evidence": "Planner integrates visual observations as conditions for environment-aware sub-goal generation ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Planning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "GameTraversalBenchmark: Evaluating Planning Abilities Of Large Language Models Through Traversing 2D Game Maps",
+      "evidence": "Errors are penalized to judge capability to control generation while planning ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Planning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "GameTraversalBenchmark: Evaluating Planning Abilities Of Large Language Models Through Traversing 2D Game Maps",
+      "evidence": "GTB_Score aggregates proximity to goals, path length, and generation errors to assess planning performance ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Planning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "The Factorization Curse: Which Tokens You Predict Underlie the Reversal Curse and More",
+      "evidence": "Star‑graph path generation requires look‑ahead planning; MLM‑U reaches 100% vs AR ≈50%."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Language-Driven Interactive Traffic Trajectory Generation",
+      "evidence": "Using reasoning to resolve ambiguities and contradictions in natural-language instructions for scenario generation  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MedCalc-Bench: Evaluating Large Language Models for Medical Calculations",
+      "evidence": "Step-by-step rationale generation that, when elicited (e.g., via Chain-of-Thought), improves task performance by leveraging the model’s reasoning ability  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Buffer of Thoughts: Thought-Augmented Reasoning with Large Language Models",
+      "evidence": "Creative Language Generation is included among thought-template categories and tasks involving literary creativity  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks",
+      "evidence": "Planner integrates visual observations as conditions for environment-aware sub-goal generation ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "GameTraversalBenchmark: Evaluating Planning Abilities Of Large Language Models Through Traversing 2D Game Maps",
+      "evidence": "Errors are penalized to judge capability to control generation while planning ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "GameTraversalBenchmark: Evaluating Planning Abilities Of Large Language Models Through Traversing 2D Game Maps",
+      "evidence": "GTB_Score aggregates proximity to goals, path length, and generation errors to assess planning performance ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "The Factorization Curse: Which Tokens You Predict Underlie the Reversal Curse and More",
+      "evidence": "Star‑graph path generation requires look‑ahead planning; MLM‑U reaches 100% vs AR ≈50%."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Optimized Feature Generation for Tabular Data via LLMs with Decision Tree Reasoning",
+      "evidence": "The method leverages the reasoning capabilities of LLMs to identify effective generation rules and refine them using past-experiment reasoning  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "OccamLLM: Fast and Exact Language Model Arithmetic in a Single Step",
+      "evidence": "The tasks involve longer generation and reasoning; most difficulty in many datasets lies in reasoning rather than arithmetic ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Learning to Reason via Program Generation, Emulation, and Search",
+      "evidence": "Applying COTACS to NLP benchmarks requiring softer reasoning demonstrates a practical way to realize reasoning capabilities via program generation and emulation ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "xRAG: Extreme Context Compression for Retrieval-augmented Generation with One Token",
+      "evidence": "TruthfulQA requires the generation of long‑form and truthful responses; evaluated with F1 ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+      "evidence": "Truthfulness in generation correlates with capability (base>chat) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+      "evidence": "TruthfulQA generation correlates with capability (stronger for base than chat) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Grounding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding",
+      "evidence": "Aligning language with specific image regions or segments (e.g., grounded conversation generation) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Perception",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "evidence": "The model unifies visual perception, understanding, and generation within a single framework ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Perception",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "evidence": "Training on image VQA (conversation ability) benefits instance segmentation and image generation losses in multi-task influence analysis ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "evidence": "Unified framework covers perception, understanding, and generation across 100+ tasks ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Zero-shot Generalization",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "FEDMEKI: A Benchmark for Scaling Medical Foundation Models via Federated Knowledge Injection",
+      "evidence": "Validation tasks assess zero-shot ability; MedVQA is a generation task over image–text pairs."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Zero-shot Generalization",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "FEDMEKI: A Benchmark for Scaling Medical Foundation Models via Federated Knowledge Injection",
+      "evidence": "Validation tasks assess zero-shot ability; Signal Noise Clarification is a generation task over signal–text pairs."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-challenge",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Keeping LLMs Aligned After Fine-tuning: The Crucial Role of Prompt Templates",
+      "evidence": "Harder split of ARC science QA; generation and exact match ARC-Challenge Exact Match (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Ensemble Learning for Heterogeneous Large Language Models with Deep Parallel Collaboration",
+      "evidence": "Grade‑school mathematical word problem solving (4‑shot). GSM8K Exact Match (EM) accuracy on free‑form generation."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Chain-of-Thought Reasoning Without Prompting",
+      "evidence": "Selecting CoT paths via CoT-decoding substantially improves GSM8K accuracy, linking CoT generation to better task performance."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Neuro-Symbolic Data Generation for Math Reasoning",
+      "evidence": "Evaluation on MATH quantifies competition-level reasoning improvements from the proposed data generation approach  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HumanEval Score (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "DDK: Distilling Domain Knowledge for Efficient Large Language Models",
+      "evidence": "Code generation from problem prompts (test) HumanEval Reported score (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HumanEval Score (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Instruction Tuning With Loss Over Instructions",
+      "evidence": "Code generation/functional correctness benchmark . HumanEval Pass@k/Accuracy"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HumanEval Score (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Compact Language Models via Pruning and Knowledge Distillation",
+      "evidence": "Code generation/function synthesis evaluation HumanEval Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HumanEval Score (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MAmmoTH2: Scaling Instructions from the Web",
+      "evidence": "Code generation tasks; average accuracy metric reported HumanEval(+) Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HumanEval Score (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MAmmoTH2: Scaling Instructions from the Web",
+      "evidence": "Code generation tasks; average accuracy metric reported MBPP(+) Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HumanEval Score (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "AlchemistCoder: Harmonizing and Eliciting Code Capability by Hindsight Tuning on Multi-source Data",
+      "evidence": "Mainstream code-generation benchmark evaluating function synthesis against hidden tests. HumanEval Score (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HumanEval Score (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MAGIS: LLM-Based Multi-Agent Framework for GitHub Issue Resolution",
+      "evidence": "Function-level code generation performance. HumanEval Score (%) (e.g., GPT-4 score 67.0) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HumanEval Score (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning",
+      "evidence": "Code generation correctness on programming problems HumanEval Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HumanEval Score (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "DDK: Distilling Domain Knowledge for Efficient Large Language Models",
+      "evidence": "HumanEval (test) is used to measure code generation ability  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HumanEval Score (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MAmmoTH2: Scaling Instructions from the Web",
+      "evidence": "HumanEval(+) average accuracy reported to summarize code generation performance ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HumanEval Score (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MAGIS: LLM-Based Multi-Agent Framework for GitHub Issue Resolution",
+      "evidence": "LLMs excel at function-level code generation; GPT-4 scored 67.0 on HumanEval ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HumanEval Score (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning",
+      "evidence": "HumanEval is used to evaluate code generation ability"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Neuro-Symbolic Data Generation for Math Reasoning",
+      "evidence": "Evaluation on MATH quantifies competition-level reasoning improvements from the proposed data generation approach  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MT-Bench",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Instruction Tuning With Loss Over Instructions",
+      "evidence": "Open-ended text generation is evaluated with MT-Bench (LLM-as-judge) in the study’s evaluation setup ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "xRAG: Extreme Context Compression for Retrieval-augmented Generation with One Token",
+      "evidence": "TruthfulQA requires the generation of long‑form and truthful responses; evaluated with F1 ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Chain-of-Thought Reasoning Without Prompting",
+      "evidence": "Selecting CoT paths via CoT-decoding substantially improves GSM8K accuracy, linking CoT generation to better task performance."
+    }
+  ],
+  "relationship_count": 127,
+  "incoming_relationship_count": 107,
+  "outgoing_relationship_count": 20
+}

@@ -1,0 +1,209 @@
+{
+  "canonical_name": "Counting",
+  "type": "construct",
+  "canonical_definition": "Counting refers to determining the number of objects, typically in visual data (e.g., images), with some definitions extending to objects/events in broader contexts or requiring reasoning over long sequences. Some operationalizations emphasize accurate enumeration (e.g., aligning with BBH object_counting benchmarks), while others focus on estimation or aggregative reasoning tasks, such as assessing quantities in remote sensing data or natural adversarial samples. The construct consistently centers on quantification but varies in scope regarding input modalities, contextual complexity, and precision requirements.",
+  "expert_reviewed": false,
+  "names": [
+    "Counting"
+  ],
+  "papers": [
+    "BABILong: Testing the Limits of LLMs with Long Context Reasoning-in-a-Haystack",
+    "CODE: Contrasting Self-generated Description to Combat Hallucination in Large Multi-modal Models",
+    "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+    "MMBench-Video: A Long-Form Multi-Shot Benchmark for Holistic Video Understanding",
+    "NaturalBench: Evaluating Vision-Language Models on Natural Adversarial Samples",
+    "TACT: Advancing Complex Aggregative Reasoning with Information Extraction Tools",
+    "Task Me Anything",
+    "Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization",
+    "Unveiling the Tapestry of Consistency in Large Vision-Language Models",
+    "VRSBench: A Versatile Vision-Language Benchmark Dataset for Remote Sensing Image Understanding"
+  ],
+  "paper_count": 10,
+  "group_ids": [
+    733,
+    1248,
+    1725,
+    2044,
+    3353,
+    3608,
+    3782,
+    4929,
+    5974
+  ],
+  "definitions": [
+    {
+      "text": "Counting",
+      "paper": "MMBench-Video: A Long-Form Multi-Shot Benchmark for Holistic Video Understanding"
+    },
+    {
+      "text": "Counting",
+      "paper": "TACT: Advancing Complex Aggregative Reasoning with Information Extraction Tools"
+    },
+    {
+      "text": "Determining the number of objects/entities in an image. ",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs"
+    },
+    {
+      "text": "Counting objects accurately as in BBH object_counting .",
+      "paper": "Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization"
+    },
+    {
+      "text": "Determining the number of objects (how many?) .",
+      "paper": "Task Me Anything"
+    },
+    {
+      "text": "Ability to enumerate objects in images .",
+      "paper": "CODE: Contrasting Self-generated Description to Combat Hallucination in Large Multi-modal Models"
+    },
+    {
+      "text": "Counting-based reasoning over long contexts. ",
+      "paper": "BABILong: Testing the Limits of LLMs with Long Context Reasoning-in-a-Haystack"
+    },
+    {
+      "text": "Ability to estimate quantities of objects queried in images. ",
+      "paper": "VRSBench: A Versatile Vision-Language Benchmark Dataset for Remote Sensing Image Understanding"
+    },
+    {
+      "text": "Assessing object quantities in images as part of Sensation .",
+      "paper": "Unveiling the Tapestry of Consistency in Large Vision-Language Models"
+    },
+    {
+      "text": "Determining the number of objects/events in context .",
+      "paper": "NaturalBench: Evaluating Vision-Language Models on Natural Adversarial Samples"
+    }
+  ],
+  "definition_count": 10,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+      "evidence": "CV‑Bench includes counting question types to evaluate counting ability."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CV-Bench (CV-CB) Overall Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+      "evidence": "Counting items within CV‑Bench probe object counting; their accuracy contributes to overall score."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization",
+      "evidence": "BBH object_counting targets counting as a reasoning‑related subskill ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BBH: object_counting Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization",
+      "evidence": "BBH object_counting accuracy is reported ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual Perception (Vision-Language)",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Task Me Anything",
+      "evidence": "Counting (how many?) is a supported task template reflecting a capability ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Skill-wise ImageQA Accuracy (TASK-ME-ANYTHING DB)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Task Me Anything",
+      "evidence": "Counting ('how many?') questions are a task template assessed by accuracy; models struggle on these  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Perception",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "MMBench-Video: A Long-Form Multi-Shot Benchmark for Holistic Video Understanding",
+      "evidence": "Leaf perception capabilities include Counting."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMBench-Video Object Recognition Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MMBench-Video: A Long-Form Multi-Shot Benchmark for Holistic Video Understanding",
+      "evidence": "Counting is a leaf capability and is explicitly evaluated."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Understanding",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "CODE: Contrasting Self-generated Description to Combat Hallucination in Large Multi-modal Models",
+      "evidence": "MMHal‑Bench includes a 'counting' category ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMHal‑Bench (Counting)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CODE: Contrasting Self-generated Description to Combat Hallucination in Large Multi-modal Models",
+      "evidence": "Category‑specific GPT‑4 rating on counting ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-Context Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "BABILong: Testing the Limits of LLMs with Long Context Reasoning-in-a-Haystack",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Question Answering Ability",
+      "other_type": "constructs",
+      "relationship_type": "has-subconstruct",
+      "paper": "VRSBench: A Versatile Vision-Language Benchmark Dataset for Remote Sensing Image Understanding",
+      "evidence": "VQA includes quantity questions."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Numerical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subtask",
+      "paper": "TACT: Advancing Complex Aggregative Reasoning with Information Extraction Tools",
+      "evidence": "TACT includes counting instances across texts  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Sensation (Visual Perception)",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Unveiling the Tapestry of Consistency in Large Vision-Language Models",
+      "evidence": "Counting is a listed Sensation dimension ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Advanced Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "NaturalBench: Evaluating Vision-Language Models on Natural Adversarial Samples",
+      "evidence": "Counting is named as an advanced reasoning skill in the benchmark description ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Logic Skill Q-Acc",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "NaturalBench: Evaluating Vision-Language Models on Natural Adversarial Samples",
+      "evidence": "Counting is measured via per-tag Q-Acc in NaturalBench ."
+    }
+  ],
+  "relationship_count": 16,
+  "incoming_relationship_count": 6,
+  "outgoing_relationship_count": 10
+}

@@ -1,0 +1,233 @@
+{
+  "canonical_name": "OCR / Text Extraction",
+  "type": "behavior",
+  "canonical_definition": "OCR / Text Extraction refers to the capability of identifying and extracting textual content from visual inputs such as images or screens, often involving recognition of text in complex layouts or multimodal contexts. This behavior is typically evaluated through benchmarks like TextVQA, where accuracy metrics reflect the system's ability to read and interpret text within images for tasks ranging from question answering to UI navigation. Some papers frame it as a core component of vision-language models (VLMs) or multimodal instruction tuning, emphasizing its role in integrating visual and textual information.",
+  "expert_reviewed": false,
+  "names": [
+    "OCR / Text Extraction"
+  ],
+  "papers": [
+    "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+    "CogVLM: Visual Expert for Pretrained Language Models",
+    "Enhancing Large Vision Language Models with Self-Training on Image Comprehension",
+    "InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD",
+    "LOVA3: Learning to Visual Question Answering, Asking and Assessment",
+    "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+    "Mobile-Agent-v2: Mobile Device Operation Assistant with Effective Navigation via Multi-Agent Collaboration",
+    "Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment"
+  ],
+  "paper_count": 8,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Ability to integrate visual and textual cues for complex question answering, evaluated across dimensions such as recognition, OCR, knowledge, language generation, and spatial awareness .",
+      "paper": "LOVA3: Learning to Visual Question Answering, Asking and Assessment"
+    },
+    {
+      "text": "OCR appears as a distinct category and data type in instruction tuning and evaluation.",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs"
+    },
+    {
+      "text": "OCR ability is repeatedly highlighted and evaluated within the VLM capability suite .",
+      "paper": "Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment"
+    },
+    {
+      "text": "VQAText accuracy (with OCR tokens) is reported as an additional VQA benchmark for understanding .",
+      "paper": "Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment"
+    },
+    {
+      "text": "Screen understanding and localization via OCR/icon detection and related tools to perceive UI content for operation decisions  .",
+      "paper": "Mobile-Agent-v2: Mobile Device Operation Assistant with Effective Navigation via Multi-Agent Collaboration"
+    },
+    {
+      "text": "Operations rely on screen understanding and localization via visual tools (OCR, icon detection) .",
+      "paper": "Mobile-Agent-v2: Mobile Device Operation Assistant with Effective Navigation via Multi-Agent Collaboration"
+    },
+    {
+      "text": "Text recognition expertise (e.g., Pix2Struct) and document-focused encoders are included to handle OCR/document tasks  .",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context"
+    },
+    {
+      "text": "Integrated vision-language capability encompassing object recognition and localization, OCR, visual description, and visual knowledge reasoning, as assessed by LVLM benchmarks .",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models"
+    },
+    {
+      "text": "OCR (text reading) is listed among advanced LVLM capabilities and is demonstrated in CogVLM’s text-reading ability .",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models"
+    },
+    {
+      "text": "Reading text in images (OCR). TextVQA Accuracy / Exact Match (Fuzzy Matching or LLM‑Judged)",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs"
+    },
+    {
+      "text": "Text-intensive visual QA (OCR-heavy) TextVQA Top-1 Accuracy (%)",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models"
+    },
+    {
+      "text": "Answering questions about images containing text (OCR-centric) TextVQA Accuracy (%)",
+      "paper": "Enhancing Large Vision Language Models with Self-Training on Image Comprehension"
+    },
+    {
+      "text": "Text-oriented VQA (OCR-centric) TextVQA Accuracy (%)",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context"
+    },
+    {
+      "text": "TextVQA is a text-intensive (OCR-heavy) visual QA benchmark .",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models"
+    },
+    {
+      "text": "TextVQA consists of images with text-rich contents; accuracy reflects OCR/text reading ability .",
+      "paper": "Enhancing Large Vision Language Models with Self-Training on Image Comprehension"
+    },
+    {
+      "text": "TextVQA evaluates reading text in images; listed among OCR‑related benchmarks .",
+      "paper": "InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD"
+    },
+    {
+      "text": "TextVQA appears in the VQA benchmarks as a text-oriented (OCR) task .",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context"
+    }
+  ],
+  "definition_count": 17,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "LOVA3: Learning to Visual Question Answering, Asking and Assessment",
+      "evidence": "Ability to integrate visual and textual cues for complex question answering, evaluated across dimensions such as recognition, OCR, knowledge, language generation, and spatial awareness ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+      "evidence": "OCR appears as a distinct category and data type in instruction tuning and evaluation."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment",
+      "evidence": "OCR ability is repeatedly highlighted and evaluated within the VLM capability suite ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment",
+      "evidence": "VQAText accuracy (with OCR tokens) is reported as an additional VQA benchmark for understanding ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Perception",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Mobile-Agent-v2: Mobile Device Operation Assistant with Effective Navigation via Multi-Agent Collaboration",
+      "evidence": "Screen understanding and localization via OCR/icon detection and related tools to perceive UI content for operation decisions  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Perception",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Mobile-Agent-v2: Mobile Device Operation Assistant with Effective Navigation via Multi-Agent Collaboration",
+      "evidence": "Operations rely on screen understanding and localization via visual tools (OCR, icon detection) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Perception",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "evidence": "Text recognition expertise (e.g., Pix2Struct) and document-focused encoders are included to handle OCR/document tasks  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models",
+      "evidence": "Integrated vision-language capability encompassing object recognition and localization, OCR, visual description, and visual knowledge reasoning, as assessed by LVLM benchmarks ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models",
+      "evidence": "OCR (text reading) is listed among advanced LVLM capabilities and is demonstrated in CogVLM’s text-reading ability ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TextVQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+      "evidence": "Reading text in images (OCR). TextVQA Accuracy / Exact Match (Fuzzy Matching or LLM‑Judged)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TextVQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models",
+      "evidence": "Text-intensive visual QA (OCR-heavy) TextVQA Top-1 Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TextVQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Enhancing Large Vision Language Models with Self-Training on Image Comprehension",
+      "evidence": "Answering questions about images containing text (OCR-centric) TextVQA Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TextVQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "evidence": "Text-oriented VQA (OCR-centric) TextVQA Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TextVQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models",
+      "evidence": "TextVQA is a text-intensive (OCR-heavy) visual QA benchmark ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TextVQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Enhancing Large Vision Language Models with Self-Training on Image Comprehension",
+      "evidence": "TextVQA consists of images with text-rich contents; accuracy reflects OCR/text reading ability ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TextVQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD",
+      "evidence": "TextVQA evaluates reading text in images; listed among OCR‑related benchmarks ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TextVQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "evidence": "TextVQA appears in the VQA benchmarks as a text-oriented (OCR) task ."
+    }
+  ],
+  "relationship_count": 17,
+  "incoming_relationship_count": 9,
+  "outgoing_relationship_count": 8
+}

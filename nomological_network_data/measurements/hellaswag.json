@@ -1,0 +1,459 @@
+{
+  "canonical_name": "HellaSwag Accuracy (%)",
+  "type": "measurement",
+  "canonical_definition": "HellaSwag Accuracy (%) refers to a benchmark measuring performance on the HellaSwag dataset, which evaluates commonsense sentence completion through multiple-choice questions. The task involves selecting the most plausible continuation of a given context, assessing models' abilities in commonsense reasoning and contextual understanding of everyday scenarios. Some papers describe it as a multiple-choice commonsense inference benchmark with adversarial choice construction, while others emphasize its role in evaluating grounded or narrative-based commonsense reasoning.",
+  "expert_reviewed": false,
+  "names": [
+    "HellaSwag",
+    "HellaSwag Accuracy",
+    "HellaSwag Accuracy (%)",
+    "HellaSwag Accuracy (normalized)",
+    "Text-only QA (HellaSwag)"
+  ],
+  "papers": [
+    "$\\texttt{Model-GLUE}$: Democratized LLM Scaling for A Large Model Zoo in the Wild",
+    "AmoebaLLM: Constructing Any-Shape Large Language Models for Efficient and Instant Deployment",
+    "Bridging The Gap between Low-rank and Orthogonal Adaptation via Householder Reflection Adaptation",
+    "Distributional Preference Alignment of LLMs via Optimal Transport",
+    "FouRA: Fourier Low-Rank Adaptation",
+    "IRCAN: Mitigating Knowledge Conflicts in LLM Generation via Identifying and Reweighting Context-Aware Neurons",
+    "Improving Alignment and Robustness with Circuit Breakers",
+    "LLMCBench: Benchmarking Large Language Model Compression for Efficient Deployment",
+    "MathPile: A Billion-Token-Scale Pretraining Corpus for Math",
+    "Megalodon: Efficient LLM Pretraining and Inference with Unlimited Context Length",
+    "MixEval: Deriving Wisdom of the Crowd from LLM Benchmark Mixtures",
+    "Mixture of Demonstrations for In-Context Learning",
+    "Not All Tokens Are What You Need for Pretraining",
+    "Observational Scaling Laws and the Predictability of Langauge Model Performance",
+    "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation",
+    "Reasons and Solutions for the Decline in Model Performance after Editing",
+    "S$^{2}$FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity",
+    "SVFT: Parameter-Efficient Fine-Tuning with Singular Vectors",
+    "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+    "Selective Attention: Enhancing Transformer through Principled Context Control",
+    "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+    "Sparse High Rank Adapters",
+    "Spectral Editing of Activations for Large Language Model Alignment",
+    "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models",
+    "Wings: Learning Multimodal LLMs without Text-only Forgetting",
+    "WizardArena: Post-training Large Language Models via Simulated Offline Chatbot Arena",
+    "Would I Lie To You? Inference Time Alignment of Language Models using Direct Preference Heads",
+    "fMRI predictors based on language models of increasing complexity recover brain left lateralization"
+  ],
+  "paper_count": 28,
+  "group_ids": [
+    257,
+    776,
+    932,
+    946,
+    972,
+    1228,
+    1382,
+    1413,
+    1642,
+    1844,
+    2743,
+    2875,
+    3295,
+    3496,
+    3664,
+    3751,
+    3843,
+    4495,
+    4727,
+    5028,
+    5865
+  ],
+  "definitions": [
+    {
+      "text": "Commonsense sentence completion HellaSwag Accuracy (%) (lm-eval-harness default)",
+      "paper": "Not All Tokens Are What You Need for Pretraining"
+    },
+    {
+      "text": "Commonsense sentence completion HellaSwag Accuracy (%)",
+      "paper": "Bridging The Gap between Low-rank and Orthogonal Adaptation via Householder Reflection Adaptation"
+    },
+    {
+      "text": "Commonsense sentence completion HellaSwag Accuracy (%) .",
+      "paper": "Selective Attention: Enhancing Transformer through Principled Context Control"
+    },
+    {
+      "text": "Commonsense sentence completion. HellaSwag Accuracy (%)",
+      "paper": "SimPO: Simple Preference Optimization with a Reference-Free Reward"
+    },
+    {
+      "text": "Commonsense completion accuracy . HellaSwag Accuracy (%)",
+      "paper": "AmoebaLLM: Constructing Any-Shape Large Language Models for Efficient and Instant Deployment"
+    },
+    {
+      "text": "Contextual commonsense completion HellaSwag Accuracy (%)",
+      "paper": "S$^{2}$FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity"
+    },
+    {
+      "text": "Commonsense completion HellaSwag Accuracy (%)",
+      "paper": "Improving Alignment and Robustness with Circuit Breakers"
+    },
+    {
+      "text": "Commonsense inference benchmark included in the benchmark pool/analyses . HellaSwag Accuracy (%)",
+      "paper": "MixEval: Deriving Wisdom of the Crowd from LLM Benchmark Mixtures"
+    },
+    {
+      "text": "Commonsense inference benchmark included in standard table HellaSwag Accuracy (%)",
+      "paper": "Megalodon: Efficient LLM Pretraining and Inference with Unlimited Context Length"
+    },
+    {
+      "text": "Commonsense inference. HellaSwag Accuracy (%)",
+      "paper": "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?"
+    },
+    {
+      "text": "Commonsense inference. HellaSwag Accuracy (%)",
+      "paper": "Wings: Learning Multimodal LLMs without Text-only Forgetting"
+    },
+    {
+      "text": "Commonsense reasoning via plausibility of sentence continuations HellaSwag Accuracy (%)",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment"
+    },
+    {
+      "text": "Commonsense completion of everyday scenarios. HellaSwag Accuracy (%)",
+      "paper": "LLMCBench: Benchmarking Large Language Model Compression for Efficient Deployment"
+    },
+    {
+      "text": "Multiple-choice commonsense/inference benchmark used as a language-understanding metric that correlates with brain fit.  HellaSwag Accuracy (%)",
+      "paper": "fMRI predictors based on language models of increasing complexity recover brain left lateralization"
+    },
+    {
+      "text": "Commonsense inference in narratives HellaSwag Accuracy (%) .",
+      "paper": "WizardArena: Post-training Large Language Models via Simulated Offline Chatbot Arena"
+    },
+    {
+      "text": "Commonsense Reasoning multiple‑choice HellaSwag Accuracy (%)",
+      "paper": "Mixture of Demonstrations for In-Context Learning"
+    },
+    {
+      "text": "Commonsense plausibility completion HellaSwag Accuracy (%) .",
+      "paper": "Reasons and Solutions for the Decline in Model Performance after Editing"
+    },
+    {
+      "text": "Commonsense inference over adversarial choices HellaSwag Accuracy (%)",
+      "paper": "SVFT: Parameter-Efficient Fine-Tuning with Singular Vectors"
+    },
+    {
+      "text": "Benchmark accuracy on HellaSwag HellaSwag Accuracy (%)",
+      "paper": "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models"
+    },
+    {
+      "text": "Open LLM Leaderboard evaluation on HellaSwag. HellaSwag Accuracy (%)",
+      "paper": "Distributional Preference Alignment of LLMs via Optimal Transport"
+    },
+    {
+      "text": "Grounded commonsense completion (HellaSwag). Commonsense Reasoning Accuracy (%)",
+      "paper": "FouRA: Fourier Low-Rank Adaptation"
+    },
+    {
+      "text": "Multiple-choice commonsense inference reported for stacking experiments. HellaSwag Accuracy (%)",
+      "paper": "$\\texttt{Model-GLUE}$: Democratized LLM Scaling for A Large Model Zoo in the Wild"
+    },
+    {
+      "text": "Commonsense inference downstream task. HellaSwag Accuracy (↑)",
+      "paper": "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation"
+    },
+    {
+      "text": "Accuracy on HellaSwag, listed among commonsense reasoning benchmarks HellaSwag Accuracy (%)",
+      "paper": "Sparse High Rank Adapters"
+    },
+    {
+      "text": "General-ability evaluation used alongside others to assess overall capability retention . HellaSwag Accuracy (%)",
+      "paper": "IRCAN: Mitigating Knowledge Conflicts in LLM Generation via Identifying and Reweighting Context-Aware Neurons"
+    },
+    {
+      "text": "Commonsense sentence completion HellaSwag Accuracy (acc_norm)",
+      "paper": "MathPile: A Billion-Token-Scale Pretraining Corpus for Math"
+    },
+    {
+      "text": "Commonsense sentence completion HellaSwag Accuracy normalized to [0,1]",
+      "paper": "Observational Scaling Laws and the Predictability of Langauge Model Performance"
+    },
+    {
+      "text": "Sentence completion commonsense reasoning HellaSwag Accuracy (%) .",
+      "paper": "Would I Lie To You? Inference Time Alignment of Language Models using Direct Preference Heads"
+    }
+  ],
+  "definition_count": 28,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment",
+      "evidence": "HellaSwag is used to assess commonsense reasoning as a control task ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Inference Ability (Reasoning)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "LLMCBench: Benchmarking Large Language Model Compression for Efficient Deployment",
+      "evidence": "Track 1 evaluates inference ability using HellaSwag."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "fMRI predictors based on language models of increasing complexity recover brain left lateralization",
+      "evidence": "HellaSwag aims to measure the ability to understand language."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "fMRI Brain Correlation (r-score)",
+      "other_type": "measurements",
+      "relationship_type": "predicts",
+      "paper": "fMRI predictors based on language models of increasing complexity recover brain left lateralization",
+      "evidence": "Higher HellaSwag accuracy correlates with higher brain fit (overall r = 0.95; remains significant for >3B parameters)."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Not All Tokens Are What You Need for Pretraining",
+      "evidence": "General evaluation cites HellaSwag as a commonsense benchmark used in the paper’s suite  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "WizardArena: Post-training Large Language Models via Simulated Offline Chatbot Arena",
+      "evidence": "HellaSwag is listed under reasoning (commonsense) benchmarks ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge Retention after Fine-tuning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Bridging The Gap between Low-rank and Orthogonal Adaptation via Householder Reflection Adaptation",
+      "evidence": "Post‑tuning degradation on HellaSwag is used to assess how much pretraining knowledge is retained (Table 3)."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-Context Learning (ICL)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Mixture of Demonstrations for In-Context Learning",
+      "evidence": "Accuracy is used for classification tasks under ICL evaluation."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Mixture of Demonstrations for In-Context Learning",
+      "evidence": "HellaSwag is listed as Commonsense Reasoning (Table 1)."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "AmoebaLLM: Constructing Any-Shape Large Language Models for Efficient and Instant Deployment",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "MixEval: Deriving Wisdom of the Crowd from LLM Benchmark Mixtures",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Capabilities (Capabilities Component)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+      "evidence": "Included in the capabilities benchmark set ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Robustness to Knowledge Editing (Post‑edit Performance Stability)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Reasons and Solutions for the Decline in Model Performance after Editing",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Reasons and Solutions for the Decline in Model Performance after Editing",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Instruction Tuning With Loss Over Instructions",
+      "evidence": "HellaSwag is included under Language Understanding/Knowledge in the evaluation suite ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "S$^{2}$FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity",
+      "evidence": "HellaSwag is one of the core commonsense benchmarks used (Table 1) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "S$^{2}$FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity",
+      "evidence": "Far OOD generalization is assessed on commonsense tasks like HellaSwag ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge Retention (Resistance to Forgetting)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "S$^{2}$FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity",
+      "evidence": "Authors argue S2FT mitigates forgetting under distribution shifts; better far OOD (commonsense) performance reflects retained pretraining knowledge  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Sentence Completion",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Selective Attention: Enhancing Transformer through Principled Context Control",
+      "evidence": "HellaSwag measures commonsense inference in sentence completion ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "SVFT: Parameter-Efficient Fine-Tuning with Singular Vectors",
+      "evidence": "HellaSwag appears in the commonsense evaluation table with accuracy reported ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text-only Instruction-following",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Wings: Learning Multimodal LLMs without Text-only Forgetting",
+      "evidence": "HellaSwag is part of the text-only evaluation list (Table 2) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models",
+      "evidence": "HellaSwag contributes to the composite capability evaluation"
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models",
+      "evidence": "As above"
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Language Understanding and Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Distributional Preference Alignment of LLMs via Optimal Transport",
+      "evidence": "Reported as part of Open LLM Leaderboard evaluations."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "FouRA: Fourier Low-Rank Adaptation",
+      "evidence": "HellaSwag is included; accuracy reported."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Megalodon: Efficient LLM Pretraining and Inference with Unlimited Context Length",
+      "evidence": "HellaSwag appears in the benchmark table of downstream tasks"
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "$\\texttt{Model-GLUE}$: Democratized LLM Scaling for A Large Model Zoo in the Wild",
+      "evidence": "HellaSwag is included in the stacking experiment table assessing reasoning tasks ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation",
+      "evidence": "HellaSwag included among eight downstream commonsense tasks (Table 3)."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Sparse High Rank Adapters",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+      "evidence": "HellaSwag is included among evaluated downstream tasks."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Abilities",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "IRCAN: Mitigating Knowledge Conflicts in LLM Generation via Identifying and Reweighting Context-Aware Neurons",
+      "evidence": "Assessed as part of the benchmark suite for general abilities ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "MathPile: A Billion-Token-Scale Pretraining Corpus for Math",
+      "evidence": "HellaSwag is included in the general language modeling evaluation suite ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Observational Scaling Laws and the Predictability of Langauge Model Performance",
+      "evidence": "HellaSwag is used as a commonsense reasoning benchmark ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Would I Lie To You? Inference Time Alignment of Language Models using Direct Preference Heads",
+      "evidence": "HellaSwag is included among the sentence-completion tasks used in evaluation/ablations ."
+    }
+  ],
+  "relationship_count": 34,
+  "incoming_relationship_count": 33,
+  "outgoing_relationship_count": 1
+}

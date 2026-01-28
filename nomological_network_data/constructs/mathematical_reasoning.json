@@ -1,0 +1,3601 @@
+{
+  "canonical_name": "Mathematical Reasoning",
+  "type": "construct",
+  "canonical_definition": "Mathematical Reasoning refers to the ability to solve mathematical problems—particularly word problems and quantitative tasks—that require multi-step logical analysis, symbolic manipulation, or formal deductions. It is often operationalized through benchmarks like GSM8K (grade-school word problems) or MATH (competition-level problems), with some definitions emphasizing natural-language reasoning without external tools, while others include code generation or symbolic computation. The construct spans a spectrum of complexity, ranging from basic arithmetic reasoning to advanced problem-solving requiring rigorous structured analysis, and is frequently described as a challenging domain for state-of-the-art LLMs due to its demand for precise intermediate computations and generalization beyond training data.",
+  "expert_reviewed": false,
+  "names": [
+    "Mathematical Reasoning"
+  ],
+  "papers": [
+    "A Careful Examination of Large Language Model Performance on Grade School Arithmetic",
+    "A Full-duplex Speech Dialogue Scheme Based On Large Language Model",
+    "Accelerating Blockwise Parallel Language Models with Draft Refinement",
+    "Adaptable Logical Control for Large Language Models",
+    "AlphaMath Almost Zero: Process Supervision without Process",
+    "Are We on the Right Way for Evaluating Large Vision-Language Models?",
+    "Autoformalize Mathematical Statements by Symbolic Equivalence and Semantic Consistency",
+    "BAM! Just Like That: Simple and Efficient Parameter Upcycling for Mixture of Experts",
+    "BAdam: A Memory Efficient Full Parameter Optimization Method for Large Language Models",
+    "Bridging The Gap between Low-rank and Orthogonal Adaptation via Householder Reflection Adaptation",
+    "Buffer of Thoughts: Thought-Augmented Reasoning with Large Language Models",
+    "Cal-DPO: Calibrated Direct Preference Optimization for Language Model Alignment",
+    "Can LLMs Learn by Teaching for Better Reasoning? A Preliminary Study",
+    "Chain-of-Thought Reasoning Without Prompting",
+    "Coevolving with the Other You: Fine-Tuning LLM with Sequential Cooperative Multi-Agent Reinforcement Learning",
+    "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models",
+    "DACO: Towards Application-Driven and Comprehensive Data Analysis via Code Generation",
+    "DARG: Dynamic Evaluation of Large Language Models via Adaptive Reasoning Graph",
+    "DART-Math: Difficulty-Aware Rejection Tuning for Mathematical Problem-Solving",
+    "DDK: Distilling Domain Knowledge for Efficient Large Language Models",
+    "Decoding-Time Language Model Alignment with Multiple Objectives",
+    "Decompose, Analyze and Rethink: Solving Intricate Problems with Human-like Reasoning Cycle",
+    "Delta-CoMe: Training-Free Delta-Compression with Mixed-Precision for Large Language Models",
+    "Diffusion of Thought: Chain-of-Thought Reasoning in Diffusion Language Models",
+    "Divide-and-Conquer Meets Consensus: Unleashing the Power of Functions in Code Generation",
+    "Does Reasoning Emerge? Examining the Probabilities of Causation in Large Language Models",
+    "Easy-to-Hard Generalization: Scalable Alignment Beyond Human Supervision",
+    "Efficient Contextual LLM Cascades through Budget-Constrained Policy Learning",
+    "Embedding Trajectory for Out-of-Distribution Detection in Mathematical Reasoning",
+    "Enhancing Reasoning Capabilities of LLMs via Principled Synthetic Logic Corpus",
+    "Ensemble Learning for Heterogeneous Large Language Models with Deep Parallel Collaboration",
+    "Evaluating Large Vision-and-Language Models on Children's Mathematical Olympiads",
+    "Global Lyapunov functions: a long-standing open problem in mathematics, with symbolic transformers",
+    "HelpSteer 2: Open-source dataset for training top-performing reward models",
+    "How Far Can Transformers Reason? The Globality Barrier and Inductive Scratchpad",
+    "IDGen: Item Discrimination Induced Prompt Generation for LLM Evaluation",
+    "Imitating Language via Scalable Inverse Reinforcement Learning",
+    "Instruction Tuning With Loss Over Instructions",
+    "Iterative Reasoning Preference Optimization",
+    "JiuZhang3.0: Efficiently Improving Mathematical Reasoning by Training Small Data Synthesis Models",
+    "Keeping LLMs Aligned After Fine-tuning: The Crucial Role of Prompt Templates",
+    "LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning",
+    "Lean Workbook: A large-scale Lean problem set formalized from natural language math problems",
+    "Learning Formal Mathematics From Intrinsic Motivation",
+    "Learning Goal-Conditioned Representations for Language Reward Models",
+    "Learning from Teaching Regularization: Generalizable Correlations Should be Easy to Imitate",
+    "Learning to Reason via Program Generation, Emulation, and Search",
+    "LoFiT: Localized Fine-tuning on LLM Representations",
+    "LoQT: Low-Rank Adapters for Quantized Pretraining",
+    "MACM: Utilizing a Multi-Agent System for Condition Mining in Solving Complex Mathematical Problems",
+    "MAmmoTH2: Scaling Instructions from the Web",
+    "MMLU-Pro: A More Robust and Challenging Multi-Task Language Understanding Benchmark",
+    "MathPile: A Billion-Token-Scale Pretraining Corpus for Math",
+    "Metacognitive Capabilities of LLMs: An Exploration in Mathematical Problem Solving",
+    "Meteor: Mamba-based Traversal of Rationale for Large Language and Vision Models",
+    "MindMerger: Efficiently Boosting LLM Reasoning in non-English Languages",
+    "MiniCache: KV Cache Compression in Depth Dimension for Large Language Models",
+    "MixEval: Deriving Wisdom of the Crowd from LLM Benchmark Mixtures",
+    "Navigating the Safety Landscape: Measuring Risks in Finetuning Large Language Models",
+    "Neuro-Symbolic Data Generation for Math Reasoning",
+    "Not All Tokens Are What You Need for Pretraining",
+    "Observational Scaling Laws and the Predictability of Langauge Model Performance",
+    "On Giant's Shoulders: Effortless Weak to Strong by Dynamic Logits Fusion",
+    "On scalable oversight with weak LLMs judging strong LLMs",
+    "OpenMathInstruct-1: A 1.8 Million Math Instruction Tuning Dataset",
+    "PACE: Marrying generalization in PArameter-efficient fine-tuning with Consistency rEgularization",
+    "PertEval: Unveiling Real Knowledge Capacity of LLMs with Knowledge-Invariant Perturbations",
+    "PiSSA: Principal Singular Values and Singular Vectors Adaptation of Large Language Models",
+    "Pre-trained Large Language Models Use Fourier Features to Compute Addition",
+    "Proving Olympiad Algebraic Inequalities without Human Demonstrations",
+    "RL on Incorrect Synthetic Data Scales the Efficiency of LLM Math Reasoning by Eight-Fold",
+    "ReST-MCTS*: LLM Self-Training via Process Reward Guided Tree Search",
+    "Recursive Introspection: Teaching Language Model Agents How to Self-Improve",
+    "Reflective Multi-Agent Collaboration based on Large Language Models",
+    "Regularizing Hidden States Enables Learning Generalizable Reward Model for LLMs",
+    "Reranking Laws for Language Generation: A Communication-Theoretic Perspective",
+    "RouterDC: Query-Based Router by Dual Contrastive Learning for Assembling Large Language Models",
+    "SELF-DISCOVER: Large Language Models Self-Compose Reasoning Structures",
+    "SGLang: Efficient Execution of Structured Language Model Programs",
+    "SVFT: Parameter-Efficient Fine-Tuning with Singular Vectors",
+    "SciInstruct: a Self-Reflective Instruction Annotated Dataset for Training Scientific Language Models",
+    "SelectIT: Selective Instruction Tuning for LLMs via Uncertainty-Aware Self-Reflection",
+    "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+    "Star-Agents: Automatic Data Optimization with LLM Agents for Instruction Tuning",
+    "StrategyLLM: Large Language Models as Strategy Generators, Executors, Optimizers, and Evaluators for Problem Solving",
+    "Stress-Testing Capability Elicitation With Password-Locked Models",
+    "TAIA: Large Language Models are Out-of-Distribution Data Learners",
+    "Toward Self-Improvement of LLMs via Imagination, Searching, and Criticizing",
+    "Unchosen Experts Can Contribute Too: Unleashing MoE Models’ Power by Self-Contrast",
+    "Unlocking the Capabilities of Thought: A Reasoning Boundary Framework to Quantify and Optimize Chain-of-Thought",
+    "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback",
+    "Unveiling Causal Reasoning in Large Language Models: Reality or Mirage?",
+    "VB-LoRA: Extreme Parameter Efficient Fine-Tuning with Vector Banks",
+    "Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models",
+    "WizardArena: Post-training Large Language Models via Simulated Offline Chatbot Arena"
+  ],
+  "paper_count": 95,
+  "group_ids": [
+    49,
+    67,
+    169,
+    170,
+    184,
+    211,
+    309,
+    342,
+    349,
+    501,
+    591,
+    613,
+    979,
+    987,
+    1001,
+    1104,
+    1177,
+    1291,
+    1303,
+    1337,
+    1360,
+    1391,
+    1514,
+    1521,
+    1562,
+    1627,
+    1702,
+    1837,
+    2121,
+    2147,
+    2194,
+    2204,
+    2229,
+    2445,
+    2515,
+    2579,
+    2782,
+    2818,
+    2860,
+    2861,
+    2940,
+    3085,
+    3156,
+    3185,
+    3456,
+    3489,
+    3679,
+    3724,
+    3887,
+    3928,
+    3941,
+    3953,
+    3969,
+    4016,
+    4149,
+    4220,
+    4238,
+    4262,
+    4322,
+    4337,
+    4367,
+    4384,
+    4533,
+    4547,
+    4711,
+    4746,
+    4774,
+    4782,
+    4866,
+    4893,
+    5069,
+    5112,
+    5203,
+    5295,
+    5371,
+    5386,
+    5401,
+    5721,
+    5736,
+    5762,
+    5857,
+    5996,
+    6011,
+    6083,
+    6220,
+    6250,
+    6280,
+    6342
+  ],
+  "definitions": [
+    {
+      "text": "Mathematical Reasoning",
+      "paper": "LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning"
+    },
+    {
+      "text": "Mathematical Reasoning",
+      "paper": "LoQT: Low-Rank Adapters for Quantized Pretraining"
+    },
+    {
+      "text": "Mathematical Reasoning",
+      "paper": "Learning from Teaching Regularization: Generalizable Correlations Should be Easy to Imitate"
+    },
+    {
+      "text": "Mathematical Reasoning",
+      "paper": "HelpSteer 2: Open-source dataset for training top-performing reward models"
+    },
+    {
+      "text": "Mathematical Reasoning",
+      "paper": "SVFT: Parameter-Efficient Fine-Tuning with Singular Vectors"
+    },
+    {
+      "text": "Mathematical Reasoning",
+      "paper": "Iterative Reasoning Preference Optimization"
+    },
+    {
+      "text": "Mathematical Reasoning",
+      "paper": "Navigating the Safety Landscape: Measuring Risks in Finetuning Large Language Models"
+    },
+    {
+      "text": "Mathematical Reasoning",
+      "paper": "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback"
+    },
+    {
+      "text": "Ability to solve math word problems and related quantitative tasks, e.g., GSM8K .",
+      "paper": "Instruction Tuning With Loss Over Instructions"
+    },
+    {
+      "text": "Ability to solve mathematical and word problems (e.g., GSM-8K, MATH) .",
+      "paper": "A Full-duplex Speech Dialogue Scheme Based On Large Language Model"
+    },
+    {
+      "text": "Ability to solve mathematical word problems requiring multi-step reasoning, as evaluated on GSM8K.  ",
+      "paper": "Imitating Language via Scalable Inverse Reinforcement Learning"
+    },
+    {
+      "text": "Ability to solve math word problems, as evaluated on GSM8K .",
+      "paper": "Reflective Multi-Agent Collaboration based on Large Language Models"
+    },
+    {
+      "text": "Ability to solve complex, symbolic, multi-step mathematical problems via rigorously structured analysis and/or code generation  .",
+      "paper": "AlphaMath Almost Zero: Process Supervision without Process"
+    },
+    {
+      "text": "Ability to solve grade-school and pre-algebra mathematical problems; certain LLMs (e.g., MetaMath) excel here  .",
+      "paper": "RouterDC: Query-Based Router by Dual Contrastive Learning for Assembling Large Language Models"
+    },
+    {
+      "text": "Ability to solve mathematical problems via step-by-step natural-language reasoning; described as one of the most difficult categories of reasoning for state-of-the-art LLMs. ",
+      "paper": "DART-Math: Difficulty-Aware Rejection Tuning for Mathematical Problem-Solving"
+    },
+    {
+      "text": "In this study, reasoning is performed in natural language without external tool execution. ",
+      "paper": "DART-Math: Difficulty-Aware Rejection Tuning for Mathematical Problem-Solving"
+    },
+    {
+      "text": "Reasoning in arithmetic and parity; tasks are combinatorial and stress extrapolation/length generalization. ",
+      "paper": "How Far Can Transformers Reason? The Globality Barrier and Inductive Scratchpad"
+    },
+    {
+      "text": "Capability to solve grade-school-level math word problems. ",
+      "paper": "Chain-of-Thought Reasoning Without Prompting"
+    },
+    {
+      "text": "Reasoning requiring symbolic forms and formal definitions; provided as background context on reasoning types in LLMs .",
+      "paper": "Unveiling Causal Reasoning in Large Language Models: Reality or Mirage?"
+    },
+    {
+      "text": "Ability to solve mathematical problems; assessed via mathematical problem-solving capabilities. ",
+      "paper": "PiSSA: Principal Singular Values and Singular Vectors Adaptation of Large Language Models"
+    },
+    {
+      "text": "Solving mathematics competition problems beyond standard K‑12 tools (MATH benchmark) .",
+      "paper": "StrategyLLM: Large Language Models as Strategy Generators, Executors, Optimizers, and Evaluators for Problem Solving"
+    },
+    {
+      "text": "Capability to solve competition-level mathematical problems (MATH dataset). ",
+      "paper": "Divide-and-Conquer Meets Consensus: Unleashing the Power of Functions in Code Generation"
+    },
+    {
+      "text": "Ability to solve mathematical word problems (evaluated via GSM8K accuracy) .",
+      "paper": "Unchosen Experts Can Contribute Too: Unleashing MoE Models’ Power by Self-Contrast"
+    },
+    {
+      "text": "Ability to solve mathematical problems (e.g., word and competition problems) using few-shot, chain-of-thought reasoning, as evaluated in the paper’s math suite  .",
+      "paper": "Not All Tokens Are What You Need for Pretraining"
+    },
+    {
+      "text": "Proving theorems requires complex math reasoning and a rich store of math knowledge. ",
+      "paper": "Lean Workbook: A large-scale Lean problem set formalized from natural language math problems"
+    },
+    {
+      "text": "Reasoning over math problems such as word problems and formal math tasks .",
+      "paper": "WizardArena: Post-training Large Language Models via Simulated Offline Chatbot Arena"
+    },
+    {
+      "text": "Solving grade-school mathematical word problems. ",
+      "paper": "SelectIT: Selective Instruction Tuning for LLMs via Uncertainty-Aware Self-Reflection"
+    },
+    {
+      "text": "Ability to solve mathematical word and competition problems using stepwise reasoning.",
+      "paper": "Bridging The Gap between Low-rank and Orthogonal Adaptation via Householder Reflection Adaptation"
+    },
+    {
+      "text": "Reasoning over arithmetic/mathematical problems as part of the task distribution considered by the paper .",
+      "paper": "Buffer of Thoughts: Thought-Augmented Reasoning with Large Language Models"
+    },
+    {
+      "text": "Solving math word problems and quantitative reasoning (e.g., SVAMP)  .",
+      "paper": "LoFiT: Localized Fine-tuning on LLM Representations"
+    },
+    {
+      "text": "Ability to solve math word problems (often via chain-of-thought prompting) .",
+      "paper": "Decoding-Time Language Model Alignment with Multiple Objectives"
+    },
+    {
+      "text": "Solving math problems via multi-step calculations; errors often stem from intermediate computations .",
+      "paper": "SELF-DISCOVER: Large Language Models Self-Compose Reasoning Structures"
+    },
+    {
+      "text": "Solving grade-school math problems with chain-of-thought reasoning, potentially aided by enforcing reasoning-related constraints .",
+      "paper": "Adaptable Logical Control for Large Language Models"
+    },
+    {
+      "text": "Ability to solve grade‑school and general math word problems; commonly evaluated via GSM8K mentioned in the paper’s correlation analysis .",
+      "paper": "MixEval: Deriving Wisdom of the Crowd from LLM Benchmark Mixtures"
+    },
+    {
+      "text": "Ability to solve math word problems such as those in GSM8K  .",
+      "paper": "DDK: Distilling Domain Knowledge for Efficient Large Language Models"
+    },
+    {
+      "text": "Capability to solve mathematical problems via reasoning; the paper studies enhancements under text-based and program-based prompting .",
+      "paper": "Metacognitive Capabilities of LLMs: An Exploration in Mathematical Problem Solving"
+    },
+    {
+      "text": "Logical soundness, solvability, and correctness in mathematics problems  .",
+      "paper": "IDGen: Item Discrimination Induced Prompt Generation for LLM Evaluation"
+    },
+    {
+      "text": "Ability to solve grade school math word problems .",
+      "paper": "On Giant's Shoulders: Effortless Weak to Strong by Dynamic Logits Fusion"
+    },
+    {
+      "text": "Solving math word and competition-level problems via multi-step derivations  .",
+      "paper": "Decompose, Analyze and Rethink: Solving Intricate Problems with Human-like Reasoning Cycle"
+    },
+    {
+      "text": "Ability to solve math-related problems that combine visual and textual information  .",
+      "paper": "Meteor: Mamba-based Traversal of Rationale for Large Language and Vision Models"
+    },
+    {
+      "text": "Ability to solve math problems that require multi-step reasoning. ",
+      "paper": "Stress-Testing Capability Elicitation With Password-Locked Models"
+    },
+    {
+      "text": "Reasoning applied to mathematical problems (e.g., divisibility, parity, combinatorial conditions), used as illustrative testbeds in this work .",
+      "paper": "Does Reasoning Emerge? Examining the Probabilities of Causation in Large Language Models"
+    },
+    {
+      "text": "Reasoning used in mathematics questions (e.g., College Mathematics), where reasoning and knowledge demands often mix. ",
+      "paper": "PertEval: Unveiling Real Knowledge Capacity of LLMs with Knowledge-Invariant Perturbations"
+    },
+    {
+      "text": "Applying structured reasoning to mathematical tasks; improved by visualizing auxiliary lines, functions, graphs, and games.",
+      "paper": "Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models"
+    },
+    {
+      "text": "Solving mathematical problems; evaluated on GSM8K and MATH with accuracy as the reported score .",
+      "paper": "Delta-CoMe: Training-Free Delta-Compression with Mixed-Precision for Large Language Models"
+    },
+    {
+      "text": "Ability to solve a spectrum of math tasks including word problems, algebra, number theory, calculus, and proofs.  ",
+      "paper": "SciInstruct: a Self-Reflective Instruction Annotated Dataset for Training Scientific Language Models"
+    },
+    {
+      "text": "Evaluated via math solving tasks; math-solving problems are noted as more difficult than commonsense tasks in this study .",
+      "paper": "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models"
+    },
+    {
+      "text": "Competition-level mathematics problem solving; chosen as a valuable test of complex reasoning with explicit difficulty levels (MATH levels 1–5)  .",
+      "paper": "Easy-to-Hard Generalization: Scalable Alignment Beyond Human Supervision"
+    },
+    {
+      "text": "LLM capability to solve mathematical problems via multi‑step reasoning, assessed in natural language and tool‑manipulation settings .",
+      "paper": "JiuZhang3.0: Efficiently Improving Mathematical Reasoning by Training Small Data Synthesis Models"
+    },
+    {
+      "text": "An important capability for real‑world applications; the paper aims to enhance it cost‑effectively .",
+      "paper": "JiuZhang3.0: Efficiently Improving Mathematical Reasoning by Training Small Data Synthesis Models"
+    },
+    {
+      "text": "Problem‑solving over grade‑school mathematical word problems. ",
+      "paper": "Ensemble Learning for Heterogeneous Large Language Models with Deep Parallel Collaboration"
+    },
+    {
+      "text": "Ability to solve mathematical problems using systematic reasoning; discussed as a distinct focus area for improving LLMs .",
+      "paper": "MAmmoTH2: Scaling Instructions from the Web"
+    },
+    {
+      "text": "Applying statistical and quantitative analysis over tabular data (e.g., summary statistics, correlation analysis) to support conclusions  .",
+      "paper": "DACO: Towards Application-Driven and Comprehensive Data Analysis via Code Generation"
+    },
+    {
+      "text": "Ability to solve grade‑school math word problems; evaluated with GSM‑8K; PACE improves LoRA on this capability  ",
+      "paper": "PACE: Marrying generalization in PArameter-efficient fine-tuning with Consistency rEgularization"
+    },
+    {
+      "text": "Reasoning applied to solving mathematical problems requiring precise, stepwise logic. ",
+      "paper": "Can LLMs Learn by Teaching for Better Reasoning? A Preliminary Study"
+    },
+    {
+      "text": "Solving grade school mathematical word problems that require stepwise logical inference. ",
+      "paper": "Efficient Contextual LLM Cascades through Budget-Constrained Policy Learning"
+    },
+    {
+      "text": "Reasoning and mathematical problem solving as evaluated by math-focused benchmarks .",
+      "paper": "Cal-DPO: Calibrated Direct Preference Optimization for Language Model Alignment"
+    },
+    {
+      "text": "Capability to solve mathematical problems requiring multi-step reasoning; the paper evaluates this construct on GSM8K and MATH  .",
+      "paper": "Toward Self-Improvement of LLMs via Imagination, Searching, and Criticizing"
+    },
+    {
+      "text": "A challenging generative capability of LLMs and a crucial benchmark for evaluating model abilities; exhibits a high-density output space (pattern collapse) because many tasks map to scalar answers or short expressions.  ",
+      "paper": "Embedding Trajectory for Out-of-Distribution Detection in Mathematical Reasoning"
+    },
+    {
+      "text": "Capability of an LLM to solve math problems using multi‑step solution traces; the paper explicitly studies math reasoning capabilities of LLMs on common reasoning benchmarks. ",
+      "paper": "RL on Incorrect Synthetic Data Scales the Efficiency of LLM Math Reasoning by Eight-Fold"
+    },
+    {
+      "text": "General ability to reason mathematically by posing conjectures and finding formal proofs from axioms using a language model; ‘a game of conjecture and proof’ .",
+      "paper": "Learning Formal Mathematics From Intrinsic Motivation"
+    },
+    {
+      "text": "Ability of an LLM to solve mathematical problems via multi-step quantitative and logical reasoning; investigated as potentially limited by data scarcity rather than inherent deficiency .",
+      "paper": "Neuro-Symbolic Data Generation for Math Reasoning"
+    },
+    {
+      "text": "Solving math problems with coherent multi-step reasoning .",
+      "paper": "Regularizing Hidden States Enables Learning Generalizable Reward Model for LLMs"
+    },
+    {
+      "text": "Ability to solve math problems via arithmetic operations over intermediate steps (nodes as numbers; edges as operators) .",
+      "paper": "DARG: Dynamic Evaluation of Large Language Models via Adaptive Reasoning Graph"
+    },
+    {
+      "text": "Reasoning applied to mathematical problems involving abstract concepts and precise multi-step deduction ",
+      "paper": "MACM: Utilizing a Multi-Agent System for Condition Mining in Solving Complex Mathematical Problems"
+    },
+    {
+      "text": "Solving multi-step arithmetic and word problems. ",
+      "paper": "SGLang: Efficient Execution of Structured Language Model Programs"
+    },
+    {
+      "text": "Solving arithmetic and math word problems; a subcomponent of reasoning. ",
+      "paper": "SimPO: Simple Preference Optimization with a Reference-Free Reward"
+    },
+    {
+      "text": "Capability to solve complex mathematical problems that involve long reasoning chains, intricate structures, and extensive transformation rules within large search spaces .",
+      "paper": "Proving Olympiad Algebraic Inequalities without Human Demonstrations"
+    },
+    {
+      "text": "Capacity to perform mathematical reasoning; stronger reasoning makes an LLM more effective at autoformalization .",
+      "paper": "Autoformalize Mathematical Statements by Symbolic Equivalence and Semantic Consistency"
+    },
+    {
+      "text": "Ability to solve math word problems requiring multi-step reasoning .",
+      "paper": "MiniCache: KV Cache Compression in Depth Dimension for Large Language Models"
+    },
+    {
+      "text": "Reasoning over math word problems; claimed to be universal rather than language‑specific .",
+      "paper": "MindMerger: Efficiently Boosting LLM Reasoning in non-English Languages"
+    },
+    {
+      "text": "Capability to solve mathematics tasks that require reasoning with numbers and operations, as evaluated within instruction-following benchmarks .",
+      "paper": "Star-Agents: Automatic Data Optimization with LLM Agents for Instruction Tuning"
+    },
+    {
+      "text": "Ability to solve math word problems (GSM8K), where BPD-based gains are smaller in this study .",
+      "paper": "Accelerating Blockwise Parallel Language Models with Draft Refinement"
+    },
+    {
+      "text": "Reasoning used to solve mathematical problems; improvements indicate transfer from taught logic fundamentals .",
+      "paper": "Enhancing Reasoning Capabilities of LLMs via Principled Synthetic Logic Corpus"
+    },
+    {
+      "text": "Ability to solve mathematical problems via step-by-step reasoning; particularly suited to interleaving natural-language explanations with precise computation via code in a code-interpreter format .",
+      "paper": "OpenMathInstruct-1: A 1.8 Million Math Instruction Tuning Dataset"
+    },
+    {
+      "text": "Ability to solve mathematical problems across domains; evaluated with GSM8K, AQuA, MMLU-Math, SAT-Math, MATH, and NumGLUE  .",
+      "paper": "BAdam: A Memory Efficient Full Parameter Optimization Method for Large Language Models"
+    },
+    {
+      "text": "Ability to solve formal mathematical problems that require rigorous rule‑based inference; success on research‑level tasks is treated as evidence of such capability .",
+      "paper": "Global Lyapunov functions: a long-standing open problem in mathematics, with symbolic transformers"
+    },
+    {
+      "text": "General capability of LLMs to solve mathematical problems and demonstrate reasoning in math domains; mathematical problem solving is used to evaluate LLM reasoning capabilities. ",
+      "paper": "Pre-trained Large Language Models Use Fourier Features to Compute Addition"
+    },
+    {
+      "text": "Ability to solve grade-school math word problems, targeted via GSM8K/Orca-Math fine-tuning  .",
+      "paper": "Keeping LLMs Aligned After Fine-tuning: The Crucial Role of Prompt Templates"
+    },
+    {
+      "text": "Capability of an LLM to solve mathematical problems and reason through math tasks; the paper aims to \"boost language models’ mathematical reasoning abilities\" via a math-centric corpus .",
+      "paper": "MathPile: A Billion-Token-Scale Pretraining Corpus for Math"
+    },
+    {
+      "text": "Ability to solve multi-step math problems requiring integration of arithmetic and planning  .",
+      "paper": "Unlocking the Capabilities of Thought: A Reasoning Boundary Framework to Quantify and Optimize Chain-of-Thought"
+    },
+    {
+      "text": "Ability to solve math problems described in natural language. The GSM8K benchmark focuses on mathematical word problem reasoning. ",
+      "paper": "Coevolving with the Other You: Fine-Tuning LLM with Sequential Cooperative Multi-Agent Reinforcement Learning"
+    },
+    {
+      "text": "Ability to solve mathematical problems via reasoning on visuo-linguistic Olympiad puzzles .",
+      "paper": "Evaluating Large Vision-and-Language Models on Children's Mathematical Olympiads"
+    },
+    {
+      "text": "Reasoning specific to math word problems and competition mathematics. ",
+      "paper": "Recursive Introspection: Teaching Language Model Agents How to Self-Improve"
+    },
+    {
+      "text": "Ability to solve mathematical problems, commonly assessed by GSM8K and BigBench arithmetic tasks  .",
+      "paper": "Observational Scaling Laws and the Predictability of Langauge Model Performance"
+    },
+    {
+      "text": "Reasoning over math problems as evaluated by MATH and related mathematical tasks  .",
+      "paper": "ReST-MCTS*: LLM Self-Training via Process Reward Guided Tree Search"
+    },
+    {
+      "text": "Applying theorems and mathematical knowledge to solve problems. ",
+      "paper": "MMLU-Pro: A More Robust and Challenging Multi-Task Language Understanding Benchmark"
+    },
+    {
+      "text": "Solving quantitative/arithmetic problems such as math word problems and large-number addition .",
+      "paper": "Learning to Reason via Program Generation, Emulation, and Search"
+    },
+    {
+      "text": "Solving math problems and word problems requiring multi-step calculation. ",
+      "paper": "TAIA: Large Language Models are Out-of-Distribution Data Learners"
+    },
+    {
+      "text": "Core capability dimension in MMStar (MA) .",
+      "paper": "Are We on the Right Way for Evaluating Large Vision-Language Models?"
+    },
+    {
+      "text": "Ability to produce correct solutions to math problems and to avoid/identify incorrect logical steps in reasoning environments  .",
+      "paper": "Learning Goal-Conditioned Representations for Language Reward Models"
+    },
+    {
+      "text": "Ability to solve mathematical problems as assessed on math benchmarks.",
+      "paper": "BAM! Just Like That: Simple and Efficient Parameter Upcycling for Mixture of Experts"
+    },
+    {
+      "text": "Ability to solve mathematical problems via reasoning rather than recall; LLMs show strong results on math benchmarks ",
+      "paper": "A Careful Examination of Large Language Model Performance on Grade School Arithmetic"
+    },
+    {
+      "text": "Skill in solving grade‑school math word problems to produce correct numerical solutions .",
+      "paper": "On scalable oversight with weak LLMs judging strong LLMs"
+    },
+    {
+      "text": "Ability to solve arithmetic and grade-school math problems (e.g., GSM8K) .",
+      "paper": "Diffusion of Thought: Chain-of-Thought Reasoning in Diffusion Language Models"
+    },
+    {
+      "text": "Solving math word problems and formal math questions (GSM8K, MATH) .",
+      "paper": "VB-LoRA: Extreme Parameter Efficient Fine-Tuning with Vector Banks"
+    },
+    {
+      "text": "Ability to solve math word problems; evaluated with self‑consistency on SVAMP  .",
+      "paper": "Reranking Laws for Language Generation: A Communication-Theoretic Perspective"
+    }
+  ],
+  "definition_count": 97,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multi-step Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "AlphaMath Almost Zero: Process Supervision without Process",
+      "evidence": "LLMs face challenges with complex multi-step reasoning, particularly in mathematical reasoning ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Symbolic Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "AlphaMath Almost Zero: Process Supervision without Process",
+      "evidence": "LLMs face challenges with complex and symbolic multi-step reasoning in mathematics ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K Answer Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "AlphaMath Almost Zero: Process Supervision without Process",
+      "evidence": "We evaluate on GSM8K to assess the accuracy of predicted answers (math problem solving) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH Answer Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "AlphaMath Almost Zero: Process Supervision without Process",
+      "evidence": "We evaluate on MATH to assess the accuracy of predicted answers (math competition problems) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Search-Augmented Decoding",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "AlphaMath Almost Zero: Process Supervision without Process",
+      "evidence": "MCTS and step-level beam search significantly enhance reasoning capability at minimal cost ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Metacognitive Evaluation (Step-level Value Estimation)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "AlphaMath Almost Zero: Process Supervision without Process",
+      "evidence": "The value model assesses intermediate steps and enhances overall reasoning capabilities ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Tool Use (Code Interpreter)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "AlphaMath Almost Zero: Process Supervision without Process",
+      "evidence": "External tools such as a code interpreter are used to handle precise numerical and symbolic computation for reasoning ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge Utilization",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "AlphaMath Almost Zero: Process Supervision without Process",
+      "evidence": "The method focuses on activating the intrinsic knowledge within LLMs to strengthen utilization and improve task performance ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Autonomous Self-Improvement",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "AlphaMath Almost Zero: Process Supervision without Process",
+      "evidence": "AlphaMath enables LLMs to autonomously enhance their mathematical reasoning capabilities without process annotations ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Inference Strategy Accuracy (SBS vs MCTS vs Greedy)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "AlphaMath Almost Zero: Process Supervision without Process",
+      "evidence": "Reasoning performance is compared across decoding strategies and temperatures in the analysis ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K Testing Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "RouterDC: Query-Based Router by Dual Contrastive Learning for Assembling Large Language Models",
+      "evidence": "GSM8K is a mathematical benchmark with diverse grade school questions ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PreAlgebra Testing Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "RouterDC: Query-Based Router by Dual Contrastive Learning for Assembling Large Language Models",
+      "evidence": "PreAlgebra is used as an out-of-distribution math task in the experiments ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Complex Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "DART-Math: Difficulty-Aware Rejection Tuning for Mathematical Problem-Solving",
+      "evidence": "The paper frames mathematical reasoning as one of the most difficult categories of reasoning, situating it within the broader construct of reasoning."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Out-of-Domain Generalization in Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "DART-Math: Difficulty-Aware Rejection Tuning for Mathematical Problem-Solving",
+      "evidence": "Improvements on out-of-domain math benchmarks are interpreted as indicating effective generalization of the approach within mathematical reasoning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "DART-Math: Difficulty-Aware Rejection Tuning for Mathematical Problem-Solving",
+      "evidence": "GSM8K is used as an in-domain math benchmark in which accuracy reflects math problem-solving ability."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "DART-Math: Difficulty-Aware Rejection Tuning for Mathematical Problem-Solving",
+      "evidence": "GSM8K is used as an in-domain math benchmark in which accuracy reflects math problem-solving ability."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8k (Natural Language)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "DART-Math: Difficulty-Aware Rejection Tuning for Mathematical Problem-Solving",
+      "evidence": "GSM8K is used as an in-domain math benchmark in which accuracy reflects math problem-solving ability."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "DART-Math: Difficulty-Aware Rejection Tuning for Mathematical Problem-Solving",
+      "evidence": "The study uses the MATH dataset to measure mathematical problem-solving performance."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "DART-Math: Difficulty-Aware Rejection Tuning for Mathematical Problem-Solving",
+      "evidence": "The study uses the MATH dataset to measure mathematical problem-solving performance."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH Few-shot Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "DART-Math: Difficulty-Aware Rejection Tuning for Mathematical Problem-Solving",
+      "evidence": "The study uses the MATH dataset to measure mathematical problem-solving performance."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TheoremQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "DART-Math: Difficulty-Aware Rejection Tuning for Mathematical Problem-Solving",
+      "evidence": "TheoremQA is included among the math benchmarks to assess theorem-driven problem-solving accuracy."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Average Accuracy on Six Math Benchmarks (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "DART-Math: Difficulty-Aware Rejection Tuning for Mathematical Problem-Solving",
+      "evidence": "The paper reports macro average accuracy over six math benchmarks as a summary indicator of math problem-solving."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH500 pass@k (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "DART-Math: Difficulty-Aware Rejection Tuning for Mathematical Problem-Solving",
+      "evidence": "pass@k on MATH500 quantifies whether at least one correct solution is generated among k samples, reflecting the model’s ability to produce correct math solutions under sampling."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "How Far Can Transformers Reason? The Globality Barrier and Inductive Scratchpad",
+      "evidence": "Reasoning is essential for mathematics where combinatorial structure precludes learning by memorization."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Arithmetic Addition Length-Generalization",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "How Far Can Transformers Reason? The Globality Barrier and Inductive Scratchpad",
+      "evidence": "Inductive scratchpads enable addition length generalization (e.g., 10→18 or 4→26 digits)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Parity Length-Generalization",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "How Far Can Transformers Reason? The Globality Barrier and Inductive Scratchpad",
+      "evidence": "Inductive scratchpads improve generalization on parity (e.g., 30→50–55 bits)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Chain-of-Thought Reasoning Without Prompting",
+      "evidence": "GSM8K is used to evaluate math reasoning under different decoding strategies."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Chain-of-Thought Reasoning Without Prompting",
+      "evidence": "GSM8K is used to evaluate math reasoning under different decoding strategies."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8k (Natural Language)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Chain-of-Thought Reasoning Without Prompting",
+      "evidence": "GSM8K is used to evaluate math reasoning under different decoding strategies."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MultiArith Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Chain-of-Thought Reasoning Without Prompting",
+      "evidence": "Accuracy on MultiArith is used to assess arithmetic reasoning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning",
+      "evidence": "Reasoning-centered tasks include Math, indicating math reasoning as a sub-component of reasoning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning",
+      "evidence": "The paper emphasizes performance on GSM8K and characterizes Math as a reasoning-centered task  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning",
+      "evidence": "The paper emphasizes performance on GSM8K and characterizes Math as a reasoning-centered task  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8k (Natural Language)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning",
+      "evidence": "The paper emphasizes performance on GSM8K and characterizes Math as a reasoning-centered task  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Mathematical Word Problem Solving (GSM8K)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "PiSSA: Principal Singular Values and Singular Vectors Adaptation of Large Language Models",
+      "evidence": "Models were fine-tuned on MetaMathQA to assess mathematical problem-solving capabilities on the GSM8K validation set."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Advanced Math Problem Solving (MATH)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "PiSSA: Principal Singular Values and Singular Vectors Adaptation of Large Language Models",
+      "evidence": "Mathematical problem-solving capabilities were evaluated on the MATH validation set."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Arithmetic Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "LoQT: Low-Rank Adapters for Quantized Pretraining",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "StrategyLLM: Large Language Models as Strategy Generators, Executors, Optimizers, and Evaluators for Problem Solving",
+      "evidence": "Evaluations span four reasoning tasks including mathematical reasoning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "StrategyLLM: Large Language Models as Strategy Generators, Executors, Optimizers, and Evaluators for Problem Solving",
+      "evidence": "MATH benchmark evaluates mathematical reasoning across multiple subdomains ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "StrategyLLM: Large Language Models as Strategy Generators, Executors, Optimizers, and Evaluators for Problem Solving",
+      "evidence": "MATH benchmark evaluates mathematical reasoning across multiple subdomains ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH Few-shot Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "StrategyLLM: Large Language Models as Strategy Generators, Executors, Optimizers, and Evaluators for Problem Solving",
+      "evidence": "MATH benchmark evaluates mathematical reasoning across multiple subdomains ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH EM-gpt (Mathematical Reasoning)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Divide-and-Conquer Meets Consensus: Unleashing the Power of Functions in Code Generation",
+      "evidence": "MATH is a competition-level mathematical reasoning dataset; the paper uses a GPT-judged exact match protocol."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Unchosen Experts Can Contribute Too: Unleashing MoE Models’ Power by Self-Contrast",
+      "evidence": "Paper frames mathematical reasoning as a specific reasoning subtype and reports explicit gains on GSM8K  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Unchosen Experts Can Contribute Too: Unleashing MoE Models’ Power by Self-Contrast",
+      "evidence": "GSM8K is selected to evaluate mathematical reasoning, reporting accuracy; SCMoE improves this score  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Unchosen Experts Can Contribute Too: Unleashing MoE Models’ Power by Self-Contrast",
+      "evidence": "GSM8K is selected to evaluate mathematical reasoning, reporting accuracy; SCMoE improves this score  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8k (Natural Language)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Unchosen Experts Can Contribute Too: Unleashing MoE Models’ Power by Self-Contrast",
+      "evidence": "GSM8K is selected to evaluate mathematical reasoning, reporting accuracy; SCMoE improves this score  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K Self-Consistency Majority@k",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Unchosen Experts Can Contribute Too: Unleashing MoE Models’ Power by Self-Contrast",
+      "evidence": "Combining SCMoE with self-consistency further boosts GSM8K majority@20 accuracy  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K Few-shot Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Not All Tokens Are What You Need for Pretraining",
+      "evidence": "SLM improves few-shot math reasoning and reports GSM8K accuracy as a core math metric  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH Few-shot Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Not All Tokens Are What You Need for Pretraining",
+      "evidence": "The paper reports state-of-the-art results on MATH at 1B/7B scales, using accuracy as the outcome ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Not All Tokens Are What You Need for Pretraining",
+      "evidence": "Table 3 lists SVAMP as part of the math evaluation suite ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SVAMP Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Not All Tokens Are What You Need for Pretraining",
+      "evidence": "Table 3 lists SVAMP as part of the math evaluation suite ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ASDiv Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Not All Tokens Are What You Need for Pretraining",
+      "evidence": "Table 3 lists SVAMP as part of the math evaluation suite ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ASDiv Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Not All Tokens Are What You Need for Pretraining",
+      "evidence": "Table 3 includes ASDiv in the math evaluation suite ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MAWPS Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Not All Tokens Are What You Need for Pretraining",
+      "evidence": "Table 3 includes MAWPS in the math evaluation suite ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ASDiv Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Not All Tokens Are What You Need for Pretraining",
+      "evidence": "Table 3 includes MAWPS in the math evaluation suite ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MathQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Not All Tokens Are What You Need for Pretraining",
+      "evidence": "Table 3 includes MathQA (MQA) in the math evaluation suite ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Automatic Theorem Proving",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Lean Workbook: A large-scale Lean problem set formalized from natural language math problems",
+      "evidence": "Proving theorems requires complex mathematical reasoning."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Domain-Specific Mathematical Knowledge",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Lean Workbook: A large-scale Lean problem set formalized from natural language math problems",
+      "evidence": "The work spans diverse math topics (e.g., inequality, number theory), reflecting the knowledge base required for reasoning across domains."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "WizardArena: Post-training Large Language Models via Simulated Offline Chatbot Arena",
+      "evidence": "Reasoning category includes math benchmarks such as GSM8K and MATH ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MT-Bench Math Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "WizardArena: Post-training Large Language Models via Simulated Offline Chatbot Arena",
+      "evidence": "MT‑Bench includes a Math subtask in the eight-category breakdown ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "WizardArena: Post-training Large Language Models via Simulated Offline Chatbot Arena",
+      "evidence": "GSM8K is cited as a math reasoning benchmark; the paper reports gains on GSM8K during post-training  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "WizardArena: Post-training Large Language Models via Simulated Offline Chatbot Arena",
+      "evidence": "MATH is included among reasoning/math benchmarks ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "SelectIT: Selective Instruction Tuning for LLMs via Uncertainty-Aware Self-Reflection",
+      "evidence": "Reasoning abilities are evaluated using the Grade School Math dataset."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM (CoT)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SelectIT: Selective Instruction Tuning for LLMs via Uncertainty-Aware Self-Reflection",
+      "evidence": "GSM is used to evaluate mathematical reasoning with chain-of-thought."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Bridging The Gap between Low-rank and Orthogonal Adaptation via Householder Reflection Adaptation",
+      "evidence": "The paper adapts LLaMA2‑7B and tests on GSM8K, reporting accuracy for mathematical reasoning (Figure 1c; Sec. 4.2)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Bridging The Gap between Low-rank and Orthogonal Adaptation via Householder Reflection Adaptation",
+      "evidence": "The paper adapts LLaMA2‑7B and tests on GSM8K, reporting accuracy for mathematical reasoning (Figure 1c; Sec. 4.2)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8k (Natural Language)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Bridging The Gap between Low-rank and Orthogonal Adaptation via Householder Reflection Adaptation",
+      "evidence": "The paper adapts LLaMA2‑7B and tests on GSM8K, reporting accuracy for mathematical reasoning (Figure 1c; Sec. 4.2)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Bridging The Gap between Low-rank and Orthogonal Adaptation via Householder Reflection Adaptation",
+      "evidence": "MATH validation accuracy is used to evaluate mathematical reasoning (Figure 1c; Sec. 4.2)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Bridging The Gap between Low-rank and Orthogonal Adaptation via Householder Reflection Adaptation",
+      "evidence": "MATH validation accuracy is used to evaluate mathematical reasoning (Figure 1c; Sec. 4.2)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH Few-shot Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Bridging The Gap between Low-rank and Orthogonal Adaptation via Householder Reflection Adaptation",
+      "evidence": "MATH validation accuracy is used to evaluate mathematical reasoning (Figure 1c; Sec. 4.2)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Buffer of Thoughts: Thought-Augmented Reasoning with Large Language Models",
+      "evidence": "Thought-templates are categorized to support a general reasoning approach, including Mathematical Reasoning as one category ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Game of 24 Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Buffer of Thoughts: Thought-Augmented Reasoning with Large Language Models",
+      "evidence": "Game of 24 is an arithmetic task; the paper evaluates it as a mathematical/algorithmic reasoning benchmark ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BBH Multi-Step Arithmetic Two Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Buffer of Thoughts: Thought-Augmented Reasoning with Large Language Models",
+      "evidence": "Multi-Step Arithmetic Two is a BBH math-oriented reasoning task ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH-500 Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Buffer of Thoughts: Thought-Augmented Reasoning with Large Language Models",
+      "evidence": "MATH-500 compares template quality and boosts reasoning ability on math problems ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MGSM Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Buffer of Thoughts: Thought-Augmented Reasoning with Large Language Models",
+      "evidence": "MGSM tasks (noted as diverse) are used in analyzing thought-template distribution for math-style scenarios ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "LoFiT: Localized Fine-tuning on LLM Representations",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SVAMP Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "LoFiT: Localized Fine-tuning on LLM Representations",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ASDiv Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "LoFiT: Localized Fine-tuning on LLM Representations",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge Retrieval",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "LoFiT: Localized Fine-tuning on LLM Representations",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Alignment to Human Preferences",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Decoding-Time Language Model Alignment with Multiple Objectives",
+      "evidence": "Math reasoning (GSM-COT) is included among evaluation objectives ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Open Instruction-Following: GSM-COT",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Decoding-Time Language Model Alignment with Multiple Objectives",
+      "evidence": "Math reasoning evaluated via GSM-COT ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Algorithmic Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "SELF-DISCOVER: Large Language Models Self-Compose Reasoning Structures",
+      "evidence": "MATH tasks exemplify algorithmic, calculation-heavy reasoning ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Calculation Accuracy",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "SELF-DISCOVER: Large Language Models Self-Compose Reasoning Structures",
+      "evidence": "Error analysis: 74.7% of wrong predictions stem from intermediate calculation errors, indicating calculation accuracy drives math reasoning performance ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM Reasoning Accuracy (subset)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Adaptable Logical Control for Large Language Models",
+      "evidence": "Accuracy on GSM under chain-of-thought with enforced number inclusion is reported (28.3% with Ctrl-G, +3.4% over baseline) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Controllability under Logical Constraints",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Adaptable Logical Control for Large Language Models",
+      "evidence": "Constraint-based guidance modestly improves GSM reasoning accuracy and is proposed as a way to approximate better reasoning via logical constraints  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MixEval: Deriving Wisdom of the Crowd from LLM Benchmark Mixtures",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "DDK: Distilling Domain Knowledge for Efficient Large Language Models",
+      "evidence": "The paper highlights gains on math (GSM8K) as part of its reasoning improvements ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "DDK: Distilling Domain Knowledge for Efficient Large Language Models",
+      "evidence": "GSM8K (test) is used and specifically cited as a reasoning task  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K Mathematical Word Problem Solving",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Metacognitive Capabilities of LLMs: An Exploration in Mathematical Problem Solving",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH Competition Problem Solving",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Metacognitive Capabilities of LLMs: An Exploration in Mathematical Problem Solving",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SVAMP Math Word Problems",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Metacognitive Capabilities of LLMs: An Exploration in Mathematical Problem Solving",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ASDIV Math Word Problems",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Metacognitive Capabilities of LLMs: An Exploration in Mathematical Problem Solving",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MAWPS Suite (SingleOP, SingleEQ, AddSub, MultiArith)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Metacognitive Capabilities of LLMs: An Exploration in Mathematical Problem Solving",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "IDGen: Item Discrimination Induced Prompt Generation for LLM Evaluation",
+      "evidence": "The framework emphasizes math problems and calls for more difficult reasoning in benchmarks  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "IDGen Mathematical Problem Solving",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "IDGen: Item Discrimination Induced Prompt Generation for LLM Evaluation",
+      "evidence": "Math items are validated by CoT checks and expert review to assess correctness ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Mathematical Word Problem Solving (GSM8K)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "On Giant's Shoulders: Effortless Weak to Strong by Dynamic Logits Fusion",
+      "evidence": "GSM8K is a set of grade school math word problems evaluated with exact match (EM) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Decompose, Analyze and Rethink: Solving Intricate Problems with Human-like Reasoning Cycle",
+      "evidence": "Intricate reasoning includes mathematical reasoning; evaluated via GSM8K/MATH   ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Decompose, Analyze and Rethink: Solving Intricate Problems with Human-like Reasoning Cycle",
+      "evidence": "GSM8K is used to verify mathematical reasoning ability; accuracy is the metric  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Decompose, Analyze and Rethink: Solving Intricate Problems with Human-like Reasoning Cycle",
+      "evidence": "GSM8K is used to verify mathematical reasoning ability; accuracy is the metric  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8k (Natural Language)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Decompose, Analyze and Rethink: Solving Intricate Problems with Human-like Reasoning Cycle",
+      "evidence": "GSM8K is used to verify mathematical reasoning ability; accuracy is the metric  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Decompose, Analyze and Rethink: Solving Intricate Problems with Human-like Reasoning Cycle",
+      "evidence": "MATH assesses complex mathematical reasoning; accuracy is reported with GPT-4 backbone ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Decompose, Analyze and Rethink: Solving Intricate Problems with Human-like Reasoning Cycle",
+      "evidence": "MATH assesses complex mathematical reasoning; accuracy is reported with GPT-4 backbone ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH Few-shot Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Decompose, Analyze and Rethink: Solving Intricate Problems with Human-like Reasoning Cycle",
+      "evidence": "MATH assesses complex mathematical reasoning; accuracy is reported with GPT-4 backbone ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Vision-Language Capability",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "Meteor: Mamba-based Traversal of Rationale for Large Language and Vision Models",
+      "evidence": "Math problems are a named target of the model’s capabilities ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MathVista Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Meteor: Mamba-based Traversal of Rationale for Large Language and Vision Models",
+      "evidence": "MathVista appears among core reported results for math-related visual reasoning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Chain-of-Thought Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Stress-Testing Capability Elicitation With Password-Locked Models",
+      "evidence": "The math task is described as requiring chain-of-thought reasoning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Mathematical Problem Solving Correctness (MATH)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Stress-Testing Capability Elicitation With Password-Locked Models",
+      "evidence": "Math capabilities are measured on the MATH dataset by correctness."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Does Reasoning Emerge? Examining the Probabilities of Causation in Large Language Models",
+      "evidence": "Math problems are used as reasoning testbeds in this work ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Div6 Math Reasoning Task",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Does Reasoning Emerge? Examining the Probabilities of Causation in Large Language Models",
+      "evidence": "Div6 is a math reasoning example used for evaluation ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "EvenSum Task",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Does Reasoning Emerge? Examining the Probabilities of Causation in Large Language Models",
+      "evidence": "EvenSum is a math reasoning example used for evaluation ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CandyParty Task",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Does Reasoning Emerge? Examining the Probabilities of Causation in Large Language Models",
+      "evidence": "CandyParty is a structured reasoning example used for evaluation ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "PertEval: Unveiling Real Knowledge Capacity of LLMs with Knowledge-Invariant Perturbations",
+      "evidence": "College Mathematics contains many short mathematical reasoning questions."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Instruction Tuning With Loss Over Instructions",
+      "evidence": "GSM8K is included under Math & Coding Reasoning in the evaluation ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Learning from Teaching Regularization: Generalizable Correlations Should be Easy to Imitate",
+      "evidence": "GSM8K is used as a mathematical reasoning benchmark for LLMs (Table 2) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Learning from Teaching Regularization: Generalizable Correlations Should be Easy to Imitate",
+      "evidence": "GSM8K is used as a mathematical reasoning benchmark for LLMs (Table 2) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8k (Natural Language)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Learning from Teaching Regularization: Generalizable Correlations Should be Easy to Imitate",
+      "evidence": "GSM8K is used as a mathematical reasoning benchmark for LLMs (Table 2) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Learning from Teaching Regularization: Generalizable Correlations Should be Easy to Imitate",
+      "evidence": "MATH is used as a mathematical reasoning benchmark for LLMs (Table 2) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Learning from Teaching Regularization: Generalizable Correlations Should be Easy to Imitate",
+      "evidence": "MATH is used as a mathematical reasoning benchmark for LLMs (Table 2) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH Few-shot Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Learning from Teaching Regularization: Generalizable Correlations Should be Easy to Imitate",
+      "evidence": "MATH is used as a mathematical reasoning benchmark for LLMs (Table 2) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Learning from Teaching Regularization: Generalizable Correlations Should be Easy to Imitate",
+      "evidence": "LOT is motivated to improve generalization and yields higher LLM accuracy on math reasoning benchmarks (GSM8K, MATH), indicating generalization improvements translate to better reasoning performance  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models",
+      "evidence": "The framework addresses math tasks (geometry, functions, graphs, chess) using visual chain-of-thought to reason ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Geometric Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models",
+      "evidence": "Geometry is one of the complex mathematical tasks where auxiliary lines are drawn to solve problems ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Graph-Theoretic Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models",
+      "evidence": "Graph problems (connectivity, maxflow, isomorphism) are evaluated and solved by plotting and reasoning about graphs ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Function Property Understanding",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models",
+      "evidence": "Tasks include parity and convexity/concavity classification of mathematical functions ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Game Strategy Reasoning (Chess)",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models",
+      "evidence": "Winner identification is evaluated by drawing and analyzing chess boards to formulate strategies ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Delta-CoMe: Training-Free Delta-Compression with Mixed-Precision for Large Language Models",
+      "evidence": "Sec. 4.1 lists GSM8K for math with accuracy as the score ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Delta-CoMe: Training-Free Delta-Compression with Mixed-Precision for Large Language Models",
+      "evidence": "Sec. 4.1 lists GSM8K for math with accuracy as the score ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8k (Natural Language)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Delta-CoMe: Training-Free Delta-Compression with Mixed-Precision for Large Language Models",
+      "evidence": "Sec. 4.1 lists GSM8K for math with accuracy as the score ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Delta-CoMe: Training-Free Delta-Compression with Mixed-Precision for Large Language Models",
+      "evidence": "Sec. 4.1 lists MATH for math with accuracy as the score ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Delta-CoMe: Training-Free Delta-Compression with Mixed-Precision for Large Language Models",
+      "evidence": "Sec. 4.1 lists MATH for math with accuracy as the score ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH Few-shot Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Delta-CoMe: Training-Free Delta-Compression with Mixed-Precision for Large Language Models",
+      "evidence": "Sec. 4.1 lists MATH for math with accuracy as the score ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "parent-of",
+      "paper": "SciInstruct: a Self-Reflective Instruction Annotated Dataset for Training Scientific Language Models",
+      "evidence": "General reasoning capability spans scientific and mathematical tasks."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SciInstruct: a Self-Reflective Instruction Annotated Dataset for Training Scientific Language Models",
+      "evidence": "Evaluations include GSM8K; accuracy metric."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SciInstruct: a Self-Reflective Instruction Annotated Dataset for Training Scientific Language Models",
+      "evidence": "MATH used to measure mathematical problem solving; accuracy."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Mathematics",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SciInstruct: a Self-Reflective Instruction Annotated Dataset for Training Scientific Language Models",
+      "evidence": "Mathematics dataset (Algebra, NumTheory, Calculus) used; accuracy."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SAT-Math",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SciInstruct: a Self-Reflective Instruction Annotated Dataset for Training Scientific Language Models",
+      "evidence": "SAT-Math used for evaluation; accuracy."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU-Math",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SciInstruct: a Self-Reflective Instruction Annotated Dataset for Training Scientific Language Models",
+      "evidence": "MMLU-Math subset evaluated; accuracy."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CEval-Math",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SciInstruct: a Self-Reflective Instruction Annotated Dataset for Training Scientific Language Models",
+      "evidence": "CEval-Math subset evaluated; accuracy."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Physics Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "SciInstruct: a Self-Reflective Instruction Annotated Dataset for Training Scientific Language Models",
+      "evidence": "Physics and Chemistry data significantly aid CEval-Math tasks (cross-domain transfer)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Scientific Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "SciInstruct: a Self-Reflective Instruction Annotated Dataset for Training Scientific Language Models",
+      "evidence": "Math and Formal Proof data improve SciBench performance, indicating math/proof skills bolster scientific problem solving."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "HelpSteer 2: Open-source dataset for training top-performing reward models",
+      "evidence": "RewardBench Reasoning balances math and coding contributions, indicating subcomponents."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Logical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models",
+      "evidence": "The paper highlights logical reasoning skills broadly and examines math-solving as a specific, harder case within its experiments  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models",
+      "evidence": "GSM8K accuracy is used to evaluate math word problem solving ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models",
+      "evidence": "GSM8K accuracy is used to evaluate math word problem solving ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8k (Natural Language)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models",
+      "evidence": "GSM8K accuracy is used to evaluate math word problem solving ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MAWPS Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models",
+      "evidence": "MaWPS accuracy is used to evaluate math word problem solving ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Resource-Efficient Inference",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models",
+      "evidence": "Up to ~45% cost reductions are reported on math solving tasks without performance degradation ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Easy-to-Hard Generalization: Scalable Alignment Beyond Human Supervision",
+      "evidence": "Competition‑level mathematical problem solving is used as a testbed for complex reasoning with explicit difficulty levels ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Number Theory Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Easy-to-Hard Generalization: Scalable Alignment Beyond Human Supervision",
+      "evidence": "Evaluation curves report accuracy on number theory problems ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Number Theory Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Easy-to-Hard Generalization: Scalable Alignment Beyond Human Supervision",
+      "evidence": "Evaluation curves report accuracy on prealgebra problems ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Solution Generation",
+      "other_type": "constructs",
+      "relationship_type": "applies-to",
+      "paper": "Easy-to-Hard Generalization: Scalable Alignment Beyond Human Supervision",
+      "evidence": "Generators produce math solutions evaluated on MATH levels and MATH500 ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH500 Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Easy-to-Hard Generalization: Scalable Alignment Beyond Human Supervision",
+      "evidence": "Main test metric focuses on accuracy on MATH500 ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Natural Language Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "JiuZhang3.0: Efficiently Improving Mathematical Reasoning by Training Small Data Synthesis Models",
+      "evidence": "Evaluation is organized into natural language reasoning and tool manipulation settings for mathematical reasoning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Tool‑Augmented Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "JiuZhang3.0: Efficiently Improving Mathematical Reasoning by Training Small Data Synthesis Models",
+      "evidence": "Second evaluation setting uses external tools (Python) to solve math problems ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Table Data Understanding (Math)",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "JiuZhang3.0: Efficiently Improving Mathematical Reasoning by Training Small Data Synthesis Models",
+      "evidence": "TabMWP requires understanding of table data within math problem solving  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Algebraic Problem Solving",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "JiuZhang3.0: Efficiently Improving Mathematical Reasoning by Training Small Data Synthesis Models",
+      "evidence": "AQuA consists of algebra multiple‑choice questions used to assess capability  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Undergraduate‑level Science Knowledge Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "JiuZhang3.0: Efficiently Improving Mathematical Reasoning by Training Small Data Synthesis Models",
+      "evidence": "OCW‑Math contains undergraduate‑level math and science problems ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Robust Reasoning in Math Word Problems",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "JiuZhang3.0: Efficiently Improving Mathematical Reasoning by Training Small Data Synthesis Models",
+      "evidence": "SVAMP explicitly focuses on robust reasoning ability in MWPs ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU‑STEM (Natural Language)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "JiuZhang3.0: Efficiently Improving Mathematical Reasoning by Training Small Data Synthesis Models",
+      "evidence": "MMLU‑STEM probes STEM knowledge breadth; authors note weaker coverage here  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Data Synthesis Capability",
+      "other_type": "constructs",
+      "relationship_type": "predicts",
+      "paper": "JiuZhang3.0: Efficiently Improving Mathematical Reasoning by Training Small Data Synthesis Models",
+      "evidence": "Synthetic data from a small, distilled LLM is more useful than larger LLMs’ data for improving downstream math performance; ablations replacing the synthesis model degrade results, especially on MATH  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "SVFT: Parameter-Efficient Fine-Tuning with Singular Vectors",
+      "evidence": "The paper reports performance for mathematical reasoning alongside commonsense reasoning as reasoning categories ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SVFT: Parameter-Efficient Fine-Tuning with Singular Vectors",
+      "evidence": "GSM-8K is used to assess mathematical reasoning; accuracy is reported across configurations/figures and tables  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SVFT: Parameter-Efficient Fine-Tuning with Singular Vectors",
+      "evidence": "MATH scores are reported alongside GSM-8K as math reasoning performance  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SVFT: Parameter-Efficient Fine-Tuning with Singular Vectors",
+      "evidence": "MATH scores are reported alongside GSM-8K as math reasoning performance  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH Few-shot Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SVFT: Parameter-Efficient Fine-Tuning with Singular Vectors",
+      "evidence": "MATH scores are reported alongside GSM-8K as math reasoning performance  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Ensemble Learning for Heterogeneous Large Language Models with Deep Parallel Collaboration",
+      "evidence": "The paper lists reasoning capabilities and evaluates them via GSM8K (mathematical)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Ensemble Learning for Heterogeneous Large Language Models with Deep Parallel Collaboration",
+      "evidence": "GSM8K is a dataset of high‑quality grade‑school math problems; EM is computed on free‑form answers."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "MAmmoTH2: Scaling Instructions from the Web",
+      "evidence": "Mathematics Reasoning is presented as a domain-specific form of LLM reasoning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MAmmoTH2: Scaling Instructions from the Web",
+      "evidence": "GSM8K tests arithmetic and reasoning in math word problems ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MAmmoTH2: Scaling Instructions from the Web",
+      "evidence": "GSM8K tests arithmetic and reasoning in math word problems ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8k (Natural Language)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MAmmoTH2: Scaling Instructions from the Web",
+      "evidence": "GSM8K tests arithmetic and reasoning in math word problems ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MAmmoTH2: Scaling Instructions from the Web",
+      "evidence": "MATH evaluates complex mathematical reasoning on competition problems ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MAmmoTH2: Scaling Instructions from the Web",
+      "evidence": "MATH evaluates complex mathematical reasoning on competition problems ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH Few-shot Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MAmmoTH2: Scaling Instructions from the Web",
+      "evidence": "MATH evaluates complex mathematical reasoning on competition problems ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Data Analysis Capability",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "DACO: Towards Application-Driven and Comprehensive Data Analysis via Code Generation",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "InfiAgent-DA Summary Statistics Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "DACO: Towards Application-Driven and Comprehensive Data Analysis via Code Generation",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "InfiAgent-DA Correlation Analysis Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "DACO: Towards Application-Driven and Comprehensive Data Analysis via Code Generation",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Imitating Language via Scalable Inverse Reinforcement Learning",
+      "evidence": "GSM8K is used to evaluate math and reasoning; Figure 2 reports accuracy without calculator versus diversity."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Imitating Language via Scalable Inverse Reinforcement Learning",
+      "evidence": "GSM8K results include accuracy with calculator, shown alongside diversity trade-offs."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Reflective Multi-Agent Collaboration based on Large Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K Success Rate (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Reflective Multi-Agent Collaboration based on Large Language Models",
+      "evidence": "GSM8K is used to assess math problem solving in the experiments  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM‑8K Test Performance",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "PACE: Marrying generalization in PArameter-efficient fine-tuning with Consistency rEgularization",
+      "evidence": "The paper evaluates mathematical reasoning with GSM‑8K, fine‑tuning Phi‑3‑mini‑4k‑instruct and assessing test performance ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Can LLMs Learn by Teaching for Better Reasoning? A Preliminary Study",
+      "evidence": "Mathematical reasoning is one of the targeted domains requiring accurate reasoning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Mathematical Problem Solving (MATH)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Can LLMs Learn by Teaching for Better Reasoning? A Preliminary Study",
+      "evidence": "MATH evaluates mathematical problem solving; LbT scoring raised GPT‑4o accuracy from 87.84% to 96.69%."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Mathematical Problem Solving (MATH)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Can LLMs Learn by Teaching for Better Reasoning? A Preliminary Study",
+      "evidence": "MATH() variants share solution logic and are used to verify LbT‑TMQ effects."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Efficient Contextual LLM Cascades through Budget-Constrained Policy Learning",
+      "evidence": "The study focuses on reasoning problems, including grade school math, as a challenging subtype requiring multiple logical steps."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Efficient Contextual LLM Cascades through Budget-Constrained Policy Learning",
+      "evidence": "GSM8K evaluates accuracy on math word problems."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Efficient Contextual LLM Cascades through Budget-Constrained Policy Learning",
+      "evidence": "GSM8K evaluates accuracy on math word problems."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8k (Natural Language)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Efficient Contextual LLM Cascades through Budget-Constrained Policy Learning",
+      "evidence": "GSM8K evaluates accuracy on math word problems."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Cal-DPO: Calibrated Direct Preference Optimization for Language Model Alignment",
+      "evidence": "The paper contrasts general reasoning benchmarks with mathematical reasoning (GSM8K, MATH) as a distinct category ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Cal-DPO: Calibrated Direct Preference Optimization for Language Model Alignment",
+      "evidence": "Mathematical reasoning is evaluated with GSM8K ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Cal-DPO: Calibrated Direct Preference Optimization for Language Model Alignment",
+      "evidence": "Mathematical reasoning is evaluated with the MATH dataset ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Human Preference Alignment",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Cal-DPO: Calibrated Direct Preference Optimization for Language Model Alignment",
+      "evidence": "Calibrating contrastive objectives addresses suboptimal behavior that degraded mathematical problem-solving, improving math benchmarks under preference alignment  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "LLM Capabilities",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning",
+      "evidence": "LLMs are endowed with multiple abilities; experiments target math tasks to assess one such ability"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning",
+      "evidence": "GSM8K is a math word problem benchmark; the paper reports accuracies"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning",
+      "evidence": "GSM8K is a math word problem benchmark; the paper reports accuracies"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8k (Natural Language)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning",
+      "evidence": "GSM8K is a math word problem benchmark; the paper reports accuracies"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning",
+      "evidence": "MATH results are reported to assess math ability"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning",
+      "evidence": "MATH results are reported to assess math ability"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH Few-shot Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning",
+      "evidence": "MATH results are reported to assess math ability"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Toward Self-Improvement of LLMs via Imagination, Searching, and Criticizing",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Toward Self-Improvement of LLMs via Imagination, Searching, and Criticizing",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8k (Natural Language)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Toward Self-Improvement of LLMs via Imagination, Searching, and Criticizing",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Toward Self-Improvement of LLMs via Imagination, Searching, and Criticizing",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Toward Self-Improvement of LLMs via Imagination, Searching, and Criticizing",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH Few-shot Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Toward Self-Improvement of LLMs via Imagination, Searching, and Criticizing",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Binary Answer Matching (Math Reasoning)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Embedding Trajectory for Out-of-Distribution Detection in Mathematical Reasoning",
+      "evidence": "Binary direct matching (correct answer appears in output) is used to assess math reasoning outputs for quality estimation."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Embedding Trajectory Dynamics",
+      "other_type": "constructs",
+      "relationship_type": "predicts",
+      "paper": "Embedding Trajectory for Out-of-Distribution Detection in Mathematical Reasoning",
+      "evidence": "TV scores not only enable ID/OOD discrimination but also reflect the quality and precision of generated mathematical reasoning (correlating with correctness)."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Stepwise (Process) Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "RL on Incorrect Synthetic Data Scales the Efficiency of LLM Math Reasoning by Eight-Fold",
+      "evidence": "Solution traces comprise multiple reasoning steps, including critical steps required for success."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization in Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "RL on Incorrect Synthetic Data Scales the Efficiency of LLM Math Reasoning by Eight-Fold",
+      "evidence": "Generalization is discussed as improving test performance and scaling of math reasoning with data."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K Test Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "RL on Incorrect Synthetic Data Scales the Efficiency of LLM Math Reasoning by Eight-Fold",
+      "evidence": "GSM8K test accuracy is used to evaluate reasoning performance across methods."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH Test Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "RL on Incorrect Synthetic Data Scales the Efficiency of LLM Math Reasoning by Eight-Fold",
+      "evidence": "MATH test accuracy is plotted to assess reasoning performance."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Pass@5 on Reasoning Benchmarks",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "RL on Incorrect Synthetic Data Scales the Efficiency of LLM Math Reasoning by Eight-Fold",
+      "evidence": "Per‑step DPO yields consistent improvements in pass@5, reflecting better reasoning success among sampled solutions."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Formal Theorem Proving",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Learning Formal Mathematics From Intrinsic Motivation",
+      "evidence": "The agent ‘jointly learns to pose challenging problems for itself (conjecturing) and solve them (theorem proving)’ as core to mathematical reasoning ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Conjecture Generation (Mathematical Conjecturing)",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Learning Formal Mathematics From Intrinsic Motivation",
+      "evidence": "Conjecturing is paired with proving to realize mathematical reasoning from axioms ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Neuro-Symbolic Data Generation for Math Reasoning",
+      "evidence": "Models trained on the generated data are evaluated on GSM8K to assess mathematical reasoning performance and show substantial gains  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Neuro-Symbolic Data Generation for Math Reasoning",
+      "evidence": "Models trained on the generated data are evaluated on GSM8K to assess mathematical reasoning performance and show substantial gains  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8k (Natural Language)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Neuro-Symbolic Data Generation for Math Reasoning",
+      "evidence": "Models trained on the generated data are evaluated on GSM8K to assess mathematical reasoning performance and show substantial gains  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Neuro-Symbolic Data Generation for Math Reasoning",
+      "evidence": "Evaluation on MATH quantifies competition-level reasoning improvements from the proposed data generation approach  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Neuro-Symbolic Data Generation for Math Reasoning",
+      "evidence": "Evaluation on MATH quantifies competition-level reasoning improvements from the proposed data generation approach  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH Few-shot Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Neuro-Symbolic Data Generation for Math Reasoning",
+      "evidence": "Evaluation on MATH quantifies competition-level reasoning improvements from the proposed data generation approach  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Test Reasoning Errors (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Neuro-Symbolic Data Generation for Math Reasoning",
+      "evidence": "Gradual incorporation of more difficult problems consistently reduces reasoning errors on test, indicating improved reasoning ability ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Arithmetic Word Problem Solving",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Neuro-Symbolic Data Generation for Math Reasoning",
+      "evidence": "GSM8K targets grade-school word problems, a subdomain of mathematical reasoning ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Competition Mathematics Problem Solving",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Neuro-Symbolic Data Generation for Math Reasoning",
+      "evidence": "MATH covers competition-level problems across multiple subjects, a subdomain of mathematical reasoning ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization in Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Neuro-Symbolic Data Generation for Math Reasoning",
+      "evidence": "The paper explicitly evaluates out-of-domain generalizability as part of reasoning capability ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning Depth",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Neuro-Symbolic Data Generation for Math Reasoning",
+      "evidence": "Increasing difficulty modulates reasoning steps and errors, indicating depth as an aspect of reasoning capability ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Data-Driven Learning Capability (Math)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Neuro-Symbolic Data Generation for Math Reasoning",
+      "evidence": "Scalability experiments show that as the size of high-quality generated data increases, accuracy consistently improves; adding harder problems improves reasoning capability  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OpenCompass GSM-8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "A Full-duplex Speech Dialogue Scheme Based On Large Language Model",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OpenCompass MATH",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "A Full-duplex Speech Dialogue Scheme Based On Large Language Model",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Regularizing Hidden States Enables Learning Generalizable Reward Model for LLMs",
+      "evidence": "Math problem reasoning is a specific instance of reasoning ability highlighted in PPO examples ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reward Model Generalization (Out-of-Distribution)",
+      "other_type": "constructs",
+      "relationship_type": "predicts",
+      "paper": "Regularizing Hidden States Enables Learning Generalizable Reward Model for LLMs",
+      "evidence": "GRM exhibits better reasoning abilities on math problems than baselines in PPO examples ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Mathematical Reasoning Outcomes (PPO Examples)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Regularizing Hidden States Enables Learning Generalizable Reward Model for LLMs",
+      "evidence": "Qualitative PPO examples compare math reasoning quality across reward models ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "DARG: Dynamic Evaluation of Large Language Models via Adaptive Reasoning Graph",
+      "evidence": "Math problems are modeled with reasoning graphs (numbers and arithmetic operators) as a domain of reasoning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K Accuracy (%) under DARG-Evolved Complexity",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "DARG: Dynamic Evaluation of Large Language Models via Adaptive Reasoning Graph",
+      "evidence": "DARG evolves GSM8K by perturbing reasoning graphs to test math reasoning at varied complexity; accuracy declines with complexity ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Logical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "MACM: Utilizing a Multi-Agent System for Condition Mining in Solving Complex Mathematical Problems",
+      "evidence": "The paper frames math challenges as a subset of “complex, multi-step logical reasoning,” situating mathematical reasoning within logical reasoning"
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Calculation",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "MACM: Utilizing a Multi-Agent System for Condition Mining in Solving Complex Mathematical Problems",
+      "evidence": "In the solution process, the Executor “performs calculations” to produce the final result, making calculation a component of mathematical reasoning"
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Geometric Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "MACM: Utilizing a Multi-Agent System for Condition Mining in Solving Complex Mathematical Problems",
+      "evidence": "Geometry is highlighted as a specific area with limitations within the MATH evaluations, implying a subdomain of mathematical reasoning"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH Overall Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MACM: Utilizing a Multi-Agent System for Condition Mining in Solving Complex Mathematical Problems",
+      "evidence": "The paper uses accuracy on the MATH dataset to assess mathematical problem solving (with reported gains)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH Level 5 Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MACM: Utilizing a Multi-Agent System for Condition Mining in Solving Complex Mathematical Problems",
+      "evidence": "Performance on “the most challenging level five mathematical problems” is reported as an indicator of capability"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "24‑Point Game Success Rate (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MACM: Utilizing a Multi-Agent System for Condition Mining in Solving Complex Mathematical Problems",
+      "evidence": "Success rate on the 24‑point game (creating a valid equation equaling 24) is used as a math problem‑solving metric"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SciBench Math‑Related Subset Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MACM: Utilizing a Multi-Agent System for Condition Mining in Solving Complex Mathematical Problems",
+      "evidence": "Accuracy on SciBench’s math‑related subset (undergraduate‑level) is used to test solving more challenging mathematical problems"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TheoremQA (Math subset) Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MACM: Utilizing a Multi-Agent System for Condition Mining in Solving Complex Mathematical Problems",
+      "evidence": "TheoremQA math subset items that require logical reasoning with definite answers are used to assess mathematical reasoning"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "SGLang: Efficient Execution of Structured Language Model Programs",
+      "evidence": "GSM-8K problems (used here with Tree-of-Thought) are math word problems, a subtype of reasoning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM-8K with Tree-of-Thought",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SGLang: Efficient Execution of Structured Language Model Programs",
+      "evidence": "The paper applies Tree-of-Thought to GSM-8K problems, a math reasoning task."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K (ZeroEval)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+      "evidence": "GSM8K assesses math word problem solving; zero-shot results reported."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+      "evidence": "Math word problems are cited as a reasoning-heavy task (GSM8K)."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction Following",
+      "other_type": "constructs",
+      "relationship_type": "trade-off-with",
+      "paper": "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+      "evidence": "Continuing training from a strong instruct model shows higher chat-benchmark scores but catastrophic forgetting on GSM8K, indicating a trade-off."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "trade-off-with",
+      "paper": "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+      "evidence": "Continuing training from a strong instruct model shows higher chat-benchmark scores but catastrophic forgetting on GSM8K, indicating a trade-off."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction Following",
+      "other_type": "constructs",
+      "relationship_type": "no-degradation-observed",
+      "paper": "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+      "evidence": "For Gemma‑2‑9B‑it, SimPO improved instruction following without degrading GSM8K."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "no-degradation-observed",
+      "paper": "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+      "evidence": "For Gemma‑2‑9B‑it, SimPO improved instruction following without degrading GSM8K."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Algebraic Inequality Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Proving Olympiad Algebraic Inequalities without Human Demonstrations",
+      "evidence": "The paper frames algebraic inequality proving as a particularly challenging subset of mathematical reasoning with complex rules and matching  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Autoformalization Capability",
+      "other_type": "constructs",
+      "relationship_type": "predicts",
+      "paper": "Autoformalize Mathematical Statements by Symbolic Equivalence and Semantic Consistency",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MiniCache: KV Cache Compression in Depth Dimension for Large Language Models",
+      "evidence": "The paper reports EM on GSM8K to assess task performance under cross-layer merging  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MindMerger: Efficiently Boosting LLM Reasoning in non-English Languages",
+      "evidence": "Mathematical reasoning is treated as a key facet of overall reasoning capability and is the focus of multilingual math benchmarks ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MGSM Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MindMerger: Efficiently Boosting LLM Reasoning in non-English Languages",
+      "evidence": "MGSM evaluates multilingual mathematical reasoning; results reported as accuracy  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MSVAMP Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MindMerger: Efficiently Boosting LLM Reasoning in non-English Languages",
+      "evidence": "MSVAMP serves as an out‑of‑domain multilingual math reasoning test with accuracy metrics ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction Following",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Star-Agents: Automatic Data Optimization with LLM Agents for Instruction Tuning",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Star-Agents: Automatic Data Optimization with LLM Agents for Instruction Tuning",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MT-Bench Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Star-Agents: Automatic Data Optimization with LLM Agents for Instruction Tuning",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Vicuna-bench",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Star-Agents: Automatic Data Optimization with LLM Agents for Instruction Tuning",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K Block Efficiency/Speedup",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Accelerating Blockwise Parallel Language Models with Draft Refinement",
+      "evidence": "Block efficiency/speedup reported on GSM8K; gains are smaller relative to QA/SUM in this study  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "Iterative Reasoning Preference Optimization",
+      "evidence": "GSM8K and MATH are used as reasoning tasks in mathematics."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K Test Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Iterative Reasoning Preference Optimization",
+      "evidence": "GSM8K problems typically require intermediate reasoning (chain-of-thought) and are evaluated via exact match accuracy."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH Test Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Iterative Reasoning Preference Optimization",
+      "evidence": "MATH evaluates more advanced math problem solving with accuracy on a held-out test set."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Chain-of-Thought Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "depends-on",
+      "paper": "Iterative Reasoning Preference Optimization",
+      "evidence": "GSM8K questions typically require intermediate reasoning, i.e., generating chain-of-thought before answering."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Enhancing Reasoning Capabilities of LLMs via Principled Synthetic Logic Corpus",
+      "evidence": "Improvements on math tasks are framed as a transfer of reasoning capabilities ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K 5-shot Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Enhancing Reasoning Capabilities of LLMs via Principled Synthetic Logic Corpus",
+      "evidence": "Math task performance reported with improvements after ALT (Table 4b) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH (5-shot) Performance (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Enhancing Reasoning Capabilities of LLMs via Principled Synthetic Logic Corpus",
+      "evidence": "Math task performance reported with improvements after ALT (Table 4b) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MathQA (5-shot) Performance (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Enhancing Reasoning Capabilities of LLMs via Principled Synthetic Logic Corpus",
+      "evidence": "Math task performance reported with improvements after ALT (Table 4b) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Logical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Enhancing Reasoning Capabilities of LLMs via Principled Synthetic Logic Corpus",
+      "evidence": "Gains on math tasks indicate the generalizability of acquired logical reasoning fundamentals ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "OpenMathInstruct-1: A 1.8 Million Math Instruction Tuning Dataset",
+      "evidence": "The paper evaluates math reasoning on popular benchmarks including GSM8K, reporting competitive scores (e.g., 84.6% for their best model) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "OpenMathInstruct-1: A 1.8 Million Math Instruction Tuning Dataset",
+      "evidence": "The paper evaluates math reasoning on popular benchmarks including GSM8K, reporting competitive scores (e.g., 84.6% for their best model) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8k (Natural Language)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "OpenMathInstruct-1: A 1.8 Million Math Instruction Tuning Dataset",
+      "evidence": "The paper evaluates math reasoning on popular benchmarks including GSM8K, reporting competitive scores (e.g., 84.6% for their best model) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "OpenMathInstruct-1: A 1.8 Million Math Instruction Tuning Dataset",
+      "evidence": "The paper evaluates math reasoning on MATH, reporting competitive accuracy (e.g., 50.7% for their best model) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "OpenMathInstruct-1: A 1.8 Million Math Instruction Tuning Dataset",
+      "evidence": "The paper evaluates math reasoning on MATH, reporting competitive accuracy (e.g., 50.7% for their best model) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH Few-shot Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "OpenMathInstruct-1: A 1.8 Million Math Instruction Tuning Dataset",
+      "evidence": "The paper evaluates math reasoning on MATH, reporting competitive accuracy (e.g., 50.7% for their best model) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Tool-Integrated Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "OpenMathInstruct-1: A 1.8 Million Math Instruction Tuning Dataset",
+      "evidence": "The code-interpreter format interweaves natural-language reasoning with Python code and is presented as particularly suitable for mathematical reasoning tasks ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Geometry Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "OpenMathInstruct-1: A 1.8 Million Math Instruction Tuning Dataset",
+      "evidence": "Subject-wise analysis isolates geometry as a sub-area with distinct performance characteristics ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Solution Synthesis Ability (Math)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "OpenMathInstruct-1: A 1.8 Million Math Instruction Tuning Dataset",
+      "evidence": "Differences in TSC reflect distillation data quality and hence the quality of the final fine-tuned model’s mathematical reasoning performance ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH Subject-wise Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "OpenMathInstruct-1: A 1.8 Million Math Instruction Tuning Dataset",
+      "evidence": "Performance is analyzed by subject on MATH to assess components of mathematical reasoning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH Level-wise Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "OpenMathInstruct-1: A 1.8 Million Math Instruction Tuning Dataset",
+      "evidence": "Performance is analyzed by difficulty level on MATH to characterize reasoning across problem hardness ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Cross-Task Generalization",
+      "other_type": "constructs",
+      "relationship_type": "does-not-necessarily-predict",
+      "paper": "OpenMathInstruct-1: A 1.8 Million Math Instruction Tuning Dataset",
+      "evidence": "The paper cautions that improving in-domain math benchmarks may not translate to gains on other related tasks ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K Zero-shot Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "BAdam: A Memory Efficient Full Parameter Optimization Method for Large Language Models",
+      "evidence": "Zero-shot math benchmark scores on GSM8K are reported after MathInstruct fine-tuning (Table 6)  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AQuA Zero-shot Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "BAdam: A Memory Efficient Full Parameter Optimization Method for Large Language Models",
+      "evidence": "AQuA (quantitative reasoning) zero-shot scores are included among math benchmarks (Table 6)  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU-Math Zero-shot Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "BAdam: A Memory Efficient Full Parameter Optimization Method for Large Language Models",
+      "evidence": "MMLU-Math zero-shot scores are reported as part of math benchmarks (Table 6)  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SAT-Math Zero-shot Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "BAdam: A Memory Efficient Full Parameter Optimization Method for Large Language Models",
+      "evidence": "SAT-Math zero-shot scores are reported among the math benchmarks (Table 6)  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH Few-shot Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "BAdam: A Memory Efficient Full Parameter Optimization Method for Large Language Models",
+      "evidence": "MATH zero-shot scores are reported among the math benchmarks (Table 6)  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "NumGLUE Zero-shot Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "BAdam: A Memory Efficient Full Parameter Optimization Method for Large Language Models",
+      "evidence": "NumGLUE zero-shot scores are reported among the math benchmarks (Table 6)  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Symbolic Mathematics Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Global Lyapunov functions: a long-standing open problem in mathematics, with symbolic transformers",
+      "evidence": "The paper positions mathematics as a demanding form of reasoning; solving symbolic math tasks is used to probe such capability ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Arithmetic Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subtask",
+      "paper": "Pre-trained Large Language Models Use Fourier Features to Compute Addition",
+      "evidence": "Arithmetic is a core mathematical problem studied to evaluate LLM reasoning; this paper focuses on how models compute addition."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Keeping LLMs Aligned After Fine-tuning: The Crucial Role of Prompt Templates",
+      "evidence": "Zero-shot GSM8K performance is used to measure mathematical reasoning capability ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Keeping LLMs Aligned After Fine-tuning: The Crucial Role of Prompt Templates",
+      "evidence": "GSM8K task performance is treated as downstream helpfulness on math ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Math Word Problem Solving",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "MathPile: A Billion-Token-Scale Pretraining Corpus for Math",
+      "evidence": "Benchmarks used span basic arithmetic up to competition-level mathematics, implying subcomponents like word problem solving ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Competition-level Mathematical Problem Solving",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "MathPile: A Billion-Token-Scale Pretraining Corpus for Math",
+      "evidence": "The paper references competition-level evaluations (MATH) as part of mathematical capability ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Standardized Test Mathematics Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "MathPile: A Billion-Token-Scale Pretraining Corpus for Math",
+      "evidence": "SAT-MATH appears among the math benchmarks analyzed ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Mathematical Knowledge within STEM",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "MathPile: A Billion-Token-Scale Pretraining Corpus for Math",
+      "evidence": "STEM subset of MMLU evaluates mathematical understanding within STEM ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning (General)",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Unlocking the Capabilities of Thought: A Reasoning Boundary Framework to Quantify and Optimize Chain-of-Thought",
+      "evidence": "Mathematical reasoning is treated as a composite capability within the RB framework and evaluated across benchmarks  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Arithmetic Calculation",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Unlocking the Capabilities of Thought: A Reasoning Boundary Framework to Quantify and Optimize Chain-of-Thought",
+      "evidence": "The paper illustrates that arithmetic calculation plus planning compose mathematical reasoning (Arithmetical Calculation + Planning → Mathematical Reasoning) and are combined via the RB Combination Law ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Natural Language Planning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Unlocking the Capabilities of Thought: A Reasoning Boundary Framework to Quantify and Optimize Chain-of-Thought",
+      "evidence": "Mathematical reasoning depends on planning in combination with arithmetic; combined via weighted harmonic mean of RBs ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BIGGSM",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Unlocking the Capabilities of Thought: A Reasoning Boundary Framework to Quantify and Optimize Chain-of-Thought",
+      "evidence": "BIGGSM is constructed to span reasoning complexities and is used to evaluate and optimize CoT mathematical reasoning; MARP achieves SOTA on it  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Combination Law of RBs",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Unlocking the Capabilities of Thought: A Reasoning Boundary Framework to Quantify and Optimize Chain-of-Thought",
+      "evidence": "Composite mathematical reasoning RB is estimated by the weighted harmonic mean of arithmetic and planning RBs (Equation 2) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Word Problem Solving",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Coevolving with the Other You: Fine-Tuning LLM with Sequential Cooperative Multi-Agent Reinforcement Learning",
+      "evidence": "GSM8K targets math word problem reasoning as a specific subdomain."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K Objective Reward",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Coevolving with the Other You: Fine-Tuning LLM with Sequential Cooperative Multi-Agent Reinforcement Learning",
+      "evidence": "GSM8K is used to evaluate reasoning with a rule‑based correctness reward."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Geometric Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Evaluating Large Vision-and-Language Models on Children's Mathematical Olympiads",
+      "evidence": "Category-level analysis separates geometry as a distinct reasoning area ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Logical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Evaluating Large Vision-and-Language Models on Children's Mathematical Olympiads",
+      "evidence": "Logic is analyzed as a distinct category within MK problems ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Numerical/Arithmetic Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Evaluating Large Vision-and-Language Models on Children's Mathematical Olympiads",
+      "evidence": "Numbers is analyzed as a distinct category ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Algebraic Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Evaluating Large Vision-and-Language Models on Children's Mathematical Olympiads",
+      "evidence": "Algebra is analyzed as a distinct category ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multimodal (Vision–Text) Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Evaluating Large Vision-and-Language Models on Children's Mathematical Olympiads",
+      "evidence": "Image-text MK items require joint interpretation of images and text ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SMART-840 Grade-wise Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Evaluating Large Vision-and-Language Models on Children's Mathematical Olympiads",
+      "evidence": "Accuracy on MK problems across grades is the primary evaluation of LVLM mathematical reasoning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MK 2024 National Rank/Percentile",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Evaluating Large Vision-and-Language Models on Children's Mathematical Olympiads",
+      "evidence": "LVLM scores on MK tests map to real-world ranks/percentiles among children  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Cumulative Knowledge Foundations (Human-like)",
+      "other_type": "constructs",
+      "relationship_type": "different-from",
+      "paper": "Evaluating Large Vision-and-Language Models on Children's Mathematical Olympiads",
+      "evidence": "Authors argue LVLM reasoning appears to rely on patterns in training data rather than the cumulative knowledge foundations underpinning children’s skills ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Recursive Introspection: Teaching Language Model Agents How to Self-Improve",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K m1@t1 (Accuracy %)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Recursive Introspection: Teaching Language Model Agents How to Self-Improve",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K m5@t1 (maj@5, first turn)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Recursive Introspection: Teaching Language Model Agents How to Self-Improve",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K m1@t5 (no oracle)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Recursive Introspection: Teaching Language Model Agents How to Self-Improve",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K p1@t5 (with oracle)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Recursive Introspection: Teaching Language Model Agents How to Self-Improve",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH m1@t1 (Accuracy %)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Recursive Introspection: Teaching Language Model Agents How to Self-Improve",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K m5@t1 (maj@5, first turn)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Recursive Introspection: Teaching Language Model Agents How to Self-Improve",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH m1@t5 (no oracle)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Recursive Introspection: Teaching Language Model Agents How to Self-Improve",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH p1@t5 (with oracle)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Recursive Introspection: Teaching Language Model Agents How to Self-Improve",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Observational Scaling Laws and the Predictability of Langauge Model Performance",
+      "evidence": "GSM8K evaluates mathematical reasoning capability ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BigBench 3‑Digit Subtraction (normalized)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Observational Scaling Laws and the Predictability of Langauge Model Performance",
+      "evidence": "3‑digit subtraction is an arithmetic BigBench task used in emergent capability analysis ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BigBench 3‑Digit Subtraction (normalized)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Observational Scaling Laws and the Predictability of Langauge Model Performance",
+      "evidence": "2‑digit multiplication is an arithmetic BigBench task used in emergent capability analysis ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Agentic Capabilities",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Observational Scaling Laws and the Predictability of Langauge Model Performance",
+      "evidence": "Weights emphasize reasoning capability (e.g., GSM8K) on AgentBoard, suggesting its importance for agentic capability ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "ReST-MCTS*: LLM Self-Training via Process Reward Guided Tree Search",
+      "evidence": "Mathematical tasks (MATH) are used as a core domain to assess reasoning policy performance ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "ReST-MCTS*: LLM Self-Training via Process Reward Guided Tree Search",
+      "evidence": "MATH is used to evaluate reasoning/search policies under the same search budget ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "ReST-MCTS*: LLM Self-Training via Process Reward Guided Tree Search",
+      "evidence": "MATH is used to evaluate reasoning/search policies under the same search budget ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH Few-shot Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "ReST-MCTS*: LLM Self-Training via Process Reward Guided Tree Search",
+      "evidence": "MATH is used to evaluate reasoning/search policies under the same search budget ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MMLU-Pro: A More Robust and Challenging Multi-Task Language Understanding Benchmark",
+      "evidence": "TheoremQA questions necessitate application of theorems."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Learning to Reason via Program Generation, Emulation, and Search",
+      "evidence": "Datasets include math reasoning tasks (SVAMP, Sum) chosen as representatives of complex reasoning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SVAMP Math Word Problem EM (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Learning to Reason via Program Generation, Emulation, and Search",
+      "evidence": "SVAMP used for math word problems with exact match accuracy ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Sum Large-Number Addition EM (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Learning to Reason via Program Generation, Emulation, and Search",
+      "evidence": "Large-number addition (Sum) with defined train/test splits measured by EM ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "TAIA: Large Language Models are Out-of-Distribution Data Learners",
+      "evidence": "Math is a core subtype of reasoning evaluated in this work."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "TAIA: Large Language Models are Out-of-Distribution Data Learners",
+      "evidence": "MATH is used to evaluate math reasoning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "TAIA: Large Language Models are Out-of-Distribution Data Learners",
+      "evidence": "MATH is used to evaluate math reasoning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH Few-shot Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "TAIA: Large Language Models are Out-of-Distribution Data Learners",
+      "evidence": "MATH is used to evaluate math reasoning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "TAIA: Large Language Models are Out-of-Distribution Data Learners",
+      "evidence": "SVAMP assesses deep math word problem comprehension."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SVAMP Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "TAIA: Large Language Models are Out-of-Distribution Data Learners",
+      "evidence": "SVAMP assesses deep math word problem comprehension."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ASDiv Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "TAIA: Large Language Models are Out-of-Distribution Data Learners",
+      "evidence": "SVAMP assesses deep math word problem comprehension."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Task Capabilities",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Navigating the Safety Landscape: Measuring Risks in Finetuning Large Language Models",
+      "evidence": "Capabilities include math; abstract_algebra subset used for evaluation ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU 5-shot Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Navigating the Safety Landscape: Measuring Risks in Finetuning Large Language Models",
+      "evidence": "Abstract algebra accuracy serves as the math capability measure ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multi-modal Capability",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Are We on the Right Way for Evaluating Large Vision-Language Models?",
+      "evidence": "Six core capabilities include mathematics (MA) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMStar MA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Are We on the Right Way for Evaluating Large Vision-Language Models?",
+      "evidence": "MMStar reports MA scores as a core capability dimension; math remains challenging  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Learning Goal-Conditioned Representations for Language Reward Models",
+      "evidence": "Math benchmarks such as GSM8k are used to evaluate reasoning performance and policy accuracy  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Learning Goal-Conditioned Representations for Language Reward Models",
+      "evidence": "MATH is included among the math benchmarks for evaluating policy accuracy ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Learning Goal-Conditioned Representations for Language Reward Models",
+      "evidence": "MATH is included among the math benchmarks for evaluating policy accuracy ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH Few-shot Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Learning Goal-Conditioned Representations for Language Reward Models",
+      "evidence": "MATH is included among the math benchmarks for evaluating policy accuracy ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Math Correctness Detection AUROC",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Learning Goal-Conditioned Representations for Language Reward Models",
+      "evidence": "The reward model’s AUROC for distinguishing correct vs. incorrect math solutions improves with the proposed training ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Goal-Conditioned Representation Quality (Reward Models)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Learning Goal-Conditioned Representations for Language Reward Models",
+      "evidence": "Improvements in reward scores translate to improved policy accuracy on math benchmarks via PPO training with the contrastive reward model ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K (8-shot)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "BAM! Just Like That: Simple and Efficient Parameter Upcycling for Mixture of Experts",
+      "evidence": "For mathematical reasoning, they report average performance on GSM8K (8-shot) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH (4-shot)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "BAM! Just Like That: Simple and Efficient Parameter Upcycling for Mixture of Experts",
+      "evidence": "For mathematical reasoning, they also use MATH (4-shot) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Elementary Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "A Careful Examination of Large Language Model Performance on Grade School Arithmetic",
+      "evidence": "GSM8k is described as the gold standard for measuring elementary mathematical reasoning, a subset of mathematical reasoning"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "A Careful Examination of Large Language Model Performance on Grade School Arithmetic",
+      "evidence": "The paper frames mathematical reasoning within the broader goal of improving reasoning in LLMs"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K 5-shot Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "A Careful Examination of Large Language Model Performance on Grade School Arithmetic",
+      "evidence": "GSM8k is positioned as the field’s gold standard for elementary mathematical reasoning"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8KQA (Closed QA) – Judge Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "On scalable oversight with weak LLMs judging strong LLMs",
+      "evidence": "Binary GSM8K constructed via program‑aided solution proposals; judge accuracy assesses math reasoning under protocols ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Diffusion of Thought: Chain-of-Thought Reasoning in Diffusion Language Models",
+      "evidence": "Arithmetic and grade-school math are used as facets of LLM reasoning in this study ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "4x4 Multiplication (BIG-bench) Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Diffusion of Thought: Chain-of-Thought Reasoning in Diffusion Language Models",
+      "evidence": "The paper uses BIG-bench 4x4 multiplication with accuracy to assess arithmetic reasoning  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "4x4 Multiplication (BIG-bench) Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Diffusion of Thought: Chain-of-Thought Reasoning in Diffusion Language Models",
+      "evidence": "BIG-bench 5x5 multiplication accuracy evaluates multi-digit arithmetic reasoning  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Diffusion of Thought: Chain-of-Thought Reasoning in Diffusion Language Models",
+      "evidence": "GSM8K requires mathematical reasoning; accuracy is the main metric ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Diffusion of Thought: Chain-of-Thought Reasoning in Diffusion Language Models",
+      "evidence": "GSM8K requires mathematical reasoning; accuracy is the main metric ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8k (Natural Language)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Diffusion of Thought: Chain-of-Thought Reasoning in Diffusion Language Models",
+      "evidence": "GSM8K requires mathematical reasoning; accuracy is the main metric ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generative Diversity of Reasoning Paths",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Diffusion of Thought: Chain-of-Thought Reasoning in Diffusion Language Models",
+      "evidence": "Increasing self-consistency samples m—enabled by diverse reasoning paths—raises GSM8K accuracy  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Self-Correction",
+      "other_type": "constructs",
+      "relationship_type": "predicts",
+      "paper": "Diffusion of Thought: Chain-of-Thought Reasoning in Diffusion Language Models",
+      "evidence": "Fixing intermediate errors leads to correct final math answers in DoT reasoning trajectories ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning Efficiency",
+      "other_type": "constructs",
+      "relationship_type": "trade-off",
+      "paper": "Diffusion of Thought: Chain-of-Thought Reasoning in Diffusion Language Models",
+      "evidence": "Accuracy improves with more reasoning steps while efficiency decreases, demonstrating a tunable trade-off (Figure 4) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "interdependent",
+      "paper": "Diffusion of Thought: Chain-of-Thought Reasoning in Diffusion Language Models",
+      "evidence": "GSM8K performance depends on both mathematical reasoning and language understanding ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "VB-LoRA: Extreme Parameter Efficient Fine-Tuning with Vector Banks",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "VB-LoRA: Extreme Parameter Efficient Fine-Tuning with Vector Banks",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8k (Natural Language)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "VB-LoRA: Extreme Parameter Efficient Fine-Tuning with Vector Banks",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "VB-LoRA: Extreme Parameter Efficient Fine-Tuning with Vector Banks",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "VB-LoRA: Extreme Parameter Efficient Fine-Tuning with Vector Banks",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH Few-shot Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "VB-LoRA: Extreme Parameter Efficient Fine-Tuning with Vector Banks",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8k (Natural Language)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Mathematical Reasoning: SVAMP Self-Consistency Failure Rate",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Reranking Laws for Language Generation: A Communication-Theoretic Perspective",
+      "evidence": "Appendix reports log failure rate vs N for SVAMP under self‑consistency, fitting the reranking laws  ."
+    }
+  ],
+  "relationship_count": 376,
+  "incoming_relationship_count": 69,
+  "outgoing_relationship_count": 307
+}

@@ -1,0 +1,571 @@
+{
+  "canonical_name": "Arithmetic Reasoning",
+  "type": "construct",
+  "canonical_definition": "Arithmetic Reasoning refers to the capability to solve arithmetic or mathematical word problems through multi-step reasoning processes, often operationalized via benchmarks like GSM8K, SVAMP, or multi-step arithmetic tasks. This involves numerical computations beyond memorization (e.g., addition, multiplication, digit-wise operations with carry), algorithmic procedure execution, or quantitative reasoning within task contexts, with some definitions emphasizing zero-shot generalization, chain-of-thought prompting, or constraint satisfaction in API-encoded logic.",
+  "expert_reviewed": false,
+  "names": [
+    "Arithmetic Reasoning"
+  ],
+  "papers": [
+    "3-in-1: 2D Rotary Adaptation for Efficient Finetuning, Efficient Batching and Composability",
+    "Can LLMs Implicitly Learn Numeric Parameter Constraints in Data Science APIs?",
+    "Chain of Preference Optimization: Improving Chain-of-Thought Reasoning in LLMs",
+    "Discovering Sparsity Allocation for  Layer-wise Pruning of Large Language Models",
+    "Fine-Tuning Large Vision-Language Models as Decision-Making Agents via Reinforcement Learning",
+    "LoQT: Low-Rank Adapters for Quantized Pretraining",
+    "Localized Zeroth-Order Prompt Optimization",
+    "Measuring Multimodal Mathematical Reasoning with MATH-Vision Dataset",
+    "Position Coupling: Improving Length Generalization of Arithmetic Transformers Using Task Structure",
+    "Pre-trained Large Language Models Use Fourier Features to Compute Addition",
+    "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation",
+    "S$^{2}$FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity",
+    "SIRIUS : Contexual Sparisty with Correction for Efficient LLMs",
+    "Self-Guiding Exploration for Combinatorial Problems",
+    "Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization",
+    "Transformers Can Do Arithmetic with the Right Embeddings",
+    "WorkArena++: Towards Compositional Planning and Reasoning-based Common Knowledge Work Tasks"
+  ],
+  "paper_count": 17,
+  "group_ids": [
+    46,
+    387,
+    1243,
+    1818,
+    2333,
+    2523,
+    2593,
+    3230,
+    4036,
+    4271,
+    4699,
+    4867,
+    4906,
+    5214,
+    5440,
+    6042
+  ],
+  "definitions": [
+    {
+      "text": "Arithmetic Reasoning",
+      "paper": "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation"
+    },
+    {
+      "text": "Arithmetic Reasoning",
+      "paper": "Measuring Multimodal Mathematical Reasoning with MATH-Vision Dataset"
+    },
+    {
+      "text": "Capability to solve arithmetic or math word problems, reflected in accuracy on arithmetic reasoning datasets. ",
+      "paper": "Localized Zeroth-Order Prompt Optimization"
+    },
+    {
+      "text": "Reasoning to solve grade‑school math word problems (as in GSM8K: 8.5K linguistically diverse problems). ",
+      "paper": "LoQT: Low-Rank Adapters for Quantized Pretraining"
+    },
+    {
+      "text": "Multi‑step arithmetic problem solving as in BBH multistep_arithmetic_two .",
+      "paper": "Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization"
+    },
+    {
+      "text": "Reasoning over math word problems, exemplified by SVAMP  .",
+      "paper": "Chain of Preference Optimization: Improving Chain-of-Thought Reasoning in LLMs"
+    },
+    {
+      "text": "Capability to carry out numerical computations (e.g., addition, multiplication) via multi-step processes in a zero-shot setting without external tools  .",
+      "paper": "Transformers Can Do Arithmetic with the Right Embeddings"
+    },
+    {
+      "text": "Quantitative and mathematical problem-solving from word problems to multi-step calculations.",
+      "paper": "S$^{2}$FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity"
+    },
+    {
+      "text": "Ability to solve arithmetic/mathematical word problems; evaluated via GSM8K in this study .",
+      "paper": "Discovering Sparsity Allocation for  Layer-wise Pruning of Large Language Models"
+    },
+    {
+      "text": "Executing algorithmic arithmetic procedures (e.g., digit-wise addition with carry, multiplication) to produce correct next-token outputs. ",
+      "paper": "Position Coupling: Improving Length Generalization of Arithmetic Transformers Using Task Structure"
+    },
+    {
+      "text": "Mathematical word-problem solving via chain-of-thought prompting (e.g., GSM8K). ",
+      "paper": "SIRIUS : Contexual Sparisty with Correction for Efficient LLMs"
+    },
+    {
+      "text": "Capability for mathematical computation/reasoning; the study’s problems encode arithmetic logic inside APIs to probe this ability in the context of constraint satisfaction .",
+      "paper": "Can LLMs Implicitly Learn Numeric Parameter Constraints in Data Science APIs?"
+    },
+    {
+      "text": "Ability to perform arithmetic computations (beyond memorization), such as computing sums. The paper argues models actively compute solutions rather than memorize. ",
+      "paper": "Pre-trained Large Language Models Use Fourier Features to Compute Addition"
+    },
+    {
+      "text": "Ability to solve arithmetic/mathematical word problems via reasoning. ",
+      "paper": "3-in-1: 2D Rotary Adaptation for Efficient Finetuning, Efficient Batching and Composability"
+    },
+    {
+      "text": "Reasoning about numbers and arithmetic operations within task contexts .",
+      "paper": "Fine-Tuning Large Vision-Language Models as Decision-Making Agents via Reinforcement Learning"
+    },
+    {
+      "text": "Quantitative reasoning (e.g., computing statistics) used to guide subsequent actions.  ",
+      "paper": "WorkArena++: Towards Compositional Planning and Reasoning-based Common Knowledge Work Tasks"
+    },
+    {
+      "text": "Numerical problem solving assessed on standard arithmetic datasets in LLM research .",
+      "paper": "Self-Guiding Exploration for Combinatorial Problems"
+    }
+  ],
+  "definition_count": 17,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Arithmetic Reasoning Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Localized Zeroth-Order Prompt Optimization",
+      "evidence": "The paper evaluates accuracy on three arithmetic reasoning datasets."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "LoQT: Low-Rank Adapters for Quantized Pretraining",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "LoQT: Low-Rank Adapters for Quantized Pretraining",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K Test Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "LoQT: Low-Rank Adapters for Quantized Pretraining",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization",
+      "evidence": "BBH multistep_arithmetic_two evaluates arithmetic reasoning as a sub‑ability of reasoning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BBH: multistep_arithmetic_two Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization",
+      "evidence": "BBH multistep_arithmetic_two accuracy is reported as a task metric ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "Chain of Preference Optimization: Improving Chain-of-Thought Reasoning in LLMs",
+      "evidence": "Solving math word problems (e.g., SVAMP) requires stepwise reasoning over quantities and relations  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Chain of Preference Optimization: Improving Chain-of-Thought Reasoning in LLMs",
+      "evidence": "SVAMP is used to evaluate arithmetic/mathematical word problem solving ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SVAMP Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Chain of Preference Optimization: Improving Chain-of-Thought Reasoning in LLMs",
+      "evidence": "SVAMP is used to evaluate arithmetic/mathematical word problem solving ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ASDiv Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Chain of Preference Optimization: Improving Chain-of-Thought Reasoning in LLMs",
+      "evidence": "SVAMP is used to evaluate arithmetic/mathematical word problem solving ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Algorithmic Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Transformers Can Do Arithmetic with the Right Embeddings",
+      "evidence": "Arithmetic is a subset of algorithmic reasoning focusing on learning/executing algorithms and generalizing to longer problems ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Addition Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Transformers Can Do Arithmetic with the Right Embeddings",
+      "evidence": "Multi-digit addition is presented as a many-step arithmetic reasoning problem ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multiplication Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Transformers Can Do Arithmetic with the Right Embeddings",
+      "evidence": "The paper extends techniques from addition to multiplication, treating it as another arithmetic reasoning task ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "S$^{2}$FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity",
+      "evidence": "Arithmetic reasoning is a parallel facet to commonsense reasoning in the study’s evaluations ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MultiArith Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "S$^{2}$FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity",
+      "evidence": "MultiArith is one of the near OOD arithmetic tasks (easy) used in evaluation ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AddSub Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "S$^{2}$FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity",
+      "evidence": "AddSub is included as an easy arithmetic task for evaluation ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SingleEq Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "S$^{2}$FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity",
+      "evidence": "SingleEq is part of the easy arithmetic generalization set ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MAWPS Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "S$^{2}$FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity",
+      "evidence": "MAWPS is evaluated as an easy arithmetic task ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ASDiv Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "S$^{2}$FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity",
+      "evidence": "MAWPS is evaluated as an easy arithmetic task ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "S$^{2}$FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity",
+      "evidence": "GSM8K is a hard arithmetic benchmark highlighted in results and discussion ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "S$^{2}$FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity",
+      "evidence": "GSM8K is a hard arithmetic benchmark highlighted in results and discussion ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8k (Natural Language)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "S$^{2}$FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity",
+      "evidence": "GSM8K is a hard arithmetic benchmark highlighted in results and discussion ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AQuA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "S$^{2}$FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity",
+      "evidence": "AQuA is a hard arithmetic benchmark emphasized in comparative results ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "S$^{2}$FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity",
+      "evidence": "SVAMP is included among the hard arithmetic tasks in the setup ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SVAMP Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "S$^{2}$FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity",
+      "evidence": "SVAMP is included among the hard arithmetic tasks in the setup ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ASDiv Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "S$^{2}$FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity",
+      "evidence": "SVAMP is included among the hard arithmetic tasks in the setup ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subconstruct",
+      "paper": "Discovering Sparsity Allocation for  Layer-wise Pruning of Large Language Models",
+      "evidence": "The paper evaluates arithmetic, knowledge, and multimodal reasoning tasks, implying these as subtypes of reasoning  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K Accuracy at 50% Sparsity (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Discovering Sparsity Allocation for  Layer-wise Pruning of Large Language Models",
+      "evidence": "GSM8K is used to assess arithmetic task performance at 50% sparsity (Table 6) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Addition Algorithm Execution",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Position Coupling: Improving Length Generalization of Arithmetic Transformers Using Task Structure",
+      "evidence": "Arithmetic tasks considered include integer addition; executing the addition procedure is part of arithmetic reasoning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multiplication Algorithm Execution (N×2)",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Position Coupling: Improving Length Generalization of Arithmetic Transformers Using Task Structure",
+      "evidence": "Beyond addition, the study includes multiplication as an arithmetic task."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation",
+      "evidence": "Experiments include arithmetic reasoning as a key reasoning category."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AQuA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation",
+      "evidence": "Arithmetic evaluation includes AQuA; noted as multiple-choice with five options."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation",
+      "evidence": "Arithmetic evaluation includes GSM8K (Table 4)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation",
+      "evidence": "Arithmetic evaluation includes GSM8K (Table 4)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8k (Natural Language)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation",
+      "evidence": "Arithmetic evaluation includes GSM8K (Table 4)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MAWPS Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation",
+      "evidence": "Arithmetic evaluation includes MAWPS (Table 4)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ASDiv Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation",
+      "evidence": "Arithmetic evaluation includes MAWPS (Table 4)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation",
+      "evidence": "Arithmetic evaluation includes SVAMP (Table 4)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SVAMP Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation",
+      "evidence": "Arithmetic evaluation includes SVAMP (Table 4)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ASDiv Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation",
+      "evidence": "Arithmetic evaluation includes SVAMP (Table 4)."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "SIRIUS : Contexual Sparisty with Correction for Efficient LLMs",
+      "evidence": "The paper evaluates two popular types of reasoning: arithmetic and commonsense, and treats coding as requiring complex reasoning and planning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Arithmetic Word Problems (GSM8K-COT, 5-shot)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SIRIUS : Contexual Sparisty with Correction for Efficient LLMs",
+      "evidence": "GSM8K with 5-shot CoT is used to evaluate arithmetic reasoning, showing severe degradation under CS."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Arithmetic Reasoning (AQuA-RAT)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SIRIUS : Contexual Sparisty with Correction for Efficient LLMs",
+      "evidence": "AQuA-RAT is included as an additional arithmetic reasoning benchmark."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Arithmetic Constraint Handling",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Can LLMs Implicitly Learn Numeric Parameter Constraints in Data Science APIs?",
+      "evidence": "The study’s problems \"implicitly encode the arithmetic logic inside the DS library API,\" probing arithmetic reasoning in the context of constraint satisfaction ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subtask",
+      "paper": "Pre-trained Large Language Models Use Fourier Features to Compute Addition",
+      "evidence": "Arithmetic is a core mathematical problem studied to evaluate LLM reasoning; this paper focuses on how models compute addition."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "has-subtask",
+      "paper": "Pre-trained Large Language Models Use Fourier Features to Compute Addition",
+      "evidence": "Arithmetic is a core mathematical problem studied to evaluate LLM reasoning; this paper focuses on how models compute addition."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Integer Addition",
+      "other_type": "constructs",
+      "relationship_type": "has-subtask",
+      "paper": "Pre-trained Large Language Models Use Fourier Features to Compute Addition",
+      "evidence": "The study centers on integer addition as the focal arithmetic task."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Arithmetic Reasoning (4 tasks)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "3-in-1: 2D Rotary Adaptation for Efficient Finetuning, Efficient Batching and Composability",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multimodal Reasoning (Vision-Language Understanding)",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Fine-Tuning Large Vision-Language Models as Decision-Making Agents via Reinforcement Learning",
+      "evidence": "gym_cards tasks test fine-grained visual-language reasoning, specifically focusing on recognizing numbers for arithmetic reasoning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "NumberLine Episode Success Rate (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Fine-Tuning Large Vision-Language Models as Decision-Making Agents via Reinforcement Learning",
+      "evidence": "NumberLine focuses on recognizing numbers for arithmetic reasoning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "EZPoints Episode Success Rate (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Fine-Tuning Large Vision-Language Models as Decision-Making Agents via Reinforcement Learning",
+      "evidence": "EZPoints is an arithmetic reasoning task within gym_cards ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Points24 Episode Success Rate (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Fine-Tuning Large Vision-Language Models as Decision-Making Agents via Reinforcement Learning",
+      "evidence": "Points24 requires recognizing four cards and generating longer equations, stressing arithmetic reasoning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Mathematical Computations Based on Charts (L2/L3) Success Rate",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "WorkArena++: Towards Compositional Planning and Reasoning-based Common Knowledge Work Tasks",
+      "evidence": "Tasks demand computing mean/median/mode over plots and subsequent actions."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH‑V Subject Accuracy (by discipline) (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Measuring Multimodal Mathematical Reasoning with MATH-Vision Dataset",
+      "evidence": "GPT‑4o achieves 49.3% in arithmetic, indicating relative strength in numerical calculations."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subconstruct",
+      "paper": "Self-Guiding Exploration for Combinatorial Problems",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Arithmetic Reasoning Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Self-Guiding Exploration for Combinatorial Problems",
+      "evidence": ""
+    }
+  ],
+  "relationship_count": 56,
+  "incoming_relationship_count": 8,
+  "outgoing_relationship_count": 48
+}

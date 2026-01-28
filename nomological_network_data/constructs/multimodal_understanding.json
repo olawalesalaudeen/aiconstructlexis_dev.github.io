@@ -1,0 +1,1424 @@
+{
+  "canonical_name": "Multimodal Understanding",
+  "type": "construct",
+  "canonical_definition": "Multimodal Understanding refers to the capability of models to jointly process, integrate, and reason over information from multiple modalities—primarily vision and language, but also including audio, video, tables, equations, or 3D data—within a unified semantic framework. This construct emphasizes cross-modal alignment, where inputs from different modalities are encoded into shared representations to enable tasks requiring contextual comprehension, such as answering questions, generating responses, or making decisions that depend on inter-modal relationships. While some definitions focus narrowly on vision-text integration, others extend to broader multimodal combinations, with consensus on the necessity of joint processing rather than isolated unimodal analysis.",
+  "expert_reviewed": false,
+  "names": [
+    "Multimodal Understanding"
+  ],
+  "papers": [
+    "Aligning Audio-Visual Joint Representations with an Agentic Workflow",
+    "An eye for an ear: zero-shot audio description leveraging an image captioner with audio-visual token distribution matching",
+    "Biomedical Visual Instruction Tuning with Clinician Preference Alignment",
+    "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark",
+    "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+    "ChatTracker: Enhancing Visual Tracking Performance via Chatting with Multimodal Large Language Model",
+    "Compositional 3D-aware Video Generation with LLM Director",
+    "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts",
+    "DenseFusion-1M: Merging Vision Experts for Comprehensive Multimodal Perception",
+    "ERBench: An Entity-Relationship based Automatically Verifiable Hallucination Benchmark for Large Language Models",
+    "Efficient Large Multi-modal Models via Visual Context Compression",
+    "FEDMEKI: A Benchmark for Scaling Medical Foundation Models via Federated Knowledge Injection",
+    "Graph-based Unsupervised Disentangled Representation Learning via Multimodal Large Language Models",
+    "Grounding Multimodal Large Language Models in Actions",
+    "IMPACT: A Large-scale Integrated Multimodal Patent Analysis and Creation Dataset for Design Patents",
+    "LLM-based Skill Diffusion for Zero-shot Policy Adaptation",
+    "LLMs Can Evolve Continually on Modality for $\\mathbb{X}$-Modal Reasoning",
+    "Leveraging Hallucinations to Reduce Manual Prompt Dependency in Promptable Segmentation",
+    "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens",
+    "MaVEn: An Effective Multi-granularity Hybrid Visual Encoding Framework for Multimodal Large Language Model",
+    "Make-it-Real: Unleashing Large Multimodal Model for Painting 3D Objects with Realistic Materials",
+    "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models",
+    "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+    "Multi-Head Mixture-of-Experts",
+    "Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks",
+    "Private Attribute Inference from Images with Vision-Language Models",
+    "PromptFix: You Prompt and We Fix the Photo",
+    "ReXTime: A Benchmark Suite for Reasoning-Across-Time in Videos",
+    "RoboMamba: Efficient Vision-Language-Action Model for Robotic Reasoning and Manipulation",
+    "SGLang: Efficient Execution of Structured Language Model Programs",
+    "SPIQA: A Dataset for Multimodal Question Answering on Scientific Papers",
+    "SciFIBench: Benchmarking Large Multimodal Models for Scientific Figure Interpretation",
+    "SearchLVLMs: A Plug-and-Play Framework for Augmenting Large Vision-Language Models by Searching Up-to-Date Internet Knowledge",
+    "Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment",
+    "Spider2-V: How Far Are Multimodal Agents From Automating Data Science and Engineering Workflows?",
+    "T2Vs Meet VLMs: A Scalable Multimodal Dataset for Visual Harmfulness Recognition",
+    "UQE: A Query Engine for Unstructured Databases",
+    "Vitron: A Unified Pixel-level Vision LLM for Understanding, Generating, Segmenting, Editing",
+    "cPAPERS: A Dataset of Situated and Multimodal Interactive Conversations in Scientific Papers"
+  ],
+  "paper_count": 39,
+  "group_ids": [
+    89,
+    98,
+    478,
+    629,
+    699,
+    707,
+    724,
+    778,
+    933,
+    1373,
+    1412,
+    1484,
+    1657,
+    1692,
+    1851,
+    1881,
+    1925,
+    1971,
+    1982,
+    2004,
+    2318,
+    2359,
+    2418,
+    2755,
+    3304,
+    3329,
+    4086,
+    4229,
+    4967,
+    5066,
+    5128,
+    5256,
+    5487,
+    5568,
+    5723,
+    5803,
+    5835,
+    6387,
+    6396
+  ],
+  "definitions": [
+    {
+      "text": "Capability to understand and integrate visual and textual information in biomedical contexts, as emphasized by models’ understanding of visual and textual inputs. ",
+      "paper": "Biomedical Visual Instruction Tuning with Clinician Preference Alignment"
+    },
+    {
+      "text": "Ability to understand and ground information across equations, figures, tables, and their textual references; success on the task requires contextual and multimodal understanding.  ",
+      "paper": "cPAPERS: A Dataset of Situated and Multimodal Interactive Conversations in Scientific Papers"
+    },
+    {
+      "text": "Processing inputs from both language and visual modalities to perform semantic understanding .",
+      "paper": "Vitron: A Unified Pixel-level Vision LLM for Understanding, Generating, Segmenting, Editing"
+    },
+    {
+      "text": "Understanding and integrating information from text and images jointly .",
+      "paper": "Private Attribute Inference from Images with Vision-Language Models"
+    },
+    {
+      "text": "Joint capability to answer video questions and correctly ground answers in time; a model capable of multimodal understanding should excel in both VQA and localization, with accuracy @ IoU ≥ 0.5 as a key indicator. ",
+      "paper": "ReXTime: A Benchmark Suite for Reasoning-Across-Time in Videos"
+    },
+    {
+      "text": "Understanding across modalities (vision and language) achieved by aligning Large Vision Models with Large Language Models .",
+      "paper": "DenseFusion-1M: Merging Vision Experts for Comprehensive Multimodal Perception"
+    },
+    {
+      "text": "Integrated capability to comprehend and generate responses conditioned on both visual inputs and language; evaluations should genuinely assess multimodality rather than language-only skills.  ",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs"
+    },
+    {
+      "text": "General ability of large multimodal models to integrate and interpret information across text and images, enabling generalisation across many tasks and domains ",
+      "paper": "SciFIBench: Benchmarking Large Multimodal Models for Scientific Figure Interpretation"
+    },
+    {
+      "text": "Ability to encode and use information from multiple modalities in a shared semantic space to enable cross-modal relationships.",
+      "paper": "An eye for an ear: zero-shot audio description leveraging an image captioner with audio-visual token distribution matching"
+    },
+    {
+      "text": "Integration of vision and text (e.g., screenshots + accessibility trees) to comprehend and act on GUIs and documentation .",
+      "paper": "Spider2-V: How Far Are Multimodal Agents From Automating Data Science and Engineering Workflows?"
+    },
+    {
+      "text": "Ability to jointly represent and process visual and textual modalities via a unified representation/vocabulary to address their semantic gap. ",
+      "paper": "MaVEn: An Effective Multi-granularity Hybrid Visual Encoding Framework for Multimodal Large Language Model"
+    },
+    {
+      "text": "Capability of MLLMs to process and understand vision–language information; cited as a motivation for leveraging GPT‑4V and related models in this work  .",
+      "paper": "ChatTracker: Enhancing Visual Tracking Performance via Chatting with Multimodal Large Language Model"
+    },
+    {
+      "text": "Ability to understand and process text, images, and audio in a unified analytic setting.  ",
+      "paper": "UQE: A Query Engine for Unstructured Databases"
+    },
+    {
+      "text": "Perceiving audio and visual inputs and converting them into language descriptions for consistency judgment ().",
+      "paper": "Aligning Audio-Visual Joint Representations with an Agentic Workflow"
+    },
+    {
+      "text": "The ability to integrate and reason over text and images to solve language-specified tasks; MLLMs take text and images as input and generate text .",
+      "paper": "Grounding Multimodal Large Language Models in Actions"
+    },
+    {
+      "text": "Ability to understand and integrate information across modalities (e.g., images and text); the paper frames MLLMs as enhancing abilities to understand content such as images and videos and reports improved capabilities from the vision side .",
+      "paper": "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts"
+    },
+    {
+      "text": "Integration of visual and textual modalities to produce semantically aligned responses for downstream vision tasks. ",
+      "paper": "PromptFix: You Prompt and We Fix the Photo"
+    },
+    {
+      "text": "General capacity of MLLMs to perceive and understand inputs from multiple modalities (image, video, audio, depth, 3D) .",
+      "paper": "LLMs Can Evolve Continually on Modality for $\\mathbb{X}$-Modal Reasoning"
+    },
+    {
+      "text": "Comprehension of fused visual and textual inputs enabled by sequence modeling over vision-language tokens .",
+      "paper": "RoboMamba: Efficient Vision-Language-Action Model for Robotic Reasoning and Manipulation"
+    },
+    {
+      "text": "Integrating visual observations directly as conditions for environment-aware planning  .",
+      "paper": "Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks"
+    },
+    {
+      "text": "Capability of foundation models to handle different modalities and tasks and perform multimodal reasoning. ",
+      "paper": "FEDMEKI: A Benchmark for Scaling Medical Foundation Models via Federated Knowledge Injection"
+    },
+    {
+      "text": "Ability to integrate visual and textual information, as in models that combine a vision encoder with a large language model to enable comprehensive understanding of both modalities. ",
+      "paper": "IMPACT: A Large-scale Integrated Multimodal Patent Analysis and Creation Dataset for Design Patents"
+    },
+    {
+      "text": "Capability to comprehend and generate across modalities in VLMs leveraging LLMs .",
+      "paper": "Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment"
+    },
+    {
+      "text": "Ability to understand knowledge present in both visual and textual modalities, as assessed by VQA .",
+      "paper": "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark"
+    },
+    {
+      "text": "Ability to interpret and reason over combined visual and textual inputs across varied VL tasks; evaluated by a broad, grouped benchmark suite .",
+      "paper": "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models"
+    },
+    {
+      "text": "Using a multi-modal LLM (e.g., GPT-4V) with rendered scene images and textual goals to provide priors for composition (scales and trajectories) .",
+      "paper": "Compositional 3D-aware Video Generation with LLM Director"
+    },
+    {
+      "text": "Ability to answer questions when some attributes are presented as non-text modalities (e.g., images). ",
+      "paper": "ERBench: An Entity-Relationship based Automatically Verifiable Hallucination Benchmark for Large Language Models"
+    },
+    {
+      "text": "Ability to process multiple input modalities (e.g., text, images, video) used in agentic applications. ",
+      "paper": "SGLang: Efficient Execution of Structured Language Model Programs"
+    },
+    {
+      "text": "Ability to process and understand not just text but also visual information within a single model .",
+      "paper": "Efficient Large Multi-modal Models via Visual Context Compression"
+    },
+    {
+      "text": "Ability to capture semantic details within image patches and relations between patches; validated on vision tasks.  ",
+      "paper": "Multi-Head Mixture-of-Experts"
+    },
+    {
+      "text": "Integration of vision understanding with language models, including strong 2D comprehension and open‑world knowledge .",
+      "paper": "Make-it-Real: Unleashing Large Multimodal Model for Painting 3D Objects with Realistic Materials"
+    },
+    {
+      "text": "Ability to jointly process and integrate visual and textual information to answer questions; required by the news‑related VQA task .",
+      "paper": "SearchLVLMs: A Plug-and-Play Framework for Augmenting Large Vision-Language Models by Searching Up-to-Date Internet Knowledge"
+    },
+    {
+      "text": "Ability of MLLMs to process textual and visual data enabling richer, context‑aware interactions across modalities (e.g., GPT‑4V/GPT‑4o, Gemini, Claude) ",
+      "paper": "Graph-based Unsupervised Disentangled Representation Learning via Multimodal Large Language Models"
+    },
+    {
+      "text": "Comprehending and integrating information across multiple figures, tables, and paper text .",
+      "paper": "SPIQA: A Dataset for Multimodal Question Answering on Scientific Papers"
+    },
+    {
+      "text": "Ability to integrate visual and textual information for comprehension and decision-making across modalities, leveraging cross-modal transfer in VLMs .",
+      "paper": "T2Vs Meet VLMs: A Scalable Multimodal Dataset for Visual Harmfulness Recognition"
+    },
+    {
+      "text": "Ability to comprehend and reason over interleaved sequences of images and text. ",
+      "paper": "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens"
+    },
+    {
+      "text": "General-purpose comprehension of complex image contexts across tasks by projecting visual representations into an LLM for unified vision-language understanding .",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context"
+    },
+    {
+      "text": "Integration of visual inputs with language-conditioned knowledge for inference and guidance of downstream tasks .",
+      "paper": "Leveraging Hallucinations to Reduce Manual Prompt Dependency in Promptable Segmentation"
+    },
+    {
+      "text": "Interpreting multimodal contexts (beyond text) for loss generation, instantiated with GPT-4 for multimodal cases .",
+      "paper": "LLM-based Skill Diffusion for Zero-shot Policy Adaptation"
+    }
+  ],
+  "definition_count": 39,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Open Biomedical Visual Chat Score (GPT-4V Judge 1–10)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Biomedical Visual Instruction Tuning with Clinician Preference Alignment",
+      "evidence": "Open-ended visual chat is judged on how accurate, relevant, and coherent responses are to visual-text inputs."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQA-RAD Open Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Biomedical Visual Instruction Tuning with Clinician Preference Alignment",
+      "evidence": "VQA tasks require understanding of images and associated text in biomedical settings."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SLAKE Open Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Biomedical Visual Instruction Tuning with Clinician Preference Alignment",
+      "evidence": "Benchmark evaluates open-ended biomedical visual QA."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQA-RAD Open Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Biomedical Visual Instruction Tuning with Clinician Preference Alignment",
+      "evidence": "Benchmark evaluates pathology-focused visual QA."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Image Content Recognition and Utilization",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Biomedical Visual Instruction Tuning with Clinician Preference Alignment",
+      "evidence": "Criterion requires identifying visual content and integrating it with text."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Situated and Multimodal Interactive Conversation (SIMMC) over Scientific Papers",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "cPAPERS: A Dataset of Situated and Multimodal Interactive Conversations in Scientific Papers",
+      "evidence": "SIMMC methods for scientific papers must include understanding of equations, figures, and tables."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Equation Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "cPAPERS: A Dataset of Situated and Multimodal Interactive Conversations in Scientific Papers",
+      "evidence": "Equations are crucial for grasping mathematical concepts and relate to figures and tables."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Figure Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "cPAPERS: A Dataset of Situated and Multimodal Interactive Conversations in Scientific Papers",
+      "evidence": "Figures convey architectures, plots, and complex visual information."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Table Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "cPAPERS: A Dataset of Situated and Multimodal Interactive Conversations in Scientific Papers",
+      "evidence": "Tables have structures that convey semantic information and summarize concepts."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "cPAPERS-EQNS QA (Zero-shot)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "cPAPERS: A Dataset of Situated and Multimodal Interactive Conversations in Scientific Papers",
+      "evidence": "Success on document-grounded QA requires contextual and multimodal understanding."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "cPAPERS-TBLS QA (Zero-shot)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "cPAPERS: A Dataset of Situated and Multimodal Interactive Conversations in Scientific Papers",
+      "evidence": "Task requires grounding across textual and tabular context to answer questions."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "cPAPERS-FIGS QA (Zero-shot)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "cPAPERS: A Dataset of Situated and Multimodal Interactive Conversations in Scientific Papers",
+      "evidence": "Figure QA performance depends on leveraging document context."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Decision-Making",
+      "other_type": "constructs",
+      "relationship_type": "depends-on",
+      "paper": "Vitron: A Unified Pixel-level Vision LLM for Understanding, Generating, Segmenting, Editing",
+      "evidence": "The LLM performs semantic understanding and reasoning, and then makes decisions ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Unified Image–Video Modality Handling",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "Vitron: A Unified Pixel-level Vision LLM for Understanding, Generating, Segmenting, Editing",
+      "evidence": "Framework concurrently supports images and videos within one vision-LLM system ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "General Capabilities",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Private Attribute Inference from Images with Vision-Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Temporal Reasoning Across Time",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "ReXTime: A Benchmark Suite for Reasoning-Across-Time in Videos",
+      "evidence": "A model capable of multimodal understanding should excel in both VQA (temporal reasoning) and localization."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual Event Localization (Temporal Grounding / Moment Retrieval)",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "ReXTime: A Benchmark Suite for Reasoning-Across-Time in Videos",
+      "evidence": "A model capable of multimodal understanding should excel in both VQA and localization."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "REXTIME Joint Indicator",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "ReXTime: A Benchmark Suite for Reasoning-Across-Time in Videos",
+      "evidence": "Accuracy @ IoU ≥ 0.5 is a key indicator of true multimodal understanding."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Comprehensive Visual Perception",
+      "other_type": "constructs",
+      "relationship_type": "prerequisite-for",
+      "paper": "DenseFusion-1M: Merging Vision Experts for Comprehensive Multimodal Perception",
+      "evidence": "Comprehensive visual perception is a prerequisite for multimodal understanding ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual Perception",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+      "evidence": "The evaluation suite spans perception, knowledge, chart interpretation, and visual capabilities as aspects of multimodal capability."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Knowledge-based Question Answering",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+      "evidence": "Benchmarks are clustered into knowledge-based QAs among other capability groups."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OCR (Text Recognition in Images)",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+      "evidence": "OCR appears as a distinct category and data type in instruction tuning and evaluation."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Chart Interpretation",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+      "evidence": "Chart interpretation is a targeted evaluation aspect and category."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual Grounding",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+      "evidence": "Visual grounding is emphasized as crucial for robust multimodal understanding and a current bottleneck."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual Grounding",
+      "other_type": "measurements",
+      "relationship_type": "has-component",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+      "evidence": "Visual grounding is emphasized as crucial for robust multimodal understanding and a current bottleneck."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Mathematical Reasoning in Visual Contexts",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+      "evidence": "Math reasoning with visuals is included in the evaluation landscape (e.g., MathVista)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Scientific Diagram Understanding",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+      "evidence": "AI2D is included to assess diagram understanding."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Spatial Relation Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+      "evidence": "CV‑Bench includes relative distance questions to probe spatial relations."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Counting",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+      "evidence": "CV‑Bench includes counting question types to evaluate counting ability."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+      "evidence": "Some multimodal benchmarks are dominated by base LLM capabilities, revealing language understanding as a key component."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CV-Bench (CV-CB) Overall Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+      "evidence": "CV‑Bench reformulates classic vision tasks into QA to evaluate visual capabilities in an MLLM setting."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Vision‑Dependence Gap",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+      "evidence": "The study quantifies how much each benchmark truly needs visual input via the performance gap with vision enabled vs disabled."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM‑Judged Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+      "evidence": "GPT‑3.5 grading is used alongside fuzzy matching; both yield similar accuracies on matching-style benchmarks."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SEED-Image (SEED I)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+      "evidence": "SEED‑Image is part of the suite used to assess multimodal performance."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "RealWorldQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+      "evidence": "RealWorldQA is included among evaluated benchmarks reflecting performance on real-world images."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Scientific Figure Interpretation",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "SciFIBench: Benchmarking Large Multimodal Models for Scientific Figure Interpretation",
+      "evidence": "The work positions figure understanding within the broader generalisable abilities of LMMs across tasks and modalities ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Semantic Understanding (Visual)",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "An eye for an ear: zero-shot audio description leveraging an image captioner with audio-visual token distribution matching",
+      "evidence": "Models exhibit a deep understanding of semantic concepts and complex relationships in the visual domain, a component of broader multimodal understanding ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Audiovisual Alignment",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "An eye for an ear: zero-shot audio description leveraging an image captioner with audio-visual token distribution matching",
+      "evidence": "Multimodal alignment encodes information from different modalities into a shared semantic space, enabling cross-modal relationships ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Data Workflow Automation",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Spider2-V: How Far Are Multimodal Agents From Automating Data Science and Engineering Workflows?",
+      "evidence": "VLM‑based agents could automate workflows via multimodal understanding with both vision and text ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Observation Type Ablation Success Rates (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Spider2-V: How Far Are Multimodal Agents From Automating Data Science and Engineering Workflows?",
+      "evidence": "Performance improves with structured visual+text observations and modal alignment (Set‑of‑Mark)  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multi-Granularity Semantic Encoding",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "MaVEn: An Effective Multi-granularity Hybrid Visual Encoding Framework for Multimodal Large Language Model",
+      "evidence": "MaVEn enables efficient multi‑granularity semantic encoding for vision-language models."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Cross-Modal Alignment via Unified Vocabulary",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "MaVEn: An Effective Multi-granularity Hybrid Visual Encoding Framework for Multimodal Large Language Model",
+      "evidence": "Merging visual and textual discrete vocabularies forms a unified multimodal vocabulary to bridge the semantic gap."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Single-Image Visual Comprehension",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "MaVEn: An Effective Multi-granularity Hybrid Visual Encoding Framework for Multimodal Large Language Model",
+      "evidence": "MaVEn also enhances single‑image visual comprehension and generation."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Video Understanding",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "MaVEn: An Effective Multi-granularity Hybrid Visual Encoding Framework for Multimodal Large Language Model",
+      "evidence": "SEED‑Bench evaluation includes video understanding tasks."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Cross-Modal Alignment via Unified Vocabulary",
+      "other_type": "constructs",
+      "relationship_type": "supports",
+      "paper": "MaVEn: An Effective Multi-granularity Hybrid Visual Encoding Framework for Multimodal Large Language Model",
+      "evidence": "Unified multimodal vocabulary enables a unified representation that addresses cross‑modal semantic gaps."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Cross-Modal Autoregressive Generation",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "MaVEn: An Effective Multi-granularity Hybrid Visual Encoding Framework for Multimodal Large Language Model",
+      "evidence": "Stage‑2 cross‑modal generation (image↔text discrete tokens) is used to align modalities."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction Following",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "MaVEn: An Effective Multi-granularity Hybrid Visual Encoding Framework for Multimodal Large Language Model",
+      "evidence": "Instruction fine‑tuning aims to enhance the MLLM’s capability to follow human instructions."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "MaVEn: An Effective Multi-granularity Hybrid Visual Encoding Framework for Multimodal Large Language Model",
+      "evidence": "Instruction fine‑tuning aims to enhance the MLLM’s capability to follow human instructions."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Text Description Quality",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "ChatTracker: Enhancing Visual Tracking Performance via Chatting with Multimodal Large Language Model",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Clevr Semantic Retrieval (F1)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "UQE: A Query Engine for Unstructured Databases",
+      "evidence": "Image-based retrieval conditions evaluated on CLEVR."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AudioMNIST Semantic Retrieval (F1)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "UQE: A Query Engine for Unstructured Databases",
+      "evidence": "Audio retrieval with Gemini backend evaluated via F1."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Tool Use",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Aligning Audio-Visual Joint Representations with an Agentic Workflow",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Embodied Action Grounding",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Grounding Multimodal Large Language Models in Actions",
+      "evidence": "The policy integrates text instructions and visual observations before producing actions, leveraging multimodal inputs ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Instruction Following",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Question Answering",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Cross-modal Alignment",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMBench (EN/CN) Overall Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMMU",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MM-Vet Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MME Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MM-Vet Zero-Shot Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MM-Vet Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Instruction Following",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "PromptFix: You Prompt and We Fix the Photo",
+      "evidence": "Integrating a VLM to produce auxiliary prompts enhances semantic clarity and addresses instructional gaps in low-level processing."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "PromptFix: You Prompt and We Fix the Photo",
+      "evidence": "Integrating a VLM to produce auxiliary prompts enhances semantic clarity and addresses instructional gaps in low-level processing."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Semantic Alignment",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "PromptFix: You Prompt and We Fix the Photo",
+      "evidence": "Vision-language alignment ensures visual encodings are semantically aligned with LLM textual inputs."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Captioning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "PromptFix: You Prompt and We Fix the Photo",
+      "evidence": "Auxiliary prompts include semantic captions extracted via VLM."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Defect Diagnosis (Low-level Degradation Understanding)",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "PromptFix: You Prompt and We Fix the Photo",
+      "evidence": "Auxiliary prompts include defect descriptions to clarify low-level issues."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "X-Modal Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "LLMs Can Evolve Continually on Modality for $\\mathbb{X}$-Modal Reasoning",
+      "evidence": "The paper positions X‑modal reasoning as the capability enabled to strengthen multimodal understanding in MLLMs ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "COCO Captioning Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "LLMs Can Evolve Continually on Modality for $\\mathbb{X}$-Modal Reasoning",
+      "evidence": "Image captioning on COCO is included among reported metrics to evaluate multimodal understanding/generation ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Clotho Captioning Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "LLMs Can Evolve Continually on Modality for $\\mathbb{X}$-Modal Reasoning",
+      "evidence": "Audio captioning on Clotho is reported, reflecting audio‑language understanding/generation ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ModelNet Classification Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "LLMs Can Evolve Continually on Modality for $\\mathbb{X}$-Modal Reasoning",
+      "evidence": "3D object classification on ModelNet is reported, reflecting understanding of 3D modality within the unified system ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning (General)",
+      "other_type": "constructs",
+      "relationship_type": "supports",
+      "paper": "RoboMamba: Efficient Vision-Language-Action Model for Robotic Reasoning and Manipulation",
+      "evidence": "The model leverages sequence modeling to comprehend multimodal inputs and develop visual reasoning capabilities ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks",
+      "evidence": "Planner integrates visual observations as conditions for environment-aware sub-goal generation ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Planning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks",
+      "evidence": "Planner integrates visual observations as conditions for environment-aware sub-goal generation ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Medical Image Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "FEDMEKI: A Benchmark for Scaling Medical Foundation Models via Federated Knowledge Injection",
+      "evidence": "Foundation models handle different modalities and tasks, including medical imaging; interpreting radiographic data is a specific sub-capability."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "ECG Signal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "FEDMEKI: A Benchmark for Scaling Medical Foundation Models via Federated Knowledge Injection",
+      "evidence": "The benchmark covers multiple modalities; ECG abnormal detection defines the ECG analysis sub-capability."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Clinical Time-Series Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "FEDMEKI: A Benchmark for Scaling Medical Foundation Models via Federated Knowledge Injection",
+      "evidence": "Tasks span signals and clinical features; mortality/sepsis use vital signs and labs as inputs."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "FEDMEKI: A Benchmark for Scaling Medical Foundation Models via Federated Knowledge Injection",
+      "evidence": "The medical foundation model has superior capability to handle texts, a modality within multimodal understanding."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MedVQA (Validation)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "FEDMEKI: A Benchmark for Scaling Medical Foundation Models via Federated Knowledge Injection",
+      "evidence": "MedVQA involves image–text pairs, requiring multimodal comprehension and generation."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Signal Noise Clarification (Validation)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "FEDMEKI: A Benchmark for Scaling Medical Foundation Models via Federated Knowledge Injection",
+      "evidence": "Signal Noise Clarification uses signal–text pairs, engaging multimodal understanding."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Cross-modal Retrieval Ability",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "IMPACT: A Large-scale Integrated Multimodal Patent Analysis and Creation Dataset for Design Patents",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Captioning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "IMPACT: A Large-scale Integrated Multimodal Patent Analysis and Creation Dataset for Design Patents",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Patent Classification Ability",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "IMPACT: A Large-scale Integrated Multimodal Patent Analysis and Creation Dataset for Design Patents",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Grounding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment",
+      "evidence": "Grounding is one of the core task families used to characterize VLM understanding ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Grounding",
+      "other_type": "measurements",
+      "relationship_type": "is-a-component-of",
+      "paper": "Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment",
+      "evidence": "Grounding is one of the core task families used to characterize VLM understanding ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Image Captioning Ability",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment",
+      "evidence": "Captioning is a primary benchmarked capability for VLMs ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "OCR Recognition",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment",
+      "evidence": "OCR ability is repeatedly highlighted and evaluated within the VLM capability suite ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Image-Text Modality Alignment",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment",
+      "evidence": "Alignment is framed as the core problem for cross-modal understanding; improving alignment yields gains across VQA, captioning, and grounding  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SEED-I Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment",
+      "evidence": "SEED-I appears among VQA-style understanding benchmarks compared with CAL variants ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MME Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment",
+      "evidence": "MME is used as a comprehensive multimodal score in reported tables ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "POPE Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment",
+      "evidence": "POPE appears among evaluated metrics; CAL variants are compared on it ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQAText Accuracy (with OCR tokens)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment",
+      "evidence": "VQAText accuracy (with OCR tokens) is reported as an additional VQA benchmark for understanding ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Vision-Language Capability",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark",
+      "evidence": "VQA serves as an essential measure for assessing the understanding and reasoning capabilities of MLLMs, indicating these are core components of vision–language capability ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CVQA Accuracy (English prompts)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark",
+      "evidence": "VQA measures understanding in multimodal settings; CVQA uses multiple-choice accuracy as the performance metric  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQAv2 Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark",
+      "evidence": "VQA benchmarks (e.g., VQAv2) are reported and used to assess understanding; Table 4 lists results ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VizWiz Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark",
+      "evidence": "VizWiz is included among VQA benchmarks for comparison in Table 4, reflecting multimodal understanding performance ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TextVQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark",
+      "evidence": "TextVQA performance is reported alongside CVQA; it assesses understanding where reading text in images is needed ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CVQA Zero-shot (Location-aware prompt)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark",
+      "evidence": "The evaluation framework defines a location-aware zero-shot prompt template for CVQA and measures accuracy ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CVQA Zero-shot (Location-agnostic prompt)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark",
+      "evidence": "The framework also defines a location-agnostic prompt; performance is measured by accuracy ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Perception",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models",
+      "evidence": "Vision encoders underpin perception ability by encoding images into visual tokens, enabling understanding in visual modalities ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models",
+      "evidence": "Instance-level sentence embeddings guide language-side routing/selection, contributing to task-specific understanding ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Image Captioning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models",
+      "evidence": "Captioning tasks are core VL capabilities included in the evaluation suite ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Image Captioning",
+      "other_type": "measurements",
+      "relationship_type": "is-a-component-of",
+      "paper": "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models",
+      "evidence": "Captioning tasks are core VL capabilities included in the evaluation suite ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Question Answering",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models",
+      "evidence": "General group includes multiple VQA datasets (OKVQA, AOKVQA, GQA, IconQA) used to assess understanding ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Grounding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models",
+      "evidence": "REC is described as a visual grounding task central to VL competence ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Grounding",
+      "other_type": "measurements",
+      "relationship_type": "is-a-component-of",
+      "paper": "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models",
+      "evidence": "REC is described as a visual grounding task central to VL competence ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Referring Expression Generation",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models",
+      "evidence": "REG is a core VL generation ability included in the grouped evaluation ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Document Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models",
+      "evidence": "Text-rich document, chart, and table understanding form a full task group in evaluation ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Avg. (Four-Group Score)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models",
+      "evidence": "Overall average across Gen., REC, REG, Doc. used as a single summary measure of broad VL ability ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Spatial Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "Compositional 3D-aware Video Generation with LLM Director",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Agentic Interaction",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "SGLang: Efficient Execution of Structured Language Model Programs",
+      "evidence": "Applications accomplish complex interaction using multiple input modalities."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Image-Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Efficient Large Multi-modal Models via Visual Context Compression",
+      "evidence": "The paper evaluates both image-language and video-language understanding as facets of multimodal capability across benchmarks ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Video-Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Efficient Large Multi-modal Models via Visual Context Compression",
+      "evidence": "Thirteen widely-adopted benchmarks are used for both image-language and video-language understanding ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Instruction Following",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Efficient Large Multi-modal Models via Visual Context Compression",
+      "evidence": "Aligned LLMs can follow human instructions; visual instruction tuning extends this to multimodal models ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Grounding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Efficient Large Multi-modal Models via Visual Context Compression",
+      "evidence": "The paper discusses enhancing grounding capabilities in multimodal LLMs via specialized datasets ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Grounding",
+      "other_type": "measurements",
+      "relationship_type": "is-a-component-of",
+      "paper": "Efficient Large Multi-modal Models via Visual Context Compression",
+      "evidence": "The paper discusses enhancing grounding capabilities in multimodal LLMs via specialized datasets ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMBench Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Efficient Large Multi-modal Models via Visual Context Compression",
+      "evidence": "MMBench evaluates the multi-modal understanding capability of large vision-language models and is part of the paper’s evaluation suite ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMMU",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Efficient Large Multi-modal Models via Visual Context Compression",
+      "evidence": "MMMU appears in the reported benchmark list used to assess broad multimodal capability ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ImageNet-1K Top-1 Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Multi-Head Mixture-of-Experts",
+      "evidence": "ImageNet-1k classification used to validate MH-MoE on pure vision tasks."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "COCO Object Detection AP",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Multi-Head Mixture-of-Experts",
+      "evidence": "COCO object detection AP reported as downstream validation."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "COCO Instance Segmentation APmask",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Multi-Head Mixture-of-Experts",
+      "evidence": "COCO instance segmentation APmask reported as downstream validation."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Capacity Utilization (Expert Activation)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Multi-Head Mixture-of-Experts",
+      "evidence": "MH-MoE exhibits effectiveness on pure vision tasks (ImageNet/COCO), consistent with denser expert activation enabling finer-grained patch semantics."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Perception/Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Make-it-Real: Unleashing Large Multimodal Model for Painting 3D Objects with Realistic Materials",
+      "evidence": "Vision understanding is integrated into multimodal LLMs’ capabilities ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Prior Knowledge / World Knowledge",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Make-it-Real: Unleashing Large Multimodal Model for Painting 3D Objects with Realistic Materials",
+      "evidence": "Open‑world knowledge contributes to MLLM capability; pipeline leverages MLLMs’ world prior  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction Following / Hierarchical Prompting Comprehension",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Make-it-Real: Unleashing Large Multimodal Model for Painting 3D Objects with Realistic Materials",
+      "evidence": "A three‑level prompt tree enhances matching efficiency and accuracy, indicating robust instruction following  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "UDK‑VQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SearchLVLMs: A Plug-and-Play Framework for Augmenting Large Vision-Language Models by Searching Up-to-Date Internet Knowledge",
+      "evidence": "Answering UDK‑VQA samples requires considering both visual and textual information ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Attribute Recognition",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "Graph-based Unsupervised Disentangled Representation Learning via Multimodal Large Language Models",
+      "evidence": "MLLMs process textual and visual data; attribute scoring via prompts is an application of this multimodal capacity"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Scientific Paper Comprehension",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "SPIQA: A Dataset for Multimodal Question Answering on Scientific Papers",
+      "evidence": "Comprehending and integrating information across figures, tables, and text is central to evaluating capabilities on scientific papers ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Figure and Table Interpretation",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "SPIQA: A Dataset for Multimodal Question Answering on Scientific Papers",
+      "evidence": "SPIQA is designed to interpret complex figures and tables within the context of scientific papers ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SPIQA Direct QA with Figures and Tables",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SPIQA: A Dataset for Multimodal Question Answering on Scientific Papers",
+      "evidence": "Direct QA with figures and tables assesses integrating visual and textual information for QA ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual Context Understanding",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "T2Vs Meet VLMs: A Scalable Multimodal Dataset for Visual Harmfulness Recognition",
+      "evidence": "Thanks to their visual understanding capability, the annotation takes account of the context of the whole image or the entire video ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Temporal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "T2Vs Meet VLMs: A Scalable Multimodal Dataset for Visual Harmfulness Recognition",
+      "evidence": "Some methods receive multi-frame video input to answer 'Is the video harmful?' indicating temporal reasoning needs ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In‑Context Learning (Multimodal)",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens",
+      "evidence": "The paper assesses capability to reason about interleaved sequences via in‑context learning abilities."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multi‑Image Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens",
+      "evidence": "Capability to reason over interleaved sequences is also assessed through multi‑image reasoning performance."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual‑Linguistic Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens",
+      "evidence": "VQA‑style visual‑language reasoning forms a core part of multimodal understanding in the evaluations."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Image Captioning Ability",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens",
+      "evidence": "Captioning is used alongside VQA in the multimodal in‑context evaluations."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Domain Generalization (Multimodal)",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens",
+      "evidence": "MMMU domain breakdown is used to analyze how well models generalize across disciplines."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Perception",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "evidence": "MLLMs acquire visual perception capacity while enabling general-purpose multimodal understanding via LLMs ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "evidence": "MLLMs inherit sophisticated reasoning abilities from LLMs for multimodal understanding ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMBench Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "evidence": "MMBench evaluates all-around multimodal understanding ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MME Overall Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "evidence": "MME is used in the broad MLLM benchmark evaluation of capability ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual Question Answering",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "evidence": "General and text-oriented VQA are central modalities of multimodal understanding evaluated in the paper  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Scene Understanding (Visual)",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Leveraging Hallucinations to Reduce Manual Prompt Dependency in Promptable Segmentation",
+      "evidence": "The method performs scene understanding using MLLMs’ prior knowledge before segmentation ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MetaWorld Multi-modal Context CR/SR",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "LLM-based Skill Diffusion for Zero-shot Policy Adaptation",
+      "evidence": "Using GPT-4 for multimodal contexts, LDuS outperforms baselines on CR/SR ."
+    }
+  ],
+  "relationship_count": 146,
+  "incoming_relationship_count": 64,
+  "outgoing_relationship_count": 82
+}

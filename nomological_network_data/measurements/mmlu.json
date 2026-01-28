@@ -1,0 +1,999 @@
+{
+  "canonical_name": "MMLU",
+  "type": "measurement",
+  "canonical_definition": "MMLU (Massive Multitask Language Understanding) is a multiple-choice question-answering benchmark spanning diverse academic subjects and domains, designed to evaluate general knowledge, reasoning, and language understanding capabilities. It typically involves tasks framed as multi-subject assessments, often using subsets of questions (e.g., 57 subjects or 171-question variants), and is frequently employed to measure factual knowledge retention, model quality, and broad-ability generalization. Some papers characterize it as a knowledge-based evaluation or a general-ability benchmark, with task formats including zero-shot, 5-shot, or highest-likelihood option selection methods.",
+  "expert_reviewed": false,
+  "names": [
+    "MMLU",
+    "MMLU (5-shot Accuracy)",
+    "MMLU (5-shot) Performance (%)",
+    "MMLU (5‑shot)",
+    "MMLU 5-shot",
+    "MMLU 5-shot Accuracy (%)",
+    "MMLU 5-shot Accuracy (abstract_algebra)",
+    "MMLU 5-shot Accuracy (high_school_us_history)",
+    "MMLU 5-shot Accuracy (us_foreign_policy)",
+    "MMLU 5‑shot Accuracy (%)",
+    "MMLU Accuracy",
+    "MMLU Accuracy (%)",
+    "MMLU Accuracy (5-shot)",
+    "MMLU Accuracy (Ablations across orderings)",
+    "MMLU Accuracy (normalized)",
+    "MMLU Score"
+  ],
+  "papers": [
+    "$\\texttt{Model-GLUE}$: Democratized LLM Scaling for A Large Model Zoo in the Wild",
+    "A StrongREJECT for Empty Jailbreaks",
+    "AlchemistCoder: Harmonizing and Eliciting Code Capability by Hindsight Tuning on Multi-source Data",
+    "AmoebaLLM: Constructing Any-Shape Large Language Models for Efficient and Instant Deployment",
+    "BABILong: Testing the Limits of LLMs with Long Context Reasoning-in-a-Haystack",
+    "BAM! Just Like That: Simple and Efficient Parameter Upcycling for Mixture of Experts",
+    "BackdoorAlign: Mitigating Fine-tuning based Jailbreak Attack with Backdoor Enhanced Safety Alignment",
+    "Bridging The Gap between Low-rank and Orthogonal Adaptation via Householder Reflection Adaptation",
+    "CogVLM: Visual Expert for Pretrained Language Models",
+    "Compact Language Models via Pruning and Knowledge Distillation",
+    "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models",
+    "DDK: Distilling Domain Knowledge for Efficient Large Language Models",
+    "Delving into the Reversal Curse: How Far Can Large Language Models Generalize?",
+    "Distributional Preference Alignment of LLMs via Optimal Transport",
+    "DropBP: Accelerating Fine-Tuning of Large Language Models by Dropping Backward Propagation",
+    "Enhancing LLM’s Cognition via Structurization",
+    "Enhancing Multiple Dimensions of Trustworthiness in LLMs via Sparse Activation Control",
+    "Enhancing Reasoning Capabilities of LLMs via Principled Synthetic Logic Corpus",
+    "Ensemble Learning for Heterogeneous Large Language Models with Deep Parallel Collaboration",
+    "Evaluating Copyright Takedown Methods for Language Models",
+    "Exploiting LLM Quantization",
+    "Exploring the Role of Large Language Models in Prompt Encoding for Diffusion Models",
+    "Fight Back Against Jailbreaking via Prompt Adversarial Tuning",
+    "HonestLLM: Toward an Honest and Helpful Large Language Model",
+    "IRCAN: Mitigating Knowledge Conflicts in LLM Generation via Identifying and Reweighting Context-Aware Neurons",
+    "Improving Alignment and Robustness with Circuit Breakers",
+    "Instruction Tuning With Loss Over Instructions",
+    "LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning",
+    "LLMCBench: Benchmarking Large Language Model Compression for Efficient Deployment",
+    "MAmmoTH2: Scaling Instructions from the Web",
+    "MMLU-Pro: A More Robust and Challenging Multi-Task Language Understanding Benchmark",
+    "Me, Myself, and AI: The Situational Awareness Dataset (SAD) for LLMs",
+    "Megalodon: Efficient LLM Pretraining and Inference with Unlimited Context Length",
+    "MixEval: Deriving Wisdom of the Crowd from LLM Benchmark Mixtures",
+    "NYU CTF Bench: A Scalable Open-Source Benchmark Dataset for Evaluating LLMs in Offensive Security",
+    "Navigating the Safety Landscape: Measuring Risks in Finetuning Large Language Models",
+    "Observational Scaling Laws and the Predictability of Langauge Model Performance",
+    "OneBit: Towards Extremely Low-bit Large Language Models",
+    "Order-Independence Without Fine Tuning",
+    "PaCE: Parsimonious Concept Engineering for Large Language Models",
+    "Personalized Steering of Large Language Models: Versatile Steering Vectors Through Bi-directional Preference Optimization",
+    "Preference Learning Algorithms Do Not Learn Preference Rankings",
+    "Reasons and Solutions for the Decline in Model Performance after Editing",
+    "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models",
+    "Robust Prompt Optimization for Defending Language Models Against Jailbreaking Attacks",
+    "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+    "SciInstruct: a Self-Reflective Instruction Annotated Dataset for Training Scientific Language Models",
+    "SelectIT: Selective Instruction Tuning for LLMs via Uncertainty-Aware Self-Reflection",
+    "Self-playing Adversarial Language Game Enhances LLM Reasoning",
+    "Should We Really Edit Language Models? On the Evaluation of Edited Language Models",
+    "Spectral Editing of Activations for Large Language Model Alignment",
+    "TAIA: Large Language Models are Out-of-Distribution Data Learners",
+    "TSDS: Data Selection for Task-Specific Model Finetuning",
+    "The Art of Saying No: Contextual Noncompliance in Language Models",
+    "The FineWeb Datasets: Decanting the Web for the Finest Text Data at Scale",
+    "UltraMedical: Building Specialized Generalists in Biomedicine",
+    "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback",
+    "What matters when building vision-language models?",
+    "WizardArena: Post-training Large Language Models via Simulated Offline Chatbot Arena"
+  ],
+  "paper_count": 59,
+  "group_ids": [
+    144,
+    261,
+    329,
+    606,
+    773,
+    970,
+    1050,
+    1065,
+    1135,
+    1378,
+    1400,
+    1409,
+    1421,
+    1679,
+    1704,
+    1744,
+    1753,
+    1827,
+    1934,
+    2053,
+    2171,
+    2234,
+    2416,
+    2420,
+    2517,
+    2624,
+    2755,
+    2916,
+    2958,
+    3296,
+    3391,
+    3613,
+    3975,
+    3981,
+    4369,
+    4496,
+    4568,
+    4649,
+    4732,
+    4879,
+    4916,
+    5026,
+    5135,
+    5315,
+    5397,
+    5417,
+    5418,
+    5419,
+    5562,
+    5567,
+    5845
+  ],
+  "definitions": [
+    {
+      "text": "Massive Multi-task Language Understanding across many domains MMLU Accuracy (%)",
+      "paper": "OneBit: Towards Extremely Low-bit Large Language Models"
+    },
+    {
+      "text": "Massive multitask language understanding across many subjects MMLU Accuracy (%)",
+      "paper": "Bridging The Gap between Low-rank and Orthogonal Adaptation via Householder Reflection Adaptation"
+    },
+    {
+      "text": "Massive Multitask Language Understanding (text-only capability) MMLU Accuracy (%)",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models"
+    },
+    {
+      "text": "Massive multitask language understanding MMLU Accuracy (%) .",
+      "paper": "Reasons and Solutions for the Decline in Model Performance after Editing"
+    },
+    {
+      "text": "Massive Multitask Language Understanding across many domains.  MMLU Accuracy (%)",
+      "paper": "AlchemistCoder: Harmonizing and Eliciting Code Capability by Hindsight Tuning on Multi-source Data"
+    },
+    {
+      "text": "Massive multitask language understanding over many subjects. MMLU Accuracy (%)",
+      "paper": "$\\texttt{Model-GLUE}$: Democratized LLM Scaling for A Large Model Zoo in the Wild"
+    },
+    {
+      "text": "Massive multitask language understanding MMLU Accuracy (%)",
+      "paper": "Improving Alignment and Robustness with Circuit Breakers"
+    },
+    {
+      "text": "General multitask language understanding across subjects MMLU Accuracy (%)",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment"
+    },
+    {
+      "text": "General multi-task language understanding (MCQ) MMLU Accuracy (%)",
+      "paper": "UltraMedical: Building Specialized Generalists in Biomedicine"
+    },
+    {
+      "text": "Multi-task language understanding across subjects MMLU Average Accuracy (%)",
+      "paper": "TAIA: Large Language Models are Out-of-Distribution Data Learners"
+    },
+    {
+      "text": "General knowledge/reasoning across many subjects MMLU Accuracy (%)",
+      "paper": "Evaluating Copyright Takedown Methods for Language Models"
+    },
+    {
+      "text": "General knowledge and reasoning across many subjects. MMLU Accuracy (%)",
+      "paper": "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?"
+    },
+    {
+      "text": "Accuracy on Multitask Language Understanding to assess domain knowledge.  MMLU Accuracy (%)",
+      "paper": "Robust Prompt Optimization for Defending Language Models Against Jailbreaking Attacks"
+    },
+    {
+      "text": "Answer accuracy on Massive Multitask Language Understanding to assess knowledge. MMLU Accuracy (%)",
+      "paper": "The FineWeb Datasets: Decanting the Web for the Finest Text Data at Scale"
+    },
+    {
+      "text": "Multiple-choice multi-task language understanding accuracy. MMLU Accuracy (%) on MCQ format.",
+      "paper": "NYU CTF Bench: A Scalable Open-Source Benchmark Dataset for Evaluating LLMs in Offensive Security"
+    },
+    {
+      "text": "Massive multitask knowledge evaluation for factual and domain knowledge. MMLU Accuracy (%)",
+      "paper": "LLMCBench: Benchmarking Large Language Model Compression for Efficient Deployment"
+    },
+    {
+      "text": "General knowledge and capability exam MMLU Accuracy (%) .",
+      "paper": "WizardArena: Post-training Large Language Models via Simulated Offline Chatbot Arena"
+    },
+    {
+      "text": "Massive multitask language understanding used to characterize LLM backbone quality. MMLU Accuracy (%)",
+      "paper": "What matters when building vision-language models?"
+    },
+    {
+      "text": "Knowledge-based benchmark; largely fails to capture nuanced human preferences such as helpfulness/harmlessness . MMLU Accuracy (%)",
+      "paper": "Preference Learning Algorithms Do Not Learn Preference Rankings"
+    },
+    {
+      "text": "Accuracy on the Multi-Task Language Understanding benchmark used here as a factual knowledge evaluation and calibration signal  . MMLU Accuracy (%)",
+      "paper": "AmoebaLLM: Constructing Any-Shape Large Language Models for Efficient and Instant Deployment"
+    },
+    {
+      "text": "Multi‑task language understanding across academic subjects; cited as a commonly used ground‑truth benchmark in this work . MMLU Accuracy (%)",
+      "paper": "MixEval: Deriving Wisdom of the Crowd from LLM Benchmark Mixtures"
+    },
+    {
+      "text": "Knowledge‑wise performance with persona steering applied. MMLU Accuracy across steering multipliers.",
+      "paper": "Personalized Steering of Large Language Models: Versatile Steering Vectors Through Bi-directional Preference Optimization"
+    },
+    {
+      "text": "Multiple-choice evaluation across many subjects MMLU 5-shot Accuracy (%) .",
+      "paper": "TSDS: Data Selection for Task-Specific Model Finetuning"
+    },
+    {
+      "text": "Multiple‑choice test across 57 subjects; used here on a 171‑question subset to isolate capability effects under jailbroken benign prompts. MMLU Zero‑shot accuracy (%).",
+      "paper": "A StrongREJECT for Empty Jailbreaks"
+    },
+    {
+      "text": "General knowledge/understanding evaluation for capability retention.  MMLU Benchmark-defined metric (see Appendix B.1)",
+      "paper": "The Art of Saying No: Contextual Noncompliance in Language Models"
+    },
+    {
+      "text": "Part of the paper’s Language Understanding/Knowledge evaluation suite . MMLU Accuracy (%)",
+      "paper": "Instruction Tuning With Loss Over Instructions"
+    },
+    {
+      "text": "Standard broad‑ability benchmark used here to verify no catastrophic forgetting after fine‑tuning. MMLU Accuracy (%) .",
+      "paper": "Delving into the Reversal Curse: How Far Can Large Language Models Generalize?"
+    },
+    {
+      "text": "Massive Multitask Language Understanding; general knowledge ability. MMLU Accuracy (%)",
+      "paper": "SciInstruct: a Self-Reflective Instruction Annotated Dataset for Training Scientific Language Models"
+    },
+    {
+      "text": "Massive Multitask Language Understanding multiple-choice accuracy MMLU Accuracy (%)",
+      "paper": "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models"
+    },
+    {
+      "text": "Multi-task academic QA accuracy MMLU Accuracy (↑)",
+      "paper": "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models"
+    },
+    {
+      "text": "Multiple‑choice subject examination across diverse disciplines. MMLU Accuracy (%) using highest‑likelihood option selection.",
+      "paper": "Ensemble Learning for Heterogeneous Large Language Models with Deep Parallel Collaboration"
+    },
+    {
+      "text": "General multi-subject language understanding and knowledge breadth MMLU Score (Accuracy % reported in practice)",
+      "paper": "MAmmoTH2: Scaling Instructions from the Web"
+    },
+    {
+      "text": "Open LLM Leaderboard evaluation on MMLU. MMLU Accuracy (%)",
+      "paper": "Distributional Preference Alignment of LLMs via Optimal Transport"
+    },
+    {
+      "text": "General academic/knowledge QA benchmark used for correlation analysis. MMLU Accuracy (%); used to compare correlations against BABILong across lengths",
+      "paper": "BABILong: Testing the Limits of LLMs with Long Context Reasoning-in-a-Haystack"
+    },
+    {
+      "text": "Massive Multitask Language Understanding score as reported among standard academic benchmarks MMLU Accuracy (%)",
+      "paper": "Megalodon: Efficient LLM Pretraining and Inference with Unlimited Context Length"
+    },
+    {
+      "text": "General text understanding benchmark across many tasks. MMLU Accuracy/Score (%)",
+      "paper": "Exploring the Role of Large Language Models in Prompt Encoding for Diffusion Models"
+    },
+    {
+      "text": "Accuracy with unmodified inputs vs. only modified positional encoding vs. only modified attention mask vs. full Set‑Based Prompting; variation under two orderings. MMLU Accuracy (%) and variability under two orderings.",
+      "paper": "Order-Independence Without Fine Tuning"
+    },
+    {
+      "text": "General-ability evaluation; answers selected by highest option probability per official practice, used to assess capability retention . MMLU Accuracy (%)",
+      "paper": "IRCAN: Mitigating Knowledge Conflicts in LLM Generation via Identifying and Reweighting Context-Aware Neurons"
+    },
+    {
+      "text": "Evaluate benign performance across massive multitask language understanding; reported as test accuracy . MMLU 5‑shot Accuracy (%)",
+      "paper": "BackdoorAlign: Mitigating Fine-tuning based Jailbreak Attack with Backdoor Enhanced Safety Alignment"
+    },
+    {
+      "text": "General knowledge and reasoning benchmark used for correlation comparisons with SAD. MMLU Accuracy (%)",
+      "paper": "Me, Myself, and AI: The Situational Awareness Dataset (SAD) for LLMs"
+    },
+    {
+      "text": "Evaluation of knowledge possessed by LLMs across many domains. MMLU Accuracy (%)",
+      "paper": "Fight Back Against Jailbreaking via Prompt Adversarial Tuning"
+    },
+    {
+      "text": "General knowledge and reasoning proxy used to check for unintended degradation from control MMLU Accuracy (%) .",
+      "paper": "Enhancing Multiple Dimensions of Trustworthiness in LLMs via Sparse Activation Control"
+    },
+    {
+      "text": "Aggregated academic knowledge test accuracy used as standardized metric in scaling analyses MMLU Accuracy normalized to [0,1]",
+      "paper": "Observational Scaling Laws and the Predictability of Langauge Model Performance"
+    },
+    {
+      "text": "General knowledge/reasoning test used to verify retention of reasoning under alignment MMLU 5-shot Accuracy (%)",
+      "paper": "PaCE: Parsimonious Concept Engineering for Large Language Models"
+    },
+    {
+      "text": "Accuracy on 4-option multiple-choice questions across 57 subjects; de facto standard prior to saturation. MMLU Accuracy (%)",
+      "paper": "MMLU-Pro: A More Robust and Challenging Multi-Task Language Understanding Benchmark"
+    },
+    {
+      "text": "No-context multi-task knowledge test. MMLU Accuracy (%) via OpenCompass; structurization shows ~−0.1% with LLaMA2‑7B‑Chat.",
+      "paper": "Enhancing LLM’s Cognition via Structurization"
+    },
+    {
+      "text": "General knowledge and academic task accuracy; used to assess utility trade-offs post fine-tuning.  MMLU Accuracy (%)",
+      "paper": "HonestLLM: Toward an Honest and Helpful Large Language Model"
+    },
+    {
+      "text": "0-shot accuracy averaged across MMLU subjects (used as a factuality metric) . MMLU Accuracy (%)",
+      "paper": "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback"
+    },
+    {
+      "text": "Standard multi-task benchmark evaluated in 5-shot setting in this paper . MMLU 5-shot Accuracy (%)",
+      "paper": "LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning"
+    },
+    {
+      "text": "Massive Multitask Language Understanding to assess factual knowledge with 5-shot evaluation. MMLU 5-shot accuracy (%)",
+      "paper": "SelectIT: Selective Instruction Tuning for LLMs via Uncertainty-Aware Self-Reflection"
+    },
+    {
+      "text": "MMLU under few‑shot prompting MMLU 5‑shot Accuracy (%)",
+      "paper": "DDK: Distilling Domain Knowledge for Efficient Large Language Models"
+    },
+    {
+      "text": "Multiple-choice performance across diverse academic subjects using 5-shot prompting. MMLU 5-shot Accuracy (%)",
+      "paper": "DropBP: Accelerating Fine-Tuning of Large Language Models by Dropping Backward Propagation"
+    },
+    {
+      "text": "Multiple-choice test of broad world knowledge across many domains MMLU 5-shot Accuracy (%) .",
+      "paper": "Should We Really Edit Language Models? On the Evaluation of Edited Language Models"
+    },
+    {
+      "text": "Multiple-choice test of massive multitask language understanding MMLU 5-shot Accuracy (%)",
+      "paper": "Compact Language Models via Pruning and Knowledge Distillation"
+    },
+    {
+      "text": "Multiple-choice performance on a broad set of academic tasks with 5 in-context examples, greedy sampling. MMLU 5-shot Accuracy (%)",
+      "paper": "Exploiting LLM Quantization"
+    },
+    {
+      "text": "Broad academic knowledge/reasoning suite MMLU 5-shot Performance (%) .",
+      "paper": "Enhancing Reasoning Capabilities of LLMs via Principled Synthetic Logic Corpus"
+    },
+    {
+      "text": "Massive multi‑task multiple‑choice test requiring extensive world knowledge and problem‑solving; used as general LLM performance.  MMLU 5‑shot Accuracy (%)",
+      "paper": "Self-playing Adversarial Language Game Enhances LLM Reasoning"
+    },
+    {
+      "text": "Subject-matter capability in math (abstract algebra). MMLU 5-shot Accuracy (%) .",
+      "paper": "Navigating the Safety Landscape: Measuring Risks in Finetuning Large Language Models"
+    },
+    {
+      "text": "Subject-matter capability in history. MMLU 5-shot Accuracy (%) .",
+      "paper": "Navigating the Safety Landscape: Measuring Risks in Finetuning Large Language Models"
+    },
+    {
+      "text": "Subject-matter capability in policy/foreign policy. MMLU 5-shot Accuracy (%) .",
+      "paper": "Navigating the Safety Landscape: Measuring Risks in Finetuning Large Language Models"
+    },
+    {
+      "text": "Massive multitask language understanding across many subjects. MMLU Few-shot task score (%)",
+      "paper": "BAM! Just Like That: Simple and Efficient Parameter Upcycling for Mixture of Experts"
+    }
+  ],
+  "definition_count": 61,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "World Knowledge",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "OneBit: Towards Extremely Low-bit Large Language Models",
+      "evidence": "World knowledge is examined using MMLU, which covers wide domains and knowledge"
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment",
+      "evidence": "MMLU serves as the most general benchmark among control tasks ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "NYU CTF Bench: A Scalable Open-Source Benchmark Dataset for Evaluating LLMs in Offensive Security",
+      "evidence": "Multiple-choice evaluations like MMLU are referenced as comparative reasoning assessments."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "LLMCBench: Benchmarking Large Language Model Compression for Efficient Deployment",
+      "evidence": "Track 1 evaluates knowledge ability using MMLU."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Knowledge",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "WizardArena: Post-training Large Language Models via Simulated Offline Chatbot Arena",
+      "evidence": "Knowledge and capability are assessed by MMLU/related exams listed under specialized tasks ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "What matters when building vision-language models?",
+      "evidence": "MMLU is cited to characterize language model backbone strength (e.g., LLaMA-1-7B vs Mistral-7B)."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multitask Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Bridging The Gap between Low-rank and Orthogonal Adaptation via Householder Reflection Adaptation",
+      "evidence": "Post-finetuning evaluation includes MMLU as a classic NLP task reflecting broad subject understanding."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge Retention after Fine-tuning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Bridging The Gap between Low-rank and Orthogonal Adaptation via Householder Reflection Adaptation",
+      "evidence": "Table 3 includes MMLU to quantify retention of general knowledge after adaptation."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "poorly-captured-by",
+      "paper": "Preference Learning Algorithms Do Not Learn Preference Rankings",
+      "evidence": "Knowledge/logic benchmarks like MMLU largely fail to capture helpfulness as a preference dimension ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Harmlessness",
+      "other_type": "constructs",
+      "relationship_type": "poorly-captured-by",
+      "paper": "Preference Learning Algorithms Do Not Learn Preference Rankings",
+      "evidence": "These benchmarks also fail to capture harmlessness ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Factual Knowledge",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "AmoebaLLM: Constructing Any-Shape Large Language Models for Efficient and Instant Deployment",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Utility",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Evaluating Copyright Takedown Methods for Language Models",
+      "evidence": "MMLU evaluates broad knowledge and reasoning as part of general utility ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Knowledge",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "MixEval: Deriving Wisdom of the Crowd from LLM Benchmark Mixtures",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Capabilities (Capabilities Component)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+      "evidence": "The capabilities component is calculated from a set including MMLU ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Knowledge (Knowledge-wise Capability)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Personalized Steering of Large Language Models: Versatile Steering Vectors Through Bi-directional Preference Optimization",
+      "evidence": "MMLU accuracy reported under varying multipliers for persona steering."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multitask Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "TSDS: Data Selection for Task-Specific Model Finetuning",
+      "evidence": "Table 1 specifies MMLU as a multiple-choice benchmark evaluated with 5-shot accuracy ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Capabilities",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "A StrongREJECT for Empty Jailbreaks",
+      "evidence": "MMLU is a standard test of capabilities across 57 subjects."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models",
+      "evidence": "MMLU tracks pure text understanding; naive LAION-based multimodal training drops MMLU sharply, evidencing language degradation ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Capabilities",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "The Art of Saying No: Contextual Noncompliance in Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Robustness to Knowledge Editing (Post‑edit Performance Stability)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Reasons and Solutions for the Decline in Model Performance after Editing",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Reasons and Solutions for the Decline in Model Performance after Editing",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Domain Knowledge",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Robust Prompt Optimization for Defending Language Models Against Jailbreaking Attacks",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Instruction Tuning With Loss Over Instructions",
+      "evidence": "MMLU is listed under the 'Language Understanding and Knowledge' category used to evaluate models ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "World Knowledge",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Instruction Tuning With Loss Over Instructions",
+      "evidence": "MMLU is part of the Language Understanding and Knowledge category, reflecting knowledge-intensive tasks ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Academic Abilities",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Delving into the Reversal Curse: How Far Can Large Language Models Generalize?",
+      "evidence": "MMLU results are provided to suggest the phenomena are not due to catastrophic forgetting of general abilities ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "The FineWeb Datasets: Decanting the Web for the Finest Text Data at Scale",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "SciInstruct: a Self-Reflective Instruction Annotated Dataset for Training Scientific Language Models",
+      "evidence": "MMLU used to assess general knowledge/language abilities; accuracy metric."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models",
+      "evidence": "MMLU used as language understanding benchmark across models  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models",
+      "evidence": "Multiple-choice tests require reasoning; MMLU is used accordingly ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction Following",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models",
+      "evidence": "Fixed multiple-choice answer formats detect instruction following on MMLU ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models",
+      "evidence": "Fixed multiple-choice answer formats detect instruction following on MMLU ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multiple-Choice Question Answering",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models",
+      "evidence": "MMLU is included among evaluated datasets with accuracy reported ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Question Answering Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models",
+      "evidence": "MMLU is included among evaluated datasets with accuracy reported ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Subject Examination",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Ensemble Learning for Heterogeneous Large Language Models with Deep Parallel Collaboration",
+      "evidence": "MMLU is grouped under examination; accuracy via highest‑likelihood option."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Complementary Expertise",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Ensemble Learning for Heterogeneous Large Language Models with Deep Parallel Collaboration",
+      "evidence": "LLMs exhibit complementary strengths; DEEPEN enables collaboration and yields consistent improvements on MMLU."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "MAmmoTH2: Scaling Instructions from the Web",
+      "evidence": "MMLU evaluates knowledge breadth and depth across many disciplines ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Knowledge Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "AlchemistCoder: Harmonizing and Eliciting Code Capability by Hindsight Tuning on Multi-source Data",
+      "evidence": "Table reports MMLU scores for models."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Language Understanding and Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Distributional Preference Alignment of LLMs via Optimal Transport",
+      "evidence": "Reported as part of Open LLM Leaderboard evaluations."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "BABILong 20-Task Suite Average Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "correlates-with",
+      "paper": "BABILong: Testing the Limits of LLMs with Long Context Reasoning-in-a-Haystack",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Megalodon: Efficient LLM Pretraining and Inference with Unlimited Context Length",
+      "evidence": "MMLU is reported in the standard academic benchmark table"
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "$\\texttt{Model-GLUE}$: Democratized LLM Scaling for A Large Model Zoo in the Wild",
+      "evidence": "MMLU is included among the reasoning-oriented benchmarks reported by the paper ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Exploring the Role of Large Language Models in Prompt Encoding for Diffusion Models",
+      "evidence": "Figure 2 juxtaposes MMLU (language understanding) with T2I-CompBench, treating MMLU as a language understanding metric."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Distributional Robustness",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Order-Independence Without Fine Tuning",
+      "evidence": "Set‑Based Prompting moves embeddings out of distribution; ablations show differing impacts across models and that attention‑mask changes reduce variation more than positional‑encoding changes."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Abilities",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "IRCAN: Mitigating Knowledge Conflicts in LLM Generation via Identifying and Reweighting Context-Aware Neurons",
+      "evidence": "Assessed per official option-probability selection to monitor general abilities ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Benign Utility (General Task Performance)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "BackdoorAlign: Mitigating Fine-tuning based Jailbreak Attack with Backdoor Enhanced Safety Alignment",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Knowledge and Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Me, Myself, and AI: The Situational Awareness Dataset (SAD) for LLMs",
+      "evidence": "MMLU measures generic knowledge/reasoning used for comparison with SAD."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Benign Utility",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Fight Back Against Jailbreaking via Prompt Adversarial Tuning",
+      "evidence": "MMLU evaluates knowledge across domains; used to assess benign utility."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Domain Knowledge (Knowledge Reproduction)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Fight Back Against Jailbreaking via Prompt Adversarial Tuning",
+      "evidence": "MMLU measures knowledge across domains (STEM, Humanities, etc.)."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Inference Capability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Enhancing Multiple Dimensions of Trustworthiness in LLMs via Sparse Activation Control",
+      "evidence": "MMLU is reported alongside trust metrics to verify that general capability is not harmed by control ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Knowledge",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Observational Scaling Laws and the Predictability of Langauge Model Performance",
+      "evidence": "MMLU assesses general knowledge of LMs using standardized evaluation ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Knowledge",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "UltraMedical: Building Specialized Generalists in Biomedicine",
+      "evidence": "MMLU general categories assess broad knowledge beyond medicine."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "PaCE: Parsimonious Concept Engineering for Large Language Models",
+      "evidence": "MMLU (5-shot) accuracy is used to verify reasoning and ensure it is not degraded by detoxification  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multi-Task Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "MMLU-Pro: A More Robust and Challenging Multi-Task Language Understanding Benchmark",
+      "evidence": "MMLU emerged as the de facto standard for evaluating LLMs across many subjects."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Knowledge Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "TAIA: Large Language Models are Out-of-Distribution Data Learners",
+      "evidence": "MMLU average scores reflect general knowledge understanding."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Parametric Knowledge QA (No-Context)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Enhancing LLM’s Cognition via Structurization",
+      "evidence": "MMLU tests no-context parametric knowledge; structurization does not help and may slightly reduce accuracy."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Task Knowledge/Utility",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "HonestLLM: Toward an Honest and Helpful Large Language Model",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Factuality",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Factual Knowledge",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "SelectIT: Selective Instruction Tuning for LLMs via Uncertainty-Aware Self-Reflection",
+      "evidence": "MMLU assesses the factual knowledge of LLMs and reports 5-shot results."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language Understanding (General Knowledge)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "DDK: Distilling Domain Knowledge for Efficient Large Language Models",
+      "evidence": "5‑shot MMLU is reported to assess few‑shot knowledge understanding ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In‑Context Learning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "DDK: Distilling Domain Knowledge for Efficient Large Language Models",
+      "evidence": "5‑shot MMLU improvements indicate stronger in‑context learning ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Academic Knowledge and Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "DropBP: Accelerating Fine-Tuning of Large Language Models by Dropping Backward Propagation",
+      "evidence": "Fine-tuning with DropBP yields ≤1% change in 5-shot MMLU accuracy for LLaMA2-7B and a +0.5% improvement for LLaMA2-70B, indicating preserved subject-matter knowledge performance ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "World Knowledge",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Should We Really Edit Language Models? On the Evaluation of Edited Language Models",
+      "evidence": "World knowledge is measured with MMLU (5-shot) using multiple-choice accuracy ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multitask Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Compact Language Models via Pruning and Knowledge Distillation",
+      "evidence": "The paper reports MMLU(5) accuracy as a core downstream evaluation, reflecting 'massive multitask language understanding'."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Compact Language Models via Pruning and Knowledge Distillation",
+      "evidence": "MMLU explicitly measures 'language understanding' across many tasks."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Knowledge",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Exploiting LLM Quantization",
+      "evidence": "Utility is evaluated along general knowledge (with language understanding and truthfulness) using MMLU in 5-shot settings."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Exploiting LLM Quantization",
+      "evidence": "MMLU is used to assess language understanding among utility axes."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Self-playing Adversarial Language Game Enhances LLM Reasoning",
+      "evidence": "MMLU is used as a general performance evaluation requiring world knowledge and problem‑solving."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "World Knowledge",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Self-playing Adversarial Language Game Enhances LLM Reasoning",
+      "evidence": "MMLU requires extensive world knowledge."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Task Capabilities",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Navigating the Safety Landscape: Measuring Risks in Finetuning Large Language Models",
+      "evidence": "Capability landscape evaluated on MMLU abstract_algebra ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Task Capabilities",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Navigating the Safety Landscape: Measuring Risks in Finetuning Large Language Models",
+      "evidence": "Capability landscape evaluated on MMLU high_school_us_history ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Task Capabilities",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Navigating the Safety Landscape: Measuring Risks in Finetuning Large Language Models",
+      "evidence": "Capability landscape evaluated on MMLU us_foreign_policy ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Navigating the Safety Landscape: Measuring Risks in Finetuning Large Language Models",
+      "evidence": "Abstract algebra accuracy serves as the math capability measure ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Navigating the Safety Landscape: Measuring Risks in Finetuning Large Language Models",
+      "evidence": "Abstract algebra accuracy serves as the math capability measure ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Historical Knowledge",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Navigating the Safety Landscape: Measuring Risks in Finetuning Large Language Models",
+      "evidence": "History capability measured via high_school_us_history accuracy ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Policy Knowledge",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Navigating the Safety Landscape: Measuring Risks in Finetuning Large Language Models",
+      "evidence": "Policy capability measured via us_foreign_policy accuracy ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "BAM! Just Like That: Simple and Efficient Parameter Upcycling for Mixture of Experts",
+      "evidence": "They use MMLU (5-shot) to test general language understanding ."
+    }
+  ],
+  "relationship_count": 76,
+  "incoming_relationship_count": 76,
+  "outgoing_relationship_count": 0
+}

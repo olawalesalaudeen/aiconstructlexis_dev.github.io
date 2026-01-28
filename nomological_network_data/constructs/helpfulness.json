@@ -1,0 +1,2740 @@
+{
+  "canonical_name": "Helpfulness",
+  "type": "construct",
+  "canonical_definition": "Helpfulness is the ability of an AI system to produce responses that provide useful, practical, and actionable assistance to users across diverse tasks (e.g., answering questions, solving problems, offering guidance), often operationalized as a core alignment objective in large language models. It is frequently defined through reward modeling, prompt-based specifications, or human/LLM evaluations emphasizing clarity, informativeness, and task completion, though some papers highlight tensions between helpfulness and other attributes like truthfulness or safety (e.g., avoiding overly brief or non-informative replies). While broadly scoped to include medical, instructional, or creative domains, it is sometimes critiqued as a non-capability attribute primarily tuned post-training to align with human preferences rather than intrinsic model competence.",
+  "expert_reviewed": false,
+  "names": [
+    "Harmlessness (Safety)",
+    "Helpfulness",
+    "Honesty",
+    "Humor",
+    "Instruction Following",
+    "Truthfulness"
+  ],
+  "papers": [
+    "Aligning Large Language Models with Representation Editing: A Control Perspective",
+    "Alignment for Honesty",
+    "Benchmarking Complex Instruction-Following with Multiple Constraints Composition",
+    "BoNBoN Alignment for Large Language Models and the Sweetness of Best-of-n Sampling",
+    "Decoding-Time Language Model Alignment with Multiple Objectives",
+    "Geometric-Averaged Preference Optimization for Soft Preference Labels",
+    "HelpSteer 2: Open-source dataset for training top-performing reward models",
+    "HonestLLM: Toward an Honest and Helpful Large Language Model",
+    "IQA-EVAL: Automatic Evaluation of Human-Model Interactive Question Answering",
+    "Keeping LLMs Aligned After Fine-tuning: The Crucial Role of Prompt Templates",
+    "Learning Goal-Conditioned Representations for Language Reward Models",
+    "MedJourney: Benchmark and Evaluation of Large Language Models over Patient Clinical Journey",
+    "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+    "MixEval: Deriving Wisdom of the Crowd from LLM Benchmark Mixtures",
+    "Preference Learning Algorithms Do Not Learn Preference Rankings",
+    "Regularizing Hidden States Enables Learning Generalizable Reward Model for LLMs",
+    "SLED: Self Logits Evolution Decoding for Improving Factuality in Large Language Models",
+    "Stepwise Alignment for Constrained Language Model Policy Optimization",
+    "TAIA: Large Language Models are Out-of-Distribution Data Learners",
+    "Transfer Q-star : Principled Decoding for LLM Alignment",
+    "Uncovering Safety Risks of Large Language Models through Concept Activation Vector"
+  ],
+  "paper_count": 21,
+  "group_ids": [
+    11,
+    415,
+    428,
+    927,
+    1203,
+    1330,
+    1512,
+    1822,
+    3411,
+    3532,
+    3643,
+    4017,
+    4563,
+    4729,
+    4882,
+    4891,
+    5035,
+    5759,
+    5997,
+    6018
+  ],
+  "definitions": [
+    {
+      "text": "Helpfulness",
+      "paper": "Geometric-Averaged Preference Optimization for Soft Preference Labels"
+    },
+    {
+      "text": "Helpfulness",
+      "paper": "HelpSteer 2: Open-source dataset for training top-performing reward models"
+    },
+    {
+      "text": "Ability to provide useful, detailed assistance in responses; treated as an essential quality for AI assistants.",
+      "paper": "Aligning Large Language Models with Representation Editing: A Control Perspective"
+    },
+    {
+      "text": "Tendency to provide helpful responses, treated as a reward-model attribute in alignment datasets .",
+      "paper": "Transfer Q-star : Principled Decoding for LLM Alignment"
+    },
+    {
+      "text": "Providing clear, instructive, practical assistance addressing the medical task (judge criterion) .",
+      "paper": "MedJourney: Benchmark and Evaluation of Large Language Models over Patient Clinical Journey"
+    },
+    {
+      "text": "A nuanced aspect of human preference that knowledge/logic benchmarks largely fail to capture .",
+      "paper": "Preference Learning Algorithms Do Not Learn Preference Rankings"
+    },
+    {
+      "text": "Degree to which responses assist the user; an alignment objective in dialogue agents .",
+      "paper": "Decoding-Time Language Model Alignment with Multiple Objectives"
+    },
+    {
+      "text": "A non‑capability attribute largely tuned in post‑training that contributes to human preference in crowdsourced evaluations .",
+      "paper": "MixEval: Deriving Wisdom of the Crowd from LLM Benchmark Mixtures"
+    },
+    {
+      "text": "Degree to which responses help the user deduce correct answers; evaluative guidance provided by the assistant during interaction .",
+      "paper": "IQA-EVAL: Automatic Evaluation of Human-Model Interactive Question Answering"
+    },
+    {
+      "text": "Ability to follow task descriptions and be helpful. ",
+      "paper": "Benchmarking Complex Instruction-Following with Multiple Constraints Composition"
+    },
+    {
+      "text": "Target attribute of producing helpful responses. ",
+      "paper": "BoNBoN Alignment for Large Language Models and the Sweetness of Best-of-n Sampling"
+    },
+    {
+      "text": "Ability to produce useful, high-quality answers to benign prompts; operationalized as the reward metric in alignment.  ",
+      "paper": "Stepwise Alignment for Constrained Language Model Policy Optimization"
+    },
+    {
+      "text": "Providing useful, relevant assistance; part of alignment safety dimensions .",
+      "paper": "Regularizing Hidden States Enables Learning Generalizable Reward Model for LLMs"
+    },
+    {
+      "text": "An alignment objective specified via prompt-based text descriptions (Table 4) .",
+      "paper": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models"
+    },
+    {
+      "text": "An alignment objective specified via prompt-based text descriptions (Table 4) .",
+      "paper": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models"
+    },
+    {
+      "text": "An alignment objective specified via prompt-based text descriptions (Table 4) .",
+      "paper": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models"
+    },
+    {
+      "text": "An alignment objective specified via prompt-based text descriptions (Table 4) .",
+      "paper": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models"
+    },
+    {
+      "text": "An alignment objective specified via prompt-based text descriptions (Table 4) .",
+      "paper": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models"
+    },
+    {
+      "text": "An alignment objective specified via prompt-based text descriptions (Table 4) .",
+      "paper": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models"
+    },
+    {
+      "text": "Producing useful, high‑quality assistance across diverse user requests (summarization, creative writing, general communication), as evaluated by human/LLM judges .",
+      "paper": "Alignment for Honesty"
+    },
+    {
+      "text": "Usefulness of responses balancing truthfulness and informativeness while avoiding refusals; a purely truthful but non-informative reply (e.g., \"I have no comment\") is not helpful .",
+      "paper": "SLED: Self Logits Evolution Decoding for Improving Factuality in Large Language Models"
+    },
+    {
+      "text": "Providing helpful responses and maintaining/improving downstream task performance after fine-tuning  .",
+      "paper": "Keeping LLMs Aligned After Fine-tuning: The Crucial Role of Prompt Templates"
+    },
+    {
+      "text": "Usefulness of responses (even to malicious instructions) as judged by humans or GPT-4 .",
+      "paper": "Uncovering Safety Risks of Large Language Models through Concept Activation Vector"
+    },
+    {
+      "text": "Quality/helpfulness of responses to benign instructions. ",
+      "paper": "TAIA: Large Language Models are Out-of-Distribution Data Learners"
+    },
+    {
+      "text": "Propensity to produce helpful responses as a desired goal state for alignment  .",
+      "paper": "Learning Goal-Conditioned Representations for Language Reward Models"
+    },
+    {
+      "text": "Providing direct solutions and actionable guidance to user queries alongside honest acknowledgements, as operationalized in H2 scoring dimensions. ",
+      "paper": "HonestLLM: Toward an Honest and Helpful Large Language Model"
+    }
+  ],
+  "definition_count": 26,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Alignment with Human Objectives",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "Aligning Large Language Models with Representation Editing: A Control Perspective",
+      "evidence": "The study focuses on aligning LLMs for helpfulness and minimizing harmfulness, essential qualities for an AI assistant, as the alignment objectives."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "VHELM: A Holistic Evaluation of Vision Language Models",
+      "evidence": "Open-weight models’ inability to follow even simple instructions is hypothesized to drive poorer performance, notably in reasoning (relative to closed‑API models) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Knowledge",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "VHELM: A Holistic Evaluation of Vision Language Models",
+      "evidence": "Same hypothesis applies to knowledge-oriented results where closed‑API models outperform ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Toxicity",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "VHELM: A Holistic Evaluation of Vision Language Models",
+      "evidence": "Closed‑API models also outperform on toxicity; authors hypothesize instruction‑following deficits contribute to the gap ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Instruction Induction Task Performance",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Localized Zeroth-Order Prompt Optimization",
+      "evidence": "The study evaluates performance on 30 instruction‑induction tasks to direct LLMs to generate desired responses, leveraging instruction‑following ability."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Open Biomedical Visual Chat Score (GPT-4V Judge 1–10)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Biomedical Visual Instruction Tuning with Clinician Preference Alignment",
+      "evidence": "Instruction tuning is used to adapt models to follow instructions in open-ended visual chat."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQA-RAD Open Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Biomedical Visual Instruction Tuning with Clinician Preference Alignment",
+      "evidence": "Instruction-tuned models are evaluated on VQA tasks as downstream instruction-following evaluations."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Blocks&Bowls Task Success Rate",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "PERIA: Perceive, Reason, Imagine, Act via Holistic Language and Vision Planning for Manipulation",
+      "evidence": "Instruction following and task success are evaluated as success rates across domains (Table 1; abstract) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Letters Task Success Rate",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "PERIA: Perceive, Reason, Imagine, Act via Holistic Language and Vision Planning for Manipulation",
+      "evidence": "Success rates reported for Letters tasks (Table 1) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VIMA-BENCH Task Success Rate",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "PERIA: Perceive, Reason, Imagine, Act via Holistic Language and Vision Planning for Manipulation",
+      "evidence": "Success rates reported for VIMA-BENCH categories (Table 1) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language–Vision Consistency Alignment",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "PERIA: Perceive, Reason, Imagine, Act via Holistic Language and Vision Planning for Manipulation",
+      "evidence": "Consistency loss encourages coherence and mitigates hallucinations/semantic conflicts, improving reliability of instruction following ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Imagination (Vision Planning)",
+      "other_type": "constructs",
+      "relationship_type": "predicts",
+      "paper": "PERIA: Perceive, Reason, Imagine, Act via Holistic Language and Vision Planning for Manipulation",
+      "evidence": "Visual subgoal images offer more intuitive guidance; the advantage is especially evident on VIMA-BENCH, improving task success ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "In-Context Learning (ICL)",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "UniAudio 1.5: Large Language Model-Driven Audio Codec is A Few-Shot Audio Task Learner",
+      "evidence": "Task induction (explicit instructions) is crucial in the few-shot setup; performance drops without it ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Speech Emotion Classification (ESD) Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "UniAudio 1.5: Large Language Model-Driven Audio Codec is A Few-Shot Audio Task Learner",
+      "evidence": "Presence/absence of task induction substantially changes ESD few-shot accuracy, indicating reliance on instruction following ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Text-to-Speech on FSDD (Instruction Following + Quality)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "UniAudio 1.5: Large Language Model-Driven Audio Codec is A Few-Shot Audio Task Learner",
+      "evidence": "ACC explicitly measures whether generated speech follows the given instructions on FSDD  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Instruction Following Examples (Appendix Table 5)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "OneBit: Towards Extremely Low-bit Large Language Models",
+      "evidence": "Appendix Table 5 presents instruction-following cases before and after SFT, illustrating this capability qualitatively"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Text Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "PowerPM: Foundation Model for Power Systems",
+      "evidence": "Time‑LLM conditions LLMs using prompts that include dataset context, task instructions, and input statistics, presupposing text comprehension for instruction adherence ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Alignment",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment",
+      "evidence": "Alignment method aims to improve truthfulness (reducing hallucinations) alongside fairness ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA MC1 Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment",
+      "evidence": "Truthfulness is evaluated via TruthfulQA, with MC1 reported and improved by SEA  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA MC1 Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment",
+      "evidence": "MC2 is also reported as a TruthfulQA metric in the main results ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA MC2 Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment",
+      "evidence": "MC2 is also reported as a TruthfulQA metric in the main results ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Layer‑wise Truthfulness Signature (HaluEval)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment",
+      "evidence": "Layer‑wise signatures indicate where truthfulness information is concentrated, predominantly in top layers for most models ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Trusted Real‑World Deployment",
+      "other_type": "measurements",
+      "relationship_type": "predicts",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment",
+      "evidence": "Improving factual accuracy supports trusted deployment of LLMs in real‑world applications ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Misinformation Spread (Reduced)",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment",
+      "evidence": "Making LLMs more truthful could help curb the flow of inaccurate information from AI systems ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment",
+      "evidence": "Linear SEA edits to improve truthfulness have only limited impact on other capabilities such as commonsense reasoning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment",
+      "evidence": "Linear SEA’s truthfulness edits almost do not hurt mathematical tasks (GSM8K, MathQA) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Question Answering",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment",
+      "evidence": "Linear SEA’s truthfulness edits show limited impact on NQ performance ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "General Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment",
+      "evidence": "Linear SEA shows limited degradation on MMLU under truthfulness edits ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MT-Bench Overall Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning",
+      "evidence": "Instruction-following fine-tuning is evaluated with MT-Bench across multiple task categories ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Preference Alignment",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Geometric-Averaged Preference Optimization for Soft Preference Labels",
+      "evidence": "Alignment is evaluated on helpfulness benchmarks as part of alignment research."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Preference Alignment",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Geometric-Averaged Preference Optimization for Soft Preference Labels",
+      "evidence": "Alignment focuses on safe expressions and is evaluated on harmlessness benchmarks."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Anthropic Helpful Winning Rate",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Geometric-Averaged Preference Optimization for Soft Preference Labels",
+      "evidence": "Anthropic Helpful provides pairwise preference evaluations for helpfulness."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Anthropic Helpful Winning Rate",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Geometric-Averaged Preference Optimization for Soft Preference Labels",
+      "evidence": "Anthropic Harmless provides pairwise preference evaluations for harmlessness/safety."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Average Reward (UltraFeedback)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Transfer Q-star : Principled Decoding for LLM Alignment",
+      "evidence": "UltraFeedback reward includes helpfulness as an attribute of aligned responses ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Average Reward (HH-RLHF)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Transfer Q-star : Principled Decoding for LLM Alignment",
+      "evidence": "HH-RLHF targets Helpful and Harmless responses; higher reward reflects helpfulness ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Average Reward (Berkeley Nectar)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Transfer Q-star : Principled Decoding for LLM Alignment",
+      "evidence": "Berkeley Nectar considers Helpful responses in its reward model ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM Alignment with Human Preferences",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Transfer Q-star : Principled Decoding for LLM Alignment",
+      "evidence": "Alignment rewards are constructed to encourage helpful responses (dataset attributes) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "xRAG: Extreme Context Compression for Retrieval-augmented Generation with One Token",
+      "evidence": "TruthfulQA requires the generation of long‑form and truthful responses; evaluated with F1 ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "xRAG: Extreme Context Compression for Retrieval-augmented Generation with One Token",
+      "evidence": "TruthfulQA includes ROUGE‑L as an evaluation for long‑form, truthful responses ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Task Completion Rate (Sanity Check)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "GTBench: Uncovering the Strategic Reasoning Capabilities of LLMs via Game-Theoretic Evaluations",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Alignment Stringency (Over-alignment tendency)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "SG-Bench: Evaluating LLM Safety Generalization Across Diverse Tasks and Prompt Types",
+      "evidence": "Models with strong safety alignment (over-aligned) have more incoherent responses and cannot follow instructions well in discrimination tasks."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Error-type Proportions in Discrimination",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SG-Bench: Evaluating LLM Safety Generalization Across Diverse Tasks and Prompt Types",
+      "evidence": "Higher rates of Class 1 incoherent responses indicate poorer instruction following in discrimination settings (Table 4)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Discussion Tactic Selection",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Learning to Discuss Strategically: A Case Study on One Night Ultimate Werewolf",
+      "evidence": "Each tactic is divided into honest and deceptive variants."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Trustworthiness",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "LLMCBench: Benchmarking Large Language Model Compression for Efficient Deployment",
+      "evidence": "Trustworthiness is divided into robustness and truthfulness."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "LLMCBench: Benchmarking Large Language Model Compression for Efficient Deployment",
+      "evidence": "TruthfulQA is used to evaluate truthfulness."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Truth Alignment",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "CoIN: A Benchmark of Continual Instruction Tuning for Multimodel Large Language Models",
+      "evidence": "Truth Alignment is decomposed into reasoning plus instruction following."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Catastrophic Forgetting",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "CoIN: A Benchmark of Continual Instruction Tuning for Multimodel Large Language Models",
+      "evidence": "The paper reveals forgetting is primarily due to a decline in instruction following."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Instruction Format Adherence",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Bias Amplification in Language Model Evolution: An Iterated Learning Perspective",
+      "evidence": "High probability mass on format tokens demonstrates reliable instruction‑following that enables posterior calculations."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Response Quality",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "MedJourney: Benchmark and Evaluation of Large Language Models over Patient Clinical Journey",
+      "evidence": "Judge criteria explicitly include Helpfulness ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "WizardArena: Post-training Large Language Models via Simulated Offline Chatbot Arena",
+      "evidence": "TruthfulQA is listed under safety and truthfulness evaluations; results are reported in Table 6  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AlpacaEval 2.0",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "WizardArena: Post-training Large Language Models via Simulated Offline Chatbot Arena",
+      "evidence": "AlpacaEval is cited as an automatic evaluator of instruction-following models; results are reported alongside other benchmarks  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Task Identification",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Instruction Embedding: Latent Representations of Instructions Towards Task Identification",
+      "evidence": "Vicuna’s instruction tuning enhances instruction following, enabling better extraction of task-specific information under PIE than untuned models ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Alignment (Style/Format Adaptation)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Instruction Embedding: Latent Representations of Instructions Towards Task Identification",
+      "evidence": "Alignment is described as learning interaction style/format to solve tasks using pre-trained knowledge and skills, strengthening instruction following ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MT-Bench (LLM-as-a-judge)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Instruction Embedding: Latent Representations of Instructions Towards Task Identification",
+      "evidence": "MT-Bench is used in the paper’s downstream evaluations to quantify instruction-following performance under different data-selection methods ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Language-Driven Interactive Traffic Trajectory Generation",
+      "evidence": "The precision in controllable manipulation is achieved through the LLM’s robustness in understanding and applying detailed instructions ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "User Study 1 Preference (WOMD)",
+      "other_type": "measurements",
+      "relationship_type": "predicts",
+      "paper": "Language-Driven Interactive Traffic Trajectory Generation",
+      "evidence": "Greater alignment with language commands yields higher user preference (73.7% average) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "User Study 2 Interaction Fit (WOMD)",
+      "other_type": "measurements",
+      "relationship_type": "predicts",
+      "paper": "Language-Driven Interactive Traffic Trajectory Generation",
+      "evidence": "Precise application of instructions leads users to judge scenarios as fulfilling interaction requirements (72.4% positive) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human Preference Alignment",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Preference Learning Algorithms Do Not Learn Preference Rankings",
+      "evidence": "Helpfulness is cited as a nuanced human preference dimension central to alignment ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human Preference Alignment",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Preference Learning Algorithms Do Not Learn Preference Rankings",
+      "evidence": "Instruction-following violations are a stated concern in evaluating alignment with LLM judges ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "poorly-captured-by",
+      "paper": "Preference Learning Algorithms Do Not Learn Preference Rankings",
+      "evidence": "Knowledge/logic benchmarks like MMLU largely fail to capture helpfulness as a preference dimension ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-Horizon Planning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Long-Horizon Planning for Multi-Agent Robots in Partially Observable Environments",
+      "evidence": "Performance is limited by instruction-following and reasoning of the underlying LM."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MAP-THOR Success Rate (SR)",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "Long-Horizon Planning for Multi-Agent Robots in Partially Observable Environments",
+      "evidence": "Performance is limited by instruction-following capability of the underlying LM."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA MC1 Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "LoFiT: Localized Fine-tuning on LLM Representations",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA MC1 Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "LoFiT: Localized Fine-tuning on LLM Representations",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA MC2 Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "LoFiT: Localized Fine-tuning on LLM Representations",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Alignment to Human Preferences",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Decoding-Time Language Model Alignment with Multiple Objectives",
+      "evidence": "Helpfulness is an alignment objective in dialogue agents ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Alignment to Human Preferences",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Decoding-Time Language Model Alignment with Multiple Objectives",
+      "evidence": "Humor is considered as an output attribute to be balanced in assistants ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Helpful Assistant Helpfulness Reward",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Decoding-Time Language Model Alignment with Multiple Objectives",
+      "evidence": "Helpfulness is evaluated with off-the-shelf rewards in Helpful Assistant settings ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Helpful Assistant Helpfulness Reward",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Decoding-Time Language Model Alignment with Multiple Objectives",
+      "evidence": "Humor is explicitly an evaluation axis in Helpful Assistant experiments ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Harmlessness",
+      "other_type": "constructs",
+      "relationship_type": "trade-off",
+      "paper": "Decoding-Time Language Model Alignment with Multiple Objectives",
+      "evidence": "Dialogue agents need to trade off between helpfulness and harmlessness ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "MaVEn: An Effective Multi-granularity Hybrid Visual Encoding Framework for Multimodal Large Language Model",
+      "evidence": "Instruction fine‑tuning aims to enhance the MLLM’s capability to follow human instructions."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Neuro-Vision to Language: Enhancing Brain Recording-based Visual Reconstruction and Language Interaction",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Chatbot Arena Elo",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "MixEval: Deriving Wisdom of the Crowd from LLM Benchmark Mixtures",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Trustworthiness (MLLMs)",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models",
+      "evidence": "Trustworthiness rankings are reported per aspect (Truthfulness, Safety, Robustness, Fairness, Privacy) and overall in MultiTrust ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Inherent Deficiency",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models",
+      "evidence": "Truthfulness is divided into inherent deficiency and misguided mistakes ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Misguided Mistakes",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models",
+      "evidence": "Misguided mistakes assess impacts of misleading inputs during inference ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Inherent Deficiency",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models",
+      "evidence": "Varying instruction detail is used to reveal interpretation/response limits  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQA under Instruction Enhancement (Logical/Factual)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models",
+      "evidence": "Three prompt complexities elicit sensitivity in instruction following on the same questions ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generative Capability",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "IDGen: Item Discrimination Induced Prompt Generation for LLM Evaluation",
+      "evidence": "The paper argues MCQ benchmarks overlook the full generative potential, including instruction‑following ability ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "IDGen Open-ended Evaluation (General Text)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "IDGen: Item Discrimination Induced Prompt Generation for LLM Evaluation",
+      "evidence": "Generalization strategies impose constraints (e.g., keyword/length limits), directly probing instruction following  , and the paper highlights instruction‑following as part of generative potential ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA Generation",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+      "evidence": "Truthfulness in generation correlates with capability (base>chat) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Capabilities (Capabilities Component)",
+      "other_type": "constructs",
+      "relationship_type": "positively-correlated",
+      "paper": "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+      "evidence": "TruthfulQA generation correlates with capability (stronger for base than chat) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Sequential Decision-Making",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "AutoGuide: Automated Generation and Selection of Context-Aware Guidelines for Large Language Model Agents",
+      "evidence": "LLMs excel in interpreting concise natural-language instructions, and the paper applies context-conditional guidelines to enhance agent performance."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Alignment",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Personalized Steering of Large Language Models: Versatile Steering Vectors Through Bi-directional Preference Optimization",
+      "evidence": "Truthfulness is treated as an alignment‑related scenario."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA MC1 Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Personalized Steering of Large Language Models: Versatile Steering Vectors Through Bi-directional Preference Optimization",
+      "evidence": "Truthfulness assessed via TruthfulQA MC1 accuracy."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA MC1 Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Personalized Steering of Large Language Models: Versatile Steering Vectors Through Bi-directional Preference Optimization",
+      "evidence": "Truthfulness assessed via TruthfulQA MC2 accuracy."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA MC2 Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Personalized Steering of Large Language Models: Versatile Steering Vectors Through Bi-directional Preference Optimization",
+      "evidence": "Truthfulness assessed via TruthfulQA MC2 accuracy."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Steering Control (LLM Steerability)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Personalized Steering of Large Language Models: Versatile Steering Vectors Through Bi-directional Preference Optimization",
+      "evidence": "BiPO substantially improves TruthfulQA MC1/MC2 accuracy compared to baselines, and control varies with multiplier."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human-Model Interaction Quality",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "IQA-EVAL: Automatic Evaluation of Human-Model Interactive Question Answering",
+      "evidence": "Assistant should help users deduce answers; helpfulness is an explicit evaluation facet ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "IQA-EVAL Helpfulness Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "IQA-EVAL: Automatic Evaluation of Human-Model Interactive Question Answering",
+      "evidence": "Helpfulness is explicitly scored by LEA as a 1–5 metric ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multi-task Low-level Instruction-Guided Processing",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "PromptFix: You Prompt and We Fix the Photo",
+      "evidence": "The system understands user instructions and performs corresponding image-processing tasks, evaluated with PSNR/SSIM/LPIPS/ManIQA across tasks."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Task-Specific Evaluation: Low-light Enhancement",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "PromptFix: You Prompt and We Fix the Photo",
+      "evidence": "Task-level metrics quantify instruction-driven enhancement performance."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Task-Specific Evaluation: Desnowing",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "PromptFix: You Prompt and We Fix the Photo",
+      "evidence": "Task-level metrics quantify instruction-driven desnowing performance."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Task-Specific Evaluation: Desnowing",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "PromptFix: You Prompt and We Fix the Photo",
+      "evidence": "Task-level metrics quantify instruction-driven dehazing performance."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Task-Specific Evaluation: Colorization/Object/Watermark Removal",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "PromptFix: You Prompt and We Fix the Photo",
+      "evidence": "Task-level metrics quantify instruction-driven editing/removal performance."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "PromptFix: You Prompt and We Fix the Photo",
+      "evidence": "Integrating a VLM to produce auxiliary prompts enhances semantic clarity and addresses instructional gaps in low-level processing."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Defect Diagnosis (Low-level Degradation Understanding)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "PromptFix: You Prompt and We Fix the Photo",
+      "evidence": "Defect descriptions are introduced to address instructional gaps, improving clarity for instruction execution."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Prompt Understanding",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "PromptFix: You Prompt and We Fix the Photo",
+      "evidence": "Prior and backgrounded evidence indicates LLM-grounded diffusion enhances prompt understanding, improving instruction-driven generation/editing."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Robustness to Knowledge Editing (Post‑edit Performance Stability)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Reasons and Solutions for the Decline in Model Performance after Editing",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Reasons and Solutions for the Decline in Model Performance after Editing",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks",
+      "evidence": "Agents leverage instruction-following capabilities of MLLMs for planning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Planning",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks",
+      "evidence": "Agents leverage instruction-following capabilities of MLLMs for planning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Scientific Research Coding Capability",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "SciCode: A Research Coding Benchmark Curated by Scientists",
+      "evidence": "With background, evaluation shifts focus to coding and instruction‑following capabilities ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SciCode Main Problem Pass@1 (With Background)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SciCode: A Research Coding Benchmark Curated by Scientists",
+      "evidence": "This setting evaluates models’ capabilities to faithfully follow instructions provided in the background as well as their code‑generation performance ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AlpacaEval 2.0 Win Rate",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Instruction Tuning With Loss Over Instructions",
+      "evidence": "KL divergence regularization 'compromises the model’s ability to follow instructions,' with AlpacaEval 2.0 win rate dropping from 2.58 to 0.06 on LIMA, indicating this metric reflects instruction-following ability ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Lexico‑Semantic Robustness",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "SETLEXSEM CHALLENGE: Using Set Operations to Evaluate the Lexical and Semantic Robustness of Language Models",
+      "evidence": "‘Deceptive’ semantic groupings subvert instruction‑following ability substantially ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Deceptive Words Accuracy (Hyponym Sampler)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SETLEXSEM CHALLENGE: Using Set Operations to Evaluate the Lexical and Semantic Robustness of Language Models",
+      "evidence": "Large accuracy drops under swapped deceptive sets indicate failures to follow the set‑operation instruction ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Made‑Up Values Rate",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SETLEXSEM CHALLENGE: Using Set Operations to Evaluate the Lexical and Semantic Robustness of Language Models",
+      "evidence": "Models sometimes produce values not present in inputs, especially for symmetric difference on words, indicating instruction drift/hallucination ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Safety",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Should We Really Edit Language Models? On the Evaluation of Edited Language Models",
+      "evidence": "Safety evaluations concentrate on truthfulness, toxicity, and bias ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA 0-shot Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Should We Really Edit Language Models? On the Evaluation of Edited Language Models",
+      "evidence": "TruthfulQA (0-shot) multiple-choice accuracy evaluates truthfulness  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multimodal Grounding (Vision–Language)",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "$\\textit{Bifr\\\"ost}$: 3D-Aware Image Compositing with Language Instructions",
+      "evidence": "The fine-tuned MLLM enables understanding language instructions for image composition as part of grounding instructions to locations ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "2D Bounding Box Prediction (IoU)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "$\\textit{Bifr\\\"ost}$: 3D-Aware Image Compositing with Language Instructions",
+      "evidence": "In Stage 1, the MLLM predicts 2.5D locations conditioned on text instructions; IoU evaluates whether the outputs follow the instruction-specified placement  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Depth Prediction Error (MSE)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "$\\textit{Bifr\\\"ost}$: 3D-Aware Image Compositing with Language Instructions",
+      "evidence": "The instruction-conditioned depth prediction is evaluated by MSE, reflecting instruction adherence in the depth dimension  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "has-subconstruct",
+      "paper": "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models",
+      "evidence": "Fixed answer format simultaneously detects instruction-following ability ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models",
+      "evidence": "Fixed multiple-choice answer formats detect instruction following on MMLU ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC (E & C) Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models",
+      "evidence": "Fixed answer formats detect instruction following on ARC ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models",
+      "evidence": "Fixed answer formats detect instruction following on OBQA ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OpenBookQA (OBQA) Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models",
+      "evidence": "Fixed answer formats detect instruction following on OBQA ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OpenBookQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models",
+      "evidence": "Fixed answer formats detect instruction following on OBQA ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Correctness",
+      "other_type": "constructs",
+      "relationship_type": "correlated-with",
+      "paper": "HelpSteer 2: Open-source dataset for training top-performing reward models",
+      "evidence": "Helpfulness has a Pearson correlation of 0.943 with Correctness in HelpSteer2 (Table 2)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Alignment",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "HelpSteer 2: Open-source dataset for training top-performing reward models",
+      "evidence": "Alignment is evaluated by helpfulness metrics (MT Bench, AlpacaEval 2.0 LC)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MT Bench Score (GPT-4-0125-Preview judge)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "HelpSteer 2: Open-source dataset for training top-performing reward models",
+      "evidence": "MT Bench is used to measure helpfulness."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AlpacaEval 2.0 LC Win Rate (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "HelpSteer 2: Open-source dataset for training top-performing reward models",
+      "evidence": "AlpacaEval 2.0 LC is used as a secondary measure of helpfulness."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Arena Hard Win Rate (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "HelpSteer 2: Open-source dataset for training top-performing reward models",
+      "evidence": "Arena Hard is used as a secondary measure of helpfulness; >50% coding prompts."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "RewardBench Chat Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "HelpSteer 2: Open-source dataset for training top-performing reward models",
+      "evidence": "RewardBench Chat compares good vs bad responses to domain‑general prompts."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "RewardBench Chat-Hard Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "HelpSteer 2: Open-source dataset for training top-performing reward models",
+      "evidence": "Chat‑Hard requires discriminating great vs good responses."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Goodness Score (DPO/PPO reward)",
+      "other_type": "measurements",
+      "relationship_type": "contributes-to-measure",
+      "paper": "HelpSteer 2: Open-source dataset for training top-performing reward models",
+      "evidence": "Goodness score includes a weighted helpfulness component."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Entity Extraction (Prompted)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Image Textualization: An Automatic Framework for Generating Rich and Detailed Image Descriptions",
+      "evidence": "Entity extraction relies on the LLM’s instruction following with designed prompts and in-context examples (Algorithm 1; Appendix prompts)  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "IFEval Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Compact Language Models via Pruning and Knowledge Distillation",
+      "evidence": "After supervised fine-tuning (SFT), the model is evaluated on instruction-following with IFEval."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MT-Bench Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Compact Language Models via Pruning and Knowledge Distillation",
+      "evidence": "MT‑Bench is also used to evaluate instruction following in the SFT evaluation suite."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "3D Scene Understanding",
+      "other_type": "constructs",
+      "relationship_type": "depends-on",
+      "paper": "MMScan: A Multi-Modal 3D Scene Dataset with Hierarchical Grounded Language Annotations",
+      "evidence": "Improved scene understanding via MMScan leads to much better instruction following in the wild ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MMScan: A Multi-Modal 3D Scene Dataset with Hierarchical Grounded Language Annotations",
+      "evidence": "In-the-wild tests assess generalization to unseen environments and sensors during instruction following ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "In-the-wild 3D Instruction Following",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MMScan: A Multi-Modal 3D Scene Dataset with Hierarchical Grounded Language Annotations",
+      "evidence": "In-the-wild tests demonstrate improved instruction following with unseen environments and sensors ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Code World Modeling",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "Generating Code World Models with Large Language Models Guided by Monte Carlo Tree Search",
+      "evidence": "CWM synthesis requires understanding complex instructions."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Syntactic Conformance (IR-only operators)",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "Verified Code Transpilation with LLMs",
+      "evidence": "Larger models better follow instructions to use only defined DSL operators, avoiding parser failures."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Zero-Shot Invariant Inference (Tensor)",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "Verified Code Transpilation with LLMs",
+      "evidence": "Performance differences attributed partly to better instruction following in larger models."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MT-Bench Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MAmmoTH2: Scaling Instructions from the Web",
+      "evidence": "MT-Bench is used to evaluate chat/instruction-following ability ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AlpacaEval 2.0",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MAmmoTH2: Scaling Instructions from the Web",
+      "evidence": "AlpacaEval 2.0 leaderboard used for instruction-following comparisons ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Arena‑Hard Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MAmmoTH2: Scaling Instructions from the Web",
+      "evidence": "Arena Hard leaderboard used to assess conversational ability ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Code Intelligence",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "AlchemistCoder: Harmonizing and Eliciting Code Capability by Hindsight Tuning on Multi-source Data",
+      "evidence": "The method refines instruction-following capabilities as part of advancing code intelligence."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Response Style Control",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "AlchemistCoder: Harmonizing and Eliciting Code Capability by Hindsight Tuning on Multi-source Data",
+      "evidence": "They harmonize conflicting code language requirements and response styles to align instruction–response pairs."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Conditional Perplexity Discrepancy (CPD)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "AlchemistCoder: Harmonizing and Eliciting Code Capability by Hindsight Tuning on Multi-source Data",
+      "evidence": "CPD is treated as an indicator; high CPD reflects poor alignment between instruction and response."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Real-World Programming Language Consistency",
+      "other_type": "measurements",
+      "relationship_type": "predicts",
+      "paper": "AlchemistCoder: Harmonizing and Eliciting Code Capability by Hindsight Tuning on Multi-source Data",
+      "evidence": "Naively mixing multi-source data yields unaligned responses—\"we cannot expect which coding language the LLMs will use in real-world applications\"; harmonization targets this inconsistency."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA 5-shot Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Exploiting LLM Quantization",
+      "evidence": "Truthfulness is tracked using TruthfulQA in the utility evaluation."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Long-form Factuality",
+      "other_type": "constructs",
+      "relationship_type": "distinct-from",
+      "paper": "Long-form factuality in large language models",
+      "evidence": "Irrelevant facts are disregarded in F1@K and are said to reflect instruction-following more than factuality ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Irrelevant Facts Count (SAFE)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Long-form factuality in large language models",
+      "evidence": "Paper contends irrelevant facts better measure instruction-following ability than factuality ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Vision-Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "SeafloorAI: A Large-scale Vision-Language Dataset for Seafloor Geological Survey",
+      "evidence": "The dataset is designed to support instruction-following mapping alongside VQA."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Instruction-Following Mapping (Single-Instance Segmentation)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SeafloorAI: A Large-scale Vision-Language Dataset for Seafloor Geological Survey",
+      "evidence": "Examples specify segmenting a requested category per instruction."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Instruction-Following Mapping (Multi-Instance Segmentation)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SeafloorAI: A Large-scale Vision-Language Dataset for Seafloor Geological Survey",
+      "evidence": "Examples specify identifying and segmenting multiple categories across layers."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSPO Prompt Optimization Objective (log p(a0))",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SocialGPT: Prompting LLMs for Social Relation Reasoning via Greedy Segment Optimization",
+      "evidence": "The optimization objective explicitly supervises the model to begin answers with a fixed sentence (\"The final answer is str(y)\") to ensure consistent instruction following."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-Context Learning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "SocialGPT: Prompting LLMs for Social Relation Reasoning via Greedy Segment Optimization",
+      "evidence": "A guidance segment with an exemplar (e=(S0,q0,a0)) is included in the structured prompt to leverage in-context learning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MT-Bench Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Unveiling LoRA Intrinsic Ranks via Salience Analysis",
+      "evidence": "Instruction-tuned LLaMA/LLaMA2 models are evaluated on MT-Bench; GPT-4 assigns 0–10 scores to responses ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "DollyEval (Instruction Following)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Adversarial Moment-Matching Distillation of Large Language Models",
+      "evidence": "Instruction following ability is evaluated on DollyEval with ROUGE‑L and GPT‑4 feedback."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SelfInst (Instruction Following)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Adversarial Moment-Matching Distillation of Large Language Models",
+      "evidence": "SelfInst is used to assess instruction following with ROUGE‑L and GPT‑4 feedback."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VicunaEval (Instruction Following)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Adversarial Moment-Matching Distillation of Large Language Models",
+      "evidence": "VicunaEval is included among instruction‑following test sets with ROUGE‑L and GPT‑4 feedback."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "S‑NI (Instruction Following)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Adversarial Moment-Matching Distillation of Large Language Models",
+      "evidence": "S‑NI is evaluated as an instruction‑following benchmark (ROUGE‑L)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "S‑NI (Instruction Following)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Adversarial Moment-Matching Distillation of Large Language Models",
+      "evidence": "UnNI is evaluated as an instruction‑following benchmark (ROUGE‑L)."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Complex Instruction-Following",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Benchmarking Complex Instruction-Following with Multiple Constraints Composition",
+      "evidence": "Complex instruction-following is a key case of instruction following as instructions in real use often consist of multiple constraints."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Utility Adherence",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Benchmarking Complex Instruction-Following with Multiple Constraints Composition",
+      "evidence": "Helpfulness is a utility constraint."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "IFEval Instruction-Following Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Benchmarking Complex Instruction-Following with Multiple Constraints Composition",
+      "evidence": "IFEval is used as an instruction-following benchmark emphasizing simpler/format constraints."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Practicality of LLM Applications (real-world outcome)",
+      "other_type": "measurements",
+      "relationship_type": "predicts",
+      "paper": "Benchmarking Complex Instruction-Following with Multiple Constraints Composition",
+      "evidence": "Instruction following remains one of the most important factors determining the practicality of LLMs."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Complex Instruction-Following",
+      "other_type": "constructs",
+      "relationship_type": "correlates-with",
+      "paper": "Benchmarking Complex Instruction-Following with Multiple Constraints Composition",
+      "evidence": "ComplexBench correlates with IFEval (Pearson r≈0.814), but rankings differ, indicating complementary perspectives."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Complex Instruction-Following",
+      "other_type": "constructs",
+      "relationship_type": "complements",
+      "paper": "Benchmarking Complex Instruction-Following with Multiple Constraints Composition",
+      "evidence": "ComplexBench covers constraint compositions not modeled in IFEval, providing a complementary perspective."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AlpacaEval Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Distributional Preference Alignment of LLMs via Optimal Transport",
+      "evidence": "AlpacaEval is used as an instruction-following benchmark in the paper’s evaluation suite."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQA: MMBench dev",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Lumen: Unleashing Versatile Vision-Centric Capabilities of Large Multimodal Models",
+      "evidence": "VQA suites are used to examine instruction following and general understanding ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Vision-Centric Capabilities",
+      "other_type": "constructs",
+      "relationship_type": "compatible-with",
+      "paper": "Lumen: Unleashing Versatile Vision-Centric Capabilities of Large Multimodal Models",
+      "evidence": "Lumen broadens visual tasks while maintaining instruction following and general visual understanding (VQA results comparable with SOTA) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Anthropic HH Single-Turn Dialogue Win Rate (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "BoNBoN Alignment for Large Language Models and the Sweetness of Best-of-n Sampling",
+      "evidence": "The HH task targets helpfulness and harmlessness; win rate on this dataset reflects performance on these attributes."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Semantic Parsing to First-Order Logic",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "DeiSAM: Segment Anything with Deictic Prompting",
+      "evidence": "A strict system prompt specifies the rule format; LLM adherence is required to generate correct rules"
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Human Value Alignment",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "Stepwise Alignment for Constrained Language Model Policy Optimization",
+      "evidence": "The paper formulates alignment as maximizing reward (helpfulness) under a safety constraint."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GPT-4 Helpfulness Win Rate (AlpacaEval helpful_base)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Stepwise Alignment for Constrained Language Model Policy Optimization",
+      "evidence": "Helpfulness is evaluated by GPT-4 on 129 benign AlpacaEval helpful_base prompts with win rates vs SFT."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multimodal Understanding and Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding",
+      "evidence": "The LLM understands user text instructions and produces text and segmentation outputs in the unified framework  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "LLM Capabilities",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning",
+      "evidence": "Instruction following is cited as a core ability and evaluated with MT-Bench"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MT-Bench Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning",
+      "evidence": "MT-Bench score reflects instruction-following performance"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Professional Capabilities in Crop Science",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Empowering and Assessing the Utility of Large Language Models in Crop Science",
+      "evidence": "General instruction following supports executing domain‑adapted tasks; base models’ capability is enhanced via instruction tuning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA Truthfulness Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "LACIE: Listener-Aware Finetuning for Calibration in Large Language Models",
+      "evidence": "Truthfulness is evaluated on TruthfulQA; the method yields a 28% absolute improvement in truthfulness."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Alignment with Human Preferences",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Regularizing Hidden States Enables Learning Generalizable Reward Model for LLMs",
+      "evidence": "HHH-Alignment evaluates helpfulness as part of alignment dimensions ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Alignment with Human Preferences",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Regularizing Hidden States Enables Learning Generalizable Reward Model for LLMs",
+      "evidence": "HHH-Alignment evaluates honesty as part of alignment dimensions ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reward Model Generalization (Out-of-Distribution)",
+      "other_type": "constructs",
+      "relationship_type": "predicts",
+      "paper": "Regularizing Hidden States Enables Learning Generalizable Reward Model for LLMs",
+      "evidence": "GRM shows greater robustness in generating instruction-following responses compared to baselines in PPO examples ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Instruction-Following Outcomes (PPO Examples)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Regularizing Hidden States Enables Learning Generalizable Reward Model for LLMs",
+      "evidence": "Qualitative PPO examples show GRM adheres to instructions more reliably than baselines ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning Graph Extraction Success Rate",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "DARG: Dynamic Evaluation of Large Language Models via Adaptive Reasoning Graph",
+      "evidence": "Graph construction via ICL reflects instruction-following proficiency; larger models comparable to GPT-4-Turbo, smaller models struggle ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AlpacaEval 2 (LC, WR)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+      "evidence": "The paper treats AlpacaEval 2 as an open-ended instruction-following benchmark with LC and WR metrics."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Arena-Hard (WR)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+      "evidence": "Arena-Hard evaluates instruction-following on technical problem-solving queries via win rate."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MT-Bench Rating",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+      "evidence": "MT‑Bench provides rubric-based grading for instruction-following."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+      "evidence": "TruthfulQA evaluates whether models avoid mimicking falsehoods."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "trade-off-with",
+      "paper": "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+      "evidence": "Continuing training from a strong instruct model shows higher chat-benchmark scores but catastrophic forgetting on GSM8K, indicating a trade-off."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "trade-off-with",
+      "paper": "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+      "evidence": "Continuing training from a strong instruct model shows higher chat-benchmark scores but catastrophic forgetting on GSM8K, indicating a trade-off."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "General Knowledge",
+      "other_type": "constructs",
+      "relationship_type": "trade-off-with",
+      "paper": "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+      "evidence": "Higher learning rates improved chat benchmarks but reduced MMLU, indicating a trade-off."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "no-degradation-observed",
+      "paper": "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+      "evidence": "For Gemma‑2‑9B‑it, SimPO improved instruction following without degrading GSM8K."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "no-degradation-observed",
+      "paper": "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+      "evidence": "For Gemma‑2‑9B‑it, SimPO improved instruction following without degrading GSM8K."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "General Knowledge",
+      "other_type": "constructs",
+      "relationship_type": "no-degradation-observed",
+      "paper": "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+      "evidence": "For Gemma‑2‑9B‑it, SimPO improved instruction following without degrading MMLU."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Safety",
+      "other_type": "constructs",
+      "relationship_type": "positively-related-to",
+      "paper": "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+      "evidence": "High TruthfulQA suggests potential for safety alignment."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Prompt Understanding (Text-to-Image)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Exploring the Role of Large Language Models in Prompt Encoding for Diffusion Models",
+      "evidence": "Explicit instructions focus the LLM on image-relevant concepts, increasing alignment—especially for instruction-tuned models."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multi-Modal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Exploring the Role of Large Language Models in Prompt Encoding for Diffusion Models",
+      "evidence": "Multimodal instruction fine-tuning enables LLMs to understand visual information and strengthens instruction-following effects on alignment."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Ablation: Effect of Instruction",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Exploring the Role of Large Language Models in Prompt Encoding for Diffusion Models",
+      "evidence": "Alignment gains observed when inserting explicit instructions—especially for instruction-tuned LLMs—operationalize this construct."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MiniCache: KV Cache Compression in Depth Dimension for Large Language Models",
+      "evidence": "TruthfulQA is used as a benchmark in the evaluations ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MiniCache: KV Cache Compression in Depth Dimension for Large Language Models",
+      "evidence": "TruthfulQA is used as a benchmark in the evaluations ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Agentic Task Execution",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents",
+      "evidence": "AI agents can follow natural language instructions as part of solving tasks"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Task Automation Capability",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "TaskBench: Benchmarking Large Language Models for Task Automation",
+      "evidence": "Instruction‑tuned models (e.g., WizardLLM‑13b, Vicuna‑13b) outperform non‑instruction‑tuned counterparts, indicating instruction following boosts task automation."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Atomic Task Reward (Minecraft)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "OmniJARVIS: Unified Vision-Language-Action Tokenization Enables Open-World Instruction Following Agents",
+      "evidence": "Short-horizon atom tasks with straightforward instructions are used to assess instruction following via average reward; OmniJARVIS achieves high rewards with low variance."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Open-ended Instruction Following Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "OmniJARVIS: Unified Vision-Language-Action Tokenization Enables Open-World Instruction Following Agents",
+      "evidence": "Open-ended instruction-following evaluation reports a lower-is-better score across agents."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Programmatic Tasks Success Rate (Minecraft)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "OmniJARVIS: Unified Vision-Language-Action Tokenization Enables Open-World Instruction Following Agents",
+      "evidence": "Programmatic tasks require following high-level prompts through chains of atom tasks; success rates capture instruction-following over long horizons."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Star-Agents: Automatic Data Optimization with LLM Agents for Instruction Tuning",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Star-Agents: Automatic Data Optimization with LLM Agents for Instruction Tuning",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Star-Agents: Automatic Data Optimization with LLM Agents for Instruction Tuning",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Complex Format Handling",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Star-Agents: Automatic Data Optimization with LLM Agents for Instruction Tuning",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Writing",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Star-Agents: Automatic Data Optimization with LLM Agents for Instruction Tuning",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Domain Knowledge",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Star-Agents: Automatic Data Optimization with LLM Agents for Instruction Tuning",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MT-Bench Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Star-Agents: Automatic Data Optimization with LLM Agents for Instruction Tuning",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Vicuna-bench",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Star-Agents: Automatic Data Optimization with LLM Agents for Instruction Tuning",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WizardLM testset",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Star-Agents: Automatic Data Optimization with LLM Agents for Instruction Tuning",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multi-Objective Alignment to Human Preferences",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multi-Objective Alignment to Human Preferences",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multi-Objective Alignment to Human Preferences",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multi-Objective Alignment to Human Preferences",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multi-Objective Alignment to Human Preferences",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multi-Objective Alignment to Human Preferences",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "UltraFeedback Honest Win Rate",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HH-RLHF Helpful Win Rate",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "UltraFeedback Objective-wise GPT-4 Score: Helpful",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HH-RLHF Harmless Win Rate",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "UltraFeedback Honest Win Rate",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "UltraFeedback Objective-wise GPT-4 Score: Helpful",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "UltraFeedback Honest Win Rate",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "UltraFeedback Objective-wise GPT-4 Score: Helpful",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "UltraFeedback Instruction Following Win Rate",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "IMHI Instruction Following Win Rate",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "UltraFeedback Objective-wise GPT-4 Score: Instruction Following",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HH-RLHF Helpful Win Rate",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction Following",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction Following",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Honesty",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction Following",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multi-Objective Alignment to Human Preferences",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multi-Objective Alignment to Human Preferences",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multi-Objective Alignment to Human Preferences",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multi-Objective Alignment to Human Preferences",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Hallucination Control",
+      "other_type": "constructs",
+      "relationship_type": "related-to",
+      "paper": "Adversarial Representation Engineering: A General Model Editing Framework for Large Language Models",
+      "evidence": "The authors aim to enhance accuracy and truthfulness to mitigate hallucinations."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Adversarial Representation Engineering: A General Model Editing Framework for Large Language Models",
+      "evidence": "TruthfulQA is used to assess truthful answering; ARE attains SOTA accuracy after editing."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Prudence",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Alignment for Honesty",
+      "evidence": "The framework defines prudence as part of metrics to quantify honesty—measuring appropriate declinations beyond knowledge ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Over‑Conservativeness",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Alignment for Honesty",
+      "evidence": "Over‑conservativeness is introduced to capture excessive refusals within honesty evaluation (response‑type transitions) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Calibration / Uncertainty Expression",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Alignment for Honesty",
+      "evidence": "Calibration is described as a finer‑grained handling of known questions in the context of honesty ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge Boundaries",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Alignment for Honesty",
+      "evidence": "Honesty demands faithfulness to one’s own knowledge; the paper centers honesty on known vs unknown questions ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Prudence Score (TriviaQA)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Alignment for Honesty",
+      "evidence": "Prudence is an evolutionary metric to quantify honesty and is reported in TriviaQA evaluations  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Over‑Conservativeness Score (TriviaQA)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Alignment for Honesty",
+      "evidence": "Over‑conservativeness is part of the honesty evaluation metrics and is reported in TriviaQA tables  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Honesty Score (TriviaQA)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Alignment for Honesty",
+      "evidence": "The honesty score is an aggregate metric used to assess honesty in the reported results ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Helpfulness Rating (Eval‑P−, GPT‑4 judge)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Alignment for Honesty",
+      "evidence": "Helpfulness is evaluated via GPT‑4 ratings on the Eval‑P− dataset ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Helpfulness Rating (Eval‑P−, GPT‑4 judge)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Alignment for Honesty",
+      "evidence": "Helpfulness is evaluated via AUTO‑J ratings on the Eval‑P− dataset ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Honesty",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Alignment for Honesty",
+      "evidence": "Aligning for honesty does not significantly impact overall helpfulness per Eval‑P− ratings ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Honesty",
+      "other_type": "constructs",
+      "relationship_type": "distinct-from",
+      "paper": "Alignment for Honesty",
+      "evidence": "Truthfulness requires stating what is objectively true, while honesty is about stating what the model believes/knows ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "distinct-from",
+      "paper": "Alignment for Honesty",
+      "evidence": "Truthfulness requires stating what is objectively true, while honesty is about stating what the model believes/knows ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Object Hallucination Propensity",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Multi-Object Hallucination in Vision Language Models",
+      "evidence": "Conversational tuning reduces multi-object hallucinations; models without it struggle to follow instructions and resort to shortcuts."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multi-Object Recognition",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Multi-Object Hallucination in Vision Language Models",
+      "evidence": "Formatted-output control and instruction adherence are integral to the ROPE multi-object setup."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Agentic Decision-Making",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "ChatCam: Empowering Camera Control through Conversational AI",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Alignment with Input Text",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "ChatCam: Empowering Camera Control through Conversational AI",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Truth×Info Composite",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SLED: Self Logits Evolution Decoding for Improving Factuality in Large Language Models",
+      "evidence": "Authors introduce %Truth × Info to avoid trivial truthful but unhelpful responses and to reflect helpfulness ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Rejection Ratio",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SLED: Self Logits Evolution Decoding for Improving Factuality in Large Language Models",
+      "evidence": "They report reducing %Reject by up to 95% and note this avoids the “rejection pitfall,” making outputs more helpful ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Keeping LLMs Aligned After Fine-tuning: The Crucial Role of Prompt Templates",
+      "evidence": "GSM8K task performance is treated as downstream helpfulness on math ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Keeping LLMs Aligned After Fine-tuning: The Crucial Role of Prompt Templates",
+      "evidence": "GSM8K task performance is treated as downstream helpfulness on math ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Keeping LLMs Aligned After Fine-tuning: The Crucial Role of Prompt Templates",
+      "evidence": "ARC metrics serve as downstream helpfulness indicators after OpenOrca fine-tuning ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Medical Consultation Capability",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Keeping LLMs Aligned After Fine-tuning: The Crucial Role of Prompt Templates",
+      "evidence": "BERTScore on ChatDoctor quantifies helpfulness for medical dialogue ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction-Following",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Keeping LLMs Aligned After Fine-tuning: The Crucial Role of Prompt Templates",
+      "evidence": "AlpacaEval measures instruction-following helpfulness; fine-tuning choices affect it ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Safety Alignment",
+      "other_type": "constructs",
+      "relationship_type": "trade-off",
+      "paper": "Keeping LLMs Aligned After Fine-tuning: The Crucial Role of Prompt Templates",
+      "evidence": "Using the same training and test templates increases helpfulness (e.g., GSM8K EM 20.32%→33.39%) while ASR rises (2.75%→11.00%), indicating tension between utility and safety ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Prompt Template Robustness",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Keeping LLMs Aligned After Fine-tuning: The Crucial Role of Prompt Templates",
+      "evidence": "PTST maintains substantial downstream helpfulness while reducing safety loss ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Fine-tune Accuracy (SST-2)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Vaccine: Perturbation-aware Alignment for Large Language Models against Harmful Fine-tuning Attack",
+      "evidence": "AlpacaEval-based samples are used as an instruction-following test; FA is recorded."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Intention Reasoning (LLM)",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Localize, Understand, Collaborate: Semantic-Aware Dragging via Intention Reasoner",
+      "evidence": "The LLM is guided by explicit instructions to reason intentions and produce source/target prompts ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ASR-useful (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Uncovering Safety Risks of Large Language Models through Concept Activation Vector",
+      "evidence": "ASR-useful determines whether responses are useful to the malicious goal, using human/GPT-4 judgments ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ASR-answer (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Uncovering Safety Risks of Large Language Models through Concept Activation Vector",
+      "evidence": "ASR-answer evaluates whether the model provides relevant answers to malicious instructions ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Conversational Clinical Assistance",
+      "other_type": "constructs",
+      "relationship_type": "enables",
+      "paper": "Instruction Tuning Large Language Models to Understand Electronic Health Records",
+      "evidence": "LLMs’ ability to follow instructions motivates building a conversational AI assistant for EHR data, operationalized and evaluated via instruction‑grounded QA  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Predictive Uncertainty",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Benchmarking LLMs via Uncertainty Quantification",
+      "evidence": "Instruction‑formatted prompting (Chat‑V1) consistently yields higher uncertainty than base across model sizes; Chat‑V2 also increases uncertainty relative to base  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Adversarial Game‑Play Skill",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Self-playing Adversarial Language Game Enhances LLM Reasoning",
+      "evidence": "Imitation learning is used to ensure instruction‑following of game rules so the model can play effectively."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Instruction-Compliance/Invalid Output Incidents",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Evaluating Large Vision-and-Language Models on Children's Mathematical Olympiads",
+      "evidence": "Models often failed to follow format/instructions, producing invalid outputs ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Observational Scaling Laws and the Predictability of Langauge Model Performance",
+      "evidence": "TruthfulQA evaluates truthfulness of LMs ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GMAI-MMBench Overall Single-Choice Accuracy (val/test)",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "GMAI-MMBench: A Comprehensive Multimodal Evaluation Benchmark Towards General Medical AI",
+      "evidence": "Medical-specific LVLMs underperform mainly due to inability to follow instructions correctly."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MEDCALC-BENCH Overall Accuracy (Zero-shot Direct)",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "MedCalc-Bench: Evaluating Large Language Models for Medical Calculations",
+      "evidence": "Non–instruction-tuned MEDITRON underperforms in zero-shot, attributed to poor instruction following ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Cross-Task Generalization",
+      "other_type": "constructs",
+      "relationship_type": "interdependent",
+      "paper": "From Instance Training to Instruction Learning: Task Adapters Generation from Instructions",
+      "evidence": "Instruction following is often used to evaluate the cross-task generalization of LLMs, i.e., handling any task described in natural language."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction Understanding",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "From Instance Training to Instruction Learning: Task Adapters Generation from Instructions",
+      "evidence": "The method aims to improve understanding of instructions and the ability to execute tasks from them, implying understanding underpins following."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SNI Unseen Tasks ROUGE-L",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "From Instance Training to Instruction Learning: Task Adapters Generation from Instructions",
+      "evidence": "Instruction-following capability is evaluated via instruction-defined tasks in SNI (Def/Def+2Pos)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AlpacaEval Helpfulness Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "TAIA: Large Language Models are Out-of-Distribution Data Learners",
+      "evidence": "TAIA gains higher helpfulness on benign data."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Chain-of-Thought Prompt Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "II-Bench: An Image Implication Understanding Benchmark for Multimodal Large Language Models",
+      "evidence": "CoT performance declines when models fail to follow output format; decline reflects instruction following ability, causing extraction failures ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Sequential Recommendation Capability",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Customizing Language Models with Instance-wise LoRA for Sequential Recommendation",
+      "evidence": "Evaluation uses ValidRatio to reflect instruction-following in the sequential recommendation setting."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Instruction Following ValidRatio (LastFM/MovieLens/Steam)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Customizing Language Models with Instance-wise LoRA for Sequential Recommendation",
+      "evidence": "ValidRatio quantifies the ratio of valid responses, reflecting instruction-following capability."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Cross-Modal Alignment (Language–Behavior Alignment)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Customizing Language Models with Instance-wise LoRA for Sequential Recommendation",
+      "evidence": "Hybrid prompting and alignment enable LLMs to interpret and leverage behavioral knowledge in prompts, facilitating valid responses."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Alignment to Human Preferences",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Learning Goal-Conditioned Representations for Language Reward Models",
+      "evidence": "The paper frames helpfulness as part of aligning models toward human preferences, training a reward model for helpfulness/harmlessness in this alignment setting ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Guided Decoding Helpfulness Score Improvement (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Learning Goal-Conditioned Representations for Language Reward Models",
+      "evidence": "Guided decoding with learned representations increases helpfulness attribute scores relative to an SFT baseline  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Calibration and Uncertainty Expression",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "HonestLLM: Toward an Honest and Helpful Large Language Model",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Capability Self-Knowledge (Awareness of Limitations)",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "HonestLLM: Toward an Honest and Helpful Large Language Model",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Self-Identity Cognition",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "HonestLLM: Toward an Honest and Helpful Large Language Model",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Objectivity / Non-Sycophancy",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "HonestLLM: Toward an Honest and Helpful Large Language Model",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Honesty about Latest Information with External Services",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "HonestLLM: Toward an Honest and Helpful Large Language Model",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Honesty with Insufficient or Wrong User Input",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "HonestLLM: Toward an Honest and Helpful Large Language Model",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Honesty about Professional Capability in Specific Domains",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "HonestLLM: Toward an Honest and Helpful Large Language Model",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Honesty about Interactivity and Sensory Processing",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "HonestLLM: Toward an Honest and Helpful Large Language Model",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Honesty about Modality Mismatch",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "HonestLLM: Toward an Honest and Helpful Large Language Model",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HONESET Honesty Rate (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "HonestLLM: Toward an Honest and Helpful Large Language Model",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "H2 Assessment (Score, 1–10)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "HonestLLM: Toward an Honest and Helpful Large Language Model",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "H2 Assessment (Score, 1–10)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "HonestLLM: Toward an Honest and Helpful Large Language Model",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reduced Hallucinations (Real-world)",
+      "other_type": "measurements",
+      "relationship_type": "predicts",
+      "paper": "HonestLLM: Toward an Honest and Helpful Large Language Model",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "More Accurate Information to Users (Real-world)",
+      "other_type": "measurements",
+      "relationship_type": "predicts",
+      "paper": "HonestLLM: Toward an Honest and Helpful Large Language Model",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Trustworthiness in Real-World Applications (Outcome)",
+      "other_type": "measurements",
+      "relationship_type": "predicts",
+      "paper": "HonestLLM: Toward an Honest and Helpful Large Language Model",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Trustworthiness in Real-World Applications (Outcome)",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "HonestLLM: Toward an Honest and Helpful Large Language Model",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multi-Turn Assistance Quality",
+      "other_type": "constructs",
+      "relationship_type": "trade-off-with",
+      "paper": "HonestLLM: Toward an Honest and Helpful Large Language Model",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MLLM Safety",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models",
+      "evidence": "Truthfulness is one of the five assessed safety dimensions in MLLMGUARD ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models",
+      "evidence": "Truthfulness involves a dual consideration of hallucination and robustness ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Robustness",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models",
+      "evidence": "Truthfulness evaluates consistency under noise injection and position swapping as part of robustness ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MLLMGUARD Privacy PAR",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models",
+      "evidence": "PAR is reported for Truthfulness across models and languages in the benchmark tables and figures ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MLLMGUARD Privacy ASD",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models",
+      "evidence": "ASD is reported for Truthfulness across red-teaming techniques and models (e.g., Table 20, Figure 2)  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Truthfulness Non-existent Query ASD",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models",
+      "evidence": "Non-existent Query is a truthfulness red-teaming technique with ASD reported per model  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Truthfulness Position Swapping ASD",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models",
+      "evidence": "Position Swapping significantly impacts model selection behavior under truthfulness attacks; ASD is reported ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Truthfulness Noise Injection ASD",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models",
+      "evidence": "Noise Injection robustness is evaluated via ASD for truthfulness across models ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Perceived Trustworthiness/Reliability",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models",
+      "evidence": "Truthfulness analysis cites issues such as hallucinations, selection bias, and noise harming accuracy, which bear on perceived reliability ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Harmlessness",
+      "other_type": "constructs",
+      "relationship_type": "trade-off",
+      "paper": "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models",
+      "evidence": "MiniGPT‑v2 shows strong safety across several dimensions but underperforms on Truthfulness, suggesting a potential honesty–harmlessness trade‑off ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA (Closed QA) – Judge Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "On scalable oversight with weak LLMs judging strong LLMs",
+      "evidence": "TruthfulQA evaluates whether models answer truthfully vs imitative falsehoods; judge accuracy recorded ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Prompt Optimization Capability",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "IPO: Interpretable Prompt Optimization for Vision-Language Models",
+      "evidence": "Instructions in the Prompt Optimization Prompt guide the LLM to optimize prompts for better classification."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MT-Bench Score (GPT-4 judge)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "VB-LoRA: Extreme Parameter Efficient Fine-Tuning with Vector Banks",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Constraint Following",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA Truthfulness Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA Informativeness (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AlpacaEval 1 Win Rate (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AlpacaEval 2 (Length-Controlled) Win Rate (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Preference Alignment",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Would I Lie To You? Inference Time Alignment of Language Models using Direct Preference Heads",
+      "evidence": "RLHF is used to align LLMs and leads to instruction-following agents and chat assistants ."
+    }
+  ],
+  "relationship_count": 321,
+  "incoming_relationship_count": 69,
+  "outgoing_relationship_count": 252
+}

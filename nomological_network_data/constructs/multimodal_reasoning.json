@@ -1,0 +1,638 @@
+{
+  "canonical_name": "Multimodal Reasoning",
+  "type": "construct",
+  "canonical_definition": "Multimodal Reasoning is the ability to systematically draw logically coherent and contextually informed inferences by integrating visual and textual inputs, often involving perception-based analysis and spanning diverse tasks such as question answering, entity labeling, and cross-modal explanation. While most definitions emphasize combined vision-language processing for factual or contextual reasoning, some extend to include programmatic steps in chain-of-thought workflows, interdisciplinary applications, or integration of additional modalities like auditory cues. Disagreement exists in scope, with narrower operationalizations focusing on specific benchmarks (e.g., VQA) versus broader characterizations involving unified perception-reasoning architectures or multimodal document analysis.",
+  "expert_reviewed": false,
+  "names": [
+    "Multimodal Reasoning"
+  ],
+  "papers": [
+    "Biomedical Visual Instruction Tuning with Clinician Preference Alignment",
+    "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark",
+    "CogVLM: Visual Expert for Pretrained Language Models",
+    "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts",
+    "DenseFusion-1M: Merging Vision Experts for Comprehensive Multimodal Perception",
+    "Discovering Sparsity Allocation for  Layer-wise Pruning of Large Language Models",
+    "INQUIRE: A Natural World Text-to-Image Retrieval Benchmark",
+    "InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD",
+    "LOVA3: Learning to Visual Question Answering, Asking and Assessment",
+    "MARPLE: A Benchmark for Long-Horizon Inference",
+    "Matryoshka Query Transformer for Large Vision-Language Models",
+    "Multimodal Task Vectors Enable Many-Shot Multimodal In-Context Learning",
+    "Needle In A Multimodal Haystack",
+    "Private Attribute Inference from Images with Vision-Language Models",
+    "Shadowcast: Stealthy Data Poisoning Attacks Against Vision-Language Models",
+    "Towards Comprehensive Detection of Chinese Harmful Memes",
+    "Unveiling Encoder-Free Vision-Language Models",
+    "VLM4Bio: A Benchmark Dataset to Evaluate Pretrained Vision-Language Models for Trait Discovery from Biological Images",
+    "Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models",
+    "Web-Scale Visual Entity Recognition: An LLM-Driven Data Approach"
+  ],
+  "paper_count": 20,
+  "group_ids": [
+    90,
+    630,
+    708,
+    813,
+    1275,
+    1885,
+    1917,
+    2104,
+    2158,
+    2443,
+    2595,
+    2756,
+    3193,
+    3693,
+    3816,
+    3921,
+    4604,
+    4806,
+    5146,
+    6148
+  ],
+  "definitions": [
+    {
+      "text": "Ability to reason over combined visual and text inputs to produce coherent answers. ",
+      "paper": "Biomedical Visual Instruction Tuning with Clinician Preference Alignment"
+    },
+    {
+      "text": "Reasoning over text and images to draw conclusions from contextual cues .",
+      "paper": "Private Attribute Inference from Images with Vision-Language Models"
+    },
+    {
+      "text": "Systematically drawing inferences from combined visual and textual inputs; dependent on comprehensive perception .",
+      "paper": "DenseFusion-1M: Merging Vision Experts for Comprehensive Multimodal Perception"
+    },
+    {
+      "text": "Reasoning over combined visual and textual inputs ().",
+      "paper": "Shadowcast: Stealthy Data Poisoning Attacks Against Vision-Language Models"
+    },
+    {
+      "text": "Ability to perform logically coherent and factually accurate reasoning over images and text, including explaining the visual reasoning used to arrive at predictions in scientific images  .",
+      "paper": "VLM4Bio: A Benchmark Dataset to Evaluate Pretrained Vision-Language Models for Trait Discovery from Biological Images"
+    },
+    {
+      "text": "Reasoning over visual tokens within an LLM; vision encoders provide sequences of visual tokens for reasoning in LLMs .",
+      "paper": "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts"
+    },
+    {
+      "text": "Reasoning that integrates visual and textual information across disciplines and formats (e.g., expert-level tasks) .",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models"
+    },
+    {
+      "text": "Capacity to reason over cues from multiple needles scattered throughout a multimodal document. ",
+      "paper": "Needle In A Multimodal Haystack"
+    },
+    {
+      "text": "Integrated perception and reasoning across vision and language in LVLMs (\"vision-language perception and reasoning tasks\"). ",
+      "paper": "Matryoshka Query Transformer for Large Vision-Language Models"
+    },
+    {
+      "text": "Reasoning that interleaves textual, programmatic, and visual steps as a chain-of-thought.",
+      "paper": "Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models"
+    },
+    {
+      "text": "Ability to reason over visual inputs and text in VQA‑style tasks .",
+      "paper": "Discovering Sparsity Allocation for  Layer-wise Pruning of Large Language Models"
+    },
+    {
+      "text": "Ability to reason over information present in images and text, as tested by VQA .",
+      "paper": "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark"
+    },
+    {
+      "text": "Reasoning over both text and images in complex vision-language tasks. ",
+      "paper": "Multimodal Task Vectors Enable Many-Shot Multimodal In-Context Learning"
+    },
+    {
+      "text": "Reasoning over multimodal inputs; part of general LVLM evaluation (perception and reasoning) .",
+      "paper": "InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD"
+    },
+    {
+      "text": "Reasoning capability integrated with perception in a unified architecture .",
+      "paper": "Unveiling Encoder-Free Vision-Language Models"
+    },
+    {
+      "text": "Ability to understand and reason with information that combines both textual and visual elements effectively. ",
+      "paper": "Towards Comprehensive Detection of Chinese Harmful Memes"
+    },
+    {
+      "text": "Reasoning over images and text to decide on entity labels using contextual information such as Wikipedia and captions.  ",
+      "paper": "Web-Scale Visual Entity Recognition: An LLM-Driven Data Approach"
+    },
+    {
+      "text": "Integrating visual, language, and auditory cues to figure out what happened .",
+      "paper": "MARPLE: A Benchmark for Long-Horizon Inference"
+    },
+    {
+      "text": "Reasoning jointly over language and images. ",
+      "paper": "INQUIRE: A Natural World Text-to-Image Retrieval Benchmark"
+    },
+    {
+      "text": "Ability to integrate visual and textual cues for complex question answering, evaluated across dimensions such as recognition, OCR, knowledge, language generation, and spatial awareness .",
+      "paper": "LOVA3: Learning to Visual Question Answering, Asking and Assessment"
+    }
+  ],
+  "definition_count": 20,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQA-RAD Closed Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Biomedical Visual Instruction Tuning with Clinician Preference Alignment",
+      "evidence": "Reasoning over visual-text cues is needed to select correct answers."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SLAKE Closed Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Biomedical Visual Instruction Tuning with Clinician Preference Alignment",
+      "evidence": "Closed-set VQA assesses reasoning to choose among options."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQA-RAD Closed Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Biomedical Visual Instruction Tuning with Clinician Preference Alignment",
+      "evidence": "Closed QA on pathology images reflects reasoning over visual evidence."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "General Capabilities",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Private Attribute Inference from Images with Vision-Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Comprehensive Visual Perception",
+      "other_type": "constructs",
+      "relationship_type": "prerequisite-for",
+      "paper": "DenseFusion-1M: Merging Vision Experts for Comprehensive Multimodal Perception",
+      "evidence": "Comprehensive visual perception is a prerequisite for multimodal reasoning ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "World Knowledge Integration",
+      "other_type": "constructs",
+      "relationship_type": "enhances",
+      "paper": "DenseFusion-1M: Merging Vision Experts for Comprehensive Multimodal Perception",
+      "evidence": "Incorporating noisy yet rich web captions increases knowledge density and enhances reasoning abilities ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Vision-Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Shadowcast: Stealthy Data Poisoning Attacks Against Vision-Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Domain-Specific Knowledge (Biology)",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "VLM4Bio: A Benchmark Dataset to Evaluate Pretrained Vision-Language Models for Trait Discovery from Biological Images",
+      "evidence": "Understanding scientific images requires domain-specific terminologies and reasoning capabilities, implying biological knowledge is a component of multimodal reasoning ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Species Discrimination",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "VLM4Bio: A Benchmark Dataset to Evaluate Pretrained Vision-Language Models for Trait Discovery from Biological Images",
+      "evidence": "Species classification is one of the five tasks designed to test different facets of VLM performance in organismal biology ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Trait Identification",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "VLM4Bio: A Benchmark Dataset to Evaluate Pretrained Vision-Language Models for Trait Discovery from Biological Images",
+      "evidence": "Trait identification is a core facet testing whether models can reason about biological traits from images ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Trait Localization",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "VLM4Bio: A Benchmark Dataset to Evaluate Pretrained Vision-Language Models for Trait Discovery from Biological Images",
+      "evidence": "Trait grounding and referring specifically test whether VLMs can localize morphological traits to support their predictions ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Counting",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "VLM4Bio: A Benchmark Dataset to Evaluate Pretrained Vision-Language Models for Trait Discovery from Biological Images",
+      "evidence": "Trait counting is included among the five tasks to probe VLM capabilities ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning Hallucination Resistance",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "VLM4Bio: A Benchmark Dataset to Evaluate Pretrained Vision-Language Models for Trait Discovery from Biological Images",
+      "evidence": "The paper evaluates whether VLMs can respond with logically coherent and factually accurate reasoning (FCT/NOTA) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Prompt-Augmented Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "VLM4Bio: A Benchmark Dataset to Evaluate Pretrained Vision-Language Models for Trait Discovery from Biological Images",
+      "evidence": "Contextual, dense-caption, and zero-shot CoT prompting are examined as ways to enhance reasoning performance on biological questions ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Robustness to Input Resolution",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "VLM4Bio: A Benchmark Dataset to Evaluate Pretrained Vision-Language Models for Trait Discovery from Biological Images",
+      "evidence": "Performance stability with respect to image resolution is analyzed as part of understanding VLM capabilities on the benchmark ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Uncertainty Awareness and Abstention",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "VLM4Bio: A Benchmark Dataset to Evaluate Pretrained Vision-Language Models for Trait Discovery from Biological Images",
+      "evidence": "Models often abstain or express limitations; the paper categorizes such outputs in the error analysis, reflecting calibrated response behaviors  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Domain Generalization",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "VLM4Bio: A Benchmark Dataset to Evaluate Pretrained Vision-Language Models for Trait Discovery from Biological Images",
+      "evidence": "Variation across taxa/datasets is analyzed as a facet of capability; bird datasets yield higher accuracies than fish/butterfly, indicating generalization challenges ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Visual Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models",
+      "evidence": "MathVista evaluates seven types of mathematical/visual reasoning abilities within multimodal reasoning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMMU",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models",
+      "evidence": "MMMU is a large-scale, multi-discipline multimodal reasoning benchmark for expert-level tasks ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long Multimodal Document Comprehension",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Needle In A Multimodal Haystack",
+      "evidence": "Reasoning over scattered multimodal cues is central to the benchmark."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MM‑NIAH Reasoning (Text Needles)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Needle In A Multimodal Haystack",
+      "evidence": "Reasoning over textual needles measured by Accuracy."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MM‑NIAH Reasoning (Text Needles)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Needle In A Multimodal Haystack",
+      "evidence": "Reasoning over visual needles measured by Accuracy."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long‑Context Robustness (MLLMs)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Needle In A Multimodal Haystack",
+      "evidence": "Degradation with longer contexts is more evident for tasks requiring higher understanding and reasoning."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Matryoshka Query Transformer for Large Vision-Language Models",
+      "evidence": "LVLMs tackle vision-language perception and reasoning tasks, implying perception/understanding is a component of overall multimodal ability."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language-based Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Matryoshka Query Transformer for Large Vision-Language Models",
+      "evidence": "LVLMs perform vision-language reasoning; paper highlights language-driven reasoning in academic QA."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMBench Score (points)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Matryoshka Query Transformer for Large Vision-Language Models",
+      "evidence": "MMBench is used to evaluate integrated multimodal capabilities; overall score changes with token budget."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLaVA‑Bench (In‑the‑Wild) Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Matryoshka Query Transformer for Large Vision-Language Models",
+      "evidence": "Included among the 11 benchmarks evaluating broad LVLM capabilities."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMBench Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Matryoshka Query Transformer for Large Vision-Language Models",
+      "evidence": "MM‑Vet is listed among integrated capability evaluations."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MM-Vet Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Matryoshka Query Transformer for Large Vision-Language Models",
+      "evidence": "MM‑Vet is listed among integrated capability evaluations."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models",
+      "evidence": "SKETCHPAD produces visual artifacts as part of a chain of mixed textual, programmatic, and visual reasoning, enabling planning and reasoning over them ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models",
+      "evidence": "The framework addresses math tasks (geometry, functions, graphs, chess) using visual chain-of-thought to reason ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models",
+      "evidence": "The framework addresses math tasks (geometry, functions, graphs, chess) using visual chain-of-thought to reason ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Interpretability of Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related-to",
+      "paper": "Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models",
+      "evidence": "The framework makes LMs more interpretable by eliciting their reasoning process with both language and sketches ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subconstruct",
+      "paper": "Discovering Sparsity Allocation for  Layer-wise Pruning of Large Language Models",
+      "evidence": "The paper evaluates visual question‑answering and reasoning benchmarks, indicating multimodal reasoning as a reasoning subtype ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQAv2 Accuracy at 50% Sparsity (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Discovering Sparsity Allocation for  Layer-wise Pruning of Large Language Models",
+      "evidence": "VQAv2 accuracy at 50% sparsity is reported for LLaVA‑1.5 with Vicuna models ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SQA Accuracy at 50% Sparsity (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Discovering Sparsity Allocation for  Layer-wise Pruning of Large Language Models",
+      "evidence": "SQA accuracy at 50% sparsity is reported alongside other VQA benchmarks ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SQA Accuracy at 50% Sparsity (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Discovering Sparsity Allocation for  Layer-wise Pruning of Large Language Models",
+      "evidence": "VQA accuracy at 50% sparsity is reported in the multimodal evaluation ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Vision-Language Capability",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark",
+      "evidence": "VQA is used to assess reasoning capabilities in addition to understanding ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CVQA Accuracy (English prompts)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark",
+      "evidence": "VQA is used to test reasoning over visual and textual knowledge; CVQA quantifies this via accuracy  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark",
+      "evidence": "GQA focuses on visual reasoning/compositionality; reported alongside CVQA results ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SciQA-IMG Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark",
+      "evidence": "SciQA-IMG evaluates reasoning in visual science contexts; included in Table 4 comparison ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VizWiz VQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Multimodal Task Vectors Enable Many-Shot Multimodal In-Context Learning",
+      "evidence": "VizWiz samples often require contextual reasoning in addition to visual understanding."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Many-shot Multimodal ICL",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Multimodal Task Vectors Enable Many-Shot Multimodal In-Context Learning",
+      "evidence": "The method surpasses zero-/few-shot performance and the additional examples aid in multimodal reasoning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "General Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD",
+      "evidence": "Reasoning is part of general LVLM benchmarks the model is compared on ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Vision-Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Unveiling Encoder-Free Vision-Language Models",
+      "evidence": "The goal is to integrate perception and reasoning in one architecture ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text Comprehension (Chinese Linguistic Features)",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Towards Comprehensive Detection of Chinese Harmful Memes",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Image Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Towards Comprehensive Detection of Chinese Harmful Memes",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Harmful Meme Detection Capability",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Towards Comprehensive Detection of Chinese Harmful Memes",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TOXICN MM Harmful Type Identification (5-class)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Towards Comprehensive Detection of Chinese Harmful Memes",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Modality Combination Performance",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Towards Comprehensive Detection of Chinese Harmful Memes",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Verification and Correction",
+      "other_type": "constructs",
+      "relationship_type": "enables",
+      "paper": "Web-Scale Visual Entity Recognition: An LLM-Driven Data Approach",
+      "evidence": "Prompting the multimodal LLM to reason about candidate entity labels enables verification and correction rather than direct annotation."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-Horizon Inference",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "MARPLE: A Benchmark for Long-Horizon Inference",
+      "evidence": "Benchmark integrates vision, language, and audio to evaluate long‑horizon inference ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Simulation Baseline Modalities Ablation",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MARPLE: A Benchmark for Long-Horizon Inference",
+      "evidence": "Adding language and audio improves performance; all three modalities perform best ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Comprehensive Multimodal Intelligence",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "LOVA3: Learning to Visual Question Answering, Asking and Assessment",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Recognition",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "LOVA3: Learning to Visual Question Answering, Asking and Assessment",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Optical Character Recognition (OCR)",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "LOVA3: Learning to Visual Question Answering, Asking and Assessment",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Knowledge Utilization",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "LOVA3: Learning to Visual Question Answering, Asking and Assessment",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Language Generation",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "LOVA3: Learning to Visual Question Answering, Asking and Assessment",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Spatial Awareness",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "LOVA3: Learning to Visual Question Answering, Asking and Assessment",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Fine‑grained Visual Grounding",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "LOVA3: Learning to Visual Question Answering, Asking and Assessment",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MM‑Vet Total Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "LOVA3: Learning to Visual Question Answering, Asking and Assessment",
+      "evidence": ""
+    }
+  ],
+  "relationship_count": 62,
+  "incoming_relationship_count": 25,
+  "outgoing_relationship_count": 37
+}

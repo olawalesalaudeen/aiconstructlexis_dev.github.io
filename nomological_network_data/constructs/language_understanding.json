@@ -1,0 +1,1819 @@
+{
+  "canonical_name": "Language Understanding",
+  "type": "construct",
+  "canonical_definition": "Language Understanding is the capability of artificial systems to process, interpret, and derive meaning from natural language inputs, encompassing tasks such as semantic comprehension, text classification, reasoning, and recognizing linguistic relationships. This construct is often operationalized through performance on standardized benchmarks (e.g., GLUE, MMLU, HellaSwag) and involves mapping language to structured representations, contextual knowledge integration, and executing instructions to generate contextually appropriate responses. While some definitions emphasize foundational aspects like semantic similarity or multi-subject question handling, others highlight its role in enabling advanced reasoning or interaction with multimodal data, reflecting its broad application in natural language processing tasks.",
+  "expert_reviewed": false,
+  "names": [
+    "Language Understanding"
+  ],
+  "papers": [
+    "4M-21: An Any-to-Any Vision Model for Tens of Tasks and Modalities",
+    "A Decision-Language Model (DLM) for Dynamic Restless Multi-Armed Bandit Tasks in Public Health",
+    "A Large-Scale Human-Centric Benchmark for Referring Expression Comprehension in the LMM Era",
+    "BAdam: A Memory Efficient Full Parameter Optimization Method for Large Language Models",
+    "BERTs are Generative In-Context Learners",
+    "Benchmarking LLMs via Uncertainty Quantification",
+    "Boosting Weakly Supervised Referring Image Segmentation via Progressive Comprehension",
+    "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+    "CausalStock: Deep End-to-end Causal Discovery for News-driven Multi-stock Movement Prediction",
+    "ChatCam: Empowering Camera Control through Conversational AI",
+    "CogVLM: Visual Expert for Pretrained Language Models",
+    "Compact Language Models via Pruning and Knowledge Distillation",
+    "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models",
+    "DISP-LLM: Dimension-Independent Structural Pruning for Large Language Models",
+    "DPIC: Decoupling Prompt and Intrinsic Characteristics for LLM Generated Text Detection",
+    "DTGB: A Comprehensive Benchmark for Dynamic Text-Attributed Graphs",
+    "Dataset Decomposition: Faster LLM Training with Variable Sequence Length Curriculum",
+    "Diffusion of Thought: Chain-of-Thought Reasoning in Diffusion Language Models",
+    "Discovering Sparsity Allocation for  Layer-wise Pruning of Large Language Models",
+    "Divergences between Language Models and Human Brains",
+    "Enhancing In-Context Learning Performance with just SVD-Based Weight Pruning: A Theoretical Perspective",
+    "Ensemble Learning for Heterogeneous Large Language Models with Deep Parallel Collaboration",
+    "Exploiting LLM Quantization",
+    "FouRA: Fourier Low-Rank Adaptation",
+    "G-Retriever: Retrieval-Augmented Generation for Textual Graph Understanding and Question Answering",
+    "Grounded Answers for Multi-agent Decision-making Problem through Generative World Model",
+    "HARMONIC: Harnessing LLMs for Tabular Data Synthesis and Privacy Protection",
+    "IDGen: Item Discrimination Induced Prompt Generation for LLM Evaluation",
+    "Instruction Tuning With Loss Over Instructions",
+    "InterDreamer: Zero-Shot Text to 3D Dynamic Human-Object Interaction",
+    "Interfacing Foundation Models' Embeddings",
+    "KALM: Knowledgeable Agents by Offline Reinforcement Learning from Large Language Model Rollouts",
+    "Knowledge-Empowered Dynamic Graph Network for Irregularly Sampled Medical Time Series",
+    "Language-Driven Interactive Traffic Trajectory Generation",
+    "Large Language Models Play StarCraft II:Benchmarks and A Chain of Summarization Approach",
+    "Learn more, but bother less: parameter efficient continual learning",
+    "Learning to Reason via Program Generation, Emulation, and Search",
+    "Localized Zeroth-Order Prompt Optimization",
+    "MambaTree: Tree Topology is All You Need in State Space Model",
+    "MedJourney: Benchmark and Evaluation of Large Language Models over Patient Clinical Journey",
+    "Megalodon: Efficient LLM Pretraining and Inference with Unlimited Context Length",
+    "MindMerger: Efficiently Boosting LLM Reasoning in non-English Languages",
+    "Mixture of Tokens: Continuous MoE through Cross-Example Aggregation",
+    "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models",
+    "Multi-Head Mixture-of-Experts",
+    "Neuro-Vision to Language: Enhancing Brain Recording-based Visual Reconstruction and Language Interaction",
+    "No Free Delivery Service: Epistemic limits of passive data collection in complex social systems",
+    "OmniJARVIS: Unified Vision-Language-Action Tokenization Enables Open-World Instruction Following Agents",
+    "On the Power of Decision Trees in Auto-Regressive Language Modeling",
+    "OpenDebateEvidence: A Massive-Scale Argument Mining and Summarization Dataset",
+    "Optimized Feature Generation for Tabular Data via LLMs with Decision Tree Reasoning",
+    "Orchid: Flexible and Data-Dependent Convolution for Sequence Modeling",
+    "PIVOT-R: Primitive-Driven Waypoint-Aware World Model for Robotic Manipulation",
+    "Parameter Competition Balancing for Model Merging",
+    "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models",
+    "RouterDC: Query-Based Router by Dual Contrastive Learning for Assembling Large Language Models",
+    "SIRIUS : Contexual Sparisty with Correction for Efficient LLMs",
+    "SUGARCREPE++ Dataset: Vision-Language Model Sensitivity to Semantic and Lexical Alterations",
+    "SearchLVLMs: A Plug-and-Play Framework for Augmenting Large Vision-Language Models by Searching Up-to-Date Internet Knowledge",
+    "Self-Retrieval: End-to-End Information Retrieval with One Large Language Model",
+    "Topic-Conversation Relevance (TCR)  Dataset and Benchmarks",
+    "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models",
+    "Web-Scale Visual Entity Recognition: An LLM-Driven Data Approach",
+    "When LLMs Meet Cunning Texts: A Fallacy Understanding Benchmark for Large Language Models",
+    "fMRI predictors based on language models of increasing complexity recover brain left lateralization"
+  ],
+  "paper_count": 65,
+  "group_ids": [
+    44,
+    65,
+    312,
+    354,
+    541,
+    682,
+    734,
+    893,
+    914,
+    972,
+    973,
+    1025,
+    1026,
+    1094,
+    1427,
+    1540,
+    1623,
+    1662,
+    1919,
+    2072,
+    2078,
+    2225,
+    2353,
+    2428,
+    2584,
+    2597,
+    2682,
+    2780,
+    2937,
+    3140,
+    3306,
+    3554,
+    3758,
+    3866,
+    3893,
+    3982,
+    4046,
+    4060,
+    4092,
+    4117,
+    4239,
+    4275,
+    4386,
+    4462,
+    4498,
+    4526,
+    4577,
+    4609,
+    4655,
+    4674,
+    4775,
+    4814,
+    4853,
+    5059,
+    5098,
+    5258,
+    5469,
+    5616,
+    5637,
+    5670,
+    5740,
+    5994,
+    6252,
+    6293
+  ],
+  "definitions": [
+    {
+      "text": "Language Understanding",
+      "paper": "Orchid: Flexible and Data-Dependent Convolution for Sequence Modeling"
+    },
+    {
+      "text": "Language Understanding",
+      "paper": "Learn more, but bother less: parameter efficient continual learning"
+    },
+    {
+      "text": "Language Understanding",
+      "paper": "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models"
+    },
+    {
+      "text": "Language Understanding",
+      "paper": "BERTs are Generative In-Context Learners"
+    },
+    {
+      "text": "Capability to understand natural language inputs. ",
+      "paper": "Localized Zeroth-Order Prompt Optimization"
+    },
+    {
+      "text": "Capability to handle general multi-subject questions in natural language; evaluated as language understanding tasks in the paper .",
+      "paper": "RouterDC: Query-Based Router by Dual Contrastive Learning for Assembling Large Language Models"
+    },
+    {
+      "text": "Ability to accurately capture the meaning of text. ",
+      "paper": "CausalStock: Deep End-to-end Causal Discovery for News-driven Multi-stock Movement Prediction"
+    },
+    {
+      "text": "Recognizing semantic similarity is fundamental to language understanding. ",
+      "paper": "SUGARCREPE++ Dataset: Vision-Language Model Sensitivity to Semantic and Lexical Alterations"
+    },
+    {
+      "text": "Ability to perform understanding tasks such as text classification; encoder-only models may excel at such tasks. ",
+      "paper": "Knowledge-Empowered Dynamic Graph Network for Irregularly Sampled Medical Time Series"
+    },
+    {
+      "text": "Base LLM language comprehension and reasoning that can dominate scores on some multimodal benchmarks when vision is not required.  ",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs"
+    },
+    {
+      "text": "Text reasoning capability needed to comprehend textualized graphs and queries for generation. ",
+      "paper": "G-Retriever: Retrieval-Augmented Generation for Textual Graph Understanding and Question Answering"
+    },
+    {
+      "text": "Ability to comprehend users’ intent and clinical context, enabling appropriate responses .",
+      "paper": "MedJourney: Benchmark and Evaluation of Large Language Models over Patient Clinical Journey"
+    },
+    {
+      "text": "Naturalistic language comprehension during narrative listening as modeled here. ",
+      "paper": "fMRI predictors based on language models of increasing complexity recover brain left lateralization"
+    },
+    {
+      "text": "The HellaSwag benchmark aims to measure the ability of a model to understand language. ",
+      "paper": "fMRI predictors based on language models of increasing complexity recover brain left lateralization"
+    },
+    {
+      "text": "Robustly understanding and applying detailed instructions across varied linguistic inputs to align generated scenarios with user-specified commands .",
+      "paper": "Language-Driven Interactive Traffic Trajectory Generation"
+    },
+    {
+      "text": "Leveraging deep traffic scene understanding to convert language into structured, interaction-aware codes .",
+      "paper": "Language-Driven Interactive Traffic Trajectory Generation"
+    },
+    {
+      "text": "General capability reflected by performance on diverse classification and inference tasks in ICL settings .",
+      "paper": "Enhancing In-Context Learning Performance with just SVD-Based Weight Pruning: A Theoretical Perspective"
+    },
+    {
+      "text": "Ability to understand natural‑language instructions and produce appropriate responses grounded in fMRI embeddings, including multi‑round dialogue.  ",
+      "paper": "Neuro-Vision to Language: Enhancing Brain Recording-based Visual Reconstruction and Language Interaction"
+    },
+    {
+      "text": "Ability to interpret and execute open-ended, diverse natural language commands for strategic actions. ",
+      "paper": "Large Language Models Play StarCraft II:Benchmarks and A Chain of Summarization Approach"
+    },
+    {
+      "text": "Levels of language understanding that evaluation items aim to distinguish across models .",
+      "paper": "IDGen: Item Discrimination Induced Prompt Generation for LLM Evaluation"
+    },
+    {
+      "text": "Ability to comprehend and interpret natural language; cited as an area of strong LLM performance .",
+      "paper": "Mixture of Tokens: Continuous MoE through Cross-Example Aggregation"
+    },
+    {
+      "text": "Text-only knowledge and reasoning capabilities of the LLM; naive multimodal training can degrade these (MMLU drop), whereas freezing preserves text-only behavior .",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models"
+    },
+    {
+      "text": "General language capability that enables more efficient learning of fine-tuning tasks (e.g., with LLaMA‑2‑7b‑chat vs. GPT‑2). ",
+      "paper": "HARMONIC: Harnessing LLMs for Tabular Data Synthesis and Privacy Protection"
+    },
+    {
+      "text": "General capacity of LLMs to process language tokens and produce semantic embeddings.  ",
+      "paper": "Interfacing Foundation Models' Embeddings"
+    },
+    {
+      "text": "General language understanding capabilities operationalized via tasks grouped under 'Language Understanding and Knowledge' (e.g., MMLU, PIQA, OpenbookQA, HellaSwag, LAMBADA) .",
+      "paper": "Instruction Tuning With Loss Over Instructions"
+    },
+    {
+      "text": "Mapping natural language inputs to logical knowledge representations to enable reasoning; required when validating LLM reasoning .",
+      "paper": "No Free Delivery Service: Epistemic limits of passive data collection in complex social systems"
+    },
+    {
+      "text": "General capacity of LLMs/LMMs to process and understand natural language; recent advances make short-text processing less challenging .",
+      "paper": "A Large-Scale Human-Centric Benchmark for Referring Expression Comprehension in the LMM Era"
+    },
+    {
+      "text": "Understanding input based on context/internal knowledge and outputting concise answers (few tokens) .",
+      "paper": "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models"
+    },
+    {
+      "text": "Fundamental language understanding established by early layers; challenging language understanding tasks are sensitive to uniform pruning .",
+      "paper": "Discovering Sparsity Allocation for  Layer-wise Pruning of Large Language Models"
+    },
+    {
+      "text": "LLMs demonstrate excellent proficiency in understanding difficult contexts. ",
+      "paper": "Compact Language Models via Pruning and Knowledge Distillation"
+    },
+    {
+      "text": "LLMs exhibit excellent understanding on generation tasks, as noted in the abstract .",
+      "paper": "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models"
+    },
+    {
+      "text": "General ability of LLMs to comprehend natural language; the paper motivates ensembling in the context of LLMs’ strong understanding and generation abilities. ",
+      "paper": "Ensemble Learning for Heterogeneous Large Language Models with Deep Parallel Collaboration"
+    },
+    {
+      "text": "Ability to comprehend and process language to answer questions across topics. ",
+      "paper": "Exploiting LLM Quantization"
+    },
+    {
+      "text": "Ability to use instructions/text representations to select appropriate processing pathways and interpret task requirements (e.g., instance-level routing by sentence embeddings) .",
+      "paper": "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models"
+    },
+    {
+      "text": "Capability to understand natural language content; invoked to justify using LLMs as backbones for textual relation generation .",
+      "paper": "DTGB: A Comprehensive Benchmark for Dynamic Text-Attributed Graphs"
+    },
+    {
+      "text": "Capability to comprehend and process natural language as evaluated by GLUE tasks; GLUE is widely used for natural language understanding. ",
+      "paper": "FouRA: Fourier Low-Rank Adaptation"
+    },
+    {
+      "text": "Capability to interpret and ground textual inputs for downstream use; authors report improved text understanding when adding T5‑XXL embeddings and co‑training with language modeling .",
+      "paper": "4M-21: An Any-to-Any Vision Model for Tens of Tasks and Modalities"
+    },
+    {
+      "text": "General language understanding reflected by performance on standard downstream academic benchmarks across tasks  ",
+      "paper": "Megalodon: Efficient LLM Pretraining and Inference with Unlimited Context Length"
+    },
+    {
+      "text": "Parsing and mapping free‑form interaction descriptions to structured categories and standardizing syntax/content to align with training distributions  .",
+      "paper": "InterDreamer: Zero-Shot Text to 3D Dynamic Human-Object Interaction"
+    },
+    {
+      "text": "Semantic comprehension from pre-trained transformer representations that supports downstream reasoning when combined with ARDTs .",
+      "paper": "On the Power of Decision Trees in Auto-Regressive Language Modeling"
+    },
+    {
+      "text": "General ability to comprehend text, cited as a core LLM capability alongside modeling and generation. ",
+      "paper": "DISP-LLM: Dimension-Independent Structural Pruning for Large Language Models"
+    },
+    {
+      "text": "Ability to interpret linguistic context (e.g., column names/values) and generate semantically coherent feature names and rules  .",
+      "paper": "Optimized Feature Generation for Tabular Data via LLMs with Decision Tree Reasoning"
+    },
+    {
+      "text": "General ability to understand human language, including tasks such as information extraction, text correction, and humor understanding .",
+      "paper": "When LLMs Meet Cunning Texts: A Fallacy Understanding Benchmark for Large Language Models"
+    },
+    {
+      "text": "Parsing human-language policy goals to identify relevant features for reward design (extracting zℓ ⊆ z from ℓ). ",
+      "paper": "A Decision-Language Model (DLM) for Dynamic Restless Multi-Armed Bandit Tasks in Public Health"
+    },
+    {
+      "text": "General ability to comprehend input text. The paper distinguishes prompt understanding and world-knowledge understanding. ",
+      "paper": "SIRIUS : Contexual Sparisty with Correction for Efficient LLMs"
+    },
+    {
+      "text": "Built‑in capability of LLMs to understand language; non‑English proficiency may be lower but still useful .",
+      "paper": "MindMerger: Efficiently Boosting LLM Reasoning in non-English Languages"
+    },
+    {
+      "text": "General understanding of text; argued to be developed by training on argumentative texts. ",
+      "paper": "OpenDebateEvidence: A Massive-Scale Argument Mining and Summarization Dataset"
+    },
+    {
+      "text": "General comprehension of meaning and pragmatics in context; LMs trained as passive receivers of text may struggle with social pragmatics and context-sensitive word meanings. ",
+      "paper": "Divergences between Language Models and Human Brains"
+    },
+    {
+      "text": "Processing instructions, thoughts, and textual memories to guide behavior. ",
+      "paper": "OmniJARVIS: Unified Vision-Language-Action Tokenization Enables Open-World Instruction Following Agents"
+    },
+    {
+      "text": "Understanding natural-language referring expressions, including identifying target-related cues in descriptions .",
+      "paper": "Boosting Weakly Supervised Referring Image Segmentation via Progressive Comprehension"
+    },
+    {
+      "text": "General language competence enhanced by rationale and QA objectives, benefiting query-focused tasks. ",
+      "paper": "Web-Scale Visual Entity Recognition: An LLM-Driven Data Approach"
+    },
+    {
+      "text": "Comprehending natural language instructions to support downstream action parsing; treated as part of the VLM’s capabilities in ablation analyses .",
+      "paper": "PIVOT-R: Primitive-Driven Waypoint-Aware World Model for Robotic Manipulation"
+    },
+    {
+      "text": "LLM capability leveraged throughout the IR process to comprehend queries and documents .",
+      "paper": "Self-Retrieval: End-to-End Information Retrieval with One Large Language Model"
+    },
+    {
+      "text": "General natural language understanding, approximated here by performance on SuperGLUE classification tasks (appendix) .",
+      "paper": "BAdam: A Memory Efficient Full Parameter Optimization Method for Large Language Models"
+    },
+    {
+      "text": "Ability to understand language and relationships between bodies of text, approaching human performance. ",
+      "paper": "Topic-Conversation Relevance (TCR)  Dataset and Benchmarks"
+    },
+    {
+      "text": "Ability to understand users’ requests and parse compositional natural-language queries into semantic concepts.  ",
+      "paper": "ChatCam: Empowering Camera Control through Conversational AI"
+    },
+    {
+      "text": "General ability to model and comprehend linguistic context; the paper claims MH-MoE deepens context understanding by attending to diverse expert representation spaces. ",
+      "paper": "Multi-Head Mixture-of-Experts"
+    },
+    {
+      "text": "General ability to comprehend and process language in tasks such as QA, reading comprehension, commonsense inference, dialogue response selection, and summarization; the paper’s MCQA reformulation primarily assesses language understanding rather than generative ability  .",
+      "paper": "Benchmarking LLMs via Uncertainty Quantification"
+    },
+    {
+      "text": "Ability to infer the roles of words from grammatical information to extract informative entities/queries, even when certain words are unknown .",
+      "paper": "SearchLVLMs: A Plug-and-Play Framework for Augmenting Large Vision-Language Models by Searching Up-to-Date Internet Knowledge"
+    },
+    {
+      "text": "General ability spanning a variety of NLP domains such as question answering, paraphrase identification, sentence completion, and coreference resolution. ",
+      "paper": "Parameter Competition Balancing for Model Merging"
+    },
+    {
+      "text": "Advanced capability for understanding natural language. ",
+      "paper": "DPIC: Decoupling Prompt and Intrinsic Characteristics for LLM Generated Text Detection"
+    },
+    {
+      "text": "Capability assessed via language understanding benchmarks in the paper’s regular evaluations. ",
+      "paper": "Dataset Decomposition: Faster LLM Training with Variable Sequence Length Curriculum"
+    },
+    {
+      "text": "Ability to follow natural-language instructions to produce desired outputs. ",
+      "paper": "KALM: Knowledgeable Agents by Offline Reinforcement Learning from Large Language Model Rollouts"
+    },
+    {
+      "text": "Classifying or judging properties of text (acceptability, sentiment, emotion) .",
+      "paper": "Learning to Reason via Program Generation, Emulation, and Search"
+    },
+    {
+      "text": "Parsing and using natural-language task descriptions to condition simulation and reward labeling. ",
+      "paper": "Grounded Answers for Multi-agent Decision-making Problem through Generative World Model"
+    },
+    {
+      "text": "Comprehension of problem statements in natural language; required alongside math for GSM8K .",
+      "paper": "Diffusion of Thought: Chain-of-Thought Reasoning in Diffusion Language Models"
+    },
+    {
+      "text": "General capacity to comprehend and use natural language for diverse tasks; the paper frames improvements as enhancing an LLM’s language representation leading to better downstream performance.  ",
+      "paper": "MambaTree: Tree Topology is All You Need in State Space Model"
+    }
+  ],
+  "definition_count": 67,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GLUE Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Localized Zeroth-Order Prompt Optimization",
+      "evidence": "GLUE is a benchmark for natural language understanding and is used in this paper’s evaluation."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU Testing Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "RouterDC: Query-Based Router by Dual Contrastive Learning for Assembling Large Language Models",
+      "evidence": "MMLU is a general benchmark that covers 57 subjects, used to evaluate language understanding ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Text Evaluation",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "CausalStock: Deep End-to-end Causal Discovery for News-driven Multi-stock Movement Prediction",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Semantic Equivalence Recognition",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "SUGARCREPE++ Dataset: Vision-Language Model Sensitivity to Semantic and Lexical Alterations",
+      "evidence": "Recognizing semantic similarity is fundamental to language understanding; the paper defines semantic equivalence (bidirectional entailment)."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visio-Linguistic Semantic Understanding (Image–Text Alignment)",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "SUGARCREPE++ Dataset: Vision-Language Model Sensitivity to Semantic and Lexical Alterations",
+      "evidence": "Models align text with visual concepts to realize visio-linguistic understanding."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Prompt Robustness",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "SUGARCREPE++ Dataset: Vision-Language Model Sensitivity to Semantic and Lexical Alterations",
+      "evidence": "Performance sensitivity to paraphrases/ordering indicates a robustness component of deployed language use."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GLUE Average Score (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Orchid: Flexible and Data-Dependent Convolution for Sequence Modeling",
+      "evidence": "To evaluate model performance on NLP, Orchid-BERT is fine-tuned on GLUE tasks and compared against BERT baselines."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text Classification Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Knowledge-Empowered Dynamic Graph Network for Irregularly Sampled Medical Time Series",
+      "evidence": "The paper notes encoder-only models may excel at understanding tasks such as text classification, implying text classification understanding is part of broader language understanding."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Sentence-level Semantic Representation",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Knowledge-Empowered Dynamic Graph Network for Irregularly Sampled Medical Time Series",
+      "evidence": "BERT’s [CLS] is used to capture sentence-level overall semantic information for understanding variable descriptions."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+      "evidence": "Some multimodal benchmarks are dominated by base LLM capabilities, revealing language understanding as a key component."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SQA-I",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+      "evidence": "SQA‑I shows less than a 5% gap between vision enabled/disabled, suggesting heavy reliance on the base LLM."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMMU",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+      "evidence": "MMMU displays a small vision vs no‑vision gap, implying reliance on language skills."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MathVista Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+      "evidence": "MathVista yields a small vision vs no‑vision gap in this analysis."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AI2D Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+      "evidence": "AI2D yields a small vision vs no‑vision gap, indicating language dominance."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Graph Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "G-Retriever: Retrieval-Augmented Generation for Textual Graph Understanding and Question Answering",
+      "evidence": "The approach textualizes the retrieved subgraph and combines it with the query to leverage LLM text-reasoning for answer generation."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MNLI",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Learn more, but bother less: parameter efficient continual learning",
+      "evidence": "MNLI is included in the GLUE mix within the CL benchmark, assessing language understanding tasks."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Dialogue Understanding",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "MedJourney: Benchmark and Evaluation of Large Language Models over Patient Clinical Journey",
+      "evidence": "DRG requires understanding dialogue history ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Entity-level Understanding",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "MedJourney: Benchmark and Evaluation of Large Language Models over Patient Clinical Journey",
+      "evidence": "Entity-based metric evaluates semantic inclusion of key entities in QA tasks ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Hospital Reception QA (HQA)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MedJourney: Benchmark and Evaluation of Large Language Models over Patient Clinical Journey",
+      "evidence": "HQA covers 10 hospital-visit query types; evaluated with BLEU-4  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Semantic Processing",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "fMRI predictors based on language models of increasing complexity recover brain left lateralization",
+      "evidence": "Regions linked to semantics (AG, DMN) support highest-level comprehension, suggesting semantic processing is a component of language understanding."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Pragmatic Processing",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "fMRI predictors based on language models of increasing complexity recover brain left lateralization",
+      "evidence": "mPFC and Precuneus sensitivity to discourse coherence indicates pragmatic processing contributes to language understanding."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Syntactic Processing",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "fMRI predictors based on language models of increasing complexity recover brain left lateralization",
+      "evidence": "Left BA44 associated with syntax is among core language-network ROIs."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HellaSwag Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "fMRI predictors based on language models of increasing complexity recover brain left lateralization",
+      "evidence": "HellaSwag aims to measure the ability to understand language."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Neural Alignment with Human Language Processing",
+      "other_type": "constructs",
+      "relationship_type": "predicts",
+      "paper": "fMRI predictors based on language models of increasing complexity recover brain left lateralization",
+      "evidence": "Indices of language-understanding performance (e.g., HellaSwag) are predictive of brain scores."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction Following",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Language-Driven Interactive Traffic Trajectory Generation",
+      "evidence": "The precision in controllable manipulation is achieved through the LLM’s robustness in understanding and applying detailed instructions ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Language-Driven Interactive Traffic Trajectory Generation",
+      "evidence": "The precision in controllable manipulation is achieved through the LLM’s robustness in understanding and applying detailed instructions ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reference Resolution",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Language-Driven Interactive Traffic Trajectory Generation",
+      "evidence": "Ambiguous object references are resolved by the LLM when descriptions are sufficiently specific ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Controllability Analysis (Qualitative)",
+      "other_type": "measurements",
+      "relationship_type": "predicts",
+      "paper": "Language-Driven Interactive Traffic Trajectory Generation",
+      "evidence": "Adherence to diverse linguistic descriptions is achieved by robustness in understanding/applying detailed instructions ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Natural Language Inference",
+      "other_type": "constructs",
+      "relationship_type": "has-subconstruct",
+      "paper": "Enhancing In-Context Learning Performance with just SVD-Based Weight Pruning: A Theoretical Perspective",
+      "evidence": "Evaluations span language understanding tasks including entailment datasets (RTE, CB) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Commonsense Causal Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subconstruct",
+      "paper": "Enhancing In-Context Learning Performance with just SVD-Based Weight Pruning: A Theoretical Perspective",
+      "evidence": "COPA is used for causal inference within the language understanding suite  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Paraphrase Detection",
+      "other_type": "constructs",
+      "relationship_type": "has-subconstruct",
+      "paper": "Enhancing In-Context Learning Performance with just SVD-Based Weight Pruning: A Theoretical Perspective",
+      "evidence": "MRPC is included among the language understanding tasks ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Sentiment Understanding",
+      "other_type": "constructs",
+      "relationship_type": "has-subconstruct",
+      "paper": "Enhancing In-Context Learning Performance with just SVD-Based Weight Pruning: A Theoretical Perspective",
+      "evidence": "SST-2 is evaluated under ICL as part of language understanding tasks  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Topic Classification",
+      "other_type": "constructs",
+      "relationship_type": "has-subconstruct",
+      "paper": "Enhancing In-Context Learning Performance with just SVD-Based Weight Pruning: A Theoretical Perspective",
+      "evidence": "AGNEWS appears among the evaluated tasks ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Emotion Classification",
+      "other_type": "constructs",
+      "relationship_type": "has-subconstruct",
+      "paper": "Enhancing In-Context Learning Performance with just SVD-Based Weight Pruning: A Theoretical Perspective",
+      "evidence": "EMOC appears among the evaluated tasks ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Instruction Following",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Neuro-Vision to Language: Enhancing Brain Recording-based Visual Reconstruction and Language Interaction",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Neuro-Vision to Language: Enhancing Brain Recording-based Visual Reconstruction and Language Interaction",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Dialogue Management",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Neuro-Vision to Language: Enhancing Brain Recording-based Visual Reconstruction and Language Interaction",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Integration via LLMs",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Neuro-Vision to Language: Enhancing Brain Recording-based Visual Reconstruction and Language Interaction",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Instruction‑Following QA over fMRI (NSD stimuli)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Neuro-Vision to Language: Enhancing Brain Recording-based Visual Reconstruction and Language Interaction",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Real-Time Strategy Decision-Making",
+      "other_type": "constructs",
+      "relationship_type": "interdependent",
+      "paper": "Large Language Models Play StarCraft II:Benchmarks and A Chain of Summarization Approach",
+      "evidence": "Environment demands advanced language understanding to execute open-ended commands for strategic decisions."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Contextual Understanding",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "IDGen: Item Discrimination Induced Prompt Generation for LLM Evaluation",
+      "evidence": "Benchmarks should push deeper understanding of context ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "IDGen Open-ended Evaluation (General Text)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "IDGen: Item Discrimination Induced Prompt Generation for LLM Evaluation",
+      "evidence": "The framework is designed to distinguish between different levels of language understanding via open‑ended prompts ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models",
+      "evidence": "MMLU tracks pure text understanding; naive LAION-based multimodal training drops MMLU sharply, evidencing language degradation ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Understanding",
+      "other_type": "constructs",
+      "relationship_type": "non-interfering",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models",
+      "evidence": "By freezing the LLM and adding a trainable visual expert, text-only behaviors remain the same as the original LLM if no image is present (contrasting with MMLU drops under direct multimodal training) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Tabular Classification Capability (Downstream)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "HARMONIC: Harnessing LLMs for Tabular Data Synthesis and Privacy Protection",
+      "evidence": "LLaMA‑2‑7b‑chat’s stronger language understanding enables it to learn fine-tuning tasks more efficiently than GPT‑2, supporting downstream performance."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long‑Context Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "Interfacing Foundation Models' Embeddings",
+      "evidence": "LLMs handle long contexts; LLaMA is extremely effective on long description reasoning."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Intermediate‑Layer Semantics",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "Interfacing Foundation Models' Embeddings",
+      "evidence": "Embeddings near input/output are less semantic; intermediate layers align better with vision embeddings."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Instruction Tuning With Loss Over Instructions",
+      "evidence": "MMLU is listed under the 'Language Understanding and Knowledge' category used to evaluate models ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Instruction Tuning With Loss Over Instructions",
+      "evidence": "PIQA is included under the Language Understanding/Knowledge evaluation suite ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Instruction Tuning With Loss Over Instructions",
+      "evidence": "OpenbookQA is included under Language Understanding/Knowledge in the study’s evaluation suite ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Instruction Tuning With Loss Over Instructions",
+      "evidence": "HellaSwag is included under Language Understanding/Knowledge in the evaluation suite ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HellaSwag Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Instruction Tuning With Loss Over Instructions",
+      "evidence": "HellaSwag is included under Language Understanding/Knowledge in the evaluation suite ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Instruction Tuning With Loss Over Instructions",
+      "evidence": "LAMBADA is included under Language Understanding/Knowledge in the evaluation suite ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LAMBADA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Instruction Tuning With Loss Over Instructions",
+      "evidence": "LAMBADA is included under Language Understanding/Knowledge in the evaluation suite ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "No Free Delivery Service: Epistemic limits of passive data collection in complex social systems",
+      "evidence": "To validate LLM reasoning, natural language must be mapped to logical knowledge representations, indicating language understanding is part of the reasoning pipeline ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-Context Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "A Large-Scale Human-Centric Benchmark for Referring Expression Comprehension in the LMM Era",
+      "evidence": "The advent of LLMs improved language understanding for short texts; HC-RefLoCo emphasizes longer descriptions, indicating the need to handle long context  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Downstream Task Adaptation",
+      "other_type": "constructs",
+      "relationship_type": "has-subconstruct",
+      "paper": "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models",
+      "evidence": "Common downstream tasks are categorized into language understanding and generation ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subconstruct",
+      "paper": "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models",
+      "evidence": "Chosen multiple-choice benchmarks require strong reasoning ability ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Instruction Following",
+      "other_type": "constructs",
+      "relationship_type": "has-subconstruct",
+      "paper": "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models",
+      "evidence": "Fixed answer format simultaneously detects instruction-following ability ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "has-subconstruct",
+      "paper": "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models",
+      "evidence": "Fixed answer format simultaneously detects instruction-following ability ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models",
+      "evidence": "MMLU used as language understanding benchmark across models  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC (E & C) Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models",
+      "evidence": "ARC (E & C) included as understanding benchmark  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models",
+      "evidence": "PIQA included as understanding benchmark  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models",
+      "evidence": "OBQA included as understanding benchmark  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OpenBookQA (OBQA) Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models",
+      "evidence": "OBQA included as understanding benchmark  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OpenBookQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models",
+      "evidence": "OBQA included as understanding benchmark  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "C-MMLU Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models",
+      "evidence": "C-MMLU included for Chinese language understanding  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU 5-shot Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Compact Language Models via Pruning and Knowledge Distillation",
+      "evidence": "MMLU explicitly measures 'language understanding' across many tasks."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multitask Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Compact Language Models via Pruning and Knowledge Distillation",
+      "evidence": "Because MMLU is 'Measuring Massive Multitask Language Understanding', the multitask variant is a subarea of broader language understanding."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Alpaca Perplexity (PPL)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models",
+      "evidence": "Perplexity on Alpaca is reported among datasets assessing generation quality ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Common Sense and Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models",
+      "evidence": "The composite label 'Common Sense and Language Understanding' is operationalized by a shared set of benchmarks"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models",
+      "evidence": "Benchmarks are jointly used under 'Common Sense and Language Understanding' in the figure caption"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-e Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models",
+      "evidence": "As above"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-e Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models",
+      "evidence": "As above"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-c Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models",
+      "evidence": "As above"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models",
+      "evidence": "As above"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HellaSwag Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models",
+      "evidence": "As above"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU 5-shot Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Exploiting LLM Quantization",
+      "evidence": "MMLU is used to assess language understanding among utility axes."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models",
+      "evidence": "Instance-level sentence embeddings guide language-side routing/selection, contributing to task-specific understanding ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Winograd Schema Challenge (WSC)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "BERTs are Generative In-Context Learners",
+      "evidence": "Winograd/WinoGrande appear in the language understanding results table with accuracy metrics ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "BERTs are Generative In-Context Learners",
+      "evidence": "WinoGrande dev accuracy is reported alongside Winograd in language understanding results ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Textual Relation Generation (DTGB)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "DTGB: A Comprehensive Benchmark for Dynamic Text-Attributed Graphs",
+      "evidence": "LLMs are used as backbones due to their powerful capability in understanding natural language; the task evaluates this capability via BERTScore  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GLUE/MNLI Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "FouRA: Fourier Low-Rank Adaptation",
+      "evidence": "The paper evaluates DeBERTa‑V3 on GLUE, including MNLI, reporting task metrics."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GLUE/CoLA MCC",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "FouRA: Fourier Low-Rank Adaptation",
+      "evidence": "CoLA is included with MCC as the metric."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GLUE/SST-2 Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "FouRA: Fourier Low-Rank Adaptation",
+      "evidence": "SST‑2 accuracy is reported in GLUE evaluation."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GLUE/STS‑B Correlation",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "FouRA: Fourier Low-Rank Adaptation",
+      "evidence": "STS‑B correlation is used for GLUE STS."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GLUE/MRPC Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "FouRA: Fourier Low-Rank Adaptation",
+      "evidence": "MRPC accuracy is reported in GLUE results."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GLUE/QNLI Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "FouRA: Fourier Low-Rank Adaptation",
+      "evidence": "QNLI accuracy is reported in GLUE results."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Feature Disentanglement",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "FouRA: Fourier Low-Rank Adaptation",
+      "evidence": "FouRA’s rank selection in the frequency domain outperforms SoRA on several GLUE tasks, demonstrating that the feature disentanglement induced by FouRA can be used beyond vision tasks."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Qualitative Text Understanding (Figure 4)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "4M-21: An Any-to-Any Vision Model for Tens of Tasks and Modalities",
+      "evidence": "Figure 4 illustrates improved text understanding when using T5‑XXL embeddings and language modeling co‑training ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text Representation Learning (LLM)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "4M-21: An Any-to-Any Vision Model for Tens of Tasks and Modalities",
+      "evidence": "Authors state T5‑XXL embeddings have been shown to improve text understanding capabilities, and qualitatively show improved text understanding in their system ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multitask Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Megalodon: Efficient LLM Pretraining and Inference with Unlimited Context Length",
+      "evidence": "MMLU appears among the standard academic benchmarks used to summarize language understanding performance"
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Question Answering (Open-domain)",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Megalodon: Efficient LLM Pretraining and Inference with Unlimited Context Length",
+      "evidence": "Open‑domain QA datasets (NQ, TriviaQA) are included in the standard benchmarks for model capability"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Megalodon: Efficient LLM Pretraining and Inference with Unlimited Context Length",
+      "evidence": "MMLU is reported in the standard academic benchmark table"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BoolQ Zero-shot Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Megalodon: Efficient LLM Pretraining and Inference with Unlimited Context Length",
+      "evidence": "BoolQ appears in the benchmark table of downstream tasks"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BoolQ",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Megalodon: Efficient LLM Pretraining and Inference with Unlimited Context Length",
+      "evidence": "BoolQ appears in the benchmark table of downstream tasks"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HellaSwag Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Megalodon: Efficient LLM Pretraining and Inference with Unlimited Context Length",
+      "evidence": "HellaSwag appears in the benchmark table of downstream tasks"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Megalodon: Efficient LLM Pretraining and Inference with Unlimited Context Length",
+      "evidence": "PIQA appears in the benchmark table of downstream tasks"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Megalodon: Efficient LLM Pretraining and Inference with Unlimited Context Length",
+      "evidence": "SIQA appears in the benchmark table of downstream tasks"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SIQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Megalodon: Efficient LLM Pretraining and Inference with Unlimited Context Length",
+      "evidence": "SIQA appears in the benchmark table of downstream tasks"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Megalodon: Efficient LLM Pretraining and Inference with Unlimited Context Length",
+      "evidence": "WinoGrande appears in the benchmark table of downstream tasks"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-e Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Megalodon: Efficient LLM Pretraining and Inference with Unlimited Context Length",
+      "evidence": "ARC‑e appears in the benchmark table of downstream tasks"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-e Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Megalodon: Efficient LLM Pretraining and Inference with Unlimited Context Length",
+      "evidence": "ARC‑c appears in the benchmark table of downstream tasks"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-c Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Megalodon: Efficient LLM Pretraining and Inference with Unlimited Context Length",
+      "evidence": "ARC‑c appears in the benchmark table of downstream tasks"
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction Decomposition / High‑Level Planning",
+      "other_type": "constructs",
+      "relationship_type": "leverages",
+      "paper": "InterDreamer: Zero-Shot Text to 3D Dynamic Human-Object Interaction",
+      "evidence": "Planning requires parsing descriptions, structuring guidance, and standardizing syntax/content ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Paraphrasing / Style Normalization",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "InterDreamer: Zero-Shot Text to 3D Dynamic Human-Object Interaction",
+      "evidence": "LLM rewrites text to bridge distribution gap between free‑form inputs and training data language ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Object Category Identification (Q1) Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "InterDreamer: Zero-Shot Text to 3D Dynamic Human-Object Interaction",
+      "evidence": "Q1 evaluates mapping from text to object categories during high‑level planning (Table 4) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "On the Power of Decision Trees in Auto-Regressive Language Modeling",
+      "evidence": "Combining GPT‑2 representations with ARDTs improves BBH reasoning performance, highlighting the impact of embeddings ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Optimization using LLMs for Feature Generation",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Optimized Feature Generation for Tabular Data via LLMs with Decision Tree Reasoning",
+      "evidence": "The framework leverages language understanding to integrate column names/values and express decision-tree reasoning in natural language  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Semantic Feature Naming",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Optimized Feature Generation for Tabular Data via LLMs with Decision Tree Reasoning",
+      "evidence": "The approach begins by prompting an LLM to propose a novel, semantically coherent column name aligned with the task ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Tesla Stock Relative Error Reduction (XGBoost)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Optimized Feature Generation for Tabular Data via LLMs with Decision Tree Reasoning",
+      "evidence": "On language-described datasets, LLMs generate logical rules and features (e.g., \"Trading Volume\") that reduce error ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Imputing \"Age\" with Real Data (Clinical Trial)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Optimized Feature Generation for Tabular Data via LLMs with Decision Tree Reasoning",
+      "evidence": "An LLM-suggested column (\"Age\") aligns with real-world data; augmenting with real data improves accuracy ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Fallacy Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "When LLMs Meet Cunning Texts: A Fallacy Understanding Benchmark for Large Language Models",
+      "evidence": "The benchmark is proposed to challenge the ‘reasoning and understanding abilities’ of LLMs by focusing on fallacy understanding within language use  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Feature Extraction from Language Prompts",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "A Decision-Language Model (DLM) for Dynamic Restless Multi-Armed Bandit Tasks in Public Health",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Automated Policy Tuning for Resource Allocation",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "A Decision-Language Model (DLM) for Dynamic Restless Multi-Armed Bandit Tasks in Public Health",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Prompt Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "SIRIUS : Contexual Sparisty with Correction for Efficient LLMs",
+      "evidence": "Prompt understanding (e.g., summarization, chat QA) is singled out as a sub-type of understanding."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "World Knowledge Understanding (Knowledge Recall)",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "SIRIUS : Contexual Sparisty with Correction for Efficient LLMs",
+      "evidence": "World-knowledge understanding/recall is treated as distinct from prompt understanding and is evaluated via MMLU-FLAN-COT."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multilingual Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MindMerger: Efficiently Boosting LLM Reasoning in non-English Languages",
+      "evidence": "The paper distinguishes general language understanding from its multilingual expression, noting lower non‑English proficiency ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Translation Capability",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "MindMerger: Efficiently Boosting LLM Reasoning in non-English Languages",
+      "evidence": "Authors argue understanding is the basis for generation and show translation gains, linking stronger understanding to translation performance ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "XNLI Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MindMerger: Efficiently Boosting LLM Reasoning in non-English Languages",
+      "evidence": "XNLI evaluates multilingual natural language inference, a proxy for language understanding, with accuracy reported  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Legislative Text Understanding",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "OpenDebateEvidence: A Massive-Scale Argument Mining and Summarization Dataset",
+      "evidence": "BillSum results reflect capabilities in handling legislative texts (a domain of language understanding)."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Argumentation",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "OpenDebateEvidence: A Massive-Scale Argument Mining and Summarization Dataset",
+      "evidence": "Argument mining plays a pivotal role in developing LLMs capable of sophisticated understanding."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Social/Emotional Intelligence",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Divergences between Language Models and Human Brains",
+      "evidence": "Comprehending social/emotional information is presented as a key domain of language-related knowledge."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Physical Commonsense",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Divergences between Language Models and Human Brains",
+      "evidence": "Physical commonsense is identified as another key domain of knowledge implicated in language processing."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Integration",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "OmniJARVIS: Unified Vision-Language-Action Tokenization Enables Open-World Instruction Following Agents",
+      "evidence": "Unified tokenization jointly models vision, language, and actions."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Attribute Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Boosting Weakly Supervised Referring Image Segmentation via Progressive Comprehension",
+      "evidence": "The method utilizes target-related attributes as cues in language descriptions for identifying the referent ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Relation Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Boosting Weakly Supervised Referring Image Segmentation via Progressive Comprehension",
+      "evidence": "Descriptions include relations/actions that help progressively exclude distractors and pinpoint the target ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text Decomposition",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Boosting Weakly Supervised Referring Image Segmentation via Progressive Comprehension",
+      "evidence": "The input description is divided into short, target-related phrases to process textual nuances individually ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Question-Answer Generation",
+      "other_type": "constructs",
+      "relationship_type": "enhances",
+      "paper": "Web-Scale Visual Entity Recognition: An LLM-Driven Data Approach",
+      "evidence": "QA training encourages focus on multiple entities and enhances language understanding."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OVEN Query Split HM Top-1",
+      "other_type": "measurements",
+      "relationship_type": "predicts",
+      "paper": "Web-Scale Visual Entity Recognition: An LLM-Driven Data Approach",
+      "evidence": "Language understanding is important especially for the query split."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Vision-Language Grounding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "PIVOT-R: Primitive-Driven Waypoint-Aware World Model for Robotic Manipulation",
+      "evidence": "Ablations discuss the VLM’s language understanding as a factor in performance ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Information Retrieval Capability",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "Self-Retrieval: End-to-End Information Retrieval with One Large Language Model",
+      "evidence": "The unified IR approach leverages LLMs’ language understanding capability ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SuperGLUE Average",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "BAdam: A Memory Efficient Full Parameter Optimization Method for Large Language Models",
+      "evidence": "Appendix C.2 trains on SuperGLUE to examine general classification capability; similar average scores to Adam are reported ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Topic–Conversation Relevance Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Topic-Conversation Relevance (TCR)  Dataset and Benchmarks",
+      "evidence": "The task involves understanding relationships between bodies of text (transcripts vs topics), which the paper frames as part of LLMs’ language understanding."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Agentic Decision-Making",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "ChatCam: Empowering Camera Control through Conversational AI",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Fine-Grained Semantic Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Multi-Head Mixture-of-Experts",
+      "evidence": "MH-MoE aims to 'deepen context understanding' via attending to information from multiple expert representation spaces, implying finer-grained semantics as part of overall language understanding."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "World Knowledge",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Benchmarking LLMs via Uncertainty Quantification",
+      "evidence": "QA evaluates an LLM’s proficiency in utilizing extensive world knowledge, a facet of language understanding ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reading Comprehension",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Benchmarking LLMs via Uncertainty Quantification",
+      "evidence": "Reading comprehension tests understanding of context, meanings, and inference within language ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Benchmarking LLMs via Uncertainty Quantification",
+      "evidence": "Commonsense inference assesses reasoning about relationships using background knowledge in language ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Dialogue Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Benchmarking LLMs via Uncertainty Quantification",
+      "evidence": "DRS measures comprehension of dialogues and selection of coherent, contextually appropriate responses ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Document Summarization Ability",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Benchmarking LLMs via Uncertainty Quantification",
+      "evidence": "Summarization requires understanding document content and producing cohesive summaries ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-Context Learning",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Benchmarking LLMs via Uncertainty Quantification",
+      "evidence": "Adding demonstrations improves accuracy on average, substantiating the effectiveness of in‑context prompting to stimulate capabilities ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Query Generation",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "SearchLVLMs: A Plug-and-Play Framework for Augmenting Large Vision-Language Models by Searching Up-to-Date Internet Knowledge",
+      "evidence": "LLMs’ language understanding is used to extract informative queries from questions ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multiple-Choice Question Answering",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Parameter Competition Balancing for Model Merging",
+      "evidence": "QA is listed among the variety of NLP domains evaluated."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Question Answering Ability",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Parameter Competition Balancing for Model Merging",
+      "evidence": "QA is listed among the variety of NLP domains evaluated."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Paraphrase Identification Ability",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Parameter Competition Balancing for Model Merging",
+      "evidence": "Paraphrase identification is one of the NLP domains evaluated."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Natural Language Inference Ability",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Parameter Competition Balancing for Model Merging",
+      "evidence": "NLI is included among evaluated NLP domains in the PEFT tasks."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Coreference Resolution Ability",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Parameter Competition Balancing for Model Merging",
+      "evidence": "Coreference resolution is listed among evaluated NLP domains."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Sentence Completion Ability",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Parameter Competition Balancing for Model Merging",
+      "evidence": "Sentence completion is listed among evaluated NLP domains."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Word Sense Disambiguation Ability",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Parameter Competition Balancing for Model Merging",
+      "evidence": "WSD is included among the PEFT tasks used for evaluation."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Sentiment Analysis Ability",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Parameter Competition Balancing for Model Merging",
+      "evidence": "Sentiment/emotion classification tasks are used in cross-domain and OOD evaluation."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Grammatical Acceptability Judgment",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Parameter Competition Balancing for Model Merging",
+      "evidence": "CoLA is included as a text classification task judging grammaticality."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Average Performance: 7 NLP Tasks (T5-base/large)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Parameter Competition Balancing for Model Merging",
+      "evidence": "Seven NLP tasks (QA, paraphrase, sentence completion, coreference) provide a multi-domain measure of language understanding."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LAMBADA-OpenAI",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Dataset Decomposition: Faster LLM Training with Variable Sequence Length Curriculum",
+      "evidence": "LAMBADA‑OpenAI is listed under Language Understanding."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HellaSwag (0-shot)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Dataset Decomposition: Faster LLM Training with Variable Sequence Length Curriculum",
+      "evidence": "HellaSwag (0‑shot) is included under Language Understanding."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Winograd (3-shot)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Dataset Decomposition: Faster LLM Training with Variable Sequence Length Curriculum",
+      "evidence": "Winograd (3‑shot) is included under Language Understanding."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande 5-shot Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Dataset Decomposition: Faster LLM Training with Variable Sequence Length Curriculum",
+      "evidence": "WinoGrande (5‑shot) is included under Language Understanding."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Goal Translation",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "KALM: Knowledgeable Agents by Offline Reinforcement Learning from Large Language Model Rollouts",
+      "evidence": "Grounding is framed as instruction-following; LLM follows instructions to produce translations."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Rollout Explanation Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "KALM: Knowledgeable Agents by Offline Reinforcement Learning from Large Language Model Rollouts",
+      "evidence": "Explanation accuracy >85% on unseen prompts demonstrates retained language understanding."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "interdependent",
+      "paper": "Learning to Reason via Program Generation, Emulation, and Search",
+      "evidence": "The evaluation spans classification tasks (acceptability, sentiment, emotion) alongside reasoning datasets, reflecting intertwined language understanding and reasoning in task completion ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Syntactic Acceptability Judgment",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Learning to Reason via Program Generation, Emulation, and Search",
+      "evidence": "CoLA measures acceptability judgments, a facet of language understanding ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Sentiment Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Learning to Reason via Program Generation, Emulation, and Search",
+      "evidence": "SST-2 measures sentiment polarity classification, part of language understanding ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Emotion Recognition",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Learning to Reason via Program Generation, Emulation, and Search",
+      "evidence": "Emotion (CARER) measures emotion classification from text ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multimodal Grounding (Language+Image)",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Grounded Answers for Multi-agent Decision-making Problem through Generative World Model",
+      "evidence": "A parser converts each trajectory to a task description using natural language to condition models."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Simulation-Based Planning via World Models",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Grounded Answers for Multi-agent Decision-making Problem through Generative World Model",
+      "evidence": "Task description L is used for hindsight relabeling and reward learning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Diffusion of Thought: Chain-of-Thought Reasoning in Diffusion Language Models",
+      "evidence": "GSM8K also requires language understanding, so accuracy reflects this construct too ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Diffusion of Thought: Chain-of-Thought Reasoning in Diffusion Language Models",
+      "evidence": "GSM8K also requires language understanding, so accuracy reflects this construct too ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8k (Natural Language)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Diffusion of Thought: Chain-of-Thought Reasoning in Diffusion Language Models",
+      "evidence": "GSM8K also requires language understanding, so accuracy reflects this construct too ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "interdependent",
+      "paper": "Diffusion of Thought: Chain-of-Thought Reasoning in Diffusion Language Models",
+      "evidence": "GSM8K performance depends on both mathematical reasoning and language understanding ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "interdependent",
+      "paper": "Diffusion of Thought: Chain-of-Thought Reasoning in Diffusion Language Models",
+      "evidence": "GSM8K performance depends on both mathematical reasoning and language understanding ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language Representation",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "MambaTree: Tree Topology is All You Need in State Space Model",
+      "evidence": "The paper links enhanced language representation (via MambaTreeL) to \"consistent improvements\" on language model benchmarks, indicating downstream language understanding gains."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MambaTree: Tree Topology is All You Need in State Space Model",
+      "evidence": "Commonsense‑oriented benchmarks (ARC‑Easy, PIQA, WinoGrande) are part of the language evaluation suite used, indicating this as a sub‑facet of language understanding."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reading Comprehension",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MambaTree: Tree Topology is All You Need in State Space Model",
+      "evidence": "RACE is evaluated among language tasks, indicating reading comprehension as a component of broader language understanding."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Sentiment Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MambaTree: Tree Topology is All You Need in State Space Model",
+      "evidence": "SST appears in the language benchmark suite as a sentiment classification task, a sub‑capability of language understanding."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Question Answering",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MambaTree: Tree Topology is All You Need in State Space Model",
+      "evidence": "OpenBookQA and ARC‑Easy are evaluated as language model benchmarks, positioning QA within language understanding."
+    }
+  ],
+  "relationship_count": 175,
+  "incoming_relationship_count": 66,
+  "outgoing_relationship_count": 109
+}

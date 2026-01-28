@@ -1,0 +1,180 @@
+{
+  "canonical_name": "HumanEval Score (%)",
+  "type": "measurement",
+  "canonical_definition": "HumanEval is a code generation/function synthesis benchmark that evaluates the functional correctness of generated code against hidden test cases. It presents programming problems where models must synthesize complete functions to satisfy specified behaviors, assessing core coding capabilities like algorithm implementation, API usage, and problem decomposition. Some papers frame it with Pass@k metrics (notably Pass@1) while others report normalized accuracy scores, but the benchmark fundamentally measures code generation correctness through executable test validation.",
+  "expert_reviewed": false,
+  "names": [
+    "HumanEval",
+    "HumanEval Accuracy",
+    "HumanEval Accuracy (%)",
+    "HumanEval Accuracy (normalized)",
+    "HumanEval Score (%)",
+    "HumanEval(+) Accuracy (%)",
+    "MBPP(+) Accuracy (%)"
+  ],
+  "papers": [
+    "$\\texttt{Model-GLUE}$: Democratized LLM Scaling for A Large Model Zoo in the Wild",
+    "AlchemistCoder: Harmonizing and Eliciting Code Capability by Hindsight Tuning on Multi-source Data",
+    "Bridging The Gap between Low-rank and Orthogonal Adaptation via Householder Reflection Adaptation",
+    "Compact Language Models via Pruning and Knowledge Distillation",
+    "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning",
+    "DDK: Distilling Domain Knowledge for Efficient Large Language Models",
+    "Instruction Tuning With Loss Over Instructions",
+    "MAGIS: LLM-Based Multi-Agent Framework for GitHub Issue Resolution",
+    "MAmmoTH2: Scaling Instructions from the Web",
+    "Observational Scaling Laws and the Predictability of Langauge Model Performance"
+  ],
+  "paper_count": 10,
+  "group_ids": [
+    1118,
+    1431,
+    2062,
+    2519,
+    2915,
+    2932,
+    3206,
+    3540,
+    3666,
+    5031
+  ],
+  "definitions": [
+    {
+      "text": "Coding problem correctness score HumanEval Score (%)",
+      "paper": "Bridging The Gap between Low-rank and Orthogonal Adaptation via Householder Reflection Adaptation"
+    },
+    {
+      "text": "Code generation from problem prompts (test) HumanEval Reported score (%)",
+      "paper": "DDK: Distilling Domain Knowledge for Efficient Large Language Models"
+    },
+    {
+      "text": "Code generation/functional correctness benchmark . HumanEval Pass@k/Accuracy",
+      "paper": "Instruction Tuning With Loss Over Instructions"
+    },
+    {
+      "text": "Code generation/function synthesis evaluation HumanEval Accuracy (%)",
+      "paper": "Compact Language Models via Pruning and Knowledge Distillation"
+    },
+    {
+      "text": "Code generation tasks; average accuracy metric reported HumanEval(+) Accuracy (%)",
+      "paper": "MAmmoTH2: Scaling Instructions from the Web"
+    },
+    {
+      "text": "Code generation tasks; average accuracy metric reported MBPP(+) Accuracy (%)",
+      "paper": "MAmmoTH2: Scaling Instructions from the Web"
+    },
+    {
+      "text": "Mainstream code-generation benchmark evaluating function synthesis against hidden tests. HumanEval Score (%)",
+      "paper": "AlchemistCoder: Harmonizing and Eliciting Code Capability by Hindsight Tuning on Multi-source Data"
+    },
+    {
+      "text": "Function-level code generation performance. HumanEval Score (%) (e.g., GPT-4 score 67.0) .",
+      "paper": "MAGIS: LLM-Based Multi-Agent Framework for GitHub Issue Resolution"
+    },
+    {
+      "text": "Code generation correctness on programming problems HumanEval Accuracy (%)",
+      "paper": "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning"
+    },
+    {
+      "text": "Code synthesis/function completion. HumanEval Score/Pass@1 (%) as reported",
+      "paper": "$\\texttt{Model-GLUE}$: Democratized LLM Scaling for A Large Model Zoo in the Wild"
+    },
+    {
+      "text": "Programming problem solving quality HumanEval Pass@1 accuracy normalized to [0,1]",
+      "paper": "Observational Scaling Laws and the Predictability of Langauge Model Performance"
+    }
+  ],
+  "definition_count": 11,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Coding Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Bridging The Gap between Low-rank and Orthogonal Adaptation via Householder Reflection Adaptation",
+      "evidence": "HumanEval is included as a coding task in the post-finetuning evaluation."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge Retention after Fine-tuning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Bridging The Gap between Low-rank and Orthogonal Adaptation via Householder Reflection Adaptation",
+      "evidence": "HumanEval post‑tuning results are used to check retention in coding ability; HRA shows less degradation than LoRA (Table 3)."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code Reasoning (Program Synthesis)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "DDK: Distilling Domain Knowledge for Efficient Large Language Models",
+      "evidence": "HumanEval (test) is used to measure code generation ability  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Coding Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Instruction Tuning With Loss Over Instructions",
+      "evidence": "HumanEval is included under Math & Coding Reasoning in the evaluation ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code Generation",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Compact Language Models via Pruning and Knowledge Distillation",
+      "evidence": "Accuracy on HumanEval is used in the paper’s analyses and aligns with evaluating LLMs trained on code."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code Generation",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "MAmmoTH2: Scaling Instructions from the Web",
+      "evidence": "HumanEval(+) average accuracy reported to summarize code generation performance ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code Generation",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "MAmmoTH2: Scaling Instructions from the Web",
+      "evidence": "MBPP(+) average accuracy reported alongside HumanEval(+) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code Generation",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "AlchemistCoder: Harmonizing and Eliciting Code Capability by Hindsight Tuning on Multi-source Data",
+      "evidence": "Performance is reported on mainstream code benchmarks, HumanEval and MBPP."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Function-level Code Generation",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "MAGIS: LLM-Based Multi-Agent Framework for GitHub Issue Resolution",
+      "evidence": "LLMs excel at function-level code generation; GPT-4 scored 67.0 on HumanEval ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code Generation",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning",
+      "evidence": "HumanEval is used to evaluate code generation ability"
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Coding Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "$\\texttt{Model-GLUE}$: Democratized LLM Scaling for A Large Model Zoo in the Wild",
+      "evidence": "HumanEval is used as a coding benchmark in the reported results ."
+    }
+  ],
+  "relationship_count": 11,
+  "incoming_relationship_count": 11,
+  "outgoing_relationship_count": 0
+}

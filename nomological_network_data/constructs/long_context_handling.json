@@ -1,0 +1,225 @@
+{
+  "canonical_name": "Long-Context Handling",
+  "type": "construct",
+  "canonical_definition": "Long-Context Handling refers to the ability of models to retain, utilize, and reason over extended input histories or generate long outputs without degradation in performance, often involving mitigation of context-length limitations, attention dilution, or \"lost in the middle\" failures. While some definitions emphasize maintaining effective attention mechanisms or position-aware scaling as context length increases, others focus on operational challenges like handling iterative feedback, video-language histories, or sequence modeling beyond fixed window limits. Disagreements arise in scope, with certain works narrowing the construct to input/output length constraints, while others address broader memory and attention dynamics in long-sequence tasks.",
+  "expert_reviewed": false,
+  "names": [
+    "Long-Context Handling",
+    "Long-context Handling"
+  ],
+  "papers": [
+    "AutoSurvey: Large Language Models Can Automatically Write Surveys",
+    "CiteME: Can Language Models Accurately Cite Scientific Claims?",
+    "DARG: Dynamic Evaluation of Large Language Models via Adaptive Reasoning Graph",
+    "FactorSim: Generative Simulation via Factorized Representation",
+    "MiniCache: KV Cache Compression in Depth Dimension for Large Language Models",
+    "NYU CTF Bench: A Scalable Open-Source Benchmark Dataset for Evaluating LLMs in Offensive Security",
+    "Orchid: Flexible and Data-Dependent Convolution for Sequence Modeling",
+    "Selective Attention: Enhancing Transformer through Principled Context Control",
+    "TEG-DB: A Comprehensive Dataset and Benchmark of Textual-Edge Graphs",
+    "Verified Code Transpilation with LLMs",
+    "VideoLLM-MoD: Efficient Video-Language Streaming with Mixture-of-Depths Vision Computation"
+  ],
+  "paper_count": 11,
+  "group_ids": [
+    198,
+    364,
+    540,
+    649,
+    741,
+    1903,
+    2556,
+    2899,
+    3239,
+    4154,
+    4365
+  ],
+  "definitions": [
+    {
+      "text": "Ability to maintain and use relevant information over long prompts and histories; long contexts and context limits can degrade performance. ",
+      "paper": "CiteME: Can Language Models Accurately Cite Scientific Claims?"
+    },
+    {
+      "text": "Capability to understand and generate text in long-context scenarios, mitigating input/output window limitations.  ",
+      "paper": "AutoSurvey: Large Language Models Can Automatically Write Surveys"
+    },
+    {
+      "text": "Orchid extends the feasible sequence length beyond the limitations of dense attention layers. ",
+      "paper": "Orchid: Flexible and Data-Dependent Convolution for Sequence Modeling"
+    },
+    {
+      "text": "Capacity to operate effectively without exceeding context length limits. ",
+      "paper": "NYU CTF Bench: A Scalable Open-Source Benchmark Dataset for Evaluating LLMs in Offensive Security"
+    },
+    {
+      "text": "Using large, detailed contexts without losing relevant information; mitigating ‘lost in the middle’ failures. ",
+      "paper": "FactorSim: Generative Simulation via Factorized Representation"
+    },
+    {
+      "text": "Ability to retain and utilize long video‑language histories; the method supports 1.7× longer context in inference .",
+      "paper": "VideoLLM-MoD: Efficient Video-Language Streaming with Mixture-of-Depths Vision Computation"
+    },
+    {
+      "text": "Capability to maintain effective attention as context length grows; position-aware temperature scaling helps mitigate dilution of attention scores  .",
+      "paper": "Selective Attention: Enhancing Transformer through Principled Context Control"
+    },
+    {
+      "text": "Ability to effectively process prompts that include many DSL operators and iterative feedback. ",
+      "paper": "Verified Code Transpilation with LLMs"
+    },
+    {
+      "text": "Capacity to process long inputs; context-window limits reduce effectiveness in encoding node and edge text for TEGs. ",
+      "paper": "TEG-DB: A Comprehensive Dataset and Benchmark of Textual-Edge Graphs"
+    },
+    {
+      "text": "Ability to handle longer inputs and/or longer required outputs; models \"still suffer from long context\" in such settings .",
+      "paper": "DARG: Dynamic Evaluation of Large Language Models via Adaptive Reasoning Graph"
+    },
+    {
+      "text": "Ability to maintain quality in long-sequence generation tasks .",
+      "paper": "MiniCache: KV Cache Compression in Depth Dimension for Large Language Models"
+    }
+  ],
+  "definition_count": 11,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Scientific Text Understanding",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "CiteME: Can Language Models Accurately Cite Scientific Claims?",
+      "evidence": "Long prompts and context window limits degrade information use, harming attribution."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CiteAgent Configuration Sensitivity - GPT-4o",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "CiteME: Can Language Models Accurately Cite Scientific Claims?",
+      "evidence": "Increased prompt length can complicate detection of important information; limited context caused large drops for LLaMA."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Literature Synthesis",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "AutoSurvey: Large Language Models Can Automatically Write Surveys",
+      "evidence": "Creating long surveys requires handling long contexts, a central challenge addressed by AutoSurvey."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Citation Recall (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "AutoSurvey: Large Language Models Can Automatically Write Surveys",
+      "evidence": "Stable and near-human citation quality at 64k tokens evidences effective long-context handling."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Citation Precision (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "AutoSurvey: Large Language Models Can Automatically Write Surveys",
+      "evidence": "Precision remains high at long lengths, approaching human performance."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Associative Recall Task Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Orchid: Flexible and Data-Dependent Convolution for Sequence Modeling",
+      "evidence": "Orchid successfully learns associative recall with sequences up to 131K tokens, indicating long-context handling."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Token Exceeded Failure Rate (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "NYU CTF Bench: A Scalable Open-Source Benchmark Dataset for Evaluating LLMs in Offensive Security",
+      "evidence": "Models with larger context lengths show drastic reduction in 'Token exceeded' failures."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Context Management / Contextual Relevance Selection",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "FactorSim: Generative Simulation via Factorized Representation",
+      "evidence": "Selecting minimal relevant states reduces dependence on large contexts, mitigating ‘lost in the middle’ issues."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Online Video Understanding",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "VideoLLM-MoD: Efficient Video-Language Streaming with Mixture-of-Depths Vision Computation",
+      "evidence": "Online video LLMs must process every frame to maintain complete visual and linguistic historical contexts  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Inference Context Length Support",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "VideoLLM-MoD: Efficient Video-Language Streaming with Mixture-of-Depths Vision Computation",
+      "evidence": "By reducing KV cache, the method supports 1.7× longer context in inference  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Position-aware Temperature Scaling",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Selective Attention: Enhancing Transformer through Principled Context Control",
+      "evidence": "A position-dependent temperature term is shown to mitigate dilution of attention scores as context length increases ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Tensor Processing Lifting (Two-phase)",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "Verified Code Transpilation with LLMs",
+      "evidence": "Prompts include all DSL operators and feedback; larger models manage long-context tasks more effectively."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Zero-Shot Invariant Inference (Tensor)",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "Verified Code Transpilation with LLMs",
+      "evidence": "Larger models manage long-context prompts with all DSL operators and feedback."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Text Representation Ability",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "TEG-DB: A Comprehensive Dataset and Benchmark of Textual-Edge Graphs",
+      "evidence": "Context-window limits impact effectiveness of encoding node and edge text in TEGs."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BBH Dyck Language Exact Match vs Nodes",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "DARG: Dynamic Evaluation of Large Language Models via Adaptive Reasoning Graph",
+      "evidence": "Authors note models \"still suffer from long context with either longer input or longer required output\" as nodes increase ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LongBench Average Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MiniCache: KV Cache Compression in Depth Dimension for Large Language Models",
+      "evidence": "LongBench is used to assess long-sequence generation performance and quality ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Memory Efficiency",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "MiniCache: KV Cache Compression in Depth Dimension for Large Language Models",
+      "evidence": "Optimizing KV-cache memory demand enhances long-context generation quality and scalability for real-world applications  ."
+    }
+  ],
+  "relationship_count": 17,
+  "incoming_relationship_count": 5,
+  "outgoing_relationship_count": 12
+}

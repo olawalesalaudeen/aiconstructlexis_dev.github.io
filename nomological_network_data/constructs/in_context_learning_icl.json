@@ -1,0 +1,950 @@
+{
+  "canonical_name": "In-Context Learning (ICL)",
+  "type": "construct",
+  "canonical_definition": "In-Context Learning (ICL) is the capability of pre-trained large language models (LLMs) to perform new tasks by leveraging input–output demonstrations or exemplars provided within the prompt context during inference, without parameter updates or fine-tuning. This ability relies on prepending task-related examples to the query, enabling the model to acquire task-relevant skills within the context window through mechanisms such as attention to demonstration content. While often operationalized as few-shot learning (requiring limited examples), some definitions extend it to zero-shot scenarios, emphasizing its parameter-free nature and emergence with increased training task diversity. Disagreements exist in scope, with some authors focusing on strict demonstration-guided adaptation versus broader context-driven skill acquisition.",
+  "expert_reviewed": false,
+  "names": [
+    "In-Context Learning (ICL)"
+  ],
+  "papers": [
+    "A Theoretical Understanding of Self-Correction through In-context Alignment",
+    "ALI-Agent: Assessing LLMs'  Alignment with Human Values via Agent-based Evaluation",
+    "AP-Adapter: Improving Generalization of Automatic Prompts on Unseen Text-to-Image Diffusion Models",
+    "BERTs are Generative In-Context Learners",
+    "Chain of Thoughtlessness? An Analysis of CoT in Planning",
+    "Fine-grained Analysis of In-context Linear Estimation: Data, Architecture, and Beyond",
+    "From Unstructured Data to In-Context Learning: Exploring What Tasks Can Be Learned and When",
+    "How Transformers Utilize Multi-Head Attention in In-Context Learning? A Case Study on Sparse Linear Regression",
+    "Instruction Embedding: Latent Representations of Instructions Towards Task Identification",
+    "Knowledge Circuits in Pretrained Transformers",
+    "Learning to grok: Emergence of in-context learning and skill composition in modular arithmetic tasks",
+    "Linking In-context Learning in Transformers to Human Episodic Memory",
+    "Many-Shot In-Context Learning",
+    "Mixture of Demonstrations for In-Context Learning",
+    "Probing the Decision Boundaries of In-context Learning in Large Language Models",
+    "Prompt Optimization with EASE? Efficient Ordering-aware Automated Selection of Exemplars",
+    "Provably Transformers Harness Multi-Concept Word Semantics for Efficient In-Context Learning",
+    "SeafloorAI: A Large-scale Vision-Language Dataset for Seafloor Geological Survey",
+    "Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization",
+    "The Closeness of In-Context Learning and Weight Shifting for Softmax Regression",
+    "Towards Understanding How Transformers Learn In-context Through a Representation Learning Lens",
+    "Towards a Theoretical Understanding of the 'Reversal Curse' via Training Dynamics",
+    "Transformers are Minimax Optimal Nonparametric In-Context Learners",
+    "UniAudio 1.5: Large Language Model-Driven Audio Codec is A Few-Shot Audio Task Learner",
+    "What Factors Affect Multi-Modal In-Context Learning? An In-Depth Exploration"
+  ],
+  "paper_count": 25,
+  "group_ids": [
+    122,
+    450,
+    1014,
+    1024,
+    1217,
+    1239,
+    1306,
+    1570,
+    2153,
+    2633,
+    2969,
+    3176,
+    3316,
+    3900,
+    3901,
+    4178,
+    4179,
+    4197,
+    4399,
+    4477,
+    4584,
+    4663,
+    4741,
+    5180,
+    5454,
+    5578,
+    5746
+  ],
+  "definitions": [
+    {
+      "text": "Ability to learn and perform a new task from instructions and a few demonstrations without parameter updates, as applied to frozen LLMs .",
+      "paper": "UniAudio 1.5: Large Language Model-Driven Audio Codec is A Few-Shot Audio Task Learner"
+    },
+    {
+      "text": "Learning from input–output examples provided in the prompt at inference, without any weight updates .",
+      "paper": "Many-Shot In-Context Learning"
+    },
+    {
+      "text": "Capability to use additional context in the prompt to acquire task-relevant skills within the context window .",
+      "paper": "Chain of Thoughtlessness? An Analysis of CoT in Planning"
+    },
+    {
+      "text": "Capability to leverage demonstrations at inference time; improved when demonstrations are task-related in format and content .",
+      "paper": "Instruction Embedding: Latent Representations of Instructions Towards Task Identification"
+    },
+    {
+      "text": "Optimizing task performance by incorporating demonstrations into input prompts. ",
+      "paper": "What Factors Affect Multi-Modal In-Context Learning? An In-Depth Exploration"
+    },
+    {
+      "text": "Using exemplars/demonstrations in the prompt to guide the LLM to handle the current task; exemplars enable ICL and are prepended with instructions before the query .",
+      "paper": "Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization"
+    },
+    {
+      "text": "Capability of LLMs to achieve significant performance improvements when provided with a limited number of demonstration examples during inference, without updating model parameters. ",
+      "paper": "Mixture of Demonstrations for In-Context Learning"
+    },
+    {
+      "text": "LLM ability to use semantically similar demonstrations to guide generation of reliable keyword prompts for text-to-image models  .",
+      "paper": "AP-Adapter: Improving Generalization of Automatic Prompts on Unseen Text-to-Image Diffusion Models"
+    },
+    {
+      "text": "Capability of a pre-trained large language model to perform new tasks from a few demonstration examples without any parameter updates by prepending examples to the query input. ",
+      "paper": "Towards Understanding How Transformers Learn In-context Through a Representation Learning Lens"
+    },
+    {
+      "text": "Emergent ability to learn from a few demonstrations without finetuning. ",
+      "paper": "A Theoretical Understanding of Self-Correction through In-context Alignment"
+    },
+    {
+      "text": "Solving tasks using contextual examples at inference time (e.g., zero-shot/few-shot) to handle multi-step reasoning. ",
+      "paper": "Towards a Theoretical Understanding of the 'Reversal Curse' via Training Dynamics"
+    },
+    {
+      "text": "Ability to adapt from few-shot input–output examples to produce domain-aligned descriptions and Q&A. ",
+      "paper": "SeafloorAI: A Large-scale Vision-Language Dataset for Seafloor Geological Survey"
+    },
+    {
+      "text": "Ability to infer and perform tasks from prompts and examples without any finetuning .",
+      "paper": "BERTs are Generative In-Context Learners"
+    },
+    {
+      "text": "Ability to solve tasks from examples provided in the prompt; OOD ICL ability emerges as the number of training tasks increases .",
+      "paper": "Learning to grok: Emergence of in-context learning and skill composition in modular arithmetic tasks"
+    },
+    {
+      "text": "LLMs can perform tasks absent from training via in‑context learning .",
+      "paper": "Learning to grok: Emergence of in-context learning and skill composition in modular arithmetic tasks"
+    },
+    {
+      "text": "Without further parameter updates, Transformers can learn to predict based on few in-context examples. ",
+      "paper": "The Closeness of In-Context Learning and Weight Shifting for Softmax Regression"
+    },
+    {
+      "text": "LLMs can generalize to new tasks with only a few demonstration examples in the prompt. ",
+      "paper": "The Closeness of In-Context Learning and Weight Shifting for Softmax Regression"
+    },
+    {
+      "text": "Ability of pretrained LLMs to perform a new task from a few examples within the prompt, without parameter updates or fine-tuning .",
+      "paper": "Transformers are Minimax Optimal Nonparametric In-Context Learners"
+    },
+    {
+      "text": "Transformer capability to solve new tasks after prompting with a few context examples, without further parameter training .",
+      "paper": "How Transformers Utilize Multi-Head Attention in In-Context Learning? A Case Study on Sparse Linear Regression"
+    },
+    {
+      "text": "Ability to use retrieved evaluation records as in-context demonstrations to adapt scenario generation to the current misconduct.  ",
+      "paper": "ALI-Agent: Assessing LLMs'  Alignment with Human Values via Agent-based Evaluation"
+    },
+    {
+      "text": "Ability to learn from a few demonstrations and make predictions on new queries without further fine-tuning .",
+      "paper": "Provably Transformers Harness Multi-Concept Word Semantics for Efficient In-Context Learning"
+    },
+    {
+      "text": "Ability of an LLM to learn from a handful of input–label demonstrations included in the prompt to perform a downstream task without fine-tuning .",
+      "paper": "Prompt Optimization with EASE? Efficient Ordering-aware Automated Selection of Exemplars"
+    },
+    {
+      "text": "Ability to use demonstrations to quickly produce correct responses; associated with newly activated attention heads that focus on demonstration content (e.g., induction-like heads) .",
+      "paper": "Knowledge Circuits in Pretrained Transformers"
+    },
+    {
+      "text": "Ability of a language model to learn from demonstrations in its context window to make predictions for a query instance  .",
+      "paper": "Fine-grained Analysis of In-context Linear Estimation: Data, Architecture, and Beyond"
+    },
+    {
+      "text": "Mechanism enabling LLMs to generalize to new tasks by conditioning on input–output exemplars in the prompt without explicit parameter updates.  ",
+      "paper": "Probing the Decision Boundaries of In-context Learning in Large Language Models"
+    },
+    {
+      "text": "Ability of an LLM to perform new tasks during test time using only the input context, without fine-tuning or task-specific training .",
+      "paper": "Linking In-context Learning in Transformers to Human Episodic Memory"
+    },
+    {
+      "text": "Capability of an LLM to make predictions for new tasks from prompt exemplars without parameter updates.",
+      "paper": "From Unstructured Data to In-Context Learning: Exploring What Tasks Can Be Learned and When"
+    }
+  ],
+  "definition_count": 27,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Cross-Modal In-Context Learning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "UniAudio 1.5: Large Language Model-Driven Audio Codec is A Few-Shot Audio Task Learner",
+      "evidence": "LLM-Codec maps audio to LLM token space to enable few-shot audio tasks with frozen LLMs, i.e., ICL applied cross-modally  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction Following",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "UniAudio 1.5: Large Language Model-Driven Audio Codec is A Few-Shot Audio Task Learner",
+      "evidence": "Task induction (explicit instructions) is crucial in the few-shot setup; performance drops without it ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "UniAudio 1.5: Large Language Model-Driven Audio Codec is A Few-Shot Audio Task Learner",
+      "evidence": "Task induction (explicit instructions) is crucial in the few-shot setup; performance drops without it ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Many-shot In-Context Learning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-specialization-of",
+      "paper": "Many-Shot In-Context Learning",
+      "evidence": "Defined as ICL with hundreds or thousands of shots ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reinforced In-Context Learning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-specialization-of",
+      "paper": "Many-Shot In-Context Learning",
+      "evidence": "Uses model-generated rationales in place of human ones ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Unsupervised In-Context Learning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-specialization-of",
+      "paper": "Many-Shot In-Context Learning",
+      "evidence": "Removes rationales; prompts with domain inputs only ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-Context Algorithm Learning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Chain of Thoughtlessness? An Analysis of CoT in Planning",
+      "evidence": "CoT demonstrations operationalize ICL by purporting to teach procedures from examples ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Demonstrations Retrieval for ICL (IFT-test)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Instruction Embedding: Latent Representations of Instructions Towards Task Identification",
+      "evidence": "ICL quality is assessed after retrieving top-2 task-related demonstrations via cosine similarity and evaluating on IFT-test ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Demonstrations Retrieval for ICL (AlpacaEval)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Instruction Embedding: Latent Representations of Instructions Towards Task Identification",
+      "evidence": "ICL performance is also measured on AlpacaEval after demonstration retrieval based on instruction embeddings ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multi-Modal In-Context Learning (MM-ICL)",
+      "other_type": "constructs",
+      "relationship_type": "is-a-subtype-of",
+      "paper": "What Factors Affect Multi-Modal In-Context Learning? An In-Depth Exploration",
+      "evidence": "MM-ICL employs demonstrations in prompts, extending ICL to multi-modal inputs."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization",
+      "evidence": "Optimized exemplars (ICL) generalize better than optimized instructions across model‑task combinations considered ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BBH Aggregate Test Accuracy (PaLM 2) (%)",
+      "other_type": "measurements",
+      "relationship_type": "predicts",
+      "paper": "Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization",
+      "evidence": "Using optimized exemplars substantially increases average test accuracy over >20 tasks (Fig. 1) and even modest exemplar strategies outperform SoTA IO in many cases; three optimized exemplars can beat twenty random ones  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SST-5 Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Mixture of Demonstrations for In-Context Learning",
+      "evidence": "ICL performance is evaluated on classification datasets using accuracy."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MRPC Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Mixture of Demonstrations for In-Context Learning",
+      "evidence": "Accuracy is used for classification tasks under ICL evaluation."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MNLI",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Mixture of Demonstrations for In-Context Learning",
+      "evidence": "Accuracy is used for classification tasks under ICL evaluation."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "QNLI Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Mixture of Demonstrations for In-Context Learning",
+      "evidence": "Accuracy is used for classification tasks under ICL evaluation."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MNLI",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Mixture of Demonstrations for In-Context Learning",
+      "evidence": "Accuracy is used for classification tasks under ICL evaluation."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CommonsenseQA (CMSQA) Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Mixture of Demonstrations for In-Context Learning",
+      "evidence": "Accuracy is used for classification tasks under ICL evaluation."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HellaSwag Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Mixture of Demonstrations for In-Context Learning",
+      "evidence": "Accuracy is used for classification tasks under ICL evaluation."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WebQuestions EM (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Mixture of Demonstrations for In-Context Learning",
+      "evidence": "EM is used for generation tasks under ICL evaluation."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GeoQuery EM",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Mixture of Demonstrations for In-Context Learning",
+      "evidence": "EM is used for generation tasks under ICL evaluation."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "NL2Bash EM",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Mixture of Demonstrations for In-Context Learning",
+      "evidence": "EM is used for generation tasks under ICL evaluation."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Break LF-EM",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Mixture of Demonstrations for In-Context Learning",
+      "evidence": "Break is evaluated with LF‑EM under the ICL setting."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MTOP EM",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Mixture of Demonstrations for In-Context Learning",
+      "evidence": "EM is used for generation tasks under ICL evaluation."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SMCalFlow EM",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Mixture of Demonstrations for In-Context Learning",
+      "evidence": "EM is used for generation tasks under ICL evaluation; SMCalFlow is a semantic parsing benchmark."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Robustness to Demonstration Selection",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Mixture of Demonstrations for In-Context Learning",
+      "evidence": "ICL is highly sensitive to the selection of in‑context demonstrations; suboptimal choices can harm performance."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Prompt Translation to Keyword Prompts",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "AP-Adapter: Improving Generalization of Automatic Prompts on Unseen Text-to-Image Diffusion Models",
+      "evidence": "The method leverages the ICL capability of LLMs to generate automatic keyword prompts similar to manually crafted prompts ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Demonstration Selection Quality",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "AP-Adapter: Improving Generalization of Automatic Prompts on Unseen Text-to-Image Diffusion Models",
+      "evidence": "Semantically similar demonstrations exhibit higher ICL performance; top-k similar demos are retrieved to guide the LLM  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Representation Learning (as explanatory lens)",
+      "other_type": "constructs",
+      "relationship_type": "explained-by",
+      "paper": "Towards Understanding How Transformers Learn In-context Through a Representation Learning Lens",
+      "evidence": "The paper explores ICL through a representation learning lens via a dual model of attention."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Gradient Descent Emulation in ICL",
+      "other_type": "constructs",
+      "relationship_type": "equivalent-to",
+      "paper": "Towards Understanding How Transformers Learn In-context Through a Representation Learning Lens",
+      "evidence": "The ICL inference process of one softmax attention layer aligns with the gradient descent process of its dual model, producing equivalent test predictions."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Generalization in ICL",
+      "other_type": "constructs",
+      "relationship_type": "has-dimension",
+      "paper": "Towards Understanding How Transformers Learn In-context Through a Representation Learning Lens",
+      "evidence": "Generalization within ICL is analyzed via a bound as a function of demonstrations."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Optimization Efficiency in ICL (Convergence Speed)",
+      "other_type": "constructs",
+      "relationship_type": "has-dimension",
+      "paper": "Towards Understanding How Transformers Learn In-context Through a Representation Learning Lens",
+      "evidence": "Experiments evaluate how attention-layer modifications impact convergence speed during ICL-like inference."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-Context Alignment (ICA)",
+      "other_type": "constructs",
+      "relationship_type": "is-a",
+      "paper": "A Theoretical Understanding of Self-Correction through In-context Alignment",
+      "evidence": "ICA is presented as an in-context way to solve alignment tasks, i.e., a specialization within ICL."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Logical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Towards a Theoretical Understanding of the 'Reversal Curse' via Training Dynamics",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Domain-Specific Language Adaptation",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "SeafloorAI: A Large-scale Vision-Language Dataset for Seafloor Geological Survey",
+      "evidence": "ICL ensures GPT‑4 can accurately mimic domain-specific language."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generative In-Context Text Completion",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "BERTs are Generative In-Context Learners",
+      "evidence": "The paper frames two ways to solve ICL tasks: text generation (prompt completion) and ranking ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-Context Multiple-Choice Answer Selection (Ranking)",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "BERTs are Generative In-Context Learners",
+      "evidence": "ICL can also be solved via ranking candidate answers using pseudo log-likelihood with MLMs ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Natural Questions (NQ) Closed-Book QA",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "BERTs are Generative In-Context Learners",
+      "evidence": "Performance improves with more in-context examples, especially for exact-match QA tasks ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TriviaQA (wiki) Closed-Book QA",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "BERTs are Generative In-Context Learners",
+      "evidence": "Performance improves with more in-context examples, especially for exact-match QA tasks ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WebQuestions (WebQs) Closed-Book QA",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "BERTs are Generative In-Context Learners",
+      "evidence": "Performance improves with more in-context examples, especially for exact-match QA tasks ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Length Generalization (Long-Context Processing)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "BERTs are Generative In-Context Learners",
+      "evidence": "Handling longer sequences is crucial for processing long few-shot prompts in ICL ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Task Inference from Context",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Learning to grok: Emergence of in-context learning and skill composition in modular arithmetic tasks",
+      "evidence": "With many pretraining tasks, the task vector is determined at inference time from context ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Modular Arithmetic ICL Accuracy (k-shot)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Learning to grok: Emergence of in-context learning and skill composition in modular arithmetic tasks",
+      "evidence": "k‑shot accuracy curves quantify ICL sample complexity in the OOD‑generalizing phase ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Emergence vs Pretraining Task Diversity",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Learning to grok: Emergence of in-context learning and skill composition in modular arithmetic tasks",
+      "evidence": "OOD ICL emerges as the number of training tasks increases ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Softmax-Normalized Attention",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "The Closeness of In-Context Learning and Weight Shifting for Softmax Regression",
+      "evidence": "The softmax unit is a key part of attention and is central to models’ ability to focus on input parts; ICL is studied via this softmax-based attention formulation."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Pretraining Stage (Transformers)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "The Closeness of In-Context Learning and Weight Shifting for Softmax Regression",
+      "evidence": "Training dynamics shown in experiments indicate the crucial role of the pretraining stage for in-context learning ability."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ICL Estimation Risk (Besov space)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Transformers are Minimax Optimal Nonparametric In-Context Learners",
+      "evidence": "Risk decomposition and Theorem 4.5 define ICL estimation error with approximation and generalization terms and show the minimax rate n^{-2α/(2α+d)} under sufficient T ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ICL Estimation Risk (Anisotropic Besov)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Transformers are Minimax Optimal Nonparametric In-Context Learners",
+      "evidence": "Anisotropic analysis shows ICL attains near-optimal rate n^{-2α̃/(2α̃+1)} up to logs, avoiding the curse of dimensionality ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ICL Estimation Risk (Sequential piecewise γ-smooth)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Transformers are Minimax Optimal Nonparametric In-Context Learners",
+      "evidence": "For sequential inputs, transformers with a final attention layer achieve near-optimal sample complexity (Theorem D.1)  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Representation Learning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Transformers are Minimax Optimal Nonparametric In-Context Learners",
+      "evidence": "Model places a DNN representation module before linear attention, reflecting lower-layer representation learning supporting ICL ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Algorithmic Learning via Attention",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Transformers are Minimax Optimal Nonparametric In-Context Learners",
+      "evidence": "Linear attention implements a GD-like update optimal for single-layer settings, serving as the top-layer mechanism for ICL ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Pretraining Generalization",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Transformers are Minimax Optimal Nonparametric In-Context Learners",
+      "evidence": "The risk bound separates pretraining and in-context generalization gaps, the former depending on T ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-Context Generalization",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Transformers are Minimax Optimal Nonparametric In-Context Learners",
+      "evidence": "The risk bound separates an in-context generalization term depending on n ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Task Diversity Sensitivity",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Transformers are Minimax Optimal Nonparametric In-Context Learners",
+      "evidence": "Insufficient pretraining (small T) leads to suboptimal rates, while large T enables ICL optimality and emergence  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Few-shot Prompting Performance (Observed)",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "Transformers are Minimax Optimal Nonparametric In-Context Learners",
+      "evidence": "Theoretical results justify the emergence and effectiveness of ICL at large scales, consistent with observed few-shot prompting success in large LLMs  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Toy Simulation Loss Curves",
+      "other_type": "measurements",
+      "relationship_type": "supports",
+      "paper": "Transformers are Minimax Optimal Nonparametric In-Context Learners",
+      "evidence": "Empirical trends in MSE vs N, n, T align with the theorized approximation and generalization behavior and task-diversity effects ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Non-adaptivity Limitation in ICL",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Transformers are Minimax Optimal Nonparametric In-Context Learners",
+      "evidence": "ICL is bounded by best linear approximation rates in regimes like p<2 due to non-adaptivity at inference ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Preprocess-then-Optimize Mechanism",
+      "other_type": "constructs",
+      "relationship_type": "mechanism-of",
+      "paper": "How Transformers Utilize Multi-Head Attention in In-Context Learning? A Case Study on Sparse Linear Regression",
+      "evidence": "First layer preprocesses with multi-head attention; subsequent layers optimize on preprocessed context to realize ICL ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "EICL Excess Risk (Sparse Linear Regression)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "How Transformers Utilize Multi-Head Attention in In-Context Learning? A Case Study on Sparse Linear Regression",
+      "evidence": "EICL is quantified as excess risk on the next query after few-shot context ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human Scenario Quality (ALI-Agent)",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "ALI-Agent: Assessing LLMs'  Alignment with Human Values via Agent-based Evaluation",
+      "evidence": "Scenario generation leverages ICL from retrieved records; human judges rated over 85% of scenarios as high quality."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multi-Concept Semantic Linearity",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Provably Transformers Harness Multi-Concept Word Semantics for Efficient In-Context Learning",
+      "evidence": "The paper seeks to bridge the observed multi-concept geometry with mechanisms underlying ICL and analyzes how this geometry facilitates efficient ICL ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Out-of-Distribution In-Context Learning (OOD ICL)",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Provably Transformers Harness Multi-Concept Word Semantics for Efficient In-Context Learning",
+      "evidence": "OOD ICL is framed as strong ICL abilities on unseen concept-specific tasks ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Learning Efficiency (Optimization Efficiency)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Provably Transformers Harness Multi-Concept Word Semantics for Efficient In-Context Learning",
+      "evidence": "Exponential 0-1 loss convergence and Bayes-optimal error attainment characterize efficient ICL dynamics in the analyzed transformer  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Simulation: In-Context Classification (IID)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Provably Transformers Harness Multi-Concept Word Semantics for Efficient In-Context Learning",
+      "evidence": "Figure 2 simulations validate the theoretical ICL convergence behavior under the modeled prompt distribution ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "In-Context Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "Prompt Optimization with EASE? Efficient Ordering-aware Automated Selection of Exemplars",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Prompt Order Sensitivity in ICL",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "Prompt Optimization with EASE? Efficient Ordering-aware Automated Selection of Exemplars",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "In-Context Generalization to Novel Tasks",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "Prompt Optimization with EASE? Efficient Ordering-aware Automated Selection of Exemplars",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Robustness to Noisy Exemplars (ICL)",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "Prompt Optimization with EASE? Efficient Ordering-aware Automated Selection of Exemplars",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Task Knowledge (Prior Knowledge about Task)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Prompt Optimization with EASE? Efficient Ordering-aware Automated Selection of Exemplars",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction Following/Instruction Sensitivity",
+      "other_type": "constructs",
+      "relationship_type": "interacts-with",
+      "paper": "Prompt Optimization with EASE? Efficient Ordering-aware Automated Selection of Exemplars",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Prompt Order Sensitivity in ICL",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Prompt Optimization with EASE? Efficient Ordering-aware Automated Selection of Exemplars",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Instruction Induction (II) Tasks Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Prompt Optimization with EASE? Efficient Ordering-aware Automated Selection of Exemplars",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Linear Regression (LR) Rule-based Task Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Prompt Optimization with EASE? Efficient Ordering-aware Automated Selection of Exemplars",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Language Puzzle Variant (LP-variant) Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Prompt Optimization with EASE? Efficient Ordering-aware Automated Selection of Exemplars",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AG News Remap Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Prompt Optimization with EASE? Efficient Ordering-aware Automated Selection of Exemplars",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SST5 Reverse Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Prompt Optimization with EASE? Efficient Ordering-aware Automated Selection of Exemplars",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ICL Head Ablation Probability Drop",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Knowledge Circuits in Pretrained Transformers",
+      "evidence": "Ablating newly appearing demonstration-focused heads causes a significant probability drop relative to random heads, evidencing ICL head importance ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Algorithmic Emulation: Gradient-Based Update in Context",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "Fine-grained Analysis of In-context Linear Estimation: Data, Architecture, and Beyond",
+      "evidence": "ICL in linear attention and H3 reduces to one-step (preconditioned) gradient descent on in-context data  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ICL Test Risk (Independent Data)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Fine-grained Analysis of In-context Linear Estimation: Data, Architecture, and Beyond",
+      "evidence": "Models are trained/tested via squared loss on query prediction from in-context examples; empirical curves track theoretical predictions in the independent setting  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Retrieval-Augmented Selection",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Fine-grained Analysis of In-context Linear Estimation: Data, Architecture, and Beyond",
+      "evidence": "Dataset and prompt design, such as RAG, can substantially benefit ICL performance ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-Context Classification",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Probing the Decision Boundaries of In-context Learning in Large Language Models",
+      "evidence": "ICL constructs a prompt from labeled pairs and predicts the class of a new query via next-token prediction."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization (ICL)",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Probing the Decision Boundaries of In-context Learning in Large Language Models",
+      "evidence": "ICL enables LLMs to generalize to new tasks and domains from exemplars."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Robustness (ICL)",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Probing the Decision Boundaries of In-context Learning in Large Language Models",
+      "evidence": "Decision-boundary analysis offers a unique assessment of the robustness of in-context learning performance."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "In-Context Binary Linear Classification",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Probing the Decision Boundaries of In-context Learning in Large Language Models",
+      "evidence": "ICL performance assessed on linearly separable 2D tasks; accuracy rises with more examples though boundaries remain irregular."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "In-Context Non-Linear Classification (Circles)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Probing the Decision Boundaries of In-context Learning in Large Language Models",
+      "evidence": "Non-linear synthetic tasks used to examine ICL decision boundaries."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "In-Context Non-Linear Classification (Moons)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Probing the Decision Boundaries of In-context Learning in Large Language Models",
+      "evidence": "Non-linear synthetic tasks (moons) used to examine ICL decision boundaries."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Text Classification (2D Projection) Probe",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Probing the Decision Boundaries of In-context Learning in Large Language Models",
+      "evidence": "Non-smoothness is also demonstrated on NLP text classification tasks via 2D projection."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Induction Heads",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Linking In-context Learning in Transformers to Human Episodic Memory",
+      "evidence": "Induction heads are identified as critical for ICL ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Temporal Contiguity Bias",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Linking In-context Learning in Transformers to Human Episodic Memory",
+      "evidence": "Attention to temporally adjacent tokens with an asymmetric contiguity bias may support ICL in LLMs ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ICL Score (C4)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Linking In-context Learning in Transformers to Human Episodic Memory",
+      "evidence": "ICL score defined on C4 as loss(500) − loss(50); lower is better ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Episodic Memory–like Attention Bias",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Linking In-context Learning in Transformers to Human Episodic Memory",
+      "evidence": "Ablating top 10% CMR-like heads increases ICL score (worse ICL), suggesting causal relevance ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Semantic Relation Mapping",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "From Unstructured Data to In-Context Learning: Exploring What Tasks Can Be Learned and When",
+      "evidence": "Word-analogy completion is presented as a canonical ICL task that applies learned relations from examples to predict the next token."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Logical Reasoning (Pattern-based)",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "From Unstructured Data to In-Context Learning: Exploring What Tasks Can Be Learned and When",
+      "evidence": "Logic-pattern tasks (e.g., word–first-letter) are treated as ICL tasks that require recognizing order-based patterns."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Association Learning from Co-occurrence",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "From Unstructured Data to In-Context Learning: Exploring What Tasks Can Be Learned and When",
+      "evidence": "Many ICL capabilities can emerge from co-occurrence of semantically related word pairs in unstructured data; analogy ICL can arise via CBOW without attention or positional encoding ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Country–Capital Analogy ICL (LLaMA 2, Countries Type A/B)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "From Unstructured Data to In-Context Learning: Exploring What Tasks Can Be Learned and When",
+      "evidence": "LLaMA 2 achieves 0.58 (Type A) vs 0.96 (Type B) accuracy, suggesting better ICL when pairs co-occur frequently in pretraining  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "State–Capital Analogy ICL (LLaMA 2, US States Type A/B)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "From Unstructured Data to In-Context Learning: Exploring What Tasks Can Be Learned and When",
+      "evidence": "LLaMA 2 achieves 0.69 (Type A) vs 0.84 (Type B) on US state–capital prompts ."
+    }
+  ],
+  "relationship_count": 96,
+  "incoming_relationship_count": 40,
+  "outgoing_relationship_count": 56
+}

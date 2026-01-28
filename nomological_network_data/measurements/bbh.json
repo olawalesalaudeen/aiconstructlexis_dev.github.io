@@ -1,0 +1,175 @@
+{
+  "canonical_name": "BBH Accuracy (%)",
+  "type": "measurement",
+  "canonical_definition": "BIG-Bench Hard (BBH) is a reasoning evaluation benchmark comprising 23 challenging tasks spanning diverse domains, designed to assess general reasoning capabilities in language models. The tasks often involve multi-step logical inference, with some variants incorporating chain-of-thought reasoning extraction or few-shot settings (e.g., 3-shot). While some papers frame it as a multidomain reasoning benchmark, others emphasize its use for evaluating logical reasoning or task-specific cognitive capabilities, with evaluations typically conducted via accuracy metrics.",
+  "expert_reviewed": false,
+  "names": [
+    "BBH",
+    "BBH Accuracy",
+    "BBH Accuracy (%)",
+    "BBH Accuracy (3-shot)",
+    "BBH Score",
+    "BBH Score (%)"
+  ],
+  "papers": [
+    "AlchemistCoder: Harmonizing and Eliciting Code Capability by Hindsight Tuning on Multi-source Data",
+    "Cal-DPO: Calibrated Direct Preference Optimization for Language Model Alignment",
+    "Enhancing LLM’s Cognition via Structurization",
+    "MAmmoTH2: Scaling Instructions from the Web",
+    "SELF-DISCOVER: Large Language Models Self-Compose Reasoning Structures",
+    "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+    "TAIA: Large Language Models are Out-of-Distribution Data Learners",
+    "TSDS: Data Selection for Task-Specific Model Finetuning",
+    "The Art of Saying No: Contextual Noncompliance in Language Models",
+    "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback"
+  ],
+  "paper_count": 10,
+  "group_ids": [
+    1261,
+    1649,
+    1745,
+    1828,
+    2914,
+    2936,
+    3461,
+    5350,
+    5398,
+    5847
+  ],
+  "definitions": [
+    {
+      "text": "Accuracy over 23 challenging tasks from BIG-Bench Hard, zero-shot setting BBH Accuracy (%)",
+      "paper": "SELF-DISCOVER: Large Language Models Self-Compose Reasoning Structures"
+    },
+    {
+      "text": "BIG-bench Hard multidomain reasoning. BBH Accuracy (%)",
+      "paper": "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?"
+    },
+    {
+      "text": "Reasoning evaluation on BIG-bench Hard BBH 3-shot Accuracy (%) .",
+      "paper": "TSDS: Data Selection for Task-Specific Model Finetuning"
+    },
+    {
+      "text": "Reasoning benchmark (capability retention).  BBH Benchmark-defined metric (see Appendix B.1)",
+      "paper": "The Art of Saying No: Contextual Noncompliance in Language Models"
+    },
+    {
+      "text": "Average accuracy on 23 challenging BIG-Bench tasks BBH Accuracy (%)",
+      "paper": "MAmmoTH2: Scaling Instructions from the Web"
+    },
+    {
+      "text": "Big-Bench Hard challenging reasoning tasks.  BBH Score (%)",
+      "paper": "AlchemistCoder: Harmonizing and Eliciting Code Capability by Hindsight Tuning on Multi-source Data"
+    },
+    {
+      "text": "Hard reasoning tasks BBH Accuracy (%)",
+      "paper": "Cal-DPO: Calibrated Direct Preference Optimization for Language Model Alignment"
+    },
+    {
+      "text": "BIG-bench Hard general reasoning BBH Accuracy (%)",
+      "paper": "TAIA: Large Language Models are Out-of-Distribution Data Learners"
+    },
+    {
+      "text": "Logical reasoning benchmark. BBH Accuracy (%) via OpenCompass; structurization yields ~+0.8%.",
+      "paper": "Enhancing LLM’s Cognition via Structurization"
+    },
+    {
+      "text": "Average accuracy across BigBench Hard subtasks with chain-of-thought extraction (general reasoning) . BBH Accuracy (%)",
+      "paper": "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback"
+    }
+  ],
+  "definition_count": 10,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Structured Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "SELF-DISCOVER: Large Language Models Self-Compose Reasoning Structures",
+      "evidence": "SELF-DISCOVER (structured reasoning) outperforms direct answering and CoT on BBH in zero-shot settings  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "SELF-DISCOVER: Large Language Models Self-Compose Reasoning Structures",
+      "evidence": "BBH is used to evaluate complex reasoning tasks ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Capabilities (Capabilities Component)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+      "evidence": "Included in the capabilities benchmark set ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "TSDS: Data Selection for Task-Specific Model Finetuning",
+      "evidence": "Table 1 identifies BBH as a reasoning benchmark with 3-shot accuracy ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Capabilities",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "The Art of Saying No: Contextual Noncompliance in Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "MAmmoTH2: Scaling Instructions from the Web",
+      "evidence": "BBH consists of challenging reasoning tasks used to examine LLMs' capability ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Complex Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "AlchemistCoder: Harmonizing and Eliciting Code Capability by Hindsight Tuning on Multi-source Data",
+      "evidence": "Table reports BBH scores for models."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Cal-DPO: Calibrated Direct Preference Optimization for Language Model Alignment",
+      "evidence": "BBH is part of the general reasoning benchmark set used in the study ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General (Broad) Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "TAIA: Large Language Models are Out-of-Distribution Data Learners",
+      "evidence": "BBH evaluates broad, difficult reasoning."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Logical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Enhancing LLM’s Cognition via Structurization",
+      "evidence": "BBH assesses logical reasoning; structurization yields ~+0.8%."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback",
+      "evidence": ""
+    }
+  ],
+  "relationship_count": 11,
+  "incoming_relationship_count": 11,
+  "outgoing_relationship_count": 0
+}

@@ -1,0 +1,288 @@
+{
+  "canonical_name": "MT-Bench",
+  "type": "measurement",
+  "canonical_definition": "MT-Bench is a benchmark for evaluating instruction-following capabilities in single-turn and multi-turn dialogue settings, using LLM-as-a-judge methodologies (primarily GPT-4, sometimes GPT-3.5) to assess open-ended dialogue quality, complex cognitive tasks (e.g., mathematics, reasoning, writing), and roleplay performance. It involves models responding to diverse prompts with quality judgments aggregated across multiple interactions, often emphasizing task-aware parameter efficiency, safety alignment, or instruction tuning effectiveness. Some papers frame it specifically as measuring multi-turn interaction quality, while others highlight its role in assessing general assistant capabilities or specialized domains like biomedicine.",
+  "expert_reviewed": false,
+  "names": [
+    "MT-Bench",
+    "MT-Bench Score",
+    "MT-bench",
+    "MT-bench Score",
+    "MT‑Bench",
+    "MT‑Bench Score"
+  ],
+  "papers": [
+    "BAdam: A Memory Efficient Full Parameter Optimization Method for Large Language Models",
+    "BackdoorAlign: Mitigating Fine-tuning based Jailbreak Attack with Backdoor Enhanced Safety Alignment",
+    "Compact Language Models via Pruning and Knowledge Distillation",
+    "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning",
+    "Evaluating Copyright Takedown Methods for Language Models",
+    "Instruction Tuning With Loss Over Instructions",
+    "MAmmoTH2: Scaling Instructions from the Web",
+    "MixEval: Deriving Wisdom of the Crowd from LLM Benchmark Mixtures",
+    "Noise Contrastive Alignment of Language Models with Explicit Rewards",
+    "Robust Prompt Optimization for Defending Language Models Against Jailbreaking Attacks",
+    "Star-Agents: Automatic Data Optimization with LLM Agents for Instruction Tuning",
+    "UltraMedical: Building Specialized Generalists in Biomedicine",
+    "Unveiling LoRA Intrinsic Ranks via Salience Analysis"
+  ],
+  "paper_count": 13,
+  "group_ids": [
+    1401,
+    1408,
+    1933,
+    2067,
+    2247,
+    2524,
+    2918,
+    3039,
+    4206,
+    4433,
+    4569,
+    5116
+  ],
+  "definitions": [
+    {
+      "text": "Instruction-following conversational evaluation MT-Bench Score",
+      "paper": "MAmmoTH2: Scaling Instructions from the Web"
+    },
+    {
+      "text": "Instruction-following conversational evaluation MT-Bench Average score",
+      "paper": "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning"
+    },
+    {
+      "text": "Dialogue/complex instruction evaluation via LLM‑as‑a‑judge MT‑Bench Score",
+      "paper": "Evaluating Copyright Takedown Methods for Language Models"
+    },
+    {
+      "text": "LLM‑as‑judge multi‑turn evaluation referenced among open‑ended benchmarks in the analysis . MT‑Bench LLM‑judged score",
+      "paper": "MixEval: Deriving Wisdom of the Crowd from LLM Benchmark Mixtures"
+    },
+    {
+      "text": "LLM-as-a-judge evaluation of multi-turn interaction quality.  MT-Bench Score",
+      "paper": "Robust Prompt Optimization for Defending Language Models Against Jailbreaking Attacks"
+    },
+    {
+      "text": "LLM-as-judge evaluation of open-ended dialogue quality . MT-Bench LLM-judged score",
+      "paper": "Instruction Tuning With Loss Over Instructions"
+    },
+    {
+      "text": "GPT-4-as-judge evaluation of multi-turn instruction-following quality. MT-bench Score (higher is better)",
+      "paper": "Noise Contrastive Alignment of Language Models with Explicit Rewards"
+    },
+    {
+      "text": "Instruction-following and roleplay evaluation after SFT MT-Bench Task score (higher is better)",
+      "paper": "Compact Language Models via Pruning and Knowledge Distillation"
+    },
+    {
+      "text": "Instruction-following/dialogue quality evaluated by GPT-4 over 80 multi-turn questions; average score on a 0–10 scale . MT-Bench Average score (0–10) by GPT-4-as-judge",
+      "paper": "Unveiling LoRA Intrinsic Ranks via Salience Analysis"
+    },
+    {
+      "text": "Multi-turn and single-turn evaluation of complex cognitive tasks (mathematics, reasoning, complex format handling, writing) using GPT-4 as judge via FastChat MT-bench GPT-4 judge score (FastChat)",
+      "paper": "Star-Agents: Automatic Data Optimization with LLM Agents for Instruction Tuning"
+    },
+    {
+      "text": "Multi-turn instruction-following evaluation of instruction-tuned models (reported over epochs and learning rates). MT-bench Score",
+      "paper": "BAdam: A Memory Efficient Full Parameter Optimization Method for Large Language Models"
+    },
+    {
+      "text": "GPT‑3.5 judges general assistant capabilities on open‑ended questions across tasks; average score reported . MT‑Bench Average score (0–10)",
+      "paper": "BackdoorAlign: Mitigating Fine-tuning based Jailbreak Attack with Backdoor Enhanced Safety Alignment"
+    },
+    {
+      "text": "Multi-turn dialogue ability and instruction-following quality MT-Bench Average score",
+      "paper": "UltraMedical: Building Specialized Generalists in Biomedicine"
+    }
+  ],
+  "definition_count": 13,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Utility",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Evaluating Copyright Takedown Methods for Language Models",
+      "evidence": "MT‑Bench complements MMLU as a general utility measure across tasks ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multi‑turn Dialogue Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Robust Prompt Optimization for Defending Language Models Against Jailbreaking Attacks",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Open-ended Generation Quality",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Instruction Tuning With Loss Over Instructions",
+      "evidence": "Open-ended text generation is evaluated with MT-Bench (LLM-as-judge) in the study’s evaluation setup ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction-Following Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Noise Contrastive Alignment of Language Models with Explicit Rewards",
+      "evidence": "The paper focuses on general instruction-following abilities measured by GPT‑4-based benchmarks like MT-bench."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Roleplay",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Compact Language Models via Pruning and Knowledge Distillation",
+      "evidence": "The paper evaluates 'roleplay' using MT‑Bench."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction Following",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Compact Language Models via Pruning and Knowledge Distillation",
+      "evidence": "MT‑Bench is also used to evaluate instruction following in the SFT evaluation suite."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Compact Language Models via Pruning and Knowledge Distillation",
+      "evidence": "MT‑Bench is also used to evaluate instruction following in the SFT evaluation suite."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction Following",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "MAmmoTH2: Scaling Instructions from the Web",
+      "evidence": "MT-Bench is used to evaluate chat/instruction-following ability ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "MAmmoTH2: Scaling Instructions from the Web",
+      "evidence": "MT-Bench is used to evaluate chat/instruction-following ability ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction Following",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Unveiling LoRA Intrinsic Ranks via Salience Analysis",
+      "evidence": "Instruction-tuned LLaMA/LLaMA2 models are evaluated on MT-Bench; GPT-4 assigns 0–10 scores to responses ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Unveiling LoRA Intrinsic Ranks via Salience Analysis",
+      "evidence": "Instruction-tuned LLaMA/LLaMA2 models are evaluated on MT-Bench; GPT-4 assigns 0–10 scores to responses ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction Following",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning",
+      "evidence": "MT-Bench score reflects instruction-following performance"
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning",
+      "evidence": "MT-Bench score reflects instruction-following performance"
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction Following",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Star-Agents: Automatic Data Optimization with LLM Agents for Instruction Tuning",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Star-Agents: Automatic Data Optimization with LLM Agents for Instruction Tuning",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Star-Agents: Automatic Data Optimization with LLM Agents for Instruction Tuning",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Star-Agents: Automatic Data Optimization with LLM Agents for Instruction Tuning",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Star-Agents: Automatic Data Optimization with LLM Agents for Instruction Tuning",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Complex Format Handling",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Star-Agents: Automatic Data Optimization with LLM Agents for Instruction Tuning",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Writing",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Star-Agents: Automatic Data Optimization with LLM Agents for Instruction Tuning",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction-Following",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "BAdam: A Memory Efficient Full Parameter Optimization Method for Large Language Models",
+      "evidence": "The paper evaluates instruction-following tasks with MT-bench and reports scores (Table 5), noting BAdam surpasses Adam in instruction-following tasks evaluated by MT-bench score  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Benign Utility (General Task Performance)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "BackdoorAlign: Mitigating Fine-tuning based Jailbreak Attack with Backdoor Enhanced Safety Alignment",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction-Following and Dialogue Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "UltraMedical: Building Specialized Generalists in Biomedicine",
+      "evidence": "MT-Bench is a general chat benchmark used in the paper."
+    }
+  ],
+  "relationship_count": 23,
+  "incoming_relationship_count": 23,
+  "outgoing_relationship_count": 0
+}

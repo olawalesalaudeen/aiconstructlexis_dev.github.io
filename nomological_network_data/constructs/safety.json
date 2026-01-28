@@ -1,0 +1,312 @@
+{
+  "canonical_name": "Safety",
+  "type": "construct",
+  "canonical_definition": "Safety in AI systems refers to the capability to avoid generating harmful, toxic, or adversarial outputs while handling sensitive content appropriately, often operationalized through resistance to jailbreaking attacks, preference for refusal responses to unsafe requests, and detoxification of harmful content. Some definitions emphasize truthfulness, ethical judgment, and balanced caution to avoid overcautious refusals, though variations exist in whether safety is explicitly optimized or considered secondary to other objectives. Disagreements arise in prioritizing resistance to adversarial prompts versus mitigating over-alignment effects that may suppress benign responses.",
+  "expert_reviewed": false,
+  "names": [
+    "Safety"
+  ],
+  "papers": [
+    "CARES: A Comprehensive Benchmark of Trustworthiness in Medical Vision Language Models",
+    "Enhancing Multiple Dimensions of Trustworthiness in LLMs via Sparse Activation Control",
+    "HelpSteer 2: Open-source dataset for training top-performing reward models",
+    "IDGen: Item Discrimination Induced Prompt Generation for LLM Evaluation",
+    "Instruction Tuning With Loss Over Instructions",
+    "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models",
+    "PaCE: Parsimonious Concept Engineering for Large Language Models",
+    "Should We Really Edit Language Models? On the Evaluation of Edited Language Models",
+    "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+    "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback",
+    "VHELM: A Holistic Evaluation of Vision Language Models"
+  ],
+  "paper_count": 11,
+  "group_ids": [
+    26,
+    1591,
+    1630,
+    2231,
+    2385,
+    2643,
+    3858,
+    4267,
+    5272,
+    5502,
+    6334
+  ],
+  "definitions": [
+    {
+      "text": "Resistance to harmful/adversarial instructions embedded in images (e.g., MM‑SafetyBench) .",
+      "paper": "VHELM: A Holistic Evaluation of Vision Language Models"
+    },
+    {
+      "text": "Guardrails to refuse toxic/NSFW inputs, identify risks, and resist jailbreaking attacks in multimodal scenarios  .",
+      "paper": "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models"
+    },
+    {
+      "text": "Harmlessness and safety of responses (part of the response‑quality rubric) .",
+      "paper": "IDGen: Item Discrimination Induced Prompt Generation for LLM Evaluation"
+    },
+    {
+      "text": "Safety-related behavior such as truthfulness, toxicity avoidance, and ethical judgment, captured by TruthfulQA, ToxiGen, and Hendrycks Ethics .",
+      "paper": "Instruction Tuning With Loss Over Instructions"
+    },
+    {
+      "text": "Safety evaluations focus on truthfulness, toxicity, and bias .",
+      "paper": "Should We Really Edit Language Models? On the Evaluation of Edited Language Models"
+    },
+    {
+      "text": "Preference for refusal responses to unsafe user requests.",
+      "paper": "HelpSteer 2: Open-source dataset for training top-performing reward models"
+    },
+    {
+      "text": "Resistance to adversarial prompts (jailbreak), balanced caution (avoiding overcautious refusals), and avoidance of toxic outputs.  ",
+      "paper": "CARES: A Comprehensive Benchmark of Trustworthiness in Medical Vision Language Models"
+    },
+    {
+      "text": "Avoidance of harmful behavior; important but not explicitly optimized in this work. ",
+      "paper": "SimPO: Simple Preference Optimization with a Reference-Free Reward"
+    },
+    {
+      "text": "The capability to handle harmful or sensitive content appropriately; over-alignment can induce over-cautious responses to benign prompts  .",
+      "paper": "Enhancing Multiple Dimensions of Trustworthiness in LLMs via Sparse Activation Control"
+    },
+    {
+      "text": "Ability to avoid generating harmful or toxic content; targeted via response detoxification .",
+      "paper": "PaCE: Parsimonious Concept Engineering for Large Language Models"
+    },
+    {
+      "text": "Safety",
+      "paper": "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback"
+    }
+  ],
+  "definition_count": 11,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MM-SafetyBench Toxicity (Perspective API)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "VHELM: A Holistic Evaluation of Vision Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Trustworthiness (MLLMs)",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models",
+      "evidence": "Aspect-wise rankings include Safety as a core component of trustworthiness ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "NSFW Image Description",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models",
+      "evidence": "Refusal to describe NSFW images and toxicity scoring reflect safety guardrails ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Risk Identification",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models",
+      "evidence": "Recognizing risky elements and analyzing risks tests safety awareness ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Typographic Jailbreaking",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models",
+      "evidence": "RtA and ASR quantify vulnerability to jailbreaking attacks ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Response Quality",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "IDGen: Item Discrimination Induced Prompt Generation for LLM Evaluation",
+      "evidence": "Safety is a rubric facet for evaluating text responses ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "IDGen Open-ended Evaluation (General Text)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "IDGen: Item Discrimination Induced Prompt Generation for LLM Evaluation",
+      "evidence": "Safety contributes 0–30 points in the scoring rubric ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Instruction Tuning With Loss Over Instructions",
+      "evidence": "TruthfulQA appears in the Safety & Helpfulness category used in the paper ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ToxiGen Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Instruction Tuning With Loss Over Instructions",
+      "evidence": "ToxiGen appears in the Safety & Helpfulness category used in the paper ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Hendrycks Ethics",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Instruction Tuning With Loss Over Instructions",
+      "evidence": "Hendrycks Ethics appears in the Safety & Helpfulness category used in the paper ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "General Capabilities",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Should We Really Edit Language Models? On the Evaluation of Edited Language Models",
+      "evidence": "Safety is part of holistic LLM evaluation alongside other abilities  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Should We Really Edit Language Models? On the Evaluation of Edited Language Models",
+      "evidence": "Safety evaluations concentrate on truthfulness, toxicity, and bias ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Should We Really Edit Language Models? On the Evaluation of Edited Language Models",
+      "evidence": "Safety evaluations concentrate on truthfulness, toxicity, and bias ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Toxicity",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Should We Really Edit Language Models? On the Evaluation of Edited Language Models",
+      "evidence": "Safety evaluations concentrate on truthfulness, toxicity, and bias ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Editing Robustness",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Should We Really Edit Language Models? On the Evaluation of Edited Language Models",
+      "evidence": "Safety is significantly compromised after only dozens of edits, indicating limited robustness under editing  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Alignment",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "HelpSteer 2: Open-source dataset for training top-performing reward models",
+      "evidence": "Alignment efforts commonly target helpfulness and harmlessness; RewardBench includes a Safety category."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "RewardBench Safety Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "HelpSteer 2: Open-source dataset for training top-performing reward models",
+      "evidence": "Safety category measures preference for refusals to unsafe requests."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Trustworthiness",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "CARES: A Comprehensive Benchmark of Trustworthiness in Medical Vision Language Models",
+      "evidence": "As above."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Jailbreak Resistance",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "CARES: A Comprehensive Benchmark of Trustworthiness in Medical Vision Language Models",
+      "evidence": "Safety evaluation includes jailbreaking."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Overcautiousness",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "CARES: A Comprehensive Benchmark of Trustworthiness in Medical Vision Language Models",
+      "evidence": "Safety evaluation includes overcautiousness."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Toxicity",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "CARES: A Comprehensive Benchmark of Trustworthiness in Medical Vision Language Models",
+      "evidence": "Safety evaluation includes toxicity."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "positively-related-to",
+      "paper": "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+      "evidence": "High TruthfulQA suggests potential for safety alignment."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "positively-related-to",
+      "paper": "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+      "evidence": "High TruthfulQA suggests potential for safety alignment."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Trustworthiness",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Enhancing Multiple Dimensions of Trustworthiness in LLMs via Sparse Activation Control",
+      "evidence": "The study frames trustworthiness as multi-dimensional and focuses on safety among its key aspects  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Alignment",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "PaCE: Parsimonious Concept Engineering for Large Language Models",
+      "evidence": "Alignment aims to prevent undesirable responses such as toxic language; detoxification evaluates safety  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SafeEdit Safety Score (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "PaCE: Parsimonious Concept Engineering for Large Language Models",
+      "evidence": "Detoxification is evaluated on SafeEdit with a safety scorer (0–1 scaled to %) across nine categories  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ToxiGen Safety Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "XSTest Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback",
+      "evidence": ""
+    }
+  ],
+  "relationship_count": 28,
+  "incoming_relationship_count": 11,
+  "outgoing_relationship_count": 17
+}

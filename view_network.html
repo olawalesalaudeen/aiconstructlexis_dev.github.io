@@ -1,0 +1,1699 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Construct Lexis</title>
+    <link rel="stylesheet" href="view_network.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .search-section {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .filter-buttons {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .filter-btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            background: #ecf0f1;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+
+        .filter-btn.active {
+            background: #3498db;
+            color: white;
+        }
+
+        .filter-btn:hover {
+            background: #bdc3c7;
+        }
+
+        .filter-btn.active:hover {
+            background: #2980b9;
+        }
+
+        .stats {
+            display: flex;
+            gap: 20px;
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+
+        .filter-controls {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid #ecf0f1;
+        }
+
+        .filter-control {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .filter-control label {
+            font-size: 13px;
+            font-weight: 500;
+            color: #2c3e50;
+            white-space: nowrap;
+        }
+
+        .filter-control input {
+            width: 60px;
+            padding: 6px 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 13px;
+        }
+
+        .filter-control input:focus {
+            outline: none;
+            border-color: #3498db;
+        }
+
+        .main-content {
+            height: calc(100vh - 250px);
+        }
+
+        .category-section {
+            margin-bottom: 30px;
+        }
+
+        .category-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #ecf0f1;
+        }
+
+        .definitions-dropdown {
+            margin-bottom: 20px;
+        }
+
+        .definitions-dropdown label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #2c3e50;
+            font-size: 14px;
+        }
+
+        .definitions-dropdown select {
+            width: 100%;
+            padding: 10px;
+            font-size: 13px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            background: white;
+            cursor: pointer;
+        }
+
+        .definitions-dropdown select:focus {
+            outline: none;
+            border-color: #3498db;
+        }
+
+        .relationship-item {
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .relationship-item:hover {
+            background: #f0f0f0;
+            transform: translateX(2px);
+        }
+
+        .results-panel {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .results-header {
+            padding: 15px;
+            background: #34495e;
+            color: white;
+            font-weight: 600;
+        }
+
+        .results-list {
+            flex: 1;
+            overflow-y: auto;
+            padding: 10px;
+        }
+
+        .result-item {
+            padding: 15px;
+            border-bottom: 1px solid #ecf0f1;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .result-item:hover {
+            background: #f8f9fa;
+        }
+
+        .result-item.selected {
+            background: #e3f2fd;
+            border-left: 4px solid #3498db;
+        }
+
+        .result-name {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        .result-type {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .result-type.construct {
+            background: #e8f5e9;
+            color: #2e7d32;
+        }
+
+        .result-type.measurement {
+            background: #e3f2fd;
+            color: #1565c0;
+        }
+
+        .result-type.behavior {
+            background: #fce4ec;
+            color: #c2185b;
+        }
+
+        .result-definition {
+            font-size: 13px;
+            color: #7f8c8d;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+
+        .result-papers {
+            font-size: 11px;
+            color: #95a5a6;
+        }
+
+        .visualization-panel {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .viz-header {
+            padding: 15px;
+            background: #2c3e50;
+            color: white;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .details-panel {
+            padding: 20px;
+            background: #f8f9fa;
+            flex: 1;
+            overflow-y: auto;
+            height: 100%;
+        }
+
+        .details-header {
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            font-size: 18px;
+        }
+
+        .relationship-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .relationship-item {
+            padding: 12px;
+            background: white;
+            border-radius: 6px;
+            border-left: 4px solid #3498db;
+        }
+
+        .relationship-item.construct {
+            border-left-color: #4caf50;
+        }
+
+        .relationship-item.measurement {
+            border-left-color: #2196f3;
+        }
+
+        .relationship-item.behavior {
+            border-left-color: #e91e63;
+        }
+
+        .relationship-type {
+            font-weight: 600;
+            color: #3498db;
+            margin-bottom: 5px;
+        }
+
+        .relationship-nodes {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        .relationship-evidence {
+            font-size: 12px;
+            color: #7f8c8d;
+            font-style: italic;
+            margin-top: 5px;
+        }
+
+        .relationship-paper {
+            font-size: 11px;
+            color: #95a5a6;
+            margin-top: 5px;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 40px;
+            color: #95a5a6;
+        }
+
+        .empty-state h3 {
+            margin-bottom: 10px;
+            color: #7f8c8d;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #3498db;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .spinner {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #3498db;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+
+        .expert-flag {
+            display: inline-block;
+            margin-left: 6px;
+            font-size: 11px;
+            font-weight: 700;
+            width: 14px;
+            height: 14px;
+            line-height: 14px;
+            text-align: center;
+            border-radius: 50%;
+            cursor: default;
+        }
+
+        .expert-flag.false {
+            background: #fdecea;
+            color: #c0392b;
+        }
+
+        .expert-flag.true {
+            background: #e8f5e9;
+            color: #2e7d32;
+        }
+    </style>
+    <!-- Theme overrides (visual-only). Loaded after inline styles to win cascade. -->
+    <link rel="stylesheet" href="view_network_theme.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>🔍 AI Construct Lexis</h1>
+            <div class="disclaimer-banner">
+                <div style="margin-bottom: 10px;">
+                    This viewer is a research prototype. The content presented here, including relationships, constructs, and suggested behaviors/tasks, is derived from automatically extracting implied definitions and connections from academic papers from NeurIPS 2024 only, primarily using Large Language Models (LLMs).
+                </div>
+                <div style="font-weight: 700; margin-bottom: 6px;">Please Note:</div>
+                <div style="display: grid; gap: 4px;">
+                    <div><strong>Indicative Only:</strong> All content is indicative, not definitive. It is intended to reflect the current landscape of agreement and disagreement within the field, not to serve as a verified source of truth.</div>
+                    <div><strong>No Endorsement:</strong> The inclusion of any definition or connection does not constitute an endorsement by the developers.</div>
+                    <div><strong>LLM Extraction:</strong> As LLMs are used for extraction, the content may contain errors, omissions, or misclassifications.</div>
+                    <div><strong>Verification Status:</strong> We have incorporated a flag to indicate if a specific definition or connection has undergone expert review and verification. Where this flag is absent, the content has not been manually verified.</div>
+                </div>
+            </div>
+            <div class="contact-box">
+                <div class="contact-box-title">Contact &amp; Updates</div>
+                <div class="contact-box-row">
+                    For questions or collaboration, email
+                    <a href="mailto:aiconstructlexis@gmail.com" class="contact-link">aiconstructlexis@gmail.com</a>.
+                </div>
+                <div>
+                    Subscribe to our Substack for project updates and insights:
+                    <a href="https://substack.com/@aiconstructlexis" target="_blank" rel="noopener" class="substack-link">
+                        @aiconstructlexis
+                    </a>
+                </div>
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-type="home">Home</button>
+                <a href="network_graph.html" class="graph-btn" aria-label="View nomological network">
+                    Nomological Network
+                </a>
+                <button class="filter-btn" data-type="constructs">Constructs</button>
+                <button class="filter-btn" data-type="measurements">Measurement Instruments</button>
+                <button class="filter-btn" data-type="behaviors">Behaviors/Tasks</button>
+            </div>
+            <div class="search-section">
+                <input
+                    id="searchInput"
+                    type="text"
+                    placeholder="Search by name…"
+                    style="flex: 1; padding: 8px 10px; border-radius: 6px; border: 1px solid #ddd; font-size: 14px;"
+                />
+                <button
+                    id="clearSearchBtn"
+                    type="button"
+                    style="padding: 8px 12px; border-radius: 6px; border: 1px solid #ddd; background: #ecf0f1; cursor: pointer; font-size: 13px;"
+                >
+                    Clear
+                </button>
+            </div>
+            <div class="stats" style="display:none;">
+                <span id="totalNodes">Total: 0</span>
+                <span id="selectedCount">Selected: 0</span>
+                <span id="relationshipsCount">Relationships: 0</span>
+            </div>
+            <div class="filter-controls">
+                <div class="filter-control">
+                    <label style="margin-right: 6px;">
+                        Term Referenced in Min Papers
+                        <span class="info-icon" aria-label="About min papers filter">
+                            i
+                            <span class="info-tooltip" role="tooltip">
+                                Filters the list to terms referenced in more than this many papers (per category), based on this dataset’s extracted paper mentions.
+                            </span>
+                        </span>
+                        :
+                    </label>
+                    <span style="font-size: 13px; font-weight: 500; margin-right: 4px;">Constructs:</span>
+                    <input type="number" id="minPapersConstruct" min="0" value="10" step="1" style="width: 60px; margin-right: 10px;">
+                    <span style="font-size: 13px; font-weight: 500; margin-right: 4px;">Measurement Instruments:</span>
+                    <input type="number" id="minPapersMeasurement" min="0" value="10" step="1" style="width: 60px; margin-right: 10px;">
+                    <span style="font-size: 13px; font-weight: 500; margin-right: 4px;">Behaviors/Tasks:</span>
+                    <input type="number" id="minPapersBehavior" min="0" value="10" step="1" style="width: 60px;">
+                </div>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <div class="results-panel">
+                <div class="results-header" id="resultsHeader">Home</div>
+                <div class="results-list" id="resultsList">
+                    <div class="empty-state">
+                        <h3>Select a network to begin</h3>
+                        <p>Use the dropdown above to select an aggregated network file</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let networkData = null;
+        let selectedNode = null;
+        let currentFilter = 'home';
+        let currentSearch = '';
+        let networksCache = {}; // fileName -> parsed JSON
+        let uiConfig = {
+            min_papers: {
+                construct: 10,
+                measurement: 10,
+                behavior: 10
+            },
+            min_papers_floor: {
+                construct: 0,
+                measurement: 0,
+                behavior: 0
+            }
+        };
+
+        // Try to fetch a file from multiple possible paths
+        // Handles both local server and GitHub Pages
+        async function fetchFromPossiblePaths(relativePath) {
+            // Get base path (empty for root, or repo name for GitHub Pages)
+            const pathParts = window.location.pathname.split('/').filter(p => p);
+            // Remove last 2 parts (visualize_networks, view_network.html)
+            const baseParts = pathParts.slice(0, -2);
+            const basePath = baseParts.length > 0 ? '/' + baseParts.join('/') : '';
+
+            const possiblePaths = [
+                basePath ? `${basePath}/${relativePath}` : `/${relativePath}`,  // GitHub Pages with repo name or root
+                `/${relativePath}`,              // Absolute from root
+                `${relativePath}`,                // Relative
+                `../${relativePath}`              // One level up
+            ];
+            // Remove duplicates
+            const uniquePaths = [...new Set(possiblePaths)];
+            for (const path of uniquePaths) {
+                try {
+                    const resp = await fetch(path);
+                    if (resp.ok) return await resp.text();
+                } catch (e) {
+                    // try next
+                }
+            }
+            throw new Error(`Could not load ${relativePath} from any known path`);
+        }
+
+        // All known network files
+        const ALL_NETWORK_FILES = [
+            'neurips_2024_aggregated_smart.json',
+            'neurips_2024_aggregated_smart_v2.json',
+            'neurips_2024_aggregated_smart_v3.json',
+            'neurips_2024_aggregated.json',
+            'neurips_2024_aggregated_test.json',
+            'neurips_2024_aggregated_with_progress.json',
+            'neurips_2024_aggregated_v3.json'
+        ];
+
+        // Clamp a min-papers value to the configured floor for the given type
+        function clampMinPapers(value, type) {
+            const floors = uiConfig.min_papers_floor;
+            const floor = typeof floors === 'object' && floors != null && floors[type] !== undefined
+                ? Math.max(0, Number(floors[type]))
+                : (typeof floors === 'number' ? Math.max(0, floors) : 0);
+            const n = parseInt(value, 10);
+            if (isNaN(n)) return floor;
+            return Math.max(floor, n);
+        }
+
+        // Load UI config (min papers, floor, etc.) from JSON file
+        async function loadUiConfig() {
+            try {
+                const resp = await fetch('view_network_config.json');
+                if (resp.ok) {
+                    const data = await resp.json();
+                    if (data && data.min_papers) {
+                        uiConfig.min_papers.construct = Number(data.min_papers.construct ?? uiConfig.min_papers.construct);
+                        uiConfig.min_papers.measurement = Number(data.min_papers.measurement ?? uiConfig.min_papers.measurement);
+                        uiConfig.min_papers.behavior = Number(data.min_papers.behavior ?? uiConfig.min_papers.behavior);
+                    }
+                    if (data && data.min_papers_floor !== undefined) {
+                        const f = data.min_papers_floor;
+                        if (typeof f === 'object' && f != null) {
+                            uiConfig.min_papers_floor.construct = Math.max(0, Number(f.construct ?? uiConfig.min_papers_floor.construct));
+                            uiConfig.min_papers_floor.measurement = Math.max(0, Number(f.measurement ?? uiConfig.min_papers_floor.measurement));
+                            uiConfig.min_papers_floor.behavior = Math.max(0, Number(f.behavior ?? uiConfig.min_papers_floor.behavior));
+                        } else {
+                            const v = Math.max(0, Number(f));
+                            uiConfig.min_papers_floor.construct = v;
+                            uiConfig.min_papers_floor.measurement = v;
+                            uiConfig.min_papers_floor.behavior = v;
+                        }
+                    }
+                }
+            } catch (e) {
+                console.warn('Failed to load UI config, using defaults:', e);
+            }
+
+            // Apply config to inputs and set min attribute from floor per type
+            try {
+                const floors = uiConfig.min_papers_floor;
+                const c = document.getElementById('minPapersConstruct');
+                const m = document.getElementById('minPapersMeasurement');
+                const b = document.getElementById('minPapersBehavior');
+                if (c) {
+                    c.min = Math.max(0, Number(floors.construct ?? 0));
+                    c.value = clampMinPapers(uiConfig.min_papers.construct, 'construct');
+                }
+                if (m) {
+                    m.min = Math.max(0, Number(floors.measurement ?? 0));
+                    m.value = clampMinPapers(uiConfig.min_papers.measurement, 'measurement');
+                }
+                if (b) {
+                    b.min = Math.max(0, Number(floors.behavior ?? 0));
+                    b.value = clampMinPapers(uiConfig.min_papers.behavior, 'behavior');
+                }
+            } catch (e) {
+                console.warn('Failed to apply UI config to inputs:', e);
+            }
+        }
+
+        // Load all node configs from nomological_network_data/index.json
+        async function loadConfigsFromIndex() {
+            const indexText = await fetchFromPossiblePaths('nomological_network_data/index.json');
+            const index = JSON.parse(indexText);
+
+            networkData = {
+                nodesMap: {},
+                nodesByType: { constructs: [], measurements: [], behaviors: [] },
+                nameToNode: {},
+                // Map any known name or alias -> canonical_name
+                nameToCanonical: {},
+                relationshipIndex: {},
+            };
+
+            const allConfigs = [];
+
+            async function loadGroup(subdir, typeShort) {
+                const files = index[subdir] || [];
+                for (const file of files) {
+                    try {
+                        const text = await fetchFromPossiblePaths(`nomological_network_data/${subdir}/${file}`);
+                        const cfg = JSON.parse(text);
+                        allConfigs.push(cfg);
+
+                        const nodeTypeShort = typeShort; // 'construct' | 'measurement' | 'behavior'
+                        const listKey = subdir === 'behaviors_tasks' ? 'behaviors' : subdir;
+                        const key = `${nodeTypeShort}_${cfg.canonical_name}`;
+
+                        const node = {
+                            name: cfg.canonical_name,
+                            type: nodeTypeShort,
+                            canonicalDefinition: cfg.canonical_definition || 'N/A',
+                            expertReviewed: !!cfg.expert_reviewed,
+                            definitions: (cfg.definitions || []).map(d => d.text),
+                            definitionEntries: cfg.definitions || [],
+                            papers: new Set(cfg.papers || []),
+                            groupIds: cfg.group_ids || [],
+                            rawConfig: cfg,
+                        };
+
+                        networkData.nodesMap[key] = node;
+                        networkData.nodesByType[listKey].push(node);
+
+                        // Use canonical name for node identity, but remember all aliases
+                        const canonicalName = cfg.canonical_name;
+                        if (canonicalName) {
+                            if (!networkData.nameToNode[canonicalName]) {
+                                networkData.nameToNode[canonicalName] = [];
+                            }
+                            networkData.nameToNode[canonicalName].push(node);
+                        }
+                        // Map every known name/alias back to the canonical name
+                        const aliasNames = new Set([cfg.canonical_name, ...(cfg.names || [])]);
+                        aliasNames.forEach(n => {
+                            if (!n) return;
+                            networkData.nameToCanonical[n] = cfg.canonical_name;
+                        });
+                    } catch (e) {
+                        console.warn(`Failed to load config ${subdir}/${file}:`, e);
+                    }
+                }
+            }
+
+            await loadGroup('constructs', 'construct');
+            await loadGroup('measurements', 'measurement');
+            await loadGroup('behaviors_tasks', 'behavior');
+
+            // Only nodes that exist in nomological_network_data (index) are in the graph.
+            const indexCanonicalNames = new Set(allConfigs.map(c => c.canonical_name));
+
+            // Build relationship index from config relationships.
+            // Include only relationships where BOTH endpoints are in the index (loaded configs).
+            const relIndex = {};
+            function ensureRelEntry(name) {
+                if (!relIndex[name]) {
+                    relIndex[name] = { outgoing: [], incoming: [] };
+                }
+            }
+
+            allConfigs.forEach(cfg => {
+                const nodeCanonical = cfg.canonical_name;
+                if (!nodeCanonical) return;
+                ensureRelEntry(nodeCanonical);
+                (cfg.relationships || []).forEach(rel => {
+                    const rawOther = rel.other_canonical_name;
+                    if (!rawOther) return;
+                    const otherCanonical = networkData.nameToCanonical[rawOther] || null;
+                    if (!otherCanonical) return;
+                    if (!indexCanonicalNames.has(otherCanonical)) return;
+
+                    const relType = rel.relationship_type || '';
+                    const paper = rel.paper || '';
+                    const evidence = rel.evidence || '';
+
+                    // From the perspective of this node, build a source-target edge
+                    let source = nodeCanonical;
+                    let target = otherCanonical;
+                    if (rel.direction === 'incoming') {
+                        source = otherCanonical;
+                        target = nodeCanonical;
+                    }
+
+                    ensureRelEntry(source);
+                    ensureRelEntry(target);
+
+                    const edge = {
+                        source,
+                        target,
+                        type: relType,
+                        paper,
+                        evidence,
+                    };
+
+                    relIndex[source].outgoing.push(edge);
+                    relIndex[target].incoming.push(edge);
+                });
+            });
+
+            networkData.relationshipIndex = relIndex;
+        }
+
+        // Automatically load all LLM paper lists from paper_list/
+        async function loadPaperLists() {
+            const paperListFiles = [
+                'paper_list/neurips_2022_papers_LLM_papers.json',
+                'paper_list/neurips_2023_papers_LLM_papers.json',
+                'paper_list/neurips_2024_papers_LLM_papers.json'
+            ];
+
+            const combinedIndex = {};
+
+            for (const filePath of paperListFiles) {
+                try {
+                    // Use absolute path
+                    const response = await fetch(`/${filePath}`);
+                    if (response.ok) {
+                        const data = await response.json();
+                        const idx = buildPaperUrlIndex(data);
+                        Object.assign(combinedIndex, idx);
+                    }
+                } catch (error) {
+                    console.warn(`Failed to load paper list ${filePath}:`, error);
+                }
+            }
+
+            if (Object.keys(combinedIndex).length > 0) {
+                if (!networkData) networkData = {};
+                networkData.paperUrlByTitle = combinedIndex;
+                console.log(`Loaded ${Object.keys(combinedIndex).length} paper URLs from paper lists`);
+            }
+        }
+
+        // Build paper URL index from paper_list JSONs
+        function buildPaperUrlIndex(obj) {
+            const index = {};
+            if (Array.isArray(obj)) {
+                obj.forEach(item => {
+                    const name = item.name || item.title || '';
+                    const url = item.url || item.link || '';
+                    if (name) index[name] = url;
+                });
+            } else if (obj && typeof obj === 'object') {
+                // Could be a dict keyed by paper name
+                Object.entries(obj).forEach(([key, val]) => {
+                    if (val && typeof val === 'object') {
+                        const name = val.name || key;
+                        const url = val.url || '';
+                        if (name) index[name] = url;
+                    }
+                });
+            }
+            return index;
+        }
+
+        // If URL has ?node=...&type=..., jump directly to that node's page
+        async function maybeSelectFromUrl() {
+            try {
+                const params = new URLSearchParams(window.location.search);
+                const nodeName = params.get('node');
+                const nodeType = params.get('type') || 'construct';
+                if (!nodeName || !networkData) return;
+
+                // Set filter/tab based on type
+                let desiredFilter = 'constructs';
+                if (nodeType === 'measurement') desiredFilter = 'measurements';
+                else if (nodeType === 'behavior') desiredFilter = 'behaviors';
+
+                currentFilter = desiredFilter;
+                document.querySelectorAll('.filter-btn').forEach(btn => {
+                    btn.classList.toggle('active', btn.dataset.type === desiredFilter);
+                });
+
+                // Update header label to match current filter
+                const header = document.getElementById('resultsHeader');
+                if (header) {
+                    if (currentFilter === 'constructs') header.textContent = 'Constructs';
+                    else if (currentFilter === 'measurements') header.textContent = 'Measurement Instruments';
+                    else if (currentFilter === 'behaviors') header.textContent = 'Behaviors/Tasks';
+                }
+
+                // Re-render list under this filter, then select node
+                renderResults();
+                selectNodeByName(nodeName, nodeType);
+            } catch (e) {
+                console.warn('Failed to select node from URL params:', e);
+            }
+        }
+
+        // Initialize on page load (load UI config, then node configs and paper lists)
+        (async function init() {
+            await loadUiConfig();
+            await loadConfigsFromIndex();
+            await loadPaperLists();
+            initializeData();
+            renderResults();
+            await maybeSelectFromUrl();
+        })();
+
+        // Filter buttons
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentFilter = btn.dataset.type;
+
+                // Update header based on current page
+                const header = document.getElementById('resultsHeader');
+                if (header) {
+                    if (currentFilter === 'home') {
+                        header.textContent = 'Home';
+                    } else if (currentFilter === 'constructs') {
+                        header.textContent = 'Constructs';
+                    } else if (currentFilter === 'measurements') {
+                        header.textContent = 'Measurement Instruments';
+                    } else if (currentFilter === 'behaviors') {
+                        header.textContent = 'Behaviors/Tasks';
+                    }
+                }
+
+                renderResults();
+            });
+        });
+
+
+        // Min papers input handlers: enforce floor per type and re-render
+        function enforceMinPapersFloor(inputEl, type) {
+            const v = clampMinPapers(inputEl.value, type);
+            if (Number(inputEl.value) !== v) inputEl.value = v;
+        }
+        document.getElementById('minPapersConstruct').addEventListener('input', (e) => {
+            enforceMinPapersFloor(e.target, 'construct');
+            renderResults();
+        });
+        document.getElementById('minPapersConstruct').addEventListener('change', (e) => {
+            enforceMinPapersFloor(e.target, 'construct');
+            renderResults();
+        });
+        document.getElementById('minPapersMeasurement').addEventListener('input', (e) => {
+            enforceMinPapersFloor(e.target, 'measurement');
+            renderResults();
+        });
+        document.getElementById('minPapersMeasurement').addEventListener('change', (e) => {
+            enforceMinPapersFloor(e.target, 'measurement');
+            renderResults();
+        });
+        document.getElementById('minPapersBehavior').addEventListener('input', (e) => {
+            enforceMinPapersFloor(e.target, 'behavior');
+            renderResults();
+        });
+        document.getElementById('minPapersBehavior').addEventListener('change', (e) => {
+            enforceMinPapersFloor(e.target, 'behavior');
+            renderResults();
+        });
+
+        // Helper function to get min papers threshold for a node type (never below floor for that type)
+        function getMinPapersForType(nodeType) {
+            let raw;
+            if (nodeType === 'construct') {
+                raw = parseInt(document.getElementById('minPapersConstruct').value, 10) ?? uiConfig.min_papers.construct ?? 0;
+            } else if (nodeType === 'measurement') {
+                raw = parseInt(document.getElementById('minPapersMeasurement').value, 10) ?? uiConfig.min_papers.measurement ?? 0;
+            } else if (nodeType === 'behavior') {
+                raw = parseInt(document.getElementById('minPapersBehavior').value, 10) ?? uiConfig.min_papers.behavior ?? 0;
+            } else {
+                return clampMinPapers(10, 'construct');
+            }
+            return clampMinPapers(isNaN(raw) ? 0 : raw, nodeType);
+        }
+
+        // Initialize data structures (from aggregated JSON or prebuilt configs)
+        function initializeData() {
+            if (!networkData) return;
+
+            // If we already built nodesMap / relationshipIndex from configs, just update stats
+            if (networkData.nodesMap && Object.keys(networkData.nodesMap).length > 0 && !networkData.semantic_sets) {
+                const totalNodes = Object.keys(networkData.nodesMap).length;
+                const nodesAboveThreshold = Array.from(Object.values(networkData.nodesMap))
+                    .filter(node => {
+                        const minPapers = getMinPapersForType(node.type);
+                        const count = node.papers instanceof Set ? node.papers.size : (node.papers || []).length;
+                        return count > minPapers;
+                    }).length;
+
+                document.getElementById('totalNodes').textContent =
+                    `Total: ${nodesAboveThreshold} (of ${totalNodes}) - after min-papers filters`;
+
+                // Count unique relationships
+                const relKeys = new Set();
+                Object.entries(networkData.relationshipIndex || {}).forEach(([name, rels]) => {
+                    (rels.outgoing || []).forEach(rel => {
+                        const key = `${rel.source}|${rel.target}|${rel.type}|${rel.paper}`;
+                        relKeys.add(key);
+                    });
+                });
+                document.getElementById('relationshipsCount').textContent =
+                    `Relationships: ${relKeys.size}`;
+                return;
+            }
+
+            // Fallback: legacy path for aggregated JSON with semantic_sets
+            networkData.nodesMap = {};
+            networkData.nodesByType = { constructs: [], measurements: [], behaviors: [] };
+            networkData.nameToNode = {};
+
+            ['constructs', 'measurements', 'behaviors'].forEach(type => {
+                const semanticSets = networkData.semantic_sets?.[type] || [];
+                semanticSets.forEach(group => {
+                    group.nodes.forEach(node => {
+                        const key = `${type}_${node.name}`;
+                        if (!networkData.nodesMap[key]) {
+                            networkData.nodesMap[key] = {
+                                name: node.name,
+                                type: type.slice(0, -1),
+                                definitions: [],
+                                papers: new Set(),
+                                groupId: group.group_id,
+                                canonicalName: group.canonical_name
+                            };
+                            networkData.nodesByType[type].push(networkData.nodesMap[key]);
+                        }
+                        networkData.nodesMap[key].definitions.push(node.definition);
+                        networkData.nodesMap[key].papers.add(node.paper);
+
+                        if (!networkData.nameToNode[node.name]) {
+                            networkData.nameToNode[node.name] = [];
+                        }
+                        networkData.nameToNode[node.name].push(networkData.nodesMap[key]);
+                    });
+                });
+            });
+
+            networkData.relationshipIndex = {};
+            const relationships = networkData.relationships?.all_relationships || [];
+            relationships.forEach(rel => {
+                const source = rel.source;
+                const target = rel.target;
+
+                if (!networkData.relationshipIndex[source]) {
+                    networkData.relationshipIndex[source] = { outgoing: [], incoming: [] };
+                }
+                if (!networkData.relationshipIndex[target]) {
+                    networkData.relationshipIndex[target] = { outgoing: [], incoming: [] };
+                }
+
+                networkData.relationshipIndex[source].outgoing.push(rel);
+                networkData.relationshipIndex[target].incoming.push(rel);
+
+                [source, target].forEach(name => {
+                    if (!networkData.nameToNode[name]) {
+                        let inferredType = 'construct';
+                        networkData.nameToNode[name] = [{
+                            name: name,
+                            type: inferredType,
+                            definitions: [],
+                            papers: new Set(),
+                            isPlaceholder: true
+                        }];
+                    }
+                });
+            });
+
+            // Update stats - legacy path
+            const totalNodes = Object.keys(networkData.nodesMap).length;
+            const nodesWith5PlusPapers = Array.from(Object.values(networkData.nodesMap))
+                .filter(node => (node.papers ? node.papers.size : 0) > 5).length;
+            document.getElementById('totalNodes').textContent =
+                `Total: ${nodesWith5PlusPapers} (of ${totalNodes}) - showing only nodes in 5+ papers`;
+            document.getElementById('relationshipsCount').textContent =
+                `Relationships: ${relationships.length}`;
+        }
+
+        // Render results for current page
+        function renderResults() {
+            if (!networkData) return;
+
+            const resultsList = document.getElementById('resultsList');
+
+            const search = currentSearch.trim().toLowerCase();
+
+            // Home page rendering (only when not searching)
+            if (currentFilter === 'home' && !search) {
+                const countFor = (type) => {
+                    return Object.values(networkData.nodesMap).filter(n => {
+                        const minPapers = getMinPapersForType(n.type);
+                        return n.type === type && (n.papers ? n.papers.size : 0) > minPapers;
+                    }).length;
+                };
+                const counts = {
+                    constructs: countFor('construct'),
+                    measurements: countFor('measurement'),
+                    behaviors: countFor('behavior'),
+                };
+                resultsList.innerHTML = `
+                    <div class="empty-state home-intro">
+                        <h3 class="home-intro-title">Welcome</h3>
+                        <p style="margin-bottom: 16px;">
+                            AI Construct Lexis is a collaborative effort to map and define AI constructs, associated behaviors, and their valid measurements—building a shared framework for understanding and evaluating AI systems, ultimately aiming to establish a nomological network for AI: a connected system linking theoretical constructs, the ways we measure them, and the behaviors they predict in the real world (see
+                            <a href="https://conjointly.com/kb/nomological-network/" target="_blank" rel="noopener" class="contact-link">
+                                Conjointly’s overview
+                            </a>).
+                        </p>
+                        <div class="home-intro-section">
+                            <div class="home-intro-section-title">Constructs</div>
+                            <p>
+                                Defined theoretical concepts that characterize AI systems, including capabilities (e.g., reasoning and software engineering ability) and risks (e.g., safety and bias). Each construct anchors how we interpret behavior and design measurements.
+                            </p>
+                        </div>
+                        <div class="home-intro-section">
+                            <div class="home-intro-section-title">Associated Behaviors</div>
+                            <p>
+                                Observed behavioral patterns that reveal how constructs manifest, interact, and generalize across models, tasks, and environments (e.g., goal misalignment during tool use and the emergence of social bias in generated outputs).
+                            </p>
+                        </div>
+                        <div class="home-intro-section" style="margin-bottom: 20px;">
+                            <div class="home-intro-section-title">Valid Measurements</div>
+                            <p>
+                                Operational definitions and measurements that translate constructs into observable quantities (e.g., benchmarks and user surveys). Each measurement is evaluated for its validity—whether it captures the intended construct and supports sound inferences about model behavior.
+                            </p>
+                        </div>
+                        ${networkData ? `
+                        <div class="home-quick-filters">
+                            <button class="filter-btn" data-type="constructs" onclick="document.querySelector('.filter-btn[data-type=constructs]').click()">Constructs (${counts.constructs})</button>
+                            <button class="filter-btn" data-type="measurements" onclick="document.querySelector('.filter-btn[data-type=measurements]').click()">Measurement Instruments (${counts.measurements})</button>
+                            <button class="filter-btn" data-type="behaviors" onclick="document.querySelector('.filter-btn[data-type=behaviors]').click()">Behaviors/Tasks (${counts.behaviors})</button>
+                        </div>` : '<p style="margin-top: 20px; color: #e74c3c;">Please load a JSON file first.</p>'}
+                    </div>
+                `;
+                return;
+            }
+            const results = [];
+            const seenKeys = new Set();
+
+            const inSearchMode = !!search;
+
+            Object.values(networkData.nodesMap).forEach(node => {
+                const paperCount = node.papers ? node.papers.size : 0;
+                const minPapers = getMinPapersForType(node.type);
+
+                // Only show nodes that appear in more than the threshold for their type
+                if (paperCount <= minPapers) {
+                    return;
+                }
+
+                // When searching, include all types; otherwise respect the current filter tab
+                const matchesType = inSearchMode
+                    ? currentFilter !== 'home' // any non-home tab shows all types when searching
+                    : (currentFilter !== 'home') && (node.type === currentFilter.slice(0, -1)); // Remove 's'
+
+                if (matchesType) {
+                    // Apply simple name-based search filter (case-insensitive)
+                    if (search) {
+                        const name = (node.name || '').toLowerCase();
+                        if (!name.includes(search)) {
+                            return;
+                        }
+                    }
+                    const key = `${node.type}_${node.name}`;
+                    if (!seenKeys.has(key)) {
+                        results.push(node);
+                        seenKeys.add(key);
+                    }
+                }
+            });
+
+            // Note: We don't include relationship-only nodes here since we filter by paper count
+            // Only nodes from semantic sets with 5+ papers are shown
+
+            // Prefer shortest name for display EXCEPT constructs (constructs always show canonical_name)
+            function getDisplayName(node) {
+                if (!node) return '';
+                if (node.type === 'construct') return node.name;
+                const candidates = [node.name];
+                if (node.rawConfig && Array.isArray(node.rawConfig.names)) {
+                    candidates.push(...node.rawConfig.names);
+                }
+                return candidates.reduce((a, b) => (a.length <= b.length ? a : b));
+            }
+
+            // Deduplicate by name and aggregate
+            const deduplicated = new Map();
+            results.forEach(node => {
+                const name = node.name;
+                if (!deduplicated.has(name)) {
+                    deduplicated.set(name, {
+                        name: getDisplayName(node),
+                        type: node.type,
+                        allDefinitions: new Set(),
+                        allPapers: new Set(),
+                        firstNode: node // Keep reference to first node for selection
+                    });
+                }
+                const agg = deduplicated.get(name);
+                // Aggregate definitions
+                if (node.definitions) {
+                    node.definitions.forEach(def => agg.allDefinitions.add(def));
+                }
+                // Aggregate papers
+                if (node.papers) {
+                    node.papers.forEach(paper => agg.allPapers.add(paper));
+                }
+            });
+
+            // Convert to array and sort
+            const deduplicatedResults = Array.from(deduplicated.values())
+                .sort((a, b) => a.name.localeCompare(b.name));
+
+            // Render
+            if (deduplicatedResults.length === 0) {
+                resultsList.innerHTML = '<div class="empty-state"><h3>No items found</h3><p>Try adjusting the minimum papers threshold</p></div>';
+                return;
+            }
+
+            resultsList.innerHTML = deduplicatedResults.map(agg => {
+                const nodeKey = `${agg.firstNode.type}_${agg.firstNode.name}`;
+                const isSelected = selectedNode && networkData.nodesMap[nodeKey] === selectedNode;
+                const definitionCount = agg.allDefinitions.size;
+                const paperCount = agg.allPapers.size;
+                const description = `${definitionCount} definition${definitionCount !== 1 ? 's' : ''} in ${paperCount} paper${paperCount !== 1 ? 's' : ''}`;
+                const safeKey = nodeKey.replace(/'/g, "\\'").replace(/"/g, '&quot;');
+                return `
+                <div class="result-item ${isSelected ? 'selected' : ''}"
+                     data-key="${escapeHtml(nodeKey)}"
+                     onclick="selectNode('${safeKey}')"
+                     style="cursor: pointer;">
+                    <div class="result-name">
+                        ${escapeHtml(agg.name)}
+                        <span class="expert-flag-wrap" onclick="event.stopPropagation();" title="Not expert reviewed">
+                            <span class="expert-flag false">!</span>
+                            <span class="expert-flag-tooltip">Not expert reviewed</span>
+                        </span>
+                    </div>
+                    <span class="result-type ${agg.type}">${agg.type}</span>
+                    <div class="result-definition">${escapeHtml(description)}</div>
+                </div>
+            `;
+            }).join('');
+
+            const selectedCountEl = document.getElementById('selectedCount');
+            if (selectedCountEl) selectedCountEl.textContent = `Showing: ${deduplicatedResults.length}`;
+        }
+
+        // Open a paper in a new tab (from definitions). Does NOT change filters/search.
+        function searchForPaper(paperTitle) {
+            try {
+                const idx = (networkData && networkData.paperUrlByTitle) ? networkData.paperUrlByTitle : {};
+                const url = idx && idx[paperTitle] ? idx[paperTitle] : null;
+                if (url) {
+                    window.open(url, '_blank', 'noopener');
+                    return;
+                }
+            } catch (e) { /* ignore */ }
+            const q = encodeURIComponent(paperTitle);
+            window.open(`https://www.google.com/search?q=${q}`, '_blank', 'noopener');
+        }
+
+        // Select a node by name and type (used for clicking relationships)
+        function selectNodeByName(nodeName, nodeType) {
+            const nodeKey = `${nodeType}_${nodeName}`;
+            selectNode(nodeKey);
+        }
+
+        // Select a node and show its connections
+        function selectNode(nodeKey) {
+            let node = networkData.nodesMap[nodeKey];
+
+            // If not found by key, try to find by name (could be a direct name or name from placeholder)
+            if (!node && networkData.nameToNode) {
+                // If nodeKey doesn't have underscore, it's a direct name
+                if (!nodeKey.includes('_')) {
+                    const nodes = networkData.nameToNode[nodeKey];
+                    if (nodes && nodes.length > 0) {
+                        node = nodes[0];
+                    } else {
+                        // Create a placeholder node from relationship index
+                        if (networkData.relationshipIndex[nodeKey]) {
+                            node = {
+                                name: nodeKey,
+                                type: 'construct',
+                                definitions: [],
+                                papers: new Set(),
+                                isPlaceholder: true
+                            };
+                        }
+                    }
+                } else {
+                    // Remove type prefix and try name
+                    const nameMatch = nodeKey.split('_').slice(1).join('_');
+                    const nodes = networkData.nameToNode[nameMatch];
+                    if (nodes && nodes.length > 0) {
+                        node = nodes[0];
+                    }
+                }
+            }
+
+            if (!node) return;
+
+            selectedNode = node;
+
+            // Show relationships in the same panel (replace the list)
+            renderDetails(node, true); // Pass true to indicate full panel replacement
+        }
+
+        // Helper function to get node type from name
+        function getNodeType(nodeName) {
+            if (networkData.nameToNode && networkData.nameToNode[nodeName]) {
+                const nodes = networkData.nameToNode[nodeName];
+                if (nodes.length > 0) {
+                    return nodes[0].type;
+                }
+            }
+            // Default to construct if we can't determine
+            return 'construct';
+        }
+
+        // Helper function to check if a node appears in min papers for its type
+        function hasMinPapers(nodeName, nodeType = null) {
+            let paperCount = 0;
+
+            // Try to get node type and paper count
+            if (networkData.nameToNode && networkData.nameToNode[nodeName]) {
+                const nodes = networkData.nameToNode[nodeName];
+                if (nodes.length > 0) {
+                    paperCount = nodes[0].papers ? nodes[0].papers.size : 0;
+                    if (!nodeType) {
+                        nodeType = nodes[0].type;
+                    }
+                }
+            }
+
+            // Check in nodesMap too
+            if (paperCount === 0) {
+                for (const [key, node] of Object.entries(networkData.nodesMap)) {
+                    if (node.name === nodeName) {
+                        paperCount = node.papers ? node.papers.size : 0;
+                        if (!nodeType) {
+                            nodeType = node.type;
+                        }
+                        break;
+                    }
+                }
+            }
+
+            // Get threshold for this node type
+            const minPapers = getMinPapersForType(nodeType || 'construct');
+            return paperCount > minPapers;
+        }
+
+        // Render details panel with categorized relationships
+        function renderDetails(node, replaceList = false) {
+            const resultsList = document.getElementById('resultsList');
+            const resultsHeader = document.getElementById('resultsHeader');
+
+            // If replacing the list, render in resultsList instead
+            const targetContainer = replaceList ? resultsList : document.getElementById('detailsPanel');
+
+            if (!targetContainer) return;
+
+            // Update header if replacing
+            if (replaceList && resultsHeader) {
+                resultsHeader.innerHTML = `<span style="cursor: pointer;" onclick="goBackToList()">← Back</span> | <span>${escapeHtml(node.name)}</span>`;
+            }
+
+            // Only include direct relationships for the exact selected node name
+            const nodeNames = new Set([node.name]);
+
+            // Collect all relationships for all related node names
+            const allOutgoing = [];
+            const allIncoming = [];
+            nodeNames.forEach(name => {
+                const relationships = networkData.relationshipIndex[name] || { outgoing: [], incoming: [] };
+                allOutgoing.push(...relationships.outgoing);
+                allIncoming.push(...relationships.incoming);
+            });
+
+            // Remove duplicates (same source, target, type, paper)
+            const uniqueRels = new Map();
+            [...allOutgoing, ...allIncoming].forEach(rel => {
+                const key = `${rel.source}|${rel.target}|${rel.type}|${rel.paper}`;
+                if (!uniqueRels.has(key)) {
+                    uniqueRels.set(key, rel);
+                }
+            });
+
+            if (uniqueRels.size === 0) {
+                targetContainer.innerHTML = '<div class="empty-state"><p>No relationships found for this node</p></div>';
+                return;
+            }
+
+            const allRels = Array.from(uniqueRels.values())
+                .filter(rel => {
+                    // Only show relationships where both nodes meet type-specific min papers
+                    const sourceOk = hasMinPapers(rel.source);
+                    const targetOk = hasMinPapers(rel.target);
+                    return sourceOk && targetOk;
+                })
+                .map(rel => {
+                    const isSourceMatch = nodeNames.has(rel.source);
+                    const isTargetMatch = nodeNames.has(rel.target);
+
+                    // Determine which node is the "other" node in the relationship
+                    const otherNodeName = isSourceMatch ? rel.target : rel.source;
+                    const otherNodeType = getNodeType(otherNodeName);
+
+                    return {
+                        ...rel,
+                        otherNode: otherNodeName,
+                        otherNodeType: otherNodeType,
+                        direction: isSourceMatch ? 'outgoing' : 'incoming'
+                    };
+                });
+
+            // Resolve any name (canonical or alias) to canonical for display
+            function toCanonicalName(name) {
+                if (!name || !networkData.nameToCanonical) return name;
+                return networkData.nameToCanonical[name] || name;
+            }
+
+            // Short display name for a node (same logic as Measurement list: shortest of canonical + names)
+            function getDisplayNameForNode(canonicalName) {
+                const nodes = (networkData.nameToNode && networkData.nameToNode[canonicalName]) || [];
+                if (nodes.length === 0) return canonicalName;
+                const node = nodes[0];
+                if (node.type === 'construct') return node.name;
+                const candidates = [node.name];
+                if (node.rawConfig && Array.isArray(node.rawConfig.names)) {
+                    candidates.push(...node.rawConfig.names);
+                }
+                return candidates.reduce((a, b) => (a.length <= b.length ? a : b));
+            }
+
+            // Helper function to deduplicate and aggregate relationships by canonical node name
+            function deduplicateRelationships(rels) {
+                const deduplicated = new Map();
+
+                rels.forEach(rel => {
+                    const canonicalName = toCanonicalName(rel.otherNode);
+                    if (!deduplicated.has(canonicalName)) {
+                        deduplicated.set(canonicalName, {
+                            nodeName: canonicalName,
+                            displayName: getDisplayNameForNode(canonicalName),
+                            nodeType: rel.otherNodeType,
+                            papers: new Set(),
+                            evidence: []
+                        });
+                    }
+                    const agg = deduplicated.get(canonicalName);
+                    agg.papers.add(rel.paper);
+
+                    if (rel.evidence && agg.evidence.length < 2) {
+                        let evText = rel.evidence;
+                        try {
+                            const nodesForName = (networkData.nameToNode && networkData.nameToNode[canonicalName]) || [];
+                            if (nodesForName.length > 0 && nodesForName[0].rawConfig && Array.isArray(nodesForName[0].rawConfig.names)) {
+                                const aliases = nodesForName[0].rawConfig.names;
+                                aliases.forEach(alias => {
+                                    if (!alias || alias === canonicalName) return;
+                                    evText = evText.split(alias).join(canonicalName);
+                                });
+                            }
+                        } catch (e) {}
+                        agg.evidence.push(evText);
+                    }
+                });
+
+                return Array.from(deduplicated.values());
+            }
+
+            // Categorize relationships
+            const relatedConstructs = [];
+            const associatedBehaviors = [];
+            const measurements = [];
+
+            allRels.forEach(rel => {
+                if (rel.otherNodeType === 'construct') {
+                    relatedConstructs.push(rel);
+                } else if (rel.otherNodeType === 'behavior') {
+                    associatedBehaviors.push(rel);
+                } else if (rel.otherNodeType === 'measurement') {
+                    measurements.push(rel);
+                }
+            });
+
+            // Deduplicate each category
+            const deduplicatedConstructs = deduplicateRelationships(relatedConstructs);
+            const deduplicatedBehaviors = deduplicateRelationships(associatedBehaviors);
+            const deduplicatedMeasurements = deduplicateRelationships(measurements);
+
+            // Collect all definitions with their specific paper mappings
+            // We need to get this from semantic sets to get accurate definition-to-paper mappings
+            const definitionToPapers = new Map(); // Map definition text -> Set of papers
+
+            // Populate definition -> papers from configs (or legacy semantic_sets if present)
+            if (node.definitionEntries && node.definitionEntries.length > 0) {
+                node.definitionEntries.forEach(d => {
+                    if (!d.text) return;
+                    if (!definitionToPapers.has(d.text)) {
+                        definitionToPapers.set(d.text, new Set());
+                    }
+                    if (d.paper) {
+                        definitionToPapers.get(d.text).add(d.paper);
+                    }
+                });
+            } else if (networkData.semantic_sets) {
+                ['constructs', 'measurements', 'behaviors'].forEach(type => {
+                    const semanticSets = networkData.semantic_sets[type] || [];
+                    semanticSets.forEach(group => {
+                        if (group.canonical_name === node.name ||
+                            group.canonical_name === node.canonicalName ||
+                            group.nodes.some(n => n.name === node.name)) {
+                            group.nodes.forEach(n => {
+                                if (n.definition && n.paper) {
+                                    const def = n.definition;
+                                    if (!definitionToPapers.has(def)) {
+                                        definitionToPapers.set(def, new Set());
+                                    }
+                                    definitionToPapers.get(def).add(n.paper);
+                                }
+                            });
+                        }
+                    });
+                });
+            }
+
+            // Canonical definition from config (consensus definition)
+            // Prefer the live value on the node, but fall back to rawConfig in case the
+            // node object was created before canonical_definition was populated.
+            let canonicalDefinition = null;
+            if (node.canonicalDefinition && node.canonicalDefinition !== 'N/A') {
+                canonicalDefinition = node.canonicalDefinition;
+            } else if (node.rawConfig && node.rawConfig.canonical_definition && node.rawConfig.canonical_definition !== 'N/A') {
+                canonicalDefinition = node.rawConfig.canonical_definition;
+            }
+            let canonicalDefinitionPapers = new Set();
+
+            if (canonicalDefinition && definitionToPapers.size > 0) {
+                const papers = definitionToPapers.get(canonicalDefinition);
+                if (papers) {
+                    canonicalDefinitionPapers = papers;
+                }
+            }
+
+            // Build HTML
+            const expertReviewed = !!node.expertReviewed;
+            const expertTitle = expertReviewed ? 'Expert reviewed' : 'Not expert reviewed';
+            const expertColor = expertReviewed ? '#2e7d32' : '#c0392b';
+            let html = `<div class="details-header">${escapeHtml(node.name)}</div>
+                <div style="margin-top: -8px; margin-bottom: 14px; font-size: 12px; font-weight: 600; color: ${expertColor};">
+                    ${expertTitle}
+                </div>`;
+
+            // Implied definition (always shown; defaults to N/A)
+            const displayConsensus = canonicalDefinition ? canonicalDefinition : 'N/A';
+            const canonicalPapers = canonicalDefinition
+                ? Array.from(canonicalDefinitionPapers)
+                : [];
+            html += `<div class="definitions-dropdown" style="margin-bottom: 15px;">
+                    <label style="font-weight: 600; color: #2c3e50;">Implied Definitions from Papers</label>
+                    <div style="padding: 12px; background: #f8f9fa; border: 2px solid #3498db; border-radius: 6px; margin-top: 6px;">
+                        <div style="font-size: 13px; color: ${displayConsensus === 'N/A' ? '#95a5a6' : '#2c3e50'}; margin-bottom: 8px; line-height: 1.5;">${escapeHtml(displayConsensus)}</div>
+                        <div style="font-size: 11px; color: #7f8c8d;">
+                            ${canonicalPapers.map(p => {
+                    const url = (networkData.paperUrlByTitle && networkData.paperUrlByTitle[p]) ? networkData.paperUrlByTitle[p] : null;
+                    const label = escapeHtml(p.length > 35 ? p.substring(0, 35) + '...' : p);
+                    if (url) {
+                        return `<a href="${url}" target="_blank" rel="noopener" title="${escapeHtml(p)}" style="display: inline-block; margin-right: 6px; margin-bottom: 4px; padding: 3px 8px; background: #e3f2fd; border-radius: 3px; color: #1565c0; text-decoration: none; cursor: pointer;">${label}</a>`;
+                    }
+                    return `<a href="#" onclick="searchForPaper('${escapeHtml(p).replace(/'/g, "\\'")}'); return false;" title="${escapeHtml(p)}" style="display: inline-block; margin-right: 6px; margin-bottom: 4px; padding: 3px 8px; background: #e3f2fd; border-radius: 3px; color: #1565c0; text-decoration: none; cursor: pointer;">${label}</a>`;
+                }).join('')}
+                            <span style="font-size: 10px; color: #95a5a6; margin-left: 4px;">(${canonicalPapers.length} paper${canonicalPapers.length !== 1 ? 's' : ''})</span>
+                            </div>
+                        </div>
+                </div>`;
+
+            // All definitions dropdown with paper links
+            if (definitionToPapers.size > 0) {
+                const definitionsArray = Array.from(definitionToPapers.keys())
+                    .filter(def => !canonicalDefinition || def !== canonicalDefinition); // Exclude canonical if it exists
+                html += `<div class="definitions-dropdown">
+                    <label for="definitions-select">References in Papers (${definitionsArray.length + (canonicalDefinition ? 1 : 0)})</label>
+                    <div id="definitions-list" style="border: 1px solid #ddd; border-radius: 6px; background: white; max-height: 200px; overflow-y: auto;">
+                        ${definitionsArray.map((def, idx) => {
+                    const papers = Array.from(definitionToPapers.get(def));
+                    return `<div style="padding: 8px 12px; border-bottom: 1px solid #f0f0f0; ${idx === 0 ? 'background: #f8f9fa;' : ''}">
+                                <div style="font-size: 13px; color: #2c3e50; margin-bottom: 6px;">${escapeHtml(def)}</div>
+                                <div style="font-size: 11px; color: #7f8c8d;">
+                                    ${papers.map(p => {
+                        const url = (networkData.paperUrlByTitle && networkData.paperUrlByTitle[p]) ? networkData.paperUrlByTitle[p] : null;
+                        const label = escapeHtml(p.length > 35 ? p.substring(0, 35) + '...' : p);
+                        if (url) {
+                            return `<a href="${url}" target="_blank" rel="noopener" title="${escapeHtml(p)}" style="display: inline-block; margin-right: 6px; margin-bottom: 4px; padding: 3px 8px; background: #e3f2fd; border-radius: 3px; color: #1565c0; text-decoration: none; cursor: pointer;">${label}</a>`;
+                        }
+                        return `<a href="#" onclick="searchForPaper('${escapeHtml(p).replace(/'/g, "\\'")}'); return false;" title="${escapeHtml(p)}" style="display: inline-block; margin-right: 6px; margin-bottom: 4px; padding: 3px 8px; background: #e3f2fd; border-radius: 3px; color: #1565c0; text-decoration: none; cursor: pointer;">${label}</a>`;
+                    }).join('')}
+                                    <span style="font-size: 10px; color: #95a5a6; margin-left: 4px;">(${papers.length} paper${papers.length !== 1 ? 's' : ''})</span>
+                            </div>
+                            </div>`;
+                }).join('')}
+                        </div>
+                </div>`;
+            } else {
+                html += `<div class="definitions-dropdown">
+                    <label>Definitions</label>
+                    <div style="padding: 20px; text-align: center; color: #95a5a6;">
+                        No definitions available
+                    </div>
+                </div>`;
+            }
+
+            // Related Constructs (always show)
+            html += `<div class="category-section">
+                <h3 class="category-title">Related Constructs (${deduplicatedConstructs.length})</h3>`;
+            if (deduplicatedConstructs.length > 0) {
+                html += `<div class="relationship-list">
+                    ${deduplicatedConstructs.map(agg => {
+                    const paperCount = agg.papers.size;
+                    const evidenceText = agg.evidence.length > 0 ? agg.evidence[0] : '';
+
+                    // Escape for use in onclick (use canonical nodeName for selection)
+                    const escapedName = agg.nodeName.replace(/'/g, "\\'").replace(/"/g, '\\"');
+                    return `
+                        <div class="relationship-item construct" onclick="selectNodeByName('${escapedName}', '${agg.nodeType}')">
+                            <div class="relationship-nodes">
+                                <strong>${escapeHtml(agg.displayName)}</strong>
+                            </div>
+                            <div class="result-definition" style="margin-top: 5px; margin-bottom: 5px;">${paperCount} paper${paperCount !== 1 ? 's' : ''}</div>
+                            ${evidenceText ? `<div class="relationship-evidence">${escapeHtml(evidenceText)}</div>` : ''}
+                </div>
+            `;
+                }).join('')}
+                </div>`;
+            } else {
+                html += '<div class="empty-state" style="padding: 20px;"><p>No related constructs</p></div>';
+            }
+            html += `</div>`;
+
+            // Related Measurement Instruments (always show)
+            html += `<div class="category-section">
+                <h3 class="category-title">Related Measurement Instruments (${deduplicatedMeasurements.length})</h3>`;
+            if (deduplicatedMeasurements.length > 0) {
+                html += `<div class="relationship-list">
+                    ${deduplicatedMeasurements.map(agg => {
+                    const paperCount = agg.papers.size;
+                    const evidenceText = agg.evidence.length > 0 ? agg.evidence[0] : '';
+
+                    // Escape for use in onclick (use canonical nodeName for selection)
+                    const escapedName = agg.nodeName.replace(/'/g, "\\'").replace(/"/g, '\\"');
+                    return `
+                        <div class="relationship-item measurement" onclick="selectNodeByName('${escapedName}', '${agg.nodeType}')">
+                            <div class="relationship-nodes">
+                                <strong>${escapeHtml(agg.displayName)}</strong>
+                            </div>
+                            <div class="result-definition" style="margin-top: 5px; margin-bottom: 5px;">${paperCount} paper${paperCount !== 1 ? 's' : ''}</div>
+                            ${evidenceText ? `<div class="relationship-evidence">${escapeHtml(evidenceText)}</div>` : ''}
+                        </div>
+                    `;
+                }).join('')}
+                </div>`;
+            } else {
+                html += '<div class="empty-state" style="padding: 20px;"><p>No related measurement instruments</p></div>';
+            }
+            html += `</div>`;
+
+            // Associated Behaviors (only show if there are any)
+            if (deduplicatedBehaviors.length > 0) {
+                html += `<div class="category-section">
+                    <h3 class="category-title">Associated Behaviors/Tasks (${deduplicatedBehaviors.length})</h3>
+                    <div class="relationship-list">
+                        ${deduplicatedBehaviors.map(agg => {
+                    const paperCount = agg.papers.size;
+                    const evidenceText = agg.evidence.length > 0 ? agg.evidence[0] : '';
+
+                    // Escape for use in onclick (use canonical nodeName for selection)
+                    const escapedName = agg.nodeName.replace(/'/g, "\\'").replace(/"/g, '\\"');
+                    return `
+                            <div class="relationship-item behavior" onclick="selectNodeByName('${escapedName}', '${agg.nodeType}')">
+                                <div class="relationship-nodes">
+                                    <strong>${escapeHtml(agg.displayName)}</strong>
+                                </div>
+                                <div class="result-definition" style="margin-top: 5px; margin-bottom: 5px;">${paperCount} paper${paperCount !== 1 ? 's' : ''}</div>
+                                ${evidenceText ? `<div class="relationship-evidence">${escapeHtml(evidenceText)}</div>` : ''}
+                            </div>
+                        `;
+                }).join('')}
+                    </div>
+                </div>`;
+            }
+
+            // Raw config (JSON) viewer for full node config
+            if (node.rawConfig) {
+                const rawConfigId = `raw-config-${Math.random().toString(36).slice(2)}`;
+                const rawConfigJson = escapeHtml(JSON.stringify(node.rawConfig, null, 2));
+                html += `<div class="category-section raw-config-section">
+                    <h3 class="category-title">Full Config (JSON)</h3>
+                    <button class="raw-config-toggle" type="button" onclick="toggleRawConfig('${rawConfigId}')">
+                        Show / hide full config
+                    </button>
+                    <pre id="${rawConfigId}" class="raw-config-content" style="display:none;">${rawConfigJson}</pre>
+                </div>`;
+            }
+
+            targetContainer.innerHTML = html;
+        }
+
+        // Go back to the list view
+        function goBackToList() {
+            selectedNode = null;
+            const resultsHeader = document.getElementById('resultsHeader');
+            if (resultsHeader) {
+                if (currentFilter === 'home') {
+                    resultsHeader.textContent = 'Home';
+                } else if (currentFilter === 'constructs') {
+                    resultsHeader.textContent = 'Constructs';
+                } else if (currentFilter === 'measurements') {
+                    resultsHeader.textContent = 'Measurement Instruments';
+                } else if (currentFilter === 'behaviors') {
+                    resultsHeader.textContent = 'Behaviors';
+                }
+            }
+            renderResults();
+        }
+
+        // Helper functions
+        function getTypeColor(type) {
+            const colors = {
+                construct: '#4caf50',
+                measurement: '#2196f3',
+                behavior: '#e91e63'
+            };
+            return colors[type] || '#95a5a6';
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        // Toggle raw config visibility (details page)
+        function toggleRawConfig(id) {
+            const el = document.getElementById(id);
+            if (!el) return;
+            el.style.display = (el.style.display === 'none' || !el.style.display) ? 'block' : 'none';
+        }
+
+        // Search input handlers
+        (function initSearch() {
+            const input = document.getElementById('searchInput');
+            const clearBtn = document.getElementById('clearSearchBtn');
+            if (!input || !clearBtn) return;
+
+            input.addEventListener('input', () => {
+                currentSearch = input.value || '';
+                renderResults();
+            });
+
+            clearBtn.addEventListener('click', () => {
+                currentSearch = '';
+                input.value = '';
+                renderResults();
+            });
+        })();
+    </script>
+</body>
+
+</html>

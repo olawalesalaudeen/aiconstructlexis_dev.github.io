@@ -1,0 +1,455 @@
+{
+  "canonical_name": "Zero-shot Generalization",
+  "type": "construct",
+  "canonical_definition": "Zero-shot Generalization refers to a model's ability to perform tasks or generalize to unseen datasets, domains, or scenarios without task-specific training, fine-tuning, or supervised examples for those specific tasks. This capability relies on knowledge acquired during pretraining and is demonstrated across diverse applications, including reasoning, forecasting, and multimodal tasks, often evaluated via zero-shot accuracy, cross-dataset transfer, or performance on novel scenarios without retraining. While some definitions emphasize the absence of paired training data or explicit task-specific instruction, others highlight the model's capacity to solve unfamiliar problems akin to human-like generalization.",
+  "expert_reviewed": false,
+  "names": [
+    "Zero-Shot Generalization",
+    "Zero-shot Generalization"
+  ],
+  "papers": [
+    "A Hitchhiker's Guide to Fine-Grained Face Forgery Detection Using Common Sense Reasoning",
+    "An eye for an ear: zero-shot audio description leveraging an image captioner with audio-visual token distribution matching",
+    "AutoTimes: Autoregressive Time Series Forecasters via Large Language Models",
+    "DISP-LLM: Dimension-Independent Structural Pruning for Large Language Models",
+    "Emotion-LLaMA: Multimodal Emotion Recognition and Reasoning with Instruction Tuning",
+    "FEDMEKI: A Benchmark for Scaling Medical Foundation Models via Federated Knowledge Injection",
+    "FlexCap: Describe Anything in Images in Controllable Detail",
+    "Grounded Answers for Multi-agent Decision-making Problem through Generative World Model",
+    "PUZZLES: A Benchmark for Neural Algorithmic Reasoning",
+    "Prompt Tuning Strikes Back: Customizing Foundation Models with Low-Rank Prompt Adaptation",
+    "SG-Nav: Online 3D Scene Graph Prompting for LLM-based Zero-shot Object Navigation",
+    "SMART: Scalable Multi-agent Real-time Motion Generation via Next-token Prediction",
+    "Search for Efficient Large Language Models",
+    "SocialGPT: Prompting LLMs for Social Relation Reasoning via Greedy Segment Optimization",
+    "Time-FFM: Towards LM-Empowered Federated Foundation Model for Time Series Forecasting",
+    "Visual Autoregressive Modeling: Scalable Image Generation via Next-Scale Prediction"
+  ],
+  "paper_count": 16,
+  "group_ids": [
+    253,
+    611,
+    936,
+    2262,
+    2323,
+    2986,
+    3205,
+    3597,
+    4064,
+    4141,
+    4920,
+    5266,
+    5566,
+    5862,
+    5992,
+    6165
+  ],
+  "definitions": [
+    {
+      "text": "Foundation models demonstrate strong zero-shot generalization on diverse datasets, as noted in the paper’s analysis .",
+      "paper": "Prompt Tuning Strikes Back: Customizing Foundation Models with Low-Rank Prompt Adaptation"
+    },
+    {
+      "text": "Capability to solve tasks without task-specific training, akin to a human solving a puzzle for the first time. ",
+      "paper": "PUZZLES: A Benchmark for Neural Algorithmic Reasoning"
+    },
+    {
+      "text": "Ability to perform a task without supervised paired training examples.",
+      "paper": "An eye for an ear: zero-shot audio description leveraging an image captioner with audio-visual token distribution matching"
+    },
+    {
+      "text": "Performance without task-specific training ('zero-shot accuracy') across multiple datasets.",
+      "paper": "Search for Efficient Large Language Models"
+    },
+    {
+      "text": "Ability to generalize to unseen tasks without task-specific training (assessed via validation tasks). ",
+      "paper": "FEDMEKI: A Benchmark for Scaling Medical Foundation Models via Federated Knowledge Injection"
+    },
+    {
+      "text": "Ability to generate accurate outputs on unseen datasets without additional training; tested by training on NuPlan and validating on WOMD .",
+      "paper": "SMART: Scalable Multi-agent Real-time Motion Generation via Next-token Prediction"
+    },
+    {
+      "text": "Ability to perform a task without additional model training on task-specific data. ",
+      "paper": "SocialGPT: Prompting LLMs for Social Relation Reasoning via Greedy Segment Optimization"
+    },
+    {
+      "text": "Performance without task-specific training on deepfake data; leveraging pretraining to form a concept of real vs fake .",
+      "paper": "A Hitchhiker's Guide to Fine-Grained Face Forgery Detection Using Common Sense Reasoning"
+    },
+    {
+      "text": "Ability to perform tasks without task‑specific fine‑tuning; evaluated via five zero‑shot tasks.  ",
+      "paper": "DISP-LLM: Dimension-Independent Structural Pruning for Large Language Models"
+    },
+    {
+      "text": "Generalize to unseen domains without task-specific training, evaluated via cross-dataset transfer. ",
+      "paper": "AutoTimes: Autoregressive Time Series Forecasters via Large Language Models"
+    },
+    {
+      "text": "Generalization without training/finetuning in open-vocabulary object navigation; LLMs exhibit extensive knowledge and surprising generalization ability .",
+      "paper": "SG-Nav: Online 3D Scene Graph Prompting for LLM-based Zero-shot Object Navigation"
+    },
+    {
+      "text": "Capability to perform forecasting without task-specific fine-tuning; claimed as an intended property of the proposed forecaster .",
+      "paper": "Time-FFM: Towards LM-Empowered Federated Foundation Model for Time Series Forecasting"
+    },
+    {
+      "text": "Ability of a (language) model to perform tasks it was not explicitly trained on. ",
+      "paper": "Visual Autoregressive Modeling: Scalable Image Generation via Next-Scale Prediction"
+    },
+    {
+      "text": "Ability to perform image and video question answering without task-specific training, as evaluated in zero-shot settings   .",
+      "paper": "FlexCap: Describe Anything in Images in Controllable Detail"
+    },
+    {
+      "text": "Ability to generalize to extensive unseen scenarios without retraining. ",
+      "paper": "Grounded Answers for Multi-agent Decision-making Problem through Generative World Model"
+    },
+    {
+      "text": "Ability to perform well on unseen datasets without task-specific fine-tuning, demonstrated via zero-shot evaluations .",
+      "paper": "Emotion-LLaMA: Multimodal Emotion Recognition and Reasoning with Instruction Tuning"
+    }
+  ],
+  "definition_count": 16,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "PUZZLES: A Benchmark for Neural Algorithmic Reasoning",
+      "evidence": "The LLM/VLM evaluation focuses on zero-shot performance without puzzle-specific training."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PUZZLES Zero-Shot Puzzle-Solving Success Rate (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "PUZZLES: A Benchmark for Neural Algorithmic Reasoning",
+      "evidence": "Zero-shot evaluation uses success rates on puzzles without task-specific training."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Audio Captioning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "An eye for an ear: zero-shot audio description leveraging an image captioner with audio-visual token distribution matching",
+      "evidence": "Zero-shot audio captioning is defined as generating audio captions without training on manually assembled audio-caption pairs, a specific setting of the audio captioning construct ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Average Zero‑shot Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Search for Efficient Large Language Models",
+      "evidence": "Average zero-shot accuracy across multiple datasets is explicitly reported as a key outcome  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Enlarged Cardiomediastinum Detection (Validation)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "FEDMEKI: A Benchmark for Scaling Medical Foundation Models via Federated Knowledge Injection",
+      "evidence": "Validation tasks assess the model’s zero-shot inference ability; enlarged cardiomediastinum detection is one."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Sepsis Prediction (Validation)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "FEDMEKI: A Benchmark for Scaling Medical Foundation Models via Federated Knowledge Injection",
+      "evidence": "Validation tasks assess zero-shot capability; sepsis prediction is evaluated and shows distribution shift effects."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MedVQA (Validation)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "FEDMEKI: A Benchmark for Scaling Medical Foundation Models via Federated Knowledge Injection",
+      "evidence": "Validation tasks assess zero-shot ability; MedVQA is a generation task over image–text pairs."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Signal Noise Clarification (Validation)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "FEDMEKI: A Benchmark for Scaling Medical Foundation Models via Federated Knowledge Injection",
+      "evidence": "Validation tasks assess zero-shot ability; Signal Noise Clarification is a generation task over signal–text pairs."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Medical Knowledge Integration via Federated Learning",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "FEDMEKI: A Benchmark for Scaling Medical Foundation Models via Federated Knowledge Injection",
+      "evidence": "Without federated scaling, the base medical LLM could not handle several tasks; scaled models are used for zero-shot evaluation."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SMART-zeroshot Realism Meta (WOMD 2024)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SMART: Scalable Multi-agent Real-time Motion Generation via Next-token Prediction",
+      "evidence": "SMART trained on NuPlan and validated on WOMD achieves a 0.721 Realism Meta score in zero-shot setting"
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Discrete Tokenization (Representation Discretization)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "SMART: Scalable Multi-agent Real-time Motion Generation via Next-token Prediction",
+      "evidence": "Discrete tokenization is inferred to eliminate dataset gaps and improve cross-dataset generalization"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIPA Social Relation Recognition Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SocialGPT: Prompting LLMs for Social Relation Reasoning via Greedy Segment Optimization",
+      "evidence": "The paper emphasizes zero-shot evaluation without additional model training on PIPA."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PISC Social Relation Recognition Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SocialGPT: Prompting LLMs for Social Relation Reasoning via Greedy Segment Optimization",
+      "evidence": "Zero-shot accuracy is reported on PISC as well."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Binary Deepfake Detection (VQA, Synonym Prompts)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "A Hitchhiker's Guide to Fine-Grained Face Forgery Detection Using Common Sense Reasoning",
+      "evidence": "All results are zero-shot; models leverage pretraining to form a concept of real vs fake ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Fine-Grained Open-Ended VQA (SeqDeepFake Attributes)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "A Hitchhiker's Guide to Fine-Grained Face Forgery Detection Using Common Sense Reasoning",
+      "evidence": "Fine-grained VQA performance reported under zero-shot conditions  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Fine-Grained Open-Ended VQA (SeqDeepFake Components)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "A Hitchhiker's Guide to Fine-Grained Face Forgery Detection Using Common Sense Reasoning",
+      "evidence": "Zero-shot fine-grained evaluation extends across datasets ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Fine-Grained Open-Ended VQA (R-Splicer)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "A Hitchhiker's Guide to Fine-Grained Face Forgery Detection Using Common Sense Reasoning",
+      "evidence": "Open-ended zero-shot evaluation on R-Splicer ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA Zero‑shot Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "DISP-LLM: Dimension-Independent Structural Pruning for Large Language Models",
+      "evidence": "Evaluation includes PIQA as one of five well‑known zero‑shot tasks."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande Zero‑shot Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "DISP-LLM: Dimension-Independent Structural Pruning for Large Language Models",
+      "evidence": "WinoGrande is included among the five zero‑shot tasks used for evaluation."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HellaSwag Zero‑shot Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "DISP-LLM: Dimension-Independent Structural Pruning for Large Language Models",
+      "evidence": "HellaSwag is included among the five zero‑shot tasks used for evaluation."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-e Zero-shot Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "DISP-LLM: Dimension-Independent Structural Pruning for Large Language Models",
+      "evidence": "ARC‑e is included among the five zero‑shot tasks used for evaluation."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-e Zero-shot Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "DISP-LLM: Dimension-Independent Structural Pruning for Large Language Models",
+      "evidence": "ARC‑c is included among the five zero‑shot tasks used for evaluation."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Pruning Robustness",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "DISP-LLM: Dimension-Independent Structural Pruning for Large Language Models",
+      "evidence": "Pruned models consistently outperform prior structural pruning baselines on zero‑shot tasks, including at 50% pruning."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Structural Pruning Flexibility",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "DISP-LLM: Dimension-Independent Structural Pruning for Large Language Models",
+      "evidence": "The authors aim to increase pruning flexibility and consequently improve performance."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "AutoTimes: Autoregressive Time Series Forecasters via Large Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Zero-shot Forecasting M4→M3",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "AutoTimes: Autoregressive Time Series Forecasters via Large Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Zero-shot Forecasting M4→M3",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "AutoTimes: Autoregressive Time Series Forecasters via Large Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Zero-shot Object-Goal Navigation Success Rate (MP3D)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SG-Nav: Online 3D Scene Graph Prompting for LLM-based Zero-shot Object Navigation",
+      "evidence": "Zero-shot setting (no training; open vocabulary) is evaluated on MP3D SR to demonstrate generalization  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Zero-shot Object-Goal Navigation Success Rate (HM3D)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SG-Nav: Online 3D Scene Graph Prompting for LLM-based Zero-shot Object Navigation",
+      "evidence": "Zero-shot setting is evaluated on HM3D SR to demonstrate generalization ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Zero-shot Object-Goal Navigation Success Rate (HM3D)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SG-Nav: Online 3D Scene Graph Prompting for LLM-based Zero-shot Object Navigation",
+      "evidence": "Zero-shot setting is evaluated on RoboTHOR SR to demonstrate generalization ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQAv2 (Image VQA)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "FlexCap: Describe Anything in Images in Controllable Detail",
+      "evidence": "The paper evaluates VQAv2 in a zero-shot setting and reports accuracy ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GQA (Image VQA)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "FlexCap: Describe Anything in Images in Controllable Detail",
+      "evidence": "GQA is evaluated zero-shot with reported accuracy ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GQA (Image VQA)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "FlexCap: Describe Anything in Images in Controllable Detail",
+      "evidence": "OKVQA is evaluated zero-shot with reported accuracy ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VizWiz (Image VQA)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "FlexCap: Describe Anything in Images in Controllable Detail",
+      "evidence": "VizWiz is evaluated zero-shot with reported accuracy; the method outperforms baselines in this setting ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MSRVTT-QA (Video QA)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "FlexCap: Describe Anything in Images in Controllable Detail",
+      "evidence": "The system significantly exceeds Flamingo in the zero-shot setting on video QA ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MSVD-QA (Video QA)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "FlexCap: Describe Anything in Images in Controllable Detail",
+      "evidence": "The system significantly exceeds Flamingo in the zero-shot setting on video QA ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multi-agent Decision-Making Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Grounded Answers for Multi-agent Decision-making Problem through Generative World Model",
+      "evidence": "Zero-shot generalization ability is crucial for generating grounded answers for multi-agent decision-making problems."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Transfer/Generalization to Unfamiliar Domains",
+      "other_type": "constructs",
+      "relationship_type": "overlaps",
+      "paper": "Grounded Answers for Multi-agent Decision-making Problem through Generative World Model",
+      "evidence": "The paper frames transfer of learned knowledge to unfamiliar domains as zero-shot generalization to unseen scenarios."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Simulation-Based Planning via World Models",
+      "other_type": "constructs",
+      "relationship_type": "improves",
+      "paper": "Grounded Answers for Multi-agent Decision-making Problem through Generative World Model",
+      "evidence": "Learning a reward function with the proposed world model shows better zero-shot generalization than simple policy adaptation."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "DFEW UAR",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Emotion-LLaMA: Multimodal Emotion Recognition and Reasoning with Instruction Tuning",
+      "evidence": "Zero-shot results on DFEW indicate strong generalization ability ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "DFEW UAR",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Emotion-LLaMA: Multimodal Emotion Recognition and Reasoning with Instruction Tuning",
+      "evidence": "Zero-shot WAR on DFEW used to demonstrate generalization ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction-Following for Emotion Tasks",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Emotion-LLaMA: Multimodal Emotion Recognition and Reasoning with Instruction Tuning",
+      "evidence": "Instruction tuning is cited as improving zero-shot/few-shot performance and the paper reports strong zero-shot results  ."
+    }
+  ],
+  "relationship_count": 42,
+  "incoming_relationship_count": 7,
+  "outgoing_relationship_count": 35
+}

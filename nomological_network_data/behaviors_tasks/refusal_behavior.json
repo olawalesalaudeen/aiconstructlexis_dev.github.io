@@ -1,0 +1,85 @@
+{
+  "canonical_name": "Refusal Behavior",
+  "type": "behavior",
+  "canonical_definition": "Refusal Behavior refers to the act of declining to generate responses to unsafe, harmful, or inappropriate inputs, such as malicious prompts, toxic/NSFW content, or jailbreaking attempts, often operationalized through explicit refusal to produce requested outputs. This behavior is commonly observed in safety-evaluated systems where it serves as an indicator of adherence to guardrails designed to prevent harmful content generation, with variants appearing in multimodal scenarios and adversarial contexts. It is typically framed as a safety capability but may also be treated as a task-compliance trait when contrasting coherent responses with refusals.",
+  "expert_reviewed": false,
+  "names": [
+    "Refusal Behavior"
+  ],
+  "papers": [
+    "Adversarial Representation Engineering: A General Model Editing Framework for Large Language Models",
+    "HelpSteer 2: Open-source dataset for training top-performing reward models",
+    "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models",
+    "SG-Bench: Evaluating LLM Safety Generalization Across Diverse Tasks and Prompt Types"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Avoiding generation of harmful content; operationalized via refusal of malicious prompts.",
+      "paper": "Adversarial Representation Engineering: A General Model Editing Framework for Large Language Models"
+    },
+    {
+      "text": "Ability to comply with task instructions coherently rather than refusing or producing incoherent outputs.",
+      "paper": "SG-Bench: Evaluating LLM Safety Generalization Across Diverse Tasks and Prompt Types"
+    },
+    {
+      "text": "Guardrails to refuse toxic/NSFW inputs, identify risks, and resist jailbreaking attacks in multimodal scenarios  .",
+      "paper": "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models"
+    },
+    {
+      "text": "Preference for refusal responses to unsafe user requests.",
+      "paper": "HelpSteer 2: Open-source dataset for training top-performing reward models"
+    },
+    {
+      "text": "Refusal to describe NSFW images and toxicity scoring reflect safety guardrails .",
+      "paper": "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models"
+    }
+  ],
+  "definition_count": 5,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Harmlessness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Adversarial Representation Engineering: A General Model Editing Framework for Large Language Models",
+      "evidence": "Avoiding generation of harmful content; operationalized via refusal of malicious prompts."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction Following",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "SG-Bench: Evaluating LLM Safety Generalization Across Diverse Tasks and Prompt Types",
+      "evidence": "Ability to comply with task instructions coherently rather than refusing or producing incoherent outputs."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Safety",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models",
+      "evidence": "Guardrails to refuse toxic/NSFW inputs, identify risks, and resist jailbreaking attacks in multimodal scenarios  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Safety",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "HelpSteer 2: Open-source dataset for training top-performing reward models",
+      "evidence": "Preference for refusal responses to unsafe user requests."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Safety",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models",
+      "evidence": "Refusal to describe NSFW images and toxicity scoring reflect safety guardrails ."
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 5,
+  "outgoing_relationship_count": 0
+}

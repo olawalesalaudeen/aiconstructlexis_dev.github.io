@@ -1,0 +1,207 @@
+{
+  "canonical_name": "MathVista",
+  "type": "measurement",
+  "canonical_definition": "MathVista is a multimodal benchmark designed to evaluate mathematical reasoning in visual contexts, structured primarily as visual question answering (VQA). It assesses a model's ability to integrate mathematical computation and visual understanding across diverse problem types, with some papers specifying its focus on seven distinct ability categories or minimal visual dependence in certain tasks. The benchmark includes variants such as testmini subsets and supports evaluations in both zero-shot and standard fine-tuning settings, often serving as a standardized tool for comparing vision-language models' math reasoning capabilities.",
+  "expert_reviewed": false,
+  "names": [
+    "MathVista",
+    "MathVerse Accuracy",
+    "MathVista Accuracy",
+    "MathVista Accuracy (%)",
+    "MathVista Score"
+  ],
+  "papers": [
+    "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+    "CogVLM: Visual Expert for Pretrained Language Models",
+    "Dense Connector for MLLMs",
+    "Enhancing Large Vision Language Models with Self-Training on Image Comprehension",
+    "InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD",
+    "MMDU: A Multi-Turn Multi-Image Dialog Understanding Benchmark and Instruction-Tuning Dataset for LVLMs",
+    "Measuring Multimodal Mathematical Reasoning with MATH-Vision Dataset",
+    "Meteor: Mamba-based Traversal of Rationale for Large Language and Vision Models",
+    "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+    "Prism: A Framework for Decoupling and Assessing the Capabilities of VLMs",
+    "What matters when building vision-language models?"
+  ],
+  "paper_count": 11,
+  "group_ids": [
+    679,
+    710,
+    1063,
+    1804,
+    1968,
+    3443,
+    3503,
+    4602,
+    5302,
+    5424
+  ],
+  "definitions": [
+    {
+      "text": "Mathematical reasoning in visual contexts. MathVista Accuracy (%)  .",
+      "paper": "MMDU: A Multi-Turn Multi-Image Dialog Understanding Benchmark and Instruction-Tuning Dataset for LVLMs"
+    },
+    {
+      "text": "Mathematical reasoning in visual contexts MathVista Accuracy (%)",
+      "paper": "Enhancing Large Vision Language Models with Self-Training on Image Comprehension"
+    },
+    {
+      "text": "Evaluates mathematical reasoning of foundation models in visual contexts; minimal visual dependence observed here. MathVista Accuracy (%)",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs"
+    },
+    {
+      "text": "Multimodal mathematical reasoning. MathVista Score (testmini)",
+      "paper": "What matters when building vision-language models?"
+    },
+    {
+      "text": "Mathematical + visual reasoning across seven ability types MathVista Score/Accuracy (%)",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models"
+    },
+    {
+      "text": "Math-focused visual reasoning benchmark MathVista Accuracy (%)",
+      "paper": "Meteor: Mamba-based Traversal of Rationale for Large Language and Vision Models"
+    },
+    {
+      "text": "Mathematical reasoning with images MathVista Overall score",
+      "paper": "InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD"
+    },
+    {
+      "text": "Visual mathematical reasoning MathVista (reported as Math) Accuracy (%)",
+      "paper": "Dense Connector for MLLMs"
+    },
+    {
+      "text": "Mathematical visual question answering MathVista Accuracy (%) .",
+      "paper": "Prism: A Framework for Decoupling and Assessing the Capabilities of VLMs"
+    },
+    {
+      "text": "Accuracy on MathVista, a widely used multimodal math reasoning benchmark; used for comparison with MATH‑V. MathVista Zero‑shot Accuracy (%)",
+      "paper": "Measuring Multimodal Mathematical Reasoning with MATH-Vision Dataset"
+    },
+    {
+      "text": "Multimodal math reasoning evaluation MathVista Accuracy (%)",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context"
+    },
+    {
+      "text": "Multimodal math reasoning evaluation MathVerse Accuracy (%)",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context"
+    }
+  ],
+  "definition_count": 12,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning in Visual Contexts",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+      "evidence": "MathVista evaluates mathematical reasoning of foundation models in visual contexts."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+      "evidence": "MathVista yields a small vision vs no‑vision gap in this analysis."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning (Visual Contexts)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "MMDU: A Multi-Turn Multi-Image Dialog Understanding Benchmark and Instruction-Tuning Dataset for LVLMs",
+      "evidence": "MathVista evaluates mathematical reasoning of foundation models in visual contexts; the paper reports +1.5% improvement  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning (Multimodal)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "What matters when building vision-language models?",
+      "evidence": "MathVista is the math reasoning benchmark for VLMs."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Visual Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models",
+      "evidence": "MathVista combines mathematical and visual understanding across seven reasoning types ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Meteor: Mamba-based Traversal of Rationale for Large Language and Vision Models",
+      "evidence": "MathVista appears among core reported results for math-related visual reasoning ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Meteor: Mamba-based Traversal of Rationale for Large Language and Vision Models",
+      "evidence": "MathVista appears among core reported results for math-related visual reasoning ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning (Visual Contexts)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Enhancing Large Vision Language Models with Self-Training on Image Comprehension",
+      "evidence": "MathVista evaluates mathematical reasoning of foundation models in visual contexts; accuracy reflects this ability ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD",
+      "evidence": "MathVista is included in the 16‑benchmark evaluation with resolution stats ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Dense Connector for MLLMs",
+      "evidence": "MathVista is used to evaluate visual mathematical reasoning; improvements are highlighted in tables and text  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Vision-Language Task Solving",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Prism: A Framework for Decoupling and Assessing the Capabilities of VLMs",
+      "evidence": "Evaluation includes mathematical VQA via MathVista ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Measuring Multimodal Mathematical Reasoning with MATH-Vision Dataset",
+      "evidence": "MathVista is a widely used benchmark of mathematical reasoning in visual contexts, though it emphasizes recognition and has limited subject diversity."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning (Multimodal)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "evidence": "MathVista is used in the comprehensive assessment to test multimodal math reasoning ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning (Multimodal)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "evidence": "MathVerse is also used in the assessment of math reasoning capability ."
+    }
+  ],
+  "relationship_count": 14,
+  "incoming_relationship_count": 14,
+  "outgoing_relationship_count": 0
+}

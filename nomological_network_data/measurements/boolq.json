@@ -1,0 +1,245 @@
+{
+  "canonical_name": "BoolQ",
+  "type": "measurement",
+  "canonical_definition": "BoolQ is a binary yes/no question answering benchmark primarily used to evaluate reading comprehension and commonsense reasoning capabilities in language models. It typically involves answering questions requiring factual or inferential understanding of textual passages, with some variants framed as open-/closed-book QA or focusing on specific subsets like balanced samples. The task is often included in multi-task evaluation suites to assess LLMs' ability to handle straightforward factual queries and logical deduction.",
+  "expert_reviewed": false,
+  "names": [
+    "BoolQ",
+    "BOOLQ Accuracy (%)",
+    "BoolQ Accuracy",
+    "BoolQ Accuracy (%)"
+  ],
+  "papers": [
+    "AmoebaLLM: Constructing Any-Shape Large Language Models for Efficient and Instant Deployment",
+    "Calibrating Reasoning in Language Models with Internal Consistency",
+    "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models",
+    "FouRA: Fourier Low-Rank Adaptation",
+    "Learn more, but bother less: parameter efficient continual learning",
+    "LoFiT: Localized Fine-tuning on LLM Representations",
+    "Megalodon: Efficient LLM Pretraining and Inference with Unlimited Context Length",
+    "MixEval: Deriving Wisdom of the Crowd from LLM Benchmark Mixtures",
+    "Not All Tokens Are What You Need for Pretraining",
+    "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation",
+    "SVFT: Parameter-Efficient Fine-Tuning with Singular Vectors",
+    "ShiftAddLLM: Accelerating Pretrained LLMs via Post-Training Multiplication-Less Reparameterization",
+    "Sparse High Rank Adapters",
+    "Sparse maximal update parameterization: A holistic approach to sparse training dynamics"
+  ],
+  "paper_count": 14,
+  "group_ids": [
+    870,
+    944,
+    1224,
+    1380,
+    1417,
+    2622,
+    2742,
+    3494,
+    3614,
+    3749,
+    3839,
+    3903,
+    4404,
+    4924
+  ],
+  "definitions": [
+    {
+      "text": "Boolean yes/no question answering. SuperGLUE Accuracy (%)",
+      "paper": "Learn more, but bother less: parameter efficient continual learning"
+    },
+    {
+      "text": "Yes/No reading comprehension BoolQ Accuracy (%) (lm-eval-harness default)",
+      "paper": "Not All Tokens Are What You Need for Pretraining"
+    },
+    {
+      "text": "Yes/No reading comprehension; open-/closed-book QA representative BoolQ Accuracy (%) .",
+      "paper": "LoFiT: Localized Fine-tuning on LLM Representations"
+    },
+    {
+      "text": "Binary QA task accuracy contributing to commonsense reasoning evaluation . BoolQ Accuracy (%)",
+      "paper": "AmoebaLLM: Constructing Any-Shape Large Language Models for Efficient and Instant Deployment"
+    },
+    {
+      "text": "Yes/No QA; cited as having low correlation with human preference in analysis (≈0.37) . BoolQ Accuracy (%)",
+      "paper": "MixEval: Deriving Wisdom of the Crowd from LLM Benchmark Mixtures"
+    },
+    {
+      "text": "Yes/No question answering accuracy BoolQ Accuracy (↑)",
+      "paper": "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models"
+    },
+    {
+      "text": "Yes/No QA for reading comprehension BOOLQ Accuracy (%)",
+      "paper": "SVFT: Parameter-Efficient Fine-Tuning with Singular Vectors"
+    },
+    {
+      "text": "Yes/No reading comprehension (BoolQ) with LLaMA‑3‑8B adapters. Commonsense Reasoning Accuracy (%)",
+      "paper": "FouRA: Fourier Low-Rank Adaptation"
+    },
+    {
+      "text": "Yes/No reading comprehension performance in the benchmark table BoolQ Accuracy (%)",
+      "paper": "Megalodon: Efficient LLM Pretraining and Inference with Unlimited Context Length"
+    },
+    {
+      "text": "Commonsense question answering downstream task. BoolQ Accuracy (↑)",
+      "paper": "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation"
+    },
+    {
+      "text": "Accuracy on BoolQ, listed among the paper's commonsense reasoning benchmarks for LLMs BoolQ Accuracy (%)",
+      "paper": "Sparse High Rank Adapters"
+    },
+    {
+      "text": "Downstream task included in five-task suite BoolQ Accuracy (%)",
+      "paper": "Sparse maximal update parameterization: A holistic approach to sparse training dynamics"
+    },
+    {
+      "text": "Zero-shot accuracy on BoolQ BoolQ Accuracy (%)",
+      "paper": "ShiftAddLLM: Accelerating Pretrained LLMs via Post-Training Multiplication-Less Reparameterization"
+    },
+    {
+      "text": "Yes/no reading comprehension accuracy on a balanced subset of BoolQ used in the study.  BoolQ Accuracy (%)",
+      "paper": "Calibrating Reasoning in Language Models with Internal Consistency"
+    }
+  ],
+  "definition_count": 14,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Boolean Question Answering",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Learn more, but bother less: parameter efficient continual learning",
+      "evidence": "BoolQ (SuperGLUE) is part of the benchmark composition."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reading Comprehension",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Not All Tokens Are What You Need for Pretraining",
+      "evidence": "BoolQ is cited and used within the general task evaluation  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Question Answering",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "LoFiT: Localized Fine-tuning on LLM Representations",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "AmoebaLLM: Constructing Any-Shape Large Language Models for Efficient and Instant Deployment",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language Understanding (Boolean QA)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "MixEval: Deriving Wisdom of the Crowd from LLM Benchmark Mixtures",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Chatbot Arena Elo",
+      "other_type": "measurements",
+      "relationship_type": "predicts",
+      "paper": "MixEval: Deriving Wisdom of the Crowd from LLM Benchmark Mixtures",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "S$^{2}$FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity",
+      "evidence": "BoolQ is among the eight commonsense reasoning tasks reported in Table 1 ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multiple-Choice Question Answering",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models",
+      "evidence": "BoolQ is included as a QA benchmark with accuracy reported ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Question Answering Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models",
+      "evidence": "BoolQ is included as a QA benchmark with accuracy reported ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "SVFT: Parameter-Efficient Fine-Tuning with Singular Vectors",
+      "evidence": "BOOLQ appears in the paper’s commonsense evaluation table with accuracy reported ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "FouRA: Fourier Low-Rank Adaptation",
+      "evidence": "Commonsense evaluation includes BoolQ with accuracy."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Megalodon: Efficient LLM Pretraining and Inference with Unlimited Context Length",
+      "evidence": "BoolQ appears in the benchmark table of downstream tasks"
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation",
+      "evidence": "BoolQ included among eight downstream commonsense tasks (Table 3)."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Sparse High Rank Adapters",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Average Downstream Task Accuracy (ARC‑easy, LAMBADA, RACE, PIQA, BoolQ)",
+      "other_type": "measurements",
+      "relationship_type": "aggregates",
+      "paper": "Sparse maximal update parameterization: A holistic approach to sparse training dynamics",
+      "evidence": "Average downstream task accuracy aggregates BoolQ among the five tasks"
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Zero-shot Generalization Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "ShiftAddLLM: Accelerating Pretrained LLMs via Post-Training Multiplication-Less Reparameterization",
+      "evidence": "Zero-shot downstream evaluation includes BoolQ accuracy."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reading Comprehension Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Calibrating Reasoning in Language Models with Internal Consistency",
+      "evidence": "Reading comprehension is evaluated on BoolQ."
+    }
+  ],
+  "relationship_count": 17,
+  "incoming_relationship_count": 16,
+  "outgoing_relationship_count": 1
+}

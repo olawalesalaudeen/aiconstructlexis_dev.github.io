@@ -1,0 +1,546 @@
+{
+  "canonical_name": "Visual Understanding",
+  "type": "construct",
+  "canonical_definition": "Visual Understanding refers to the ability to extract, integrate, and reason about visual information from images at multiple levels (image-, object-, pixel-level) to support tasks such as question answering, captioning, commonsense reasoning, and planning. It encompasses recognizing objects, localizing regions, interpreting fine-grained details, and aligning visual content with language, often operationalized through vision-language alignment, multi-layer visual features, or enhanced tokenization. Some definitions emphasize specific applications (e.g., 3D consistency detection, robotic action parsing) or training strategies (e.g., visual instruction tuning), but core to all is the integration of localized and global visual context for downstream reasoning.",
+  "expert_reviewed": false,
+  "names": [
+    "Visual Understanding"
+  ],
+  "papers": [
+    "CODE: Contrasting Self-generated Description to Combat Hallucination in Large Multi-modal Models",
+    "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark",
+    "CogVLM: Visual Expert for Pretrained Language Models",
+    "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts",
+    "Dense Connector for MLLMs",
+    "Hallo3D: Multi-Modal Hallucination Detection and Mitigation for Consistent 3D Content Generation",
+    "Image2Struct: Benchmarking Structure Extraction for Vision-Language Models",
+    "Matryoshka Query Transformer for Large Vision-Language Models",
+    "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding",
+    "PIVOT-R: Primitive-Driven Waypoint-Aware World Model for Robotic Manipulation",
+    "ReMI: A Dataset for Reasoning with Multiple Images",
+    "RestoreAgent: Autonomous Image Restoration Agent via Multimodal Large Language Models",
+    "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+    "Visual CoT: Advancing Multi-Modal Language Models with a Comprehensive Dataset and Benchmark for Chain-of-Thought Reasoning"
+  ],
+  "paper_count": 14,
+  "group_ids": [
+    695,
+    1882,
+    1908,
+    2159,
+    2602,
+    2707,
+    2757,
+    3347,
+    3765,
+    3788,
+    4285,
+    4656,
+    5776,
+    6199
+  ],
+  "definitions": [
+    {
+      "text": "General ability to integrate visual tokens from global and localized views to generate precise, comprehensive answers  ",
+      "paper": "Visual CoT: Advancing Multi-Modal Language Models with a Comprehensive Dataset and Benchmark for Chain-of-Thought Reasoning"
+    },
+    {
+      "text": "Ability to interpret visual content used by LLMs; visual instruction tuning is used to enhance visual understanding capabilities .",
+      "paper": "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts"
+    },
+    {
+      "text": "Integrated vision-language capability encompassing object recognition and localization, OCR, visual description, and visual knowledge reasoning, as assessed by LVLM benchmarks .",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models"
+    },
+    {
+      "text": "Ability to extract and use visual information, including local fine-grained details when required. Fine-grained visual understanding benefits from more visual tokens.  ",
+      "paper": "Matryoshka Query Transformer for Large Vision-Language Models"
+    },
+    {
+      "text": "Parsing and understanding information presented in images as a prerequisite for solving the tasks .",
+      "paper": "ReMI: A Dataset for Reasoning with Multiple Images"
+    },
+    {
+      "text": "Understanding images at image-level and region-level for VQA, captioning, and commonsense reasoning; established via image/region vision-language alignment  .",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks"
+    },
+    {
+      "text": "Image understanding required to answer textual questions about a given context image in VQA .",
+      "paper": "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark"
+    },
+    {
+      "text": "Ability to understand visual context for answering vision‑related queries .",
+      "paper": "CODE: Contrasting Self-generated Description to Combat Hallucination in Large Multi-modal Models"
+    },
+    {
+      "text": "Ability of an MLLM to extract and utilize information from images to answer questions or follow instructions, enhanced by providing the LLM with more visual cues via multi-layer features .",
+      "paper": "Dense Connector for MLLMs"
+    },
+    {
+      "text": "Ability to comprehend visual content across image-, object-, and pixel-levels .",
+      "paper": "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding"
+    },
+    {
+      "text": "Understanding visual content and degradation properties as a basis for downstream planning .",
+      "paper": "RestoreAgent: Autonomous Image Restoration Agent via Multimodal Large Language Models"
+    },
+    {
+      "text": "Interpreting observation images for target/action semantics used in primitive action parsing via the VLM and CLIP encoders .",
+      "paper": "PIVOT-R: Primitive-Driven Waypoint-Aware World Model for Robotic Manipulation"
+    },
+    {
+      "text": "Processing visual content to identify elements and layout; required alongside language knowledge for high structure-extraction performance .",
+      "paper": "Image2Struct: Benchmarking Structure Extraction for Vision-Language Models"
+    },
+    {
+      "text": "Understanding of visual attributes (surface texture, color, sharpness) relevant to detecting 3D inconsistencies .",
+      "paper": "Hallo3D: Multi-Modal Hallucination Detection and Mitigation for Consistent 3D Content Generation"
+    }
+  ],
+  "definition_count": 14,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual CoT Benchmark (Overall)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Visual CoT: Advancing Multi-Modal Language Models with a Comprehensive Dataset and Benchmark for Chain-of-Thought Reasoning",
+      "evidence": "The pipeline integrates global and localized visual tokens to produce precise answers evaluated on the benchmark"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Object Hallucination Control",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Object Recognition",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models",
+      "evidence": "LVLM benchmarks assess advanced capabilities including object recognition within visual understanding ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Localization",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models",
+      "evidence": "LVLM benchmarks assess object recognition and localization as core visual skills ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Localization",
+      "other_type": "measurements",
+      "relationship_type": "is-a-component-of",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models",
+      "evidence": "LVLM benchmarks assess object recognition and localization as core visual skills ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Optical Character Recognition (OCR)",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models",
+      "evidence": "OCR (text reading) is listed among advanced LVLM capabilities and is demonstrated in CogVLM’s text-reading ability ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Description",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models",
+      "evidence": "Visual description (captioning) is an assessed capability in LVLM benchmarks ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Knowledge Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models",
+      "evidence": "LVLM benchmarks include visual knowledge reasoning among the advanced capabilities ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Grounding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models",
+      "evidence": "Visual grounding links textual mentions to image regions and is a primary evaluated capability ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Grounding",
+      "other_type": "measurements",
+      "relationship_type": "is-a-component-of",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models",
+      "evidence": "Visual grounding links textual mentions to image regions and is a primary evaluated capability ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Question Answering",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models",
+      "evidence": "VQA tasks require answering questions about images, a key application of visual understanding ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MM-Vet Zero-Shot Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models",
+      "evidence": "MM-Vet evaluates integrated capabilities of large multimodal models ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MM-Vet Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models",
+      "evidence": "MM-Vet evaluates integrated capabilities of large multimodal models ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMBench Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models",
+      "evidence": "MMBench provides multidimensional evaluation of LVLMs ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SEED-Bench Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models",
+      "evidence": "SEED-Bench benchmarks generative comprehension in MLLMs ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLaVA-Bench Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models",
+      "evidence": "LLaVA-Bench evaluates multimodal instruction following in the wild ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "non-interfering",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models",
+      "evidence": "By freezing the LLM and adding a trainable visual expert, text-only behaviors remain the same as the original LLM if no image is present (contrasting with MMLU drops under direct multimodal training) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multimodal Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Matryoshka Query Transformer for Large Vision-Language Models",
+      "evidence": "LVLMs tackle vision-language perception and reasoning tasks, implying perception/understanding is a component of overall multimodal ability."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MME Perception Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Matryoshka Query Transformer for Large Vision-Language Models",
+      "evidence": "Perception-focused benchmark scores reflect visual understanding capability."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ScienceQA‑IMG Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Matryoshka Query Transformer for Large Vision-Language Models",
+      "evidence": "Fine-grained local details (e.g., identifying a specific state on a map) require more tokens to succeed in some ScienceQA cases, reflecting visual detail understanding."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multi-Image Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "ReMI: A Dataset for Reasoning with Multiple Images",
+      "evidence": "Solving tasks requires parsing and understanding the information in the images ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalist Multimodal Capability",
+      "other_type": "constructs",
+      "relationship_type": "has-subtask",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "evidence": "Unified framework covers perception, understanding, and generation across 100+ tasks ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQAv2 Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "evidence": "Evaluated on academic-oriented VQA datasets like VQAv2 ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQAv2 Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "evidence": "GQA included among academic benchmarks ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "evidence": "GQA included among academic benchmarks ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VizWiz Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "evidence": "VizWiz listed in multimodal dialogue benchmarks ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ScienceQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "evidence": "ScienceQA included in Table 1 evaluation ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TextVQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "evidence": "TextVQA included in Table 1 ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VCR Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "evidence": "Visual commonsense reasoning results (Q→A, QA→R, Q→AR) reported ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ADE20K mIoU (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "evidence": "Semantic segmentation reported on ADE20K (mIoU) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CVQA Accuracy (English prompts)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark",
+      "evidence": "VQA requires image understanding to answer textual questions about a context image, measured here by accuracy  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Object Recognition",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "CODE: Contrasting Self-generated Description to Combat Hallucination in Large Multi-modal Models",
+      "evidence": "Object‑level understanding is explicitly evaluated via object existence checks (POPE) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Fine-grained Visual Detail Discrimination",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "CODE: Contrasting Self-generated Description to Combat Hallucination in Large Multi-modal Models",
+      "evidence": "MMVP requires capturing subtle visual differences across CLIP‑blind image pairs ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Spatial Understanding",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "CODE: Contrasting Self-generated Description to Combat Hallucination in Large Multi-modal Models",
+      "evidence": "RealWorldQA targets basic real‑world spatial understanding ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Attribute Recognition",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "CODE: Contrasting Self-generated Description to Combat Hallucination in Large Multi-modal Models",
+      "evidence": "MMHal‑Bench includes an 'object attribute' category ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Attribute Recognition",
+      "other_type": "measurements",
+      "relationship_type": "has-subcomponent",
+      "paper": "CODE: Contrasting Self-generated Description to Combat Hallucination in Large Multi-modal Models",
+      "evidence": "MMHal‑Bench includes an 'object attribute' category ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Counting",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "CODE: Contrasting Self-generated Description to Combat Hallucination in Large Multi-modal Models",
+      "evidence": "MMHal‑Bench includes a 'counting' category ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Relational Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "CODE: Contrasting Self-generated Description to Combat Hallucination in Large Multi-modal Models",
+      "evidence": "MMHal‑Bench includes a 'spatial relation' category ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Holistic Description",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "CODE: Contrasting Self-generated Description to Combat Hallucination in Large Multi-modal Models",
+      "evidence": "Holistic description is an evaluated category in MMHal‑Bench and LLaVA‑Bench  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQAv2 Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Dense Connector for MLLMs",
+      "evidence": "Image QA benchmarks (e.g., GQA) are used to quantify improved visual understanding with Dense Connector variants  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Dense Connector for MLLMs",
+      "evidence": "Image QA benchmarks (e.g., GQA) are used to quantify improved visual understanding with Dense Connector variants  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQAv2 Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Dense Connector for MLLMs",
+      "evidence": "VQAv2 is reported among the core image understanding results ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SQA-IMG Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Dense Connector for MLLMs",
+      "evidence": "SQA (image) accuracy is a headline metric showing gains with the connector  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Perception",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Dense Connector for MLLMs",
+      "evidence": "Using multi-layer features enhances visual perception, leading to more accurate responses, indicating perception underpins understanding ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multimodal Conversational Ability",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Dense Connector for MLLMs",
+      "evidence": "Grounded dialog requires image understanding; LBW reports conversation performance grounded in images ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding and Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding",
+      "evidence": "The model bridges image-, object-, and pixel-level visual understanding and reasoning in one framework  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Image-level Understanding",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding",
+      "evidence": "Image-level tasks like caption and conversation are included in the unified tasks ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Object-level Understanding",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding",
+      "evidence": "Object-level tasks like region caption and visual prompt-based conversation are unified ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Pixel-level Understanding",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding",
+      "evidence": "Pixel-level tasks like universal/referring segmentation are part of the unified tasks ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Cross-Modal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "RestoreAgent: Autonomous Image Restoration Agent via Multimodal Large Language Models",
+      "evidence": "MLLM demonstrates visual understanding that underlies cross-modal reasoning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Vision-Language Grounding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "PIVOT-R: Primitive-Driven Waypoint-Aware World Model for Robotic Manipulation",
+      "evidence": "The VLM uses observation images (via CLIP encoders) to parse actions from scenes ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Structure Extraction from Images",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Image2Struct: Benchmarking Structure Extraction for Vision-Language Models",
+      "evidence": "Performing well requires visual understanding in addition to language knowledge ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Fine-grained Visual Perception",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Image2Struct: Benchmarking Structure Extraction for Vision-Language Models",
+      "evidence": "Error analysis notes models can extract elements but miss visual nuances ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Geometric Perception",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Hallo3D: Multi-Modal Hallucination Detection and Mitigation for Consistent 3D Content Generation",
+      "evidence": ""
+    }
+  ],
+  "relationship_count": 55,
+  "incoming_relationship_count": 14,
+  "outgoing_relationship_count": 41
+}

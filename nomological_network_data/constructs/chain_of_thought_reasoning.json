@@ -1,0 +1,456 @@
+{
+  "canonical_name": "Chain-of-Thought Reasoning",
+  "type": "construct",
+  "canonical_definition": "Chain-of-Thought Reasoning is a construct involving the generation of intermediate, step-by-step reasoning steps (often termed rationales) during problem-solving, typically elicited via CoT prompting, to decompose complex tasks into sub-tasks and form explicit reasoning paths before producing a final answer. It is operationalized as a multi-step inference mechanism that enhances reasoning performance across domains—such as mathematics, programming, and navigation—by enabling models to tackle problems requiring sequential logic, hierarchical planning, or constraint handling. While some definitions emphasize the primacy of logical structure over domain-specific content in CoT examples, others highlight its role in enabling transformers to solve broader problem classes than single-token prediction allows.",
+  "expert_reviewed": false,
+  "names": [
+    "Chain-of-Thought Reasoning"
+  ],
+  "papers": [
+    "Can LLMs Implicitly Learn Numeric Parameter Constraints in Data Science APIs?",
+    "Can Language Models Perform Robust Reasoning in Chain-of-thought Prompting with Noisy Rationales?",
+    "Chain of Preference Optimization: Improving Chain-of-Thought Reasoning in LLMs",
+    "FactorSim: Generative Simulation via Factorized Representation",
+    "HLM-Cite: Hybrid Language Model Workflow for Text-based Scientific Citation Prediction",
+    "Hints-In-Browser: Benchmarking Language Models for Programming Feedback Generation",
+    "Iteration Head: A Mechanistic Study of Chain-of-Thought",
+    "Iterative Reasoning Preference Optimization",
+    "LLM-based Skill Diffusion for Zero-shot Policy Adaptation",
+    "OmniJARVIS: Unified Vision-Language-Action Tokenization Enables Open-World Instruction Following Agents",
+    "SG-Nav: Online 3D Scene Graph Prompting for LLM-based Zero-shot Object Navigation",
+    "Self-Healing Machine Learning: A Framework for Autonomous Adaptation in Real-World Environments",
+    "Shopping MMLU: A Massive Multi-Task Online Shopping Benchmark for Large Language Models",
+    "Stress-Testing Capability Elicitation With Password-Locked Models",
+    "Towards a Theoretical Understanding of the 'Reversal Curse' via Training Dynamics",
+    "Trace is the Next AutoDiff: Generative Optimization with Rich Feedback, Execution Traces, and LLMs",
+    "UDA: A Benchmark Suite for Retrieval Augmented Generation in Real-World Document Analysis",
+    "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback",
+    "VideoTetris: Towards Compositional Text-to-Video Generation"
+  ],
+  "paper_count": 19,
+  "group_ids": [
+    447,
+    670,
+    739,
+    762,
+    1452,
+    1754,
+    1814,
+    2148,
+    2968,
+    3289,
+    3374,
+    3720,
+    3838,
+    4519,
+    4613,
+    4700,
+    4924,
+    6330,
+    6394
+  ],
+  "definitions": [
+    {
+      "text": "Use of step‑by‑step reasoning traces (CoT prompting) to elicit/improve reasoning performance .",
+      "paper": "Shopping MMLU: A Massive Multi-Task Online Shopping Benchmark for Large Language Models"
+    },
+    {
+      "text": "Stepwise intermediate reasoning to derive answers. ",
+      "paper": "UDA: A Benchmark Suite for Retrieval Augmented Generation in Real-World Document Analysis"
+    },
+    {
+      "text": "Deriving and following a step-by-step plan from a prompt to break complex generation into sub-tasks.  ",
+      "paper": "FactorSim: Generative Simulation via Factorized Representation"
+    },
+    {
+      "text": "Eliciting step-by-step reasoning via CoT prompts; the logical structure of the example matters more than domain-specific content in this setup. ",
+      "paper": "HLM-Cite: Hybrid Language Model Workflow for Text-based Scientific Citation Prediction"
+    },
+    {
+      "text": "Articulating intermediate reasoning steps during generation; reported to produce more accurate suggestions than without explicit reasoning .",
+      "paper": "VideoTetris: Towards Compositional Text-to-Video Generation"
+    },
+    {
+      "text": "Generation of auxiliary detailed explanations (X) during hint production as part of chain-of-thought prompting ",
+      "paper": "Hints-In-Browser: Benchmarking Language Models for Programming Feedback Generation"
+    },
+    {
+      "text": "Ability to generate intermediate reasoning steps (thoughts) that form explicit reasoning paths before the final answer  .",
+      "paper": "Chain of Preference Optimization: Improving Chain-of-Thought Reasoning in LLMs"
+    },
+    {
+      "text": "Multi-step reasoning process used to solve complex mathematical problems. ",
+      "paper": "Stress-Testing Capability Elicitation With Password-Locked Models"
+    },
+    {
+      "text": "Producing intermediate reasoning steps to improve multi-step inference performance. ",
+      "paper": "Towards a Theoretical Understanding of the 'Reversal Curse' via Training Dynamics"
+    },
+    {
+      "text": "Producing intermediate reasoning steps (rationales) during in‑context learning to reach an answer. ",
+      "paper": "Can Language Models Perform Robust Reasoning in Chain-of-thought Prompting with Noisy Rationales?"
+    },
+    {
+      "text": "Step-by-step reasoning used to generate candidate diagnoses and adaptation actions via MC sampling ",
+      "paper": "Self-Healing Machine Learning: A Framework for Autonomous Adaptation in Real-World Environments"
+    },
+    {
+      "text": "Producing intermediate, step-by-step rationales to enhance reasoning quality. ",
+      "paper": "Trace is the Next AutoDiff: Generative Optimization with Rich Feedback, Execution Traces, and LLMs"
+    },
+    {
+      "text": "Eliciting explicit intermediate reasoning steps before the final answer, allowing transformers to solve a larger class of problems than single-token prediction. ",
+      "paper": "Iteration Head: A Mechanistic Study of Chain-of-Thought"
+    },
+    {
+      "text": "A specific form of reasoning where the model generates intermediate thought tokens that articulate steps toward decisions before emitting actions. ",
+      "paper": "OmniJARVIS: Unified Vision-Language-Action Tokenization Enables Open-World Instruction Following Agents"
+    },
+    {
+      "text": "Intermediate reasoning: generating chain-of-thought before answering. ",
+      "paper": "Iterative Reasoning Preference Optimization"
+    },
+    {
+      "text": "Elicited step-by-step reasoning that can improve handling of simple arithmetic constraints in this setting (observed for GPT‑4‑Turbo) .",
+      "paper": "Can LLMs Implicitly Learn Numeric Parameter Constraints in Data Science APIs?"
+    },
+    {
+      "text": "Hierarchical CoT prompting to traverse nodes/edges and infer goal location from scene context; shown to be important in ablations  ",
+      "paper": "SG-Nav: Online 3D Scene Graph Prompting for LLM-based Zero-shot Object Navigation"
+    },
+    {
+      "text": "Chain-of-Thought Reasoning",
+      "paper": "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback"
+    },
+    {
+      "text": "Sequential prompting to decompose and derive the desired loss specification before emitting code for guidance  .",
+      "paper": "LLM-based Skill Diffusion for Zero-shot Policy Adaptation"
+    }
+  ],
+  "definition_count": 19,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Numerical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "enhances",
+      "paper": "Shopping MMLU: A Massive Multi-Task Online Shopping Benchmark for Large Language Models",
+      "evidence": "CoT prompting significantly boosts numeric reasoning performance ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Implicit Multi-hop Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "mixed-effect",
+      "paper": "Shopping MMLU: A Massive Multi-Task Online Shopping Benchmark for Large Language Models",
+      "evidence": "CoT effects on implicit multi‑hop reasoning (compatibility) are mixed, especially between 1‑shot and 5‑shot ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Generation Strategy Impact (FinHybrid)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "UDA: A Benchmark Suite for Retrieval Augmented Generation in Real-World Document Analysis",
+      "evidence": "CoT outperforms basic and code strategies on FinHybrid."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Numerical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "UDA: A Benchmark Suite for Retrieval Augmented Generation in Real-World Document Analysis",
+      "evidence": "CoT enhances arithmetic document analysis across models."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Programmatic Reasoning (Code Interpreter)",
+      "other_type": "constructs",
+      "relationship_type": "less-effective-than",
+      "paper": "UDA: A Benchmark Suite for Retrieval Augmented Generation in Real-World Document Analysis",
+      "evidence": "Code-based strategy lags CoT on FinHybrid under the tested conditions."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Modular Code Generation",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "FactorSim: Generative Simulation via Factorized Representation",
+      "evidence": "CoT derives a step-by-step plan and breaks the prompt into sub-tasks that are implemented via MVC components."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Simulation Code Generation",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "FactorSim: Generative Simulation via Factorized Representation",
+      "evidence": "Breaking generation into stepwise plans aids progressive construction of the simulation."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Spatial Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "FactorSim: Generative Simulation via Factorized Representation",
+      "evidence": "Decomposition attends to smaller contexts so spatial relations can be addressed separately, improving performance on such tasks."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Textual Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "HLM-Cite: Hybrid Language Model Workflow for Text-based Scientific Citation Prediction",
+      "evidence": "CoT prompting is used to enhance the analyzer/decider’s reasoning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "In-Context Learning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "HLM-Cite: Hybrid Language Model Workflow for Text-based Scientific Citation Prediction",
+      "evidence": "A one-shot/few-shot example demonstrates the logical structure that guides reasoning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "VideoTetris: Towards Compositional Text-to-Video Generation",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM Story Planner Task",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "VideoTetris: Towards Compositional Text-to-Video Generation",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM Spatial Decomposer Task",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "VideoTetris: Towards Compositional Text-to-Video Generation",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Inference Time per Hint (s)",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "Hints-In-Browser: Benchmarking Language Models for Programming Feedback Generation",
+      "evidence": "Lower inference times could be achieved by generating fewer output tokens, e.g., fewer tokens as part of the chain-of-thought process ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "Chain of Preference Optimization: Improving Chain-of-Thought Reasoning in LLMs",
+      "evidence": "CoT prompts LLMs to generate intermediate reasoning steps that form explicit reasoning paths, i.e., one mechanism by which reasoning is elicited  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Stress-Testing Capability Elicitation With Password-Locked Models",
+      "evidence": "The math task is described as requiring chain-of-thought reasoning."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Stress-Testing Capability Elicitation With Password-Locked Models",
+      "evidence": "The math task is described as requiring chain-of-thought reasoning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Transitive (Indirect) Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Towards a Theoretical Understanding of the 'Reversal Curse' via Training Dynamics",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Can Language Models Perform Robust Reasoning in Chain-of-thought Prompting with Noisy Rationales?",
+      "evidence": "CoT provides intermediate reasoning steps (rationales) to solve questions, i.e., a way to elicit reasoning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "In‑Context Learning (ICL)",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Can Language Models Perform Robust Reasoning in Chain-of-thought Prompting with Noisy Rationales?",
+      "evidence": "CoT is a prevailing strategy within ICL, which adapts from a few examples."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning Robustness to Noisy Rationales",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Can Language Models Perform Robust Reasoning in Chain-of-thought Prompting with Noisy Rationales?",
+      "evidence": "The work formalizes robustness of reasoning under CoT when rationales are noisy."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Shuffled‑Mapping Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Can Language Models Perform Robust Reasoning in Chain-of-thought Prompting with Noisy Rationales?",
+      "evidence": "Shuffling question‑rationale‑answer mappings degrades reasoning yet remains better than no prompting."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Diagnostic Reasoning about DGP Structure",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "Self-Healing Machine Learning: A Framework for Autonomous Adaptation in Real-World Environments",
+      "evidence": "Diagnosis generation uses a CoT module with self-reflection to produce candidate reasons"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Agentic Action and Planning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "Self-Healing Machine Learning: A Framework for Autonomous Adaptation in Real-World Environments",
+      "evidence": "Adaptation actions are generated via CoT-based MC sampling conditioned on the diagnosis"
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Trace is the Next AutoDiff: Generative Optimization with Rich Feedback, Execution Traces, and LLMs",
+      "evidence": "Chain-of-Thought is cited as a technique to improve LLM reasoning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multistep Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Iteration Head: A Mechanistic Study of Chain-of-Thought",
+      "evidence": "CoT consists in eliciting intermediate steps and is framed within multistep, cumulative reasoning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Polynomial Iteration Accuracy (CoT)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Iteration Head: A Mechanistic Study of Chain-of-Thought",
+      "evidence": "Results are unequivocal in favor of CoT for the polynomial iteration task."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Parity Problem Accuracy (CoT)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Iteration Head: A Mechanistic Study of Chain-of-Thought",
+      "evidence": "Scaling experiments report parity Test Accuracy (CoT) across capacities."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "OmniJARVIS: Unified Vision-Language-Action Tokenization Enables Open-World Instruction Following Agents",
+      "evidence": "Reasoning is instantiated as producing chain-of-thought tokens prior to action."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Long-Horizon Planning",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "OmniJARVIS: Unified Vision-Language-Action Tokenization Enables Open-World Instruction Following Agents",
+      "evidence": "The model periodically re-reasons (produces new thoughts) to plan for long-horizon control."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "Iterative Reasoning Preference Optimization",
+      "evidence": "The method targets improving chain-of-thought-based reasoning task performance, indicating CoT is a component of broader reasoning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "depends-on",
+      "paper": "Iterative Reasoning Preference Optimization",
+      "evidence": "GSM8K questions typically require intermediate reasoning, i.e., generating chain-of-thought before answering."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "depends-on",
+      "paper": "Iterative Reasoning Preference Optimization",
+      "evidence": "GSM8K questions typically require intermediate reasoning, i.e., generating chain-of-thought before answering."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Arithmetic Constraint Handling",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Can LLMs Implicitly Learn Numeric Parameter Constraints in Data Science APIs?",
+      "evidence": "GPT‑4‑Turbo \"can well understand some simple arithmetic constraints using CoT\" ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "SG-Nav: Online 3D Scene Graph Prompting for LLM-based Zero-shot Object Navigation",
+      "evidence": "A hierarchical chain-of-thought prompt helps the LLM reason goal location via graph structure ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Navigation Planning (Decision Making)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "SG-Nav: Online 3D Scene Graph Prompting for LLM-based Zero-shot Object Navigation",
+      "evidence": "Ablations show CoT prompting effectively exploits graph structure for better planning performance (Table 5) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Program Synthesis / Code Generation",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "LLM-based Skill Diffusion for Zero-shot Policy Adaptation",
+      "evidence": "Chain-of-thought prompting with sequential queries is used to derive the loss function code from the given goal and context  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Zero-shot Contextual Policy Adaptation",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "LLM-based Skill Diffusion for Zero-shot Policy Adaptation",
+      "evidence": "Chain-of-thought prompting is part of the pipeline to translate contexts into effective loss functions used for adaptation ."
+    }
+  ],
+  "relationship_count": 40,
+  "incoming_relationship_count": 8,
+  "outgoing_relationship_count": 32
+}

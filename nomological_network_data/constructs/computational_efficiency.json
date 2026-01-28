@@ -1,0 +1,418 @@
+{
+  "canonical_name": "Computational Efficiency",
+  "type": "construct",
+  "canonical_definition": "Computational Efficiency refers to achieving comparable or superior task performance with reduced computational resources (e.g., FLOPs, memory, energy) and time (e.g., latency, training/inference duration), particularly during model deployment phases such as pretraining, finetuning, or inference. It is often operationalized through metrics like generation latency on real hardware, reduced PFLOPS*days consumption, or lower inference FLOPs per block, with some definitions emphasizing resource savings during long-context processing or on-device deployment. While some approaches prioritize token-efficient representations or eliminate computationally intensive components (e.g., fully-connected layers), others focus on balancing efficiency gains with minimal performance trade-offs (e.g., 2×–8× speed-ups with small score drops). Scope varies across sources, with certain definitions encompassing both training and inference efficiency, while others narrow focus to specific stages or hardware constraints.",
+  "expert_reviewed": false,
+  "names": [
+    "Computational Efficiency"
+  ],
+  "papers": [
+    "AmoebaLLM: Constructing Any-Shape Large Language Models for Efficient and Instant Deployment",
+    "CogVLM: Visual Expert for Pretrained Language Models",
+    "Dense Connector for MLLMs",
+    "Efficient Large Multi-modal Models via Visual Context Compression",
+    "From Instance Training to Instruction Learning: Task Adapters Generation from Instructions",
+    "Global Lyapunov functions: a long-standing open problem in mathematics, with symbolic transformers",
+    "Leveraging Visual Tokens for Extended Text Contexts in Multi-Modal Learning",
+    "Matryoshka Query Transformer for Large Vision-Language Models",
+    "MemoryFormer : Minimize Transformer Computation by Removing Fully-Connected Layers",
+    "Personalized Adapter for Large Meteorology Model on Devices: Towards Weather Foundation Models",
+    "Q-VLM: Post-training Quantization for Large Vision-Language Models",
+    "ShiftAddLLM: Accelerating Pretrained LLMs via Post-Training Multiplication-Less Reparameterization",
+    "Streaming Long Video Understanding with Large Language Models",
+    "Visual CoT: Advancing Multi-Modal Language Models with a Comprehensive Dataset and Benchmark for Chain-of-Thought Reasoning"
+  ],
+  "paper_count": 14,
+  "group_ids": [
+    698,
+    1215,
+    1494,
+    1894,
+    1922,
+    2163,
+    3773,
+    4487,
+    4494,
+    4734,
+    4788,
+    4974,
+    5597,
+    5603
+  ],
+  "definitions": [
+    {
+      "text": "Efficient allocation of computation by pinpointing small but crucial regions, avoiding irrelevant processing that can degrade performance ",
+      "paper": "Visual CoT: Advancing Multi-Modal Language Models with a Comprehensive Dataset and Benchmark for Chain-of-Thought Reasoning"
+    },
+    {
+      "text": "Achieving high inference efficiency via token-efficient representations leading to lower latency at inference time .",
+      "paper": "Streaming Long Video Understanding with Large Language Models"
+    },
+    {
+      "text": "Execution efficiency of LLM inference across devices and deployment flows; operationalized as generation latency on real hardware .",
+      "paper": "AmoebaLLM: Constructing Any-Shape Large Language Models for Efficient and Instant Deployment"
+    },
+    {
+      "text": "Amount of floating‑point computation required by the model; MemoryFormer eliminates nearly all computation from FC layers and reports inference FLOPs per block to quantify efficiency.   ",
+      "paper": "MemoryFormer : Minimize Transformer Computation by Removing Fully-Connected Layers"
+    },
+    {
+      "text": "Lower resource consumption for pretraining/finetuning (e.g., PFLOPS*days) relative to peers of similar scale .",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models"
+    },
+    {
+      "text": "Ability to achieve similar task performance with reduced inference compute (TFLOPs), e.g., 2×–8× speed-ups with small score drops.  ",
+      "paper": "Matryoshka Query Transformer for Large Vision-Language Models"
+    },
+    {
+      "text": "Resource and time efficiency of the model during inference/training; the efficient variant accelerates inference 3× and reduces training time .",
+      "paper": "Dense Connector for MLLMs"
+    },
+    {
+      "text": "Reducing computational cost (FLOPs) and GPU memory during training and inference for long-context processing.  ",
+      "paper": "Leveraging Visual Tokens for Extended Text Contexts in Multi-Modal Learning"
+    },
+    {
+      "text": "Ability to reduce resource usage and latency while preserving task performance. ",
+      "paper": "Q-VLM: Post-training Quantization for Large Vision-Language Models"
+    },
+    {
+      "text": "Resource efficiency during inference, including latency, energy, and memory usage. ",
+      "paper": "ShiftAddLLM: Accelerating Pretrained LLMs via Post-Training Multiplication-Less Reparameterization"
+    },
+    {
+      "text": "Ability to achieve solutions with lower compute/time cost compared to algorithmic baselines (e.g., SOS) at inference time .",
+      "paper": "Global Lyapunov functions: a long-standing open problem in mathematics, with symbolic transformers"
+    },
+    {
+      "text": "Resource efficiency of training and inference (e.g., time, FLOPs, latency) while maintaining capability .",
+      "paper": "Efficient Large Multi-modal Models via Visual Context Compression"
+    },
+    {
+      "text": "Lower training/inference time and memory for practical, on-device deployment .",
+      "paper": "Personalized Adapter for Large Meteorology Model on Devices: Towards Weather Foundation Models"
+    },
+    {
+      "text": "Achieving comparable or better task performance with reduced compute/parameters and lower inference cost.",
+      "paper": "From Instance Training to Instruction Learning: Task Adapters Generation from Instructions"
+    }
+  ],
+  "definition_count": 14,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Long-Video QA Inference Latency",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Streaming Long Video Understanding with Large Language Models",
+      "evidence": "Average inference latency per question is reported for comprehensive comparison; the proposed method achieves 5.32s per question ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Tokens Input to LLM",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Streaming Long Video Understanding with Large Language Models",
+      "evidence": "Average tokens input to LLM (256 for the proposed method) is used to compare efficiency across methods ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Generation Latency (s) — A5000 + PyTorch",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "AmoebaLLM: Constructing Any-Shape Large Language Models for Efficient and Instant Deployment",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Generation Latency (s) — A5000 + MLC-LLM",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "AmoebaLLM: Constructing Any-Shape Large Language Models for Efficient and Instant Deployment",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Generation Latency (s) — A5000 + TensorRT-LLM",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "AmoebaLLM: Constructing Any-Shape Large Language Models for Efficient and Instant Deployment",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Generation Latency (s) — Orin NX + MLC-LLM",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "AmoebaLLM: Constructing Any-Shape Large Language Models for Efficient and Instant Deployment",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Adaptability to Platform Constraints",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "AmoebaLLM: Constructing Any-Shape Large Language Models for Efficient and Instant Deployment",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Factual Knowledge",
+      "other_type": "constructs",
+      "relationship_type": "trade-off-with",
+      "paper": "AmoebaLLM: Constructing Any-Shape Large Language Models for Efficient and Instant Deployment",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "trade-off-with",
+      "paper": "AmoebaLLM: Constructing Any-Shape Large Language Models for Efficient and Instant Deployment",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Total Inference FLOPs per block (seq len=2048)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MemoryFormer : Minimize Transformer Computation by Removing Fully-Connected Layers",
+      "evidence": "Inference FLOPs per block at sequence length 2048 are reported."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "FLOPs without Attention per block (seq len=2048)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MemoryFormer : Minimize Transformer Computation by Removing Fully-Connected Layers",
+      "evidence": "Tables break out FLOPs without attention to isolate non-attention costs."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Attention FLOPs per block (seq len=2048)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MemoryFormer : Minimize Transformer Computation by Removing Fully-Connected Layers",
+      "evidence": "Attention FLOPs are separately identified as 'Attn.' in the tables."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "General LLM Capability",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "MemoryFormer : Minimize Transformer Computation by Removing Fully-Connected Layers",
+      "evidence": "MemoryFormer greatly reduces computational complexity without compromising performance and achieves better average accuracy than Pythia baselines."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PFLOPS*days (Training Compute)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models",
+      "evidence": "Table 9 compares pretraining and finetuning PFLOPS*days across models, showing CogVLM’s reduced resource consumption ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Information Compression",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Matryoshka Query Transformer for Large Vision-Language Models",
+      "evidence": "Compressing grid features into few tokens yields 2×–8× speed-ups with small score drops."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Inference TFLOPs (MMBench)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Matryoshka Query Transformer for Large Vision-Language Models",
+      "evidence": "TFLOPs are explicitly computed for different token budgets on MMBench to quantify compute."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Inference Speedup (×)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Dense Connector for MLLMs",
+      "evidence": "Efficient Dense Connector accelerates inference by 3×, which the authors report explicitly ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Training Time (hours)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Dense Connector for MLLMs",
+      "evidence": "Training time reduced from 9h to 6.5h on 8×A100 with the efficient design ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "FLOPs (Training/Inference)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Leveraging Visual Tokens for Extended Text Contexts in Multi-Modal Learning",
+      "evidence": "The paper reports nearly the same FLOPs while increasing in-context length."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GPU Memory Consumption (GB)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Leveraging Visual Tokens for Extended Text Contexts in Multi-Modal Learning",
+      "evidence": "GPU memory usage is compared across in-context lengths to demonstrate efficiency."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Operational Energy Use",
+      "other_type": "measurements",
+      "relationship_type": "predicts",
+      "paper": "Leveraging Visual Tokens for Extended Text Contexts in Multi-Modal Learning",
+      "evidence": "By reducing computational resources for long text sequences, VisInContext is claimed to lower energy consumption (sustainable AI)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Inference Memory (ScienceQA)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Q-VLM: Post-training Quantization for Large Vision-Language Models",
+      "evidence": "Memory (GB) reductions reported versus baselines on ScienceQA."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Inference Time (ScienceQA)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Q-VLM: Post-training Quantization for Large Vision-Language Models",
+      "evidence": "End‑to‑end inference time (hours) reported versus baselines."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "On‑device Deployability (Mobile)",
+      "other_type": "measurements",
+      "relationship_type": "predicts",
+      "paper": "Q-VLM: Post-training Quantization for Large Vision-Language Models",
+      "evidence": "Reduced memory footprint makes deployment on mobile devices more practical."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Search Cost (Dependency Proxy)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Q-VLM: Post-training Quantization for Large Vision-Language Models",
+      "evidence": "Entropy as proxy lowers search cost while preserving accuracy relative to quantization‑error proxy."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GPU Latency (A100-80GB)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "ShiftAddLLM: Accelerating Pretrained LLMs via Post-Training Multiplication-Less Reparameterization",
+      "evidence": "Latency is measured on an A100-80GB GPU."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Estimated Energy (Eyeriss-like)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "ShiftAddLLM: Accelerating Pretrained LLMs via Post-Training Multiplication-Less Reparameterization",
+      "evidence": "Energy is estimated using an Eyeriss-like accelerator; large savings are reported."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Memory Usage Reduction",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "ShiftAddLLM: Accelerating Pretrained LLMs via Post-Training Multiplication-Less Reparameterization",
+      "evidence": "The method reports >80% memory reductions compared to original FP models."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Average Solve Time per System (s)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Global Lyapunov functions: a long-standing open problem in mathematics, with symbolic transformers",
+      "evidence": "Transformer inference plus verification is orders of magnitude faster than SOS baselines on random polynomial systems ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Training Time (hours)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Efficient Large Multi-modal Models via Visual Context Compression",
+      "evidence": "The paper consistently reports training-time reductions under compression schemes ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Inference Latency (ms)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Efficient Large Multi-modal Models via Visual Context Compression",
+      "evidence": "Reported 24% latency reduction with the proposed method ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Last-stage TFLOPs",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Efficient Large Multi-modal Models via Visual Context Compression",
+      "evidence": "Tables report TFLOPs and show comparable or improved capability with lower compute ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Compression Ratio (CR)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Efficient Large Multi-modal Models via Visual Context Compression",
+      "evidence": "Compression ratios quantify the reduction of visual tokens and relate to speed/efficiency gains ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Token Count (#Tokens)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Efficient Large Multi-modal Models via Visual Context Compression",
+      "evidence": "Reported #Tokens reflect reduced visual-token sequences under compression schemes ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Efficiency",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Personalized Adapter for Large Meteorology Model on Devices: Towards Weather Foundation Models",
+      "evidence": "Training/inference time and memory are analyzed as part of practical efficiency ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Training/Inference Efficiency",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Personalized Adapter for Large Meteorology Model on Devices: Towards Weather Foundation Models",
+      "evidence": "Training/inference time and memory metrics assess computational efficiency in practice ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Parameter Efficiency vs Performance (SNI)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "From Instance Training to Instruction Learning: Task Adapters Generation from Instructions",
+      "evidence": "TAGI requires only about 10% of parameters to outperform full meta-training on SNI."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Compute Reduction",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "From Instance Training to Instruction Learning: Task Adapters Generation from Instructions",
+      "evidence": "The method reports ~60% reduction in computational demands vs baselines."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Inference Efficiency (Qualitative)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "From Instance Training to Instruction Learning: Task Adapters Generation from Instructions",
+      "evidence": "No extra parameter updates/gradients at inference and no repeated instruction encoding lower inference cost."
+    }
+  ],
+  "relationship_count": 39,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 37
+}

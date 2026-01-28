@@ -1,0 +1,963 @@
+{
+  "canonical_name": "Visual Question Answering",
+  "type": "behavior",
+  "canonical_definition": "Visual Question Answering (VQA) is a behavior involving the integration of visual inputs (images or videos) and associated textual information to generate answers to questions, often requiring reasoning over multimodal content. The task typically involves open-ended or closed-set question-answering formats, with outputs ranging from free-text responses to selected options, and is frequently used to assess capabilities in multimodal understanding, instruction following, and general reasoning. Variants include biomedical, remote sensing, and temporally grounded VQA (e.g., video-based tasks requiring localization), with some papers framing it as a benchmark for evaluating models' ability to chain interconnected facts or handle hallucination tendencies.",
+  "expert_reviewed": false,
+  "names": [
+    "Visual Question Answering"
+  ],
+  "papers": [
+    "A Hitchhiker's Guide to Fine-Grained Face Forgery Detection Using Common Sense Reasoning",
+    "Biomedical Visual Instruction Tuning with Clinician Preference Alignment",
+    "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark",
+    "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+    "CogVLM: Visual Expert for Pretrained Language Models",
+    "Dense Connector for MLLMs",
+    "DenseFusion-1M: Merging Vision Experts for Comprehensive Multimodal Perception",
+    "Discovering Sparsity Allocation for  Layer-wise Pruning of Large Language Models",
+    "Efficient Large Multi-modal Models via Visual Context Compression",
+    "Instruction-Guided Visual Masking",
+    "InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD",
+    "JourneyBench: A Challenging One-Stop Vision-Language Understanding Benchmark of Generated Images",
+    "LOVA3: Learning to Visual Question Answering, Asking and Assessment",
+    "Lumen: Unleashing Versatile Vision-Centric Capabilities of Large Multimodal Models",
+    "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens",
+    "Meteor: Mamba-based Traversal of Rationale for Large Language and Vision Models",
+    "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models",
+    "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+    "PERIA: Perceive, Reason, Imagine, Act via Holistic Language and Vision Planning for Manipulation",
+    "Prism: A Framework for Decoupling and Assessing the Capabilities of VLMs",
+    "Q-VLM: Post-training Quantization for Large Vision-Language Models",
+    "ReXTime: A Benchmark Suite for Reasoning-Across-Time in Videos",
+    "RoboMamba: Efficient Vision-Language-Action Model for Robotic Reasoning and Manipulation",
+    "SeafloorAI: A Large-scale Vision-Language Dataset for Seafloor Geological Survey",
+    "SearchLVLMs: A Plug-and-Play Framework for Augmenting Large Vision-Language Models by Searching Up-to-Date Internet Knowledge",
+    "Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment",
+    "Shadowcast: Stealthy Data Poisoning Attacks Against Vision-Language Models",
+    "Unified Generative and Discriminative Training for Multi-modal Large Language Models",
+    "Unveiling Encoder-Free Vision-Language Models",
+    "VLKEB: A Large Vision-Language Model Knowledge Editing Benchmark",
+    "VRSBench: A Versatile Vision-Language Benchmark Dataset for Remote Sensing Image Understanding",
+    "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+    "Web2Code: A Large-scale Webpage-to-Code Dataset and Evaluation Framework for Multimodal LLMs",
+    "What matters when building vision-language models?"
+  ],
+  "paper_count": 34,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "OKVQA probes common-sense knowledge in VQA; the paper reports OKVQA as part of its general reasoning evaluation (Table 1) .",
+      "paper": "RoboMamba: Efficient Vision-Language-Action Model for Robotic Reasoning and Manipulation"
+    },
+    {
+      "text": "VQA includes quantity questions.",
+      "paper": "VRSBench: A Versatile Vision-Language Benchmark Dataset for Remote Sensing Image Understanding"
+    },
+    {
+      "text": "JourneyBench includes open-ended VQA with hallucination triggers to probe hallucination tendencies .",
+      "paper": "JourneyBench: A Challenging One-Stop Vision-Language Understanding Benchmark of Generated Images"
+    },
+    {
+      "text": "Instruction-tuned models are evaluated on VQA tasks as downstream instruction-following evaluations.",
+      "paper": "Biomedical Visual Instruction Tuning with Clinician Preference Alignment"
+    },
+    {
+      "text": "The dataset is designed to support instruction-following mapping alongside VQA.",
+      "paper": "SeafloorAI: A Large-scale Vision-Language Dataset for Seafloor Geological Survey"
+    },
+    {
+      "text": "VQA suites are used to examine instruction following and general understanding .",
+      "paper": "Lumen: Unleashing Versatile Vision-Centric Capabilities of Large Multimodal Models"
+    },
+    {
+      "text": "Lumen broadens visual tasks while maintaining instruction following and general visual understanding (VQA results comparable with SOTA) .",
+      "paper": "Lumen: Unleashing Versatile Vision-Centric Capabilities of Large Multimodal Models"
+    },
+    {
+      "text": "Instruction-tuned models are evaluated on VQA tasks as downstream instruction-following evaluations.",
+      "paper": "Biomedical Visual Instruction Tuning with Clinician Preference Alignment"
+    },
+    {
+      "text": "The dataset is designed to support instruction-following mapping alongside VQA.",
+      "paper": "SeafloorAI: A Large-scale Vision-Language Dataset for Seafloor Geological Survey"
+    },
+    {
+      "text": "VQA suites are used to examine instruction following and general understanding .",
+      "paper": "Lumen: Unleashing Versatile Vision-Centric Capabilities of Large Multimodal Models"
+    },
+    {
+      "text": "Lumen broadens visual tasks while maintaining instruction following and general visual understanding (VQA results comparable with SOTA) .",
+      "paper": "Lumen: Unleashing Versatile Vision-Centric Capabilities of Large Multimodal Models"
+    },
+    {
+      "text": "Ability to chain across multiple interconnected facts to apply edited knowledge in VQA-style tasks; difficulty grows with hop count.",
+      "paper": "VLKEB: A Large Vision-Language Model Knowledge Editing Benchmark"
+    },
+    {
+      "text": "Portability dataset includes multi-hop reasoning VQA; performance declines with more hops due to increased reasoning complexity.",
+      "paper": "VLKEB: A Large Vision-Language Model Knowledge Editing Benchmark"
+    },
+    {
+      "text": "Ability to reason over visual inputs and text in VQA‑style tasks .",
+      "paper": "Discovering Sparsity Allocation for  Layer-wise Pruning of Large Language Models"
+    },
+    {
+      "text": "Ability to reason over information present in images and text, as tested by VQA .",
+      "paper": "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark"
+    },
+    {
+      "text": "Closed-set VQA assesses reasoning to choose among options.",
+      "paper": "Biomedical Visual Instruction Tuning with Clinician Preference Alignment"
+    },
+    {
+      "text": "SQA accuracy at 50% sparsity is reported alongside other VQA benchmarks .",
+      "paper": "Discovering Sparsity Allocation for  Layer-wise Pruning of Large Language Models"
+    },
+    {
+      "text": "VQA accuracy at 50% sparsity is reported in the multimodal evaluation .",
+      "paper": "Discovering Sparsity Allocation for  Layer-wise Pruning of Large Language Models"
+    },
+    {
+      "text": "VQA is used to assess reasoning capabilities in addition to understanding .",
+      "paper": "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark"
+    },
+    {
+      "text": "VQA is used to test reasoning over visual and textual knowledge; CVQA quantifies this via accuracy  .",
+      "paper": "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark"
+    },
+    {
+      "text": "Joint capability to answer video questions and correctly ground answers in time; a model capable of multimodal understanding should excel in both VQA and localization, with accuracy @ IoU ≥ 0.5 as a key indicator.",
+      "paper": "ReXTime: A Benchmark Suite for Reasoning-Across-Time in Videos"
+    },
+    {
+      "text": "Ability to understand knowledge present in both visual and textual modalities, as assessed by VQA .",
+      "paper": "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark"
+    },
+    {
+      "text": "Ability to jointly process and integrate visual and textual information to answer questions; required by the news‑related VQA task .",
+      "paper": "SearchLVLMs: A Plug-and-Play Framework for Augmenting Large Vision-Language Models by Searching Up-to-Date Internet Knowledge"
+    },
+    {
+      "text": "VQA tasks require understanding of images and associated text in biomedical settings.",
+      "paper": "Biomedical Visual Instruction Tuning with Clinician Preference Alignment"
+    },
+    {
+      "text": "A model capable of multimodal understanding should excel in both VQA (temporal reasoning) and localization.",
+      "paper": "ReXTime: A Benchmark Suite for Reasoning-Across-Time in Videos"
+    }
+  ],
+  "definition_count": 25,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "RoboMamba: Efficient Vision-Language-Action Model for Robotic Reasoning and Manipulation",
+      "evidence": "OKVQA probes common-sense knowledge in VQA; the paper reports OKVQA as part of its general reasoning evaluation (Table 1) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Counting",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "VRSBench: A Versatile Vision-Language Benchmark Dataset for Remote Sensing Image Understanding",
+      "evidence": "VQA includes quantity questions."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Resistance",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "JourneyBench: A Challenging One-Stop Vision-Language Understanding Benchmark of Generated Images",
+      "evidence": "JourneyBench includes open-ended VQA with hallucination triggers to probe hallucination tendencies ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Biomedical Visual Instruction Tuning with Clinician Preference Alignment",
+      "evidence": "Instruction-tuned models are evaluated on VQA tasks as downstream instruction-following evaluations."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "SeafloorAI: A Large-scale Vision-Language Dataset for Seafloor Geological Survey",
+      "evidence": "The dataset is designed to support instruction-following mapping alongside VQA."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Lumen: Unleashing Versatile Vision-Centric Capabilities of Large Multimodal Models",
+      "evidence": "VQA suites are used to examine instruction following and general understanding ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Lumen: Unleashing Versatile Vision-Centric Capabilities of Large Multimodal Models",
+      "evidence": "Lumen broadens visual tasks while maintaining instruction following and general visual understanding (VQA results comparable with SOTA) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction Following",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Biomedical Visual Instruction Tuning with Clinician Preference Alignment",
+      "evidence": "Instruction-tuned models are evaluated on VQA tasks as downstream instruction-following evaluations."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction Following",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "SeafloorAI: A Large-scale Vision-Language Dataset for Seafloor Geological Survey",
+      "evidence": "The dataset is designed to support instruction-following mapping alongside VQA."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction Following",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Lumen: Unleashing Versatile Vision-Centric Capabilities of Large Multimodal Models",
+      "evidence": "VQA suites are used to examine instruction following and general understanding ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction Following",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Lumen: Unleashing Versatile Vision-Centric Capabilities of Large Multimodal Models",
+      "evidence": "Lumen broadens visual tasks while maintaining instruction following and general visual understanding (VQA results comparable with SOTA) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multi-hop Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "VLKEB: A Large Vision-Language Model Knowledge Editing Benchmark",
+      "evidence": "Ability to chain across multiple interconnected facts to apply edited knowledge in VQA-style tasks; difficulty grows with hop count."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multi-hop Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "VLKEB: A Large Vision-Language Model Knowledge Editing Benchmark",
+      "evidence": "Portability dataset includes multi-hop reasoning VQA; performance declines with more hops due to increased reasoning complexity."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Discovering Sparsity Allocation for  Layer-wise Pruning of Large Language Models",
+      "evidence": "Ability to reason over visual inputs and text in VQA‑style tasks ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark",
+      "evidence": "Ability to reason over information present in images and text, as tested by VQA ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Biomedical Visual Instruction Tuning with Clinician Preference Alignment",
+      "evidence": "Closed-set VQA assesses reasoning to choose among options."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Discovering Sparsity Allocation for  Layer-wise Pruning of Large Language Models",
+      "evidence": "SQA accuracy at 50% sparsity is reported alongside other VQA benchmarks ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Discovering Sparsity Allocation for  Layer-wise Pruning of Large Language Models",
+      "evidence": "VQA accuracy at 50% sparsity is reported in the multimodal evaluation ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark",
+      "evidence": "VQA is used to assess reasoning capabilities in addition to understanding ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark",
+      "evidence": "VQA is used to test reasoning over visual and textual knowledge; CVQA quantifies this via accuracy  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "ReXTime: A Benchmark Suite for Reasoning-Across-Time in Videos",
+      "evidence": "Joint capability to answer video questions and correctly ground answers in time; a model capable of multimodal understanding should excel in both VQA and localization, with accuracy @ IoU ≥ 0.5 as a key indicator."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark",
+      "evidence": "Ability to understand knowledge present in both visual and textual modalities, as assessed by VQA ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "SearchLVLMs: A Plug-and-Play Framework for Augmenting Large Vision-Language Models by Searching Up-to-Date Internet Knowledge",
+      "evidence": "Ability to jointly process and integrate visual and textual information to answer questions; required by the news‑related VQA task ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Biomedical Visual Instruction Tuning with Clinician Preference Alignment",
+      "evidence": "VQA tasks require understanding of images and associated text in biomedical settings."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "ReXTime: A Benchmark Suite for Reasoning-Across-Time in Videos",
+      "evidence": "A model capable of multimodal understanding should excel in both VQA (temporal reasoning) and localization."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "ReXTime: A Benchmark Suite for Reasoning-Across-Time in Videos",
+      "evidence": "A model capable of multimodal understanding should excel in both VQA and localization."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment",
+      "evidence": "Alignment is framed as the core problem for cross-modal understanding; improving alignment yields gains across VQA, captioning, and grounding  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment",
+      "evidence": "SEED-I appears among VQA-style understanding benchmarks compared with CAL variants ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment",
+      "evidence": "VQAText accuracy (with OCR tokens) is reported as an additional VQA benchmark for understanding ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark",
+      "evidence": "VQA serves as an essential measure for assessing the understanding and reasoning capabilities of MLLMs, indicating these are core components of vision–language capability ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark",
+      "evidence": "VQA measures understanding in multimodal settings; CVQA uses multiple-choice accuracy as the performance metric  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark",
+      "evidence": "VQA benchmarks (e.g., VQAv2) are reported and used to assess understanding; Table 4 lists results ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark",
+      "evidence": "VizWiz is included among VQA benchmarks for comparison in Table 4, reflecting multimodal understanding performance ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models",
+      "evidence": "General group includes multiple VQA datasets (OKVQA, AOKVQA, GQA, IconQA) used to assess understanding ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "SearchLVLMs: A Plug-and-Play Framework for Augmenting Large Vision-Language Models by Searching Up-to-Date Internet Knowledge",
+      "evidence": "Answering UDK‑VQA samples requires considering both visual and textual information ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens",
+      "evidence": "VQA‑style visual‑language reasoning forms a core part of multimodal understanding in the evaluations."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens",
+      "evidence": "Captioning is used alongside VQA in the multimodal in‑context evaluations."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "evidence": "General and text-oriented VQA are central modalities of multimodal understanding evaluated in the paper  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "VRSBench: A Versatile Vision-Language Benchmark Dataset for Remote Sensing Image Understanding",
+      "evidence": "VQA includes reasoning-type questions."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Spatial Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "VRSBench: A Versatile Vision-Language Benchmark Dataset for Remote Sensing Image Understanding",
+      "evidence": "VQA includes position and direction; remote sensing requires complex spatial reasoning."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Spatial Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "VRSBench: A Versatile Vision-Language Benchmark Dataset for Remote Sensing Image Understanding",
+      "evidence": "Position and direction questions in VQA rely on spatial reasoning in overhead imagery."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Grounding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models",
+      "evidence": "Establishing referential links between textual mentions and specific image regions (e.g., REC/REG/GC, grounded VQA) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Perception",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Unveiling Encoder-Free Vision-Language Models",
+      "evidence": "Ability for visual perception and cognition in tasks like VQA and captioning ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Perception",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "PERIA: Perceive, Reason, Imagine, Act via Holistic Language and Vision Planning for Manipulation",
+      "evidence": "VQA tasks evaluate five foundational perceiving capabilities, scored and normalized (Figure 16; Table 6) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Perception",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "evidence": "Training on image VQA (conversation ability) benefits instance segmentation and image generation losses in multi-task influence analysis ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "evidence": "Understanding images at image-level and region-level for VQA, captioning, and commonsense reasoning; established via image/region vision-language alignment  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark",
+      "evidence": "Image understanding required to answer textual questions about a given context image in VQA ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models",
+      "evidence": "VQA tasks require answering questions about images, a key application of visual understanding ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "evidence": "Evaluated on academic-oriented VQA datasets like VQAv2 ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark",
+      "evidence": "VQA requires image understanding to answer textual questions about a context image, measured here by accuracy  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Zero-shot Generalization",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "A Hitchhiker's Guide to Fine-Grained Face Forgery Detection Using Common Sense Reasoning",
+      "evidence": "Fine-grained VQA performance reported under zero-shot conditions  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "RoboMamba: Efficient Vision-Language-Action Model for Robotic Reasoning and Manipulation",
+      "evidence": "Compositional/spatial reasoning in VQA GQA Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models",
+      "evidence": "Compositional visual question answering GQA Accuracy (↑)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Dense Connector for MLLMs",
+      "evidence": "Compositional visual question answering on images GQA Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+      "evidence": "Compositional visual question answering; shows strong language bias in gap analysis. GQA Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Shadowcast: Stealthy Data Poisoning Attacks Against Vision-Language Models",
+      "evidence": "Visual question answering utility on GQA GQA Accuracy (%) ()"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "evidence": "Compositional VQA GQA Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark",
+      "evidence": "Real-world visual reasoning and compositional VQA reported for comparison. GQA Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Efficient Large Multi-modal Models via Visual Context Compression",
+      "evidence": "Visual question answering over day-to-day images GQA Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "evidence": "General visual question answering with compositionality GQA Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "LOVA3: Learning to Visual Question Answering, Asking and Assessment",
+      "evidence": "Performance on GQA benchmark used to evaluate VQA capabilities in experiments GQA Score"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "LOVA3: Learning to Visual Question Answering, Asking and Assessment",
+      "evidence": "Performance on VQAv2 benchmark used to evaluate VQA capabilities in experiments VQAv2 Score"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Efficient Large Multi-modal Models via Visual Context Compression",
+      "evidence": "GQA is a core image-language VQA benchmark used throughout the paper’s evaluations ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "evidence": "GQA is used for general VQA evaluation of MLLMs including MoVA  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MathVista",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Prism: A Framework for Decoupling and Assessing the Capabilities of VLMs",
+      "evidence": "Mathematical visual question answering MathVista Accuracy (%) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MathVista",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Prism: A Framework for Decoupling and Assessing the Capabilities of VLMs",
+      "evidence": "Evaluation includes mathematical VQA via MathVista ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TextVQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Web2Code: A Large-scale Webpage-to-Code Dataset and Evaluation Framework for Multimodal LLMs",
+      "evidence": "Text-oriented visual question answering requiring reading text in images TextVQA Accuracy (%) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TextVQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "What matters when building vision-language models?",
+      "evidence": "Text reading on natural images. TextVQA VQA accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TextVQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD",
+      "evidence": "Text reading in images VQA TextVQA Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TextVQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "evidence": "VQA requiring text recognition TextVQA Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TextVQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark",
+      "evidence": "VQA requiring reading text in images; reported for comparison. TextVQA Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TextVQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models",
+      "evidence": "VQA requiring text reading TextVQA Accuracy (↑)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TextVQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Unified Generative and Discriminative Training for Multi-modal Large Language Models",
+      "evidence": "VQA over text-rich images TextVQA Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TextVQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens",
+      "evidence": "VQA requiring reading of text in images.   TextVQA Accuracy (%) under k‑shot evaluation"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TextVQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "evidence": "Text-oriented VQA (OCR-centric) TextVQA Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TextVQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "evidence": "TextVQA appears in the VQA benchmarks as a text-oriented (OCR) task ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQAv2",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "RoboMamba: Efficient Vision-Language-Action Model for Robotic Reasoning and Manipulation",
+      "evidence": "General visual question answering VQAv2 Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQAv2",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Meteor: Mamba-based Traversal of Rationale for Large Language and Vision Models",
+      "evidence": "Visual question answering VQAv2 Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQAv2",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "evidence": "Academic-oriented visual question answering VQAv2 Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQAv2",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Dense Connector for MLLMs",
+      "evidence": "General visual question answering VQAv2 Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQAv2",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Unified Generative and Discriminative Training for Multi-modal Large Language Models",
+      "evidence": "Open-world visual question answering VQA-v2 Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQAv2",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "evidence": "General visual question answering VQAv2 Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQAv2",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Unveiling Encoder-Free Vision-Language Models",
+      "evidence": "Visual question answering performance VQAv2 Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQAv2",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Unveiling Encoder-Free Vision-Language Models",
+      "evidence": "GQA visual question answering performance GQA Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQAv2",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Q-VLM: Post-training Quantization for Large Vision-Language Models",
+      "evidence": "Visual question answering performance. VQA v2 Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQAv2",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "DenseFusion-1M: Merging Vision Experts for Comprehensive Multimodal Perception",
+      "evidence": "General visual question answering measuring vision-language understanding; used as an evaluation benchmark in the paper’s comparisons. VQAv2 Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQAv2",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Instruction-Guided Visual Masking",
+      "evidence": "Visual question answering with emphasis on image understanding. VQAv2 Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQAv2",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark",
+      "evidence": "Standard English VQA benchmark reported alongside CVQA results. VQAv2 Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQAv2",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Efficient Large Multi-modal Models via Visual Context Compression",
+      "evidence": "Standard visual question answering benchmark VQAv2 Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQAv2",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens",
+      "evidence": "General visual question answering.   VQAv2 Accuracy (%) under k‑shot evaluation"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQAv2",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "DenseFusion-1M: Merging Vision Experts for Comprehensive Multimodal Perception",
+      "evidence": "The paper evaluates on vision-language benchmarks, mentioning VQAv2 among them; improved perception aligns with higher VQA performance ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQAv2",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Instruction-Guided Visual Masking",
+      "evidence": "VQAv2 elevates the role of image understanding in VQA and is used in this paper's evaluations."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQAv2",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "RoboMamba: Efficient Vision-Language-Action Model for Robotic Reasoning and Manipulation",
+      "evidence": "General reasoning is assessed on standard VQA benchmarks (Table 1) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQAv2",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "evidence": "Evaluated on academic-oriented VQA datasets like VQAv2 ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQAv2",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "evidence": "Stage-1 builds image/region vision-language alignment; VQA used in training/evaluation  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQAv2",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark",
+      "evidence": "VQA benchmarks (e.g., VQAv2) are reported and used to assess understanding; Table 4 lists results ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQAv2",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Unveiling Encoder-Free Vision-Language Models",
+      "evidence": "PAL-based visual supervision enhances fine-grained image representations, boosting VQA-related metrics (Table 4) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQAv2",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Q-VLM: Post-training Quantization for Large Vision-Language Models",
+      "evidence": "Performance on VQA v2 is reported to compare quantization methods."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQAv2",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Efficient Large Multi-modal Models via Visual Context Compression",
+      "evidence": "GQA is a core image-language VQA benchmark used throughout the paper’s evaluations ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQAv2",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens",
+      "evidence": "VQAv2 is a standard visual question answering benchmark in their evaluation table."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQAv2",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "evidence": "VQAv2 is listed among general VQA benchmarks used for evaluation ."
+    }
+  ],
+  "relationship_count": 101,
+  "incoming_relationship_count": 51,
+  "outgoing_relationship_count": 50
+}

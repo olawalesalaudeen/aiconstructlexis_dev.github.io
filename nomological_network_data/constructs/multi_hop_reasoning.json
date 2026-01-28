@@ -1,0 +1,361 @@
+{
+  "canonical_name": "Multi-hop Reasoning",
+  "type": "construct",
+  "canonical_definition": "Multi-hop Reasoning is the ability to chain multiple reasoning steps or synthesize information from multiple sources, documents, or facts to derive answers for complex questions. This construct is commonly operationalized in multi-hop question answering tasks (e.g., requiring intermediate inferences or graph-based retrieval paths), with some definitions emphasizing increasing task difficulty as hop count grows or extending its application to vision-language reasoning scenarios.",
+  "expert_reviewed": false,
+  "names": [
+    "Multi-Hop Reasoning",
+    "Multi-hop Reasoning"
+  ],
+  "papers": [
+    "CRAG - Comprehensive RAG Benchmark",
+    "Chain of Agents: Large Language Models Collaborating on Long-Context Tasks",
+    "Chain of Preference Optimization: Improving Chain-of-Thought Reasoning in LLMs",
+    "Enhancing LLM’s Cognition via Structurization",
+    "HippoRAG: Neurobiologically Inspired Long-Term Memory for Large Language Models",
+    "II-Bench: An Image Implication Understanding Benchmark for Multimodal Large Language Models",
+    "IQA-EVAL: Automatic Evaluation of Human-Model Interactive Question Answering",
+    "Information Re-Organization Improves Reasoning in Large Language Models",
+    "LoFiT: Localized Fine-tuning on LLM Representations",
+    "MEQA: A Benchmark for Multi-hop Event-centric Question Answering with Explanations",
+    "Reflective Multi-Agent Collaboration based on Large Language Models",
+    "SLED: Self Logits Evolution Decoding for Improving Factuality in Large Language Models",
+    "TACT: Advancing Complex Aggregative Reasoning with Information Extraction Tools",
+    "VLKEB: A Large Vision-Language Model Knowledge Editing Benchmark",
+    "xRAG: Extreme Context Compression for Retrieval-augmented Generation with One Token"
+  ],
+  "paper_count": 15,
+  "group_ids": [
+    471,
+    1144,
+    1299,
+    1816,
+    1828,
+    2024,
+    2272,
+    3360,
+    4717,
+    4764,
+    4879,
+    5041,
+    5815,
+    5912,
+    6119
+  ],
+  "definitions": [
+    {
+      "text": "Ability to perform multi‑step reasoning over multiple pieces of evidence to generate answers; required by HotpotQA .",
+      "paper": "xRAG: Extreme Context Compression for Retrieval-augmented Generation with One Token"
+    },
+    {
+      "text": "Ability to chain across multiple interconnected facts to apply edited knowledge in VQA-style tasks; difficulty grows with hop count. ",
+      "paper": "VLKEB: A Large Vision-Language Model Knowledge Editing Benchmark"
+    },
+    {
+      "text": "Ability to chain multiple reasoning steps to derive an answer across intermediate inferences .",
+      "paper": "LoFiT: Localized Fine-tuning on LLM Representations"
+    },
+    {
+      "text": "Reasoning that requires combining information across multiple facts or documents to answer a question, as evaluated by multi‑hop QA datasets .",
+      "paper": "Chain of Preference Optimization: Improving Chain-of-Thought Reasoning in LLMs"
+    },
+    {
+      "text": "Reasoning across multiple sources/documents to answer complex questions .",
+      "paper": "IQA-EVAL: Automatic Evaluation of Human-Model Interactive Question Answering"
+    },
+    {
+      "text": "Chaining multiple pieces of information to compose an answer .",
+      "paper": "CRAG - Comprehensive RAG Benchmark"
+    },
+    {
+      "text": "Reasoning over multiple pieces of evidence via graph paths; in HippoRAG, effected during retrieval with PPR. ",
+      "paper": "HippoRAG: Neurobiologically Inspired Long-Term Memory for Large Language Models"
+    },
+    {
+      "text": "Reasoning that requires chaining multiple pieces of evidence, as in multi-hop question answering .",
+      "paper": "Reflective Multi-Agent Collaboration based on Large Language Models"
+    },
+    {
+      "text": "Chaining multiple pieces of information to derive an answer; often required by the evaluated tasks.  ",
+      "paper": "Information Re-Organization Improves Reasoning in Large Language Models"
+    },
+    {
+      "text": "Multi-hop Reasoning",
+      "paper": "TACT: Advancing Complex Aggregative Reasoning with Information Extraction Tools"
+    },
+    {
+      "text": "Reasoning that requires combining multiple facts/steps; e.g., StrategyQA demands multi-hop reasoning .",
+      "paper": "SLED: Self Logits Evolution Decoding for Improving Factuality in Large Language Models"
+    },
+    {
+      "text": "Chaining inferences across multiple passages/hops to answer a question, as required by multi‑hop QA datasets .",
+      "paper": "Chain of Agents: Large Language Models Collaborating on Long-Context Tasks"
+    },
+    {
+      "text": "Reasoning over multiple documents/aspects to answer questions. ",
+      "paper": "Enhancing LLM’s Cognition via Structurization"
+    },
+    {
+      "text": "Chaining multiple reasoning steps; implication understanding necessitates multi-hop reasoning ability .",
+      "paper": "II-Bench: An Image Implication Understanding Benchmark for Multimodal Large Language Models"
+    },
+    {
+      "text": "Performing multiple reasoning steps by aggregating information and relations across a context to answer a question. ",
+      "paper": "MEQA: A Benchmark for Multi-hop Event-centric Question Answering with Explanations"
+    }
+  ],
+  "definition_count": 15,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "xRAG: Extreme Context Compression for Retrieval-augmented Generation with One Token",
+      "evidence": "HotpotQA necessitates multi‑step reasoning to generate answers, indicating a subtype of reasoning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HotpotQA EM (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "xRAG: Extreme Context Compression for Retrieval-augmented Generation with One Token",
+      "evidence": "HotpotQA is a multihop dataset that necessitates multi‑step reasoning to generate answers ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Portability",
+      "other_type": "constructs",
+      "relationship_type": "depends-on",
+      "paper": "VLKEB: A Large Vision-Language Model Knowledge Editing Benchmark",
+      "evidence": "Portability dataset includes multi-hop reasoning VQA; performance declines with more hops due to increased reasoning complexity."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Deductive Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "LoFiT: Localized Fine-tuning on LLM Representations",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Counterfactual Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "LoFiT: Localized Fine-tuning on LLM Representations",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "Chain of Preference Optimization: Improving Chain-of-Thought Reasoning in LLMs",
+      "evidence": "Multi‑hop QA requires combining information across steps, a subtype of reasoning assessed by multi‑hop datasets ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Bamboogle QA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Chain of Preference Optimization: Improving Chain-of-Thought Reasoning in LLMs",
+      "evidence": "Bamboogle is used as a QA dataset to evaluate reasoning performance; accuracy is reported ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WikiMultiHopQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Chain of Preference Optimization: Improving Chain-of-Thought Reasoning in LLMs",
+      "evidence": "WikiMultiHopQA is included to evaluate multi‑hop reasoning accuracy  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Bamboogle QA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Chain of Preference Optimization: Improving Chain-of-Thought Reasoning in LLMs",
+      "evidence": "HotpotQA is used for diverse, explainable multi‑hop QA evaluation; accuracy is reported  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Interactive Question Answering (IQA) Capability",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "IQA-EVAL: Automatic Evaluation of Human-Model Interactive Question Answering",
+      "evidence": "HotpotQA requires multi-hop reasoning over documents ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Final QA Accuracy (IQA-EVAL)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "IQA-EVAL: Automatic Evaluation of Human-Model Interactive Question Answering",
+      "evidence": "HotpotQA accuracy reflects multi-hop reasoning success in interactive settings ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CRAG Slice: Question Type",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CRAG - Comprehensive RAG Benchmark",
+      "evidence": "CRAG defines multi-hop and reports lower truthfulness on such queries  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multi-hop Retrieval",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "HippoRAG: Neurobiologically Inspired Long-Term Memory for Large Language Models",
+      "evidence": "PPR enables multi-hop reasoning in a single retrieval step."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Reflective Multi-Agent Collaboration based on Large Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HotPotQA Success Rate (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Reflective Multi-Agent Collaboration based on Large Language Models",
+      "evidence": "HotPotQA evaluates multi‑hop QA and is used as a primary dataset  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Contextually Aware Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Information Re-Organization Improves Reasoning in Large Language Models",
+      "evidence": "The paper evaluates contextually aware multi-hop reasoning tasks."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "2WikiMultiHopQA F1 (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Information Re-Organization Improves Reasoning in Large Language Models",
+      "evidence": "Dataset requires multi-hop reasoning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "StrategyQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Information Re-Organization Improves Reasoning in Large Language Models",
+      "evidence": "QA datasets require multi-hop reasoning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MuSiQue F1 (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Information Re-Organization Improves Reasoning in Large Language Models",
+      "evidence": "Requires multi-hop reasoning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HotpotQA EM (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Information Re-Organization Improves Reasoning in Large Language Models",
+      "evidence": "Multi-hop QA setting."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WIKIHOP F1 (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Information Re-Organization Improves Reasoning in Large Language Models",
+      "evidence": "Reading comprehension requiring multi-hop reasoning."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Information Extraction",
+      "other_type": "constructs",
+      "relationship_type": "has-subtask",
+      "paper": "TACT: Advancing Complex Aggregative Reasoning with Information Extraction Tools",
+      "evidence": "IE challenges include multi-hop reasoning ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "SLED: Self Logits Evolution Decoding for Improving Factuality in Large Language Models",
+      "evidence": "StrategyQA is described as demanding multi-hop reasoning, a sub-type of complex reasoning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "StrategyQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SLED: Self Logits Evolution Decoding for Improving Factuality in Large Language Models",
+      "evidence": "StrategyQA demands multi-hop reasoning; accuracy reflects performance on this reasoning subtype ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Context Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Chain of Agents: Large Language Models Collaborating on Long-Context Tasks",
+      "evidence": "HotpotQA and MuSiQue are multi‑hop QA datasets requiring reasoning across multiple passages/hops ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Cognition (LLM)",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Enhancing LLM’s Cognition via Structurization",
+      "evidence": "Structurization yields larger gains on MultiDoc QA, suggesting promoted multi-hop reasoning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "2Wiki (LongBench) MultiDoc QA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Enhancing LLM’s Cognition via Structurization",
+      "evidence": "Multi-document QA subsets reflect multi-hop reasoning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Musique (LongBench) MultiDoc QA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Enhancing LLM’s Cognition via Structurization",
+      "evidence": "Multi-document QA subset used in evaluation."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Structurization Ability",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Enhancing LLM’s Cognition via Structurization",
+      "evidence": "Greater gains on MultiDoc QA suggest promoted multi-hop reasoning ability."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Image Implication Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "II-Bench: An Image Implication Understanding Benchmark for Multimodal Large Language Models",
+      "evidence": "Implication understanding necessitates multi-hop reasoning ability ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Event-centric Multi-hop Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MEQA: A Benchmark for Multi-hop Event-centric Question Answering with Explanations",
+      "evidence": "MEQA targets multi-hop QA but specifically requires reasoning about both entities and events, including event-event relations."
+    }
+  ],
+  "relationship_count": 31,
+  "incoming_relationship_count": 6,
+  "outgoing_relationship_count": 25
+}

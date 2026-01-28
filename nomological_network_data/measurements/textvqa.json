@@ -1,0 +1,288 @@
+{
+  "canonical_name": "TextVQA",
+  "type": "measurement",
+  "canonical_definition": "TextVQA is a visual question answering benchmark that assesses the ability to read and understand text in images. The measurement instrument evaluates models' capabilities in text recognition within visual scenes through question answering tasks that require interpreting textual content from images. Some papers frame it as an OCR-centric task or as a proxy for text recognition ability in visual contexts, with variants emphasizing its role in evaluating models' general capability retention or performance in text-intensive scenarios.",
+  "expert_reviewed": false,
+  "names": [
+    "TextVQA",
+    "TextVQA (Accuracy, %)",
+    "TextVQA Accuracy",
+    "TextVQA Accuracy (%)"
+  ],
+  "papers": [
+    "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark",
+    "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+    "CogVLM: Visual Expert for Pretrained Language Models",
+    "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts",
+    "Delta-CoMe: Training-Free Delta-Compression with Mixed-Precision for Large Language Models",
+    "Dense Connector for MLLMs",
+    "DenseFusion-1M: Merging Vision Experts for Comprehensive Multimodal Perception",
+    "Enhancing Large Vision Language Models with Self-Training on Image Comprehension",
+    "InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD",
+    "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens",
+    "Meteor: Mamba-based Traversal of Rationale for Large Language and Vision Models",
+    "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models",
+    "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+    "Multimodal Task Vectors Enable Many-Shot Multimodal In-Context Learning",
+    "Unified Generative and Discriminative Training for Multi-modal Large Language Models",
+    "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+    "Web2Code: A Large-scale Webpage-to-Code Dataset and Evaluation Framework for Multimodal LLMs",
+    "What matters when building vision-language models?",
+    "Why are Visually-Grounded Language Models Bad at Image Classification?"
+  ],
+  "paper_count": 19,
+  "group_ids": [
+    667,
+    682,
+    1059,
+    1763,
+    1796,
+    1970,
+    2243,
+    2367,
+    2544,
+    2603,
+    3104,
+    3148,
+    3500,
+    3547,
+    5383,
+    5427
+  ],
+  "definitions": [
+    {
+      "text": "Question answering requiring reading text in images TextVQA Accuracy (%)",
+      "paper": "Delta-CoMe: Training-Free Delta-Compression with Mixed-Precision for Large Language Models"
+    },
+    {
+      "text": "Text-oriented visual question answering requiring reading text in images TextVQA Accuracy (%) .",
+      "paper": "Web2Code: A Large-scale Webpage-to-Code Dataset and Evaluation Framework for Multimodal LLMs"
+    },
+    {
+      "text": "Answer questions requiring reading text in images. TextVQA Accuracy (%)",
+      "paper": "Multimodal Task Vectors Enable Many-Shot Multimodal In-Context Learning"
+    },
+    {
+      "text": "Text reading on natural images. TextVQA VQA accuracy (%)",
+      "paper": "What matters when building vision-language models?"
+    },
+    {
+      "text": "Text reading in images VQA TextVQA Accuracy (%)",
+      "paper": "InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD"
+    },
+    {
+      "text": "Question answering that requires reading text in images; a proxy for text recognition ability in visual scenes. TextVQA Accuracy (%)",
+      "paper": "DenseFusion-1M: Merging Vision Experts for Comprehensive Multimodal Perception"
+    },
+    {
+      "text": "Reading text in images (OCR). TextVQA Accuracy / Exact Match (Fuzzy Matching or LLM‑Judged)",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs"
+    },
+    {
+      "text": "TextVQA dataset accuracy used in ablations and comparisons . TextVQA Accuracy (%)",
+      "paper": "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts"
+    },
+    {
+      "text": "Text-intensive visual QA (OCR-heavy) TextVQA Top-1 Accuracy (%)",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models"
+    },
+    {
+      "text": "Reading text in images for QA TextVQA Accuracy (%)",
+      "paper": "Meteor: Mamba-based Traversal of Rationale for Large Language and Vision Models"
+    },
+    {
+      "text": "Answering questions about images containing text (OCR-centric) TextVQA Accuracy (%)",
+      "paper": "Enhancing Large Vision Language Models with Self-Training on Image Comprehension"
+    },
+    {
+      "text": "VQA requiring text recognition TextVQA Accuracy (%)",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks"
+    },
+    {
+      "text": "VQA requiring reading text in images; reported for comparison. TextVQA Accuracy (%)",
+      "paper": "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark"
+    },
+    {
+      "text": "Reading text in images to answer questions; used to check general capability retention after fine-tuning. TextVQA Accuracy (%) .",
+      "paper": "Why are Visually-Grounded Language Models Bad at Image Classification?"
+    },
+    {
+      "text": "VQA requiring text reading TextVQA Accuracy (↑)",
+      "paper": "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models"
+    },
+    {
+      "text": "Answering questions requiring reading text in images TextVQA (reported as VQAT) Accuracy (%)",
+      "paper": "Dense Connector for MLLMs"
+    },
+    {
+      "text": "VQA over text-rich images TextVQA Accuracy (%)",
+      "paper": "Unified Generative and Discriminative Training for Multi-modal Large Language Models"
+    },
+    {
+      "text": "VQA requiring reading of text in images.   TextVQA Accuracy (%) under k‑shot evaluation",
+      "paper": "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens"
+    },
+    {
+      "text": "Text-oriented VQA (OCR-centric) TextVQA Accuracy (%)",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context"
+    }
+  ],
+  "definition_count": 19,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text Recognition",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "DenseFusion-1M: Merging Vision Experts for Comprehensive Multimodal Perception",
+      "evidence": "Authors report strongest gains on text-recognition scenes, e.g., TextVQA, indicating TextVQA evaluates text recognition capability ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "OCR (Text Recognition in Images)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+      "evidence": "TextVQA evaluates reading text in images."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Optical Character Recognition (OCR) from Images",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "What matters when building vision-language models?",
+      "evidence": "TextVQA directly evaluates text reading on natural images."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Question Answering",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Optical Character Recognition (OCR)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models",
+      "evidence": "TextVQA is a text-intensive (OCR-heavy) visual QA benchmark ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Non-Object Concept Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Meteor: Mamba-based Traversal of Rationale for Large Language and Vision Models",
+      "evidence": "TextVQA assesses reading text in images, aligned with non-object concept understanding ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "OCR/Text Reading from Images",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Enhancing Large Vision Language Models with Self-Training on Image Comprehension",
+      "evidence": "TextVQA consists of images with text-rich contents; accuracy reflects OCR/text reading ability ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multi‑Modal Understanding (Vision‑Language)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Delta-CoMe: Training-Free Delta-Compression with Mixed-Precision for Large Language Models",
+      "evidence": "Sec. 4.1 uses TextVQA to evaluate vision‑language models with accuracy ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "evidence": "TextVQA included in Table 1 ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark",
+      "evidence": "TextVQA performance is reported alongside CVQA; it assesses understanding where reading text in images is needed ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text-based Visual QA Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Web2Code: A Large-scale Webpage-to-Code Dataset and Evaluation Framework for Multimodal LLMs",
+      "evidence": "TextVQA evaluates text-oriented visual QA ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal In-Context Learning (ICL)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Multimodal Task Vectors Enable Many-Shot Multimodal In-Context Learning",
+      "evidence": "MTV improves TextVQA accuracy in document-style multimodal tasks."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Document Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Multimodal Task Vectors Enable Many-Shot Multimodal In-Context Learning",
+      "evidence": "Document tasks include reading text in images (TextVQA)."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General VLM Capability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Why are Visually-Grounded Language Models Bad at Image Classification?",
+      "evidence": "Post fine-tuning, TextVQA is used to verify preserved general capabilities (scores remain similar) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text Recognition and Reading",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models",
+      "evidence": "TextVQA Accuracy evaluates reading-based QA ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Text Understanding (OCR)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD",
+      "evidence": "TextVQA evaluates reading text in images; listed among OCR‑related benchmarks ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generative Capability (Multimodal Generation)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Unified Generative and Discriminative Training for Multi-modal Large Language Models",
+      "evidence": "Part of the 11-benchmark generative evaluation set ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text Reading in Images (OCR‑based Understanding)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens",
+      "evidence": "TextVQA specifically tests reading text in images for QA."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text Recognition (OCR)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "evidence": "TextVQA appears in the VQA benchmarks as a text-oriented (OCR) task ."
+    }
+  ],
+  "relationship_count": 19,
+  "incoming_relationship_count": 19,
+  "outgoing_relationship_count": 0
+}

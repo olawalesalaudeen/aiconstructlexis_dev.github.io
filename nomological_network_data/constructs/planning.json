@@ -1,0 +1,656 @@
+{
+  "canonical_name": "Planning",
+  "type": "construct",
+  "canonical_definition": "Planning is the capability to generate and execute sequences of actions to transition from an initial state to a goal state, often involving multi-step reasoning, task decomposition, and adaptation to environmental constraints or observations. While some papers operationalize it narrowly in classical formalisms like STRIPS/PDDL for action sequence optimization, others emphasize broader applications in interactive environments, multimodal settings, or decision-making under constraints, with varying focus on high-level plan generation, iterative refinement, or context-aware execution. Disagreements arise in scope (e.g., abstract vs. grounded environments) and implementation details (e.g., tool selection, visual feedback loops), but consensus centers on goal-directed sequential reasoning as its core.",
+  "expert_reviewed": false,
+  "names": [
+    "Planning"
+  ],
+  "papers": [
+    "ALPINE: Unveiling The Planning Capability of Autoregressive Learning in Language Models",
+    "AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents",
+    "AgentPoison: Red-teaming LLM Agents via Poisoning Memory or Knowledge Bases",
+    "Aligning Audio-Visual Joint Representations with an Agentic Workflow",
+    "AutoGuide: Automated Generation and Selection of Context-Aware Guidelines for Large Language Model Agents",
+    "AutoManual: Constructing Instruction Manuals by LLM Agents via Interactive Environmental Learning",
+    "Can large language models explore in-context?",
+    "Chain of Thoughtlessness? An Analysis of CoT in Planning",
+    "ChatCam: Empowering Camera Control through Conversational AI",
+    "Cooperation, Competition, and Maliciousness: LLM-Stakeholders Interactive Negotiation",
+    "Discovery of the Hidden World with Large Language Models",
+    "Enhancing LLM Reasoning via Vision-Augmented Prompting",
+    "FinCon: A Synthesized LLM Multi-Agent System with Conceptual Verbal Reinforcement for Enhanced Financial Decision Making",
+    "GTA: A Benchmark for General Tool Agents",
+    "GameTraversalBenchmark: Evaluating Planning Abilities Of Large Language Models Through Traversing 2D Game Maps",
+    "Large Language Models as Urban Residents: An LLM Agent Framework for Personal Mobility Generation",
+    "Leveraging Environment Interaction for Automated PDDL Translation and Planning with Large Language Models",
+    "Many-Shot In-Context Learning",
+    "Mobile-Agent-v2: Mobile Device Operation Assistant with Effective Navigation via Multi-Agent Collaboration",
+    "OmniJARVIS: Unified Vision-Language-Action Tokenization Enables Open-World Instruction Following Agents",
+    "Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks",
+    "PUZZLES: A Benchmark for Neural Algorithmic Reasoning",
+    "Reflective Multi-Agent Collaboration based on Large Language Models",
+    "SGLang: Efficient Execution of Structured Language Model Programs",
+    "The Factorization Curse: Which Tokens You Predict Underlie the Reversal Curse and More",
+    "Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models",
+    "Watch Out for Your Agents! Investigating Backdoor Threats to LLM-Based Agents",
+    "WorkArena++: Towards Compositional Planning and Reasoning-based Common Knowledge Work Tasks"
+  ],
+  "paper_count": 28,
+  "group_ids": [
+    458,
+    608,
+    823,
+    1013,
+    1078,
+    1690,
+    1771,
+    1997,
+    2008,
+    2009,
+    2354,
+    2451,
+    2847,
+    2906,
+    2933,
+    2946,
+    2947,
+    3362,
+    3432,
+    3751,
+    3938,
+    4190,
+    4227,
+    4415,
+    4520,
+    4643,
+    4820,
+    4855,
+    5435,
+    5929
+  ],
+  "definitions": [
+    {
+      "text": "Planning",
+      "paper": "Many-Shot In-Context Learning"
+    },
+    {
+      "text": "Ability to plan ahead and execute sequences of actions in an interactive environment. ",
+      "paper": "PUZZLES: A Benchmark for Neural Algorithmic Reasoning"
+    },
+    {
+      "text": "High-level plan generation that specifies tool selection, image initialization, iteration prompts, and termination criteria for downstream reasoning .",
+      "paper": "Enhancing LLM Reasoning via Vision-Augmented Prompting"
+    },
+    {
+      "text": "Capability to find a sequence of actions that transforms an initial state to a goal state (classical STRIPS/PDDL setting) .",
+      "paper": "Chain of Thoughtlessness? An Analysis of CoT in Planning"
+    },
+    {
+      "text": "Reasoning to find a sequence of actions to achieve a desired goal state from an initial state; a core aspect of intelligence .",
+      "paper": "Leveraging Environment Interaction for Automated PDDL Translation and Planning with Large Language Models"
+    },
+    {
+      "text": "Devising context-aware audio modifications (e.g., denoising, temporal adjustments) to improve alignment ().",
+      "paper": "Aligning Audio-Visual Joint Representations with an Agentic Workflow"
+    },
+    {
+      "text": "Organizing action sequences that enable execution of effective policies in decision-making tasks. ",
+      "paper": "AutoGuide: Automated Generation and Selection of Context-Aware Guidelines for Large Language Model Agents"
+    },
+    {
+      "text": "Decomposing a task into executable sub-goals using world knowledge and current visual observations; performed in one step with HDKG support .",
+      "paper": "Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks"
+    },
+    {
+      "text": "Ability to generate executable multi-step action sequences in grounded environments .",
+      "paper": "AutoManual: Constructing Instruction Manuals by LLM Agents via Interactive Environmental Learning"
+    },
+    {
+      "text": "Planner writes free-form code as an actionable plan to interact with the environment .",
+      "paper": "AutoManual: Constructing Instruction Manuals by LLM Agents via Interactive Environmental Learning"
+    },
+    {
+      "text": "Sequential selection of next steps to achieve a desired goal; in this work, abstracted via path-finding in networks .",
+      "paper": "ALPINE: Unveiling The Planning Capability of Autoregressive Learning in Language Models"
+    },
+    {
+      "text": "Generating, updating, and executing plans based on intermediate visual artifacts in an iterative thought–action–observation loop.",
+      "paper": "Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models"
+    },
+    {
+      "text": "Formulation and refinement of a plan over past actions (patterns, motivations) to handle complex tasks .",
+      "paper": "Large Language Models as Urban Residents: An LLM Agent Framework for Personal Mobility Generation"
+    },
+    {
+      "text": "LLMs exhibit potential for planning in complex decision‑making settings .",
+      "paper": "FinCon: A Synthesized LLM Multi-Agent System with Conceptual Verbal Reinforcement for Enhanced Financial Decision Making"
+    },
+    {
+      "text": "Ability to conduct complex multi‑step planning/reasoning; identified as a shortcoming .",
+      "paper": "Discovery of the Hidden World with Large Language Models"
+    },
+    {
+      "text": "Ability of an LLM to generate a sequence of actions to reach target objectives on a 2D map while minimizing steps and generation errors; success is defined by traversal with minimal steps/errors  .",
+      "paper": "GameTraversalBenchmark: Evaluating Planning Abilities Of Large Language Models Through Traversing 2D Game Maps"
+    },
+    {
+      "text": "Requires planning each move and continuous observation of the environment while generating actions .",
+      "paper": "GameTraversalBenchmark: Evaluating Planning Abilities Of Large Language Models Through Traversing 2D Game Maps"
+    },
+    {
+      "text": "Capacity to devise action steps; cited as a strength of LLM agents .",
+      "paper": "Reflective Multi-Agent Collaboration based on Large Language Models"
+    },
+    {
+      "text": "Condensing lengthy, interleaved history into pure-text task progress to ease navigation for decision making .",
+      "paper": "Mobile-Agent-v2: Mobile Device Operation Assistant with Effective Navigation via Multi-Agent Collaboration"
+    },
+    {
+      "text": "Ability to predict multi‑step futures or generate paths that require look‑ahead beyond immediate next‑token cues (e.g., path finding in graphs). ",
+      "paper": "The Factorization Curse: Which Tokens You Predict Underlie the Reversal Curse and More"
+    },
+    {
+      "text": "Capability to account for long-term consequences of decisions .",
+      "paper": "Can large language models explore in-context?"
+    },
+    {
+      "text": "Capability referenced as part of LLM strengths used by agents. ",
+      "paper": "Watch Out for Your Agents! Investigating Backdoor Threats to LLM-Based Agents"
+    },
+    {
+      "text": "Multi-round planning to accomplish complex tasks in applications using LLMs. ",
+      "paper": "SGLang: Efficient Execution of Structured Language Model Programs"
+    },
+    {
+      "text": "Ability to plan sequences of actions to accomplish goals in multi-step tasks ",
+      "paper": "AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents"
+    },
+    {
+      "text": "Ability to compose multi-step action sequences toward goals; emphasized for long-horizon, programmatic tasks. ",
+      "paper": "OmniJARVIS: Unified Vision-Language-Action Tokenization Enables Open-World Instruction Following Agents"
+    },
+    {
+      "text": "Formulating informed action plans, typically supported by retrieved knowledge/memory. ",
+      "paper": "AgentPoison: Red-teaming LLM Agents via Poisoning Memory or Knowledge Bases"
+    },
+    {
+      "text": "Formulating and using a forward plan across turns to avoid stagnation and improve outcomes in negotiation .",
+      "paper": "Cooperation, Competition, and Maliciousness: LLM-Stakeholders Interactive Negotiation"
+    },
+    {
+      "text": "Forming a mental scratchpad for high-level planning and outlining specific steps to achieve the goal. ",
+      "paper": "ChatCam: Empowering Camera Control through Conversational AI"
+    },
+    {
+      "text": "Ability to devise and organize steps under constraints to achieve an outcome; evaluated via tasks requiring decision‑making under constraints. ",
+      "paper": "WorkArena++: Towards Compositional Planning and Reasoning-based Common Knowledge Work Tasks"
+    },
+    {
+      "text": "Capability to plan solution steps for implicit, multi-step tasks. ",
+      "paper": "GTA: A Benchmark for General Tool Agents"
+    }
+  ],
+  "definition_count": 30,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Planning Success Rate (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Many-Shot In-Context Learning",
+      "evidence": "Success rate in Logistics domain ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PUZZLES Zero-Shot Puzzle-Solving Success Rate (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "PUZZLES: A Benchmark for Neural Algorithmic Reasoning",
+      "evidence": "The evaluation requires models to plan ahead and execute single steps via the cursor interface; success indicates planning ability."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multimodal Reasoning (Visual + Verbal)",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Enhancing LLM Reasoning via Vision-Augmented Prompting",
+      "evidence": "The VAP procedure begins with generating a high-level plan specifying tools, initialization, and prompts ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Tool Use for Visualization",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Enhancing LLM Reasoning via Vision-Augmented Prompting",
+      "evidence": "The plan explicitly includes selecting a drawing tool and initializing the image via corresponding API calls ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Geometry Intersection Counting Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "is-a-component-of",
+      "paper": "Enhancing LLM Reasoning via Vision-Augmented Prompting",
+      "evidence": "Ablation shows removing planning causes the largest drop for geometry; planning is crucial for visualizing precise spatial relationships ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TSP Optimality Gap",
+      "other_type": "measurements",
+      "relationship_type": "is-a-component-of",
+      "paper": "Enhancing LLM Reasoning via Vision-Augmented Prompting",
+      "evidence": "Ablation indicates planning removal significantly degrades TSP performance, underscoring its role in spatially structured problems ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Algorithmic Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Chain of Thoughtlessness? An Analysis of CoT in Planning",
+      "evidence": "Classical planning instantiates algorithmic problem solving with checkable ground truths ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Blocksworld Planning (PDDL/VAL) Accuracy vs Stack Size",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Chain of Thoughtlessness? An Analysis of CoT in Planning",
+      "evidence": "Plan validity (VAL) on Blocksworld evaluates planning ability; accuracy drops as n increases  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Long‑Horizon Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "Leveraging Environment Interaction for Automated PDDL Translation and Planning with Large Language Models",
+      "evidence": "Planning is presented as reasoning to sequence actions toward a goal, a core facet of intelligence and long‑horizon reasoning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Task Solve Rate",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Leveraging Environment Interaction for Automated PDDL Translation and Planning with Large Language Models",
+      "evidence": "Solve rate counts how often a valid plan is found/validated under generated PDDL (Eq. 1) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Agentic Workflow for AV Alignment",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "Aligning Audio-Visual Joint Representations with an Agentic Workflow",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Sequential Decision-Making",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "AutoGuide: Automated Generation and Selection of Context-Aware Guidelines for Large Language Model Agents",
+      "evidence": "The planning and reasoning capabilities of pre-trained LLMs enable agents to execute effective policies in sequential decision-making tasks."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Long-Horizon Task Completion",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks",
+      "evidence": "Agents must plan to complete long-horizon tasks in open worlds ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks",
+      "evidence": "Planner integrates visual observations as conditions for environment-aware sub-goal generation ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction Following",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks",
+      "evidence": "Agents leverage instruction-following capabilities of MLLMs for planning ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks",
+      "evidence": "Agents leverage instruction-following capabilities of MLLMs for planning ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Logical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks",
+      "evidence": "Logical reasoning of MLLMs underpins action planning ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "World Knowledge",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks",
+      "evidence": "HDKG helps planning long-horizon tasks efficiently in a train-free manner ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Efficiency",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks",
+      "evidence": "One-shot planning with HDKG shortens elapsed time compared to iterative planning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Ablation: Module Contribution (Planner/Reflector/HDKG/AMEP)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks",
+      "evidence": "Removing the planner sharply reduces SR across groups ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Environmental Understanding",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "AutoManual: Constructing Instruction Manuals by LLM Agents via Interactive Environmental Learning",
+      "evidence": "A well-organized understanding of the environment can guide multi-task planning effectively ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ALFWorld Success Rate",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "AutoManual: Constructing Instruction Manuals by LLM Agents via Interactive Environmental Learning",
+      "evidence": "LLM agents plan and act in grounded environments; success rates on ALFWorld quantify task completion under such planning  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MiniWoB++ Success Rate (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "AutoManual: Constructing Instruction Manuals by LLM Agents via Interactive Environmental Learning",
+      "evidence": "Interactive web tasks require planning; success rates on MiniWoB++ are reported as the primary outcome ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WebArena (Reddit) Success (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "AutoManual: Constructing Instruction Manuals by LLM Agents via Interactive Environmental Learning",
+      "evidence": "Success (%) on WebArena (Reddit) assesses agent performance in realistic web environments requiring planning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Binary Task Reward",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "AutoManual: Constructing Instruction Manuals by LLM Agents via Interactive Environmental Learning",
+      "evidence": "Episodes return a binary reward indicating success/failure in the POMDP environment, aligning with planned task execution ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code-Based Plan Synthesis",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "AutoManual: Constructing Instruction Manuals by LLM Agents via Interactive Environmental Learning",
+      "evidence": "Planner writes free-form code as an actionable plan; using code as the plan enables in-plan feedback handling and improved performance  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Planning Robustness",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "AutoManual: Constructing Instruction Manuals by LLM Agents via Interactive Environmental Learning",
+      "evidence": "Explicitly describing error-prone details in rules improves the robustness of planning ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge Transfer to Smaller LLMs",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "AutoManual: Constructing Instruction Manuals by LLM Agents via Interactive Environmental Learning",
+      "evidence": "The self-generated manual can guide the planning of smaller LLMs ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Synthetic Path-Finding Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "ALPINE: Unveiling The Planning Capability of Autoregressive Learning in Language Models",
+      "evidence": "The paper models planning as a network path-finding task and evaluates LLMs by test accuracy on synthetic path-finding ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Blocksworld Planning Benchmark",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "ALPINE: Unveiling The Planning Capability of Autoregressive Learning in Language Models",
+      "evidence": "Results are validated on the real-world planning benchmark Blocksworld, which directly corresponds to the path-finding abstraction of planning ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Transitive Reachability Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "ALPINE: Unveiling The Planning Capability of Autoregressive Learning in Language Models",
+      "evidence": "Theoretical and empirical analyses identify failure to learn transitive reachability, leading to incomplete ability to reason about future steps when planning ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Goal-Conditioned Attention",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "ALPINE: Unveiling The Planning Capability of Autoregressive Learning in Language Models",
+      "evidence": "Models concentrate attention on target nodes as intended during path-finding, supporting planning performance ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models",
+      "evidence": "LMs can plan and reason based on intermediate visual artifacts they create, improving flexibility and robustness ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Autonomous Agency",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Large Language Models as Urban Residents: An LLM Agent Framework for Personal Mobility Generation",
+      "evidence": "Agent designed with action, memory, and planning for complex tasks ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Pathfinding",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "GameTraversalBenchmark: Evaluating Planning Abilities Of Large Language Models Through Traversing 2D Game Maps",
+      "evidence": "GTB focuses solely on pathfinding abilities, a dimension of planning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Environment State Representation",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "GameTraversalBenchmark: Evaluating Planning Abilities Of Large Language Models Through Traversing 2D Game Maps",
+      "evidence": "Planning requires continuous observation and internal representation of the environment’s state  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Generation Control",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "GameTraversalBenchmark: Evaluating Planning Abilities Of Large Language Models Through Traversing 2D Game Maps",
+      "evidence": "Errors are penalized to judge capability to control generation while planning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Goal Achievement",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "GameTraversalBenchmark: Evaluating Planning Abilities Of Large Language Models Through Traversing 2D Game Maps",
+      "evidence": "Success entails reaching the objective coordinates (or close) with minimal steps and errors  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Action Efficiency",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "GameTraversalBenchmark: Evaluating Planning Abilities Of Large Language Models Through Traversing 2D Game Maps",
+      "evidence": "Highest rewards are given for achieving objectives while minimizing actions and errors ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GTB_Score (GTBS)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "GameTraversalBenchmark: Evaluating Planning Abilities Of Large Language Models Through Traversing 2D Game Maps",
+      "evidence": "GTB_Score aggregates proximity to goals, path length, and generation errors to assess planning performance ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Task Progress Navigation",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "Mobile-Agent-v2: Mobile Device Operation Assistant with Effective Navigation via Multi-Agent Collaboration",
+      "evidence": "The planning agent condenses history into pure-text task progress to ease navigation ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Task Success Rate (SR)",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "Mobile-Agent-v2: Mobile Device Operation Assistant with Effective Navigation via Multi-Agent Collaboration",
+      "evidence": "Ablation shows the planning agent has the most significant impact on performance ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Star Graph Task Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "The Factorization Curse: Which Tokens You Predict Underlie the Reversal Curse and More",
+      "evidence": "Star‑graph path generation requires look‑ahead planning; MLM‑U reaches 100% vs AR ≈50%."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Factorization Agnosticism",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "The Factorization Curse: Which Tokens You Predict Underlie the Reversal Curse and More",
+      "evidence": "Authors report improved planning capability with factorization‑agnostic training on the star graph task."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Decision-Making Capability",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Can large language models explore in-context?",
+      "evidence": "Planning to account for long-term consequences is a core element of decision-making capability ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Agentic Interaction",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "SGLang: Efficient Execution of Structured Language Model Programs",
+      "evidence": "LLMs in agentic applications engage in multi-round planning and interaction."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Agentic Task Execution",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents",
+      "evidence": "Agents perform planning to solve tasks"
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Decision-Making",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "OmniJARVIS: Unified Vision-Language-Action Tokenization Enables Open-World Instruction Following Agents",
+      "evidence": "Model is described as capable of reasoning, planning, and acting to accomplish tasks."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge Utilization via Retrieval",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "AgentPoison: Red-teaming LLM Agents via Poisoning Memory or Knowledge Bases",
+      "evidence": "Agents retrieve past knowledge and instances from memory or RAG to make informed action plans."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "AgentPoison: Red-teaming LLM Agents via Poisoning Memory or Knowledge Bases",
+      "evidence": "Agents demonstrate advanced capabilities in reasoning used for task planning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Interaction Capability",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "AgentPoison: Red-teaming LLM Agents via Poisoning Memory or Knowledge Bases",
+      "evidence": "Agents plan and execute actions to interact with environments."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Negotiation (Interactive Multi‑Agent Negotiation Capability)",
+      "other_type": "constructs",
+      "relationship_type": "component-of",
+      "paper": "Cooperation, Competition, and Maliciousness: LLM-Stakeholders Interactive Negotiation",
+      "evidence": "Planning is integral to negotiation and included as a structured step ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Final Deal Success (n−1‑way and n‑way)",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "Cooperation, Competition, and Maliciousness: LLM-Stakeholders Interactive Negotiation",
+      "evidence": "Removing the planning step led to saturation and reduced ability to increase collective score; planning was important to reach a successful final deal  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Agentic Decision-Making",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "ChatCam: Empowering Camera Control through Conversational AI",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Decision-Making",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "WorkArena++: Towards Compositional Planning and Reasoning-based Common Knowledge Work Tasks",
+      "evidence": "Planning/problem‑solving tasks are evaluated through decision‑making under constraints."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Planning & Problem Solving (L2/L3) Success Rate",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "WorkArena++: Towards Compositional Planning and Reasoning-based Common Knowledge Work Tasks",
+      "evidence": "Category explicitly evaluates planning/problem‑solving abilities."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Tool-use Capability",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "GTA: A Benchmark for General Tool Agents",
+      "evidence": "Queries are step-implicit, requiring planning of solution steps."
+    }
+  ],
+  "relationship_count": 57,
+  "incoming_relationship_count": 19,
+  "outgoing_relationship_count": 38
+}

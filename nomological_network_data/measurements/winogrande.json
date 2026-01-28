@@ -1,0 +1,919 @@
+{
+  "canonical_name": "WinoGrande",
+  "type": "measurement",
+  "canonical_definition": "WinoGrande is a commonsense coreference resolution benchmark consisting of Winograd-style sentences with ambiguous pronouns, requiring models to select the correct referent from multiple choices. It assesses the ability to resolve coreference ambiguities using real-world knowledge and contextual reasoning, with task formulations often framed as multiple-choice questions or adversarial pronoun disambiguation. Some papers describe it as a general-ability evaluation for tracking degradation in commonsense reasoning or as part of broader benchmark suites.",
+  "expert_reviewed": false,
+  "names": [
+    "WinoGrande",
+    "GSM8K Accuracy (%)",
+    "Text-only QA (WinoGrande)",
+    "TruthfulQA Accuracy (%)",
+    "WinoGrande (Accuracy %)",
+    "WinoGrande 0‑shot Accuracy (%)",
+    "WinoGrande Accuracy",
+    "WinoGrande Accuracy (%)",
+    "Winogrande (Wino) Accuracy (%)",
+    "Winogrande Accuracy (%)",
+    "Winogrande Accuracy (normalized)"
+  ],
+  "papers": [
+    "$\\texttt{Model-GLUE}$: Democratized LLM Scaling for A Large Model Zoo in the Wild",
+    "BERTs are Generative In-Context Learners",
+    "Bridging The Gap between Low-rank and Orthogonal Adaptation via Householder Reflection Adaptation",
+    "DDK: Distilling Domain Knowledge for Efficient Large Language Models",
+    "Distributional Preference Alignment of LLMs via Optimal Transport",
+    "FouRA: Fourier Low-Rank Adaptation",
+    "IRCAN: Mitigating Knowledge Conflicts in LLM Generation via Identifying and Reweighting Context-Aware Neurons",
+    "Improving Alignment and Robustness with Circuit Breakers",
+    "Instruction Tuning With Loss Over Instructions",
+    "LLM Circuit Analyses Are Consistent Across Training and Scale",
+    "LLMCBench: Benchmarking Large Language Model Compression for Efficient Deployment",
+    "MambaTree: Tree Topology is All You Need in State Space Model",
+    "Megalodon: Efficient LLM Pretraining and Inference with Unlimited Context Length",
+    "MiniCache: KV Cache Compression in Depth Dimension for Large Language Models",
+    "Multi-Head Mixture-of-Experts",
+    "Not All Tokens Are What You Need for Pretraining",
+    "Observational Scaling Laws and the Predictability of Langauge Model Performance",
+    "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation",
+    "Reasons and Solutions for the Decline in Model Performance after Editing",
+    "S$^{2}$FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity",
+    "SVFT: Parameter-Efficient Fine-Tuning with Singular Vectors",
+    "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+    "Selective Attention: Enhancing Transformer through Principled Context Control",
+    "Self-playing Adversarial Language Game Enhances LLM Reasoning",
+    "Sparse High Rank Adapters",
+    "Stacking Your Transformers: A Closer Look at Model Growth for Efficient LLM Pre-Training",
+    "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models",
+    "Wings: Learning Multimodal LLMs without Text-only Forgetting",
+    "Would I Lie To You? Inference Time Alignment of Language Models using Direct Preference Heads"
+  ],
+  "paper_count": 29,
+  "group_ids": [
+    778,
+    947,
+    1117,
+    1424,
+    1643,
+    1926,
+    2058,
+    2310,
+    2394,
+    2872,
+    3161,
+    3298,
+    3497,
+    3616,
+    3663,
+    3752,
+    3842,
+    4497,
+    4711,
+    5029,
+    5818,
+    5866
+  ],
+  "definitions": [
+    {
+      "text": "Coreference-based commonsense reasoning. WinoGrande Accuracy (%)",
+      "paper": "LLMCBench: Benchmarking Large Language Model Compression for Efficient Deployment"
+    },
+    {
+      "text": "Coreference-style commonsense WinoGrande Accuracy (%)",
+      "paper": "S$^{2}$FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity"
+    },
+    {
+      "text": "Coreference-based commonsense reasoning WinoGrande Accuracy (%)",
+      "paper": "SVFT: Parameter-Efficient Fine-Tuning with Singular Vectors"
+    },
+    {
+      "text": "Coreference/commonsense WinoGrande Accuracy (%)",
+      "paper": "MiniCache: KV Cache Compression in Depth Dimension for Large Language Models"
+    },
+    {
+      "text": "Coreference-style reasoning Winogrande Accuracy (%)",
+      "paper": "Improving Alignment and Robustness with Circuit Breakers"
+    },
+    {
+      "text": "Commonsense pronoun/coreference resolution Winogrande Accuracy (%)",
+      "paper": "Bridging The Gap between Low-rank and Orthogonal Adaptation via Householder Reflection Adaptation"
+    },
+    {
+      "text": "Commonsense coreference reasoning WinoGrande Accuracy (%) .",
+      "paper": "Reasons and Solutions for the Decline in Model Performance after Editing"
+    },
+    {
+      "text": "Binary commonsense coreference resolution.  WinoGrande 0‑shot Accuracy (%)",
+      "paper": "Self-playing Adversarial Language Game Enhances LLM Reasoning"
+    },
+    {
+      "text": "Coreference/commonsense. WinoGrande Accuracy (%)",
+      "paper": "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?"
+    },
+    {
+      "text": "Coreference/commonsense. WinoGrande Accuracy (%)",
+      "paper": "Wings: Learning Multimodal LLMs without Text-only Forgetting"
+    },
+    {
+      "text": "Commonsense coreference-style reasoning Winogrande Accuracy (%) (lm-eval-harness default)",
+      "paper": "Not All Tokens Are What You Need for Pretraining"
+    },
+    {
+      "text": "Commonsense benchmark (validation) WinoGrande Accuracy (%)",
+      "paper": "DDK: Distilling Domain Knowledge for Efficient Large Language Models"
+    },
+    {
+      "text": "Coreference/commonsense disambiguation; higher is better. WinoGrande Accuracy (%)",
+      "paper": "Stacking Your Transformers: A Closer Look at Model Growth for Efficient LLM Pre-Training"
+    },
+    {
+      "text": "Commonsense reasoning task . WinoGrande Accuracy (%)",
+      "paper": "Instruction Tuning With Loss Over Instructions"
+    },
+    {
+      "text": "Commonsense coreference resolution in Winograd-style problems WinoGrande Accuracy (%) via top-choice logit .",
+      "paper": "LLM Circuit Analyses Are Consistent Across Training and Scale"
+    },
+    {
+      "text": "Adversarial Winograd-style pronoun resolution Winogrande Accuracy (%) .",
+      "paper": "Selective Attention: Enhancing Transformer through Principled Context Control"
+    },
+    {
+      "text": "Benchmark accuracy on Winogrande Winogrande Accuracy (%)",
+      "paper": "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models"
+    },
+    {
+      "text": "Adversarial Winograd-style coreference WinoGrande Dev Accuracy (%) (ICL settings) .",
+      "paper": "BERTs are Generative In-Context Learners"
+    },
+    {
+      "text": "Open LLM Leaderboard evaluation on WinoGrande. WinoGrande Accuracy (%)",
+      "paper": "Distributional Preference Alignment of LLMs via Optimal Transport"
+    },
+    {
+      "text": "Commonsense coreference (WinoGrande). Commonsense Reasoning Accuracy (%)",
+      "paper": "FouRA: Fourier Low-Rank Adaptation"
+    },
+    {
+      "text": "Winograd‑style coreference reasoning benchmark in the table WinoGrande Accuracy (%)",
+      "paper": "Megalodon: Efficient LLM Pretraining and Inference with Unlimited Context Length"
+    },
+    {
+      "text": "Winograd-style multiple-choice reasoning reported by the paper. WinoGrande Accuracy (%)",
+      "paper": "$\\texttt{Model-GLUE}$: Democratized LLM Scaling for A Large Model Zoo in the Wild"
+    },
+    {
+      "text": "Pronoun/coreference commonsense downstream task. WinoGrande Accuracy (↑)",
+      "paper": "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation"
+    },
+    {
+      "text": "Accuracy on WinoGrande, listed among commonsense reasoning benchmarks WinoGrande Accuracy (%)",
+      "paper": "Sparse High Rank Adapters"
+    },
+    {
+      "text": "General-ability evaluation used to ensure no degradation of general skills . Winogrande Accuracy (%)",
+      "paper": "IRCAN: Mitigating Knowledge Conflicts in LLM Generation via Identifying and Reweighting Context-Aware Neurons"
+    },
+    {
+      "text": "General-ability evaluation used to ensure no degradation of general skills . GSM8K Accuracy (%)",
+      "paper": "IRCAN: Mitigating Knowledge Conflicts in LLM Generation via Identifying and Reweighting Context-Aware Neurons"
+    },
+    {
+      "text": "General-ability evaluation used to ensure no degradation of general skills . TruthfulQA Accuracy (%)",
+      "paper": "IRCAN: Mitigating Knowledge Conflicts in LLM Generation via Identifying and Reweighting Context-Aware Neurons"
+    },
+    {
+      "text": "Winograd-style commonsense/coreference downstream validation Winogrande Accuracy (%)",
+      "paper": "Multi-Head Mixture-of-Experts"
+    },
+    {
+      "text": "Commonsense coreference resolution Winogrande Accuracy normalized to [0,1]",
+      "paper": "Observational Scaling Laws and the Predictability of Langauge Model Performance"
+    },
+    {
+      "text": "Commonsense coreference/QA evaluation used in the benchmark suite. WinoGrande Accuracy",
+      "paper": "MambaTree: Tree Topology is All You Need in State Space Model"
+    },
+    {
+      "text": "Adversarial Winograd-schema commonsense reasoning WinoGrande Accuracy (%) .",
+      "paper": "Would I Lie To You? Inference Time Alignment of Language Models using Direct Preference Heads"
+    }
+  ],
+  "definition_count": 31,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "DART-Math: Difficulty-Aware Rejection Tuning for Mathematical Problem-Solving",
+      "evidence": "GSM8K is used as an in-domain math benchmark in which accuracy reflects math problem-solving ability."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "DART-Math: Difficulty-Aware Rejection Tuning for Mathematical Problem-Solving",
+      "evidence": "GSM8K is used as an in-domain math benchmark in which accuracy reflects math problem-solving ability."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Chain-of-Thought Reasoning Without Prompting",
+      "evidence": "GSM8K is used to evaluate math reasoning under different decoding strategies."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Chain-of-Thought Reasoning Without Prompting",
+      "evidence": "GSM8K is used to evaluate math reasoning under different decoding strategies."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Chain-of-Thought Reasoning Without Prompting",
+      "evidence": "GSM8K is one of the reasoning benchmarks used to assess reasoning performance."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Chain-of-Thought Generation",
+      "other_type": "constructs",
+      "relationship_type": "predicts",
+      "paper": "Chain-of-Thought Reasoning Without Prompting",
+      "evidence": "Selecting CoT paths via CoT-decoding substantially improves GSM8K accuracy, linking CoT generation to better task performance."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment",
+      "evidence": "GSM8K is used to verify mathematical problem‑solving ability ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning",
+      "evidence": "The paper emphasizes performance on GSM8K and characterizes Math as a reasoning-centered task  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning",
+      "evidence": "The paper emphasizes performance on GSM8K and characterizes Math as a reasoning-centered task  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Unchosen Experts Can Contribute Too: Unleashing MoE Models’ Power by Self-Contrast",
+      "evidence": "GSM8K is selected to evaluate mathematical reasoning, reporting accuracy; SCMoE improves this score  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Unchosen Experts Can Contribute Too: Unleashing MoE Models’ Power by Self-Contrast",
+      "evidence": "GSM8K is selected to evaluate mathematical reasoning, reporting accuracy; SCMoE improves this score  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Inference Ability (Reasoning)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "LLMCBench: Benchmarking Large Language Model Compression for Efficient Deployment",
+      "evidence": "Track 1 evaluates inference ability using WinoGrande."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Not All Tokens Are What You Need for Pretraining",
+      "evidence": "General evaluation cites Winogrande as a commonsense benchmark used in the paper’s suite  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Bridging The Gap between Low-rank and Orthogonal Adaptation via Householder Reflection Adaptation",
+      "evidence": "The paper adapts LLaMA2‑7B and tests on GSM8K, reporting accuracy for mathematical reasoning (Figure 1c; Sec. 4.2)."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Bridging The Gap between Low-rank and Orthogonal Adaptation via Householder Reflection Adaptation",
+      "evidence": "The paper adapts LLaMA2‑7B and tests on GSM8K, reporting accuracy for mathematical reasoning (Figure 1c; Sec. 4.2)."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge Retention after Fine-tuning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Bridging The Gap between Low-rank and Orthogonal Adaptation via Householder Reflection Adaptation",
+      "evidence": "Post‑tuning Winogrande performance is used to quantify degradation in classic NLP tasks (Table 3)."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense/Science Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "DDK: Distilling Domain Knowledge for Efficient Large Language Models",
+      "evidence": "WinoGrande (val) is included among commonsense evaluations ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Capabilities (Capabilities Component)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+      "evidence": "Included in the capabilities benchmark set ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Decompose, Analyze and Rethink: Solving Intricate Problems with Human-like Reasoning Cycle",
+      "evidence": "GSM8K is used to verify mathematical reasoning ability; accuracy is the metric  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Decompose, Analyze and Rethink: Solving Intricate Problems with Human-like Reasoning Cycle",
+      "evidence": "GSM8K is used to verify mathematical reasoning ability; accuracy is the metric  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Robustness to Knowledge Editing (Post‑edit Performance Stability)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Reasons and Solutions for the Decline in Model Performance after Editing",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Reasons and Solutions for the Decline in Model Performance after Editing",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Stacking Your Transformers: A Closer Look at Model Growth for Efficient LLM Pre-Training",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Instruction Tuning With Loss Over Instructions",
+      "evidence": "WinoGrande is included under Commonsense Reasoning in the evaluation ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Learning from Teaching Regularization: Generalizable Correlations Should be Easy to Imitate",
+      "evidence": "GSM8K is used as a mathematical reasoning benchmark for LLMs (Table 2) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Learning from Teaching Regularization: Generalizable Correlations Should be Easy to Imitate",
+      "evidence": "GSM8K is used as a mathematical reasoning benchmark for LLMs (Table 2) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Coreference (WinoGrande)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "LLM Circuit Analyses Are Consistent Across Training and Scale",
+      "evidence": "WinoGrande probes Winograd-style commonsense reference resolution ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Delta-CoMe: Training-Free Delta-Compression with Mixed-Precision for Large Language Models",
+      "evidence": "Sec. 4.1 lists GSM8K for math with accuracy as the score ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Delta-CoMe: Training-Free Delta-Compression with Mixed-Precision for Large Language Models",
+      "evidence": "Sec. 4.1 lists GSM8K for math with accuracy as the score ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Chat Helpfulness/Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Delta-CoMe: Training-Free Delta-Compression with Mixed-Precision for Large Language Models",
+      "evidence": "Sec. 4.1 uses TruthfulQA to measure chat helpfulness/truthfulness with accuracy ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "S$^{2}$FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity",
+      "evidence": "Wino(Grande) is listed among the eight commonsense tasks (Table 1) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Arithmetic Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "S$^{2}$FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity",
+      "evidence": "GSM8K is a hard arithmetic benchmark highlighted in results and discussion ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "S$^{2}$FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity",
+      "evidence": "Hard arithmetic tasks (e.g., GSM8K) serve as near OOD generalization tests ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge Retention (Resistance to Forgetting)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "S$^{2}$FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity",
+      "evidence": "S2FT better preserves original reasoning capabilities while acquiring new skills, reflected on complex arithmetic tasks like GSM8K and AQuA ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Coreference/Pronoun Resolution",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Selective Attention: Enhancing Transformer through Principled Context Control",
+      "evidence": "Winogrande is an adversarial Winograd-schema style test of pronoun resolution ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models",
+      "evidence": "GSM8K accuracy is used to evaluate math word problem solving ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models",
+      "evidence": "GSM8K accuracy is used to evaluate math word problem solving ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "SVFT: Parameter-Efficient Fine-Tuning with Singular Vectors",
+      "evidence": "WinoGrande appears in the commonsense evaluation table with accuracy reported ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text-only Instruction-following",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Wings: Learning Multimodal LLMs without Text-only Forgetting",
+      "evidence": "WinoGrande appears among the text-only benchmarks compared in Figure/Table summaries ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models",
+      "evidence": "Winogrande is one of the benchmarks used in the composite capability analysis"
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models",
+      "evidence": "Benchmarks are jointly used under 'Common Sense and Language Understanding' in the figure caption"
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "MAmmoTH2: Scaling Instructions from the Web",
+      "evidence": "GSM8K tests arithmetic and reasoning in math word problems ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "MAmmoTH2: Scaling Instructions from the Web",
+      "evidence": "GSM8K tests arithmetic and reasoning in math word problems ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical/Numerical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "AlchemistCoder: Harmonizing and Eliciting Code Capability by Hindsight Tuning on Multi-source Data",
+      "evidence": "Table reports GSM8K scores for models."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "BERTs are Generative In-Context Learners",
+      "evidence": "WinoGrande dev accuracy is reported alongside Winograd in language understanding results ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Language Understanding and Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Distributional Preference Alignment of LLMs via Optimal Transport",
+      "evidence": "Reported as part of Open LLM Leaderboard evaluations."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Language Understanding and Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Distributional Preference Alignment of LLMs via Optimal Transport",
+      "evidence": "Reported as part of Open LLM Leaderboard evaluations."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Language Understanding and Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Distributional Preference Alignment of LLMs via Optimal Transport",
+      "evidence": "Reported as part of Open LLM Leaderboard evaluations."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Math Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "On the Inductive Bias of Stacking Towards Improving Reasoning",
+      "evidence": "GSM8K accuracy is reported as a core math word problem indicator (e.g., 8B: 12.3%→15.2%) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Efficient Contextual LLM Cascades through Budget-Constrained Policy Learning",
+      "evidence": "GSM8K evaluates accuracy on math word problems."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Efficient Contextual LLM Cascades through Budget-Constrained Policy Learning",
+      "evidence": "GSM8K evaluates accuracy on math word problems."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Response Consistency",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Efficient Contextual LLM Cascades through Budget-Constrained Policy Learning",
+      "evidence": "Proposition 2 shows a 2-consistent policy attains expected accuracy at least C* − (1/(2Ω^2))ε under budget constraints, implying consistency-based policies can achieve near-optimal accuracy on reasoning datasets such as GSM8K."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Efficient Contextual LLM Cascades through Budget-Constrained Policy Learning",
+      "evidence": "Accuracy on GSM8K reflects reasoning performance on math word problems; CoT prompting increases accuracy at higher cost (e.g., GPT-4 CoT 92% vs domain expert 83%, costing 3.9× more)."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "FouRA: Fourier Low-Rank Adaptation",
+      "evidence": "WinoGrande is included; accuracy reported."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning",
+      "evidence": "GSM8K is a math word problem benchmark; the paper reports accuracies"
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning",
+      "evidence": "GSM8K is a math word problem benchmark; the paper reports accuracies"
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Toward Self-Improvement of LLMs via Imagination, Searching, and Criticizing",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Toward Self-Improvement of LLMs via Imagination, Searching, and Criticizing",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Self-Improvement (Self-Learning/Self-Correction)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Toward Self-Improvement of LLMs via Imagination, Searching, and Criticizing",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Megalodon: Efficient LLM Pretraining and Inference with Unlimited Context Length",
+      "evidence": "WinoGrande appears in the benchmark table of downstream tasks"
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "$\\texttt{Model-GLUE}$: Democratized LLM Scaling for A Large Model Zoo in the Wild",
+      "evidence": "WinoGrande is a reported benchmark for reasoning comparisons in the tables ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Problem Solving",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "$\\texttt{Model-GLUE}$: Democratized LLM Scaling for A Large Model Zoo in the Wild",
+      "evidence": "GSM8K is used as the mathematics benchmark in the reported results ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Neuro-Symbolic Data Generation for Math Reasoning",
+      "evidence": "Models trained on the generated data are evaluated on GSM8K to assess mathematical reasoning performance and show substantial gains  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Neuro-Symbolic Data Generation for Math Reasoning",
+      "evidence": "Models trained on the generated data are evaluated on GSM8K to assess mathematical reasoning performance and show substantial gains  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Intrinsic Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Neuro-Symbolic Data Generation for Math Reasoning",
+      "evidence": "The paper reports model performance without external tools, reflecting intrinsic reasoning on GSM8K ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation",
+      "evidence": "WinoGrande included among eight downstream commonsense tasks (Table 3)."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Arithmetic Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation",
+      "evidence": "Arithmetic evaluation includes GSM8K (Table 4)."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Sparse High Rank Adapters",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "MiniCache: KV Cache Compression in Depth Dimension for Large Language Models",
+      "evidence": "TruthfulQA is used as a benchmark in the evaluations ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "MiniCache: KV Cache Compression in Depth Dimension for Large Language Models",
+      "evidence": "TruthfulQA is used as a benchmark in the evaluations ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "MiniCache: KV Cache Compression in Depth Dimension for Large Language Models",
+      "evidence": "WinoGrande is listed among the evaluated datasets ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "OpenMathInstruct-1: A 1.8 Million Math Instruction Tuning Dataset",
+      "evidence": "The paper evaluates math reasoning on popular benchmarks including GSM8K, reporting competitive scores (e.g., 84.6% for their best model) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "OpenMathInstruct-1: A 1.8 Million Math Instruction Tuning Dataset",
+      "evidence": "The paper evaluates math reasoning on popular benchmarks including GSM8K, reporting competitive scores (e.g., 84.6% for their best model) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Abilities",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "IRCAN: Mitigating Knowledge Conflicts in LLM Generation via Identifying and Reweighting Context-Aware Neurons",
+      "evidence": "Monitored to ensure general capabilities are retained ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Abilities",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "IRCAN: Mitigating Knowledge Conflicts in LLM Generation via Identifying and Reweighting Context-Aware Neurons",
+      "evidence": "Monitored to ensure general capabilities are retained ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Abilities",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "IRCAN: Mitigating Knowledge Conflicts in LLM Generation via Identifying and Reweighting Context-Aware Neurons",
+      "evidence": "Monitored to ensure general capabilities are retained ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Winograd-style Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Multi-Head Mixture-of-Experts",
+      "evidence": "Winogrande appears as a downstream validation task in the ablations."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Self-playing Adversarial Language Game Enhances LLM Reasoning",
+      "evidence": "WinoGrande is a commonsense reasoning dataset."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Observational Scaling Laws and the Predictability of Langauge Model Performance",
+      "evidence": "Winogrande is used as a commonsense reasoning benchmark ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Reasoning (Mathematical/Logical)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "UltraMedical: Building Specialized Generalists in Biomedicine",
+      "evidence": "GSM8K assesses grade-school math word problem solving."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Diffusion of Thought: Chain-of-Thought Reasoning in Diffusion Language Models",
+      "evidence": "GSM8K requires mathematical reasoning; accuracy is the main metric ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Diffusion of Thought: Chain-of-Thought Reasoning in Diffusion Language Models",
+      "evidence": "GSM8K requires mathematical reasoning; accuracy is the main metric ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Diffusion of Thought: Chain-of-Thought Reasoning in Diffusion Language Models",
+      "evidence": "GSM8K also requires language understanding, so accuracy reflects this construct too ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "VB-LoRA: Extreme Parameter Efficient Fine-Tuning with Vector Banks",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "VB-LoRA: Extreme Parameter Efficient Fine-Tuning with Vector Banks",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "MambaTree: Tree Topology is All You Need in State Space Model",
+      "evidence": "WinoGrande is included among the language benchmarks the paper evaluates, reflecting commonsense/coreference reasoning."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Would I Lie To You? Inference Time Alignment of Language Models using Direct Preference Heads",
+      "evidence": "WinoGrande is included among the sentence-completion tasks used in evaluation/ablations ."
+    }
+  ],
+  "relationship_count": 89,
+  "incoming_relationship_count": 89,
+  "outgoing_relationship_count": 0
+}

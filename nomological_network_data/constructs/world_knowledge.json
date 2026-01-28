@@ -1,0 +1,512 @@
+{
+  "canonical_name": "World Knowledge",
+  "type": "construct",
+  "canonical_definition": "World Knowledge refers to the broad, factual, and domain-specific knowledge embedded in pre-trained large language models (LLMs) or multimodal models, encompassing encyclopedic information, commonsense reasoning, and structured representations of rules or relationships. It is acquired through pretraining and applied to support downstream tasks such as question answering, inference, zero-shot reasoning, and interpretation of real-world contexts, with some definitions emphasizing its grounding in truthful facts or dynamic integration of prior and local knowledge. While some papers narrowly operationalize it via factual benchmarks (e.g., MMLU), others highlight its role in agentic tasks, visio-linguistic reasoning, or structured forms like hierarchical knowledge graphs.",
+  "expert_reviewed": false,
+  "names": [
+    "World Knowledge"
+  ],
+  "papers": [
+    "A Synthetic Dataset for Personal Attribute Inference",
+    "Agent Planning with World Knowledge Model",
+    "Are We on the Right Way for Evaluating Large Vision-Language Models?",
+    "BAM! Just Like That: Simple and Efficient Parameter Upcycling for Mixture of Experts",
+    "Benchmarking LLMs via Uncertainty Quantification",
+    "COLD: Causal reasOning in cLosed Daily activities",
+    "CausalStock: Deep End-to-end Causal Discovery for News-driven Multi-stock Movement Prediction",
+    "ChatTracker: Enhancing Visual Tracking Performance via Chatting with Multimodal Large Language Model",
+    "Dataset Decomposition: Faster LLM Training with Variable Sequence Length Curriculum",
+    "Ensemble Learning for Heterogeneous Large Language Models with Deep Parallel Collaboration",
+    "Instruction Tuning With Loss Over Instructions",
+    "LLM-Check: Investigating Detection of Hallucinations in Large Language Models",
+    "Large Language Models-guided Dynamic Adaptation for Temporal Knowledge Graph Reasoning",
+    "NaturalBench: Evaluating Vision-Language Models on Natural Adversarial Samples",
+    "One Token to Seg Them All: Language Instructed Reasoning Segmentation in Videos",
+    "OneBit: Towards Extremely Low-bit Large Language Models",
+    "Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks",
+    "Private Attribute Inference from Images with Vision-Language Models",
+    "RL-GPT: Integrating Reinforcement Learning and Code-as-policy",
+    "SG-Nav: Online 3D Scene Graph Prompting for LLM-based Zero-shot Object Navigation",
+    "Self-playing Adversarial Language Game Enhances LLM Reasoning",
+    "Should We Really Edit Language Models? On the Evaluation of Edited Language Models",
+    "Sparse maximal update parameterization: A holistic approach to sparse training dynamics"
+  ],
+  "paper_count": 23,
+  "group_ids": [
+    138,
+    315,
+    560,
+    623,
+    631,
+    1485,
+    2000,
+    2226,
+    2381,
+    2943,
+    4209,
+    4408,
+    4841,
+    4923,
+    5099,
+    5174,
+    5240,
+    5639,
+    5858,
+    5975,
+    6014,
+    6203,
+    6304
+  ],
+  "definitions": [
+    {
+      "text": "Breadth of factual and domain knowledge across wide areas, examined via MMLU which spans many domains ",
+      "paper": "OneBit: Towards Extremely Low-bit Large Language Models"
+    },
+    {
+      "text": "Possession of advanced knowledge that supports interpreting financial news. ",
+      "paper": "CausalStock: Deep End-to-end Causal Discovery for News-driven Multi-stock Movement Prediction"
+    },
+    {
+      "text": "LLMs possess extensive knowledge acquired via pretraining that can enhance downstream tasks. ",
+      "paper": "Large Language Models-guided Dynamic Adaptation for Temporal Knowledge Graph Reasoning"
+    },
+    {
+      "text": "Expansive prior knowledge leveraged by LLMs for agentic tasks. ",
+      "paper": "RL-GPT: Integrating Reinforcement Learning and Code-as-policy"
+    },
+    {
+      "text": "Use of broad factual/commonsense knowledge to support inferences .",
+      "paper": "Private Attribute Inference from Images with Vision-Language Models"
+    },
+    {
+      "text": "Real‑world knowledge encoded in pre‑trained LLMs/MLLMs used to generate descriptive text about targets and context .",
+      "paper": "ChatTracker: Enhancing Visual Tracking Performance via Chatting with Multimodal Large Language Model"
+    },
+    {
+      "text": "Structured knowledge of rules, object relations, and interaction methods, represented as a Hierarchical Directed Knowledge Graph (HDKG)  .",
+      "paper": "Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks"
+    },
+    {
+      "text": "Factual/academic knowledge assessed alongside language understanding through tasks like MMLU and OpenbookQA in the paper’s evaluation suite .",
+      "paper": "Instruction Tuning With Loss Over Instructions"
+    },
+    {
+      "text": "Encyclopedic/factual knowledge assessed via multiple-choice tasks .",
+      "paper": "Should We Really Edit Language Models? On the Evaluation of Edited Language Models"
+    },
+    {
+      "text": "Open‑domain factual knowledge and question answering capability. ",
+      "paper": "Ensemble Learning for Heterogeneous Large Language Models with Deep Parallel Collaboration"
+    },
+    {
+      "text": "Operationalized via downstream tasks that collectively test world knowledge ",
+      "paper": "Sparse maximal update parameterization: A holistic approach to sparse training dynamics"
+    },
+    {
+      "text": "An LLM’s appreciable degree of world-knowledge grounded on truthful facts from pretraining .",
+      "paper": "LLM-Check: Investigating Detection of Hallucinations in Large Language Models"
+    },
+    {
+      "text": "Background knowledge about the world captured by pre‑trained LMs, used as a proxy to estimate relationships among events .",
+      "paper": "COLD: Causal reasOning in cLosed Daily activities"
+    },
+    {
+      "text": "Extensive background knowledge leveraged by the LLM for navigation and reasoning in zero-shot .",
+      "paper": "SG-Nav: Online 3D Scene Graph Prompting for LLM-based Zero-shot Object Navigation"
+    },
+    {
+      "text": "Ability to leverage broad subject knowledge to answer questions (humanities, social sciences, STEM, etc.) .",
+      "paper": "Benchmarking LLMs via Uncertainty Quantification"
+    },
+    {
+      "text": "A parametric model of environment-related knowledge combining prior global knowledge and dynamic local knowledge to facilitate agent planning .",
+      "paper": "Agent Planning with World Knowledge Model"
+    },
+    {
+      "text": "Extensive factual and domain knowledge required for multi‑task question answering. ",
+      "paper": "Self-playing Adversarial Language Game Enhances LLM Reasoning"
+    },
+    {
+      "text": "Capability assessed via world knowledge benchmarks in the paper’s regular evaluations. ",
+      "paper": "Dataset Decomposition: Faster LLM Training with Variable Sequence Length Curriculum"
+    },
+    {
+      "text": "Knowledge embedded in LLMs from extensive pretraining; can suffice to answer some benchmark items without images .",
+      "paper": "Are We on the Right Way for Evaluating Large Vision-Language Models?"
+    },
+    {
+      "text": "Using general knowledge when necessary for visio-linguistic reasoning .",
+      "paper": "NaturalBench: Evaluating Vision-Language Models on Natural Adversarial Samples"
+    },
+    {
+      "text": "Recall and use general factual knowledge in question answering.",
+      "paper": "BAM! Just Like That: Simple and Efficient Parameter Upcycling for Mixture of Experts"
+    },
+    {
+      "text": "Using background/common-sense knowledge to interpret instructions and resolve references. ",
+      "paper": "One Token to Seg Them All: Language Instructed Reasoning Segmentation in Videos"
+    },
+    {
+      "text": "Background knowledge used to support attribute inferences from text.",
+      "paper": "A Synthetic Dataset for Personal Attribute Inference"
+    }
+  ],
+  "definition_count": 23,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Problem Solving Ability",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "OneBit: Towards Extremely Low-bit Large Language Models",
+      "evidence": "World knowledge is one of two crucial abilities examined under problem solving"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "OneBit: Towards Extremely Low-bit Large Language Models",
+      "evidence": "World knowledge is examined using MMLU, which covers wide domains and knowledge"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Text Evaluation",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "CausalStock: Deep End-to-end Causal Discovery for News-driven Multi-stock Movement Prediction",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Temporal Knowledge Graph Reasoning (TKGR) Ability",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Large Language Models-guided Dynamic Adaptation for Temporal Knowledge Graph Reasoning",
+      "evidence": "Leveraging LLM capabilities (including extensive knowledge) holds promise for enhancing TKGR performance."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "High-Level Planning (Task Decomposition)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "RL-GPT: Integrating Reinforcement Learning and Code-as-policy",
+      "evidence": "The framework leverages LLMs’ expansive world knowledge when analyzing and decomposing tasks."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Privacy-Inference Capability (Images)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Private Attribute Inference from Images with Vision-Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Text Description Quality",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "ChatTracker: Enhancing Visual Tracking Performance via Chatting with Multimodal Large Language Model",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Long-Term Memory",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks",
+      "evidence": "Long-term memory is divided into knowledge and experience, both crucial for long-horizon tasks ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks",
+      "evidence": "HDKG helps planning long-horizon tasks efficiently in a train-free manner ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Planning",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks",
+      "evidence": "HDKG helps planning long-horizon tasks efficiently in a train-free manner ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Efficiency",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks",
+      "evidence": "Knowledge-guided planning achieves shorter AT/AS across groups ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Instruction Tuning With Loss Over Instructions",
+      "evidence": "MMLU is part of the Language Understanding and Knowledge category, reflecting knowledge-intensive tasks ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Instruction Tuning With Loss Over Instructions",
+      "evidence": "OpenbookQA is used within the Language Understanding/Knowledge category, capturing knowledge retrieval/application ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "General Capabilities",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Should We Really Edit Language Models? On the Evaluation of Edited Language Models",
+      "evidence": "General capability evaluation focuses on world knowledge among other key areas ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU 5-shot Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Should We Really Edit Language Models? On the Evaluation of Edited Language Models",
+      "evidence": "World knowledge is measured with MMLU (5-shot) using multiple-choice accuracy ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BBH 3-shot Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Should We Really Edit Language Models? On the Evaluation of Edited Language Models",
+      "evidence": "BBH (3-shot) accuracy is used under the world knowledge category ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TriviaQA EM (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Ensemble Learning for Heterogeneous Large Language Models with Deep Parallel Collaboration",
+      "evidence": "TriviaQA is used to assess knowledge capacities; EM on free‑form responses."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "NQ Exact Match (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Ensemble Learning for Heterogeneous Large Language Models with Deep Parallel Collaboration",
+      "evidence": "NQ is used to assess knowledge capacities; EM on free‑form responses."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Average Downstream Task Accuracy (ARC‑easy, LAMBADA, RACE, PIQA, BoolQ)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Sparse maximal update parameterization: A holistic approach to sparse training dynamics",
+      "evidence": "The five-task suite collectively tests for world knowledge"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Internal Representation Sensitivity to Hallucinations",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "LLM-Check: Investigating Detection of Hallucinations in Large Language Models",
+      "evidence": "The model is sensitive to non-factual content in responses which would otherwise be truthful, based on grounded precepts learned during training; differences appear in hidden activations and attention maps  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Factuality/Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "LLM-Check: Investigating Detection of Hallucinations in Large Language Models",
+      "evidence": "LLMs retain an appreciable degree of world-knowledge grounded on truthful facts encountered during training, supporting truthful, grounded responses ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Causal Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "supports",
+      "paper": "COLD: Causal reasOning in cLosed Daily activities",
+      "evidence": "Pre‑trained LMs' world knowledge provides a proxy for establishing relationships between events used to estimate causal effects ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "SG-Nav: Online 3D Scene Graph Prompting for LLM-based Zero-shot Object Navigation",
+      "evidence": "LLM’s extensive knowledge helps address commonsense reasoning problems in the zero-shot setting  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Benchmarking LLMs via Uncertainty Quantification",
+      "evidence": "QA evaluates an LLM’s proficiency in utilizing extensive world knowledge, a facet of language understanding ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "QA (MMLU) MCQA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Benchmarking LLMs via Uncertainty Quantification",
+      "evidence": "QA on MMLU is used to evaluate proficiency in utilizing extensive world knowledge ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Task Knowledge",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Agent Planning with World Knowledge Model",
+      "evidence": "World knowledge is defined as a combination of prior global knowledge (task knowledge) and dynamic local knowledge ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "State Knowledge",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Agent Planning with World Knowledge Model",
+      "evidence": "World knowledge combines prior global knowledge and dynamic local knowledge ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Agent Planning",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Agent Planning with World Knowledge Model",
+      "evidence": "WKM provides global prior task knowledge and dynamic state knowledge to assist planning and improves performance on multiple tasks ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Hallucination Avoidance",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Agent Planning with World Knowledge Model",
+      "evidence": "Analytical experiments indicate WKM reduces hallucinatory actions in local planning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Exploration Efficiency",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Agent Planning with World Knowledge Model",
+      "evidence": "Analytical experiments show WKM reduces brainless trial-and-error and invalid actions ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU 5-shot Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Self-playing Adversarial Language Game Enhances LLM Reasoning",
+      "evidence": "MMLU requires extensive world knowledge."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC‑Easy 0‑shot Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Self-playing Adversarial Language Game Enhances LLM Reasoning",
+      "evidence": "ARC requires strong knowledge (and reasoning)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Jeopardy (3-shot)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Dataset Decomposition: Faster LLM Training with Variable Sequence Length Curriculum",
+      "evidence": "Jeopardy (3‑shot) is listed under World Knowledge."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-Easy (3-shot)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Dataset Decomposition: Faster LLM Training with Variable Sequence Length Curriculum",
+      "evidence": "ARC‑Easy (3‑shot) is listed under World Knowledge."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-Challenge (3-shot)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Dataset Decomposition: Faster LLM Training with Variable Sequence Length Curriculum",
+      "evidence": "ARC‑Challenge (3‑shot) is listed under World Knowledge."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WikiDataQA (3-shot)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Dataset Decomposition: Faster LLM Training with Variable Sequence Length Curriculum",
+      "evidence": "WikiDataQA (3‑shot) is listed under World Knowledge."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Abnormal LLM Hit Rate (%)",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "Are We on the Right Way for Evaluating Large Vision-Language Models?",
+      "evidence": "Answers can be directly obtained from the 'world knowledge embedded in LLMs', driving high hit rates without images ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMMU 2-shot Accuracy (text-only)",
+      "other_type": "measurements",
+      "relationship_type": "predicts",
+      "paper": "Are We on the Right Way for Evaluating Large Vision-Language Models?",
+      "evidence": "Strong LLMs achieve notable accuracy on MMMU without visual input (e.g., GeminiPro ~42% text-only), reflecting reliance on world knowledge  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Advanced Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "NaturalBench: Evaluating Vision-Language Models on Natural Adversarial Samples",
+      "evidence": "World knowledge is included among reasoning skills NaturalBench may require ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Natural Questions (0-shot)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "BAM! Just Like That: Simple and Efficient Parameter Upcycling for Mixture of Experts",
+      "evidence": "For general knowledge on facts, they use Natural Questions (0-shot) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TriviaQA 0-shot Exact Match (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "BAM! Just Like That: Simple and Efficient Parameter Upcycling for Mixture of Experts",
+      "evidence": "For general knowledge on facts, they use TriviaQA (0-shot) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language‑Instructed Video Reasoning Segmentation (Composite Capability)",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "One Token to Seg Them All: Language Instructed Reasoning Segmentation in Videos",
+      "evidence": "Queries may require world knowledge to resolve."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ReasonVOS",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "One Token to Seg Them All: Language Instructed Reasoning Segmentation in Videos",
+      "evidence": "ReasonVOS includes queries requiring world knowledge."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Personal Attribute Inference (PAI)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "A Synthetic Dataset for Personal Attribute Inference",
+      "evidence": "LLMs' vast world knowledge is cited as a basis for strong PAI."
+    }
+  ],
+  "relationship_count": 44,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 40
+}

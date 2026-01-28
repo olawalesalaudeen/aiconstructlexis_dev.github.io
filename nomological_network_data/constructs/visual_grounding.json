@@ -1,0 +1,410 @@
+{
+  "canonical_name": "Visual Grounding",
+  "type": "construct",
+  "canonical_definition": "Visual Grounding is the ability to link linguistic expressions (e.g., referring expressions, instructions) to specific visual entities, regions, or segments in images (e.g., bounding boxes, pixels) to resolve referential ambiguity and enable task-relevant reasoning. This construct often involves localizing or identifying image content corresponding to textual mentions—such as in REC/REG/GC tasks, grounded VQA, or pixel-level alignment—and may extend to 3D contexts or incorporate visual prompts (e.g., pointers) to enhance precision. While some definitions emphasize reliance on image evidence over language priors (e.g., NaturalBench’s protocol), others highlight its role in reducing ambiguity during multimodal reasoning or its operationalization through contrastive alignment and masking strategies.",
+  "expert_reviewed": false,
+  "names": [
+    "Visual Grounding"
+  ],
+  "papers": [
+    "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+    "CogVLM: Visual Expert for Pretrained Language Models",
+    "DeeR-VLA: Dynamic Inference of Multimodal Large Language Models for Efficient Robot Execution",
+    "Efficient Large Multi-modal Models via Visual Context Compression",
+    "Instruction-Guided Visual Masking",
+    "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models",
+    "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+    "Multi-Object Hallucination in Vision Language Models",
+    "Multi-modal Situated Reasoning in 3D Scenes",
+    "NaturalBench: Evaluating Vision-Language Models on Natural Adversarial Samples",
+    "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding",
+    "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding",
+    "Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment",
+    "Understanding Information Storage and Transfer in Multi-Modal Large Language Models"
+  ],
+  "paper_count": 14,
+  "group_ids": [
+    2,
+    726,
+    768,
+    959,
+    1914,
+    2419,
+    2669,
+    3310,
+    3798,
+    4795,
+    4971,
+    5842,
+    5976,
+    6109
+  ],
+  "definitions": [
+    {
+      "text": "Ability to extract task‑relevant information from images and link it to instructions. ",
+      "paper": "DeeR-VLA: Dynamic Inference of Multimodal Large Language Models for Efficient Robot Execution"
+    },
+    {
+      "text": "Aligning linguistic references to specific visual entities and evidence; highlighted as crucial and a bottleneck for real-world MLLM applications. ",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs"
+    },
+    {
+      "text": "Ability to precisely localize image regions corresponding to a referring expression or instruction, enabling models to zoom in on instruction‑relevant content.  ",
+      "paper": "Instruction-Guided Visual Masking"
+    },
+    {
+      "text": "Identifying queried objects from images within the situated 3D context; interleaved images in questions require extra grounding ability .",
+      "paper": "Multi-modal Situated Reasoning in 3D Scenes"
+    },
+    {
+      "text": "Establishing referential links between textual mentions and specific image regions (e.g., REC/REG/GC, grounded VQA) .",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models"
+    },
+    {
+      "text": "Visual Grounding",
+      "paper": "Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment"
+    },
+    {
+      "text": "Linking textual mentions (referring expressions) to image regions (e.g., bounding boxes) .",
+      "paper": "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding"
+    },
+    {
+      "text": "Locating or identifying image regions referred to by text; explicitly linked to REC tasks .",
+      "paper": "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models"
+    },
+    {
+      "text": "Aligning language with specific image regions or segments (e.g., grounded conversation generation) .",
+      "paper": "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding"
+    },
+    {
+      "text": "Ability to link visual prompts (e.g., pointers/bounding boxes) to the correct visual entities, reducing referential ambiguity. ",
+      "paper": "Multi-Object Hallucination in Vision Language Models"
+    },
+    {
+      "text": "Linking linguistic expressions to corresponding visual content; a capability emphasized and enhanced by specialized datasets .",
+      "paper": "Efficient Large Multi-modal Models via Visual Context Compression"
+    },
+    {
+      "text": "Localizing and identifying entities referred to by language (e.g., REC/RES) .",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context"
+    },
+    {
+      "text": "Reliance on image evidence (not just language priors) to answer questions correctly; enforced by NaturalBench’s balanced pairing protocol  .",
+      "paper": "NaturalBench: Evaluating Vision-Language Models on Natural Adversarial Samples"
+    },
+    {
+      "text": "Linking words referring to an entity in the question to the corresponding entity in the image and retrieving relevant information .",
+      "paper": "Understanding Information Storage and Transfer in Multi-Modal Large Language Models"
+    }
+  ],
+  "definition_count": 14,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Vision-Language Comprehension",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "DeeR-VLA: Dynamic Inference of Multimodal Large Language Models for Efficient Robot Execution",
+      "evidence": "MLLMs extract task‑relevant information from images alongside language."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CALVIN LH-MTLC Average Successful Length",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "DeeR-VLA: Dynamic Inference of Multimodal Large Language Models for Efficient Robot Execution",
+      "evidence": "Success on language‑conditioned manipulation depends on grounding visual inputs."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+      "evidence": "Visual grounding is emphasized as crucial for robust multimodal understanding and a current bottleneck."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMVP",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+      "evidence": "Vision-disabled performance is worse than random on MMVP, indicating strong need for visual grounding."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multimodal Instruction Following",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Instruction-Guided Visual Masking",
+      "evidence": "IVM enhances multimodal instruction following via surgical targeted visual grounding."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Object Localization",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Instruction-Guided Visual Masking",
+      "evidence": "Visual grounding requires precisely localizing image regions corresponding to a referring expression."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Instruction-Guided Visual Masking",
+      "evidence": "IVM requires both reasoning and precise localization of the target object."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Robustness to Visual Distractions",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Instruction-Guided Visual Masking",
+      "evidence": "IVM‑assisted agents complete tasks under strong distractors, enjoying robustness thanks to injected visual grounding."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Instruction-Guided Visual Masking",
+      "evidence": "IVM improves generalization in embodied tasks by focusing on instruction‑relevant regions."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Robotic Manipulation",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Instruction-Guided Visual Masking",
+      "evidence": "The IVM model proves valuable in vision‑language robotic manipulation tasks, boosting performance."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Interleaved Multi-modal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Multi-modal Situated Reasoning in 3D Scenes",
+      "evidence": "When images appear only in questions, models suffer due to the extra grounding needed, indicating grounding as a sub-skill of interleaved understanding ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Basic Perceptual Abilities",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models",
+      "evidence": "Grounding requires returning coordinates for referred objects ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models",
+      "evidence": "Visual grounding links textual mentions to image regions and is a primary evaluated capability ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "RefCOCO Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models",
+      "evidence": "RefCOCO evaluates referring expression comprehension (region selection) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "RefCOCO Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models",
+      "evidence": "RefCOCO+ emphasizes appearance-centric descriptions (no locational terms) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "RefCOCOg Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models",
+      "evidence": "RefCOCOg uses natural referring expressions with multiple similar objects ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual7W Grounded VQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models",
+      "evidence": "Grounded Visual7W requires selecting the correct bounding box for 'which'-type questions ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment",
+      "evidence": "Grounding is one of the core task families used to characterize VLM understanding ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Image-Text Modality Alignment",
+      "other_type": "constructs",
+      "relationship_type": "predicts",
+      "paper": "Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment",
+      "evidence": "CAL improves RefCOCOg IoU on val/test, indicating better grounding via stronger alignment  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "RefCOCOg IoU (val/test)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment",
+      "evidence": "RefCOCOg IoU is the reported grounding metric; CAL raises IoU on val/test ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Recognition",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding",
+      "evidence": "Grounding is a recognition objective where models locate mentioned objects ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "REC Accuracy (RefCOCO/RefCOCO+/RefCOCOg)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding",
+      "evidence": "REC benchmarks quantify grounding performance with accuracy ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models",
+      "evidence": "REC is described as a visual grounding task central to VL competence ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Referring Expression Generation",
+      "other_type": "constructs",
+      "relationship_type": "depends-on",
+      "paper": "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models",
+      "evidence": "REG requires both captioning and visual grounding abilities ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "REC - RefCOCO",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models",
+      "evidence": "REC RefCOCO accuracy evaluates grounding ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "REC - RefCOCO",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models",
+      "evidence": "REC RefCOCO+ accuracy evaluates grounding ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "REC - RefCOCOg",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models",
+      "evidence": "REC RefCOCOg accuracy evaluates grounding ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Grounded Conversation Generation (Detection)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding",
+      "evidence": "GCG is evaluated with AP50 for grounded outputs ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multi-Object Recognition",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Multi-Object Hallucination in Vision Language Models",
+      "evidence": "ROPE uses visual referring prompts to uniquely ground objects, reducing ambiguity."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Efficient Large Multi-modal Models via Visual Context Compression",
+      "evidence": "The paper discusses enhancing grounding capabilities in multimodal LLMs via specialized datasets ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "RefCOCO REC Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "evidence": "REC is explicitly listed as an evaluation dimension for grounding ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "RefCOCO RES Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "evidence": "RES is explicitly listed as an evaluation dimension for grounding/segmentation ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Perception",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "evidence": "Grounding is a core visual capability highlighted among expert specializations and evaluation tasks  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "NaturalBench Q-Acc (Question Accuracy)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "NaturalBench: Evaluating Vision-Language Models on Natural Adversarial Samples",
+      "evidence": "Balanced pairing prevents blind models from exceeding chance, making Q-Acc reflect reliance on images ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "NaturalBench Q-Acc (Question Accuracy)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "NaturalBench: Evaluating Vision-Language Models on Natural Adversarial Samples",
+      "evidence": "I-Acc benefits from the vision-centric design that forces use of the image signal ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "NaturalBench G-Acc (Group Accuracy)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "NaturalBench: Evaluating Vision-Language Models on Natural Adversarial Samples",
+      "evidence": "Group accuracy on balanced pairs is robust against language-only shortcuts, evidencing grounding ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reduced Hallucinations in Generation",
+      "other_type": "measurements",
+      "relationship_type": "predicts",
+      "paper": "NaturalBench: Evaluating Vision-Language Models on Natural Adversarial Samples",
+      "evidence": "Authors posit NaturalBench as a testbed to ground VLMs and reduce biased responses (hallucinations) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Constraint Satisfaction",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Understanding Information Storage and Transfer in Multi-Modal Large Language Models",
+      "evidence": "Visual constraints are words that refer to an entity in the image which the model must identify and use ."
+    }
+  ],
+  "relationship_count": 38,
+  "incoming_relationship_count": 9,
+  "outgoing_relationship_count": 29
+}

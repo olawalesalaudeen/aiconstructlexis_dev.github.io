@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomological Network  – AI Construct Lexis</title>
+    <link rel="stylesheet" href="view_network.css">
+    <style>
+        body {
+            background: #f5f5f5;
+        }
+
+        .graph-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+            min-height: 100vh;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .graph-header {
+            background: #ffffff;
+            padding: 16px 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            flex-shrink: 0;
+        }
+
+        .graph-header-left {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .graph-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .graph-subtitle {
+            font-size: 13px;
+            color: #7f8c8d;
+        }
+
+        .back-link {
+            color: #0969da;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .legend {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            font-size: 12px;
+        }
+
+        .legend-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .legend-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 3px;
+            border: 2px solid #2c3e50;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 9px;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        .legend-dot.construct {
+            background: #2e7d32;
+        }
+
+        .legend-dot.measurement {
+            background: #1565c0;
+        }
+
+        .legend-dot.behavior {
+            background: #c2185b;
+        }
+
+        #network {
+            flex: 1 1 auto;
+            min-height: 300px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 16px;
+            box-sizing: border-box;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+            gap: 12px;
+            align-content: start;
+        }
+
+        .node-card {
+            border-radius: 8px;
+            padding: 10px 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            border: 1px solid rgba(0,0,0,0.06);
+            font-size: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            background: #fafbfc;
+        }
+
+        .node-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .node-pill {
+            width: 18px;
+            height: 18px;
+            border-radius: 4px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            font-weight: 700;
+            color: #ffffff;
+            flex-shrink: 0;
+        }
+
+        .node-pill.construct {
+            background: #2e7d32;
+        }
+
+        .node-pill.measurement {
+            background: #1565c0;
+        }
+
+        .node-pill.behavior {
+            background: #c2185b;
+        }
+
+        .node-title {
+            font-size: 12px;
+            font-weight: 500;
+            color: #2c3e50;
+        }
+
+        .node-type-label {
+            font-size: 11px;
+            color: #7f8c8d;
+        }
+
+        .node-meta {
+            font-size: 11px;
+            color: #95a5a6;
+            margin-top: 2px;
+        }
+
+        .graph-search {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            margin-top: 8px;
+        }
+
+        .graph-search input {
+            flex: 1;
+            padding: 6px 10px;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+            font-size: 13px;
+        }
+
+        .graph-search input:focus {
+            outline: none;
+            border-color: #3498db;
+        }
+
+        .graph-footer {
+            margin-top: 8px;
+            font-size: 11px;
+            color: #7f8c8d;
+            text-align: right;
+            flex-shrink: 0;
+        }
+    </style>
+    <!-- Theme overrides (visual-only). Loaded after inline styles to win cascade. -->
+    <link rel="stylesheet" href="view_network_theme.css">
+</head>
+<body>
+    <div class="graph-container">
+        <div class="graph-header">
+            <div class="graph-header-left">
+                <div>
+                    <a href="view_network.html" class="back-link">← Back to Explorer</a>
+                </div>
+                <div class="graph-title">Nomological Network</div>
+                <div class="graph-subtitle">
+                    Nodes only: constructs, measurement instruments, and behaviors/tasks (no edges) - full graph in progress.
+                </div>
+            </div>
+            <div class="legend">
+                <div class="legend-item">
+                    <span class="legend-dot construct">C</span>Construct
+                </div>
+                <div class="legend-item">
+                    <span class="legend-dot measurement">M</span>Measurement Instrument
+                </div>
+                <div class="legend-item">
+                    <span class="legend-dot behavior">B</span>Behavior/Task
+                </div>
+            </div>
+        </div>
+        <div class="graph-header" style="margin-top: -8px; margin-bottom: 12px; padding: 10px 16px;">
+            <div class="graph-search" style="width: 100%;">
+                <input id="graphSearchInput" type="text" placeholder="Filter by name across constructs, measurements, and behaviors/tasks…" />
+            </div>
+        </div>
+        <div id="network"></div>
+        <div class="graph-footer" id="graphStats"></div>
+    </div>
+
+    <script>
+        async function fetchFromPossiblePaths(relativePath) {
+            const pathParts = window.location.pathname.split('/').filter(p => p);
+            const baseParts = pathParts.slice(0, -2);
+            const basePath = baseParts.length > 0 ? '/' + baseParts.join('/') : '';
+            const possiblePaths = [
+                basePath ? basePath + '/' + relativePath : '/' + relativePath,
+                '/' + relativePath,
+                relativePath,
+                '../' + relativePath
+            ];
+            const uniquePaths = [...new Set(possiblePaths)];
+            for (const path of uniquePaths) {
+                try {
+                    const resp = await fetch(path);
+                    if (resp.ok) return await resp.text();
+                } catch (e) {}
+            }
+            throw new Error('Could not load ' + relativePath);
+        }
+
+        function getDisplayNameFromConfig(cfg, type) {
+            // Constructs always show canonical_name; other types can use the shortest alias for readability
+            if (type === 'construct') return cfg.canonical_name || '';
+            const candidates = [cfg.canonical_name].concat(cfg.names || []);
+            const valid = candidates.filter(Boolean);
+            return valid.length ? valid.reduce(function (a, b) { return a.length <= b.length ? a : b; }) : (cfg.canonical_name || '');
+        }
+
+        async function loadConfigs(index, type, folder) {
+            const files = index[folder] || [];
+            const list = [];
+            for (const file of files) {
+                try {
+                    const text = await fetchFromPossiblePaths('nomological_network_data/' + folder + '/' + file);
+                    const cfg = JSON.parse(text);
+                    const name = cfg.canonical_name || file.replace('.json', '');
+                    const displayName = getDisplayNameFromConfig(cfg, type);
+                    // Lightweight relationship summary for digestible graph context
+                    let relC = 0, relM = 0, relB = 0;
+                    if (Array.isArray(cfg.relationships)) {
+                        cfg.relationships.forEach(function (rel) {
+                            var t = rel.other_type || '';
+                            if (t.includes('construct')) relC += 1;
+                            else if (t.includes('measurement')) relM += 1;
+                            else if (t.includes('behavior')) relB += 1;
+                        });
+                    }
+
+                    list.push({
+                        name: name,
+                        displayName: displayName,
+                        type: type,
+                        relCounts: { constructs: relC, measurements: relM, behaviors: relB }
+                    });
+                } catch (e) {
+                    console.warn('Failed to load', file, e);
+                }
+            }
+            return list;
+        }
+
+        function createNodeCard(node) {
+            const displayName = node.displayName != null ? node.displayName : node.name;
+            const link = document.createElement('a');
+            link.href = 'view_network.html?node=' + encodeURIComponent(node.name) + '&type=' + encodeURIComponent(node.type);
+            link.style.textDecoration = 'none';
+            link.style.color = 'inherit';
+
+            const card = document.createElement('div');
+            card.className = 'node-card';
+
+            const header = document.createElement('div');
+            header.className = 'node-header';
+
+            const pill = document.createElement('div');
+            pill.className = 'node-pill ' + node.type;
+            pill.textContent = node.type === 'construct' ? 'C' : node.type === 'measurement' ? 'M' : 'B';
+
+            const title = document.createElement('div');
+            title.className = 'node-title';
+            title.textContent = displayName;
+
+            header.appendChild(pill);
+            header.appendChild(title);
+            card.appendChild(header);
+
+            const typeLabel = document.createElement('div');
+            typeLabel.className = 'node-type-label';
+            typeLabel.textContent = node.type === 'construct' ? 'Construct' : node.type === 'measurement' ? 'Measurement instrument' : 'Behavior / task';
+            card.appendChild(typeLabel);
+
+            // Small relationship summary line for context (without drawing edges)
+            if (node.relCounts) {
+                var parts = [];
+                if (node.relCounts.constructs) parts.push('C: ' + node.relCounts.constructs);
+                if (node.relCounts.measurements) parts.push('M: ' + node.relCounts.measurements);
+                if (node.relCounts.behaviors) parts.push('B: ' + node.relCounts.behaviors);
+                if (parts.length) {
+                    const meta = document.createElement('div');
+                    meta.className = 'node-meta';
+                    meta.textContent = 'Links → ' + parts.join(' · ');
+                    card.appendChild(meta);
+                }
+            }
+
+            link.appendChild(card);
+            return link;
+        }
+
+        async function buildGraph() {
+            const indexText = await fetchFromPossiblePaths('nomological_network_data/index.json');
+            const index = JSON.parse(indexText);
+
+            const constructs = await loadConfigs(index, 'construct', 'constructs');
+            const measurements = await loadConfigs(index, 'measurement', 'measurements');
+            const behaviors = await loadConfigs(index, 'behavior', 'behaviors_tasks');
+
+            const allNodes = constructs.concat(measurements).concat(behaviors);
+
+            function render(filter) {
+                var container = document.getElementById('network');
+                if (!container) return;
+                container.innerHTML = '';
+                var q = (filter || '').toLowerCase();
+                var shown = 0;
+                for (var i = 0; i < allNodes.length; i++) {
+                    var node = allNodes[i];
+                    if (q) {
+                        var dn = (node.displayName || node.name || '').toLowerCase();
+                        if (dn.indexOf(q) === -1) continue;
+                    }
+                    container.appendChild(createNodeCard(node));
+                    shown++;
+                }
+                var statsEl = document.getElementById('graphStats');
+                if (statsEl) {
+                    statsEl.textContent =
+                        'Constructs: ' + constructs.length +
+                        ' · Measurements: ' + measurements.length +
+                        ' · Behaviors/Tasks: ' + behaviors.length +
+                        (q ? ' · Showing: ' + shown : '');
+                }
+            }
+
+            // Initial render (no filter)
+            render('');
+
+            // Hook up search box
+            var searchEl = document.getElementById('graphSearchInput');
+            if (searchEl) {
+                searchEl.addEventListener('input', function () {
+                    render(searchEl.value || '');
+                });
+            }
+        }
+
+        (function init() {
+            buildGraph().catch(function (e) {
+                console.error('Failed to build graph:', e);
+                var container = document.getElementById('network');
+                if (container) {
+                    container.innerHTML = '<div class="empty-state" style="padding:40px; color:#e74c3c;"><h3>Unable to load graph</h3><p>' + e.message + '</p></div>';
+                }
+            });
+        })();
+    </script>
+</body>
+</html>

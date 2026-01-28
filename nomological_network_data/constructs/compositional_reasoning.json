@@ -1,0 +1,310 @@
+{
+  "canonical_name": "Compositional Reasoning",
+  "type": "construct",
+  "canonical_definition": "Compositional Reasoning refers to the ability of AI systems to decompose complex tasks into interdependent sub-components or primitives (e.g., functions, skills, concepts) and dynamically recombine or sequence these elements to solve novel algorithmic, planning, or perception-based problems. This construct encompasses function composition (building complex procedures from simpler learned operations), multi-hop reasoning across sub-steps, and cross-domain generalization (e.g., language-to-image alignment, robotic planning), though some sources caution that strong performance on compositionality benchmarks does not necessarily imply robust semantic understanding of the underlying components. Key applications include algorithm learning, closed-loop skill execution, and vision-language reasoning, with operationalizations varying in emphasis on hierarchical decomposition versus inferential combination of primitives.",
+  "expert_reviewed": false,
+  "names": [
+    "Compositional Reasoning"
+  ],
+  "papers": [
+    "Chain of Thoughtlessness? An Analysis of CoT in Planning",
+    "ClevrSkills: Compositional Language And Visual Reasoning in Robotics",
+    "Connecting the Dots: LLMs can Infer and Verbalize Latent Structure from Disparate Training Data",
+    "EHRCon: Dataset for Checking Consistency between Unstructured Notes and Structured Tables in Electronic Health Records",
+    "INQUIRE: A Natural World Text-to-Image Retrieval Benchmark",
+    "Initialization is Critical to Whether Transformers Fit Composite Functions by Reasoning or Memorizing",
+    "Limits of Transformer Language Models on Learning to Compose Algorithms",
+    "On the Inductive Bias of Stacking Towards Improving Reasoning",
+    "RL-GPT: Integrating Reinforcement Learning and Code-as-policy",
+    "SUGARCREPE++ Dataset: Vision-Language Model Sensitivity to Semantic and Lexical Alterations",
+    "UniBench: Visual Reasoning Requires Rethinking Vision-Language Beyond Scaling",
+    "VisMin: Visual Minimal-Change Understanding"
+  ],
+  "paper_count": 12,
+  "group_ids": [
+    34,
+    157,
+    362,
+    624,
+    653,
+    1016,
+    1612,
+    2178,
+    3587,
+    4102,
+    4353,
+    5141
+  ],
+  "definitions": [
+    {
+      "text": "Ability of a Transformer LLM to reuse and reorder learned primitive sub‑tasks to solve a composed algorithmic task via function composition; i.e., combining simple functions to build more complicated ones and learning to compose and decompose algorithmic procedures  ",
+      "paper": "Limits of Transformer Language Models on Learning to Compose Algorithms"
+    },
+    {
+      "text": "Composing learned functions with other operations in downstream queries .",
+      "paper": "Connecting the Dots: LLMs can Infer and Verbalize Latent Structure from Disparate Training Data"
+    },
+    {
+      "text": "Ability to combine known components/concepts; performance on compositionality datasets does not by itself ensure lexical-robust semantic understanding. ",
+      "paper": "SUGARCREPE++ Dataset: Vision-Language Model Sensitivity to Semantic and Lexical Alterations"
+    },
+    {
+      "text": "Adeptness at composing and sequencing knowledge/skills, leveraged for planning in agentic settings. ",
+      "paper": "RL-GPT: Integrating Reinforcement Learning and Code-as-policy"
+    },
+    {
+      "text": "Creation and execution of step-by-step plans by composing lower-level skills within a closed loop. ",
+      "paper": "ClevrSkills: Compositional Language And Visual Reasoning in Robotics"
+    },
+    {
+      "text": "Ability to correctly combine intermediate functions/steps across multi-hop tasks; failures are probed beyond single-step components .",
+      "paper": "Chain of Thoughtlessness? An Analysis of CoT in Planning"
+    },
+    {
+      "text": "Reasoning about compositions of objects and relations; evaluated by benchmarks like Winoground and EQBEN .",
+      "paper": "VisMin: Visual Minimal-Change Understanding"
+    },
+    {
+      "text": "Solve complex tasks by decomposing into interdependent sub-steps to improve accuracy and efficiency. ",
+      "paper": "EHRCon: Dataset for Checking Consistency between Unstructured Notes and Structured Tables in Electronic Health Records"
+    },
+    {
+      "text": "Ability to associate and apply variable-value bindings compositionally, as tested by variable assignment .",
+      "paper": "On the Inductive Bias of Stacking Towards Improving Reasoning"
+    },
+    {
+      "text": "Reasoning about compositional structures in images (e.g., CLEVR)  .",
+      "paper": "UniBench: Visual Reasoning Requires Rethinking Vision-Language Beyond Scaling"
+    },
+    {
+      "text": "Ability to capture compositional primitives and compose them so outputs match the composite function (inferential solutions)  .",
+      "paper": "Initialization is Critical to Whether Transformers Fit Composite Functions by Reasoning or Memorizing"
+    },
+    {
+      "text": "Combining multiple attributes/relations to match complex natural-language queries to images. ",
+      "paper": "INQUIRE: A Natural World Text-to-Image Retrieval Benchmark"
+    }
+  ],
+  "definition_count": 12,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Algorithm Composition",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Limits of Transformer Language Models on Learning to Compose Algorithms",
+      "evidence": "The paper targets learning to compose algorithmic procedures by combining primitive sub‑tasks into more complicated ones"
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Algorithm Decomposition",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Limits of Transformer Language Models on Learning to Compose Algorithms",
+      "evidence": "Models are assessed on decomposing and reusing sub‑tasks in compositions"
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Arithmetic Operation Learning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Limits of Transformer Language Models on Learning to Compose Algorithms",
+      "evidence": "Digit multiplication is structured via observable primitives (digit_mul and add) that are sub‑tasks in a composed algorithmic procedure"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PEN In‑Distribution Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Limits of Transformer Language Models on Learning to Compose Algorithms",
+      "evidence": "PEN is a compositional task built from Cpy, RCpy, PE, and PEV and used to test compositional learning"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Function Learning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Connecting the Dots: LLMs can Infer and Verbalize Latent Structure from Disparate Training Data",
+      "evidence": "Models compose the learned function with other operations ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Functions: OOCR—Composition",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Connecting the Dots: LLMs can Infer and Verbalize Latent Structure from Disparate Training Data",
+      "evidence": "Composition queries (f2(f1(x))) test composing the learned function ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Semantic Equivalence Recognition",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "SUGARCREPE++ Dataset: Vision-Language Model Sensitivity to Semantic and Lexical Alterations",
+      "evidence": "Models excelling on compositionality datasets may not perform equally well on SUGARCREPE++; compositionality alone is not sufficient."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Lexical Robustness to Syntactic/Lexical Variations",
+      "other_type": "constructs",
+      "relationship_type": "not-sufficient-for",
+      "paper": "SUGARCREPE++ Dataset: Vision-Language Model Sensitivity to Semantic and Lexical Alterations",
+      "evidence": "Success on compositionality datasets does not ensure robustness to semantic/lexical alterations."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "High-Level Planning (Task Decomposition)",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "RL-GPT: Integrating Reinforcement Learning and Code-as-policy",
+      "evidence": "The system leverages LLMs’ adept compositional reasoning capabilities to plan and decompose tasks."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Compositional Generalization (Robotics)",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "ClevrSkills: Compositional Language And Visual Reasoning in Robotics",
+      "evidence": "Benchmark assesses generalization via composing skills and executing plans."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Closed-loop Plan-and-Execute",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "ClevrSkills: Compositional Language And Visual Reasoning in Robotics",
+      "evidence": "Benchmark evaluates plan-and-execute within a closed loop."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Algorithmic Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Chain of Thoughtlessness? An Analysis of CoT in Planning",
+      "evidence": "Executing multi-step procedures relies on composing intermediate functions/steps ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multi-step Arithmetic (Single-digit Intermediate) Accuracy vs Expression Length",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Chain of Thoughtlessness? An Analysis of CoT in Planning",
+      "evidence": "Arithmetic expression simplification requires composing intermediate operations; generalization to longer expressions fails under CoT ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Winoground Performance",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "VisMin: Visual Minimal-Change Understanding",
+      "evidence": "Winoground and related benchmarks test compositional reasoning and fine-grained understanding ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "EQBEN Performance",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "VisMin: Visual Minimal-Change Understanding",
+      "evidence": "EQBEN is noted among benchmarks testing compositional reasoning and fine-grained understanding ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMVP",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "VisMin: Visual Minimal-Change Understanding",
+      "evidence": "MMVP listed with Winoground and EQBEN as challenging compositional/fine-grained tasks ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Consistency Verification Capability",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "EHRCon: Dataset for Checking Consistency between Unstructured Notes and Structured Tables in Electronic Health Records",
+      "evidence": "Decomposition techniques inspire CheckEHR's multi-stage design to improve accuracy and efficiency."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Contextual Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "On the Inductive Bias of Stacking Towards Improving Reasoning",
+      "evidence": "Variable assignment tests composition and is defined as a contextual reasoning primitive, i.e., a basic capability for contextual reasoning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Variable Assignment Depth 1 (code) Fine-tuned Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "On the Inductive Bias of Stacking Towards Improving Reasoning",
+      "evidence": "Depth-1 variable assignment accuracy reflects compositional binding at shallow depth ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Variable Assignment Depth 2 (code) Fine-tuned Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "On the Inductive Bias of Stacking Towards Improving Reasoning",
+      "evidence": "Depth-2 variable assignment accuracy reflects deeper compositional chains ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "UniBench: Visual Reasoning Requires Rethinking Vision-Language Beyond Scaling",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CLEVR Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "UniBench: Visual Reasoning Requires Rethinking Vision-Language Beyond Scaling",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Initialization is Critical to Whether Transformers Fit Composite Functions by Reasoning or Memorizing",
+      "evidence": "The paper frames inferential (reasoning-based) solutions as capturing compositional structure, i.e., a form of reasoning  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Learning Compositional Primitives",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Initialization is Critical to Whether Transformers Fit Composite Functions by Reasoning or Memorizing",
+      "evidence": "Inferential solutions learn individual mappings for each single anchor and compose them ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Unseen Anchor Pair Inferential Solution Accuracy (4,3)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Initialization is Critical to Whether Transformers Fit Composite Functions by Reasoning or Memorizing",
+      "evidence": "Inferential mapping exemplifies reasoning ability, and Fig. 14 reports accuracy for the unseen pair (4,3)  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SCAN Composition Generalization Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Initialization is Critical to Whether Transformers Fit Composite Functions by Reasoning or Memorizing",
+      "evidence": "SCAN setup tests generalization of composite commands involving a primitive; used as a compositional task ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Expert-level Text-to-Image Retrieval",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "INQUIRE: A Natural World Text-to-Image Retrieval Benchmark",
+      "evidence": "Queries explicitly test compositional reasoning in retrieval."
+    }
+  ],
+  "relationship_count": 27,
+  "incoming_relationship_count": 5,
+  "outgoing_relationship_count": 22
+}

@@ -1,0 +1,340 @@
+{
+  "canonical_name": "Algorithmic Reasoning",
+  "type": "construct",
+  "canonical_definition": "Algorithmic Reasoning is the ability to execute, learn, and generalize multi-step algorithmic procedures or symbolic manipulations to solve problems, often involving tasks like lexicographic sorting, arithmetic computations, sequence operations, or procedural logic. It emphasizes reliable reasoning through internal representations of algorithms, enabling generalization to novel or more complex instances beyond training data, with some definitions highlighting formal-language tasks (e.g., modular arithmetic, binary operations) and others focusing on problem-solving in structured environments or Olympiad-style challenges. Disagreements exist in scope, with some framing it narrowly as procedural execution and others as broader strategic or environmental reasoning.",
+  "expert_reviewed": false,
+  "names": [
+    "Algorithmic Reasoning"
+  ],
+  "papers": [
+    "Buffer of Thoughts: Thought-Augmented Reasoning with Large Language Models",
+    "Chain of Thoughtlessness? An Analysis of CoT in Planning",
+    "DAPE: Data-Adaptive Positional Encoding for Length Extrapolation",
+    "Discovery of the Hidden World with Large Language Models",
+    "Evaluating Large Vision-and-Language Models on Children's Mathematical Olympiads",
+    "Generating Code World Models with Large Language Models Guided by Monte Carlo Tree Search",
+    "MACM: Utilizing a Multi-Agent System for Condition Mining in Solving Complex Mathematical Problems",
+    "Many-Shot In-Context Learning",
+    "PUZZLES: A Benchmark for Neural Algorithmic Reasoning",
+    "SELF-DISCOVER: Large Language Models Self-Compose Reasoning Structures",
+    "StrategyLLM: Large Language Models as Strategy Generators, Executors, Optimizers, and Evaluators for Problem Solving",
+    "Transformers Can Do Arithmetic with the Right Embeddings",
+    "Understanding Transformer Reasoning Capabilities via Graph Algorithms"
+  ],
+  "paper_count": 13,
+  "group_ids": [
+    461,
+    503,
+    606,
+    1012,
+    1292,
+    1359,
+    1459,
+    2332,
+    2881,
+    2932,
+    4224,
+    5296,
+    6321
+  ],
+  "definitions": [
+    {
+      "text": "Algorithmic Reasoning",
+      "paper": "Many-Shot In-Context Learning"
+    },
+    {
+      "text": "Solving tasks such as lexicographic sorting and multi‑step arithmetic .",
+      "paper": "StrategyLLM: Large Language Models as Strategy Generators, Executors, Optimizers, and Evaluators for Problem Solving"
+    },
+    {
+      "text": "Ability to learn and apply algorithmic solutions to problems; PUZZLES is proposed to benchmark and improve this capability in ML models. ",
+      "paper": "PUZZLES: A Benchmark for Neural Algorithmic Reasoning"
+    },
+    {
+      "text": "Ability to execute and generalize procedural/algorithmic steps to solve problems beyond syntactically similar instances  .",
+      "paper": "Chain of Thoughtlessness? An Analysis of CoT in Planning"
+    },
+    {
+      "text": "Reasoning that involves algorithmic steps or procedures, as represented in tasks requiring algorithmic reasoning .",
+      "paper": "Buffer of Thoughts: Thought-Augmented Reasoning with Large Language Models"
+    },
+    {
+      "text": "Reasoning requiring algorithmic computation and symbolic manipulation; improvements are more moderate and limited by calculation accuracy .",
+      "paper": "SELF-DISCOVER: Large Language Models Self-Compose Reasoning Structures"
+    },
+    {
+      "text": "Executing algorithms with internal representations to support reliable reasoning, generalization, and scaling.  ",
+      "paper": "Understanding Transformer Reasoning Capabilities via Graph Algorithms"
+    },
+    {
+      "text": "Ability to learn and execute algorithms and generalize to harder/longer instances beyond training .",
+      "paper": "Transformers Can Do Arithmetic with the Right Embeddings"
+    },
+    {
+      "text": "Multi-step reasoning used to reconcile language instructions with environment state to derive correct action effects and logic. ",
+      "paper": "Generating Code World Models with Large Language Models Guided by Monte Carlo Tree Search"
+    },
+    {
+      "text": "Ability to perform basic algorithmic reasoning; noted as a weakness for current LLMs in this context .",
+      "paper": "Discovery of the Hidden World with Large Language Models"
+    },
+    {
+      "text": "Reasoning over procedural tasks such as sequence sorting, as evaluated by a sorting experiment ",
+      "paper": "MACM: Utilizing a Multi-Agent System for Condition Mining in Solving Complex Mathematical Problems"
+    },
+    {
+      "text": "Reasoning about algorithmic and procedural problem solving within Olympiad-style tasks .",
+      "paper": "Evaluating Large Vision-and-Language Models on Children's Mathematical Olympiads"
+    },
+    {
+      "text": "Capability to perform formal-language/algorithmic tasks (e.g., modular arithmetic, reversing/duplicating strings, binary operations, bucket sort) as in CHE .",
+      "paper": "DAPE: Data-Adaptive Positional Encoding for Length Extrapolation"
+    }
+  ],
+  "definition_count": 13,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BBH Task Performance (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Many-Shot In-Context Learning",
+      "evidence": "Performance on Big-Bench Hard tasks ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "StrategyLLM: Large Language Models as Strategy Generators, Executors, Optimizers, and Evaluators for Problem Solving",
+      "evidence": "Evaluations include algorithmic reasoning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Word Sorting (WS) Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "StrategyLLM: Large Language Models as Strategy Generators, Executors, Optimizers, and Evaluators for Problem Solving",
+      "evidence": "WS involves lexicographic sorting (algorithmic) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multi-step Arithmetic (MA) Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "StrategyLLM: Large Language Models as Strategy Generators, Executors, Optimizers, and Evaluators for Problem Solving",
+      "evidence": "MA requires multi‑step arithmetic operations ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "PUZZLES: A Benchmark for Neural Algorithmic Reasoning",
+      "evidence": "The paper centers on algorithmic reasoning abilities as part of the reasoning needed to solve puzzles."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PUZZLES Zero-Shot Puzzle-Solving Success Rate (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "PUZZLES: A Benchmark for Neural Algorithmic Reasoning",
+      "evidence": "PUZZLES is proposed for evaluating the reasoning abilities of LLMs/VLMs, with preliminary results indicating limited success."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Chain of Thoughtlessness? An Analysis of CoT in Planning",
+      "evidence": "Classical planning instantiates algorithmic problem solving with checkable ground truths ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Planning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Chain of Thoughtlessness? An Analysis of CoT in Planning",
+      "evidence": "Classical planning instantiates algorithmic problem solving with checkable ground truths ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Compositional Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Chain of Thoughtlessness? An Analysis of CoT in Planning",
+      "evidence": "Executing multi-step procedures relies on composing intermediate functions/steps ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Blocksworld Planning (PDDL/VAL) Accuracy vs Stack Size",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Chain of Thoughtlessness? An Analysis of CoT in Planning",
+      "evidence": "Blocksworld provides scalable, verifiable instances where algorithmic planning competence is tested  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Buffer of Thoughts: Thought-Augmented Reasoning with Large Language Models",
+      "evidence": "The task suite includes problems requiring algorithmic reasoning as part of the evaluated reasoning spectrum ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BBH Word Sorting Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Buffer of Thoughts: Thought-Augmented Reasoning with Large Language Models",
+      "evidence": "Word list sorting is included among evaluated tasks and aligns with algorithmic reasoning  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "SELF-DISCOVER: Large Language Models Self-Compose Reasoning Structures",
+      "evidence": "Category analysis identifies algorithmic tasks as a distinct subtype with moderate gains ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "SELF-DISCOVER: Large Language Models Self-Compose Reasoning Structures",
+      "evidence": "MATH tasks exemplify algorithmic, calculation-heavy reasoning ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "SELF-DISCOVER: Large Language Models Self-Compose Reasoning Structures",
+      "evidence": "MATH tasks exemplify algorithmic, calculation-heavy reasoning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Transformer Reasoning Capabilities",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "Understanding Transformer Reasoning Capabilities via Graph Algorithms",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Graph Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "Understanding Transformer Reasoning Capabilities via Graph Algorithms",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Parallel Computation Simulation",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "Understanding Transformer Reasoning Capabilities via Graph Algorithms",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Out-of-Distribution Generalization",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Understanding Transformer Reasoning Capabilities via Graph Algorithms",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Scaling to Larger Problem Sizes",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Understanding Transformer Reasoning Capabilities via Graph Algorithms",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Arithmetic Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Transformers Can Do Arithmetic with the Right Embeddings",
+      "evidence": "Arithmetic is a subset of algorithmic reasoning focusing on learning/executing algorithms and generalizing to longer problems ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Sorting Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Transformers Can Do Arithmetic with the Right Embeddings",
+      "evidence": "The study evaluates sorting as an algorithmic task alongside arithmetic to probe reasoning capabilities ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multi-step Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "depends-on",
+      "paper": "Transformers Can Do Arithmetic with the Right Embeddings",
+      "evidence": "Learning a many-step reasoning process (e.g., multi-digit addition) is central to executing algorithms ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Code World Modeling",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "Generating Code World Models with Large Language Models Guided by Monte Carlo Tree Search",
+      "evidence": "Synthesizing programs for world models requires complex reasoning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "RTFM CWM Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Generating Code World Models with Large Language Models Guided by Monte Carlo Tree Search",
+      "evidence": "RTFM requires multi-step reasoning between the manual and environment state."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Causal Discovery Assistance",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Discovery of the Hidden World with Large Language Models",
+      "evidence": "Weaknesses in algorithmic reasoning motivate not relying on LLMs for direct causal graph derivation, using them only as assistants ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Logical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "MACM: Utilizing a Multi-Agent System for Condition Mining in Solving Complex Mathematical Problems",
+      "evidence": "A sequence‑sorting experiment is used to assess structured procedural reasoning abilities, a facet of logical reasoning"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Sequence Sorting Accuracy (64 elements)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MACM: Utilizing a Multi-Agent System for Condition Mining in Solving Complex Mathematical Problems",
+      "evidence": "A sorting task with 64 elements is used to quantify performance on procedural/algorithmic reasoning"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CHE Algorithmic Tasks Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "DAPE: Data-Adaptive Positional Encoding for Length Extrapolation",
+      "evidence": "The paper evaluates DAPE on algorithmic reasoning via CHE tasks (modular arithmetic, reversing/duplicating strings, binary operations, bucket sort) using accuracy metrics ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-Context Processing",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "DAPE: Data-Adaptive Positional Encoding for Length Extrapolation",
+      "evidence": "Static positional encodings’ lack of adaptivity leads to performance degradation especially in tasks involving long-context generation and reasoning, implying long-context capability affects reasoning performance when long ranges are involved ."
+    }
+  ],
+  "relationship_count": 30,
+  "incoming_relationship_count": 8,
+  "outgoing_relationship_count": 22
+}

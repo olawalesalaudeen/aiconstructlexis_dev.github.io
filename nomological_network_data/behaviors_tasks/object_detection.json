@@ -1,0 +1,334 @@
+{
+  "canonical_name": "Object Detection",
+  "type": "behavior",
+  "canonical_definition": "Object Detection is the task of identifying and localizing objects within visual data (e.g., images or videos), typically producing outputs such as object class labels and spatial coordinates. It is often evaluated using metrics like Average Precision (AP) on benchmarks such as COCO, with variants addressing specialized contexts like camouflaged object detection (CAMO, COD10K) or multimodal hallucination assessment (POPE). This behavior reflects perceptual capability in vision-language models, supports downstream tasks like screen understanding via OCR/icon detection, and serves as a foundational skill in systems combining specialist modules (e.g., segmentation, depth estimation) for complex reasoning.",
+  "expert_reviewed": false,
+  "names": [
+    "Object Detection"
+  ],
+  "papers": [
+    "Advancing Video Anomaly Detection: A Concise Review and a New Dataset",
+    "Can LLMs Learn by Teaching for Better Reasoning? A Preliminary Study",
+    "CiteME: Can Language Models Accurately Cite Scientific Claims?",
+    "FEDMEKI: A Benchmark for Scaling Medical Foundation Models via Federated Knowledge Injection",
+    "LLM-Check: Investigating Detection of Hallucinations in Large Language Models",
+    "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+    "Mobile-Agent-v2: Mobile Device Operation Assistant with Effective Navigation via Multi-Agent Collaboration",
+    "Multi-Head Mixture-of-Experts",
+    "On Learning Multi-Modal Forgery Representation for Diffusion Generated Video Detection",
+    "Training-Free Open-Ended Object Detection and Segmentation via Attention as Prompts",
+    "Unified Generative and Discriminative Training for Multi-modal Large Language Models",
+    "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+    "Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models"
+  ],
+  "paper_count": 13,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "VL-SAM inherits VLM hallucinations, producing wrong object tokens and attention maps that would degrade detection/segmentation .",
+      "paper": "Training-Free Open-Ended Object Detection and Segmentation via Attention as Prompts"
+    },
+    {
+      "text": "FAVA-Annotation labels passages as hallucinated if any hallucination form is present, enabling binary detection of hallucination propensity .",
+      "paper": "LLM-Check: Investigating Detection of Hallucinations in Large Language Models"
+    },
+    {
+      "text": "SelfCheckGPT provides sentence-level hallucination annotations in a multi-response setting for detection tasks  .",
+      "paper": "LLM-Check: Investigating Detection of Hallucinations in Large Language Models"
+    },
+    {
+      "text": "RAGTruth supports hallucination detection when external references are available, testing propensity in RAG scenarios .",
+      "paper": "LLM-Check: Investigating Detection of Hallucinations in Large Language Models"
+    },
+    {
+      "text": "Variations in internal representations between truthful and hallucinated cases are leveraged for single-response hallucination detection .",
+      "paper": "LLM-Check: Investigating Detection of Hallucinations in Large Language Models"
+    },
+    {
+      "text": "When trained on a concept, generations tend to be more consistent; hallucinated information is less likely to recur across multiple responses, enabling detection .",
+      "paper": "LLM-Check: Investigating Detection of Hallucinations in Large Language Models"
+    },
+    {
+      "text": "POPE evaluates object hallucinations detection; Sugar reports SOTA on this benchmark .",
+      "paper": "Unified Generative and Discriminative Training for Multi-modal Large Language Models"
+    },
+    {
+      "text": "Increased prompt length can complicate detection of important information; limited context caused large drops for LLaMA.",
+      "paper": "CiteME: Can Language Models Accurately Cite Scientific Claims?"
+    },
+    {
+      "text": "The benchmark covers multiple modalities; ECG abnormal detection defines the ECG analysis sub-capability.",
+      "paper": "FEDMEKI: A Benchmark for Scaling Medical Foundation Models via Federated Knowledge Injection"
+    },
+    {
+      "text": "COCO object detection AP reported as downstream validation.",
+      "paper": "Multi-Head Mixture-of-Experts"
+    },
+    {
+      "text": "Coherent reasoning over video events to support anomaly detection; enabled and emphasized via LLM-based approaches  .",
+      "paper": "Advancing Video Anomaly Detection: A Concise Review and a New Dataset"
+    },
+    {
+      "text": "The review references ‘Video anomaly detection and explanation via large language models,’ and proposes explanatory descriptions as an outcome of reasoning-enabled VLMs/LLMs in VAD  .",
+      "paper": "Advancing Video Anomaly Detection: A Concise Review and a New Dataset"
+    },
+    {
+      "text": "Logical fallacy and misinformation detection require accurate logical reasoning.",
+      "paper": "Can LLMs Learn by Teaching for Better Reasoning? A Preliminary Study"
+    },
+    {
+      "text": "Capability to analyze visual content via detection, instance segmentation, pose estimation, and related perception tasks  .",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks"
+    },
+    {
+      "text": "Screen understanding and localization via OCR/icon detection and related tools to perceive UI content for operation decisions  .",
+      "paper": "Mobile-Agent-v2: Mobile Device Operation Assistant with Effective Navigation via Multi-Agent Collaboration"
+    },
+    {
+      "text": "Perceptual ability of LMMs to capture object/semantic/color/texture cues in real-world tasks, leveraged for forgery detection .",
+      "paper": "On Learning Multi-Modal Forgery Representation for Diffusion Generated Video Detection"
+    },
+    {
+      "text": "Specialists (detection, segmentation, depth) provide useful perception skills that SKETCHPAD combines into the LM during reasoning .",
+      "paper": "Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models"
+    },
+    {
+      "text": "Object detection and instance segmentation AP reported on COCO .",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks"
+    },
+    {
+      "text": "Camouflaged object detection reported on CAMO and COD10K .",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks"
+    },
+    {
+      "text": "Operations rely on screen understanding and localization via visual tools (OCR, icon detection) .",
+      "paper": "Mobile-Agent-v2: Mobile Device Operation Assistant with Effective Navigation via Multi-Agent Collaboration"
+    },
+    {
+      "text": "Object detection expertise (Co-DETR) is part of the vision expert pool for perception  .",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context"
+    },
+    {
+      "text": "Validation tasks assess the model’s zero-shot inference ability; enlarged cardiomediastinum detection is one.",
+      "paper": "FEDMEKI: A Benchmark for Scaling Medical Foundation Models via Federated Knowledge Injection"
+    },
+    {
+      "text": "Object hallucinations detection POPE Accuracy (%)",
+      "paper": "Unified Generative and Discriminative Training for Multi-modal Large Language Models"
+    },
+    {
+      "text": "Object hallucination detection/robustness POPE Score (higher indicates fewer hallucinations)",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context"
+    },
+    {
+      "text": "POPE evaluates object hallucinations detection; Sugar reports SOTA on this benchmark .",
+      "paper": "Unified Generative and Discriminative Training for Multi-modal Large Language Models"
+    }
+  ],
+  "definition_count": 25,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Propensity",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Training-Free Open-Ended Object Detection and Segmentation via Attention as Prompts",
+      "evidence": "VL-SAM inherits VLM hallucinations, producing wrong object tokens and attention maps that would degrade detection/segmentation ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Propensity",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "LLM-Check: Investigating Detection of Hallucinations in Large Language Models",
+      "evidence": "FAVA-Annotation labels passages as hallucinated if any hallucination form is present, enabling binary detection of hallucination propensity ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Propensity",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "LLM-Check: Investigating Detection of Hallucinations in Large Language Models",
+      "evidence": "SelfCheckGPT provides sentence-level hallucination annotations in a multi-response setting for detection tasks  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Propensity",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "LLM-Check: Investigating Detection of Hallucinations in Large Language Models",
+      "evidence": "RAGTruth supports hallucination detection when external references are available, testing propensity in RAG scenarios ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Propensity",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "LLM-Check: Investigating Detection of Hallucinations in Large Language Models",
+      "evidence": "Variations in internal representations between truthful and hallucinated cases are leveraged for single-response hallucination detection ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Propensity",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "LLM-Check: Investigating Detection of Hallucinations in Large Language Models",
+      "evidence": "When trained on a concept, generations tend to be more consistent; hallucinated information is less likely to recur across multiple responses, enabling detection ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Resistance",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Unified Generative and Discriminative Training for Multi-modal Large Language Models",
+      "evidence": "POPE evaluates object hallucinations detection; Sugar reports SOTA on this benchmark ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-Context Handling",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "CiteME: Can Language Models Accurately Cite Scientific Claims?",
+      "evidence": "Increased prompt length can complicate detection of important information; limited context caused large drops for LLaMA."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "FEDMEKI: A Benchmark for Scaling Medical Foundation Models via Federated Knowledge Injection",
+      "evidence": "The benchmark covers multiple modalities; ECG abnormal detection defines the ECG analysis sub-capability."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Multi-Head Mixture-of-Experts",
+      "evidence": "COCO object detection AP reported as downstream validation."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Advancing Video Anomaly Detection: A Concise Review and a New Dataset",
+      "evidence": "Coherent reasoning over video events to support anomaly detection; enabled and emphasized via LLM-based approaches  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Advancing Video Anomaly Detection: A Concise Review and a New Dataset",
+      "evidence": "The review references ‘Video anomaly detection and explanation via large language models,’ and proposes explanatory descriptions as an outcome of reasoning-enabled VLMs/LLMs in VAD  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Can LLMs Learn by Teaching for Better Reasoning? A Preliminary Study",
+      "evidence": "Logical fallacy and misinformation detection require accurate logical reasoning."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Perception",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "evidence": "Capability to analyze visual content via detection, instance segmentation, pose estimation, and related perception tasks  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Perception",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Mobile-Agent-v2: Mobile Device Operation Assistant with Effective Navigation via Multi-Agent Collaboration",
+      "evidence": "Screen understanding and localization via OCR/icon detection and related tools to perceive UI content for operation decisions  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Perception",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "On Learning Multi-Modal Forgery Representation for Diffusion Generated Video Detection",
+      "evidence": "Perceptual ability of LMMs to capture object/semantic/color/texture cues in real-world tasks, leveraged for forgery detection ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Perception",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models",
+      "evidence": "Specialists (detection, segmentation, depth) provide useful perception skills that SKETCHPAD combines into the LM during reasoning ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Perception",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "evidence": "Object detection and instance segmentation AP reported on COCO ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Perception",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "evidence": "Camouflaged object detection reported on CAMO and COD10K ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Perception",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Mobile-Agent-v2: Mobile Device Operation Assistant with Effective Navigation via Multi-Agent Collaboration",
+      "evidence": "Operations rely on screen understanding and localization via visual tools (OCR, icon detection) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Perception",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "evidence": "Object detection expertise (Co-DETR) is part of the vision expert pool for perception  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Zero-shot Generalization",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "FEDMEKI: A Benchmark for Scaling Medical Foundation Models via Federated Knowledge Injection",
+      "evidence": "Validation tasks assess the model’s zero-shot inference ability; enlarged cardiomediastinum detection is one."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "POPE",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Unified Generative and Discriminative Training for Multi-modal Large Language Models",
+      "evidence": "Object hallucinations detection POPE Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "POPE",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "evidence": "Object hallucination detection/robustness POPE Score (higher indicates fewer hallucinations)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "POPE",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Unified Generative and Discriminative Training for Multi-modal Large Language Models",
+      "evidence": "POPE evaluates object hallucinations detection; Sugar reports SOTA on this benchmark ."
+    }
+  ],
+  "relationship_count": 25,
+  "incoming_relationship_count": 22,
+  "outgoing_relationship_count": 3
+}

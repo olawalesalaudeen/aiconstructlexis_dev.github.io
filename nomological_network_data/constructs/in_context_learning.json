@@ -1,0 +1,526 @@
+{
+  "canonical_name": "In-Context Learning",
+  "type": "construct",
+  "canonical_definition": "In-Context Learning refers to the capability of large language models to adapt to tasks or improve performance by leveraging examples, instructions, or demonstrations provided in the input prompt during inference, without modifying model parameters. This often involves few-shot or one-shot learning, where the model learns patterns, rules, or output formats from the provided context to guide reasoning or generation. Some definitions emphasize dependencies on context length or mechanisms like induction heads for pattern recognition, while others highlight applications in resolving ambiguity, aligning outputs, or enabling task decomposition without manual intervention.",
+  "expert_reviewed": false,
+  "names": [
+    "In-Context Learning",
+    "In-context Learning",
+    "In‑Context Learning Ability"
+  ],
+  "papers": [
+    "$\\texttt{Model-GLUE}$: Democratized LLM Scaling for A Large Model Zoo in the Wild",
+    "AMBROSIA: A Benchmark for Parsing Ambiguous Questions into Database Queries",
+    "An Efficient Recipe for Long Context Extension via Middle-Focused Positional Encoding",
+    "Are Large Language Models Good Statisticians?",
+    "AutoTimes: Autoregressive Time Series Forecasters via Large Language Models",
+    "BABILong: Testing the Limits of LLMs with Long Context Reasoning-in-a-Haystack",
+    "Benchmarking LLMs via Uncertainty Quantification",
+    "Boosting Weakly Supervised Referring Image Segmentation via Progressive Comprehension",
+    "CALVIN: Improved Contextual Video Captioning via Instruction Tuning",
+    "Can large language models explore in-context?",
+    "EPIC: Effective Prompting for Imbalanced-Class Data Synthesis in Tabular Data Classification via Large Language Models",
+    "Exploratory Retrieval-Augmented Planning For Continual Embodied Instruction Following",
+    "HARMONIC: Harnessing LLMs for Tabular Data Synthesis and Privacy Protection",
+    "HLM-Cite: Hybrid Language Model Workflow for Text-based Scientific Citation Prediction",
+    "LogiCity: Advancing Neuro-Symbolic AI with Abstract Urban Simulation",
+    "MedCalc-Bench: Evaluating Large Language Models for Medical Calculations",
+    "MedJourney: Benchmark and Evaluation of Large Language Models over Patient Clinical Journey",
+    "Mixture of In-Context Experts Enhance LLMs' Long Context Awareness",
+    "OW-VISCapTor: Abstractors for Open-World Video Instance Segmentation and Captioning",
+    "On the Inductive Bias of Stacking Towards Improving Reasoning",
+    "Orchid: Flexible and Data-Dependent Convolution for Sequence Modeling",
+    "PromptFix: You Prompt and We Fix the Photo",
+    "ReMI: A Dataset for Reasoning with Multiple Images",
+    "SocialGPT: Prompting LLMs for Social Relation Reasoning via Greedy Segment Optimization",
+    "Symbolic Regression with a Learned Concept Library",
+    "T2Vs Meet VLMs: A Scalable Multimodal Dataset for Visual Harmfulness Recognition",
+    "TAIA: Large Language Models are Out-of-Distribution Data Learners",
+    "Tackling Uncertain Correspondences for Multi-Modal Entity Alignment",
+    "Theoretical Foundations of Deep Selective State-Space Models",
+    "VideoTetris: Towards Compositional Text-to-Video Generation",
+    "Visual Autoregressive Modeling: Scalable Image Generation via Next-Scale Prediction",
+    "Voila-A: Aligning Vision-Language Models with User's Gaze Attention"
+  ],
+  "paper_count": 32,
+  "group_ids": [
+    538,
+    601,
+    761,
+    929,
+    1314,
+    1454,
+    1482,
+    1930,
+    2068,
+    2283,
+    2617,
+    2679,
+    2762,
+    2892,
+    3074,
+    3204,
+    3303,
+    3586,
+    3615,
+    3934,
+    3951,
+    4142,
+    4174,
+    4575,
+    4948,
+    5107,
+    5430,
+    5729,
+    5769,
+    6063
+  ],
+  "definitions": [
+    {
+      "text": "In-Context Learning",
+      "paper": "Orchid: Flexible and Data-Dependent Convolution for Sequence Modeling"
+    },
+    {
+      "text": "In-Context Learning",
+      "paper": "Visual Autoregressive Modeling: Scalable Image Generation via Next-Scale Prediction"
+    },
+    {
+      "text": "Ability to leverage few-shot examples in prompts to improve task performance. ",
+      "paper": "AMBROSIA: A Benchmark for Parsing Ambiguous Questions into Database Queries"
+    },
+    {
+      "text": "Ability to leverage few‑shot examples to improve performance on the task .",
+      "paper": "Are Large Language Models Good Statisticians?"
+    },
+    {
+      "text": "Using retrieved demonstrations with LLMs to estimate the exploitation value of candidate skills .",
+      "paper": "Exploratory Retrieval-Augmented Planning For Continual Embodied Instruction Following"
+    },
+    {
+      "text": "Leveraging one-shot or few-shot exemplars to guide model reasoning during inference.  ",
+      "paper": "HLM-Cite: Hybrid Language Model Workflow for Text-based Scientific Citation Prediction"
+    },
+    {
+      "text": "Using a single example to improve performance, e.g., learning output format; one-shot improves performance on several tasks (notably PDDS) .",
+      "paper": "MedJourney: Benchmark and Evaluation of Large Language Models over Patient Clinical Journey"
+    },
+    {
+      "text": "Ability to adapt behavior based on input context within a sequence without weight updates; unlocked by input-dependent transition dynamics in selective SSMs. ",
+      "paper": "Theoretical Foundations of Deep Selective State-Space Models"
+    },
+    {
+      "text": "Using instructions and demonstrations to perform new tasks; employed to generate frame-wise prompts and spatial regions (without manual decomposition) .",
+      "paper": "VideoTetris: Towards Compositional Text-to-Video Generation"
+    },
+    {
+      "text": "Ability of an LLM to adapt to a task from prompt-based demonstrations without fine-tuning; used to perform attribute alignment with off-the-shelf GPT‑3.5. ",
+      "paper": "Tackling Uncertain Correspondences for Multi-Modal Entity Alignment"
+    },
+    {
+      "text": "Ability to adapt behavior from examples in the prompt context without parameter updates. ",
+      "paper": "PromptFix: You Prompt and We Fix the Photo"
+    },
+    {
+      "text": "Ability to leverage provided examples (e.g., kNN neighbors) to condition and guide generation without memorizing inputs. ",
+      "paper": "HARMONIC: Harnessing LLMs for Tabular Data Synthesis and Privacy Protection"
+    },
+    {
+      "text": "Ability to learn from examples provided in the prompt; its effectiveness is constrained by context awareness in long inputs .",
+      "paper": "Mixture of In-Context Experts Enhance LLMs' Long Context Awareness"
+    },
+    {
+      "text": "Ability to improve performance on tasks via few-shot demonstrations without parameter updates, including chain-of-thought examples  .",
+      "paper": "ReMI: A Dataset for Reasoning with Multiple Images"
+    },
+    {
+      "text": "Learning from few-shot (5-shot) demonstrations at inference to perform reasoning and choose actions. ",
+      "paper": "LogiCity: Advancing Neuro-Symbolic AI with Abstract Urban Simulation"
+    },
+    {
+      "text": "Ability of LLMs to learn and mimic patterns from input examples in prompts without parameter updates.",
+      "paper": "EPIC: Effective Prompting for Imbalanced-Class Data Synthesis in Tabular Data Classification via Large Language Models"
+    },
+    {
+      "text": "Using in-context prompts to improve model ability across query types (direct and coreference) .",
+      "paper": "Voila-A: Aligning Vision-Language Models with User's Gaze Attention"
+    },
+    {
+      "text": "Using an exemplar within the prompt (e=(S0,q0,a0)) to guide task performance without parameter updates. ",
+      "paper": "SocialGPT: Prompting LLMs for Social Relation Reasoning via Greedy Segment Optimization"
+    },
+    {
+      "text": "LLM capability to adapt from prompts at inference; cited via BLIP-2 as showing notable in-context learning, though not directly evaluated in this work .",
+      "paper": "OW-VISCapTor: Abstractors for Open-World Video Instance Segmentation and Captioning"
+    },
+    {
+      "text": "Learning and applying patterns from the prompt; the induction head is posited as a basic mechanism, reflected in the induction copying primitive .",
+      "paper": "On the Inductive Bias of Stacking Towards Improving Reasoning"
+    },
+    {
+      "text": "Learning from examples and instructions provided in-context; strengthened by longer contexts. ",
+      "paper": "BABILong: Testing the Limits of LLMs with Long Context Reasoning-in-a-Haystack"
+    },
+    {
+      "text": "Using a pre-trained LLM to solve a problem by specifying the problem description and data entirely in the prompt, with no parameter updates .",
+      "paper": "Can large language models explore in-context?"
+    },
+    {
+      "text": "Capability leveraged by LLM communication to coordinate agents without weight changes .",
+      "paper": "$\\texttt{Model-GLUE}$: Democratized LLM Scaling for A Large Model Zoo in the Wild"
+    },
+    {
+      "text": "Use of context prompts to guide prediction; instantiated as in-context forecasting where prior series segments serve as prompts beyond the lookback window.  ",
+      "paper": "AutoTimes: Autoregressive Time Series Forecasters via Large Language Models"
+    },
+    {
+      "text": "Emergent ability to improve via prompt engineering and few-shot examples at inference time  .",
+      "paper": "CALVIN: Improved Contextual Video Captioning via Instruction Tuning"
+    },
+    {
+      "text": "LLM ability to use in-context instructions and examples to perform a new task, here decomposing referring text into short, target-related phrases .",
+      "paper": "Boosting Weakly Supervised Referring Image Segmentation via Progressive Comprehension"
+    },
+    {
+      "text": "Use of in-context examples (#shots) at inference to improve task performance; exploited in LASR and analyzed in the discovered BigBench scaling relation  .",
+      "paper": "Symbolic Regression with a Learned Concept Library"
+    },
+    {
+      "text": "Ability to use demonstrations in the prompt to improve task performance and affect uncertainty .",
+      "paper": "Benchmarking LLMs via Uncertainty Quantification"
+    },
+    {
+      "text": "Ability to learn task application from an exemplar in the prompt; one-shot demonstrations provide needed rules/equations and notably improve accuracy  .",
+      "paper": "MedCalc-Bench: Evaluating Large Language Models for Medical Calculations"
+    },
+    {
+      "text": "Using demonstrations/context to resolve ambiguous cases and align model outputs with task definitions .",
+      "paper": "T2Vs Meet VLMs: A Scalable Multimodal Dataset for Visual Harmfulness Recognition"
+    },
+    {
+      "text": "Using context to predict co-occurring tokens and perform tasks without parameter updates (via induction-heads). ",
+      "paper": "TAIA: Large Language Models are Out-of-Distribution Data Learners"
+    },
+    {
+      "text": "Using long prompts/examples provided in-context to perform tasks; cited as an application that necessitates long-context processing. ",
+      "paper": "An Efficient Recipe for Long Context Extension via Middle-Focused Positional Encoding"
+    }
+  ],
+  "definition_count": 32,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Associative Recall Task Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Orchid: Flexible and Data-Dependent Convolution for Sequence Modeling",
+      "evidence": "The in-context learning experiments evaluate the model’s ability to handle long sequences; performance is reported as test accuracy on associative recall."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Exploration-Integrated Task Planning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Exploratory Retrieval-Augmented Planning For Continual Embodied Instruction Following",
+      "evidence": "The exploitation planner harnesses retrieved, memory-augmented LLMs with in-context learning to score skills ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Chain-of-Thought Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "HLM-Cite: Hybrid Language Model Workflow for Text-based Scientific Citation Prediction",
+      "evidence": "A one-shot/few-shot example demonstrates the logical structure that guides reasoning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "One-shot vs Few-shot CoT Prompting",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "HLM-Cite: Hybrid Language Model Workflow for Text-based Scientific Citation Prediction",
+      "evidence": "Performance with one-shot vs few-shot examples shows CoT’s structural role."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Summarization Ability",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "MedJourney: Benchmark and Evaluation of Large Language Models over Patient Clinical Journey",
+      "evidence": "One-shot example improves PDDS by teaching output format; one-shot improves most tasks for general models ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Input-Controlled Transition Dynamics (Gating)",
+      "other_type": "constructs",
+      "relationship_type": "enables",
+      "paper": "Theoretical Foundations of Deep Selective State-Space Models",
+      "evidence": "Input-dependent transition dynamics unlock in-context learning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM Story Planner Task",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "VideoTetris: Towards Compositional Text-to-Video Generation",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM Spatial Decomposer Task",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "VideoTetris: Towards Compositional Text-to-Video Generation",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Ablation: Without Attribute Preprocessing (AP)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Tackling Uncertain Correspondences for Multi-Modal Entity Alignment",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multi-Modal Entity Alignment (FB15K-DB15K)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Tackling Uncertain Correspondences for Multi-Modal Entity Alignment",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multi-Modal Entity Alignment (FB15K-DB15K)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Tackling Uncertain Correspondences for Multi-Modal Entity Alignment",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Tabular Structure Understanding",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "HARMONIC: Harnessing LLMs for Tabular Data Synthesis and Privacy Protection",
+      "evidence": "Using kNN neighbors as in-context examples helps the LLM see relationships between multiple similar rows."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Tabular Data Generation (by LLMs)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "HARMONIC: Harnessing LLMs for Tabular Data Synthesis and Privacy Protection",
+      "evidence": "Instruction-tuned LLMs leverage in-context learning to generate similar but distinct synthetic rows from kNN-based prompts."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Context Awareness",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Mixture of In-Context Experts Enhance LLMs' Long Context Awareness",
+      "evidence": "Limited context awareness constrains applications such as in‑context learning in long inputs ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LongBench Few‑shot Learning (Average)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Mixture of In-Context Experts Enhance LLMs' Long Context Awareness",
+      "evidence": "LongBench few‑shot scenario (e.g., TREC, TriviaQA, SAMSum, LSHT) operationalizes in‑context learning under long contexts ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Few‑shot (2‑shot) vs Zero‑shot ERP on ReMI",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "ReMI: A Dataset for Reasoning with Multiple Images",
+      "evidence": "Providing two chain‑of‑thought examples increases performance (51.5% to 57.9% overall in one setting)  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multi-Image Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "ReMI: A Dataset for Reasoning with Multiple Images",
+      "evidence": "Few‑shot demonstrations indicate LLMs can learn multi‑image reasoning tasks in context and improve performance ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VAP Hard-Mode Mini Test Overall Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "LogiCity: Advancing Neuro-Symbolic AI with Abstract Urban Simulation",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Pattern Recognition (Sequence Completion)",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "EPIC: Effective Prompting for Imbalanced-Class Data Synthesis in Tabular Data Classification via Large Language Models",
+      "evidence": "EPIC leverages LLMs’ in‑context pattern recognition by formatting demonstrations and triggering completion so the model continues the sequence with a consistent number of samples  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VOILA-COCO Performance (WR, Reward Score)",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "Voila-A: Aligning Vision-Language Models with User's Gaze Attention",
+      "evidence": "An in-context prompt assists VOILA to demonstrate superior ability across both direct and coreference query types ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Ambiguity Resolution",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "AMBROSIA: A Benchmark for Parsing Ambiguous Questions into Database Queries",
+      "evidence": "Few-shot learning improves recall and precision, with ~4% gain on ambiguous recall, though still much lower than unambiguous."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Instruction Following",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "SocialGPT: Prompting LLMs for Social Relation Reasoning via Greedy Segment Optimization",
+      "evidence": "A guidance segment with an exemplar (e=(S0,q0,a0)) is included in the structured prompt to leverage in-context learning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "SocialGPT: Prompting LLMs for Social Relation Reasoning via Greedy Segment Optimization",
+      "evidence": "A guidance segment with an exemplar (e=(S0,q0,a0)) is included in the structured prompt to leverage in-context learning."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-Context Processing",
+      "other_type": "constructs",
+      "relationship_type": "enhances",
+      "paper": "BABILong: Testing the Limits of LLMs with Long Context Reasoning-in-a-Haystack",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-Context Reinforcement Learning (ICRL)",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "Can large language models explore in-context?",
+      "evidence": "ICRL is presented as the next frontier of in-context learning for downstream decision-making ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "In-Context Forecasting Showcase",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "AutoTimes: Autoregressive Time Series Forecasters via Large Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Adaptability to New Domains",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "CALVIN: Improved Contextual Video Captioning via Instruction Tuning",
+      "evidence": "Prompt engineering and few-shot in-context learning enable adaptation to new movies with little annotation ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Few-shot Fine-tuning Captioning",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CALVIN: Improved Contextual Video Captioning via Instruction Tuning",
+      "evidence": "Few-shot fine-tuning at test time improves captioning versus no-context scenarios ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "StatQA Overall Acc(C,M) (%)",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "Are Large Language Models Good Statisticians?",
+      "evidence": "Compared to 0‑shot, 1‑shot increased Acc(C,M) by 9.6% on average for LLaMA‑2/3 and 4.7% for GPT models ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Text Decomposition",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Boosting Weakly Supervised Referring Image Segmentation via Progressive Comprehension",
+      "evidence": "The strong in-context capability of the LLM is leveraged to decompose the text description into target-related phrases ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BigBench MCQ Grade (Scaling Law Evaluation)",
+      "other_type": "measurements",
+      "relationship_type": "predicts",
+      "paper": "Symbolic Regression with a Learned Concept Library",
+      "evidence": "The discovered scaling law ties performance to #shots (in-context examples), asserting exponential gains for low-resource models with diminishing returns as training steps increase ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Knowledge-Directed Discovery",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "Symbolic Regression with a Learned Concept Library",
+      "evidence": "LASR explicitly exploits the LLM’s in-context learning ability as part of its search process ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Benchmarking LLMs via Uncertainty Quantification",
+      "evidence": "Adding demonstrations improves accuracy on average, substantiating the effectiveness of in‑context prompting to stimulate capabilities ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Predictive Uncertainty",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Benchmarking LLMs via Uncertainty Quantification",
+      "evidence": "Demonstrations reduced uncertainty for Llama‑2‑70B but increased it for Yi‑34B, indicating prompt demonstrations can alter uncertainty in either direction ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MEDCALC-BENCH Overall Accuracy (Zero-shot Direct)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MedCalc-Bench: Evaluating Large Language Models for Medical Calculations",
+      "evidence": "One-shot exemplars assess in-context learning effects on accuracy; larger gains observed ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Type A Knowledge Error Proportion",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "MedCalc-Bench: Evaluating Large Language Models for Medical Calculations",
+      "evidence": "With one-shot CoT, Type A errors drop below 50% across LLMs, showing exemplar effectiveness for providing rules/equations ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SMID Alignment with Annotator",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "T2Vs Meet VLMs: A Scalable Multimodal Dataset for Visual Harmfulness Recognition",
+      "evidence": "ICL is used to resolve ambiguous cases, ensuring alignment between annotators and definitions; strong alignment observed with human-labeled SMID  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Contextual Mapping (Attention-based)",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "TAIA: Large Language Models are Out-of-Distribution Data Learners",
+      "evidence": "Attention with RoPE computes contextual mappings and supports in-context predictions via induction heads."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-Context Understanding",
+      "other_type": "constructs",
+      "relationship_type": "enables",
+      "paper": "An Efficient Recipe for Long Context Extension via Middle-Focused Positional Encoding",
+      "evidence": "In-context learning is cited as an application necessitating processing significantly longer contexts."
+    }
+  ],
+  "relationship_count": 39,
+  "incoming_relationship_count": 7,
+  "outgoing_relationship_count": 32
+}

@@ -1,0 +1,322 @@
+{
+  "canonical_name": "Complex Reasoning",
+  "type": "construct",
+  "canonical_definition": "Complex Reasoning refers to the capacity to perform multi-step, multi-aspect reasoning that integrates diverse clues, modules, or knowledge sources to solve intricate tasks. It is often characterized by hierarchical processing, structured transitions between reasoning steps, and the ability to handle knowledge-intensive or contextually complex problems across domains such as mathematics, chemistry, 3D scene analysis, and neuroimaging. Some papers emphasize its dependence on generalizable strategies or system-2-like cognition, while others focus on its role in answering higher-order questions or enabling implicit inference beyond explicit information.",
+  "expert_reviewed": false,
+  "names": [
+    "Complex Reasoning"
+  ],
+  "papers": [
+    "AMOR: A Recipe for Building Adaptable Modular Knowledge Agents Through Process Feedback",
+    "AlchemistCoder: Harmonizing and Eliciting Code Capability by Hindsight Tuning on Multi-source Data",
+    "Boosting the Potential of Large Language Models with an Intelligent Information Assistant",
+    "Can LLMs Solve Molecule Puzzles? A Multimodal Benchmark for Molecular Structure Elucidation",
+    "DART-Math: Difficulty-Aware Rejection Tuning for Mathematical Problem-Solving",
+    "MMScan: A Multi-Modal 3D Scene Dataset with Hierarchical Grounded Language Annotations",
+    "Many-Shot In-Context Learning",
+    "Neuro-Vision to Language: Enhancing Brain Recording-based Visual Reconstruction and Language Interaction",
+    "One Token to Seg Them All: Language Instructed Reasoning Segmentation in Videos",
+    "StrategyLLM: Large Language Models as Strategy Generators, Executors, Optimizers, and Evaluators for Problem Solving"
+  ],
+  "paper_count": 10,
+  "group_ids": [
+    168,
+    380,
+    466,
+    499,
+    1430,
+    2729,
+    3110,
+    3630,
+    4159,
+    6202
+  ],
+  "definitions": [
+    {
+      "text": "Ability to tackle intricate tasks requiring advanced multi-step reasoning; identified as a core challenge for current LLMs. ",
+      "paper": "DART-Math: Difficulty-Aware Rejection Tuning for Mathematical Problem-Solving"
+    },
+    {
+      "text": "System-2-like reasoning that integrates multiple clues and supports multi-step problem solving in chemistry contexts .",
+      "paper": "Can LLMs Solve Molecule Puzzles? A Multimodal Benchmark for Molecular Structure Elucidation"
+    },
+    {
+      "text": "Complex Reasoning",
+      "paper": "Many-Shot In-Context Learning"
+    },
+    {
+      "text": "Ability to tackle more complex problems; strengthened by generalizable strategies  .",
+      "paper": "StrategyLLM: Large Language Models as Strategy Generators, Executors, Optimizers, and Evaluators for Problem Solving"
+    },
+    {
+      "text": "Answering higher‑order questions about stimulus content and context using information embedded in fMRI data.  ",
+      "paper": "Neuro-Vision to Language: Enhancing Brain Recording-based Visual Reconstruction and Language Interaction"
+    },
+    {
+      "text": "Handling advanced multi-aspect queries requiring reasoning over 3D scenes; stronger capabilities observed for certain models on advanced QA cases .",
+      "paper": "MMScan: A Multi-Modal 3D Scene Dataset with Hierarchical Grounded Language Annotations"
+    },
+    {
+      "text": "Ability to solve challenging multi-step reasoning problems. ",
+      "paper": "AlchemistCoder: Harmonizing and Eliciting Code Capability by Hindsight Tuning on Multi-source Data"
+    },
+    {
+      "text": "Multi-step reasoning required to handle complex, knowledge-intensive tasks and questions  .",
+      "paper": "Boosting the Potential of Large Language Models with an Intelligent Information Assistant"
+    },
+    {
+      "text": "Multi-step reasoning over an FSM of modules to solve knowledge-seeking tasks with structured transitions and dependencies  .",
+      "paper": "AMOR: A Recipe for Building Adaptable Modular Knowledge Agents Through Process Feedback"
+    },
+    {
+      "text": "Inferring target objects from language instructions that require implicit reasoning beyond explicit category names. ",
+      "paper": "One Token to Seg Them All: Language Instructed Reasoning Segmentation in Videos"
+    }
+  ],
+  "definition_count": 10,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "DART-Math: Difficulty-Aware Rejection Tuning for Mathematical Problem-Solving",
+      "evidence": "The paper frames mathematical reasoning as one of the most difficult categories of reasoning, situating it within the broader construct of reasoning."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "DART-Math: Difficulty-Aware Rejection Tuning for Mathematical Problem-Solving",
+      "evidence": "The paper frames mathematical reasoning as one of the most difficult categories of reasoning, situating it within the broader construct of reasoning."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Molecular Structure Elucidation Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "Can LLMs Solve Molecule Puzzles? A Multimodal Benchmark for Molecular Structure Elucidation",
+      "evidence": "Task framed as system-2-like, multi-step reasoning ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Strategy Formulation",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "StrategyLLM: Large Language Models as Strategy Generators, Executors, Optimizers, and Evaluators for Problem Solving",
+      "evidence": "Explicitly incorporating effective strategies significantly enhances complex reasoning abilities of LLMs ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "StrategyLLM: Large Language Models as Strategy Generators, Executors, Optimizers, and Evaluators for Problem Solving",
+      "evidence": "Enhanced performance on harder MATH problems indicates gains in complex reasoning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "StrategyLLM: Large Language Models as Strategy Generators, Executors, Optimizers, and Evaluators for Problem Solving",
+      "evidence": "Enhanced performance on harder MATH problems indicates gains in complex reasoning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH Few-shot Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "StrategyLLM: Large Language Models as Strategy Generators, Executors, Optimizers, and Evaluators for Problem Solving",
+      "evidence": "Enhanced performance on harder MATH problems indicates gains in complex reasoning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Instruction‑Following QA over fMRI (NSD stimuli)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Neuro-Vision to Language: Enhancing Brain Recording-based Visual Reconstruction and Language Interaction",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "3D Question Answering Ability",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "MMScan: A Multi-Modal 3D Scene Dataset with Hierarchical Grounded Language Annotations",
+      "evidence": "Advanced QA cases highlight need for complex reasoning; certain models show stronger capability here ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Capability (Non-code)",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "AlchemistCoder: Harmonizing and Eliciting Code Capability by Hindsight Tuning on Multi-source Data",
+      "evidence": "General capability is demonstrated on BBH (challenging reasoning)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BBH Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "AlchemistCoder: Harmonizing and Eliciting Code Capability by Hindsight Tuning on Multi-source Data",
+      "evidence": "Table reports BBH scores for models."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HotpotQA QA Performance",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Boosting the Potential of Large Language Models with an Intelligent Information Assistant",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "2WikiMultiHopQA QA Performance",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Boosting the Potential of Large Language Models with an Intelligent Information Assistant",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Bamboogle QA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Boosting the Potential of Large Language Models with an Intelligent Information Assistant",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Memory Management",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Boosting the Potential of Large Language Models with an Intelligent Information Assistant",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge Management",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Boosting the Potential of Large Language Models with an Intelligent Information Assistant",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Question Decomposition (Planning)",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "AMOR: A Recipe for Building Adaptable Modular Knowledge Agents Through Process Feedback",
+      "evidence": "FSM-based reasoning decomposes questions into sub-queries handled by a Decompose module  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Relevance Judgment (Information Triage)",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "AMOR: A Recipe for Building Adaptable Modular Knowledge Agents Through Process Feedback",
+      "evidence": "The Judge module assesses whether retrieved content is relevant to the sub-query ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Answer Extraction (Information Extraction)",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "AMOR: A Recipe for Building Adaptable Modular Knowledge Agents Through Process Feedback",
+      "evidence": "The Answer module extracts the answer and supporting evidence passages ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Evidence-Grounded Task Completion (Synthesis)",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "AMOR: A Recipe for Building Adaptable Modular Knowledge Agents Through Process Feedback",
+      "evidence": "The Complete module synthesizes the final answer from collected evidence ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Evidence Retrieval Coordination",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "AMOR: A Recipe for Building Adaptable Modular Knowledge Agents Through Process Feedback",
+      "evidence": "The FSM includes retrieval and navigation steps (SearchPsg, NextDoc) to gather evidence iteratively ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HotpotQA Multi-hop QA (EM/F1)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "AMOR: A Recipe for Building Adaptable Modular Knowledge Agents Through Process Feedback",
+      "evidence": "AMOR’s FSM paradigm is more effective for complex reasoning, reflected in higher EM/F1 on HotpotQA compared to baselines  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "QASPER Scientific QA (EM/F1)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "AMOR: A Recipe for Building Adaptable Modular Knowledge Agents Through Process Feedback",
+      "evidence": "Improvements on QASPER EM/F1 indicate gains in complex, document-grounded reasoning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PubMedQA Biomedical QA (Accuracy)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "AMOR: A Recipe for Building Adaptable Modular Knowledge Agents Through Process Feedback",
+      "evidence": "Accuracy gains on PubMedQA accompany FSM-based reasoning and retrieval coordination ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language‑Instructed Video Reasoning Segmentation (Composite Capability)",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "One Token to Seg Them All: Language Instructed Reasoning Segmentation in Videos",
+      "evidence": "Goal requires implicit reasoning to follow language queries."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Image Reasoning Segmentation (LISA ReasonSeg)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "One Token to Seg Them All: Language Instructed Reasoning Segmentation in Videos",
+      "evidence": "Image reasoning segmentation benchmark evaluates implicit reasoning for segmentation (gIoU/cIoU)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ReasonVOS",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "One Token to Seg Them All: Language Instructed Reasoning Segmentation in Videos",
+      "evidence": "ReasonVOS long queries require complex reasoning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Everyday Decision Assistance (Applied)",
+      "other_type": "measurements",
+      "relationship_type": "predicts",
+      "paper": "One Token to Seg Them All: Language Instructed Reasoning Segmentation in Videos",
+      "evidence": "Language-instructed reasoning segmentation aids decision tasks (e.g., selecting a lively pet)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Education Student Engagement Analysis (Applied)",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "One Token to Seg Them All: Language Instructed Reasoning Segmentation in Videos",
+      "evidence": "Broader impacts propose assisting teachers in identifying engagement patterns via reasoning-based video analysis."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Healthcare Patient Activity Monitoring (Applied)",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "One Token to Seg Them All: Language Instructed Reasoning Segmentation in Videos",
+      "evidence": "Proposed application to monitor patient activities and support early intervention."
+    }
+  ],
+  "relationship_count": 30,
+  "incoming_relationship_count": 9,
+  "outgoing_relationship_count": 21
+}

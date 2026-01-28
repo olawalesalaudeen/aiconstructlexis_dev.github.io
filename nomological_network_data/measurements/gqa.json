@@ -1,0 +1,291 @@
+{
+  "canonical_name": "GQA Accuracy (%)",
+  "type": "measurement",
+  "canonical_definition": "GQA Accuracy (%) measures performance on the GQA dataset, a benchmark for compositional visual question answering that evaluates real-world visual reasoning and language-image understanding capabilities in multimodal models. The task involves answering open-ended questions about images with compositional structure, requiring spatial and logical reasoning, and is commonly used to assess generalization in vision-language systems. Some papers note its application to identify language bias or domain-specific gaps in model performance.",
+  "expert_reviewed": false,
+  "names": [
+    "GQA",
+    "GQA Accuracy",
+    "GQA Accuracy (%)",
+    "GQA Score",
+    "VQAv2 Score"
+  ],
+  "papers": [
+    "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark",
+    "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+    "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts",
+    "Delta-CoMe: Training-Free Delta-Compression with Mixed-Precision for Large Language Models",
+    "Dense Connector for MLLMs",
+    "DenseFusion-1M: Merging Vision Experts for Comprehensive Multimodal Perception",
+    "Efficient Large Multi-modal Models via Visual Context Compression",
+    "Instruction-Guided Visual Masking",
+    "LLMs Can Evolve Continually on Modality for $\\mathbb{X}$-Modal Reasoning",
+    "LOVA3: Learning to Visual Question Answering, Asking and Assessment",
+    "Meteor: Mamba-based Traversal of Rationale for Large Language and Vision Models",
+    "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models",
+    "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+    "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding",
+    "RoboMamba: Efficient Vision-Language-Action Model for Robotic Reasoning and Manipulation",
+    "Shadowcast: Stealthy Data Poisoning Attacks Against Vision-Language Models",
+    "Unified Generative and Discriminative Training for Multi-modal Large Language Models",
+    "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks"
+  ],
+  "paper_count": 18,
+  "group_ids": [
+    666,
+    683,
+    762,
+    1764,
+    1858,
+    2543,
+    2600,
+    3133,
+    4609,
+    5426,
+    5668
+  ],
+  "definitions": [
+    {
+      "text": "Real-world visual reasoning and compositional question answering. GQA Accuracy (%)",
+      "paper": "DenseFusion-1M: Merging Vision Experts for Comprehensive Multimodal Perception"
+    },
+    {
+      "text": "Real‑world visual reasoning and compositional question answering. GQA Accuracy (%)",
+      "paper": "Instruction-Guided Visual Masking"
+    },
+    {
+      "text": "Real‑world visual reasoning and compositional question answering. GQA Accuracy (%) .",
+      "paper": "LLMs Can Evolve Continually on Modality for $\\mathbb{X}$-Modal Reasoning"
+    },
+    {
+      "text": "Visual reasoning and compositional question answering for images GQA Accuracy (%)",
+      "paper": "Delta-CoMe: Training-Free Delta-Compression with Mixed-Precision for Large Language Models"
+    },
+    {
+      "text": "Real-world visual reasoning and compositional QA GQA Accuracy (%)",
+      "paper": "Unified Generative and Discriminative Training for Multi-modal Large Language Models"
+    },
+    {
+      "text": "Compositional/spatial reasoning in VQA GQA Accuracy (%)",
+      "paper": "RoboMamba: Efficient Vision-Language-Action Model for Robotic Reasoning and Manipulation"
+    },
+    {
+      "text": "Compositional visual reasoning for QA GQA Accuracy (%)",
+      "paper": "Meteor: Mamba-based Traversal of Rationale for Large Language and Vision Models"
+    },
+    {
+      "text": "Compositional visual reasoning QA GQA Accuracy (%)",
+      "paper": "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding"
+    },
+    {
+      "text": "Compositional visual question answering GQA Accuracy (↑)",
+      "paper": "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models"
+    },
+    {
+      "text": "Compositional visual question answering on images GQA Accuracy (%)",
+      "paper": "Dense Connector for MLLMs"
+    },
+    {
+      "text": "Compositional visual question answering; shows strong language bias in gap analysis. GQA Accuracy (%)",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs"
+    },
+    {
+      "text": "Visual question answering utility on GQA GQA Accuracy (%) ()",
+      "paper": "Shadowcast: Stealthy Data Poisoning Attacks Against Vision-Language Models"
+    },
+    {
+      "text": "GQA dataset accuracy reported in the comparison table . GQA Accuracy (%)",
+      "paper": "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts"
+    },
+    {
+      "text": "Compositional VQA GQA Accuracy (%)",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks"
+    },
+    {
+      "text": "Real-world visual reasoning and compositional VQA reported for comparison. GQA Accuracy (%)",
+      "paper": "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark"
+    },
+    {
+      "text": "Visual question answering over day-to-day images GQA Accuracy (%)",
+      "paper": "Efficient Large Multi-modal Models via Visual Context Compression"
+    },
+    {
+      "text": "General visual question answering with compositionality GQA Accuracy (%)",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context"
+    },
+    {
+      "text": "Performance on GQA benchmark used to evaluate VQA capabilities in experiments GQA Score",
+      "paper": "LOVA3: Learning to Visual Question Answering, Asking and Assessment"
+    },
+    {
+      "text": "Performance on VQAv2 benchmark used to evaluate VQA capabilities in experiments VQAv2 Score",
+      "paper": "LOVA3: Learning to Visual Question Answering, Asking and Assessment"
+    }
+  ],
+  "definition_count": 19,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Comprehensive Visual Perception",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "DenseFusion-1M: Merging Vision Experts for Comprehensive Multimodal Perception",
+      "evidence": "GQA is included among evaluation benchmarks; improvements indicate better perception and reasoning over scenes ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Instruction Following",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Instruction-Guided Visual Masking",
+      "evidence": "GQA evaluates real‑world visual reasoning and QA, used to assess instruction following ability."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Vision-Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Shadowcast: Stealthy Data Poisoning Attacks Against Vision-Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Question Answering",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "X-Modal Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "LLMs Can Evolve Continually on Modality for $\\mathbb{X}$-Modal Reasoning",
+      "evidence": "GQA evaluates real‑world visual reasoning and compositional QA, and is reported in the paper’s comparisons ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Spatial Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "RoboMamba: Efficient Vision-Language-Action Model for Robotic Reasoning and Manipulation",
+      "evidence": "The authors note improved spatial identification performance on GQA through co-training ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SAPIEN Manipulation Success Rate (%)",
+      "other_type": "measurements",
+      "relationship_type": "predicts",
+      "paper": "RoboMamba: Efficient Vision-Language-Action Model for Robotic Reasoning and Manipulation",
+      "evidence": "Ablation Figure 3b includes GQA among reasoning metrics whose improvement aligns with higher manipulation accuracy ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Image Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Meteor: Mamba-based Traversal of Rationale for Large Language and Vision Models",
+      "evidence": "GQA is included among reported visual QA benchmarks ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multi‑Modal Understanding (Vision‑Language)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Delta-CoMe: Training-Free Delta-Compression with Mixed-Precision for Large Language Models",
+      "evidence": "Sec. 4.1 uses GQA to evaluate vision‑language models with accuracy ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual-Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding",
+      "evidence": "GQA accuracy reported in VL benchmark table ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "evidence": "GQA included among academic benchmarks ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark",
+      "evidence": "GQA focuses on visual reasoning/compositionality; reported alongside CVQA results ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Question Answering",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models",
+      "evidence": "GQA accuracy in General group ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Dense Connector for MLLMs",
+      "evidence": "Image QA benchmarks (e.g., GQA) are used to quantify improved visual understanding with Dense Connector variants  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Recognition Capability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Unveiling Encoder-Free Vision-Language Models",
+      "evidence": "Ablations show PAL improves GQA accuracy (Table 4) and scaling curves confirm gains  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generative Capability (Multimodal Generation)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Unified Generative and Discriminative Training for Multi-modal Large Language Models",
+      "evidence": "Included in comprehensive generative evaluation suite ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Image-Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Efficient Large Multi-modal Models via Visual Context Compression",
+      "evidence": "GQA is a core image-language VQA benchmark used throughout the paper’s evaluations ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Question Answering",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "evidence": "GQA is used for general VQA evaluation of MLLMs including MoVA  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Answering Ability (Visual Question Answering)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "LOVA3: Learning to Visual Question Answering, Asking and Assessment",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Answering Ability (Visual Question Answering)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "LOVA3: Learning to Visual Question Answering, Asking and Assessment",
+      "evidence": ""
+    }
+  ],
+  "relationship_count": 20,
+  "incoming_relationship_count": 19,
+  "outgoing_relationship_count": 1
+}

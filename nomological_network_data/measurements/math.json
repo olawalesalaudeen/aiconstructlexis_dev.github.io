@@ -1,0 +1,497 @@
+{
+  "canonical_name": "MATH Accuracy",
+  "type": "measurement",
+  "canonical_definition": "MATH Accuracy refers to a benchmark for evaluating mathematical problem-solving ability using competition-level problems from the MATH dataset (Hendrycks MATH). It assesses accuracy on formal mathematics tasks spanning subjects such as Algebra, Prealgebra, Intermediate Algebra, Counting and Probability, Number Theory, Geometry, and Precalculus, often framed as a core evaluation metric for mathematical reasoning. The benchmark is commonly applied to measure performance across varying model architectures, fine-tuning methods, and decoding strategies in solving complex mathematical problems.",
+  "expert_reviewed": false,
+  "names": [
+    "MATH",
+    "MATH Accuracy",
+    "MATH Accuracy (%)"
+  ],
+  "papers": [
+    "Bridging The Gap between Low-rank and Orthogonal Adaptation via Householder Reflection Adaptation",
+    "Cal-DPO: Calibrated Direct Preference Optimization for Language Model Alignment",
+    "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning",
+    "DART-Math: Difficulty-Aware Rejection Tuning for Mathematical Problem-Solving",
+    "Decompose, Analyze and Rethink: Solving Intricate Problems with Human-like Reasoning Cycle",
+    "Delta-CoMe: Training-Free Delta-Compression with Mixed-Precision for Large Language Models",
+    "Learning from Teaching Regularization: Generalizable Correlations Should be Easy to Imitate",
+    "MAmmoTH2: Scaling Instructions from the Web",
+    "MathPile: A Billion-Token-Scale Pretraining Corpus for Math",
+    "Neuro-Symbolic Data Generation for Math Reasoning",
+    "OpenMathInstruct-1: A 1.8 Million Math Instruction Tuning Dataset",
+    "ReST-MCTS*: LLM Self-Training via Process Reward Guided Tree Search",
+    "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+    "SciInstruct: a Self-Reflective Instruction Annotated Dataset for Training Scientific Language Models",
+    "StrategyLLM: Large Language Models as Strategy Generators, Executors, Optimizers, and Evaluators for Problem Solving",
+    "TAIA: Large Language Models are Out-of-Distribution Data Learners",
+    "Toward Self-Improvement of LLMs via Imagination, Searching, and Criticizing",
+    "UltraMedical: Building Specialized Generalists in Biomedicine",
+    "VB-LoRA: Extreme Parameter Efficient Fine-Tuning with Vector Banks",
+    "WizardArena: Post-training Large Language Models via Simulated Offline Chatbot Arena"
+  ],
+  "paper_count": 20,
+  "group_ids": [
+    182,
+    486,
+    974,
+    1115,
+    1711,
+    2076,
+    2362,
+    2411,
+    3605,
+    3688,
+    4422,
+    4718,
+    5052
+  ],
+  "definitions": [
+    {
+      "text": "Formal mathematical problem solving MATH Accuracy (%) .",
+      "paper": "WizardArena: Post-training Large Language Models via Simulated Offline Chatbot Arena"
+    },
+    {
+      "text": "Mathematical problem solving. MATH Accuracy (%)",
+      "paper": "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?"
+    },
+    {
+      "text": "Formal mathematics problem solving MATH Accuracy (%)",
+      "paper": "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning"
+    },
+    {
+      "text": "Mathematical problem solving MATH Accuracy (%)",
+      "paper": "UltraMedical: Building Specialized Generalists in Biomedicine"
+    },
+    {
+      "text": "Mathematical problem-solving accuracy MATH Accuracy (%)",
+      "paper": "TAIA: Large Language Models are Out-of-Distribution Data Learners"
+    },
+    {
+      "text": "Formal mathematics problem solving (Hendrycks MATH) . MATH Accuracy (%)",
+      "paper": "VB-LoRA: Extreme Parameter Efficient Fine-Tuning with Vector Banks"
+    },
+    {
+      "text": "Accuracy on competition-level math problems MATH Accuracy (%)",
+      "paper": "Bridging The Gap between Low-rank and Orthogonal Adaptation via Householder Reflection Adaptation"
+    },
+    {
+      "text": "Competition-level math problem solving MATH Accuracy (%)",
+      "paper": "MAmmoTH2: Scaling Instructions from the Web"
+    },
+    {
+      "text": "Competition-level mathematics problems MATH Accuracy (%)",
+      "paper": "Cal-DPO: Calibrated Direct Preference Optimization for Language Model Alignment"
+    },
+    {
+      "text": "Accuracy on the MATH benchmark for mathematical problem solving, used as a core evaluation task.  MATH Accuracy (%)",
+      "paper": "DART-Math: Difficulty-Aware Rejection Tuning for Mathematical Problem-Solving"
+    },
+    {
+      "text": "Accuracy on math competition problems across Algebra, Prealgebra, Intermediate Algebra, Counting and Probability, Number Theory, Geometry, and Precalculus MATH Accuracy (%)",
+      "paper": "StrategyLLM: Large Language Models as Strategy Generators, Executors, Optimizers, and Evaluators for Problem Solving"
+    },
+    {
+      "text": "Competition-level math problem solving with GPT-4 backbone MATH Accuracy (ACC % )",
+      "paper": "Decompose, Analyze and Rethink: Solving Intricate Problems with Human-like Reasoning Cycle"
+    },
+    {
+      "text": "Accuracy on competitive‑level mathematical reasoning for LLaMA‑1/2 7B under ICL/SFT/LOT comparisons MATH Accuracy (%)",
+      "paper": "Learning from Teaching Regularization: Generalizable Correlations Should be Easy to Imitate"
+    },
+    {
+      "text": "Mathematical problem solving on the MATH dataset MATH Accuracy (%)",
+      "paper": "Delta-CoMe: Training-Free Delta-Compression with Mixed-Precision for Large Language Models"
+    },
+    {
+      "text": "Mathematical problem solving benchmark (proof/style math). MATH Accuracy (%)",
+      "paper": "SciInstruct: a Self-Reflective Instruction Annotated Dataset for Training Scientific Language Models"
+    },
+    {
+      "text": "Mathematical problem solving on the MATH dataset; reported under greedy and ηMCTS decoding  . MATH Accuracy (%)",
+      "paper": "Toward Self-Improvement of LLMs via Imagination, Searching, and Criticizing"
+    },
+    {
+      "text": "Competition-level mathematics problem solving performance MATH Accuracy (Pass@1 CoT or equivalent)  .",
+      "paper": "Neuro-Symbolic Data Generation for Math Reasoning"
+    },
+    {
+      "text": "Accuracy on the MATH benchmark, including analyses by subject and difficulty level MATH Accuracy (%)",
+      "paper": "OpenMathInstruct-1: A 1.8 Million Math Instruction Tuning Dataset"
+    },
+    {
+      "text": "Competition-level mathematics problem solving MATH Accuracy (%)",
+      "paper": "MathPile: A Billion-Token-Scale Pretraining Corpus for Math"
+    },
+    {
+      "text": "Accuracy on the MATH benchmark to evaluate search policy performance under the same search budget; used alongside SciBench in comparisons . MATH Accuracy (%)",
+      "paper": "ReST-MCTS*: LLM Self-Training via Process Reward Guided Tree Search"
+    }
+  ],
+  "definition_count": 20,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "DART-Math: Difficulty-Aware Rejection Tuning for Mathematical Problem-Solving",
+      "evidence": "The study uses the MATH dataset to measure mathematical problem-solving performance."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "DART-Math: Difficulty-Aware Rejection Tuning for Mathematical Problem-Solving",
+      "evidence": "The study uses the MATH dataset to measure mathematical problem-solving performance."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "StrategyLLM: Large Language Models as Strategy Generators, Executors, Optimizers, and Evaluators for Problem Solving",
+      "evidence": "MATH benchmark evaluates mathematical reasoning across multiple subdomains ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "StrategyLLM: Large Language Models as Strategy Generators, Executors, Optimizers, and Evaluators for Problem Solving",
+      "evidence": "MATH benchmark evaluates mathematical reasoning across multiple subdomains ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Complex Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "StrategyLLM: Large Language Models as Strategy Generators, Executors, Optimizers, and Evaluators for Problem Solving",
+      "evidence": "Enhanced performance on harder MATH problems indicates gains in complex reasoning ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "WizardArena: Post-training Large Language Models via Simulated Offline Chatbot Arena",
+      "evidence": "MATH is included among reasoning/math benchmarks ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "WizardArena: Post-training Large Language Models via Simulated Offline Chatbot Arena",
+      "evidence": "MATH is included among reasoning/math benchmarks ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Bridging The Gap between Low-rank and Orthogonal Adaptation via Householder Reflection Adaptation",
+      "evidence": "MATH validation accuracy is used to evaluate mathematical reasoning (Figure 1c; Sec. 4.2)."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Bridging The Gap between Low-rank and Orthogonal Adaptation via Householder Reflection Adaptation",
+      "evidence": "MATH validation accuracy is used to evaluate mathematical reasoning (Figure 1c; Sec. 4.2)."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Capabilities (Capabilities Component)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+      "evidence": "Included in the capabilities benchmark set ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Decompose, Analyze and Rethink: Solving Intricate Problems with Human-like Reasoning Cycle",
+      "evidence": "MATH assesses complex mathematical reasoning; accuracy is reported with GPT-4 backbone ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Decompose, Analyze and Rethink: Solving Intricate Problems with Human-like Reasoning Cycle",
+      "evidence": "MATH assesses complex mathematical reasoning; accuracy is reported with GPT-4 backbone ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Learning from Teaching Regularization: Generalizable Correlations Should be Easy to Imitate",
+      "evidence": "MATH is used as a mathematical reasoning benchmark for LLMs (Table 2) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Learning from Teaching Regularization: Generalizable Correlations Should be Easy to Imitate",
+      "evidence": "MATH is used as a mathematical reasoning benchmark for LLMs (Table 2) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Delta-CoMe: Training-Free Delta-Compression with Mixed-Precision for Large Language Models",
+      "evidence": "Sec. 4.1 lists MATH for math with accuracy as the score ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Delta-CoMe: Training-Free Delta-Compression with Mixed-Precision for Large Language Models",
+      "evidence": "Sec. 4.1 lists MATH for math with accuracy as the score ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "SciInstruct: a Self-Reflective Instruction Annotated Dataset for Training Scientific Language Models",
+      "evidence": "MATH used to measure mathematical problem solving; accuracy."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "SciInstruct: a Self-Reflective Instruction Annotated Dataset for Training Scientific Language Models",
+      "evidence": "MATH used to measure mathematical problem solving; accuracy."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "SVFT: Parameter-Efficient Fine-Tuning with Singular Vectors",
+      "evidence": "MATH scores are reported alongside GSM-8K as math reasoning performance  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "SVFT: Parameter-Efficient Fine-Tuning with Singular Vectors",
+      "evidence": "MATH scores are reported alongside GSM-8K as math reasoning performance  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "MAmmoTH2: Scaling Instructions from the Web",
+      "evidence": "MATH evaluates complex mathematical reasoning on competition problems ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "MAmmoTH2: Scaling Instructions from the Web",
+      "evidence": "MATH evaluates complex mathematical reasoning on competition problems ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Cal-DPO: Calibrated Direct Preference Optimization for Language Model Alignment",
+      "evidence": "Mathematical reasoning is evaluated with the MATH dataset ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Cal-DPO: Calibrated Direct Preference Optimization for Language Model Alignment",
+      "evidence": "Mathematical reasoning is evaluated with the MATH dataset ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning",
+      "evidence": "MATH results are reported to assess math ability"
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning",
+      "evidence": "MATH results are reported to assess math ability"
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Toward Self-Improvement of LLMs via Imagination, Searching, and Criticizing",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Toward Self-Improvement of LLMs via Imagination, Searching, and Criticizing",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Self-Improvement (Self-Learning/Self-Correction)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Toward Self-Improvement of LLMs via Imagination, Searching, and Criticizing",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Neuro-Symbolic Data Generation for Math Reasoning",
+      "evidence": "Evaluation on MATH quantifies competition-level reasoning improvements from the proposed data generation approach  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Neuro-Symbolic Data Generation for Math Reasoning",
+      "evidence": "Evaluation on MATH quantifies competition-level reasoning improvements from the proposed data generation approach  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Intrinsic Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Neuro-Symbolic Data Generation for Math Reasoning",
+      "evidence": "Performance on MATH without tool use reflects intrinsic reasoning capability ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "OpenMathInstruct-1: A 1.8 Million Math Instruction Tuning Dataset",
+      "evidence": "The paper evaluates math reasoning on MATH, reporting competitive accuracy (e.g., 50.7% for their best model) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "OpenMathInstruct-1: A 1.8 Million Math Instruction Tuning Dataset",
+      "evidence": "The paper evaluates math reasoning on MATH, reporting competitive accuracy (e.g., 50.7% for their best model) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Competition-level Mathematical Problem Solving",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "MathPile: A Billion-Token-Scale Pretraining Corpus for Math",
+      "evidence": "MATH is a competition-level mathematics benchmark used for evaluation ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "ReST-MCTS*: LLM Self-Training via Process Reward Guided Tree Search",
+      "evidence": "MATH is used to evaluate reasoning/search policies under the same search budget ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "ReST-MCTS*: LLM Self-Training via Process Reward Guided Tree Search",
+      "evidence": "MATH is used to evaluate reasoning/search policies under the same search budget ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Planning-based Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "ReST-MCTS*: LLM Self-Training via Process Reward Guided Tree Search",
+      "evidence": "The search algorithm is validated under the same budget on MATH and shows higher accuracy than prior search policies ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Reasoning (Mathematical/Logical)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "UltraMedical: Building Specialized Generalists in Biomedicine",
+      "evidence": "MATH evaluates mathematical reasoning."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "TAIA: Large Language Models are Out-of-Distribution Data Learners",
+      "evidence": "MATH is used to evaluate math reasoning."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "TAIA: Large Language Models are Out-of-Distribution Data Learners",
+      "evidence": "MATH is used to evaluate math reasoning."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Learning Goal-Conditioned Representations for Language Reward Models",
+      "evidence": "MATH is included among the math benchmarks for evaluating policy accuracy ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Learning Goal-Conditioned Representations for Language Reward Models",
+      "evidence": "MATH is included among the math benchmarks for evaluating policy accuracy ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "VB-LoRA: Extreme Parameter Efficient Fine-Tuning with Vector Banks",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "VB-LoRA: Extreme Parameter Efficient Fine-Tuning with Vector Banks",
+      "evidence": ""
+    }
+  ],
+  "relationship_count": 45,
+  "incoming_relationship_count": 45,
+  "outgoing_relationship_count": 0
+}

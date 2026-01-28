@@ -1,0 +1,1865 @@
+{
+  "canonical_name": "Instruction Following",
+  "type": "construct",
+  "canonical_definition": "Instruction Following is the ability of large language models (LLMs) to interpret and execute explicit natural language instructions to generate task-specific responses or structured outputs, often enhanced through instruction tuning or alignment processes. This capability involves adhering to constraints (e.g., format, rules, complexity) and is critical for aligning model behavior with human intentions across single-turn, multi-turn, and multimodal settings. While some definitions emphasize sensitivity to prompt engineering and explicit task induction, others highlight its role in enabling controllability, structured output generation, or performance in long-horizon tasks, with variations in scope depending on application domains (e.g., robotics, code generation, vision-language tasks).",
+  "expert_reviewed": false,
+  "names": [
+    "Instruction Following"
+  ],
+  "papers": [
+    "$\\textit{Bifr\\\"ost}$: 3D-Aware Image Compositing with Language Instructions",
+    "Adversarial Moment-Matching Distillation of Large Language Models",
+    "AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents",
+    "AlchemistCoder: Harmonizing and Eliciting Code Capability by Hindsight Tuning on Multi-source Data",
+    "AutoGuide: Automated Generation and Selection of Context-Aware Guidelines for Large Language Model Agents",
+    "Benchmarking Complex Instruction-Following with Multiple Constraints Composition",
+    "Benchmarking LLMs via Uncertainty Quantification",
+    "Bias Amplification in Language Model Evolution: An Iterated Learning Perspective",
+    "Biomedical Visual Instruction Tuning with Clinician Preference Alignment",
+    "ChatCam: Empowering Camera Control through Conversational AI",
+    "CoIN: A Benchmark of Continual Instruction Tuning for Multimodel Large Language Models",
+    "Compact Language Models via Pruning and Knowledge Distillation",
+    "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning",
+    "Customizing Language Models with Instance-wise LoRA for Sequential Recommendation",
+    "DARG: Dynamic Evaluation of Large Language Models via Adaptive Reasoning Graph",
+    "DeiSAM: Segment Anything with Deictic Prompting",
+    "Distributional Preference Alignment of LLMs via Optimal Transport",
+    "DoFIT: Domain-aware Federated Instruction Tuning with Alleviated Catastrophic Forgetting",
+    "Empowering and Assessing the Utility of Large Language Models in Crop Science",
+    "Evaluating Large Vision-and-Language Models on Children's Mathematical Olympiads",
+    "Exploring the Role of Large Language Models in Prompt Encoding for Diffusion Models",
+    "FlexCap: Describe Anything in Images in Controllable Detail",
+    "From Instance Training to Instruction Learning: Task Adapters Generation from Instructions",
+    "GMAI-MMBench: A Comprehensive Multimodal Evaluation Benchmark Towards General Medical AI",
+    "GTBench: Uncovering the Strategic Reasoning Capabilities of LLMs via Game-Theoretic Evaluations",
+    "Generating Code World Models with Large Language Models Guided by Monte Carlo Tree Search",
+    "HelpSteer 2: Open-source dataset for training top-performing reward models",
+    "IDGen: Item Discrimination Induced Prompt Generation for LLM Evaluation",
+    "II-Bench: An Image Implication Understanding Benchmark for Multimodal Large Language Models",
+    "IPO: Interpretable Prompt Optimization for Vision-Language Models",
+    "Image Textualization: An Automatic Framework for Generating Rich and Detailed Image Descriptions",
+    "Instruction Embedding: Latent Representations of Instructions Towards Task Identification",
+    "Instruction Tuning Large Language Models to Understand Electronic Health Records",
+    "Instruction Tuning With Loss Over Instructions",
+    "LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning",
+    "Language-Driven Interactive Traffic Trajectory Generation",
+    "Learning to Reason via Program Generation, Emulation, and Search",
+    "Localize, Understand, Collaborate: Semantic-Aware Dragging via Intention Reasoner",
+    "Localized Zeroth-Order Prompt Optimization",
+    "Long-Horizon Planning for Multi-Agent Robots in Partially Observable Environments",
+    "Long-form factuality in large language models",
+    "Lumen: Unleashing Versatile Vision-Centric Capabilities of Large Multimodal Models",
+    "MAmmoTH2: Scaling Instructions from the Web",
+    "MMScan: A Multi-Modal 3D Scene Dataset with Hierarchical Grounded Language Annotations",
+    "MaVEn: An Effective Multi-granularity Hybrid Visual Encoding Framework for Multimodal Large Language Model",
+    "MedCalc-Bench: Evaluating Large Language Models for Medical Calculations",
+    "Multi-Object Hallucination in Vision Language Models",
+    "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models",
+    "Neuro-Vision to Language: Enhancing Brain Recording-based Visual Reconstruction and Language Interaction",
+    "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding",
+    "OmniJARVIS: Unified Vision-Language-Action Tokenization Enables Open-World Instruction Following Agents",
+    "OneBit: Towards Extremely Low-bit Large Language Models",
+    "Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks",
+    "PERIA: Perceive, Reason, Imagine, Act via Holistic Language and Vision Planning for Manipulation",
+    "PowerPM: Foundation Model for Power Systems",
+    "Preference Learning Algorithms Do Not Learn Preference Rankings",
+    "PromptFix: You Prompt and We Fix the Photo",
+    "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models",
+    "Regularizing Hidden States Enables Learning Generalizable Reward Model for LLMs",
+    "SETLEXSEM CHALLENGE: Using Set Operations to Evaluate the Lexical and Semantic Robustness of Language Models",
+    "SG-Bench: Evaluating LLM Safety Generalization Across Diverse Tasks and Prompt Types",
+    "SciCode: A Research Coding Benchmark Curated by Scientists",
+    "SeafloorAI: A Large-scale Vision-Language Dataset for Seafloor Geological Survey",
+    "Self-playing Adversarial Language Game Enhances LLM Reasoning",
+    "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+    "SocialGPT: Prompting LLMs for Social Relation Reasoning via Greedy Segment Optimization",
+    "Star-Agents: Automatic Data Optimization with LLM Agents for Instruction Tuning",
+    "TSDS: Data Selection for Task-Specific Model Finetuning",
+    "TaskBench: Benchmarking Large Language Models for Task Automation",
+    "Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization",
+    "UniAudio 1.5: Large Language Model-Driven Audio Codec is A Few-Shot Audio Task Learner",
+    "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback",
+    "Unveiling LoRA Intrinsic Ranks via Salience Analysis",
+    "VB-LoRA: Extreme Parameter Efficient Fine-Tuning with Vector Banks",
+    "VHELM: A Holistic Evaluation of Vision Language Models",
+    "Vaccine: Perturbation-aware Alignment for Large Language Models against Harmful Fine-tuning Attack",
+    "Verified Code Transpilation with LLMs",
+    "WizardArena: Post-training Large Language Models via Simulated Offline Chatbot Arena",
+    "Would I Lie To You? Inference Time Alignment of Language Models using Direct Preference Heads"
+  ],
+  "paper_count": 79,
+  "group_ids": [
+    27,
+    43,
+    91,
+    121,
+    125,
+    140,
+    174,
+    339,
+    519,
+    573,
+    874,
+    881,
+    998,
+    1019,
+    1027,
+    1205,
+    1240,
+    1259,
+    1424,
+    1428,
+    1589,
+    1622,
+    1773,
+    1868,
+    1923,
+    2002,
+    2140,
+    2224,
+    2377,
+    2547,
+    2587,
+    2661,
+    2730,
+    2882,
+    2898,
+    3089,
+    3104,
+    3170,
+    3175,
+    3203,
+    3226,
+    3391,
+    3392,
+    3509,
+    3519,
+    3573,
+    3796,
+    3825,
+    3872,
+    4014,
+    4155,
+    4258,
+    4290,
+    4413,
+    4514,
+    4517,
+    4532,
+    4794,
+    4858,
+    4981,
+    4999,
+    5051,
+    5106,
+    5242,
+    5302,
+    5418,
+    5431,
+    5599,
+    5744,
+    5865,
+    5918,
+    5950,
+    5981,
+    6232,
+    6279,
+    6351
+  ],
+  "definitions": [
+    {
+      "text": "Instruction Following",
+      "paper": "LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning"
+    },
+    {
+      "text": "Instruction Following",
+      "paper": "HelpSteer 2: Open-source dataset for training top-performing reward models"
+    },
+    {
+      "text": "Instruction Following",
+      "paper": "Compact Language Models via Pruning and Knowledge Distillation"
+    },
+    {
+      "text": "Instruction Following",
+      "paper": "Unveiling LoRA Intrinsic Ranks via Salience Analysis"
+    },
+    {
+      "text": "Instruction Following",
+      "paper": "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback"
+    },
+    {
+      "text": "Ability to follow even simple instructions and output-format constraints; open-weight models often fail to do so .",
+      "paper": "VHELM: A Holistic Evaluation of Vision Language Models"
+    },
+    {
+      "text": "Ability of LLMs to follow natural language instructions to generate desired responses. ",
+      "paper": "Localized Zeroth-Order Prompt Optimization"
+    },
+    {
+      "text": "Ability to follow explicit, natural language instructions across tasks enabled via instruction tuning. ",
+      "paper": "Biomedical Visual Instruction Tuning with Clinician Preference Alignment"
+    },
+    {
+      "text": "Capability to accurately follow complex, long-horizon manipulation instructions by leveraging synergistic language and vision planning .",
+      "paper": "PERIA: Perceive, Reason, Imagine, Act via Holistic Language and Vision Planning for Manipulation"
+    },
+    {
+      "text": "Sensitivity to task induction/instructions that specify the task; performance degrades without explicit task induction in few-shot settings .",
+      "paper": "UniAudio 1.5: Large Language Model-Driven Audio Codec is A Few-Shot Audio Task Learner"
+    },
+    {
+      "text": "Ability to follow natural language instructions; illustrated with qualitative before/after SFT cases ",
+      "paper": "OneBit: Towards Extremely Low-bit Large Language Models"
+    },
+    {
+      "text": "Prompt‑based conditioning using dataset context, task instructions, and input statistics (\"Prompt‑as‑Prefix\") is used to direct model behavior in Time‑LLM .",
+      "paper": "PowerPM: Foundation Model for Power Systems"
+    },
+    {
+      "text": "Ability to follow prompts/instructions to complete tasks end-to-end (sanity check) .",
+      "paper": "GTBench: Uncovering the Strategic Reasoning Capabilities of LLMs via Game-Theoretic Evaluations"
+    },
+    {
+      "text": "Ability to comply with task instructions coherently rather than refusing or producing incoherent outputs. ",
+      "paper": "SG-Bench: Evaluating LLM Safety Generalization Across Diverse Tasks and Prompt Types"
+    },
+    {
+      "text": "Ability to generate the correct result in the desired format to follow task instructions during instruction tuning. ",
+      "paper": "CoIN: A Benchmark of Continual Instruction Tuning for Multimodel Large Language Models"
+    },
+    {
+      "text": "Ability to reliably follow instructed formats and return structured outputs, enabling downstream analysis (e.g., posterior computation from token probabilities).  ",
+      "paper": "Bias Amplification in Language Model Evolution: An Iterated Learning Perspective"
+    },
+    {
+      "text": "Ability to follow open-domain instructions in multi-turn conversational settings; central to post-training data and evaluations  .",
+      "paper": "WizardArena: Post-training Large Language Models via Simulated Offline Chatbot Arena"
+    },
+    {
+      "text": "Ability of an LLM to generate responses that address tasks according to provided instructions; typically enhanced via instruction fine-tuning (IFT) to align with human preferences .",
+      "paper": "Instruction Embedding: Latent Representations of Instructions Towards Task Identification"
+    },
+    {
+      "text": "Accurately applying detailed linguistic commands to manipulate multi-vehicle behaviors (controllability) .",
+      "paper": "Language-Driven Interactive Traffic Trajectory Generation"
+    },
+    {
+      "text": "Ability to follow instructions; relevant because LLM judges can fail to detect instruction-following violations in evaluation settings .",
+      "paper": "Preference Learning Algorithms Do Not Learn Preference Rankings"
+    },
+    {
+      "text": "Capability to follow natural‑language instructions that describe the task; LLM performance is sensitive to prompts, motivating prompt engineering  .",
+      "paper": "Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization"
+    },
+    {
+      "text": "Accurately adhering to task rules and abstractions specified in prompts and instructions; a limiting factor for performance. ",
+      "paper": "Long-Horizon Planning for Multi-Agent Robots in Partially Observable Environments"
+    },
+    {
+      "text": "Capability of the MLLM to follow human instructions via instruction fine‑tuning. ",
+      "paper": "MaVEn: An Effective Multi-granularity Hybrid Visual Encoding Framework for Multimodal Large Language Model"
+    },
+    {
+      "text": "Adhering to human instructions to perform tasks over fMRI inputs (e.g., describe, locate concepts, reconstruct prompts).  ",
+      "paper": "Neuro-Vision to Language: Enhancing Brain Recording-based Visual Reconstruction and Language Interaction"
+    },
+    {
+      "text": "Ability to interpret and respond to progressively complex directives for the same visual question .",
+      "paper": "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models"
+    },
+    {
+      "text": "Ability to follow complex, constrained instructions (e.g., keyword constraints, response length)   .",
+      "paper": "IDGen: Item Discrimination Induced Prompt Generation for LLM Evaluation"
+    },
+    {
+      "text": "Interpreting concise natural-language instructions, an ability reinforced by instruction tuning. ",
+      "paper": "AutoGuide: Automated Generation and Selection of Context-Aware Guidelines for Large Language Model Agents"
+    },
+    {
+      "text": "Ability of a language model to respond effectively to task-specific instructions via instruction tuning .",
+      "paper": "TSDS: Data Selection for Task-Specific Model Finetuning"
+    },
+    {
+      "text": "Ability to understand human instructions and execute the corresponding image-processing tasks. ",
+      "paper": "PromptFix: You Prompt and We Fix the Photo"
+    },
+    {
+      "text": "MLLM capability to follow task instructions leveraged by planner/reflector modules .",
+      "paper": "Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks"
+    },
+    {
+      "text": "Ability to faithfully follow provided background/instructions in solving tasks, emphasized in the background‑provided setting  .",
+      "paper": "SciCode: A Research Coding Benchmark Curated by Scientists"
+    },
+    {
+      "text": "Ability of an LM to act in accordance with the user’s intentions and follow prompts or instructions; framed as a primary goal of instruction tuning/alignment .",
+      "paper": "Instruction Tuning With Loss Over Instructions"
+    },
+    {
+      "text": "Ability to adhere to set‑operation instructions; challenged by semantically deceptive sets that can subvert instruction following .",
+      "paper": "SETLEXSEM CHALLENGE: Using Set Operations to Evaluate the Lexical and Semantic Robustness of Language Models"
+    },
+    {
+      "text": "Ability to understand and act on language instructions in the context of image compositing (\"enables our approach to understand language instructions for image composition\") .",
+      "paper": "$\\textit{Bifr\\\"ost}$: 3D-Aware Image Compositing with Language Instructions"
+    },
+    {
+      "text": "Adhering to fixed answer formats/instructions in evaluation settings .",
+      "paper": "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models"
+    },
+    {
+      "text": "Ability to follow prompts with in-context examples to extract object entities from text for downstream checking and editing  .",
+      "paper": "Image Textualization: An Automatic Framework for Generating Rich and Detailed Image Descriptions"
+    },
+    {
+      "text": "Following natural-language instructions in embodied 3D environments, including in-the-wild settings  .",
+      "paper": "MMScan: A Multi-Modal 3D Scene Dataset with Hierarchical Grounded Language Annotations"
+    },
+    {
+      "text": "Understanding and executing complex instructions provided in prompts and environment documentation. ",
+      "paper": "Generating Code World Models with Large Language Models Guided by Monte Carlo Tree Search"
+    },
+    {
+      "text": "Ability to adhere strictly to task constraints (e.g., using only specified DSL operators) when generating code. ",
+      "paper": "Verified Code Transpilation with LLMs"
+    },
+    {
+      "text": "Ability to follow instructions and converse effectively, reflected in chatbot-style evaluations  .",
+      "paper": "MAmmoTH2: Scaling Instructions from the Web"
+    },
+    {
+      "text": "Adherence to explicit instruction requirements (e.g., programming language, algorithm, response style) and alignment between instructions and responses.  ",
+      "paper": "AlchemistCoder: Harmonizing and Eliciting Code Capability by Hindsight Tuning on Multi-source Data"
+    },
+    {
+      "text": "Ability to follow prompts and avoid irrelevant content; irrelevant facts indicate instruction-following more than factuality .",
+      "paper": "Long-form factuality in large language models"
+    },
+    {
+      "text": "Ability to execute mapping/segmentation actions in response to natural-language instructions across layers. ",
+      "paper": "SeafloorAI: A Large-scale Vision-Language Dataset for Seafloor Geological Survey"
+    },
+    {
+      "text": "Ability to follow structured prompts (system, expectation, context, guidance) and produce outputs in a specified format (e.g., beginning the answer with a fixed sentence).  ",
+      "paper": "SocialGPT: Prompting LLMs for Social Relation Reasoning via Greedy Segment Optimization"
+    },
+    {
+      "text": "Ability to handle diverse tasks presented in the form of instructions. ",
+      "paper": "Adversarial Moment-Matching Distillation of Large Language Models"
+    },
+    {
+      "text": "A crucial requirement for LLM applications determining alignment with human intents. ",
+      "paper": "Benchmarking Complex Instruction-Following with Multiple Constraints Composition"
+    },
+    {
+      "text": "A fundamental capability of LLMs. ",
+      "paper": "Benchmarking Complex Instruction-Following with Multiple Constraints Composition"
+    },
+    {
+      "text": "Ability of an LLM to follow instructions faithfully, a stated goal of alignment. ",
+      "paper": "Distributional Preference Alignment of LLMs via Optimal Transport"
+    },
+    {
+      "text": "Capability to follow multimodal instructions in conversational format while performing visual tasks .",
+      "paper": "Lumen: Unleashing Versatile Vision-Centric Capabilities of Large Multimodal Models"
+    },
+    {
+      "text": "Adhering to a specified rule format via a system prompt to correctly output logic rules (variables, predicates, constants) .",
+      "paper": "DeiSAM: Segment Anything with Deictic Prompting"
+    },
+    {
+      "text": "Understanding and executing user text instructions to produce text and segmentation outputs  .",
+      "paper": "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding"
+    },
+    {
+      "text": "Ability to follow general-purpose natural language instructions and produce appropriate responses ",
+      "paper": "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning"
+    },
+    {
+      "text": "Ability to follow task instructions/prompts; base models’ limited instruction‑following can be enhanced via general instruction‑tuning (e.g., CQIA) .",
+      "paper": "Empowering and Assessing the Utility of Large Language Models in Crop Science"
+    },
+    {
+      "text": "Ability to adhere to user instructions in generated responses .",
+      "paper": "Regularizing Hidden States Enables Learning Generalizable Reward Model for LLMs"
+    },
+    {
+      "text": "Ability to follow instructions reliably (including for structured output), which the paper notes is critical for agent frameworks .",
+      "paper": "DARG: Dynamic Evaluation of Large Language Models via Adaptive Reasoning Graph"
+    },
+    {
+      "text": "Ability to follow open-ended user instructions across diverse tasks; evaluated by open-ended instruction-following benchmarks. ",
+      "paper": "SimPO: Simple Preference Optimization with a Reference-Free Reward"
+    },
+    {
+      "text": "Ability to follow natural language instructions; strengthened by instruction fine-tuning (including multimodal), enabling focus on image-relevant concepts in prompts.  ",
+      "paper": "Exploring the Role of Large Language Models in Prompt Encoding for Diffusion Models"
+    },
+    {
+      "text": "Ability to follow natural language instructions to complete tasks ",
+      "paper": "AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents"
+    },
+    {
+      "text": "Capability to follow human instructions reliably; improved via instruction fine‑tuning. ",
+      "paper": "TaskBench: Benchmarking Large Language Models for Task Automation"
+    },
+    {
+      "text": "Capability to follow natural-language task instructions to act in open-world environments. The model is designed to \"follow instructions to reason, plan, and act\" in multimodal interaction settings. ",
+      "paper": "OmniJARVIS: Unified Vision-Language-Action Tokenization Enables Open-World Instruction Following Agents"
+    },
+    {
+      "text": "Ability of an LLM to understand and comply with natural language instructions, typically acquired or enhanced via instruction tuning .",
+      "paper": "Star-Agents: Automatic Data Optimization with LLM Agents for Instruction Tuning"
+    },
+    {
+      "text": "Ability to comply with task instructions and output-format constraints in visual-language prompting. ",
+      "paper": "Multi-Object Hallucination in Vision Language Models"
+    },
+    {
+      "text": "Interpreting and executing complex camera-operation instructions expressed in natural language. ",
+      "paper": "ChatCam: Empowering Camera Control through Conversational AI"
+    },
+    {
+      "text": "Ability to follow instructions in a helpful but harmless way. ",
+      "paper": "Vaccine: Perturbation-aware Alignment for Large Language Models against Harmful Fine-tuning Attack"
+    },
+    {
+      "text": "Adhering to structured prompts to produce an intention plus matched source/target prompts that reflect before/after states .",
+      "paper": "Localize, Understand, Collaborate: Semantic-Aware Dragging via Intention Reasoner"
+    },
+    {
+      "text": "Ability of an LLM to understand user instructions and perform diverse tasks; instruction tuning extends capabilities beyond next-token prediction to tasks described by instructions .",
+      "paper": "Instruction Tuning Large Language Models to Understand Electronic Health Records"
+    },
+    {
+      "text": "Proficiency in adhering to instructions to accomplish tasks; assessed via instruction‑formatted prompts for chat‑tuned models .",
+      "paper": "Benchmarking LLMs via Uncertainty Quantification"
+    },
+    {
+      "text": "Ability to follow explicit task/game rules as prompted.  ",
+      "paper": "Self-playing Adversarial Language Game Enhances LLM Reasoning"
+    },
+    {
+      "text": "Adherence to prompts and output-format constraints in evaluation (e.g., producing a valid option A1–E5)  .",
+      "paper": "Evaluating Large Vision-and-Language Models on Children's Mathematical Olympiads"
+    },
+    {
+      "text": "Capacity to follow prompts and instructions; deficits explain poor performance of several medical-specific LVLMs. ",
+      "paper": "GMAI-MMBench: A Comprehensive Multimodal Evaluation Benchmark Towards General Medical AI"
+    },
+    {
+      "text": "Capability to follow task instructions; lack of instruction tuning is linked to poor zero-shot performance (e.g., MEDITRON) .",
+      "paper": "MedCalc-Bench: Evaluating Large Language Models for Medical Calculations"
+    },
+    {
+      "text": "Ability to handle tasks expressed in natural language; commonly used to evaluate cross-task generalization of LLMs.",
+      "paper": "From Instance Training to Instruction Learning: Task Adapters Generation from Instructions"
+    },
+    {
+      "text": "Following natural-language task instructions; contrasted with typical NL instruction following baselines .",
+      "paper": "Learning to Reason via Program Generation, Emulation, and Search"
+    },
+    {
+      "text": "Adhering to prompt constraints such as formatting the answer in one word .",
+      "paper": "FlexCap: Describe Anything in Images in Controllable Detail"
+    },
+    {
+      "text": "Adhering to output format and instructions; declines here lead to answer extraction failures under CoT prompting .",
+      "paper": "II-Bench: An Image Implication Understanding Benchmark for Multimodal Large Language Models"
+    },
+    {
+      "text": "Ability to produce valid responses that adhere to instruction prompts in recommendation tasks. ",
+      "paper": "Customizing Language Models with Instance-wise LoRA for Sequential Recommendation"
+    },
+    {
+      "text": "Ability to follow human instructions learned via instruction tuning to understand diverse human intentions in downstream tasks. ",
+      "paper": "DoFIT: Domain-aware Federated Instruction Tuning with Alleviated Catastrophic Forgetting"
+    },
+    {
+      "text": "Ability to follow explicit, high‑level instructions embedded in a meta‑prompt to guide optimization. ",
+      "paper": "IPO: Interpretable Prompt Optimization for Vision-Language Models"
+    },
+    {
+      "text": "Following user instructions in single- or multi-turn settings; evaluated by LLM-as-a-judge (MT-Bench) .",
+      "paper": "VB-LoRA: Extreme Parameter Efficient Fine-Tuning with Vector Banks"
+    },
+    {
+      "text": "Ability to follow instructions; RLHF is used to produce instruction-following chat assistants .",
+      "paper": "Would I Lie To You? Inference Time Alignment of Language Models using Direct Preference Heads"
+    }
+  ],
+  "definition_count": 80,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "VHELM: A Holistic Evaluation of Vision Language Models",
+      "evidence": "Open-weight models’ inability to follow even simple instructions is hypothesized to drive poorer performance, notably in reasoning (relative to closed‑API models) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Knowledge",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "VHELM: A Holistic Evaluation of Vision Language Models",
+      "evidence": "Same hypothesis applies to knowledge-oriented results where closed‑API models outperform ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Toxicity",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "VHELM: A Holistic Evaluation of Vision Language Models",
+      "evidence": "Closed‑API models also outperform on toxicity; authors hypothesize instruction‑following deficits contribute to the gap ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Instruction Induction Task Performance",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Localized Zeroth-Order Prompt Optimization",
+      "evidence": "The study evaluates performance on 30 instruction‑induction tasks to direct LLMs to generate desired responses, leveraging instruction‑following ability."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Open Biomedical Visual Chat Score (GPT-4V Judge 1–10)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Biomedical Visual Instruction Tuning with Clinician Preference Alignment",
+      "evidence": "Instruction tuning is used to adapt models to follow instructions in open-ended visual chat."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQA-RAD Open Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Biomedical Visual Instruction Tuning with Clinician Preference Alignment",
+      "evidence": "Instruction-tuned models are evaluated on VQA tasks as downstream instruction-following evaluations."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Blocks&Bowls Task Success Rate",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "PERIA: Perceive, Reason, Imagine, Act via Holistic Language and Vision Planning for Manipulation",
+      "evidence": "Instruction following and task success are evaluated as success rates across domains (Table 1; abstract) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Letters Task Success Rate",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "PERIA: Perceive, Reason, Imagine, Act via Holistic Language and Vision Planning for Manipulation",
+      "evidence": "Success rates reported for Letters tasks (Table 1) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VIMA-BENCH Task Success Rate",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "PERIA: Perceive, Reason, Imagine, Act via Holistic Language and Vision Planning for Manipulation",
+      "evidence": "Success rates reported for VIMA-BENCH categories (Table 1) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language–Vision Consistency Alignment",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "PERIA: Perceive, Reason, Imagine, Act via Holistic Language and Vision Planning for Manipulation",
+      "evidence": "Consistency loss encourages coherence and mitigates hallucinations/semantic conflicts, improving reliability of instruction following ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Imagination (Vision Planning)",
+      "other_type": "constructs",
+      "relationship_type": "predicts",
+      "paper": "PERIA: Perceive, Reason, Imagine, Act via Holistic Language and Vision Planning for Manipulation",
+      "evidence": "Visual subgoal images offer more intuitive guidance; the advantage is especially evident on VIMA-BENCH, improving task success ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "In-Context Learning (ICL)",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "UniAudio 1.5: Large Language Model-Driven Audio Codec is A Few-Shot Audio Task Learner",
+      "evidence": "Task induction (explicit instructions) is crucial in the few-shot setup; performance drops without it ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Speech Emotion Classification (ESD) Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "UniAudio 1.5: Large Language Model-Driven Audio Codec is A Few-Shot Audio Task Learner",
+      "evidence": "Presence/absence of task induction substantially changes ESD few-shot accuracy, indicating reliance on instruction following ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Text-to-Speech on FSDD (Instruction Following + Quality)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "UniAudio 1.5: Large Language Model-Driven Audio Codec is A Few-Shot Audio Task Learner",
+      "evidence": "ACC explicitly measures whether generated speech follows the given instructions on FSDD  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Instruction Following Examples (Appendix Table 5)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "OneBit: Towards Extremely Low-bit Large Language Models",
+      "evidence": "Appendix Table 5 presents instruction-following cases before and after SFT, illustrating this capability qualitatively"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Text Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "PowerPM: Foundation Model for Power Systems",
+      "evidence": "Time‑LLM conditions LLMs using prompts that include dataset context, task instructions, and input statistics, presupposing text comprehension for instruction adherence ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MT-Bench Overall Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning",
+      "evidence": "Instruction-following fine-tuning is evaluated with MT-Bench across multiple task categories ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Task Completion Rate (Sanity Check)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "GTBench: Uncovering the Strategic Reasoning Capabilities of LLMs via Game-Theoretic Evaluations",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Alignment Stringency (Over-alignment tendency)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "SG-Bench: Evaluating LLM Safety Generalization Across Diverse Tasks and Prompt Types",
+      "evidence": "Models with strong safety alignment (over-aligned) have more incoherent responses and cannot follow instructions well in discrimination tasks."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Error-type Proportions in Discrimination",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SG-Bench: Evaluating LLM Safety Generalization Across Diverse Tasks and Prompt Types",
+      "evidence": "Higher rates of Class 1 incoherent responses indicate poorer instruction following in discrimination settings (Table 4)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Truth Alignment",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "CoIN: A Benchmark of Continual Instruction Tuning for Multimodel Large Language Models",
+      "evidence": "Truth Alignment is decomposed into reasoning plus instruction following."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Catastrophic Forgetting",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "CoIN: A Benchmark of Continual Instruction Tuning for Multimodel Large Language Models",
+      "evidence": "The paper reveals forgetting is primarily due to a decline in instruction following."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Instruction Format Adherence",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Bias Amplification in Language Model Evolution: An Iterated Learning Perspective",
+      "evidence": "High probability mass on format tokens demonstrates reliable instruction‑following that enables posterior calculations."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AlpacaEval 2.0",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "WizardArena: Post-training Large Language Models via Simulated Offline Chatbot Arena",
+      "evidence": "AlpacaEval is cited as an automatic evaluator of instruction-following models; results are reported alongside other benchmarks  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Task Identification",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Instruction Embedding: Latent Representations of Instructions Towards Task Identification",
+      "evidence": "Vicuna’s instruction tuning enhances instruction following, enabling better extraction of task-specific information under PIE than untuned models ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Alignment (Style/Format Adaptation)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Instruction Embedding: Latent Representations of Instructions Towards Task Identification",
+      "evidence": "Alignment is described as learning interaction style/format to solve tasks using pre-trained knowledge and skills, strengthening instruction following ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MT-Bench (LLM-as-a-judge)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Instruction Embedding: Latent Representations of Instructions Towards Task Identification",
+      "evidence": "MT-Bench is used in the paper’s downstream evaluations to quantify instruction-following performance under different data-selection methods ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Language-Driven Interactive Traffic Trajectory Generation",
+      "evidence": "The precision in controllable manipulation is achieved through the LLM’s robustness in understanding and applying detailed instructions ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "User Study 1 Preference (WOMD)",
+      "other_type": "measurements",
+      "relationship_type": "predicts",
+      "paper": "Language-Driven Interactive Traffic Trajectory Generation",
+      "evidence": "Greater alignment with language commands yields higher user preference (73.7% average) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "User Study 2 Interaction Fit (WOMD)",
+      "other_type": "measurements",
+      "relationship_type": "predicts",
+      "paper": "Language-Driven Interactive Traffic Trajectory Generation",
+      "evidence": "Precise application of instructions leads users to judge scenarios as fulfilling interaction requirements (72.4% positive) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human Preference Alignment",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Preference Learning Algorithms Do Not Learn Preference Rankings",
+      "evidence": "Instruction-following violations are a stated concern in evaluating alignment with LLM judges ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-Horizon Planning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Long-Horizon Planning for Multi-Agent Robots in Partially Observable Environments",
+      "evidence": "Performance is limited by instruction-following and reasoning of the underlying LM."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MAP-THOR Success Rate (SR)",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "Long-Horizon Planning for Multi-Agent Robots in Partially Observable Environments",
+      "evidence": "Performance is limited by instruction-following capability of the underlying LM."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "MaVEn: An Effective Multi-granularity Hybrid Visual Encoding Framework for Multimodal Large Language Model",
+      "evidence": "Instruction fine‑tuning aims to enhance the MLLM’s capability to follow human instructions."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Neuro-Vision to Language: Enhancing Brain Recording-based Visual Reconstruction and Language Interaction",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Inherent Deficiency",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models",
+      "evidence": "Varying instruction detail is used to reveal interpretation/response limits  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQA under Instruction Enhancement (Logical/Factual)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models",
+      "evidence": "Three prompt complexities elicit sensitivity in instruction following on the same questions ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generative Capability",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "IDGen: Item Discrimination Induced Prompt Generation for LLM Evaluation",
+      "evidence": "The paper argues MCQ benchmarks overlook the full generative potential, including instruction‑following ability ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "IDGen Open-ended Evaluation (General Text)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "IDGen: Item Discrimination Induced Prompt Generation for LLM Evaluation",
+      "evidence": "Generalization strategies impose constraints (e.g., keyword/length limits), directly probing instruction following  , and the paper highlights instruction‑following as part of generative potential ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Sequential Decision-Making",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "AutoGuide: Automated Generation and Selection of Context-Aware Guidelines for Large Language Model Agents",
+      "evidence": "LLMs excel in interpreting concise natural-language instructions, and the paper applies context-conditional guidelines to enhance agent performance."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multi-task Low-level Instruction-Guided Processing",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "PromptFix: You Prompt and We Fix the Photo",
+      "evidence": "The system understands user instructions and performs corresponding image-processing tasks, evaluated with PSNR/SSIM/LPIPS/ManIQA across tasks."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Task-Specific Evaluation: Low-light Enhancement",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "PromptFix: You Prompt and We Fix the Photo",
+      "evidence": "Task-level metrics quantify instruction-driven enhancement performance."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Task-Specific Evaluation: Desnowing",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "PromptFix: You Prompt and We Fix the Photo",
+      "evidence": "Task-level metrics quantify instruction-driven desnowing performance."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Task-Specific Evaluation: Desnowing",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "PromptFix: You Prompt and We Fix the Photo",
+      "evidence": "Task-level metrics quantify instruction-driven dehazing performance."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Task-Specific Evaluation: Colorization/Object/Watermark Removal",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "PromptFix: You Prompt and We Fix the Photo",
+      "evidence": "Task-level metrics quantify instruction-driven editing/removal performance."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "PromptFix: You Prompt and We Fix the Photo",
+      "evidence": "Integrating a VLM to produce auxiliary prompts enhances semantic clarity and addresses instructional gaps in low-level processing."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Defect Diagnosis (Low-level Degradation Understanding)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "PromptFix: You Prompt and We Fix the Photo",
+      "evidence": "Defect descriptions are introduced to address instructional gaps, improving clarity for instruction execution."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Prompt Understanding",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "PromptFix: You Prompt and We Fix the Photo",
+      "evidence": "Prior and backgrounded evidence indicates LLM-grounded diffusion enhances prompt understanding, improving instruction-driven generation/editing."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks",
+      "evidence": "Agents leverage instruction-following capabilities of MLLMs for planning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Planning",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks",
+      "evidence": "Agents leverage instruction-following capabilities of MLLMs for planning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Scientific Research Coding Capability",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "SciCode: A Research Coding Benchmark Curated by Scientists",
+      "evidence": "With background, evaluation shifts focus to coding and instruction‑following capabilities ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SciCode Main Problem Pass@1 (With Background)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SciCode: A Research Coding Benchmark Curated by Scientists",
+      "evidence": "This setting evaluates models’ capabilities to faithfully follow instructions provided in the background as well as their code‑generation performance ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AlpacaEval 2.0 Win Rate",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Instruction Tuning With Loss Over Instructions",
+      "evidence": "KL divergence regularization 'compromises the model’s ability to follow instructions,' with AlpacaEval 2.0 win rate dropping from 2.58 to 0.06 on LIMA, indicating this metric reflects instruction-following ability ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Lexico‑Semantic Robustness",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "SETLEXSEM CHALLENGE: Using Set Operations to Evaluate the Lexical and Semantic Robustness of Language Models",
+      "evidence": "‘Deceptive’ semantic groupings subvert instruction‑following ability substantially ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Deceptive Words Accuracy (Hyponym Sampler)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SETLEXSEM CHALLENGE: Using Set Operations to Evaluate the Lexical and Semantic Robustness of Language Models",
+      "evidence": "Large accuracy drops under swapped deceptive sets indicate failures to follow the set‑operation instruction ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Made‑Up Values Rate",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SETLEXSEM CHALLENGE: Using Set Operations to Evaluate the Lexical and Semantic Robustness of Language Models",
+      "evidence": "Models sometimes produce values not present in inputs, especially for symmetric difference on words, indicating instruction drift/hallucination ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multimodal Grounding (Vision–Language)",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "$\\textit{Bifr\\\"ost}$: 3D-Aware Image Compositing with Language Instructions",
+      "evidence": "The fine-tuned MLLM enables understanding language instructions for image composition as part of grounding instructions to locations ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "2D Bounding Box Prediction (IoU)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "$\\textit{Bifr\\\"ost}$: 3D-Aware Image Compositing with Language Instructions",
+      "evidence": "In Stage 1, the MLLM predicts 2.5D locations conditioned on text instructions; IoU evaluates whether the outputs follow the instruction-specified placement  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Depth Prediction Error (MSE)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "$\\textit{Bifr\\\"ost}$: 3D-Aware Image Compositing with Language Instructions",
+      "evidence": "The instruction-conditioned depth prediction is evaluated by MSE, reflecting instruction adherence in the depth dimension  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "has-subconstruct",
+      "paper": "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models",
+      "evidence": "Fixed answer format simultaneously detects instruction-following ability ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models",
+      "evidence": "Fixed multiple-choice answer formats detect instruction following on MMLU ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC (E & C) Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models",
+      "evidence": "Fixed answer formats detect instruction following on ARC ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models",
+      "evidence": "Fixed answer formats detect instruction following on OBQA ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OpenBookQA (OBQA) Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models",
+      "evidence": "Fixed answer formats detect instruction following on OBQA ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OpenBookQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models",
+      "evidence": "Fixed answer formats detect instruction following on OBQA ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Entity Extraction (Prompted)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Image Textualization: An Automatic Framework for Generating Rich and Detailed Image Descriptions",
+      "evidence": "Entity extraction relies on the LLM’s instruction following with designed prompts and in-context examples (Algorithm 1; Appendix prompts)  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "IFEval Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Compact Language Models via Pruning and Knowledge Distillation",
+      "evidence": "After supervised fine-tuning (SFT), the model is evaluated on instruction-following with IFEval."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MT-Bench Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Compact Language Models via Pruning and Knowledge Distillation",
+      "evidence": "MT‑Bench is also used to evaluate instruction following in the SFT evaluation suite."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "3D Scene Understanding",
+      "other_type": "constructs",
+      "relationship_type": "depends-on",
+      "paper": "MMScan: A Multi-Modal 3D Scene Dataset with Hierarchical Grounded Language Annotations",
+      "evidence": "Improved scene understanding via MMScan leads to much better instruction following in the wild ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MMScan: A Multi-Modal 3D Scene Dataset with Hierarchical Grounded Language Annotations",
+      "evidence": "In-the-wild tests assess generalization to unseen environments and sensors during instruction following ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "In-the-wild 3D Instruction Following",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MMScan: A Multi-Modal 3D Scene Dataset with Hierarchical Grounded Language Annotations",
+      "evidence": "In-the-wild tests demonstrate improved instruction following with unseen environments and sensors ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Code World Modeling",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "Generating Code World Models with Large Language Models Guided by Monte Carlo Tree Search",
+      "evidence": "CWM synthesis requires understanding complex instructions."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Syntactic Conformance (IR-only operators)",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "Verified Code Transpilation with LLMs",
+      "evidence": "Larger models better follow instructions to use only defined DSL operators, avoiding parser failures."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Zero-Shot Invariant Inference (Tensor)",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "Verified Code Transpilation with LLMs",
+      "evidence": "Performance differences attributed partly to better instruction following in larger models."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MT-Bench Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MAmmoTH2: Scaling Instructions from the Web",
+      "evidence": "MT-Bench is used to evaluate chat/instruction-following ability ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AlpacaEval 2.0",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MAmmoTH2: Scaling Instructions from the Web",
+      "evidence": "AlpacaEval 2.0 leaderboard used for instruction-following comparisons ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Arena‑Hard Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MAmmoTH2: Scaling Instructions from the Web",
+      "evidence": "Arena Hard leaderboard used to assess conversational ability ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Code Intelligence",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "AlchemistCoder: Harmonizing and Eliciting Code Capability by Hindsight Tuning on Multi-source Data",
+      "evidence": "The method refines instruction-following capabilities as part of advancing code intelligence."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Response Style Control",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "AlchemistCoder: Harmonizing and Eliciting Code Capability by Hindsight Tuning on Multi-source Data",
+      "evidence": "They harmonize conflicting code language requirements and response styles to align instruction–response pairs."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Conditional Perplexity Discrepancy (CPD)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "AlchemistCoder: Harmonizing and Eliciting Code Capability by Hindsight Tuning on Multi-source Data",
+      "evidence": "CPD is treated as an indicator; high CPD reflects poor alignment between instruction and response."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Real-World Programming Language Consistency",
+      "other_type": "measurements",
+      "relationship_type": "predicts",
+      "paper": "AlchemistCoder: Harmonizing and Eliciting Code Capability by Hindsight Tuning on Multi-source Data",
+      "evidence": "Naively mixing multi-source data yields unaligned responses—\"we cannot expect which coding language the LLMs will use in real-world applications\"; harmonization targets this inconsistency."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Long-form Factuality",
+      "other_type": "constructs",
+      "relationship_type": "distinct-from",
+      "paper": "Long-form factuality in large language models",
+      "evidence": "Irrelevant facts are disregarded in F1@K and are said to reflect instruction-following more than factuality ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Irrelevant Facts Count (SAFE)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Long-form factuality in large language models",
+      "evidence": "Paper contends irrelevant facts better measure instruction-following ability than factuality ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Vision-Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "SeafloorAI: A Large-scale Vision-Language Dataset for Seafloor Geological Survey",
+      "evidence": "The dataset is designed to support instruction-following mapping alongside VQA."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Instruction-Following Mapping (Single-Instance Segmentation)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SeafloorAI: A Large-scale Vision-Language Dataset for Seafloor Geological Survey",
+      "evidence": "Examples specify segmenting a requested category per instruction."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Instruction-Following Mapping (Multi-Instance Segmentation)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SeafloorAI: A Large-scale Vision-Language Dataset for Seafloor Geological Survey",
+      "evidence": "Examples specify identifying and segmenting multiple categories across layers."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSPO Prompt Optimization Objective (log p(a0))",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SocialGPT: Prompting LLMs for Social Relation Reasoning via Greedy Segment Optimization",
+      "evidence": "The optimization objective explicitly supervises the model to begin answers with a fixed sentence (\"The final answer is str(y)\") to ensure consistent instruction following."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-Context Learning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "SocialGPT: Prompting LLMs for Social Relation Reasoning via Greedy Segment Optimization",
+      "evidence": "A guidance segment with an exemplar (e=(S0,q0,a0)) is included in the structured prompt to leverage in-context learning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MT-Bench Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Unveiling LoRA Intrinsic Ranks via Salience Analysis",
+      "evidence": "Instruction-tuned LLaMA/LLaMA2 models are evaluated on MT-Bench; GPT-4 assigns 0–10 scores to responses ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "DollyEval (Instruction Following)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Adversarial Moment-Matching Distillation of Large Language Models",
+      "evidence": "Instruction following ability is evaluated on DollyEval with ROUGE‑L and GPT‑4 feedback."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SelfInst (Instruction Following)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Adversarial Moment-Matching Distillation of Large Language Models",
+      "evidence": "SelfInst is used to assess instruction following with ROUGE‑L and GPT‑4 feedback."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VicunaEval (Instruction Following)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Adversarial Moment-Matching Distillation of Large Language Models",
+      "evidence": "VicunaEval is included among instruction‑following test sets with ROUGE‑L and GPT‑4 feedback."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "S‑NI (Instruction Following)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Adversarial Moment-Matching Distillation of Large Language Models",
+      "evidence": "S‑NI is evaluated as an instruction‑following benchmark (ROUGE‑L)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "S‑NI (Instruction Following)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Adversarial Moment-Matching Distillation of Large Language Models",
+      "evidence": "UnNI is evaluated as an instruction‑following benchmark (ROUGE‑L)."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Complex Instruction-Following",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Benchmarking Complex Instruction-Following with Multiple Constraints Composition",
+      "evidence": "Complex instruction-following is a key case of instruction following as instructions in real use often consist of multiple constraints."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "IFEval Instruction-Following Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Benchmarking Complex Instruction-Following with Multiple Constraints Composition",
+      "evidence": "IFEval is used as an instruction-following benchmark emphasizing simpler/format constraints."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Practicality of LLM Applications (real-world outcome)",
+      "other_type": "measurements",
+      "relationship_type": "predicts",
+      "paper": "Benchmarking Complex Instruction-Following with Multiple Constraints Composition",
+      "evidence": "Instruction following remains one of the most important factors determining the practicality of LLMs."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Complex Instruction-Following",
+      "other_type": "constructs",
+      "relationship_type": "correlates-with",
+      "paper": "Benchmarking Complex Instruction-Following with Multiple Constraints Composition",
+      "evidence": "ComplexBench correlates with IFEval (Pearson r≈0.814), but rankings differ, indicating complementary perspectives."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Complex Instruction-Following",
+      "other_type": "constructs",
+      "relationship_type": "complements",
+      "paper": "Benchmarking Complex Instruction-Following with Multiple Constraints Composition",
+      "evidence": "ComplexBench covers constraint compositions not modeled in IFEval, providing a complementary perspective."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AlpacaEval Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Distributional Preference Alignment of LLMs via Optimal Transport",
+      "evidence": "AlpacaEval is used as an instruction-following benchmark in the paper’s evaluation suite."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQA: MMBench dev",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Lumen: Unleashing Versatile Vision-Centric Capabilities of Large Multimodal Models",
+      "evidence": "VQA suites are used to examine instruction following and general understanding ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Vision-Centric Capabilities",
+      "other_type": "constructs",
+      "relationship_type": "compatible-with",
+      "paper": "Lumen: Unleashing Versatile Vision-Centric Capabilities of Large Multimodal Models",
+      "evidence": "Lumen broadens visual tasks while maintaining instruction following and general visual understanding (VQA results comparable with SOTA) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Semantic Parsing to First-Order Logic",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "DeiSAM: Segment Anything with Deictic Prompting",
+      "evidence": "A strict system prompt specifies the rule format; LLM adherence is required to generate correct rules"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multimodal Understanding and Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding",
+      "evidence": "The LLM understands user text instructions and produces text and segmentation outputs in the unified framework  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "LLM Capabilities",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning",
+      "evidence": "Instruction following is cited as a core ability and evaluated with MT-Bench"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MT-Bench Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning",
+      "evidence": "MT-Bench score reflects instruction-following performance"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Professional Capabilities in Crop Science",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Empowering and Assessing the Utility of Large Language Models in Crop Science",
+      "evidence": "General instruction following supports executing domain‑adapted tasks; base models’ capability is enhanced via instruction tuning ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reward Model Generalization (Out-of-Distribution)",
+      "other_type": "constructs",
+      "relationship_type": "predicts",
+      "paper": "Regularizing Hidden States Enables Learning Generalizable Reward Model for LLMs",
+      "evidence": "GRM shows greater robustness in generating instruction-following responses compared to baselines in PPO examples ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Instruction-Following Outcomes (PPO Examples)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Regularizing Hidden States Enables Learning Generalizable Reward Model for LLMs",
+      "evidence": "Qualitative PPO examples show GRM adheres to instructions more reliably than baselines ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning Graph Extraction Success Rate",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "DARG: Dynamic Evaluation of Large Language Models via Adaptive Reasoning Graph",
+      "evidence": "Graph construction via ICL reflects instruction-following proficiency; larger models comparable to GPT-4-Turbo, smaller models struggle ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AlpacaEval 2 (LC, WR)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+      "evidence": "The paper treats AlpacaEval 2 as an open-ended instruction-following benchmark with LC and WR metrics."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Arena-Hard (WR)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+      "evidence": "Arena-Hard evaluates instruction-following on technical problem-solving queries via win rate."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MT-Bench Rating",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+      "evidence": "MT‑Bench provides rubric-based grading for instruction-following."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "trade-off-with",
+      "paper": "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+      "evidence": "Continuing training from a strong instruct model shows higher chat-benchmark scores but catastrophic forgetting on GSM8K, indicating a trade-off."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "trade-off-with",
+      "paper": "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+      "evidence": "Continuing training from a strong instruct model shows higher chat-benchmark scores but catastrophic forgetting on GSM8K, indicating a trade-off."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "General Knowledge",
+      "other_type": "constructs",
+      "relationship_type": "trade-off-with",
+      "paper": "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+      "evidence": "Higher learning rates improved chat benchmarks but reduced MMLU, indicating a trade-off."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "no-degradation-observed",
+      "paper": "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+      "evidence": "For Gemma‑2‑9B‑it, SimPO improved instruction following without degrading GSM8K."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "no-degradation-observed",
+      "paper": "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+      "evidence": "For Gemma‑2‑9B‑it, SimPO improved instruction following without degrading GSM8K."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "General Knowledge",
+      "other_type": "constructs",
+      "relationship_type": "no-degradation-observed",
+      "paper": "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+      "evidence": "For Gemma‑2‑9B‑it, SimPO improved instruction following without degrading MMLU."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Prompt Understanding (Text-to-Image)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Exploring the Role of Large Language Models in Prompt Encoding for Diffusion Models",
+      "evidence": "Explicit instructions focus the LLM on image-relevant concepts, increasing alignment—especially for instruction-tuned models."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multi-Modal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Exploring the Role of Large Language Models in Prompt Encoding for Diffusion Models",
+      "evidence": "Multimodal instruction fine-tuning enables LLMs to understand visual information and strengthens instruction-following effects on alignment."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Ablation: Effect of Instruction",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Exploring the Role of Large Language Models in Prompt Encoding for Diffusion Models",
+      "evidence": "Alignment gains observed when inserting explicit instructions—especially for instruction-tuned LLMs—operationalize this construct."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Agentic Task Execution",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents",
+      "evidence": "AI agents can follow natural language instructions as part of solving tasks"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Task Automation Capability",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "TaskBench: Benchmarking Large Language Models for Task Automation",
+      "evidence": "Instruction‑tuned models (e.g., WizardLLM‑13b, Vicuna‑13b) outperform non‑instruction‑tuned counterparts, indicating instruction following boosts task automation."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Atomic Task Reward (Minecraft)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "OmniJARVIS: Unified Vision-Language-Action Tokenization Enables Open-World Instruction Following Agents",
+      "evidence": "Short-horizon atom tasks with straightforward instructions are used to assess instruction following via average reward; OmniJARVIS achieves high rewards with low variance."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Open-ended Instruction Following Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "OmniJARVIS: Unified Vision-Language-Action Tokenization Enables Open-World Instruction Following Agents",
+      "evidence": "Open-ended instruction-following evaluation reports a lower-is-better score across agents."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Programmatic Tasks Success Rate (Minecraft)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "OmniJARVIS: Unified Vision-Language-Action Tokenization Enables Open-World Instruction Following Agents",
+      "evidence": "Programmatic tasks require following high-level prompts through chains of atom tasks; success rates capture instruction-following over long horizons."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Star-Agents: Automatic Data Optimization with LLM Agents for Instruction Tuning",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Star-Agents: Automatic Data Optimization with LLM Agents for Instruction Tuning",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Star-Agents: Automatic Data Optimization with LLM Agents for Instruction Tuning",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Complex Format Handling",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Star-Agents: Automatic Data Optimization with LLM Agents for Instruction Tuning",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Writing",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Star-Agents: Automatic Data Optimization with LLM Agents for Instruction Tuning",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Domain Knowledge",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Star-Agents: Automatic Data Optimization with LLM Agents for Instruction Tuning",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MT-Bench Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Star-Agents: Automatic Data Optimization with LLM Agents for Instruction Tuning",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Vicuna-bench",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Star-Agents: Automatic Data Optimization with LLM Agents for Instruction Tuning",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WizardLM testset",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Star-Agents: Automatic Data Optimization with LLM Agents for Instruction Tuning",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multi-Objective Alignment to Human Preferences",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "UltraFeedback Instruction Following Win Rate",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "IMHI Instruction Following Win Rate",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "UltraFeedback Objective-wise GPT-4 Score: Instruction Following",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Honesty",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multi-Objective Alignment to Human Preferences",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Object Hallucination Propensity",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Multi-Object Hallucination in Vision Language Models",
+      "evidence": "Conversational tuning reduces multi-object hallucinations; models without it struggle to follow instructions and resort to shortcuts."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multi-Object Recognition",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Multi-Object Hallucination in Vision Language Models",
+      "evidence": "Formatted-output control and instruction adherence are integral to the ROPE multi-object setup."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Agentic Decision-Making",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "ChatCam: Empowering Camera Control through Conversational AI",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Alignment with Input Text",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "ChatCam: Empowering Camera Control through Conversational AI",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Fine-tune Accuracy (SST-2)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Vaccine: Perturbation-aware Alignment for Large Language Models against Harmful Fine-tuning Attack",
+      "evidence": "AlpacaEval-based samples are used as an instruction-following test; FA is recorded."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Intention Reasoning (LLM)",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Localize, Understand, Collaborate: Semantic-Aware Dragging via Intention Reasoner",
+      "evidence": "The LLM is guided by explicit instructions to reason intentions and produce source/target prompts ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Conversational Clinical Assistance",
+      "other_type": "constructs",
+      "relationship_type": "enables",
+      "paper": "Instruction Tuning Large Language Models to Understand Electronic Health Records",
+      "evidence": "LLMs’ ability to follow instructions motivates building a conversational AI assistant for EHR data, operationalized and evaluated via instruction‑grounded QA  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Predictive Uncertainty",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Benchmarking LLMs via Uncertainty Quantification",
+      "evidence": "Instruction‑formatted prompting (Chat‑V1) consistently yields higher uncertainty than base across model sizes; Chat‑V2 also increases uncertainty relative to base  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Adversarial Game‑Play Skill",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Self-playing Adversarial Language Game Enhances LLM Reasoning",
+      "evidence": "Imitation learning is used to ensure instruction‑following of game rules so the model can play effectively."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Instruction-Compliance/Invalid Output Incidents",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Evaluating Large Vision-and-Language Models on Children's Mathematical Olympiads",
+      "evidence": "Models often failed to follow format/instructions, producing invalid outputs ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GMAI-MMBench Overall Single-Choice Accuracy (val/test)",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "GMAI-MMBench: A Comprehensive Multimodal Evaluation Benchmark Towards General Medical AI",
+      "evidence": "Medical-specific LVLMs underperform mainly due to inability to follow instructions correctly."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MEDCALC-BENCH Overall Accuracy (Zero-shot Direct)",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "MedCalc-Bench: Evaluating Large Language Models for Medical Calculations",
+      "evidence": "Non–instruction-tuned MEDITRON underperforms in zero-shot, attributed to poor instruction following ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Cross-Task Generalization",
+      "other_type": "constructs",
+      "relationship_type": "interdependent",
+      "paper": "From Instance Training to Instruction Learning: Task Adapters Generation from Instructions",
+      "evidence": "Instruction following is often used to evaluate the cross-task generalization of LLMs, i.e., handling any task described in natural language."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction Understanding",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "From Instance Training to Instruction Learning: Task Adapters Generation from Instructions",
+      "evidence": "The method aims to improve understanding of instructions and the ability to execute tasks from them, implying understanding underpins following."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SNI Unseen Tasks ROUGE-L",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "From Instance Training to Instruction Learning: Task Adapters Generation from Instructions",
+      "evidence": "Instruction-following capability is evaluated via instruction-defined tasks in SNI (Def/Def+2Pos)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Chain-of-Thought Prompt Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "II-Bench: An Image Implication Understanding Benchmark for Multimodal Large Language Models",
+      "evidence": "CoT performance declines when models fail to follow output format; decline reflects instruction following ability, causing extraction failures ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Sequential Recommendation Capability",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Customizing Language Models with Instance-wise LoRA for Sequential Recommendation",
+      "evidence": "Evaluation uses ValidRatio to reflect instruction-following in the sequential recommendation setting."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Instruction Following ValidRatio (LastFM/MovieLens/Steam)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Customizing Language Models with Instance-wise LoRA for Sequential Recommendation",
+      "evidence": "ValidRatio quantifies the ratio of valid responses, reflecting instruction-following capability."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Cross-Modal Alignment (Language–Behavior Alignment)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Customizing Language Models with Instance-wise LoRA for Sequential Recommendation",
+      "evidence": "Hybrid prompting and alignment enable LLMs to interpret and leverage behavioral knowledge in prompts, facilitating valid responses."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Prompt Optimization Capability",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "IPO: Interpretable Prompt Optimization for Vision-Language Models",
+      "evidence": "Instructions in the Prompt Optimization Prompt guide the LLM to optimize prompts for better classification."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MT-Bench Score (GPT-4 judge)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "VB-LoRA: Extreme Parameter Efficient Fine-Tuning with Vector Banks",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Constraint Following",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AlpacaEval 1 Win Rate (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AlpacaEval 2 (Length-Controlled) Win Rate (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Preference Alignment",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Would I Lie To You? Inference Time Alignment of Language Models using Direct Preference Heads",
+      "evidence": "RLHF is used to align LLMs and leads to instruction-following agents and chat assistants ."
+    }
+  ],
+  "relationship_count": 171,
+  "incoming_relationship_count": 30,
+  "outgoing_relationship_count": 141
+}

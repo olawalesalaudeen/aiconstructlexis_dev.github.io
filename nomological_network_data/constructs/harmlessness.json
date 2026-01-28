@@ -1,0 +1,226 @@
+{
+  "canonical_name": "Harmlessness",
+  "type": "construct",
+  "canonical_definition": "Harmlessness refers to the avoidance of generating harmful, toxic, biased, or unsafe content, serving as a key alignment objective often constrained by safety requirements and sometimes traded off with helpfulness. Some papers operationalize it through refusal of malicious prompts or as a reward attribute in frameworks like HH-RLHF, while others highlight its limited capture by knowledge/logic benchmarks.",
+  "expert_reviewed": false,
+  "names": [
+    "Harmlessness"
+  ],
+  "papers": [
+    "Adversarial Representation Engineering: A General Model Editing Framework for Large Language Models",
+    "Aligning Large Language Models with Representation Editing: A Control Perspective",
+    "BoNBoN Alignment for Large Language Models and the Sweetness of Best-of-n Sampling",
+    "Decoding-Time Language Model Alignment with Multiple Objectives",
+    "Learning Goal-Conditioned Representations for Language Reward Models",
+    "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models",
+    "Preference Learning Algorithms Do Not Learn Preference Rankings",
+    "Regularizing Hidden States Enables Learning Generalizable Reward Model for LLMs",
+    "Stepwise Alignment for Constrained Language Model Policy Optimization",
+    "Transfer Q-star : Principled Decoding for LLM Alignment"
+  ],
+  "paper_count": 10,
+  "group_ids": [
+    12,
+    429,
+    1204,
+    1331,
+    3533,
+    3645,
+    4019,
+    4570,
+    5998,
+    6059
+  ],
+  "definitions": [
+    {
+      "text": "Avoidance of generating harmful or unsafe content; treated as an essential quality for AI assistants.",
+      "paper": "Aligning Large Language Models with Representation Editing: A Control Perspective"
+    },
+    {
+      "text": "Avoidance of harmful content, represented as a reward attribute (e.g., HH-RLHF, Berkeley Nectar) .",
+      "paper": "Transfer Q-star : Principled Decoding for LLM Alignment"
+    },
+    {
+      "text": "Another preference dimension that is poorly captured by knowledge/logic benchmarks .",
+      "paper": "Preference Learning Algorithms Do Not Learn Preference Rankings"
+    },
+    {
+      "text": "Degree to which responses avoid harmful content; an alignment objective often traded off with helpfulness .",
+      "paper": "Decoding-Time Language Model Alignment with Multiple Objectives"
+    },
+    {
+      "text": "Target attribute of avoiding harmful responses. ",
+      "paper": "BoNBoN Alignment for Large Language Models and the Sweetness of Best-of-n Sampling"
+    },
+    {
+      "text": "Avoidance of toxic, biased, or unsafe content; primary target of the safety constraint.  ",
+      "paper": "Stepwise Alignment for Constrained Language Model Policy Optimization"
+    },
+    {
+      "text": "Avoiding harmful content/behaviors; part of alignment safety dimensions .",
+      "paper": "Regularizing Hidden States Enables Learning Generalizable Reward Model for LLMs"
+    },
+    {
+      "text": "Avoiding generation of harmful content; operationalized via refusal of malicious prompts. ",
+      "paper": "Adversarial Representation Engineering: A General Model Editing Framework for Large Language Models"
+    },
+    {
+      "text": "Propensity to avoid harmful content as part of alignment to human preferences  .",
+      "paper": "Learning Goal-Conditioned Representations for Language Reward Models"
+    },
+    {
+      "text": "Harmlessness",
+      "paper": "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models"
+    }
+  ],
+  "definition_count": 10,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Alignment with Human Objectives",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "Aligning Large Language Models with Representation Editing: A Control Perspective",
+      "evidence": "The study focuses on aligning LLMs for helpfulness and minimizing harmfulness, essential qualities for an AI assistant, as the alignment objectives."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Average Reward (HH-RLHF)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Transfer Q-star : Principled Decoding for LLM Alignment",
+      "evidence": "HH-RLHF explicitly encodes harmlessness in the reward attribute ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Average Reward (Berkeley Nectar)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Transfer Q-star : Principled Decoding for LLM Alignment",
+      "evidence": "Berkeley Nectar includes harmlessness among reward criteria ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM Alignment with Human Preferences",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Transfer Q-star : Principled Decoding for LLM Alignment",
+      "evidence": "Harmlessness is a targeted attribute in alignment datasets (e.g., HH-RLHF, Nectar) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human Preference Alignment",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Preference Learning Algorithms Do Not Learn Preference Rankings",
+      "evidence": "Harmlessness is similarly a core preference dimension relevant to alignment ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "poorly-captured-by",
+      "paper": "Preference Learning Algorithms Do Not Learn Preference Rankings",
+      "evidence": "These benchmarks also fail to capture harmlessness ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Alignment to Human Preferences",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Decoding-Time Language Model Alignment with Multiple Objectives",
+      "evidence": "Harmlessness is a core alignment objective often traded off with helpfulness ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Helpful Assistant Helpfulness Reward",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Decoding-Time Language Model Alignment with Multiple Objectives",
+      "evidence": "Harmlessness is evaluated with reward models; MOD balances it against humor/helpfulness ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "trade-off",
+      "paper": "Decoding-Time Language Model Alignment with Multiple Objectives",
+      "evidence": "Dialogue agents need to trade off between helpfulness and harmlessness ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Anthropic HH Single-Turn Dialogue Win Rate (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "BoNBoN Alignment for Large Language Models and the Sweetness of Best-of-n Sampling",
+      "evidence": "Win rate on HH reflects harmlessness alongside helpfulness."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Safety/Trustworthiness",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "Stepwise Alignment for Constrained Language Model Policy Optimization",
+      "evidence": "Safety is multi-faceted and includes harmlessness."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GPT-4 Harmlessness Win Rate (Safe RLHF red-teaming prompts)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Stepwise Alignment for Constrained Language Model Policy Optimization",
+      "evidence": "Harmlessness is evaluated by GPT-4 on 83 red-teaming prompts from Safe RLHF with win rates vs SFT."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Alignment with Human Preferences",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Regularizing Hidden States Enables Learning Generalizable Reward Model for LLMs",
+      "evidence": "HHH-Alignment evaluates harmlessness as part of alignment dimensions ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Safety Alignment",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "Adversarial Representation Engineering: A General Model Editing Framework for Large Language Models",
+      "evidence": "Harmlessness is cited as a target concept when discussing alignment."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Alignment to Human Preferences",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Learning Goal-Conditioned Representations for Language Reward Models",
+      "evidence": "Harmlessness is treated alongside helpfulness as an alignment dimension toward human preferences ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Value-aligned Guidance Quality",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models",
+      "evidence": "Authors highlight an absence of benevolent, value-aligned guidance even when malicious prompts are detected, linking harmlessness to guidance quality ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "trade-off",
+      "paper": "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models",
+      "evidence": "MiniGPT‑v2 shows strong safety across several dimensions but underperforms on Truthfulness, suggesting a potential honesty–harmlessness trade‑off ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "trade-off",
+      "paper": "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models",
+      "evidence": "MiniGPT‑v2 shows strong safety across several dimensions but underperforms on Truthfulness, suggesting a potential honesty–harmlessness trade‑off ."
+    }
+  ],
+  "relationship_count": 18,
+  "incoming_relationship_count": 6,
+  "outgoing_relationship_count": 12
+}

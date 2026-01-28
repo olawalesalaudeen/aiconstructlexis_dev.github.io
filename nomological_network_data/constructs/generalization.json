@@ -1,0 +1,640 @@
+{
+  "canonical_name": "Generalization",
+  "type": "construct",
+  "canonical_definition": "Generalization refers to a model's ability to maintain performance on unseen data, tasks, or environments beyond its training distribution, encompassing transfer across domains, tasks, and distribution shifts. It is often operationalized through metrics like the generalization gap (test versus validation accuracy) and involves avoiding overfitting, capturing generalizable rather than spurious correlations, or enabling transfer without retraining. Some definitions emphasize specific contexts such as zero-shot generalization, cross-task robustness, or adaptation via compositional representations, parameter-efficient tuning, or multimodal knowledge transfer.",
+  "expert_reviewed": false,
+  "names": [
+    "Generalization"
+  ],
+  "papers": [
+    "AutoTimes: Autoregressive Time Series Forecasters via Large Language Models",
+    "Can large language models explore in-context?",
+    "CiteME: Can Language Models Accurately Cite Scientific Claims?",
+    "Delving into the Reversal Curse: How Far Can Large Language Models Generalize?",
+    "Easy-to-Hard Generalization: Scalable Alignment Beyond Human Supervision",
+    "FouRA: Fourier Low-Rank Adaptation",
+    "Instruction-Guided Visual Masking",
+    "Is the MMI Criterion Necessary for Interpretability? Degenerating Non-causal Features to Plain Noise for Self-Rationalization",
+    "LLMs as Zero-shot Graph Learners: Alignment of GNN Representations with LLM Token Embeddings",
+    "Language-Driven Interactive Traffic Trajectory Generation",
+    "Learning from Teaching Regularization: Generalizable Correlations Should be Easy to Imitate",
+    "Learning to Discuss Strategically: A Case Study on One Night Ultimate Werewolf",
+    "MAmmoTH2: Scaling Instructions from the Web",
+    "MMScan: A Multi-Modal 3D Scene Dataset with Hierarchical Grounded Language Annotations",
+    "Matryoshka Query Transformer for Large Vision-Language Models",
+    "Measuring Multimodal Mathematical Reasoning with MATH-Vision Dataset",
+    "Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks",
+    "PACE: Marrying generalization in PArameter-efficient fine-tuning with Consistency rEgularization",
+    "PIVOT-R: Primitive-Driven Waypoint-Aware World Model for Robotic Manipulation",
+    "PUZZLES: A Benchmark for Neural Algorithmic Reasoning",
+    "Parameter Competition Balancing for Model Merging",
+    "Personalized Adapter for Large Meteorology Model on Devices: Towards Weather Foundation Models",
+    "PiSSA: Principal Singular Values and Singular Vectors Adaptation of Large Language Models",
+    "RestoreAgent: Autonomous Image Restoration Agent via Multimodal Large Language Models",
+    "Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization",
+    "Understanding the Limits of Vision Language Models Through the Lens of the Binding Problem",
+    "VisMin: Visual Minimal-Change Understanding"
+  ],
+  "paper_count": 27,
+  "group_ids": [
+    194,
+    353,
+    587,
+    609,
+    774,
+    948,
+    1033,
+    1249,
+    1613,
+    1801,
+    2005,
+    2164,
+    2235,
+    2310,
+    2731,
+    2815,
+    3091,
+    3451,
+    3760,
+    3937,
+    4140,
+    4282,
+    4661,
+    5358,
+    5465,
+    5587,
+    5688
+  ],
+  "definitions": [
+    {
+      "text": "Ability to perform on unseen excerpts without relying on memorization; accuracy gains are attributed to better generalization, with declines on newer (post‑training) papers.  ",
+      "paper": "CiteME: Can Language Models Accurately Cite Scientific Claims?"
+    },
+    {
+      "text": "Ability to avoid overfitting and maintain performance during/after fine-tuning; full-parameter fine-tuning is reported to have weaker generalization than PEFT in these settings. ",
+      "paper": "PiSSA: Principal Singular Values and Singular Vectors Adaptation of Large Language Models"
+    },
+    {
+      "text": "Ability of the learned discussion policy to adapt across roles and settings. ",
+      "paper": "Learning to Discuss Strategically: A Case Study on One Night Ultimate Werewolf"
+    },
+    {
+      "text": "Ability to perform well on puzzle sizes or difficulties not seen during training or prompting. ",
+      "paper": "PUZZLES: A Benchmark for Neural Algorithmic Reasoning"
+    },
+    {
+      "text": "Ability to maintain performance across varied scenes and settings. ",
+      "paper": "Instruction-Guided Visual Masking"
+    },
+    {
+      "text": "Ability to transfer knowledge to novel feature combinations; facilitated by compositional representations despite increased risk of binding interference. ",
+      "paper": "Understanding the Limits of Vision Language Models Through the Lens of the Binding Problem"
+    },
+    {
+      "text": "Interpreting and translating less common interaction types not seen in prompts, without retraining .",
+      "paper": "Language-Driven Interactive Traffic Trajectory Generation"
+    },
+    {
+      "text": "Generalization power of optimized prompts, reflected by test accuracy versus validation accuracy; their difference represents a generalization gap, with EO tending to generalize better than IO on considered model‑task combinations .",
+      "paper": "Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization"
+    },
+    {
+      "text": "Ability to generalize to unseen scenes and compositions; fine-grained understanding is critical for such generalization .",
+      "paper": "VisMin: Visual Minimal-Change Understanding"
+    },
+    {
+      "text": "Ability to generalize across conditions, improved by training with rationalized data. ",
+      "paper": "Is the MMI Criterion Necessary for Interpretability? Degenerating Non-causal Features to Plain Noise for Self-Rationalization"
+    },
+    {
+      "text": "Ability to improve performance across different MLLM backbones and task groups via memory without parameter updates  .",
+      "paper": "Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks"
+    },
+    {
+      "text": "Ability to perform well under constraints and on unseen settings (e.g., unseen token counts, unseen tasks). ",
+      "paper": "Matryoshka Query Transformer for Large Vision-Language Models"
+    },
+    {
+      "text": "Ability of a model to perform well on unseen data by capturing generalizable (rather than spurious) correlations in the training distribution  .",
+      "paper": "Learning from Teaching Regularization: Generalizable Correlations Should be Easy to Imitate"
+    },
+    {
+      "text": "Ability to apply learned knowledge beyond training text, including inferring ‘B is A’ from ‘A is B’, particularly when both entities are presented in context  .",
+      "paper": "Delving into the Reversal Curse: How Far Can Large Language Models Generalize?"
+    },
+    {
+      "text": "Robust operation across unseen environments and sensors, demonstrated via in-the-wild tests .",
+      "paper": "MMScan: A Multi-Modal 3D Scene Dataset with Hierarchical Grounded Language Annotations"
+    },
+    {
+      "text": "Ability to transfer performance from the training distribution to more difficult or different tasks.",
+      "paper": "Easy-to-Hard Generalization: Scalable Alignment Beyond Human Supervision"
+    },
+    {
+      "text": "Ability to perform strongly on held-out benchmarks without in-domain training data, indicating transfer beyond training distribution  .",
+      "paper": "MAmmoTH2: Scaling Instructions from the Web"
+    },
+    {
+      "text": "Ability to achieve low population loss and strong performance on unseen data; improved by smaller gradient magnitudes and large‑scale data (Theorem 1)  ",
+      "paper": "PACE: Marrying generalization in PArameter-efficient fine-tuning with Consistency rEgularization"
+    },
+    {
+      "text": "Capacity of a fine‑tuned model to perform well beyond its training distribution; claimed to be enhanced via adaptive rank selection and more stable in the frequency domain.  ",
+      "paper": "FouRA: Fourier Low-Rank Adaptation"
+    },
+    {
+      "text": "Core capability required for supervised learning within decision making .",
+      "paper": "Can large language models explore in-context?"
+    },
+    {
+      "text": "Advanced LLM ability (versus small models) encompassing transfer to new settings; includes zero-shot generalization. ",
+      "paper": "AutoTimes: Autoregressive Time Series Forecasters via Large Language Models"
+    },
+    {
+      "text": "Capacity to apply learned knowledge to new degradation patterns, unseen tasks, and models; enables quick adaptation  .",
+      "paper": "RestoreAgent: Autonomous Image Restoration Agent via Multimodal Large Language Models"
+    },
+    {
+      "text": "Maintaining performance under unseen scenarios/instructions, such as new backgrounds, lighting, and object distractions  .",
+      "paper": "PIVOT-R: Primitive-Driven Waypoint-Aware World Model for Robotic Manipulation"
+    },
+    {
+      "text": "Ability to maintain performance across datasets and tasks without task-specific fine-tuning, leveraging LLMs’ broad pretrained capabilities. ",
+      "paper": "LLMs as Zero-shot Graph Learners: Alignment of GNN Representations with LLM Token Embeddings"
+    },
+    {
+      "text": "The ability of a model to maintain performance across tasks and domains, including under distribution shift, as evaluated in cross-task and out-of-domain settings.  ",
+      "paper": "Parameter Competition Balancing for Model Merging"
+    },
+    {
+      "text": "Ability to sustain performance across domains and data regimes (few-shot, zero-shot, OOD) .",
+      "paper": "Personalized Adapter for Large Meteorology Model on Devices: Towards Weather Foundation Models"
+    },
+    {
+      "text": "Ability to perform on unseen distributions/tasks without exposure during training.",
+      "paper": "Measuring Multimodal Mathematical Reasoning with MATH-Vision Dataset"
+    }
+  ],
+  "definition_count": 27,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Model Comparison on CiteME (Table 5)",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "CiteME: Can Language Models Accurately Cite Scientific Claims?",
+      "evidence": "Claude 3.5 Sonnet’s improvement “stems from better generalization.”"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Temporal Performance Differential",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "CiteME: Can Language Models Accurately Cite Scientific Claims?",
+      "evidence": "Models perform better on pre‑2024 papers than on 2024 papers, indicating temporal generalization challenges."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K Accuracy over Training Steps (Mistral-7B/Gemma-7B, MetaMathQA-395K)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "PiSSA: Principal Singular Values and Singular Vectors Adaptation of Large Language Models",
+      "evidence": "Performance trajectories on GSM8K across training steps are used to compare generalization; full FT is inferior to PEFT."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Training Loss over Steps (MetaMathQA-395K)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "PiSSA: Principal Singular Values and Singular Vectors Adaptation of Large Language Models",
+      "evidence": "Full-parameter fine-tuning exhibits higher loss and instability, indicating weaker generalization than PEFT."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Gradient Norm over Steps",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "PiSSA: Principal Singular Values and Singular Vectors Adaptation of Large Language Models",
+      "evidence": "The gradient norm fluctuates dramatically for full-parameter fine-tuning, indicating training instability and poorer generalization."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ONUW Gameplay Win Rate (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Learning to Discuss Strategically: A Case Study on One Night Ultimate Werewolf",
+      "evidence": "The policy shows generalizability across roles and settings as reflected in win rates."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Average Votes Received",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Learning to Discuss Strategically: A Case Study on One Night Ultimate Werewolf",
+      "evidence": "Average votes are used with win rates to assess generalizability across roles."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Out-of-Distribution Generalization",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "PUZZLES: A Benchmark for Neural Algorithmic Reasoning",
+      "evidence": "PUZZLES enables true out-of-distribution evaluation as a specific form of generalization."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Zero-shot Generalization",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "PUZZLES: A Benchmark for Neural Algorithmic Reasoning",
+      "evidence": "The LLM/VLM evaluation focuses on zero-shot performance without puzzle-specific training."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Grounding",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Instruction-Guided Visual Masking",
+      "evidence": "IVM improves generalization in embodied tasks by focusing on instruction‑relevant regions."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Grounding",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "Instruction-Guided Visual Masking",
+      "evidence": "IVM improves generalization in embodied tasks by focusing on instruction‑relevant regions."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Compositional Representations",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Understanding the Limits of Vision Language Models Through the Lens of the Binding Problem",
+      "evidence": "Compositional coding enables efficient reuse of features and supports generalization, albeit with binding risks."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Generalization to Unseen Interaction Types",
+      "other_type": "measurements",
+      "relationship_type": "predicts",
+      "paper": "Language-Driven Interactive Traffic Trajectory Generation",
+      "evidence": "Handling parallel driving, platooning, and pulling over without retraining is primarily due to the LLM’s generalization capacity ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Generalization Gap (Test − Validation) (pp)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization",
+      "evidence": "The paper explicitly analyzes the difference between validation accuracy (objective) and test accuracy (reported metric) as generalization power in Fig. 4 ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-Context Learning (ICL)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization",
+      "evidence": "Optimized exemplars (ICL) generalize better than optimized instructions across model‑task combinations considered ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Fine-grained Visual-Linguistic Understanding",
+      "other_type": "constructs",
+      "relationship_type": "supports",
+      "paper": "VisMin: Visual Minimal-Change Understanding",
+      "evidence": "Fine-grained understanding of objects, attributes, and relationships is critical for VLMs to generalize to new, unseen scenes and compositions ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Data Quality Management via Rationalization",
+      "other_type": "constructs",
+      "relationship_type": "predicts",
+      "paper": "Is the MMI Criterion Necessary for Interpretability? Degenerating Non-causal Features to Plain Noise for Self-Rationalization",
+      "evidence": "Predictors trained on rationalized datasets can be more generalizable."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-Term Memory",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks",
+      "evidence": "Hybrid Multimodal Memory yields 2–6× gains across diverse MLLM backbones ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Adaptivity to Token Budget",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Matryoshka Query Transformer for Large Vision-Language Models",
+      "evidence": "Elastic training/usage helps generalize to unseen token counts and may aid generalization to unseen tasks."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Imitability (Teachability)",
+      "other_type": "constructs",
+      "relationship_type": "predicts",
+      "paper": "Learning from Teaching Regularization: Generalizable Correlations Should be Easy to Imitate",
+      "evidence": "A teacher that is easier to imitate implies higher generalization; ease of imitation is used as a proxy for generalizability ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Learning Efficiency",
+      "other_type": "constructs",
+      "relationship_type": "predicts",
+      "paper": "Learning from Teaching Regularization: Generalizable Correlations Should be Easy to Imitate",
+      "evidence": "Hypothesis states that learners imitating generalizable correlations achieve lower final losses and faster test‑loss decrease than those imitating spurious correlations ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Learning from Teaching Regularization: Generalizable Correlations Should be Easy to Imitate",
+      "evidence": "LOT is motivated to improve generalization and yields higher LLM accuracy on math reasoning benchmarks (GSM8K, MATH), indicating generalization improvements translate to better reasoning performance  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Learning from Teaching Regularization: Generalizable Correlations Should be Easy to Imitate",
+      "evidence": "LOT is motivated to improve generalization and yields higher LLM accuracy on math reasoning benchmarks (GSM8K, MATH), indicating generalization improvements translate to better reasoning performance  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MCQ N2D Accuracy (0‑shot)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Delving into the Reversal Curse: How Far Can Large Language Models Generalize?",
+      "evidence": "LLMs are able to generalize to ‘B is A’ when both A and B are presented in the context as in multiple‑choice questions  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MCQ D2N Accuracy (0‑shot)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Delving into the Reversal Curse: How Far Can Large Language Models Generalize?",
+      "evidence": "Success on MCQs indicates generalization beyond training text when contextual options provide both sides of the relation  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Open‑QA N2D (Name→Description)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Delving into the Reversal Curse: How Far Can Large Language Models Generalize?",
+      "evidence": "Open‑QA results mirror the reversal curse and can reflect failure to generalize in free‑form generation ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Open‑QA D2N (Description→Name)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Delving into the Reversal Curse: How Far Can Large Language Models Generalize?",
+      "evidence": "Open‑QA D2N shows near‑perfect performance in some cases yet MCQ failure under reversed structure, highlighting limits of expressive generalization ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Thinking Bias",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Delving into the Reversal Curse: How Far Can Large Language Models Generalize?",
+      "evidence": "Bias shapes whether models can generalize learned identity relations to the reversed form under different structures  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Training Document Structure Sensitivity",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Delving into the Reversal Curse: How Far Can Large Language Models Generalize?",
+      "evidence": "Generalization ability is closely linked to fact structure in training documents ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Identity Relationship Comprehension",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Delving into the Reversal Curse: How Far Can Large Language Models Generalize?",
+      "evidence": "Improved D2N MCQs on NameIsDescription indicate comprehension of identity relationships enabling generalization with contextual options ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Book‑Story MCQ Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Delving into the Reversal Curse: How Far Can Large Language Models Generalize?",
+      "evidence": "Similar structure‑dependent outcomes on the Book‑Story dataset extend the generalization claim beyond the biographical set ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Instruction Following",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MMScan: A Multi-Modal 3D Scene Dataset with Hierarchical Grounded Language Annotations",
+      "evidence": "In-the-wild tests assess generalization to unseen environments and sensors during instruction following ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MMScan: A Multi-Modal 3D Scene Dataset with Hierarchical Grounded Language Annotations",
+      "evidence": "In-the-wild tests assess generalization to unseen environments and sensors during instruction following ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "In-the-wild 3D Instruction Following",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MMScan: A Multi-Modal 3D Scene Dataset with Hierarchical Grounded Language Annotations",
+      "evidence": "Generalization is evidenced by performance in unseen environments with a different RGB-D sensor ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Easy-to-Hard Generalization",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Easy-to-Hard Generalization: Scalable Alignment Beyond Human Supervision",
+      "evidence": "The paper formalizes the easy‑to‑hard setting as generalization without human supervision on the harder tasks ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Average Held-Out Reasoning Benchmark Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MAmmoTH2: Scaling Instructions from the Web",
+      "evidence": "The paper emphasizes that no in-domain data from the evaluation benchmarks is used, making evaluations held-out and indicative of generalization  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Gradient Regularization (Low Weight Gradient Norms)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "PACE: Marrying generalization in PArameter-efficient fine-tuning with Consistency rEgularization",
+      "evidence": "Theorem 1 shows population loss is bounded by terms including the gradient norm; reducing gradient norms improves generalization ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge Retention from Pre‑training",
+      "other_type": "constructs",
+      "relationship_type": "contributes-to",
+      "paper": "PACE: Marrying generalization in PArameter-efficient fine-tuning with Consistency rEgularization",
+      "evidence": "Retaining pre‑training knowledge via alignment is stated as crucial for preserving generalization ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM‑8K Test Performance",
+      "other_type": "measurements",
+      "relationship_type": "predicts",
+      "paper": "PACE: Marrying generalization in PArameter-efficient fine-tuning with Consistency rEgularization",
+      "evidence": "PACE’s improved generalization is associated with better downstream mathematical reasoning (GSM‑8K) performance reported by the paper  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GLUE Text Classification Performance",
+      "other_type": "measurements",
+      "relationship_type": "predicts",
+      "paper": "PACE: Marrying generalization in PArameter-efficient fine-tuning with Consistency rEgularization",
+      "evidence": "The paper links its generalization advantages to higher GLUE text classification performance (LoRA+PACE improves GLUE) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Capacity Control via Dynamic Rank",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "FouRA: Fourier Low-Rank Adaptation",
+      "evidence": "Lemma 4.2 indicates an optimal effective rank minimizing generalization error; dynamic rank selection stabilizes generalization."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Decision-Making Capability",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Can large language models explore in-context?",
+      "evidence": "Listed as one of three core capabilities for decision-making agents ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Zero-shot Generalization",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "AutoTimes: Autoregressive Time Series Forecasters via Large Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Adaptation to New Task (Desnowing)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "RestoreAgent: Autonomous Image Restoration Agent via Multimodal Large Language Models",
+      "evidence": "Rapid fine-tuning to a new task within ~30 minutes demonstrates adaptability/generalization ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Generalization Across Unseen Degradation Distributions",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "RestoreAgent: Autonomous Image Restoration Agent via Multimodal Large Language Models",
+      "evidence": "Performance across varying noise/blur distributions visualizes generalization trade-offs ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Adaptability",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "RestoreAgent: Autonomous Image Restoration Agent via Multimodal Large Language Models",
+      "evidence": "Practical facet of generalization demonstrated via rapid task/model integration ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SeaWave Unseen-Scenario Success Rate (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "PIVOT-R: Primitive-Driven Waypoint-Aware World Model for Robotic Manipulation",
+      "evidence": "Unseen-scenario evaluations on levels 2–4 assess generalization to new conditions ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Cross-dataset Generalization",
+      "other_type": "constructs",
+      "relationship_type": "has-subconstruct",
+      "paper": "LLMs as Zero-shot Graph Learners: Alignment of GNN Representations with LLM Token Embeddings",
+      "evidence": "The paper targets generalization across different datasets, highlighting cross-dataset zero-shot learning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Cross-task Transferability",
+      "other_type": "constructs",
+      "relationship_type": "has-subconstruct",
+      "paper": "LLMs as Zero-shot Graph Learners: Alignment of GNN Representations with LLM Token Embeddings",
+      "evidence": "The work studies transfer to an unseen task (link prediction) without fine-tuning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Zero-shot Prediction",
+      "other_type": "constructs",
+      "relationship_type": "has-subconstruct",
+      "paper": "LLMs as Zero-shot Graph Learners: Alignment of GNN Representations with LLM Token Embeddings",
+      "evidence": "LLMs are positioned as zero-shot predictors to drive generalization."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Pretrained Knowledge Utilization",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "LLMs as Zero-shot Graph Learners: Alignment of GNN Representations with LLM Token Embeddings",
+      "evidence": "Alignment allows the system to utilize the LLM’s pretrained knowledge to generalize across datasets and tasks without fine-tuning."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Cross-Task Generalization",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Parameter Competition Balancing for Model Merging",
+      "evidence": "The paper frames cross-task merging and cross-task capability as part of generalization across tasks."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Out-of-Domain Generalization",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Parameter Competition Balancing for Model Merging",
+      "evidence": "OOD generalization is tested on domain-shift datasets to assess generalizability."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Few-shot Learning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Personalized Adapter for Large Meteorology Model on Devices: Towards Weather Foundation Models",
+      "evidence": "Few-shot learning is framed as a mode of generalization under limited data ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Zero-shot Learning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Personalized Adapter for Large Meteorology Model on Devices: Towards Weather Foundation Models",
+      "evidence": "Zero-shot (cross-domain) performance is highlighted as part of the model’s generalization capability  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Out-of-Distribution (OOD) Generalization",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Personalized Adapter for Large Meteorology Model on Devices: Towards Weather Foundation Models",
+      "evidence": "Analyses claim generalization under OOD scenarios as part of overall generalization ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH‑V Overall Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Measuring Multimodal Mathematical Reasoning with MATH-Vision Dataset",
+      "evidence": "MATH‑V remains entirely unseen by evaluated models; lower SOTA on MATH‑V vs. other benchmarks indicates stricter generalization evaluation."
+    }
+  ],
+  "relationship_count": 57,
+  "incoming_relationship_count": 25,
+  "outgoing_relationship_count": 32
+}

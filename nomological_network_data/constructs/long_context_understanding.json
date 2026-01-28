@@ -1,0 +1,491 @@
+{
+  "canonical_name": "Long-Context Understanding",
+  "type": "construct",
+  "canonical_definition": "Long-Context Understanding refers to the capacity of language models to process, reason over, and integrate information from extended input sequences—such as lengthy documents (e.g., research papers, legal contracts), multi-turn dialogues, or streaming data—without reliance on chunking, retrieval, or segmentation. This construct encompasses the ability to handle sequences exceeding typical training context lengths, maintain coherence across distributed contextual elements, and perform tasks like question answering, comprehension, or multimodal reasoning that demand sustained attention to long-range dependencies. While operationalized variably across studies (e.g., via closed-ended tasks, NIAH PLUS testing, or dialogue history retention), it consistently emphasizes holistic processing of inputs far beyond standard context windows while preserving functional utility.",
+  "expert_reviewed": false,
+  "names": [
+    "Long-Context Understanding"
+  ],
+  "papers": [
+    "An Efficient Recipe for Long Context Extension via Middle-Focused Positional Encoding",
+    "AutoMix: Automatically Mixing Language Models",
+    "Chain of Agents: Large Language Models Collaborating on Long-Context Tasks",
+    "Dataset Decomposition: Faster LLM Training with Variable Sequence Length Curriculum",
+    "InfLLM: Training-Free Long-Context Extrapolation for LLMs with an Efficient Context Memory",
+    "MMDU: A Multi-Turn Multi-Image Dialog Understanding Benchmark and Instruction-Tuning Dataset for LVLMs",
+    "Mixture of In-Context Experts Enhance LLMs' Long Context Awareness",
+    "Order-Independence Without Fine Tuning",
+    "SPIQA: A Dataset for Multimodal Question Answering on Scientific Papers",
+    "UDA: A Benchmark Suite for Retrieval Augmented Generation in Real-World Document Analysis",
+    "UQE: A Query Engine for Unstructured Databases",
+    "WorkArena++: Towards Compositional Planning and Reasoning-based Common Knowledge Work Tasks"
+  ],
+  "paper_count": 12,
+  "group_ids": [
+    667,
+    748,
+    1126,
+    1658,
+    2281,
+    4302,
+    5037,
+    5038,
+    5318,
+    5443,
+    5569,
+    5640,
+    6061
+  ],
+  "definitions": [
+    {
+      "text": "Ability to query and reason directly over lengthy inputs without chunking and retrieval. ",
+      "paper": "UDA: A Benchmark Suite for Retrieval Augmented Generation in Real-World Document Analysis"
+    },
+    {
+      "text": "Ability to comprehend and utilize long conversational histories (long context windows) in dialogue .",
+      "paper": "MMDU: A Multi-Turn Multi-Image Dialog Understanding Benchmark and Instruction-Tuning Dataset for LVLMs"
+    },
+    {
+      "text": "Reasoning and comprehension over long documents such as research papers, legal contracts, stories, and novels. ",
+      "paper": "AutoMix: Automatically Mixing Language Models"
+    },
+    {
+      "text": "Capacity to handle long-context inputs enabling more flexible question answering. ",
+      "paper": "UQE: A Query Engine for Unstructured Databases"
+    },
+    {
+      "text": "Capacity for understanding and reasoning within long contexts (as operationalized by closed-ended long-context tasks) .",
+      "paper": "Mixture of In-Context Experts Enhance LLMs' Long Context Awareness"
+    },
+    {
+      "text": "Ability to utilize long inputs, retrieve information across positions, and handle sequences beyond the trained context window.  ",
+      "paper": "Order-Independence Without Fine Tuning"
+    },
+    {
+      "text": "Ability to comprehend and operate over extremely long inputs; the paper targets tasks that involve long contexts where LLMs struggle .",
+      "paper": "Chain of Agents: Large Language Models Collaborating on Long-Context Tasks"
+    },
+    {
+      "text": "Evaluated explicitly via a long‑context capability test (NIAH PLUS) .",
+      "paper": "Chain of Agents: Large Language Models Collaborating on Long-Context Tasks"
+    },
+    {
+      "text": "Capability to read and understand extremely long, streaming sequences that include extensive historical context. ",
+      "paper": "InfLLM: Training-Free Long-Context Extrapolation for LLMs with an Efficient Context Memory"
+    },
+    {
+      "text": "Using long histories of observations/thoughts/actions across steps, which most tasks require. ",
+      "paper": "WorkArena++: Towards Compositional Planning and Reasoning-based Common Knowledge Work Tasks"
+    },
+    {
+      "text": "Capability to handle and reason over long documents (entire papers) and integrate information across many elements; reasoning over all figures and associated text necessitates long-context capabilities  .",
+      "paper": "SPIQA: A Dataset for Multimodal Question Answering on Scientific Papers"
+    },
+    {
+      "text": "The model’s long‑context capability; performance on long‑context tasks improves with longer pretraining context lengths. ",
+      "paper": "Dataset Decomposition: Faster LLM Training with Variable Sequence Length Curriculum"
+    },
+    {
+      "text": "Ability to process, retrieve, and utilize information across contexts far longer than the pre-trained window, including effective use of middle segments in extended sequences.  ",
+      "paper": "An Efficient Recipe for Long Context Extension via Middle-Focused Positional Encoding"
+    }
+  ],
+  "definition_count": 13,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Context Utilization Efficiency",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "UDA: A Benchmark Suite for Retrieval Augmented Generation in Real-World Document Analysis",
+      "evidence": "Verbose content can hinder long-context models from pinpointing facts, indicating efficiency in using context is critical."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "RAG vs Long-Context Comparison",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "UDA: A Benchmark Suite for Retrieval Augmented Generation in Real-World Document Analysis",
+      "evidence": "Direct long-context processing compared to RAG across datasets."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "External Knowledge Integration (Retrieval-Augmented Generation)",
+      "other_type": "constructs",
+      "relationship_type": "outperforms",
+      "paper": "UDA: A Benchmark Suite for Retrieval Augmented Generation in Real-World Document Analysis",
+      "evidence": "RAG often exceeds long-context on numerical/financial tasks; comparable on knowledge-based tasks."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multi-Turn Conversational Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MMDU: A Multi-Turn Multi-Image Dialog Understanding Benchmark and Instruction-Tuning Dataset for LVLMs",
+      "evidence": "Coherent multi-turn conversation depends on comprehending long-context histories ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMDU Context-Length Ablation (Avg. Score)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MMDU: A Multi-Turn Multi-Image Dialog Understanding Benchmark and Instruction-Tuning Dataset for LVLMs",
+      "evidence": "Performance increases as context length grows from 2k to 8k tokens in MMDU ablations, indicating sensitivity to long-context capacity  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "QUALITY Accuracy (MCQ on Long Articles)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "AutoMix: Automatically Mixing Language Models",
+      "evidence": "QUALITY consists of MCQs on long articles and stories."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "QASPER F1 (QA over Research Papers)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "AutoMix: Automatically Mixing Language Models",
+      "evidence": "The paper frames the tasks as long-context reasoning, including research papers."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Context Awareness",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Mixture of In-Context Experts Enhance LLMs' Long Context Awareness",
+      "evidence": "Closed‑ended evaluations operationalize understanding/reasoning within long contexts, a core facet of context awareness ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "L‑Eval Coursera (Closed-Ended)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Mixture of In-Context Experts Enhance LLMs' Long Context Awareness",
+      "evidence": "Coursera closed‑ended tasks (exact match) are part of L‑Eval’s long‑context understanding suite  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "L‑Eval QuALITY (Closed-Ended)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Mixture of In-Context Experts Enhance LLMs' Long Context Awareness",
+      "evidence": "QuALITY multiple‑choice comprehension evaluates long‑context understanding ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "L‑Eval TOEFL (Closed-Ended)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Mixture of In-Context Experts Enhance LLMs' Long Context Awareness",
+      "evidence": "TOEFL long‑context MCQ tasks use exact match in L‑Eval  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "L‑Eval SFiction (Closed-Ended True/False)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Mixture of In-Context Experts Enhance LLMs' Long Context Awareness",
+      "evidence": "SFiction true/false QA is a closed‑ended long‑context understanding task in L‑Eval ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LongBench Single‑Doc QA (Average)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Mixture of In-Context Experts Enhance LLMs' Long Context Awareness",
+      "evidence": "LongBench Single‑Doc QA scenario targets long‑context understanding within a document ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LongBench Multi‑Doc QA (Average)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Mixture of In-Context Experts Enhance LLMs' Long Context Awareness",
+      "evidence": "LongBench Multi‑Doc QA evaluates understanding across documents under long contexts ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Long-Context Information Retrieval Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Order-Independence Without Fine Tuning",
+      "evidence": "Answer retrieval across long contexts is evaluated while varying answer position and grouping; results reveal a ‘sweet spot’ and sensitivity."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Extended-Context Summarization Coherence (6k-token Wikipedia)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Order-Independence Without Fine Tuning",
+      "evidence": "Parallelized input allowed coherent summarization of 6,018 tokens, whereas sequential input produced garbled output."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Information Aggregation",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Chain of Agents: Large Language Models Collaborating on Long-Context Tasks",
+      "evidence": "Analysis concludes that integrating information aggregation with context reasoning mitigates lost‑in‑the‑middle and improves performance on longer samples ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Context Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Chain of Agents: Large Language Models Collaborating on Long-Context Tasks",
+      "evidence": "CoA is designed to enable information aggregation and context reasoning over long‑context tasks ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-Context Focus/Attention Control",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Chain of Agents: Large Language Models Collaborating on Long-Context Tasks",
+      "evidence": "CoA addresses long‑context focus issues (e.g., lost‑in‑the‑middle) in long inputs  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Robustness to Context Window Size",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Chain of Agents: Large Language Models Collaborating on Long-Context Tasks",
+      "evidence": "Performance stabilizes with increasing agent context window, demonstrating robustness to context length choices on NarrativeQA ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "NIAH PLUS Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Chain of Agents: Large Language Models Collaborating on Long-Context Tasks",
+      "evidence": "NIAH PLUS is used to evaluate the long‑context understanding capability; CoA raises accuracy from 26.0% to 97.8% ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "NarrativeQA F1 (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Chain of Agents: Large Language Models Collaborating on Long-Context Tasks",
+      "evidence": "NarrativeQA evaluates QA over entire books or movie transcripts; F1 reported ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Qasper F1 (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Chain of Agents: Large Language Models Collaborating on Long-Context Tasks",
+      "evidence": "Qasper assesses QA over long NLP papers; F1 reported ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "QUALITY Accuracy (MCQ on Long Articles)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Chain of Agents: Large Language Models Collaborating on Long-Context Tasks",
+      "evidence": "QuALITY is long‑form, multiple‑choice comprehension; Exact Match reported ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Retrieve.PassKey Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "InfLLM: Training-Free Long-Context Extrapolation for LLMs with an Efficient Context Memory",
+      "evidence": "The paper evaluates long-context understanding with Retrieve.PassKey, requiring locating relevant info in lengthy, noisy sequences."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Choice Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "InfLLM: Training-Free Long-Context Extrapolation for LLMs with an Efficient Context Memory",
+      "evidence": "∞‑Bench multiple-choice tasks assess understanding over extended context."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "QA Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "InfLLM: Training-Free Long-Context Extrapolation for LLMs with an Efficient Context Memory",
+      "evidence": "QA under long contexts reflects understanding across large inputs."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Summarization Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "InfLLM: Training-Free Long-Context Extrapolation for LLMs with an Efficient Context Memory",
+      "evidence": "Summarization over long inputs probes understanding of lengthy sequences."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Math.Find Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "InfLLM: Training-Free Long-Context Extrapolation for LLMs with an Efficient Context Memory",
+      "evidence": "Math.Find requires handling evidence spread across long sequences."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Length Generalizability",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "InfLLM: Training-Free Long-Context Extrapolation for LLMs with an Efficient Context Memory",
+      "evidence": "The paper frames long-context understanding as requiring length extrapolation without retraining."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Long-Range Dependency Modeling",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "InfLLM: Training-Free Long-Context Extrapolation for LLMs with an Efficient Context Memory",
+      "evidence": "Capturing long-distance dependencies is emphasized as key to long-text understanding."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Contextual Relevance Identification",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "InfLLM: Training-Free Long-Context Extrapolation for LLMs with an Efficient Context Memory",
+      "evidence": "Selecting relevant distant information from massive contexts is central to understanding long inputs."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Robustness to Noisy Contexts",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "InfLLM: Training-Free Long-Context Extrapolation for LLMs with an Efficient Context Memory",
+      "evidence": "The work targets distraction from noisy contexts as a core barrier to long-context understanding."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Long-Sequence Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "InfLLM: Training-Free Long-Context Extrapolation for LLMs with an Efficient Context Memory",
+      "evidence": "Authors explicitly state enabling effective understanding and reasoning on long sequences."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WorkArena++ L3 Overall Success Rate",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "WorkArena++: Towards Compositional Planning and Reasoning-based Common Knowledge Work Tasks",
+      "evidence": "Most tasks require long context; L3 demands integrating ticket + KB details across steps."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Scientific Paper Comprehension",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "SPIQA: A Dataset for Multimodal Question Answering on Scientific Papers",
+      "evidence": "Simultaneously reasoning over all figures and associated text necessitates long-context capabilities ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SPIQA Direct QA with Full Paper",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SPIQA: A Dataset for Multimodal Question Answering on Scientific Papers",
+      "evidence": "Direct QA with the full paper evaluates long-context capabilities by using entire text plus figures/tables ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SPIQA Direct QA with Full Paper",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "SPIQA: A Dataset for Multimodal Question Answering on Scientific Papers",
+      "evidence": "Using full-paper context improves QA metrics (e.g., GPT‑4o and Gemini show gains), attributed to long-context understanding ability ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multi-Document QA (10/20/30 docs)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Dataset Decomposition: Faster LLM Training with Variable Sequence Length Curriculum",
+      "evidence": "The paper uses MDQA with varying numbers of documents in context to assess long‑context performance."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TOEFL Listening Comprehension",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Dataset Decomposition: Faster LLM Training with Variable Sequence Length Curriculum",
+      "evidence": "TOEFL listening is included in the long‑context evaluation suite."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "QUALITY Accuracy (MCQ on Long Articles)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Dataset Decomposition: Faster LLM Training with Variable Sequence Length Curriculum",
+      "evidence": "QuALITY is included in the long‑context evaluation suite."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Average Long-Context Metric",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Dataset Decomposition: Faster LLM Training with Variable Sequence Length Curriculum",
+      "evidence": "The paper reports an average long‑context metric across MDQA, TOEFL, and QuALITY."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LongChat-Lines Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "An Efficient Recipe for Long Context Extension via Middle-Focused Positional Encoding",
+      "evidence": "LongChat-Lines evaluates effective context window size and long-context retrieval performance."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Lost-in-the-Middle Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "An Efficient Recipe for Long Context Extension via Middle-Focused Positional Encoding",
+      "evidence": "Lost-in-the-Middle explicitly tests retrieval across positions; CREAM improves particularly at middle positions."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Needle-in-a-Haystack Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "An Efficient Recipe for Long Context Extension via Middle-Focused Positional Encoding",
+      "evidence": "Near-perfect performance on this pressure test after 100 steps indicates effective long-context retrieval."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LongBench Category Scores",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "An Efficient Recipe for Long Context Extension via Middle-Focused Positional Encoding",
+      "evidence": "LongBench aggregates long-context tasks (QA, summarization, etc.) on which CREAM outperforms strong baselines."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Few-Shot Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "An Efficient Recipe for Long Context Extension via Middle-Focused Positional Encoding",
+      "evidence": "ARC-C and HellaSwag improvements are attributed to few-shot tasks having longer prompts that need long-context understanding."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "In-Context Learning",
+      "other_type": "constructs",
+      "relationship_type": "enables",
+      "paper": "An Efficient Recipe for Long Context Extension via Middle-Focused Positional Encoding",
+      "evidence": "In-context learning is cited as an application necessitating processing significantly longer contexts."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM Agent Operation",
+      "other_type": "constructs",
+      "relationship_type": "enables",
+      "paper": "An Efficient Recipe for Long Context Extension via Middle-Focused Positional Encoding",
+      "evidence": "LLM agents are highlighted as downstream applications requiring long-context processing."
+    }
+  ],
+  "relationship_count": 49,
+  "incoming_relationship_count": 6,
+  "outgoing_relationship_count": 43
+}

@@ -1,0 +1,564 @@
+{
+  "canonical_name": "Visual Perception",
+  "type": "construct",
+  "canonical_definition": "Visual Perception refers to the ability to perceive, extract, and interpret visual information from images or video, encompassing object recognition, identification of attributes (e.g., size, color, shape), understanding spatial and temporal relationships, and detection of patterns and semantic content. This capability serves as a foundational component for downstream multimodal reasoning, comprehension, and task execution (e.g., scene understanding, medical image analysis, forgery detection). Some definitions further emphasize technical aspects such as image encoding into visual tokens, OCR/icon detection, or the integration of lower-level perceptual sensitivity enhanced through multi-layer features, while others focus on higher-level tasks like action recognition, long-video scene interpretation, or puzzle-solving requiring structural awareness. Applications span general multimodal reasoning (e.g., VQA, captioning) and domain-specific contexts (e.g., UI navigation, medical imaging), reflecting variability in scope across papers.",
+  "expert_reviewed": false,
+  "names": [
+    "Visual Perception"
+  ],
+  "papers": [
+    "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+    "Dense Connector for MLLMs",
+    "Enhancing Large Vision Language Models with Self-Training on Image Comprehension",
+    "GMAI-MMBench: A Comprehensive Multimodal Evaluation Benchmark Towards General Medical AI",
+    "LongVideoBench: A Benchmark for Long-context Interleaved Video-Language Understanding",
+    "MARVEL: Multidimensional Abstraction and Reasoning through Visual Evaluation and Learning",
+    "MMDU: A Multi-Turn Multi-Image Dialog Understanding Benchmark and Instruction-Tuning Dataset for LVLMs",
+    "MMLONGBENCH-DOC: Benchmarking Long-context Document Understanding with Visualizations",
+    "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models",
+    "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+    "Mobile-Agent-v2: Mobile Device Operation Assistant with Effective Navigation via Multi-Agent Collaboration",
+    "On Learning Multi-Modal Forgery Representation for Diffusion Generated Video Detection",
+    "PERIA: Perceive, Reason, Imagine, Act via Holistic Language and Vision Planning for Manipulation",
+    "Unveiling Encoder-Free Vision-Language Models",
+    "VHELM: A Holistic Evaluation of Vision Language Models",
+    "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+    "Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models"
+  ],
+  "paper_count": 17,
+  "group_ids": [
+    18,
+    115,
+    725,
+    750,
+    843,
+    2392,
+    2450,
+    2701,
+    3305,
+    3436,
+    3730,
+    3771,
+    3814,
+    5420,
+    5836,
+    5933,
+    6101
+  ],
+  "definitions": [
+    {
+      "text": "Expert-level perception in multimodal problem settings is tested (e.g., MMMU notes perception alongside reasoning and knowledge) .",
+      "paper": "VHELM: A Holistic Evaluation of Vision Language Models"
+    },
+    {
+      "text": "Effective perception and comprehension of visual scenes, including object recognition, size identification, number counting, color understanding, and spatial relationships; also includes action recognition across keyframes and short demonstration understanding for temporal relationships and grounding .",
+      "paper": "PERIA: Perceive, Reason, Imagine, Act via Holistic Language and Vision Planning for Manipulation"
+    },
+    {
+      "text": "Perceptual understanding of image content as assessed in multimodal settings. ",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs"
+    },
+    {
+      "text": "Interpreting and inferring information from images, recognizing details, patterns, and relationships between images ; evaluated via rubric-defined perception quality .",
+      "paper": "MMDU: A Multi-Turn Multi-Image Dialog Understanding Benchmark and Instruction-Tuning Dataset for LVLMs"
+    },
+    {
+      "text": "Recognizing objects, attributes, and events within a referred scene from long videos  .",
+      "paper": "LongVideoBench: A Benchmark for Long-context Interleaved Video-Language Understanding"
+    },
+    {
+      "text": "Ability to perceive and extract visual information from images as part of an LVLM’s pipeline .",
+      "paper": "Enhancing Large Vision Language Models with Self-Training on Image Comprehension"
+    },
+    {
+      "text": "Perceptual abilities such as depth, spatial relations, and correspondence, augmented via specialist vision tools.",
+      "paper": "Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models"
+    },
+    {
+      "text": "Capability to analyze visual content via detection, instance segmentation, pose estimation, and related perception tasks  .",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks"
+    },
+    {
+      "text": "Encoding images into visual tokens that enable LLMs to understand visual modality content; underpins image-level and region-level abilities .",
+      "paper": "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models"
+    },
+    {
+      "text": "Screen understanding and localization via OCR/icon detection and related tools to perceive UI content for operation decisions  .",
+      "paper": "Mobile-Agent-v2: Mobile Device Operation Assistant with Effective Navigation via Multi-Agent Collaboration"
+    },
+    {
+      "text": "Perceptual ability of LMMs to capture object/semantic/color/texture cues in real-world tasks, leveraged for forgery detection .",
+      "paper": "On Learning Multi-Modal Forgery Representation for Diffusion Generated Video Detection"
+    },
+    {
+      "text": "Lower- and mid-level perceptual sensitivity to visual signals that, when enhanced through multi-layer features, yields more accurate responses  .",
+      "paper": "Dense Connector for MLLMs"
+    },
+    {
+      "text": "Ability for visual perception and cognition in tasks like VQA and captioning .",
+      "paper": "Unveiling Encoder-Free Vision-Language Models"
+    },
+    {
+      "text": "Accurate localization and recognition of medical image content; errors include mislocation/misrecognition. ",
+      "paper": "GMAI-MMBench: A Comprehensive Multimodal Evaluation Benchmark Towards General Medical AI"
+    },
+    {
+      "text": "MLLM-acquired capacity to perceive and represent visual content for downstream multimodal reasoning and understanding .",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context"
+    },
+    {
+      "text": "Perceiving visual details and overall structure (e.g., number of grids, edges, choices) that support reasoning in puzzles  .",
+      "paper": "MARVEL: Multidimensional Abstraction and Reasoning through Visual Evaluation and Learning"
+    },
+    {
+      "text": "Accurate extraction/interpretation of visual information (images, charts, layout); a major source of errors in visual contexts .",
+      "paper": "MMLONGBENCH-DOC: Benchmarking Long-context Document Understanding with Visualizations"
+    }
+  ],
+  "definition_count": 17,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMMU Subject QA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "VHELM: A Holistic Evaluation of Vision Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Foundational Perception Capability Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "PERIA: Perceive, Reason, Imagine, Act via Holistic Language and Vision Planning for Manipulation",
+      "evidence": "VQA tasks evaluate five foundational perceiving capabilities, scored and normalized (Figure 16; Table 6) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Vision–Language Alignment",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "PERIA: Perceive, Reason, Imagine, Act via Holistic Language and Vision Planning for Manipulation",
+      "evidence": "Encoding-side alignment maps visual features into the LLM’s text space for precise perception ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Language Reasoning (Language Planning)",
+      "other_type": "constructs",
+      "relationship_type": "enables",
+      "paper": "PERIA: Perceive, Reason, Imagine, Act via Holistic Language and Vision Planning for Manipulation",
+      "evidence": "Perception pretraining bridges perception and reasoning, laying the foundation for reasoning ability ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual Imagination (Vision Planning)",
+      "other_type": "constructs",
+      "relationship_type": "enables",
+      "paper": "PERIA: Perceive, Reason, Imagine, Act via Holistic Language and Vision Planning for Manipulation",
+      "evidence": "Perception pretraining lays the foundation for subsequent imagination abilities in PERIA ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+      "evidence": "The evaluation suite spans perception, knowledge, chart interpretation, and visual capabilities as aspects of multimodal capability."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MMDU: A Multi-Turn Multi-Image Dialog Understanding Benchmark and Instruction-Tuning Dataset for LVLMs",
+      "evidence": "Visual perception reasoning involves interpreting details and relationships between images as part of broader reasoning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMDU Visual Perception (VP) Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MMDU: A Multi-Turn Multi-Image Dialog Understanding Benchmark and Instruction-Tuning Dataset for LVLMs",
+      "evidence": "Perception of visual information is scored as VP per the rubric ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Long-Context Multimodal Video Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "LongVideoBench: A Benchmark for Long-context Interleaved Video-Language Understanding",
+      "evidence": "Perception of specific multimodal details is one of two essential abilities for long-context multimodal understanding ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Perception (L1) Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "LongVideoBench: A Benchmark for Long-context Interleaved Video-Language Understanding",
+      "evidence": "Perception questions assess recognition of objects, attributes, and events in referred scenes ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "S2E (Scene-referred Event) Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "LongVideoBench: A Benchmark for Long-context Interleaved Video-Language Understanding",
+      "evidence": "S2E tasks involve recognizing events in a referred scene ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "S2O (Scene-referred Object) Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "LongVideoBench: A Benchmark for Long-context Interleaved Video-Language Understanding",
+      "evidence": "S2O tasks involve recognizing which objects appeared in the referred scene ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "S2A (Scene-referred Object Attribute) Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "LongVideoBench: A Benchmark for Long-context Interleaved Video-Language Understanding",
+      "evidence": "S2A tasks involve recognizing attributes of objects in the referred scene ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models",
+      "evidence": "SKETCHPAD uses specialist vision models during sketching to enhance visual perception and reasoning ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Tool Use (Vision Tool Use)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models",
+      "evidence": "Specialists (detection, segmentation, depth) provide useful perception skills that SKETCHPAD combines into the LM during reasoning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BLINK Relative Depth Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models",
+      "evidence": "BLINK relative depth evaluates depth perception ability by accuracy ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BLINK Spatial Reasoning Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models",
+      "evidence": "BLINK spatial reasoning evaluates perception of spatial relations by accuracy ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BLINK Jigsaw Puzzle Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models",
+      "evidence": "BLINK jigsaw evaluates perceptual grouping/composition across images by accuracy ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BLINK Visual Correspondence Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models",
+      "evidence": "BLINK visual correspondence evaluates matching corresponding points/regions across images by accuracy ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BLINK Semantic Correspondence Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models",
+      "evidence": "BLINK semantic correspondence evaluates matching semantically corresponding content across images by accuracy ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalist Multimodal Capability",
+      "other_type": "constructs",
+      "relationship_type": "has-subtask",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "evidence": "The model unifies visual perception, understanding, and generation within a single framework ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "COCO Object Detection/Instance Segmentation AP",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "evidence": "Object detection and instance segmentation AP reported on COCO ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Pose Estimation AP/PCK@0.2",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "evidence": "Pose estimation evaluated with AP and PCK@0.2 across datasets ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Region Recognition (COCO/LVIS/PACO)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "evidence": "Region recognition benchmarked on COCO/LVIS/PACO with mAP/Acc/S-IoU ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SOD Metrics (Sm, Fωβ, Em, M)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "evidence": "SOD results across classic benchmarks demonstrate strong object discovery ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "COD Metrics (Sm, Fωβ, Em, M)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "evidence": "Camouflaged object detection reported on CAMO and COD10K ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Prompting Comprehension",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "evidence": "Visual prompting defines perception tasks and focuses the model on regions via prompts ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Conversational Ability (Multimodal Dialogue)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "evidence": "Training on image VQA (conversation ability) benefits instance segmentation and image generation losses in multi-task influence analysis ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models",
+      "evidence": "Vision encoders underpin perception ability by encoding images into visual tokens, enabling understanding in visual modalities ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Sequential Decision-Making",
+      "other_type": "constructs",
+      "relationship_type": "depends-on",
+      "paper": "Mobile-Agent-v2: Mobile Device Operation Assistant with Effective Navigation via Multi-Agent Collaboration",
+      "evidence": "Operations rely on screen understanding and localization via visual tools (OCR, icon detection) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multi-modal Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "On Learning Multi-Modal Forgery Representation for Diffusion Generated Video Detection",
+      "evidence": "The method leverages the powerful perceptual and reasoning ability of an LMM via a multi-modal feature space ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MME Perception Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Dense Connector for MLLMs",
+      "evidence": "Perception subscore (MMEp) is used in the SOTA comparison table ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Dense Connector for MLLMs",
+      "evidence": "Using multi-layer features enhances visual perception, leading to more accurate responses, indicating perception underpins understanding ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Integration (Vision–Language Alignment)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Dense Connector for MLLMs",
+      "evidence": "Dense Connector fuses multi-layer visual features into representations the LLM can understand, enhancing perceptual cues available to the model  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Recognition Capability",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Unveiling Encoder-Free Vision-Language Models",
+      "evidence": "Fine-grained recognition \"facilitates visual perception\" per ablations ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Vision-Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Unveiling Encoder-Free Vision-Language Models",
+      "evidence": "EVE targets vision-language understanding and emphasizes visual perception and cognition  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GMAI-MMBench Perceptual Granularity Single-Choice Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "GMAI-MMBench: A Comprehensive Multimodal Evaluation Benchmark Towards General Medical AI",
+      "evidence": "Perceptual errors (mislocation/misrecognition) and sensitivity to annotation type affect accuracy."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "evidence": "MLLMs acquire visual perception capacity while enabling general-purpose multimodal understanding via LLMs ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual Grounding",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "evidence": "Grounding is a core visual capability highlighted among expert specializations and evaluation tasks  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual Grounding",
+      "other_type": "measurements",
+      "relationship_type": "has-subcomponent",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "evidence": "Grounding is a core visual capability highlighted among expert specializations and evaluation tasks  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Object Detection",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "evidence": "Object detection expertise (Co-DETR) is part of the vision expert pool for perception  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Image Segmentation",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "evidence": "Segmentation expertise (SAM) is part of the vision expert pool for perception  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Image Segmentation",
+      "other_type": "measurements",
+      "relationship_type": "has-subcomponent",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "evidence": "Segmentation expertise (SAM) is part of the vision expert pool for perception  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Text Recognition (OCR)",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "evidence": "Text recognition expertise (e.g., Pix2Struct) and document-focused encoders are included to handle OCR/document tasks  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Chart Understanding",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "evidence": "Chart-focused expertise (e.g., Deplot/Vary) is leveraged for chart parsing/understanding  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Document Parsing",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "evidence": "Document parsing is explicitly called out as a context where specific experts are routed (e.g., Pix2Struct, Vary) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Biomedical Image Understanding",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "evidence": "Biomedical understanding is listed among evaluation dimensions and expert specialties (BiomedCLIP) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Abstract Visual Reasoning (AVR)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "MARVEL: Multidimensional Abstraction and Reasoning through Visual Evaluation and Learning",
+      "evidence": "Poor perception of visual details hinders subsequent abstract reasoning and leads to poor AVR performance ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning Consistency",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "MARVEL: Multidimensional Abstraction and Reasoning through Visual Evaluation and Learning",
+      "evidence": "Model reasoning depends on accurate perception; a single visual perception error impacts consistency across grouped questions ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Group-Based Accuracy: PrecC",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MARVEL: Multidimensional Abstraction and Reasoning through Visual Evaluation and Learning",
+      "evidence": "Coarse-grained perception questions are grouped to evaluate overall perception reliability ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Abstract Visual Reasoning (AVR)",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "MARVEL: Multidimensional Abstraction and Reasoning through Visual Evaluation and Learning",
+      "evidence": "Perception and reasoning are described as compositional components of visual reasoning and should be treated separately for diagnosis ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Fine-grained Visual Perception",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MARVEL: Multidimensional Abstraction and Reasoning through Visual Evaluation and Learning",
+      "evidence": "Fine-grained perception questions probe detailed visual features underpinning perception  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Coarse-Grained Visual Perception",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MARVEL: Multidimensional Abstraction and Reasoning through Visual Evaluation and Learning",
+      "evidence": "Coarse-grained checks (e.g., number of grids) assess broader structural perception ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multimodal (Cross-modality) Understanding",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "MMLONGBENCH-DOC: Benchmarking Long-context Document Understanding with Visualizations",
+      "evidence": "Perceptual errors (mainly in visual contexts) are a large share of errors ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Error Distribution: Perceptual Errors",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MMLONGBENCH-DOC: Benchmarking Long-context Document Understanding with Visualizations",
+      "evidence": "Perceptual errors form a large share of observed errors in GPT-4o qualitative analysis ."
+    }
+  ],
+  "relationship_count": 55,
+  "incoming_relationship_count": 12,
+  "outgoing_relationship_count": 43
+}

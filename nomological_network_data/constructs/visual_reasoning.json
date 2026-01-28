@@ -1,0 +1,452 @@
+{
+  "canonical_name": "Visual Reasoning",
+  "type": "construct",
+  "canonical_definition": "Visual Reasoning is the ability to analyze and reason over visual inputs (e.g., images, videos, screenshots) to derive conclusions, select actions, or solve complex tasks, often involving pattern recognition, spatial reasoning, or interpretation of visualized interactions. Some definitions extend this to include multimodal reasoning with text or localization of relevant visual regions, while others emphasize its role in planning, program synthesis, or problem-solving with visual sketches. Disagreements exist in scope, with some framing it as a set of domain-general cognitive abilities and others focusing on task-specific applications in embodied or interactive environments.",
+  "expert_reviewed": false,
+  "names": [
+    "Visual Reasoning"
+  ],
+  "papers": [
+    "Dense Connector for MLLMs",
+    "Instruction-Guided Visual Masking",
+    "Learning to Edit Visual Programs with Self-Supervision",
+    "Long-Horizon Planning for Multi-Agent Robots in Partially Observable Environments",
+    "MMDU: A Multi-Turn Multi-Image Dialog Understanding Benchmark and Instruction-Tuning Dataset for LVLMs",
+    "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding",
+    "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments",
+    "OlympicArena: Benchmarking Multi-discipline Cognitive Reasoning for Superintelligent AI",
+    "UniBench: Visual Reasoning Requires Rethinking Vision-Language Beyond Scaling",
+    "VLMimic: Vision Language Models are Visual Imitation Learner for Fine-grained Actions",
+    "VideoGUI: A Benchmark for GUI Automation from Instructional Videos",
+    "Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models",
+    "Why are Visually-Grounded Language Models Bad at Image Classification?"
+  ],
+  "paper_count": 13,
+  "group_ids": [
+    165,
+    749,
+    769,
+    1052,
+    1148,
+    1257,
+    2297,
+    2444,
+    3278,
+    3543,
+    3766,
+    3789,
+    4100
+  ],
+  "definitions": [
+    {
+      "text": "Ability to reason over visual inputs to support writing correct programs; current LLMs struggle with complex visual programs in part due to limited visual reasoning. ",
+      "paper": "Learning to Edit Visual Programs with Self-Supervision"
+    },
+    {
+      "text": "Reasoning over visual inputs in conjunction with text; MMDU requires various visual reasoning capabilities across multiple images and turns .",
+      "paper": "MMDU: A Multi-Turn Multi-Image Dialog Understanding Benchmark and Instruction-Tuning Dataset for LVLMs"
+    },
+    {
+      "text": "Reasoning over visual content to determine relevant regions given an instruction; required alongside localization for IVM. ",
+      "paper": "Instruction-Guided Visual Masking"
+    },
+    {
+      "text": "Ability to analyze visual patterns, attend to discrepancies, and infer constraints from visualized interactions to guide action selection   .",
+      "paper": "VLMimic: Vision Language Models are Visual Imitation Learner for Fine-grained Actions"
+    },
+    {
+      "text": "A set of visual cognitive abilities including Pattern Recognition, Spatial Reasoning, Diagrammatic Reasoning, Symbol Interpretation, and Comparative Visualization .",
+      "paper": "OlympicArena: Benchmarking Multi-discipline Cognitive Reasoning for Superintelligent AI"
+    },
+    {
+      "text": "Reasoning over visual observations to inform planning and action selection; absence harms performance in embodied tasks. ",
+      "paper": "Long-Horizon Planning for Multi-Agent Robots in Partially Observable Environments"
+    },
+    {
+      "text": "Reasoning over visual previews for planning; highlighted by superior performance of some MLLMs on vision-only planning .",
+      "paper": "VideoGUI: A Benchmark for GUI Automation from Instructional Videos"
+    },
+    {
+      "text": "Planning and reasoning with visual sketches produced during problem solving, enhancing problem-solving capability.",
+      "paper": "Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models"
+    },
+    {
+      "text": "Reasoning over visual inputs to reach correct answers or conclusions in complex tasks .",
+      "paper": "Why are Visually-Grounded Language Models Bad at Image Classification?"
+    },
+    {
+      "text": "Understanding screenshots to choose correct actions with precise coordinates. ",
+      "paper": "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments"
+    },
+    {
+      "text": "Deriving correct inferences from visual inputs; the paper frames improved \"visual understanding and reasoning\" in MLLMs through better visual representations .",
+      "paper": "Dense Connector for MLLMs"
+    },
+    {
+      "text": "Ability to perform reasoning over visual inputs (visual-based reasoning) .",
+      "paper": "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding"
+    },
+    {
+      "text": "Reasoning over visual information; emphasized as a core capability better captured by CLIP-style evaluation .",
+      "paper": "UniBench: Visual Reasoning Requires Rethinking Vision-Language Beyond Scaling"
+    }
+  ],
+  "definition_count": 13,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual Program Induction (VPI)",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Learning to Edit Visual Programs with Self-Supervision",
+      "evidence": "LLMs have not yet been able to write complex visual programs in part due to poor visual reasoning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multi-Modal Conversational Ability",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MMDU: A Multi-Turn Multi-Image Dialog Understanding Benchmark and Instruction-Tuning Dataset for LVLMs",
+      "evidence": "MMDU tasks require various visual reasoning capabilities during multi-image, multi-turn conversations ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Perception",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MMDU: A Multi-Turn Multi-Image Dialog Understanding Benchmark and Instruction-Tuning Dataset for LVLMs",
+      "evidence": "Visual perception reasoning involves interpreting details and relationships between images as part of broader reasoning ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning (Visual Contexts)",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MMDU: A Multi-Turn Multi-Image Dialog Understanding Benchmark and Instruction-Tuning Dataset for LVLMs",
+      "evidence": "MathVista evaluates mathematical reasoning grounded in visuals, a subdomain of visual reasoning ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Chart Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MMDU: A Multi-Turn Multi-Image Dialog Understanding Benchmark and Instruction-Tuning Dataset for LVLMs",
+      "evidence": "ChartQA targets visual/logical reasoning over charts, a specialized visual reasoning skill ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual Grounding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Instruction-Guided Visual Masking",
+      "evidence": "IVM requires both reasoning and precise localization of the target object."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual Grounding",
+      "other_type": "measurements",
+      "relationship_type": "is-a-component-of",
+      "paper": "Instruction-Guided Visual Masking",
+      "evidence": "IVM requires both reasoning and precise localization of the target object."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Constraint Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "VLMimic: Vision Language Models are Visual Imitation Learner for Fine-grained Actions",
+      "evidence": "Hierarchical constraint representations are proposed for VLM reasoning to analyze semantics and geometry from visualized actions ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Ablation: Hierarchical Constraint Representations (SE)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "VLMimic: Vision Language Models are Visual Imitation Learner for Fine-grained Actions",
+      "evidence": "Hierarchical representations facilitate understanding and reasoning, improving real-world success in ablations (0.76 vs lower variants)  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Cognitive Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "OlympicArena: Benchmarking Multi-discipline Cognitive Reasoning for Superintelligent AI",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Pattern Recognition",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "OlympicArena: Benchmarking Multi-discipline Cognitive Reasoning for Superintelligent AI",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Spatial Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "OlympicArena: Benchmarking Multi-discipline Cognitive Reasoning for Superintelligent AI",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Diagrammatic Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "OlympicArena: Benchmarking Multi-discipline Cognitive Reasoning for Superintelligent AI",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Symbol Interpretation",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "OlympicArena: Benchmarking Multi-discipline Cognitive Reasoning for Superintelligent AI",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Comparative Visualization",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "OlympicArena: Benchmarking Multi-discipline Cognitive Reasoning for Superintelligent AI",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OlympicArena Visual Reasoning Ability Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "OlympicArena: Benchmarking Multi-discipline Cognitive Reasoning for Superintelligent AI",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning (General)",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Long-Horizon Planning for Multi-Agent Robots in Partially Observable Environments",
+      "evidence": "Text-only GPT-4 performs poorest due to inability to reason about visual observations."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MAP-THOR Success Rate (SR)",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "Long-Horizon Planning for Multi-Agent Robots in Partially Observable Environments",
+      "evidence": "Replacing GPT-4 text-only with VLMs (e.g., GPT-4V) lifts SR because text-only cannot reason over visual observations."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Procedural Planning",
+      "other_type": "constructs",
+      "relationship_type": "supports",
+      "paper": "VideoGUI: A Benchmark for GUI Automation from Instructional Videos",
+      "evidence": "Models with stronger visual reasoning perform better on vision-only planning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "High-level Planning Score (Vision)",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "VideoGUI: A Benchmark for GUI Automation from Instructional Videos",
+      "evidence": "GPT‑4o demonstrates strongest visual reasoning on vision-only planning ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models",
+      "evidence": "SKETCHPAD produces visual artifacts as part of a chain of mixed textual, programmatic, and visual reasoning, enabling planning and reasoning over them ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual Perception",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models",
+      "evidence": "SKETCHPAD uses specialist vision models during sketching to enhance visual perception and reasoning ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models",
+      "evidence": "LMs can plan and reason based on intermediate visual artifacts they create, improving flexibility and robustness ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Planning",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models",
+      "evidence": "LMs can plan and reason based on intermediate visual artifacts they create, improving flexibility and robustness ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Tool Use (Vision Tool Use)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models",
+      "evidence": "Adding specialist vision models to SKETCHPAD enhances multimodal LMs’ visual reasoning abilities and establishes new SOTAs ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code Generation for Sketching",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models",
+      "evidence": "The LM synthesizes programs to generate visual sketches it then uses to plan and reason ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "V*Bench Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models",
+      "evidence": "V*Bench contains questions about small items in an image and is used to evaluate visual reasoning accuracy ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMVP",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models",
+      "evidence": "MMVP from Eyes Wide Shut evaluates visual questions revealing shortcomings, measured by accuracy ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MM-Vet Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Why are Visually-Grounded Language Models Bad at Image Classification?",
+      "evidence": "MM-Vet evaluates integrated multimodal capabilities that include reasoning aspects ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OSWorld Category Success Rates (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments",
+      "evidence": "Screenshots are used \"to evaluate the visual reasoning ability of VLMs\" to predict correct actions with precise coordinates."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GPT‑4V Step‑Count Distribution",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments",
+      "evidence": "Different observation settings (screenshot vs a11y vs combinations) change step distributions for GPT‑4V agents."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MathVista Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Dense Connector for MLLMs",
+      "evidence": "MathVista is used to evaluate visual mathematical reasoning; improvements are highlighted in tables and text  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMMU (val) Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Dense Connector for MLLMs",
+      "evidence": "MMMU (val) appears as a multi-discipline reasoning metric in the main results ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MM-Vet Zero-Shot Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Dense Connector for MLLMs",
+      "evidence": "MM-Vet is reported as a measure of multimodal capabilities requiring reasoning in the wild ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MM-Vet Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Dense Connector for MLLMs",
+      "evidence": "MM-Vet is reported as a measure of multimodal capabilities requiring reasoning in the wild ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding and Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding",
+      "evidence": "The framework targets reasoning across levels alongside understanding  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Image-level Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding",
+      "evidence": "Image-level reasoning within LLaVA-like models is discussed as visual-based reasoning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Object-level Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding",
+      "evidence": "Object-level reasoning enabled via region embeddings and prompts is contrasted and unified in the proposed approach ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Pixel-level Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding",
+      "evidence": "Pixel-level reasoning includes referring/“reasoning” segmentation in the unified tasks ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Relational Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "UniBench: Visual Reasoning Requires Rethinking Vision-Language Beyond Scaling",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Compositional Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "UniBench: Visual Reasoning Requires Rethinking Vision-Language Beyond Scaling",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Counting (Numerical Comprehension)",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "UniBench: Visual Reasoning Requires Rethinking Vision-Language Beyond Scaling",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Spatial Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "UniBench: Visual Reasoning Requires Rethinking Vision-Language Beyond Scaling",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Pose Detection",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "UniBench: Visual Reasoning Requires Rethinking Vision-Language Beyond Scaling",
+      "evidence": ""
+    }
+  ],
+  "relationship_count": 44,
+  "incoming_relationship_count": 20,
+  "outgoing_relationship_count": 24
+}

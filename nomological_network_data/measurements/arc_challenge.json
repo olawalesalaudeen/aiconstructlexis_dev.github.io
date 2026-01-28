@@ -1,0 +1,272 @@
+{
+  "canonical_name": "ARC-challenge",
+  "type": "measurement",
+  "canonical_definition": "ARC-challenge (AI2 Reasoning Challenge) is a multiple-choice question-answering benchmark focused on grade-school science and commonsense reasoning tasks. It specifically emphasizes challenging subsets of the dataset (e.g., \"hard split\" or \"difficult split\" questions) that require advanced reasoning capabilities, as opposed to easier variants like ARC-easy. The instrument is commonly used to evaluate models' performance on complex science and reasoning problems through accuracy metrics, though some variants incorporate exact match evaluation or normalized scoring. Multiple papers associate it with assessing in-context learning, robustness, and fine-tuning effectiveness in large language models.",
+  "expert_reviewed": false,
+  "names": [
+    "ARC-Challenge",
+    "ARC Challenge (Accuracy %)",
+    "ARC Challenge Accuracy",
+    "ARC Challenge Accuracy (%)",
+    "ARC Easy (Accuracy %)",
+    "ARC-Challenge Accuracy (%)",
+    "ARC-Challenge Exact Match (%)",
+    "ARC-challenge Accuracy",
+    "ARC‑Challenge",
+    "ARC‑Challenge Accuracy",
+    "ARC‑Challenge Accuracy (normalized)"
+  ],
+  "papers": [
+    "BERTs are Generative In-Context Learners",
+    "BackdoorAlign: Mitigating Fine-tuning based Jailbreak Attack with Backdoor Enhanced Safety Alignment",
+    "DDK: Distilling Domain Knowledge for Efficient Large Language Models",
+    "Keeping LLMs Aligned After Fine-tuning: The Crucial Role of Prompt Templates",
+    "LLMCBench: Benchmarking Large Language Model Compression for Efficient Deployment",
+    "LoFiT: Localized Fine-tuning on LLM Representations",
+    "MathPile: A Billion-Token-Scale Pretraining Corpus for Math",
+    "Not All Tokens Are What You Need for Pretraining",
+    "Observational Scaling Laws and the Predictability of Langauge Model Performance",
+    "Reasons and Solutions for the Decline in Model Performance after Editing",
+    "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+    "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+    "Sparse High Rank Adapters",
+    "Stacking Your Transformers: A Closer Look at Model Growth for Efficient LLM Pre-Training"
+  ],
+  "paper_count": 14,
+  "group_ids": [
+    775,
+    943,
+    1223,
+    1428,
+    1639,
+    1843,
+    1922,
+    3157,
+    3841,
+    3947,
+    4559,
+    4567,
+    4724,
+    5027
+  ],
+  "definitions": [
+    {
+      "text": "Challenging multiple-choice science questions. ARC-challenge Accuracy (%)",
+      "paper": "LLMCBench: Benchmarking Large Language Model Compression for Efficient Deployment"
+    },
+    {
+      "text": "Science and reasoning multiple-choice QA ARC (Challenge) Accuracy (%) (lm-eval-harness default)",
+      "paper": "Not All Tokens Are What You Need for Pretraining"
+    },
+    {
+      "text": "Science exam QA; open-/closed-book QA representative in PEFT comparisons ARC-Challenge Accuracy (%) .",
+      "paper": "LoFiT: Localized Fine-tuning on LLM Representations"
+    },
+    {
+      "text": "AI2 Reasoning Challenge (challenge split, test) ARC‑C Accuracy (%)",
+      "paper": "DDK: Distilling Domain Knowledge for Efficient Large Language Models"
+    },
+    {
+      "text": "Science multiple-choice reasoning. ARC-Challenge Accuracy (%)",
+      "paper": "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?"
+    },
+    {
+      "text": "Grade‑school science reasoning ARC Challenge Accuracy (%) .",
+      "paper": "Reasons and Solutions for the Decline in Model Performance after Editing"
+    },
+    {
+      "text": "Multiple-choice grade-school science questions (hard split); higher is better. ARC-c Accuracy (%)",
+      "paper": "Stacking Your Transformers: A Closer Look at Model Growth for Efficient LLM Pre-Training"
+    },
+    {
+      "text": "Multiple-choice grade-school science questions (easy split); higher is better. ARC-e Accuracy (%)",
+      "paper": "Stacking Your Transformers: A Closer Look at Model Growth for Efficient LLM Pre-Training"
+    },
+    {
+      "text": "Difficult split of grade-school science multiple-choice questions ARC (Challenge) Accuracy (%) under 0/1/few-shot .",
+      "paper": "BERTs are Generative In-Context Learners"
+    },
+    {
+      "text": "Accuracy on ARC-Challenge, listed among commonsense reasoning benchmarks ARC-Challenge Accuracy (%)",
+      "paper": "Sparse High Rank Adapters"
+    },
+    {
+      "text": "Multiple-choice science and reasoning challenge. ARC Challenge Accuracy (%)",
+      "paper": "SimPO: Simple Preference Optimization with a Reference-Free Reward"
+    },
+    {
+      "text": "Harder split of ARC science QA; generation and exact match ARC-Challenge Exact Match (%)",
+      "paper": "Keeping LLMs Aligned After Fine-tuning: The Crucial Role of Prompt Templates"
+    },
+    {
+      "text": "Evaluate benign performance via few‑shot multiple‑choice reasoning benchmark; reported as test accuracy . ARC‑Challenge 5‑shot Accuracy (%)",
+      "paper": "BackdoorAlign: Mitigating Fine-tuning based Jailbreak Attack with Backdoor Enhanced Safety Alignment"
+    },
+    {
+      "text": "Difficult multiple-choice science/commonsense QA ARC-Challenge Accuracy (acc_norm)",
+      "paper": "MathPile: A Billion-Token-Scale Pretraining Corpus for Math"
+    },
+    {
+      "text": "Commonsense reasoning multiple‑choice questions ARC‑C Accuracy normalized to [0,1]",
+      "paper": "Observational Scaling Laws and the Predictability of Langauge Model Performance"
+    }
+  ],
+  "definition_count": 15,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "LLMCBench: Benchmarking Large Language Model Compression for Efficient Deployment",
+      "evidence": "Track 1 evaluates knowledge ability using ARC-challenge."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Knowledge Question Answering",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Not All Tokens Are What You Need for Pretraining",
+      "evidence": "ARC is included among general reasoning QA tasks in the paper’s cited evaluation set  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Question Answering",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "LoFiT: Localized Fine-tuning on LLM Representations",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense/Science Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "DDK: Distilling Domain Knowledge for Efficient Large Language Models",
+      "evidence": "ARC‑C (test) is part of the evaluation suite for reasoning  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Capabilities (Capabilities Component)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+      "evidence": "Included in the capabilities benchmark set ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Robustness to Knowledge Editing (Post‑edit Performance Stability)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Reasons and Solutions for the Decline in Model Performance after Editing",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Reasons and Solutions for the Decline in Model Performance after Editing",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Scientific Question Answering",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Stacking Your Transformers: A Closer Look at Model Growth for Efficient LLM Pre-Training",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Scientific Question Answering",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Stacking Your Transformers: A Closer Look at Model Growth for Efficient LLM Pre-Training",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "SVFT: Parameter-Efficient Fine-Tuning with Singular Vectors",
+      "evidence": "ARC-C appears in the commonsense evaluation table with accuracy reported ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Scientific/Grade-School Science Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "BERTs are Generative In-Context Learners",
+      "evidence": "ARC-Challenge assesses science knowledge/reasoning; measured by accuracy ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-Context Multiple-Choice Answer Selection (Ranking)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "BERTs are Generative In-Context Learners",
+      "evidence": "ARC questions are handled as multiple-choice and ranked by likelihood under ICL prompting ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "FouRA: Fourier Low-Rank Adaptation",
+      "evidence": "ARC‑c is included; accuracy reported."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Sparse High Rank Adapters",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+      "evidence": "ARC is a reasoning challenge used in downstream evaluation."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Keeping LLMs Aligned After Fine-tuning: The Crucial Role of Prompt Templates",
+      "evidence": "ARC-Challenge exact match assesses harder reasoning cases ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Benign Utility (General Task Performance)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "BackdoorAlign: Mitigating Fine-tuning based Jailbreak Attack with Backdoor Enhanced Safety Alignment",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "MathPile: A Billion-Token-Scale Pretraining Corpus for Math",
+      "evidence": "The appendix evaluates ARC-Challenge after math continual pretraining ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Observational Scaling Laws and the Predictability of Langauge Model Performance",
+      "evidence": "ARC‑C is included as a commonsense reasoning benchmark ."
+    }
+  ],
+  "relationship_count": 19,
+  "incoming_relationship_count": 19,
+  "outgoing_relationship_count": 0
+}

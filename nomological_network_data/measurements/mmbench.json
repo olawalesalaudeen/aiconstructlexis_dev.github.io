@@ -1,0 +1,255 @@
+{
+  "canonical_name": "MMBench",
+  "type": "measurement",
+  "canonical_definition": "MMBench (Multimodal Benchmark) is a general multimodal evaluation framework used to assess the understanding and reasoning capabilities of large vision-language models (LVLMs) across diverse perception and reasoning tasks. It is often framed as a comprehensive or all-around benchmark, encompassing subsets or variants such as MMBenchCN (Chinese-focused) and related benchmarks like MM-Vet and MMStar. While some papers emphasize its role in evaluating \"general multimodal understanding,\" others highlight its application to multidimensional capability assessment, typically reported via accuracy scores or overall scores in experimental contexts.",
+  "expert_reviewed": false,
+  "names": [
+    "MMBench",
+    "MMBench Accuracy",
+    "MMBench Accuracy (%)",
+    "MMBench Score",
+    "MMBenchCN Score",
+    "MMStar Score",
+    "MM‑Vet Score"
+  ],
+  "papers": [
+    "CogVLM: Visual Expert for Pretrained Language Models",
+    "Dense Connector for MLLMs",
+    "Efficient Large Multi-modal Models via Visual Context Compression",
+    "Enhancing Large Vision Language Models with Self-Training on Image Comprehension",
+    "InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD",
+    "LOVA3: Learning to Visual Question Answering, Asking and Assessment",
+    "Meteor: Mamba-based Traversal of Rationale for Large Language and Vision Models",
+    "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+    "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding",
+    "RoboMamba: Efficient Vision-Language-Action Model for Robotic Reasoning and Manipulation",
+    "Unified Generative and Discriminative Training for Multi-modal Large Language Models",
+    "What matters when building vision-language models?"
+  ],
+  "paper_count": 12,
+  "group_ids": [
+    1064,
+    1799,
+    1862,
+    1967,
+    2245,
+    2504,
+    3438,
+    3501,
+    3551,
+    4616,
+    5670
+  ],
+  "definitions": [
+    {
+      "text": "General multimodal understanding benchmark MMB/MMBench Accuracy (%)",
+      "paper": "Meteor: Mamba-based Traversal of Rationale for Large Language and Vision Models"
+    },
+    {
+      "text": "General multimodal understanding test MMBench Accuracy (%)",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context"
+    },
+    {
+      "text": "Various perception and reasoning tasks. MMBench Accuracy (%) (test)",
+      "paper": "What matters when building vision-language models?"
+    },
+    {
+      "text": "Multidimensional evaluation of LVLMs MMBench Score/Accuracy (%)",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models"
+    },
+    {
+      "text": "General multimodal capability evaluation MMBench (MMB) Score",
+      "paper": "RoboMamba: Efficient Vision-Language-Action Model for Robotic Reasoning and Manipulation"
+    },
+    {
+      "text": "All-around evaluation of multimodal model capabilities MMBench Accuracy (%)",
+      "paper": "Enhancing Large Vision Language Models with Self-Training on Image Comprehension"
+    },
+    {
+      "text": "General multimodal understanding and reasoning MMBench Score (%)",
+      "paper": "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding"
+    },
+    {
+      "text": "General multimodal evaluation MMBench Overall score",
+      "paper": "InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD"
+    },
+    {
+      "text": "General multimodal evaluation (Chinese) MMBenchCN Overall score",
+      "paper": "InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD"
+    },
+    {
+      "text": "General multimodal evaluation MM‑Vet Overall score",
+      "paper": "InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD"
+    },
+    {
+      "text": "General multimodal evaluation MMStar Overall score",
+      "paper": "InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD"
+    },
+    {
+      "text": "Comprehensive multimodal understanding evaluation MMB Score",
+      "paper": "Dense Connector for MLLMs"
+    },
+    {
+      "text": "Integrated multimodal capability benchmark MMBench Score/Accuracy (as reported)",
+      "paper": "Unified Generative and Discriminative Training for Multi-modal Large Language Models"
+    },
+    {
+      "text": "Evaluates multi-modal understanding capability of large vision-language models MMBench Accuracy (%)",
+      "paper": "Efficient Large Multi-modal Models via Visual Context Compression"
+    },
+    {
+      "text": "General multimodal evaluation benchmark used in experiments MMBench Score",
+      "paper": "LOVA3: Learning to Visual Question Answering, Asking and Assessment"
+    }
+  ],
+  "definition_count": 15,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Perception and Reasoning (Multimodal)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "What matters when building vision-language models?",
+      "evidence": "MMBench evaluates perception and reasoning accuracy."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models",
+      "evidence": "MMBench provides multidimensional evaluation of LVLMs ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multi-task Generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models",
+      "evidence": "SOTA across MMBench supports generalization across tasks ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning (General)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "RoboMamba: Efficient Vision-Language-Action Model for Robotic Reasoning and Manipulation",
+      "evidence": "General reasoning is evaluated by MMB/MMBench among MLLM benchmarks (Table 1) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Vision-Language Capability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Meteor: Mamba-based Traversal of Rationale for Large Language and Vision Models",
+      "evidence": "Overall performance comparisons include MMB/MMBench  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Vision-Language Capability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Meteor: Mamba-based Traversal of Rationale for Large Language and Vision Models",
+      "evidence": "MMStar appears in the cross-model comparison figure of overall capabilities ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Matryoshka Query Transformer for Large Vision-Language Models",
+      "evidence": "MM‑Vet is listed among integrated capability evaluations."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Vision-Language Understanding and Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Enhancing Large Vision Language Models with Self-Training on Image Comprehension",
+      "evidence": "MMBench provides broad evaluation of multimodal model capabilities; accuracy reflects overall VL competence ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Multimodal Capability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding",
+      "evidence": "MMBench score compared across models including Octopus ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD",
+      "evidence": "MMBench is part of the 16 diverse benchmarks for general LVLM capability evaluation ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD",
+      "evidence": "MMBenchCN is included among the 16 benchmarks and resolution stats ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD",
+      "evidence": "MM‑Vet is listed among the 16 evaluated benchmarks ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD",
+      "evidence": "MMStar is one of the general benchmarks reported ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Integration (Vision–Language Alignment)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Dense Connector for MLLMs",
+      "evidence": "MMBench is one of the primary aggregate multimodal evaluations showing improvements from better integration  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Efficient Large Multi-modal Models via Visual Context Compression",
+      "evidence": "MMBench evaluates the multi-modal understanding capability of large vision-language models and is part of the paper’s evaluation suite ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization Ability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "evidence": "MoVA’s generalization is analyzed across MMBench as part of broad MLLM benchmarks ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "evidence": "MMBench evaluates all-around multimodal understanding ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Answering Ability (Visual Question Answering)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "LOVA3: Learning to Visual Question Answering, Asking and Assessment",
+      "evidence": ""
+    }
+  ],
+  "relationship_count": 18,
+  "incoming_relationship_count": 18,
+  "outgoing_relationship_count": 0
+}

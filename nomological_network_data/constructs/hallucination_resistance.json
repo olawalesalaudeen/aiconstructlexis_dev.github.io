@@ -1,0 +1,234 @@
+{
+  "canonical_name": "Hallucination Resistance",
+  "type": "construct",
+  "canonical_definition": "Hallucination Resistance refers to the capacity of AI systems, particularly vision-language and multimodal models, to avoid generating content unsupported by evidence, fabricating facts, or describing nonexistent visual elements. This construct encompasses robustness against various hallucination types (including category, attribute, and relation hallucinations) during generation and understanding tasks, with emphasis on maintaining accuracy and grounding in observed data. Some definitions further specify its role in enabling safer deployment through certified control over hallucinated content or its enhancement via discriminative training constraints, while others emphasize its measurement under adversarial questioning or via benchmarks like POPE.",
+  "expert_reviewed": false,
+  "names": [
+    "Hallucination Resistance"
+  ],
+  "papers": [
+    "AutoManual: Constructing Instruction Manuals by LLM Agents via Interactive Environmental Learning",
+    "CogVLM: Visual Expert for Pretrained Language Models",
+    "ImageNet3D: Towards General-Purpose Object-Level 3D Understanding",
+    "Instruction-Guided Visual Masking",
+    "JourneyBench: A Challenging One-Stop Vision-Language Understanding Benchmark of Generated Images",
+    "Selective Generation for Controllable Language Models",
+    "Unified Generative and Discriminative Training for Multi-modal Large Language Models",
+    "Unleashing Region Understanding in Intermediate Layers for MLLM-based Referring Expression Generation",
+    "Vript: A Video Is Worth Thousands of Words",
+    "What matters when building vision-language models?"
+  ],
+  "paper_count": 10,
+  "group_ids": [
+    527,
+    773,
+    1123,
+    1920,
+    2013,
+    2514,
+    3833,
+    4435,
+    5327,
+    6175
+  ],
+  "definitions": [
+    {
+      "text": "Accurately describing objects and actions without introducing hallucinated content. ",
+      "paper": "Vript: A Video Is Worth Thousands of Words"
+    },
+    {
+      "text": "Ability to avoid producing content unsupported by visual evidence under adversarial questioning. ",
+      "paper": "Instruction-Guided Visual Masking"
+    },
+    {
+      "text": "Low propensity to fabricate facts or describe nonexistent visual elements. ",
+      "paper": "What matters when building vision-language models?"
+    },
+    {
+      "text": "Robustness against object hallucination in multimodal generation/understanding, as evaluated by POPE .",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models"
+    },
+    {
+      "text": "Capacity to mitigate hallucinations during rule extraction/management via case-conditioned prompting  .",
+      "paper": "AutoManual: Constructing Instruction Manuals by LLM Agents via Interactive Environmental Learning"
+    },
+    {
+      "text": "Capability to reduce wrong high-confidence generations; certified control over hallucinated contents enables safer deployment .",
+      "paper": "Selective Generation for Controllable Language Models"
+    },
+    {
+      "text": "Reduced tendency to produce hallucinated visual objects or content; improved by introducing discriminative constraints into training  .",
+      "paper": "Unified Generative and Discriminative Training for Multi-modal Large Language Models"
+    },
+    {
+      "text": "Robustness to hallucination triggers and avoidance of hallucinated predictions in vision-language tasks  .",
+      "paper": "JourneyBench: A Challenging One-Stop Vision-Language Understanding Benchmark of Generated Images"
+    },
+    {
+      "text": "Capacity to avoid object hallucinations (plausible but absent/mismatched objects), including category, attribute, and relation hallucinations in MLLMs .",
+      "paper": "Unleashing Region Understanding in Intermediate Layers for MLLM-based Referring Expression Generation"
+    },
+    {
+      "text": "Reduced tendency of multimodal LLMs to hallucinate objects or attributes due to stronger 3D awareness. ",
+      "paper": "ImageNet3D: Towards General-Purpose Object-Level 3D Understanding"
+    }
+  ],
+  "definition_count": 10,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Vript-HAL (Hallucination Evaluation) — Precision/Recall/F1",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Vript: A Video Is Worth Thousands of Words",
+      "evidence": "Vript-HAL evaluates object and action hallucinations with precision, recall, and F1 computed over nouns and verbs."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "POPE Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Instruction-Guided Visual Masking",
+      "evidence": "POPE is a hallucination adversarial QA benchmark used in the paper's evaluations."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Hallucination Incidents (qualitative)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "What matters when building vision-language models?",
+      "evidence": "Limitations section reports hallucinations such as fabricating facts or describing nonexistent image elements."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "POPE Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models",
+      "evidence": "POPE evaluates object hallucination with multiple subsets (random/popular/adversarial) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Planning Robustness",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "AutoManual: Constructing Instruction Manuals by LLM Agents via Interactive Environmental Learning",
+      "evidence": "Case-conditioned prompting mitigates hallucinations when managing rules, supporting robust planning  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Selective Generation (Abstention)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Selective Generation for Controllable Language Models",
+      "evidence": "Selective generation provides certified control over the occurrence of hallucinated (wrong, high‑confidence) content, addressing reliable deployment obstacles ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "POPE Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Unified Generative and Discriminative Training for Multi-modal Large Language Models",
+      "evidence": "POPE evaluates object hallucinations detection; Sugar reports SOTA on this benchmark ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Discriminative Capability (Representation/Retrieval)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Unified Generative and Discriminative Training for Multi-modal Large Language Models",
+      "evidence": "Adding discriminative tasks enhances generative tasks and mitigates hallucinations ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Fine-grained Multimodal Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "JourneyBench: A Challenging One-Stop Vision-Language Understanding Benchmark of Generated Images",
+      "evidence": "JourneyBench explicitly assesses hallucination tendencies, including with targeted triggers ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQA with Hallucination Triggers Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "JourneyBench: A Challenging One-Stop Vision-Language Understanding Benchmark of Generated Images",
+      "evidence": "JourneyBench includes open-ended VQA with hallucination triggers to probe hallucination tendencies ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CHAIR-S (Sentence-level Hallucination Rate) on RefCOCOg",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Unleashing Region Understanding in Intermediate Layers for MLLM-based Referring Expression Generation",
+      "evidence": "CHAIR assesses object hallucinations at sentence level in image description tasks ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CHAIR-S (Sentence-level Hallucination Rate) on RefCOCOg",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Unleashing Region Understanding in Intermediate Layers for MLLM-based Referring Expression Generation",
+      "evidence": "CHAIR includes object-level evaluation (CHAIR-I) for hallucinations ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "nCHAIR-S (Length-normalized Sentence-level Hallucination) on RefCOCOg",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Unleashing Region Understanding in Intermediate Layers for MLLM-based Referring Expression Generation",
+      "evidence": "Normalized CHAIR variants remove length bias for fairer hallucination comparison  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "nCHAIR-I (Length-normalized Object-level Hallucination) on RefCOCOg",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Unleashing Region Understanding in Intermediate Layers for MLLM-based Referring Expression Generation",
+      "evidence": "nCHAIR metrics divide by average tokens per description to neutralize preference for short outputs ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PHD Task Accuracies (Neutral/Misleading Modes)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Unleashing Region Understanding in Intermediate Layers for MLLM-based Referring Expression Generation",
+      "evidence": "PHD measures accuracy on hallucination-sensitive tasks under neutral and misleading prompts  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Descriptive Specificity",
+      "other_type": "constructs",
+      "relationship_type": "trade-off",
+      "paper": "Unleashing Region Understanding in Intermediate Layers for MLLM-based Referring Expression Generation",
+      "evidence": "The paper observes a trade-off: more detailed descriptions can increase hallucination probability ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Cross-modality Cycle Consistency",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Unleashing Region Understanding in Intermediate Layers for MLLM-based Referring Expression Generation",
+      "evidence": "Cycle-consistency-based decoding selects outputs to reduce hallucinations while maintaining richness ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Cross-domain Transferability of Layer Importance",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Unleashing Region Understanding in Intermediate Layers for MLLM-based Referring Expression Generation",
+      "evidence": "Layer prior importance learned on RefCOCOg improved PHD task accuracies without extra training, reducing hallucinations in a new environment ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "MLLM 3D Awareness",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "ImageNet3D: Towards General-Purpose Object-Level 3D Understanding",
+      "evidence": "Embodied or multimodal LLM agents with stronger 3D awareness will alleviate limitations such as hallucination."
+    }
+  ],
+  "relationship_count": 19,
+  "incoming_relationship_count": 7,
+  "outgoing_relationship_count": 12
+}

@@ -1,0 +1,332 @@
+{
+  "canonical_name": "Hallucination Propensity",
+  "type": "construct",
+  "canonical_definition": "Hallucination Propensity refers to the tendency of AI models, particularly large language models, to generate content that is plausible-sounding but false, fabricated, or unsupported by evidence, often manifesting in open-ended generation, long-form question answering, or retrieval-augmented tasks. This propensity is associated with reduced factual accuracy, may involve incorrect object references or attention patterns in multimodal settings, and is sometimes linked to a lack of supporting evidence in inputs or decreased capability. Some definitions emphasize its role in misinformation risks, while others highlight its mitigation through validation mechanisms or confidence indicators.",
+  "expert_reviewed": false,
+  "names": [
+    "Hallucination Propensity"
+  ],
+  "papers": [
+    "ANAH-v2: Scaling Analytical Hallucination Annotation of Large Language Models",
+    "Detecting Bugs with Substantial Monetary Consequences by LLM and Rule-based Reasoning",
+    "LLM-Check: Investigating Detection of Hallucinations in Large Language Models",
+    "MMLONGBENCH-DOC: Benchmarking Long-context Document Understanding with Visualizations",
+    "Mitigating Object Hallucination via Concentric Causal Attention",
+    "One Token to Seg Them All: Language Instructed Reasoning Segmentation in Videos",
+    "Personalized Steering of Large Language Models: Versatile Steering Vectors Through Bi-directional Preference Optimization",
+    "RAGChecker: A Fine-grained Framework for Diagnosing Retrieval-Augmented Generation",
+    "Reranking Laws for Language Generation: A Communication-Theoretic Perspective",
+    "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+    "SeafloorAI: A Large-scale Vision-Language Dataset for Seafloor Geological Survey",
+    "Semantic Density: Uncertainty Quantification for Large Language Models through Confidence Measurement in Semantic Space",
+    "Training-Free Open-Ended Object Detection and Segmentation via Attention as Prompts"
+  ],
+  "paper_count": 13,
+  "group_ids": [
+    1769,
+    1787,
+    2505,
+    2567,
+    3132,
+    3180,
+    3919,
+    4406,
+    4425,
+    5826,
+    6092,
+    6210,
+    6344
+  ],
+  "definitions": [
+    {
+      "text": "Tendency to generate plausible but false or nonsensical content; decreases as general capability increases .",
+      "paper": "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?"
+    },
+    {
+      "text": "Tendency to produce fabricated or false statements in open‑ended generation. ",
+      "paper": "Personalized Steering of Large Language Models: Versatile Steering Vectors Through Bi-directional Preference Optimization"
+    },
+    {
+      "text": "Tendency to generate incorrect object tokens and attention maps, inherited from VLMs .",
+      "paper": "Training-Free Open-Ended Object Detection and Segmentation via Attention as Prompts"
+    },
+    {
+      "text": "Tendency of an LLM to produce plausible-sounding but unfaithful or nonsensical information, notably in long-form QA across domains.  ",
+      "paper": "ANAH-v2: Scaling Analytical Hallucination Annotation of Large Language Models"
+    },
+    {
+      "text": "Tendency to produce incorrect claims not entailed by any retrieved chunk (generated solely by the model) .",
+      "paper": "RAGChecker: A Fine-grained Framework for Diagnosing Retrieval-Augmented Generation"
+    },
+    {
+      "text": "Tendency to generate unsupported content that can degrade factual quality. ",
+      "paper": "SeafloorAI: A Large-scale Vision-Language Dataset for Seafloor Geological Survey"
+    },
+    {
+      "text": "Tendency to generate inaccurate, non-factually aligned responses given an image. ",
+      "paper": "Mitigating Object Hallucination via Concentric Causal Attention"
+    },
+    {
+      "text": "Tendency of an LLM to produce outputs that are fallacious or fabricated yet appear plausible at a glance .",
+      "paper": "LLM-Check: Investigating Detection of Hallucinations in Large Language Models"
+    },
+    {
+      "text": "LLMs can produce spurious warnings (hallucinations), necessitating validation mechanisms .",
+      "paper": "Detecting Bugs with Substantial Monetary Consequences by LLM and Rule-based Reasoning"
+    },
+    {
+      "text": "Tendency to generate misleading or incorrect content (misinformation), motivating the need for trustworthy confidence indicators  .",
+      "paper": "Semantic Density: Uncertainty Quantification for Large Language Models through Confidence Measurement in Semantic Space"
+    },
+    {
+      "text": "Tendency to answer without supporting evidence; assessed via unanswerable questions intended to measure hallucination severity .",
+      "paper": "MMLONGBENCH-DOC: Benchmarking Long-context Document Understanding with Visualizations"
+    },
+    {
+      "text": "Tendency of the MLLM to misrecognize entities, leading to incorrect segmentation. ",
+      "paper": "One Token to Seg Them All: Language Instructed Reasoning Segmentation in Videos"
+    },
+    {
+      "text": "Tendency to produce fabricated or otherwise unacceptable answers; reducing this improves safety .",
+      "paper": "Reranking Laws for Language Generation: A Communication-Theoretic Perspective"
+    }
+  ],
+  "definition_count": 13,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HaluEval (All/Summarization/Dialogue/QA)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+      "evidence": "Hallucination benchmarks used to quantify hallucination across tasks ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Capabilities (Capabilities Component)",
+      "other_type": "constructs",
+      "relationship_type": "negatively-correlated",
+      "paper": "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+      "evidence": "Hallucinations decrease as capabilities increase across HaluEval variants ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Alignment",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Personalized Steering of Large Language Models: Versatile Steering Vectors Through Bi-directional Preference Optimization",
+      "evidence": "Mitigating hallucination is listed among alignment‑concerning scenarios."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Hallucination Score (1–4)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Personalized Steering of Large Language Models: Versatile Steering Vectors Through Bi-directional Preference Optimization",
+      "evidence": "GPT‑4 rubric scores fabricated content on a 1–4 scale."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Steering Control (LLM Steerability)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Personalized Steering of Large Language Models: Versatile Steering Vectors Through Bi-directional Preference Optimization",
+      "evidence": "By changing vector direction, the method can both induce fabricated content and enhance honesty, controlling hallucination level."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Open-Ended Object Detection and Segmentation (LVIS) mAR",
+      "other_type": "measurements",
+      "relationship_type": "influences-negative",
+      "paper": "Training-Free Open-Ended Object Detection and Segmentation via Attention as Prompts",
+      "evidence": "VL-SAM inherits VLM hallucinations, producing wrong object tokens and attention maps that would degrade detection/segmentation ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Corner Case Object Detection (CODA) Performance",
+      "other_type": "measurements",
+      "relationship_type": "influences-negative",
+      "paper": "Training-Free Open-Ended Object Detection and Segmentation via Attention as Prompts",
+      "evidence": "Hallucinated tokens/attention degrade localization in corner cases ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ANAH-v2 Hallucination Rate",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "ANAH-v2: Scaling Analytical Hallucination Annotation of Large Language Models",
+      "evidence": "Sentences labeled Contradictory or Unverifiable are counted as hallucinations to compute the hallucination rate."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Trustworthiness/Reliability in Generation",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "ANAH-v2: Scaling Analytical Hallucination Annotation of Large Language Models",
+      "evidence": "Hallucination significantly hinders real-world applications, underscoring the need for reliable and trustworthy outputs for responsible integration."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Generator Hallucination Rate",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "RAGChecker: A Fine-grained Framework for Diagnosing Retrieval-Augmented Generation",
+      "evidence": "Hallucination is the proportion of incorrect claims not entailed in any retrieved chunk ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Retrieval Quality",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "RAGChecker: A Fine-grained Framework for Diagnosing Retrieval-Augmented Generation",
+      "evidence": "As retriever claim recall improves, hallucination is reduced ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Model Capacity",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "RAGChecker: A Fine-grained Framework for Diagnosing Retrieval-Augmented Generation",
+      "evidence": "Larger models exhibit less hallucination under the same retriever ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human Expert Evaluation: Factual Completeness Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "negatively-influences",
+      "paper": "SeafloorAI: A Large-scale Vision-Language Dataset for Seafloor Geological Survey",
+      "evidence": "GPT‑4 performs worse on factual completeness potentially due to hallucinations."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Alignment",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Mitigating Object Hallucination via Concentric Causal Attention",
+      "evidence": "Insufficient interactions between visual and instruction tokens lead to inferior multimodal alignment and object hallucinations."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CHAIR Hallucination Metrics",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Mitigating Object Hallucination via Concentric Causal Attention",
+      "evidence": "CHAIR evaluates hallucinations in open-ended image-grounded generation with CS/CI metrics."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Hallucination Detection (FAVA-Annotation)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "LLM-Check: Investigating Detection of Hallucinations in Large Language Models",
+      "evidence": "FAVA-Annotation labels passages as hallucinated if any hallucination form is present, enabling binary detection of hallucination propensity ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Hallucination Detection (SelfCheckGPT)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "LLM-Check: Investigating Detection of Hallucinations in Large Language Models",
+      "evidence": "SelfCheckGPT provides sentence-level hallucination annotations in a multi-response setting for detection tasks  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Hallucination Detection (RAGTruth)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "LLM-Check: Investigating Detection of Hallucinations in Large Language Models",
+      "evidence": "RAGTruth supports hallucination detection when external references are available, testing propensity in RAG scenarios ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Uncertainty Awareness (Confidence Estimation)",
+      "other_type": "constructs",
+      "relationship_type": "predicts",
+      "paper": "LLM-Check: Investigating Detection of Hallucinations in Large Language Models",
+      "evidence": "Output-token uncertainty signals (perplexity/entropy) are proposed to identify hallucinations, with lower likelihood and higher entropy indicating ungrounded content ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Internal Representation Sensitivity to Hallucinations",
+      "other_type": "constructs",
+      "relationship_type": "predicts",
+      "paper": "LLM-Check: Investigating Detection of Hallucinations in Large Language Models",
+      "evidence": "Variations in internal representations between truthful and hallucinated cases are leveraged for single-response hallucination detection ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Self-Consistency Across Generations",
+      "other_type": "constructs",
+      "relationship_type": "predicts",
+      "paper": "LLM-Check: Investigating Detection of Hallucinations in Large Language Models",
+      "evidence": "When trained on a concept, generations tend to be more consistent; hallucinated information is less likely to recur across multiple responses, enabling detection ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Factuality/Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "negatively-related",
+      "paper": "LLM-Check: Investigating Detection of Hallucinations in Large Language Models",
+      "evidence": "Hallucinations are contrasted with truthful, grounded responses; higher factuality implies lower hallucination presence  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "False Positives Reported",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "Detecting Bugs with Substantial Monetary Consequences by LLM and Rule-based Reasoning",
+      "evidence": "Most warnings produced by naive LLM methods are hallucinations, contributing to spurious bug reports ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Vulnerability Validation via Self-Reflection",
+      "other_type": "constructs",
+      "relationship_type": "leads-to",
+      "paper": "Detecting Bugs with Substantial Monetary Consequences by LLM and Rule-based Reasoning",
+      "evidence": "Because hallucinations are a significant concern for LLM‑based analysis, the authors propose the feedback‑loop validation with reasoning traces  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Long-context Document Understanding (DU)",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "MMLONGBENCH-DOC: Benchmarking Long-context Document Understanding with Visualizations",
+      "evidence": "Unanswerable questions measure hallucination severity in LVLMs/LLMs ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Question Type Performance: Unanswerable (UNA)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MMLONGBENCH-DOC: Benchmarking Long-context Document Understanding with Visualizations",
+      "evidence": "Unanswerable questions reduce shortcuts and measure hallucinations ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Error Distribution: Hallucinated Evidence",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MMLONGBENCH-DOC: Benchmarking Long-context Document Understanding with Visualizations",
+      "evidence": "Hallucinated evidence is a major error category in qualitative analysis ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Segmentation Precision",
+      "other_type": "constructs",
+      "relationship_type": "negatively-influences",
+      "paper": "One Token to Seg Them All: Language Instructed Reasoning Segmentation in Videos",
+      "evidence": "Failure cases show misrecognition (hallucination) leading to wrong segmentation."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Decoding-time Redundancy (Number of Hypotheses N)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Reranking Laws for Language Generation: A Communication-Theoretic Perspective",
+      "evidence": "Motivated to reduce hallucinations/unacceptable answers, the multi‑hypothesis + reranking protocol lowers error rates, thereby mitigating hallucinations in practice ."
+    }
+  ],
+  "relationship_count": 29,
+  "incoming_relationship_count": 10,
+  "outgoing_relationship_count": 19
+}

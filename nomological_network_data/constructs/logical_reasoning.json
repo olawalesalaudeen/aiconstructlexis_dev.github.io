@@ -1,0 +1,1048 @@
+{
+  "canonical_name": "Logical Reasoning",
+  "type": "construct",
+  "canonical_definition": "Logical Reasoning is the capacity to derive conclusions from premises, rules, or structured constraints through systematic, rule-based inference (often involving deductive, inductive, or abductive processes), with applications ranging from multi-step puzzle-solving and game-theoretic analysis to formal logic over symbolic systems. While some definitions emphasize narrow rule-based operations (e.g., syllogistic validity, graph-based inference, or necessity/sufficiency relations), others encompass broader cognitive dimensions like critical thinking, analogical reasoning, or handling unknown facts beyond established knowledge. The construct frequently highlights challenges in AI systems, such as degradation in performance over extended reasoning chains or failures in simple logical tasks despite apparent proficiency in complex cases.",
+  "expert_reviewed": false,
+  "names": [
+    "Logical Reasoning"
+  ],
+  "papers": [
+    "A Decision-Language Model (DLM) for Dynamic Restless Multi-Armed Bandit Tasks in Public Health",
+    "Are We on the Right Way for Evaluating Large Vision-Language Models?",
+    "Automating Dataset Updates Towards Reliable and Timely Evaluation of Large Language Models",
+    "Calibrating Reasoning in Language Models with Internal Consistency",
+    "Continuously Learning, Adapting, and Improving: A Dual-Process Approach to Autonomous Driving",
+    "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models",
+    "DACO: Towards Application-Driven and Comprehensive Data Analysis via Code Generation",
+    "DHA: Learning Decoupled-Head Attention from Transformer Checkpoints via Adaptive Heads Fusion",
+    "Decompose, Analyze and Rethink: Solving Intricate Problems with Human-like Reasoning Cycle",
+    "DeiSAM: Segment Anything with Deictic Prompting",
+    "Does Reasoning Emerge? Examining the Probabilities of Causation in Large Language Models",
+    "Enhancing LLM Reasoning via Vision-Augmented Prompting",
+    "Enhancing LLM’s Cognition via Structurization",
+    "Enhancing Reasoning Capabilities of LLMs via Principled Synthetic Logic Corpus",
+    "Evaluating Large Vision-and-Language Models on Children's Mathematical Olympiads",
+    "Exploring the Role of Large Language Models in Prompt Encoding for Diffusion Models",
+    "Fight Back Against Jailbreaking via Prompt Adversarial Tuning",
+    "GTBench: Uncovering the Strategic Reasoning Capabilities of LLMs via Game-Theoretic Evaluations",
+    "How Far Can Transformers Reason? The Globality Barrier and Inductive Scratchpad",
+    "Humor in AI: Massive Scale Crowd-Sourced Preferences and Benchmarks for Cartoon Captioning",
+    "Large Language Models-guided Dynamic Adaptation for Temporal Knowledge Graph Reasoning",
+    "LogiCity: Advancing Neuro-Symbolic AI with Abstract Urban Simulation",
+    "MACM: Utilizing a Multi-Agent System for Condition Mining in Solving Complex Mathematical Problems",
+    "MMBench-Video: A Long-Form Multi-Shot Benchmark for Holistic Video Understanding",
+    "MemoryFormer : Minimize Transformer Computation by Removing Fully-Connected Layers",
+    "NaturalBench: Evaluating Vision-Language Models on Natural Adversarial Samples",
+    "OlympicArena: Benchmarking Multi-discipline Cognitive Reasoning for Superintelligent AI",
+    "On scalable oversight with weak LLMs judging strong LLMs",
+    "Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks",
+    "PUZZLES: A Benchmark for Neural Algorithmic Reasoning",
+    "Prism: A Framework for Decoupling and Assessing the Capabilities of VLMs",
+    "Self-playing Adversarial Language Game Enhances LLM Reasoning",
+    "Stacking Your Transformers: A Closer Look at Model Growth for Efficient LLM Pre-Training",
+    "TAIA: Large Language Models are Out-of-Distribution Data Learners",
+    "Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization",
+    "Towards a Theoretical Understanding of the 'Reversal Curse' via Training Dynamics",
+    "Unveiling Causal Reasoning in Large Language Models: Reality or Mirage?",
+    "WorkArena++: Towards Compositional Planning and Reasoning-based Common Knowledge Work Tasks"
+  ],
+  "paper_count": 38,
+  "group_ids": [
+    181,
+    307,
+    510,
+    554,
+    607,
+    827,
+    1071,
+    1147,
+    1242,
+    1439,
+    1838,
+    1892,
+    2003,
+    2039,
+    2185,
+    2676,
+    2781,
+    2965,
+    3157,
+    3577,
+    4219,
+    4241,
+    4289,
+    4703,
+    4962,
+    5082,
+    5235,
+    5294,
+    5299,
+    5439,
+    5764,
+    5818,
+    5855,
+    5971,
+    6037,
+    6221
+  ],
+  "definitions": [
+    {
+      "text": "Logical Reasoning",
+      "paper": "MMBench-Video: A Long-Form Multi-Shot Benchmark for Holistic Video Understanding"
+    },
+    {
+      "text": "Logical Reasoning",
+      "paper": "Stacking Your Transformers: A Closer Look at Model Growth for Efficient LLM Pre-Training"
+    },
+    {
+      "text": "Logical Reasoning",
+      "paper": "DHA: Learning Decoupled-Head Attention from Transformer Checkpoints via Adaptive Heads Fusion"
+    },
+    {
+      "text": "Rule‑based inference (often over graphs); LLMs tend to be shallow reasoners and degrade as required steps grow. ",
+      "paper": "How Far Can Transformers Reason? The Globality Barrier and Inductive Scratchpad"
+    },
+    {
+      "text": "Applying logical rules and syllogistic reasoning to assess validity of arguments; mentioned as a separate reasoning capability where LLMs struggle .",
+      "paper": "Unveiling Causal Reasoning in Large Language Models: Reality or Mirage?"
+    },
+    {
+      "text": "Systematic analysis and decision-making grounded in pure logic required by game-theoretic tasks  .",
+      "paper": "GTBench: Uncovering the Strategic Reasoning Capabilities of LLMs via Game-Theoretic Evaluations"
+    },
+    {
+      "text": "Capacity to grasp and use logical relationships in language and data. ",
+      "paper": "Large Language Models-guided Dynamic Adaptation for Temporal Knowledge Graph Reasoning"
+    },
+    {
+      "text": "Ability to perform nuanced logical inference needed to solve certain puzzles. ",
+      "paper": "PUZZLES: A Benchmark for Neural Algorithmic Reasoning"
+    },
+    {
+      "text": "Reasoning over discrete constraints and grid-based logic (e.g., Sudoku) .",
+      "paper": "Enhancing LLM Reasoning via Vision-Augmented Prompting"
+    },
+    {
+      "text": "Logical reasoning supporting humorous twists and coherent punchlines. ",
+      "paper": "Humor in AI: Massive Scale Crowd-Sourced Preferences and Benchmarks for Cartoon Captioning"
+    },
+    {
+      "text": "A set of reasoning abilities including Deductive, Inductive, Abductive, Analogical, Cause-and-Effect, Critical Thinking, Decompositional, and Quantitative reasoning .",
+      "paper": "OlympicArena: Benchmarking Multi-discipline Cognitive Reasoning for Superintelligent AI"
+    },
+    {
+      "text": "Deriving conclusions from rules or constraints, e.g., logical deduction over objects as in BBH logical_deduction tasks .",
+      "paper": "Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization"
+    },
+    {
+      "text": "Systematic, rational reasoning used to analyze driving scenes and accidents. ",
+      "paper": "Continuously Learning, Adapting, and Improving: A Dual-Process Approach to Autonomous Driving"
+    },
+    {
+      "text": "Multi-step logical inference as instantiated in StrategyQA .",
+      "paper": "Decompose, Analyze and Rethink: Solving Intricate Problems with Human-like Reasoning Cycle"
+    },
+    {
+      "text": "Machine reading comprehension with logical reasoning, as instantiated by the LogiQA dataset. ",
+      "paper": "MemoryFormer : Minimize Transformer Computation by Removing Fully-Connected Layers"
+    },
+    {
+      "text": "MLLM capability to reason logically that supports planning and reflection in complex tasks .",
+      "paper": "Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks"
+    },
+    {
+      "text": "Reasoning with formal relations such as necessary and sufficient conditions (X ⇒ Y for sufficiency; Y ⇒ X for necessity) .",
+      "paper": "Does Reasoning Emerge? Examining the Probabilities of Causation in Large Language Models"
+    },
+    {
+      "text": "Ability to derive correct action decisions from symbolic rules; here isolated by providing true groundings in natural language and focusing only on logical reasoning (no perceptual noise). ",
+      "paper": "LogiCity: Advancing Neuro-Symbolic AI with Abstract Urban Simulation"
+    },
+    {
+      "text": "LLMs are described as having excellent logical reasoning skills .",
+      "paper": "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models"
+    },
+    {
+      "text": "Deriving correct conclusions (including inverse/converse and indirect implications) from given premises; LLMs show strong performance on complex reasoning but also exhibit failures on simple logical cases. ",
+      "paper": "Towards a Theoretical Understanding of the 'Reversal Curse' via Training Dynamics"
+    },
+    {
+      "text": "Deriving conclusions consistent with evidence in the database through structured inference .",
+      "paper": "DACO: Towards Application-Driven and Comprehensive Data Analysis via Code Generation"
+    },
+    {
+      "text": "Systematic derivation of entailments from rules and facts; claimed to be limited in purely neural (including LLM) approaches for complex deictic prompts, and therefore delegated to a differentiable forward reasoner in DeiSAM  .",
+      "paper": "DeiSAM: Segment Anything with Deictic Prompting"
+    },
+    {
+      "text": "Deriving correct conclusions through multi-step logical processes; the paper targets deficits in “complex, multi-step logical reasoning.” ",
+      "paper": "MACM: Utilizing a Multi-Agent System for Condition Mining in Solving Complex Mathematical Problems"
+    },
+    {
+      "text": "Using world knowledge and logical reasoning to select relevant features as a first step in reward design.  ",
+      "paper": "A Decision-Language Model (DLM) for Dynamic Restless Multi-Armed Bandit Tasks in Public Health"
+    },
+    {
+      "text": "Capability to perform logical reasoning over text; cited as a strength of LLMs but not manifested in prompt encoding for image generation here. ",
+      "paper": "Exploring the Role of Large Language Models in Prompt Encoding for Diffusion Models"
+    },
+    {
+      "text": "Reasoning based on logical relationships; its essence is handling unknown facts, unlike knowledge that concerns established facts .",
+      "paper": "Enhancing Reasoning Capabilities of LLMs via Principled Synthetic Logic Corpus"
+    },
+    {
+      "text": "Deriving correct conclusions from premises; reasoning error mode includes logical errors .",
+      "paper": "Prism: A Framework for Decoupling and Assessing the Capabilities of VLMs"
+    },
+    {
+      "text": "Ability to reason logically; reported to improve under PAT per MT-bench aspects. ",
+      "paper": "Fight Back Against Jailbreaking via Prompt Adversarial Tuning"
+    },
+    {
+      "text": "Drawing valid conclusions from premises; evaluated via logical reading comprehension. ",
+      "paper": "Self-playing Adversarial Language Game Enhances LLM Reasoning"
+    },
+    {
+      "text": "Reasoning over formal or rule-based implications and propositions. ",
+      "paper": "Calibrating Reasoning in Language Models with Internal Consistency"
+    },
+    {
+      "text": "Reasoning with logical structure and constraints in MK problems .",
+      "paper": "Evaluating Large Vision-and-Language Models on Children's Mathematical Olympiads"
+    },
+    {
+      "text": "Reasoning over structured constraints or rules; targeted as a distinct ability. ",
+      "paper": "WorkArena++: Towards Compositional Planning and Reasoning-based Common Knowledge Work Tasks"
+    },
+    {
+      "text": "Reasoning over formal/structured premises to derive conclusions. ",
+      "paper": "TAIA: Large Language Models are Out-of-Distribution Data Learners"
+    },
+    {
+      "text": "Reasoning over logical sentences/statements as in BBH. ",
+      "paper": "Enhancing LLM’s Cognition via Structurization"
+    },
+    {
+      "text": "Core capability dimension in MMStar (LR) .",
+      "paper": "Are We on the Right Way for Evaluating Large Vision-Language Models?"
+    },
+    {
+      "text": "Applying logical constraints to reach correct conclusions over image–question pairs .",
+      "paper": "NaturalBench: Evaluating Vision-Language Models on Natural Adversarial Samples"
+    },
+    {
+      "text": "Reasoning ability assessed by tasks such as mathematical word problems; listed among core abilities LLMs are expected to demonstrate .",
+      "paper": "Automating Dataset Updates Towards Reliable and Timely Evaluation of Large Language Models"
+    },
+    {
+      "text": "Ability to apply first‑order logic over a synthetic world model to derive conclusions via chain‑of‑thought .",
+      "paper": "On scalable oversight with weak LLMs judging strong LLMs"
+    }
+  ],
+  "definition_count": 38,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "How Far Can Transformers Reason? The Globality Barrier and Inductive Scratchpad",
+      "evidence": "Reasoning over rules (often on graphs) is a central subtype; LLMs are shallow reasoners on such tasks."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multi-step Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "How Far Can Transformers Reason? The Globality Barrier and Inductive Scratchpad",
+      "evidence": "Performance deteriorates as the number of required reasoning steps increases."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Graph Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "How Far Can Transformers Reason? The Globality Barrier and Inductive Scratchpad",
+      "evidence": "Logical inference over graphs (e.g., connectivity) is a key domain explored."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Strategic Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "GTBench: Uncovering the Strategic Reasoning Capabilities of LLMs via Game-Theoretic Evaluations",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Arithmetic Calculation",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "GTBench: Uncovering the Strategic Reasoning Capabilities of LLMs via Game-Theoretic Evaluations",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Large Language Models-guided Dynamic Adaptation for Temporal Knowledge Graph Reasoning",
+      "evidence": "LLMs exhibit reasoning ability and can grasp logical relationships."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Logical Rule Induction",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Large Language Models-guided Dynamic Adaptation for Temporal Knowledge Graph Reasoning",
+      "evidence": "LLMs are used to generate general temporal logical rules."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "PUZZLES: A Benchmark for Neural Algorithmic Reasoning",
+      "evidence": "The work highlights puzzles requiring nuanced logical reasoning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PUZZLES Zero-Shot Puzzle-Solving Success Rate (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "PUZZLES: A Benchmark for Neural Algorithmic Reasoning",
+      "evidence": "Puzzles require nuanced logical reasoning; zero-shot success rates reflect this capability."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Sudoku Puzzle Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Enhancing LLM Reasoning via Vision-Augmented Prompting",
+      "evidence": "Sudoku is explicitly treated as a logical reasoning task in the evaluation suite ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Humor Generation",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Humor in AI: Massive Scale Crowd-Sourced Preferences and Benchmarks for Cartoon Captioning",
+      "evidence": "Logical reasoning is cited as a needed capability for caption generation."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Cognitive Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "OlympicArena: Benchmarking Multi-discipline Cognitive Reasoning for Superintelligent AI",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Deductive Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "OlympicArena: Benchmarking Multi-discipline Cognitive Reasoning for Superintelligent AI",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Inductive Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "OlympicArena: Benchmarking Multi-discipline Cognitive Reasoning for Superintelligent AI",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Abductive Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "OlympicArena: Benchmarking Multi-discipline Cognitive Reasoning for Superintelligent AI",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Analogical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "OlympicArena: Benchmarking Multi-discipline Cognitive Reasoning for Superintelligent AI",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Cause-and-Effect Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "OlympicArena: Benchmarking Multi-discipline Cognitive Reasoning for Superintelligent AI",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Critical Thinking",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "OlympicArena: Benchmarking Multi-discipline Cognitive Reasoning for Superintelligent AI",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Decompositional Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "OlympicArena: Benchmarking Multi-discipline Cognitive Reasoning for Superintelligent AI",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Quantitative Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "OlympicArena: Benchmarking Multi-discipline Cognitive Reasoning for Superintelligent AI",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-horizon Logical Deduction",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "OlympicArena: Benchmarking Multi-discipline Cognitive Reasoning for Superintelligent AI",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OlympicArena Logical Reasoning Ability Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "OlympicArena: Benchmarking Multi-discipline Cognitive Reasoning for Superintelligent AI",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization",
+      "evidence": "Logical deduction subtasks (three/five/seven objects) are part of the broader reasoning capability (per‑task BBH evaluations) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BBH: logical_deduction_three_objects Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization",
+      "evidence": "Per‑task BBH test accuracy is reported for logical_deduction_three_objects ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BBH: logical_deduction_three_objects Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization",
+      "evidence": "Per‑task BBH test accuracy is reported for logical_deduction_five_objects ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BBH: logical_deduction_three_objects Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization",
+      "evidence": "Per‑task BBH/Gemini tables include logical_deduction_seven_objects accuracy ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Analytic Process (System II)",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Continuously Learning, Adapting, and Improving: A Dual-Process Approach to Autonomous Driving",
+      "evidence": "System II excels in logical reasoning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Decompose, Analyze and Rethink: Solving Intricate Problems with Human-like Reasoning Cycle",
+      "evidence": "Logical reasoning is a target capability (e.g., StrategyQA) within overall reasoning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "StrategyQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Decompose, Analyze and Rethink: Solving Intricate Problems with Human-like Reasoning Cycle",
+      "evidence": "StrategyQA evaluates multi-step logical reasoning; accuracy is reported  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "MemoryFormer : Minimize Transformer Computation by Removing Fully-Connected Layers",
+      "evidence": "LogiQA is a challenge dataset for machine reading comprehension with logical reasoning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks",
+      "evidence": "Logical reasoning of MLLMs underpins action planning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Planning",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks",
+      "evidence": "Logical reasoning of MLLMs underpins action planning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reflection",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks",
+      "evidence": "Reflector leverages MLLM reasoning to adjust plans based on experience ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "MMBench-Video: A Long-Form Multi-Shot Benchmark for Holistic Video Understanding",
+      "evidence": "The analysis highlights logical reasoning as a challenging capability within Reasoning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LogiQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Stacking Your Transformers: A Closer Look at Model Growth for Efficient LLM Pre-Training",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "General NLP Task Performance",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Stacking Your Transformers: A Closer Look at Model Growth for Efficient LLM Pre-Training",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Does Reasoning Emerge? Examining the Probabilities of Causation in Large Language Models",
+      "evidence": "Logical reasoning is presented as a form of reasoning alongside other types ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Necessity Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Does Reasoning Emerge? Examining the Probabilities of Causation in Large Language Models",
+      "evidence": "Necessity (Y ⇒ X) is a key element in propositional logic ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Sufficiency Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Does Reasoning Emerge? Examining the Probabilities of Causation in Large Language Models",
+      "evidence": "Sufficiency (X ⇒ Y) is a key element in propositional logic ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Div6 Math Reasoning Task",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Does Reasoning Emerge? Examining the Probabilities of Causation in Large Language Models",
+      "evidence": "Div6 captures a logical rule (C2 ∧ C3 ⇒ C6) represented in a reasoning graph and evaluated via PN/PS ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "First-Order Logic (FOL) Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "LogiCity: Advancing Neuro-Symbolic AI with Abstract Urban Simulation",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Inductive Logical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "LogiCity: Advancing Neuro-Symbolic AI with Abstract Urban Simulation",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models",
+      "evidence": "The paper highlights logical reasoning skills broadly and examines math-solving as a specific, harder case within its experiments  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models",
+      "evidence": "The paper highlights logical reasoning skills broadly and examines math-solving as a specific, harder case within its experiments  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models",
+      "evidence": "Commonsense reasoning is treated as an evaluated reasoning category in the experiments (PIQA, SIQA, OBQA)  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Converse/Inverse Relation Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Towards a Theoretical Understanding of the 'Reversal Curse' via Training Dynamics",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Transitive (Indirect) Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Towards a Theoretical Understanding of the 'Reversal Curse' via Training Dynamics",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-Context Learning (ICL)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Towards a Theoretical Understanding of the 'Reversal Curse' via Training Dynamics",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Data Analysis Capability",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "DACO: Towards Application-Driven and Comprehensive Data Analysis via Code Generation",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Deictic Segmentation Performance",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "DeiSAM: Segment Anything with Deictic Prompting",
+      "evidence": "Differentiable forward reasoning identifies targeted objects prior to segmentation; explicit reasoning addresses limits of purely neural models"
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "MACM: Utilizing a Multi-Agent System for Condition Mining in Solving Complex Mathematical Problems",
+      "evidence": "The paper frames math challenges as a subset of “complex, multi-step logical reasoning,” situating mathematical reasoning within logical reasoning"
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "MACM: Utilizing a Multi-Agent System for Condition Mining in Solving Complex Mathematical Problems",
+      "evidence": "The paper frames math challenges as a subset of “complex, multi-step logical reasoning,” situating mathematical reasoning within logical reasoning"
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multi-step Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "MACM: Utilizing a Multi-Agent System for Condition Mining in Solving Complex Mathematical Problems",
+      "evidence": "LLM shortcomings are attributed to deficits in “complex, multi-step logical reasoning”"
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Algorithmic Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "MACM: Utilizing a Multi-Agent System for Condition Mining in Solving Complex Mathematical Problems",
+      "evidence": "A sequence‑sorting experiment is used to assess structured procedural reasoning abilities, a facet of logical reasoning"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ReClor Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MACM: Utilizing a Multi-Agent System for Condition Mining in Solving Complex Mathematical Problems",
+      "evidence": "ReClor evaluates general logical reasoning beyond math; the paper adapts prompts and reports accuracy"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Feature Extraction from Language Prompts",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "A Decision-Language Model (DLM) for Dynamic Restless Multi-Armed Bandit Tasks in Public Health",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Enhancing Reasoning Capabilities of LLMs via Principled Synthetic Logic Corpus",
+      "evidence": "ALT focuses on logical reasoning as a fundamental form of reasoning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Deductive Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Enhancing Reasoning Capabilities of LLMs via Principled Synthetic Logic Corpus",
+      "evidence": "Training and evaluation center on deductive reasoning samples and tasks  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Abductive Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Enhancing Reasoning Capabilities of LLMs via Principled Synthetic Logic Corpus",
+      "evidence": "ALT improves abductive reasoning tasks beyond the original deductive focus, due to shared logic fundamentals ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multi-step Deductive Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Enhancing Reasoning Capabilities of LLMs via Principled Synthetic Logic Corpus",
+      "evidence": "FLD×2 comprises multi-step deductive samples to teach multi-step reasoning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning with Unknown Facts",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Enhancing Reasoning Capabilities of LLMs via Principled Synthetic Logic Corpus",
+      "evidence": "Essence of logical reasoning is handling unknown facts; formalized as DP1  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Illogical Reasoning Discrimination",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Enhancing Reasoning Capabilities of LLMs via Principled Synthetic Logic Corpus",
+      "evidence": "DP2 teaches models that conclusions cannot be derived from insufficient premises ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Use of Diverse Deduction Rules",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Enhancing Reasoning Capabilities of LLMs via Principled Synthetic Logic Corpus",
+      "evidence": "DP3 targets learning a wide set of deduction rules; case shows use of syllogism  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Understanding Diverse Linguistic Expressions",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Enhancing Reasoning Capabilities of LLMs via Principled Synthetic Logic Corpus",
+      "evidence": "DP4 targets naturalistic linguistic expressions of logic; case on FOLIO highlights this  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "bAbiD (5-shot) Performance (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Enhancing Reasoning Capabilities of LLMs via Principled Synthetic Logic Corpus",
+      "evidence": "Listed under logic benchmarks with improvements after ALT (Table 4a) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "FOLIO (5-shot) Performance (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Enhancing Reasoning Capabilities of LLMs via Principled Synthetic Logic Corpus",
+      "evidence": "Logic benchmark with natural language expressions (Table 4a) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LogicNLI (5-shot) Performance (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Enhancing Reasoning Capabilities of LLMs via Principled Synthetic Logic Corpus",
+      "evidence": "Included under logic benchmarks (Table 4a) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "RobustLR (5-shot) Performance (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Enhancing Reasoning Capabilities of LLMs via Principled Synthetic Logic Corpus",
+      "evidence": "Included under logic benchmarks (Table 4a) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AR-LSAT (5-shot) Performance (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Enhancing Reasoning Capabilities of LLMs via Principled Synthetic Logic Corpus",
+      "evidence": "Included under logic benchmarks (Table 4a) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LogiQA (5-shot) Performance (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Enhancing Reasoning Capabilities of LLMs via Principled Synthetic Logic Corpus",
+      "evidence": "Included under logic benchmarks (Table 4a) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ReClor (5-shot) Performance (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Enhancing Reasoning Capabilities of LLMs via Principled Synthetic Logic Corpus",
+      "evidence": "Included under logic benchmarks (Table 4a) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "bAbiD (5-shot) Performance (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Enhancing Reasoning Capabilities of LLMs via Principled Synthetic Logic Corpus",
+      "evidence": "Listed under logic benchmarks with ALT gains (Table 4a) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Enhancing Reasoning Capabilities of LLMs via Principled Synthetic Logic Corpus",
+      "evidence": "Gains on math tasks indicate the generalizability of acquired logical reasoning fundamentals ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Enhancing Reasoning Capabilities of LLMs via Principled Synthetic Logic Corpus",
+      "evidence": "Gains on math tasks indicate the generalizability of acquired logical reasoning fundamentals ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Code Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Enhancing Reasoning Capabilities of LLMs via Principled Synthetic Logic Corpus",
+      "evidence": "Improvements on coding tasks indicate transfer from logic fundamentals ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Integrative Reasoning (NLI)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Enhancing Reasoning Capabilities of LLMs via Principled Synthetic Logic Corpus",
+      "evidence": "Improvements on NLI reflect combining original knowledge with newly acquired logical reasoning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "Prism: A Framework for Decoupling and Assessing the Capabilities of VLMs",
+      "evidence": "Logical errors categorized as a major reasoning error mode ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multi-turn Conversational Ability",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Fight Back Against Jailbreaking via Prompt Adversarial Tuning",
+      "evidence": "MT-bench includes reasoning; the paper notes reasoning scores increased."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Self-playing Adversarial Language Game Enhances LLM Reasoning",
+      "evidence": "LogiQA2 targets logical reasoning, a subdomain of overall reasoning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LogiQA2 0‑shot Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Self-playing Adversarial Language Game Enhances LLM Reasoning",
+      "evidence": "LogiQA2 evaluates logical reasoning in reading comprehension."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subtype",
+      "paper": "Calibrating Reasoning in Language Models with Internal Consistency",
+      "evidence": "Reasoning tasks include logical reasoning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PrOntoQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Calibrating Reasoning in Language Models with Internal Consistency",
+      "evidence": "Logical reasoning is evaluated on PrOntoQA."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ProofWriter Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Calibrating Reasoning in Language Models with Internal Consistency",
+      "evidence": "Logical reasoning is evaluated on ProofWriter."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Evaluating Large Vision-and-Language Models on Children's Mathematical Olympiads",
+      "evidence": "Logic is analyzed as a distinct category within MK problems ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical Ability",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Evaluating Large Vision-and-Language Models on Children's Mathematical Olympiads",
+      "evidence": "Logic is analyzed as a distinct category within MK problems ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Category Accuracy: Geometry/Logic/Numbers/Algebra",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Evaluating Large Vision-and-Language Models on Children's Mathematical Olympiads",
+      "evidence": "Logic performance is reported via category-level accuracies; LVLMs underperform ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Planning & Problem Solving (L2/L3) Success Rate",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "WorkArena++: Towards Compositional Planning and Reasoning-based Common Knowledge Work Tasks",
+      "evidence": "Benchmark targets logical reasoning alongside planning/problem solving."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "TAIA: Large Language Models are Out-of-Distribution Data Learners",
+      "evidence": "LogiQA appears among reasoning benchmarks."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LogiQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "TAIA: Large Language Models are Out-of-Distribution Data Learners",
+      "evidence": "LogiQA measures logical reasoning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Cognition (LLM)",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Enhancing LLM’s Cognition via Structurization",
+      "evidence": "BBH measures reasoning over logical statements; structurization offers a small boost."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BBH Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Enhancing LLM’s Cognition via Structurization",
+      "evidence": "BBH assesses logical reasoning; structurization yields ~+0.8%."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Structurization Ability",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Enhancing LLM’s Cognition via Structurization",
+      "evidence": "Yields a small improvement on BBH (~+0.8%)."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multi-modal Capability",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Are We on the Right Way for Evaluating Large Vision-Language Models?",
+      "evidence": "Six core capabilities include logical reasoning (LR) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMStar IR Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Are We on the Right Way for Evaluating Large Vision-Language Models?",
+      "evidence": "MMStar reports LR scores as a core capability dimension ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Advanced Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "NaturalBench: Evaluating Vision-Language Models on Natural Adversarial Samples",
+      "evidence": "Logic is listed as an advanced reasoning skill in the taxonomy ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Logic Skill Q-Acc",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "NaturalBench: Evaluating Vision-Language Models on Natural Adversarial Samples",
+      "evidence": "Logic reasoning is measured via per-tag Q-Acc in the benchmark’s skill analyses ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Math Word Problems with Hints (Mimicked)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Automating Dataset Updates Towards Reliable and Timely Evaluation of Large Language Models",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PrOntoQA (Closed QA) – Judge Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "On scalable oversight with weak LLMs judging strong LLMs",
+      "evidence": "PrOntoQA uses first‑order logic world models and synthetic CoT to test logical conclusions; judge accuracy recorded ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Foundational Capabilities",
+      "other_type": "constructs",
+      "relationship_type": "component-of",
+      "paper": "DHA: Learning Decoupled-Head Attention from Transformer Checkpoints via Adaptive Heads Fusion",
+      "evidence": "Foundational capabilities include LogiQA, a logical reasoning benchmark."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LogiQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "DHA: Learning Decoupled-Head Attention from Transformer Checkpoints via Adaptive Heads Fusion",
+      "evidence": "LogiQA accuracy is included in the ablation and main results."
+    }
+  ],
+  "relationship_count": 100,
+  "incoming_relationship_count": 34,
+  "outgoing_relationship_count": 66
+}

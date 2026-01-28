@@ -1,0 +1,311 @@
+{
+  "canonical_name": "Instance Segmentation",
+  "type": "behavior",
+  "canonical_definition": "Instance Segmentation is the behavior of processing natural language instructions to generate pixel-level segmentations of specific objects or regions in images or videos, often requiring implicit or explicit reasoning to address complex queries beyond basic detection. It reflects capabilities in vision-language understanding, hallucination mitigation, and task-specific accuracy, commonly evaluated via metrics like gIoU/cIoU or COCO APmask in both benchmark and real-world scenarios. The task integrates language-guided reasoning with pixel-level precision, enabling models to execute segmentation actions across diverse contexts such as object selection, scene understanding, or geological survey.",
+  "expert_reviewed": false,
+  "names": [
+    "Instance Segmentation"
+  ],
+  "papers": [
+    "DeiSAM: Segment Anything with Deictic Prompting",
+    "Leveraging Hallucinations to Reduce Manual Prompt Dependency in Promptable Segmentation",
+    "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+    "Multi-Head Mixture-of-Experts",
+    "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding",
+    "One Token to Seg Them All: Language Instructed Reasoning Segmentation in Videos",
+    "SeafloorAI: A Large-scale Vision-Language Dataset for Seafloor Geological Survey",
+    "Training-Free Open-Ended Object Detection and Segmentation via Attention as Prompts",
+    "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+    "Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models"
+  ],
+  "paper_count": 10,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Image reasoning segmentation benchmark evaluates implicit reasoning for segmentation (gIoU/cIoU).",
+      "paper": "One Token to Seg Them All: Language Instructed Reasoning Segmentation in Videos"
+    },
+    {
+      "text": "Language-instructed reasoning segmentation aids decision tasks (e.g., selecting a lively pet).",
+      "paper": "One Token to Seg Them All: Language Instructed Reasoning Segmentation in Videos"
+    },
+    {
+      "text": "Tendency of the MLLM to misrecognize entities, leading to incorrect segmentation.",
+      "paper": "One Token to Seg Them All: Language Instructed Reasoning Segmentation in Videos"
+    },
+    {
+      "text": "VL-SAM inherits VLM hallucinations, producing wrong object tokens and attention maps that would degrade detection/segmentation .",
+      "paper": "Training-Free Open-Ended Object Detection and Segmentation via Attention as Prompts"
+    },
+    {
+      "text": "Failure cases show misrecognition (hallucination) leading to wrong segmentation.",
+      "paper": "One Token to Seg Them All: Language Instructed Reasoning Segmentation in Videos"
+    },
+    {
+      "text": "The LLM understands user text instructions and produces text and segmentation outputs in the unified framework  .",
+      "paper": "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding"
+    },
+    {
+      "text": "Ability to execute mapping/segmentation actions in response to natural-language instructions across layers.",
+      "paper": "SeafloorAI: A Large-scale Vision-Language Dataset for Seafloor Geological Survey"
+    },
+    {
+      "text": "Understanding and executing user text instructions to produce text and segmentation outputs  .",
+      "paper": "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding"
+    },
+    {
+      "text": "The LLM understands user text instructions and produces text and segmentation outputs in the unified framework  .",
+      "paper": "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding"
+    },
+    {
+      "text": "Differentiable forward reasoning identifies targeted objects prior to segmentation; explicit reasoning addresses limits of purely neural models",
+      "paper": "DeiSAM: Segment Anything with Deictic Prompting"
+    },
+    {
+      "text": "COCO instance segmentation APmask reported as downstream validation.",
+      "paper": "Multi-Head Mixture-of-Experts"
+    },
+    {
+      "text": "The method performs scene understanding using MLLMs’ prior knowledge before segmentation .",
+      "paper": "Leveraging Hallucinations to Reduce Manual Prompt Dependency in Promptable Segmentation"
+    },
+    {
+      "text": "Deeper reasoning abilities needed for referring/reasoning segmentation beyond straightforward analytical queries.",
+      "paper": "SeafloorAI: A Large-scale Vision-Language Dataset for Seafloor Geological Survey"
+    },
+    {
+      "text": "Future work aims to support reasoning-capable models similar to referring and reasoning segmentation tasks.",
+      "paper": "SeafloorAI: A Large-scale Vision-Language Dataset for Seafloor Geological Survey"
+    },
+    {
+      "text": "RES is explicitly listed as an evaluation dimension for grounding/segmentation .",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context"
+    },
+    {
+      "text": "Capability to analyze visual content via detection, instance segmentation, pose estimation, and related perception tasks  .",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks"
+    },
+    {
+      "text": "Specialists (detection, segmentation, depth) provide useful perception skills that SKETCHPAD combines into the LM during reasoning .",
+      "paper": "Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models"
+    },
+    {
+      "text": "Object detection and instance segmentation AP reported on COCO .",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks"
+    },
+    {
+      "text": "Training on image VQA (conversation ability) benefits instance segmentation and image generation losses in multi-task influence analysis .",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks"
+    },
+    {
+      "text": "Segmentation expertise (SAM) is part of the vision expert pool for perception  .",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context"
+    },
+    {
+      "text": "Segmentation expertise (SAM) is part of the vision expert pool for perception  .",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context"
+    },
+    {
+      "text": "Pixel-level reasoning includes referring/“reasoning” segmentation in the unified tasks .",
+      "paper": "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding"
+    },
+    {
+      "text": "Semantic segmentation reported on ADE20K (mIoU) .",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks"
+    },
+    {
+      "text": "Pixel-level tasks like universal/referring segmentation are part of the unified tasks .",
+      "paper": "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding"
+    }
+  ],
+  "definition_count": 24,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Complex Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "One Token to Seg Them All: Language Instructed Reasoning Segmentation in Videos",
+      "evidence": "Image reasoning segmentation benchmark evaluates implicit reasoning for segmentation (gIoU/cIoU)."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Complex Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "One Token to Seg Them All: Language Instructed Reasoning Segmentation in Videos",
+      "evidence": "Language-instructed reasoning segmentation aids decision tasks (e.g., selecting a lively pet)."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Propensity",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "One Token to Seg Them All: Language Instructed Reasoning Segmentation in Videos",
+      "evidence": "Tendency of the MLLM to misrecognize entities, leading to incorrect segmentation."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Propensity",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Training-Free Open-Ended Object Detection and Segmentation via Attention as Prompts",
+      "evidence": "VL-SAM inherits VLM hallucinations, producing wrong object tokens and attention maps that would degrade detection/segmentation ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Propensity",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "One Token to Seg Them All: Language Instructed Reasoning Segmentation in Videos",
+      "evidence": "Failure cases show misrecognition (hallucination) leading to wrong segmentation."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding",
+      "evidence": "The LLM understands user text instructions and produces text and segmentation outputs in the unified framework  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction Following",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "SeafloorAI: A Large-scale Vision-Language Dataset for Seafloor Geological Survey",
+      "evidence": "Ability to execute mapping/segmentation actions in response to natural-language instructions across layers."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction Following",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding",
+      "evidence": "Understanding and executing user text instructions to produce text and segmentation outputs  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction Following",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding",
+      "evidence": "The LLM understands user text instructions and produces text and segmentation outputs in the unified framework  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Logical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "DeiSAM: Segment Anything with Deictic Prompting",
+      "evidence": "Differentiable forward reasoning identifies targeted objects prior to segmentation; explicit reasoning addresses limits of purely neural models"
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Multi-Head Mixture-of-Experts",
+      "evidence": "COCO instance segmentation APmask reported as downstream validation."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Leveraging Hallucinations to Reduce Manual Prompt Dependency in Promptable Segmentation",
+      "evidence": "The method performs scene understanding using MLLMs’ prior knowledge before segmentation ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "SeafloorAI: A Large-scale Vision-Language Dataset for Seafloor Geological Survey",
+      "evidence": "Deeper reasoning abilities needed for referring/reasoning segmentation beyond straightforward analytical queries."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "SeafloorAI: A Large-scale Vision-Language Dataset for Seafloor Geological Survey",
+      "evidence": "Future work aims to support reasoning-capable models similar to referring and reasoning segmentation tasks."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Grounding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "evidence": "RES is explicitly listed as an evaluation dimension for grounding/segmentation ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Perception",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "evidence": "Capability to analyze visual content via detection, instance segmentation, pose estimation, and related perception tasks  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Perception",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models",
+      "evidence": "Specialists (detection, segmentation, depth) provide useful perception skills that SKETCHPAD combines into the LM during reasoning ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Perception",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "evidence": "Object detection and instance segmentation AP reported on COCO ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Perception",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "evidence": "Training on image VQA (conversation ability) benefits instance segmentation and image generation losses in multi-task influence analysis ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Perception",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "evidence": "Segmentation expertise (SAM) is part of the vision expert pool for perception  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding",
+      "evidence": "Pixel-level reasoning includes referring/“reasoning” segmentation in the unified tasks ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "evidence": "Semantic segmentation reported on ADE20K (mIoU) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding",
+      "evidence": "Pixel-level tasks like universal/referring segmentation are part of the unified tasks ."
+    }
+  ],
+  "relationship_count": 23,
+  "incoming_relationship_count": 23,
+  "outgoing_relationship_count": 0
+}

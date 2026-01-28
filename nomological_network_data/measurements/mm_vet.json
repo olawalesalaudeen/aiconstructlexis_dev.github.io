@@ -1,0 +1,237 @@
+{
+  "canonical_name": "MM-Vet",
+  "type": "measurement",
+  "canonical_definition": "MM-Vet is a multimodal vision-language benchmark designed to evaluate integrated capabilities across diverse categories such as reasoning, perception, and knowledge retention, with task formats emphasizing cross-modal integration and generalization in real-world scenarios. It assesses models through 6 core vision-language capabilities and 16 integrative tasks, often framed as a measure of robustness and multifaceted information processing. Some papers highlight its focus on retained general capabilities and parallel recognition-sequential understanding workflows, while others emphasize its role in evaluating multimodal LLMs under challenging, open-ended conditions.",
+  "expert_reviewed": false,
+  "names": [
+    "MM-Vet",
+    "MM-Vet (Score)",
+    "MM-Vet Accuracy",
+    "MM-Vet Accuracy (%)",
+    "MM-Vet Score",
+    "MM-Vet Score (%)",
+    "MMMU Score",
+    "MM‑Vet Score"
+  ],
+  "papers": [
+    "CogVLM: Visual Expert for Pretrained Language Models",
+    "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts",
+    "Dense Connector for MLLMs",
+    "Efficient Large Multi-modal Models via Visual Context Compression",
+    "Enhancing Large Vision Language Models with Self-Training on Image Comprehension",
+    "Matryoshka Query Transformer for Large Vision-Language Models",
+    "Meteor: Mamba-based Traversal of Rationale for Large Language and Vision Models",
+    "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding",
+    "Unified Generative and Discriminative Training for Multi-modal Large Language Models",
+    "Why are Visually-Grounded Language Models Bad at Image Classification?"
+  ],
+  "paper_count": 10,
+  "group_ids": [
+    1761,
+    1798,
+    1972,
+    2013,
+    2246,
+    2507,
+    3107,
+    3502,
+    3553,
+    4610
+  ],
+  "definitions": [
+    {
+      "text": "MM-Vet benchmark score reported in comparisons and ablations . MM-Vet Score",
+      "paper": "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts"
+    },
+    {
+      "text": "Integrated capabilities evaluation for LMMs MM-Vet Score/Accuracy (%)",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models"
+    },
+    {
+      "text": "Challenging vision-language benchmark requiring multifaceted information MM-Vet Accuracy (%)",
+      "paper": "Meteor: Mamba-based Traversal of Rationale for Large Language and Vision Models"
+    },
+    {
+      "text": "Benchmark score on MM‑Vet MM‑Vet Score (as reported)",
+      "paper": "Matryoshka Query Transformer for Large Vision-Language Models"
+    },
+    {
+      "text": "Benchmark score on MMMU MMMU Score (as reported)",
+      "paper": "Matryoshka Query Transformer for Large Vision-Language Models"
+    },
+    {
+      "text": "Vision-language evaluation across diverse categories (e.g., reasoning, perception) MM-Vet Accuracy (%)",
+      "paper": "Enhancing Large Vision Language Models with Self-Training on Image Comprehension"
+    },
+    {
+      "text": "Multimodal robustness and generalization MM-Vet Score (%)",
+      "paper": "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding"
+    },
+    {
+      "text": "Integrated multimodal capability evaluation emphasizing reasoning/knowledge skills; used to check general capability retention. MM-Vet Score  .",
+      "paper": "Why are Visually-Grounded Language Models Bad at Image Classification?"
+    },
+    {
+      "text": "Multimodal capabilities in the wild MM-Vet (reported as MMV) Score",
+      "paper": "Dense Connector for MLLMs"
+    },
+    {
+      "text": "Integrated multimodal capability evaluation MM-Vet Score (as reported)",
+      "paper": "Unified Generative and Discriminative Training for Multi-modal Large Language Models"
+    },
+    {
+      "text": "Evaluation across 6 core vision-language capabilities and 16 integrations MM-Vet Score (%)",
+      "paper": "Efficient Large Multi-modal Models via Visual Context Compression"
+    }
+  ],
+  "definition_count": 11,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multidisciplinary Problem Solving (Multimodal)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "What matters when building vision-language models?",
+      "evidence": "MMMU is used to assess cross-domain multimodal problem solving."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models",
+      "evidence": "MM-Vet evaluates integrated capabilities of large multimodal models ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multi-task Generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models",
+      "evidence": "State-of-the-art performance across seven LVLM benchmarks evidences robust multi-task generalization (e.g., MM-Vet) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning (General)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "RoboMamba: Efficient Vision-Language-Action Model for Robotic Reasoning and Manipulation",
+      "evidence": "Integrated capabilities/reasoning evaluated by MM-Vet (Table 1)  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Vision-Language Capability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Meteor: Mamba-based Traversal of Rationale for Large Language and Vision Models",
+      "evidence": "MM-Vet is used as a challenging benchmark requiring multifaceted information ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Scientific Knowledge Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Matryoshka Query Transformer for Large Vision-Language Models",
+      "evidence": "Subject-level scientific knowledge tasks (e.g., MMMU) remain robust with few tokens."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Matryoshka Query Transformer for Large Vision-Language Models",
+      "evidence": "MM‑Vet is listed among integrated capability evaluations."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Vision-Language Understanding and Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Enhancing Large Vision Language Models with Self-Training on Image Comprehension",
+      "evidence": "MM-Vet evaluates a wide range of vision-language tasks and criteria; accuracy reflects overall capabilities ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Multimodal Capability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding",
+      "evidence": "MM-Vet results reported ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Why are Visually-Grounded Language Models Bad at Image Classification?",
+      "evidence": "MM-Vet evaluates integrated multimodal capabilities that include reasoning aspects ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General VLM Capability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Why are Visually-Grounded Language Models Bad at Image Classification?",
+      "evidence": "MM-Vet is included among benchmarks to check that general capability is preserved ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD",
+      "evidence": "MM‑Vet is listed among the 16 evaluated benchmarks ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD",
+      "evidence": "MMMU is included in the 16‑benchmark evaluation with resolution stats ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Dense Connector for MLLMs",
+      "evidence": "MM-Vet is reported as a measure of multimodal capabilities requiring reasoning in the wild ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Capability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Improving Alignment and Robustness with Circuit Breakers",
+      "evidence": "Performance on MMMU preserved with circuit breakers ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Image-Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Efficient Large Multi-modal Models via Visual Context Compression",
+      "evidence": "MM-Vet is included among the multi-modal question-answering benchmarks assessing capability combinations ."
+    }
+  ],
+  "relationship_count": 18,
+  "incoming_relationship_count": 18,
+  "outgoing_relationship_count": 0
+}

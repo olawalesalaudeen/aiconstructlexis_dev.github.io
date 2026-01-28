@@ -1,0 +1,564 @@
+{
+  "canonical_name": "Spatial Reasoning",
+  "type": "construct",
+  "canonical_definition": "Spatial Reasoning is the general ability to comprehend and reason about spatial relationships among objects, including their positions, orientations, distances, directions, and changes in configurations across 2D or 3D environments. It encompasses understanding scene layouts, navigation-relevant relations, and compositional spatial interactions (e.g., \"left of,\" \"outside of,\" scale relations) to support tasks like planning, object placement, trajectory prediction, or structural consistency judgments. While some definitions emphasize zero-shot or dynamic reasoning in situated 3D scenes, others highlight its role in grid-based layouts, multi-agent navigation, or vision-language tasks, reflecting its foundational importance for robotics, remote sensing, and grounded language understanding.",
+  "expert_reviewed": false,
+  "names": [
+    "Spatial Reasoning"
+  ],
+  "papers": [
+    "$\\textit{Bifr\\\"ost}$: 3D-Aware Image Compositing with Language Instructions",
+    "Benchmarking Generative Models on Computational Thinking Tests in Elementary Visual Programming",
+    "CausalChaos! Dataset for Comprehensive Causal Action Question Answering Over Longer Causal Chains Grounded in Dynamic Visual Scenes",
+    "Compositional 3D-aware Video Generation with LLM Director",
+    "ConvBench: A Multi-Turn Conversation Evaluation Benchmark with Hierarchical Ablation Capability for Large Vision-Language Models",
+    "DARG: Dynamic Evaluation of Large Language Models via Adaptive Reasoning Graph",
+    "FactorSim: Generative Simulation via Factorized Representation",
+    "Hallo3D: Multi-Modal Hallucination Detection and Mitigation for Consistent 3D Content Generation",
+    "Localize, Understand, Collaborate: Semantic-Aware Dragging via Intention Reasoner",
+    "Long-Horizon Planning for Multi-Agent Robots in Partially Observable Environments",
+    "Mind's Eye of LLMs: Visualization-of-Thought Elicits Spatial Reasoning in Large Language Models",
+    "Multi-modal Situated Reasoning in 3D Scenes",
+    "OlympicArena: Benchmarking Multi-discipline Cognitive Reasoning for Superintelligent AI",
+    "ReMI: A Dataset for Reasoning with Multiple Images",
+    "RoboMamba: Efficient Vision-Language-Action Model for Robotic Reasoning and Manipulation",
+    "SpatialPIN: Enhancing Spatial Reasoning Capabilities of Vision-Language Models through Prompting and Interacting 3D Priors",
+    "SpatialRGPT: Grounded Spatial Reasoning in Vision-Language Models",
+    "Task Me Anything",
+    "VRSBench: A Versatile Vision-Language Benchmark Dataset for Remote Sensing Image Understanding",
+    "VisMin: Visual Minimal-Change Understanding",
+    "Web2Code: A Large-scale Webpage-to-Code Dataset and Evaluation Framework for Multimodal LLMs"
+  ],
+  "paper_count": 21,
+  "group_ids": [
+    744,
+    958,
+    1158,
+    1258,
+    1608,
+    1722,
+    1729,
+    1861,
+    1981,
+    2130,
+    2548,
+    2612,
+    2807,
+    3023,
+    3330,
+    3625,
+    3778,
+    4151,
+    4345,
+    4998,
+    6198
+  ],
+  "definitions": [
+    {
+      "text": "Handling and implementing spatial relations (e.g., on top of, left of, outside of) specified in prompts. ",
+      "paper": "FactorSim: Generative Simulation via Factorized Representation"
+    },
+    {
+      "text": "Understanding spatial relationships and navigation-relevant relations in situated 3D scenes; zero-shot LLMs struggle here .",
+      "paper": "Multi-modal Situated Reasoning in 3D Scenes"
+    },
+    {
+      "text": "Spatial Reasoning",
+      "paper": "OlympicArena: Benchmarking Multi-discipline Cognitive Reasoning for Superintelligent AI"
+    },
+    {
+      "text": "Reasoning about 3D spatial relations for navigation and multi-object goals; identified as a current limitation. ",
+      "paper": "Long-Horizon Planning for Multi-Agent Robots in Partially Observable Environments"
+    },
+    {
+      "text": "Reasoning over spatial relationships among objects; the spatial relation split relies heavily on reasoning .",
+      "paper": "VisMin: Visual Minimal-Change Understanding"
+    },
+    {
+      "text": "Reasoning over spatial configurations and layouts .",
+      "paper": "Task Me Anything"
+    },
+    {
+      "text": "Ability to understand 2D and 3D spatial arrangements and relationships (e.g., direction, distance) in visual scenes  .",
+      "paper": "SpatialRGPT: Grounded Spatial Reasoning in Vision-Language Models"
+    },
+    {
+      "text": "General ability to reason about spatial relationships, positions, orientations, distances, and changes in scenes; foundational for higher-level 3D-aware tasks and planning. ",
+      "paper": "SpatialPIN: Enhancing Spatial Reasoning Capabilities of Vision-Language Models through Prompting and Interacting 3D Priors"
+    },
+    {
+      "text": "Spatial identification and compositional reasoning emphasized via GQA performance .",
+      "paper": "RoboMamba: Efficient Vision-Language-Action Model for Robotic Reasoning and Manipulation"
+    },
+    {
+      "text": "Ability to reason about positions, orientations, and obstacles in grid layouts. ",
+      "paper": "Benchmarking Generative Models on Computational Thinking Tests in Elementary Visual Programming"
+    },
+    {
+      "text": "Understanding spatial relationships and size relations between objects needed to predict 2D location and depth for placement .",
+      "paper": "$\\textit{Bifr\\\"ost}$: 3D-Aware Image Compositing with Language Instructions"
+    },
+    {
+      "text": "Reasoning about spatial relations and maps using multiple images  .",
+      "paper": "ReMI: A Dataset for Reasoning with Multiple Images"
+    },
+    {
+      "text": "Ability to comprehend and reason about spatial relationships among objects, their movements, and interactions with the environment; vital for applications like navigation and robotics  .",
+      "paper": "Mind's Eye of LLMs: Visualization-of-Thought Elicits Spatial Reasoning in Large Language Models"
+    },
+    {
+      "text": "Understanding layout and positional relations among visual elements on webpages; cited as required capability .",
+      "paper": "Web2Code: A Large-scale Webpage-to-Code Dataset and Evaluation Framework for Multimodal LLMs"
+    },
+    {
+      "text": "Reasoning about object scales, locations, and trajectories so that compositions follow real-world common sense  .",
+      "paper": "Compositional 3D-aware Video Generation with LLM Director"
+    },
+    {
+      "text": "Reasoning about spatial relations (sense of space) with downstream navigation/creation effects .",
+      "paper": "ConvBench: A Multi-Turn Conversation Evaluation Benchmark with Hierarchical Ablation Capability for Large Vision-Language Models"
+    },
+    {
+      "text": "Capacity to reason about spatial relations and geometry from overhead views, which remote sensing often requires. ",
+      "paper": "VRSBench: A Versatile Vision-Language Benchmark Dataset for Remote Sensing Image Understanding"
+    },
+    {
+      "text": "Ability to follow and reason about sequences of actions and positions in navigation-style tasks .",
+      "paper": "DARG: Dynamic Evaluation of Large Language Models via Adaptive Reasoning Graph"
+    },
+    {
+      "text": "Understanding scene layouts and spatial relations to explain actions (e.g., door and basement layout) .",
+      "paper": "CausalChaos! Dataset for Comprehensive Causal Action Question Answering Over Longer Causal Chains Grounded in Dynamic Visual Scenes"
+    },
+    {
+      "text": "Reasoning about spatial relations (e.g., from drag direction and positions) to deduce reasonable editing intentions; claimed as a strength of state-of-the-art LLMs .",
+      "paper": "Localize, Understand, Collaborate: Semantic-Aware Dragging via Intention Reasoner"
+    },
+    {
+      "text": "Reasoning over spatial concepts (e.g., body shape, perspective, volumetric depth) to judge structural consistency .",
+      "paper": "Hallo3D: Multi-Modal Hallucination Detection and Mitigation for Consistent 3D Content Generation"
+    }
+  ],
+  "definition_count": 21,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Chain-of-Thought Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "FactorSim: Generative Simulation via Factorized Representation",
+      "evidence": "Decomposition attends to smaller contexts so spatial relations can be addressed separately, improving performance on such tasks."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MSQA Spatial Correctness (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Multi-modal Situated Reasoning in 3D Scenes",
+      "evidence": "Spatial category covers spatial relationships and object referral in MSQA ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Object Referral Resolution",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Multi-modal Situated Reasoning in 3D Scenes",
+      "evidence": "MSQA’s Spatial category explicitly includes object referral ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multi-modal Situated Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Multi-modal Situated Reasoning in 3D Scenes",
+      "evidence": "Situated reasoning includes understanding spatial relationships and navigation within 3D scenes  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "OlympicArena: Benchmarking Multi-discipline Cognitive Reasoning for Superintelligent AI",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning (General)",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Long-Horizon Planning for Multi-Agent Robots in Partially Observable Environments",
+      "evidence": "The LM lacks spatial reasoning needed for navigation and shortest-path decisions."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Spatial Relation Understanding",
+      "other_type": "constructs",
+      "relationship_type": "depends-on",
+      "paper": "VisMin: Visual Minimal-Change Understanding",
+      "evidence": "The Spatial Relation split relies heavily on reasoning; models parse object relationships through reasoning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual Perception (Vision-Language)",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Task Me Anything",
+      "evidence": "Spatial reasoning is included within the evaluated visual understanding capabilities ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Skill-wise ImageQA Accuracy (TASK-ME-ANYTHING DB)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Task Me Anything",
+      "evidence": "Spatial reasoning tasks (e.g., middle/bottom/back) are evaluated and reported as challenging  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Relative Spatial Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "SpatialRGPT: Grounded Spatial Reasoning in Vision-Language Models",
+      "evidence": "The benchmark and dataset enumerate qualitative relations (left/right, above/below, etc.) as part of spatial cognition ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Metric Spatial Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "SpatialRGPT: Grounded Spatial Reasoning in Vision-Language Models",
+      "evidence": "Metric relations include direction and multiple distance measures as part of spatial cognition ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Region-level Understanding",
+      "other_type": "constructs",
+      "relationship_type": "enables",
+      "paper": "SpatialRGPT: Grounded Spatial Reasoning in Vision-Language Models",
+      "evidence": "Effective spatial reasoning requires accurate parsing of regional information and instance-specific regions ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "3D Perception",
+      "other_type": "constructs",
+      "relationship_type": "enhances",
+      "paper": "SpatialRGPT: Grounded Spatial Reasoning in Vision-Language Models",
+      "evidence": "Incorporating depth improves spatial reasoning compared to RGB-only inputs ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SpatialRGPT-Bench (Spatial Cognition Benchmark)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SpatialRGPT: Grounded Spatial Reasoning in Vision-Language Models",
+      "evidence": "SpatialRGPT-Bench addresses the lack of a benchmark for evaluating spatial cognition in VLMs ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Qualitative Spatial QA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SpatialRGPT: Grounded Spatial Reasoning in Vision-Language Models",
+      "evidence": "Qualitative spatial QA performance is judged by GPT-4 as 0/1 alignment ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Quantitative Spatial QA Metrics",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SpatialRGPT: Grounded Spatial Reasoning in Vision-Language Models",
+      "evidence": "Quantitative spatial QA uses standardized meters to compute accuracy and error metrics ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Robotics Dense Reward Annotation (Behavior)",
+      "other_type": "measurements",
+      "relationship_type": "enables",
+      "paper": "SpatialRGPT: Grounded Spatial Reasoning in Vision-Language Models",
+      "evidence": "SpatialRGPT enables a region-aware dense reward annotator for robotics ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "3D Spatial Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "SpatialPIN: Enhancing Spatial Reasoning Capabilities of Vision-Language Models through Prompting and Interacting 3D Priors",
+      "evidence": "The work focuses on equipping VLMs with 3D reasoning capabilities as part of broader spatial reasoning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "2D Spatial Understanding",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "SpatialPIN: Enhancing Spatial Reasoning Capabilities of Vision-Language Models through Prompting and Interacting 3D Priors",
+      "evidence": "Pipeline begins with 2D object descriptions (appearance and 2D location) as a basis for spatial reasoning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning (General)",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "RoboMamba: Efficient Vision-Language-Action Model for Robotic Reasoning and Manipulation",
+      "evidence": "Co-training improves spatial identification performance (GQA), indicating spatial reasoning as a sub-component of reasoning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQAv2 Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "RoboMamba: Efficient Vision-Language-Action Model for Robotic Reasoning and Manipulation",
+      "evidence": "The authors note improved spatial identification performance on GQA through co-training ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GQA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "RoboMamba: Efficient Vision-Language-Action Model for Robotic Reasoning and Manipulation",
+      "evidence": "The authors note improved spatial identification performance on GQA through co-training ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HOC Solution Synthesis Score",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "Benchmarking Generative Models on Computational Thinking Tests in Elementary Visual Programming",
+      "evidence": "Weak HOC performance is attributed in part to spatial reasoning difficulties."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "2D Spatial Localization",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "$\\textit{Bifr\\\"ost}$: 3D-Aware Image Compositing with Language Instructions",
+      "evidence": "The 2.5D coordinate consists of a 2D bounding box and a depth value, implying box localization is a component of the overall spatial reasoning for placement ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Depth Reasoning (2.5D)",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "$\\textit{Bifr\\\"ost}$: 3D-Aware Image Compositing with Language Instructions",
+      "evidence": "The 2.5D coordinate includes an estimated depth value d ∈ [0,1], making depth inference a component of spatial reasoning for placement ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Physical Commonsense",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "$\\textit{Bifr\\\"ost}$: 3D-Aware Image Compositing with Language Instructions",
+      "evidence": "Predicting 2.5D locations requires understanding physical laws in the image (e.g., bottle on table), as part of the capability to place objects plausibly ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multimodal Grounding (Vision–Language)",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "$\\textit{Bifr\\\"ost}$: 3D-Aware Image Compositing with Language Instructions",
+      "evidence": "Obtaining a 2.5D coordinate from an image and instruction requires understanding spatial and size relationships between objects ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multi-Image Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "ReMI: A Dataset for Reasoning with Multiple Images",
+      "evidence": "Maps and RefCOCO tasks require spatial reasoning with multiple images ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ReMI — Maps",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "ReMI: A Dataset for Reasoning with Multiple Images",
+      "evidence": "Pick the route image that matches the textual navigation description ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ReMI — RefCOCO",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "ReMI: A Dataset for Reasoning with Multiple Images",
+      "evidence": "Select the circle overlapping the target entity in a real image ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Natural-Language Navigation Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Mind's Eye of LLMs: Visualization-of-Thought Elicits Spatial Reasoning in Large Language Models",
+      "evidence": "The tasks of natural-language navigation, visual navigation, and visual tiling are selected to evaluate spatial awareness and spatial reasoning abilities of LLMs ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual Navigation – Route Planning Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Mind's Eye of LLMs: Visualization-of-Thought Elicits Spatial Reasoning in Large Language Models",
+      "evidence": "Route planning on a grid requires multi-hop spatial reasoning; it is used to assess spatial reasoning ability ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual Navigation – Next Step Prediction Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Mind's Eye of LLMs: Visualization-of-Thought Elicits Spatial Reasoning in Large Language Models",
+      "evidence": "Next-step prediction probes multi-hop spatial reasoning over grid transitions ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual Tiling Completion Rate (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Mind's Eye of LLMs: Visualization-of-Thought Elicits Spatial Reasoning in Large Language Models",
+      "evidence": "Visual tiling requires geometric shape reasoning and is used to evaluate spatial reasoning performance ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mental Image Generation (Mind’s Eye)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Mind's Eye of LLMs: Visualization-of-Thought Elicits Spatial Reasoning in Large Language Models",
+      "evidence": "VoT elicits the mind’s eye by visualizing reasoning traces to guide subsequent steps, yielding significant performance improvements on spatial reasoning tasks  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual State Tracking",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Mind's Eye of LLMs: Visualization-of-Thought Elicits Spatial Reasoning in Large Language Models",
+      "evidence": "Grounding reasoning in a sequence of visualized states reflects spatiotemporal causality and enhances spatial reasoning capabilities ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Spatiotemporal Causality Modeling",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Mind's Eye of LLMs: Visualization-of-Thought Elicits Spatial Reasoning in Large Language Models",
+      "evidence": "Deriving subsequent states from prior states and visualizations reflects spatiotemporal causality and boosts spatial reasoning ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Internal World Model",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Mind's Eye of LLMs: Visualization-of-Thought Elicits Spatial Reasoning in Large Language Models",
+      "evidence": "The zero-shot ability to represent percepts, predict and track states, and plan actions in multi-hop spatial tasks possibly mirrors a causal world model within LLMs, supporting spatial reasoning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Webpage Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Web2Code: A Large-scale Webpage-to-Code Dataset and Evaluation Framework for Multimodal LLMs",
+      "evidence": "Requires spatial reasoning for layout parsing ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual Grounding (Scale Estimation)",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Compositional 3D-aware Video Generation with LLM Director",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Trajectory Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Compositional 3D-aware Video Generation with LLM Director",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "Compositional 3D-aware Video Generation with LLM Director",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "ConvBench: A Multi-Turn Conversation Evaluation Benchmark with Hierarchical Ablation Capability for Large Vision-Language Models",
+      "evidence": "Sense of space (spatial reasoning) is listed as a reasoning factor influencing later tasks ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Question Answering Ability",
+      "other_type": "constructs",
+      "relationship_type": "has-subconstruct",
+      "paper": "VRSBench: A Versatile Vision-Language Benchmark Dataset for Remote Sensing Image Understanding",
+      "evidence": "VQA includes position and direction; remote sensing requires complex spatial reasoning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual Grounding Ability",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "VRSBench: A Versatile Vision-Language Benchmark Dataset for Remote Sensing Image Understanding",
+      "evidence": "Remote sensing requires complex spatial reasoning, which underpins accurate grounded localization."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual Question Answering Ability",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "VRSBench: A Versatile Vision-Language Benchmark Dataset for Remote Sensing Image Understanding",
+      "evidence": "Position and direction questions in VQA rely on spatial reasoning in overhead imagery."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "DARG: Dynamic Evaluation of Large Language Models via Adaptive Reasoning Graph",
+      "evidence": "Navigation tasks are represented via unit actions and sequential order in reasoning graphs ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BBH Navigate Accuracy (%) under DARG-Evolved Complexity",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "DARG: Dynamic Evaluation of Large Language Models via Adaptive Reasoning Graph",
+      "evidence": "BBH Navigate sequences are lengthened via DARG to assess spatial reasoning; accuracy measured as complexity increases ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CausalChaos MCQA Protocol 1 (Answer-only)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CausalChaos! Dataset for Comprehensive Causal Action Question Answering Over Longer Causal Chains Grounded in Dynamic Visual Scenes",
+      "evidence": "Example items require understanding layout to explain actions (spatial reasoning) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CausalChaos MCQA Protocol 2 (Answer+Explanation)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CausalChaos! Dataset for Comprehensive Causal Action Question Answering Over Longer Causal Chains Grounded in Dynamic Visual Scenes",
+      "evidence": "Selecting correct explanations also relies on spatial understanding, as illustrated in dataset examples ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Intention Reasoning (LLM)",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Localize, Understand, Collaborate: Semantic-Aware Dragging via Intention Reasoner",
+      "evidence": "The paper claims state-of-the-art LLMs possess strong spatial reasoning enabling them to deduce reasonable intentions ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Geometric Perception",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Hallo3D: Multi-Modal Hallucination Detection and Mitigation for Consistent 3D Content Generation",
+      "evidence": ""
+    }
+  ],
+  "relationship_count": 52,
+  "incoming_relationship_count": 16,
+  "outgoing_relationship_count": 36
+}

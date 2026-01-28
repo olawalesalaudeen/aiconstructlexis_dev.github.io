@@ -1,0 +1,555 @@
+{
+  "canonical_name": "Code Generation",
+  "type": "construct",
+  "canonical_definition": "Code Generation is the ability to synthesize correct, executable code or programs from natural language prompts, task descriptions, or partial specifications, often operationalized through correctness criteria such as passing predefined tests (e.g., HumanEval, MBPP) or producing functionally valid implementations. While most definitions emphasize program synthesis for general programming tasks, some extend to code completion, patch generation, or domain-specific applications (e.g., SQL, PyTorch models), with varying focus on single-turn generation versus iterative refinement with feedback. Disagreements arise in scope, ranging from narrow benchmarks to broader practical coding proficiency.",
+  "expert_reviewed": false,
+  "names": [
+    "Code Generation"
+  ],
+  "papers": [
+    "$\\textit{Trans-LoRA}$: towards data-free Transferable Parameter Efficient Finetuning",
+    "AlchemistCoder: Harmonizing and Eliciting Code Capability by Hindsight Tuning on Multi-source Data",
+    "BAM! Just Like That: Simple and Efficient Parameter Upcycling for Mixture of Experts",
+    "Compact Language Models via Pruning and Knowledge Distillation",
+    "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning",
+    "Data-Driven Discovery of Dynamical Systems in Pharmacology using Large Language Models",
+    "Delta-CoMe: Training-Free Delta-Compression with Mixed-Precision for Large Language Models",
+    "Easy-to-Hard Generalization: Scalable Alignment Beyond Human Supervision",
+    "Generating Code World Models with Large Language Models Guided by Monte Carlo Tree Search",
+    "MAGIS: LLM-Based Multi-Agent Framework for GitHub Issue Resolution",
+    "MAmmoTH2: Scaling Instructions from the Web",
+    "Mixture of Demonstrations for In-Context Learning",
+    "Mixture of Tokens: Continuous MoE through Cross-Example Aggregation",
+    "Not All Tokens Are What You Need for Pretraining",
+    "OlympicArena: Benchmarking Multi-discipline Cognitive Reasoning for Superintelligent AI",
+    "PiSSA: Principal Singular Values and Singular Vectors Adaptation of Large Language Models",
+    "Prompt Tuning Strikes Back: Customizing Foundation Models with Low-Rank Prompt Adaptation",
+    "Recursive Introspection: Teaching Language Model Agents How to Self-Improve",
+    "RouterDC: Query-Based Router by Dual Contrastive Learning for Assembling Large Language Models",
+    "SelfCodeAlign: Self-Alignment for Code Generation",
+    "Spider2-V: How Far Are Multimodal Agents From Automating Data Science and Engineering Workflows?",
+    "Synthesize, Partition, then Adapt: Eliciting Diverse Samples from Foundation Models",
+    "Trace is the Next AutoDiff: Generative Optimization with Rich Feedback, Execution Traces, and LLMs",
+    "Unchosen Experts Can Contribute Too: Unleashing MoE Models’ Power by Self-Contrast",
+    "VideoGUI: A Benchmark for GUI Automation from Instructional Videos"
+  ],
+  "paper_count": 25,
+  "group_ids": [
+    68,
+    112,
+    249,
+    350,
+    615,
+    984,
+    1168,
+    1311,
+    1374,
+    1664,
+    2301,
+    2482,
+    2516,
+    2687,
+    2820,
+    2878,
+    3090,
+    3103,
+    3386,
+    3486,
+    3712,
+    4329,
+    5372,
+    6012
+  ],
+  "definitions": [
+    {
+      "text": "Ability to synthesize correct code solutions for programming problems (APPS) .",
+      "paper": "Easy-to-Hard Generalization: Scalable Alignment Beyond Human Supervision"
+    },
+    {
+      "text": "Ability to synthesize correct code solutions for programming tasks ",
+      "paper": "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning"
+    },
+    {
+      "text": "Ability to complete or synthesize code from natural language prompts; assessed via programming problems .",
+      "paper": "RouterDC: Query-Based Router by Dual Contrastive Learning for Assembling Large Language Models"
+    },
+    {
+      "text": "Synthesizing executable PyTorch nn.Module model code from textual system descriptions and a skeleton program ",
+      "paper": "Data-Driven Discovery of Dynamical Systems in Pharmacology using Large Language Models"
+    },
+    {
+      "text": "Assessed via MBPP pass@1 (code generation/completion) in this paper  .",
+      "paper": "Prompt Tuning Strikes Back: Customizing Foundation Models with Low-Rank Prompt Adaptation"
+    },
+    {
+      "text": "Ability to produce executable, correct code that passes tests; evaluated as coding proficiency. ",
+      "paper": "PiSSA: Principal Singular Values and Singular Vectors Adaptation of Large Language Models"
+    },
+    {
+      "text": "Ability to synthesize executable code that passes tests (evaluated via HumanEval/MBPP pass@1) .",
+      "paper": "Unchosen Experts Can Contribute Too: Unleashing MoE Models’ Power by Self-Contrast"
+    },
+    {
+      "text": "Ability to synthesize correct programs from natural language prompts; the paper reports >10% gains on code tasks in its general evaluation  .",
+      "paper": "Not All Tokens Are What You Need for Pretraining"
+    },
+    {
+      "text": "Ability to synthesize correct programs that satisfy task specifications and pass tests .",
+      "paper": "OlympicArena: Benchmarking Multi-discipline Cognitive Reasoning for Superintelligent AI"
+    },
+    {
+      "text": "Code Generation",
+      "paper": "Mixture of Demonstrations for In-Context Learning"
+    },
+    {
+      "text": "Generation of SQL and Python to accomplish data tasks within professional tools .",
+      "paper": "Spider2-V: How Far Are Multimodal Agents From Automating Data Science and Engineering Workflows?"
+    },
+    {
+      "text": "Ability to generate source code; cited as an area of strong LLM performance .",
+      "paper": "Mixture of Tokens: Continuous MoE through Cross-Example Aggregation"
+    },
+    {
+      "text": "General ability to write simple executable code that enables keyboard/typing actions; contributes to strong Type/Press outcomes  .",
+      "paper": "VideoGUI: A Benchmark for GUI Automation from Instructional Videos"
+    },
+    {
+      "text": "Capability to synthesize correct code from natural‑language prompts; evaluated on HumanEval and MBPP. ",
+      "paper": "Synthesize, Partition, then Adapt: Eliciting Diverse Samples from Foundation Models"
+    },
+    {
+      "text": "Ability to process/generate code for practical applications; evaluated on HumanEval and MBPP with pass@1 as the reported score .",
+      "paper": "Delta-CoMe: Training-Free Delta-Compression with Mixed-Precision for Large Language Models"
+    },
+    {
+      "text": "Evaluated via HumanEval in prior work on models trained on code. ",
+      "paper": "Compact Language Models via Pruning and Knowledge Distillation"
+    },
+    {
+      "text": "Ability to produce exact, long-form code with non-trivial logic from task descriptions. ",
+      "paper": "Generating Code World Models with Large Language Models Guided by Monte Carlo Tree Search"
+    },
+    {
+      "text": "Ability to synthesize correct code solutions to programming tasks, evaluated on code benchmarks .",
+      "paper": "MAmmoTH2: Scaling Instructions from the Web"
+    },
+    {
+      "text": "Ability to produce correct, executable code that satisfies task requirements. ",
+      "paper": "AlchemistCoder: Harmonizing and Eliciting Code Capability by Hindsight Tuning on Multi-source Data"
+    },
+    {
+      "text": "Ability to synthesize code patches that implement required changes .",
+      "paper": "MAGIS: LLM-Based Multi-Agent Framework for GitHub Issue Resolution"
+    },
+    {
+      "text": "Ability to synthesize correct Python programs that satisfy provided test cases, as in MBPP/MBPP+ .",
+      "paper": "$\\textit{Trans-LoRA}$: towards data-free Transferable Parameter Efficient Finetuning"
+    },
+    {
+      "text": "LLM ability to write/modify code; a highlighted strength used to update workflow components. ",
+      "paper": "Trace is the Next AutoDiff: Generative Optimization with Rich Feedback, Execution Traces, and LLMs"
+    },
+    {
+      "text": "Ability to generate correct code from problem descriptions; encompasses function-level and class-level generation.  ",
+      "paper": "SelfCodeAlign: Self-Alignment for Code Generation"
+    },
+    {
+      "text": "Ability to synthesize correct programs and refine them using feedback across turns.  ",
+      "paper": "Recursive Introspection: Teaching Language Model Agents How to Self-Improve"
+    },
+    {
+      "text": "Ability to synthesize correct programs or code solutions.",
+      "paper": "BAM! Just Like That: Simple and Efficient Parameter Upcycling for Mixture of Experts"
+    }
+  ],
+  "definition_count": 25,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HumanEval Testing Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "RouterDC: Query-Based Router by Dual Contrastive Learning for Assembling Large Language Models",
+      "evidence": "HumanEval is a code completion benchmark of programming problems ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MBPP Testing Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "RouterDC: Query-Based Router by Dual Contrastive Learning for Assembling Large Language Models",
+      "evidence": "MBPP is used as an out-of-distribution code generation task in the experiments ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Validation MSE (per iteration) – Lung Cancer NSCLC Chemo/Radio",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Data-Driven Discovery of Dynamical Systems in Pharmacology using Large Language Models",
+      "evidence": "The LLM generates executable PyTorch models that are trained and evaluated by validation MSE each iteration  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MBPP pass@1",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Prompt Tuning Strikes Back: Customizing Foundation Models with Low-Rank Prompt Adaptation",
+      "evidence": "MBPP is used in the paper for code generation/completion and is reported via pass@1  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Code Generation (HumanEval)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "PiSSA: Principal Singular Values and Singular Vectors Adaptation of Large Language Models",
+      "evidence": "Coding proficiency was evaluated using the HumanEval dataset."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Code Generation (MBPP)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "PiSSA: Principal Singular Values and Singular Vectors Adaptation of Large Language Models",
+      "evidence": "Coding proficiency was evaluated using the MBPP dataset."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MBPP pass@1",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Unchosen Experts Can Contribute Too: Unleashing MoE Models’ Power by Self-Contrast",
+      "evidence": "MBPP is used to measure code generation using pass@1; SCMoE improves pass@1  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HumanEval Pass@1",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Unchosen Experts Can Contribute Too: Unleashing MoE Models’ Power by Self-Contrast",
+      "evidence": "HumanEval is used to measure code generation using pass@1; SCMoE improves pass@1  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HumanEval-X Code Generation",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Not All Tokens Are What You Need for Pretraining",
+      "evidence": "The paper reports >10% gains on code tasks and cites HumanEval-X/CodeGeeX among code benchmarks in its general evaluation set  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OlympicArena CS Code Generation",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "OlympicArena: Benchmarking Multi-discipline Cognitive Reasoning for Superintelligent AI",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GeoQuery EM",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Mixture of Demonstrations for In-Context Learning",
+      "evidence": "GeoQuery and NL2Bash are listed as Code Generation (Table 1)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "NL2Bash EM",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Mixture of Demonstrations for In-Context Learning",
+      "evidence": "GeoQuery and NL2Bash are listed as Code Generation (Table 1)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Data Workflow Automation",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Spider2-V: How Far Are Multimodal Agents From Automating Data Science and Engineering Workflows?",
+      "evidence": "Automation requires generating SQL and Python code alongside other actions ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Spider2‑V Interface Split Success Rates (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Spider2-V: How Far Are Multimodal Agents From Automating Data Science and Engineering Workflows?",
+      "evidence": "CLI split isolates tasks requiring code editors/terminals; performance differs from GUI splits ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Keyboard Action Generation",
+      "other_type": "constructs",
+      "relationship_type": "supports",
+      "paper": "VideoGUI: A Benchmark for GUI Automation from Instructional Videos",
+      "evidence": "Type/Press succeeds via executing generated scripts; models’ coding ability makes them competent on this task  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HumanEval (Code Generation)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Synthesize, Partition, then Adapt: Eliciting Diverse Samples from Foundation Models",
+      "evidence": "Code generation capability is evaluated on HumanEval."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MBPP (Code Generation)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Synthesize, Partition, then Adapt: Eliciting Diverse Samples from Foundation Models",
+      "evidence": "Code generation capability is evaluated on MBPP."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HumanEval Pass@1",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Delta-CoMe: Training-Free Delta-Compression with Mixed-Precision for Large Language Models",
+      "evidence": "Sec. 4.1 uses HumanEval with pass@1 to evaluate code generation ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MBPP pass@1",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Delta-CoMe: Training-Free Delta-Compression with Mixed-Precision for Large Language Models",
+      "evidence": "Sec. 4.1 uses MBPP with pass@1 to evaluate code generation ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HumanEval Score (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Compact Language Models via Pruning and Knowledge Distillation",
+      "evidence": "Accuracy on HumanEval is used in the paper’s analyses and aligns with evaluating LLMs trained on code."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related-to",
+      "paper": "Easy-to-Hard Generalization: Scalable Alignment Beyond Human Supervision",
+      "evidence": "The approach extends beyond mathematical reasoning to coding tasks (APPS) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "APPS Coding Performance (Best-of-N with ORM)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Easy-to-Hard Generalization: Scalable Alignment Beyond Human Supervision",
+      "evidence": "APPS results use ORM trained on easy outcomes to select among N samples ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Code World Modeling",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "Generating Code World Models with Large Language Models Guided by Monte Carlo Tree Search",
+      "evidence": "Writing CWMs requires generating exact code with non-trivial logic."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "APPS Competition Strict Accuracy (pass@20)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Generating Code World Models with Large Language Models Guided by Monte Carlo Tree Search",
+      "evidence": "APPS Competition strict accuracy captures code generation skill; GIF-MCTS achieves state of the art with Llama 3 70B."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HumanEval Score (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MAmmoTH2: Scaling Instructions from the Web",
+      "evidence": "HumanEval(+) average accuracy reported to summarize code generation performance ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HumanEval Score (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MAmmoTH2: Scaling Instructions from the Web",
+      "evidence": "MBPP(+) average accuracy reported alongside HumanEval(+) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Code Intelligence",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "AlchemistCoder: Harmonizing and Eliciting Code Capability by Hindsight Tuning on Multi-source Data",
+      "evidence": "The work advances code intelligence and showcases enhanced code generation capability."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Error Avoidance in Code",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "AlchemistCoder: Harmonizing and Eliciting Code Capability by Hindsight Tuning on Multi-source Data",
+      "evidence": "Error-type analyses (e.g., SyntaxError, Wrong Answer) characterize quality of generated code."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HumanEval Score (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "AlchemistCoder: Harmonizing and Eliciting Code Capability by Hindsight Tuning on Multi-source Data",
+      "evidence": "Performance is reported on mainstream code benchmarks, HumanEval and MBPP."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MBPP Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "AlchemistCoder: Harmonizing and Eliciting Code Capability by Hindsight Tuning on Multi-source Data",
+      "evidence": "Performance is reported on mainstream code benchmarks, HumanEval and MBPP."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Error Case Proportions (HumanEval)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "AlchemistCoder: Harmonizing and Eliciting Code Capability by Hindsight Tuning on Multi-source Data",
+      "evidence": "Figure 9 analyzes error cases on HumanEval."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Error Case Proportions (MBPP)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "AlchemistCoder: Harmonizing and Eliciting Code Capability by Hindsight Tuning on Multi-source Data",
+      "evidence": "Figure 9 analyzes error cases on MBPP."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Repository-level Software Issue Resolution",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MAGIS: LLM-Based Multi-Agent Framework for GitHub Issue Resolution",
+      "evidence": "Resolving issues requires generating code changes ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Task-Specific Capabilities (via PEFT)",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "$\\textit{Trans-LoRA}$: towards data-free Transferable Parameter Efficient Finetuning",
+      "evidence": "MBPP/MBPP+ evaluate code synthesis with test cases, reflecting code-generation capability ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MBPP Code Test Success Rate",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "$\\textit{Trans-LoRA}$: towards data-free Transferable Parameter Efficient Finetuning",
+      "evidence": "MBPP is a set of Python code generation problems with test cases; MBPP+ uses stricter evaluations and added tests ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MBPP Code Test Success Rate",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "$\\textit{Trans-LoRA}$: towards data-free Transferable Parameter Efficient Finetuning",
+      "evidence": "MBPP+ extends MBPP with stricter test-based evaluation ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generative Optimization",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Trace is the Next AutoDiff: Generative Optimization with Rich Feedback, Execution Traces, and LLMs",
+      "evidence": "Trace unifies prompt optimization and code generation in end-to-end workflow optimization."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "LLM Capabilities",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning",
+      "evidence": "Code tasks are used to assess an LLM ability distinct from QA and math"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HumanEval Score (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning",
+      "evidence": "HumanEval is used to evaluate code generation ability"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MBPP Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning",
+      "evidence": "MBPP is used to evaluate code generation ability"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Function-level Code Generation",
+      "other_type": "constructs",
+      "relationship_type": "has-subtask",
+      "paper": "SelfCodeAlign: Self-Alignment for Code Generation",
+      "evidence": "Main evaluation decomposes code generation into function-level tasks checked by tests."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Class-level Code Generation",
+      "other_type": "constructs",
+      "relationship_type": "has-subtask",
+      "paper": "SelfCodeAlign: Self-Alignment for Code Generation",
+      "evidence": "Main evaluation separately assesses class-level generation with class- and method-level tests."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction Following for Code",
+      "other_type": "constructs",
+      "relationship_type": "predicts",
+      "paper": "SelfCodeAlign: Self-Alignment for Code Generation",
+      "evidence": "Instruction tuning is stated to boost following instructions and solving software tasks; SelfCodeAlign significantly improves code generation across benchmarks."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MBPP m1@t1 / m5@t1 / m1@t5 / p1@t5",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Recursive Introspection: Teaching Language Model Agents How to Self-Improve",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CoNaLa m1@t1 / m5@t1 / m1@t5 / p1@t5",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Recursive Introspection: Teaching Language Model Agents How to Self-Improve",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Test-time Self-Improvement",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Recursive Introspection: Teaching Language Model Agents How to Self-Improve",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HumanEval (0-shot)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "BAM! Just Like That: Simple and Efficient Parameter Upcycling for Mixture of Experts",
+      "evidence": "For code generation, they evaluate on HumanEval (0-shot) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MBPP (3‑shot)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "BAM! Just Like That: Simple and Efficient Parameter Upcycling for Mixture of Experts",
+      "evidence": "For code generation, they evaluate on MBPP (3-shot) ."
+    }
+  ],
+  "relationship_count": 48,
+  "incoming_relationship_count": 6,
+  "outgoing_relationship_count": 42
+}

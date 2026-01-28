@@ -1,0 +1,316 @@
+{
+  "canonical_name": "Causal Reasoning",
+  "type": "construct",
+  "canonical_definition": "Causal Reasoning is the ability to discern cause-effect relationships by comprehending context and answering causality queries consistent with causal laws, often operationalized as identifying plausible causal links (e.g., \"Cause/Caused by\" relations) or assembling causal chains to address why-questions. Some definitions extend this to include reasoning with interventions and counterfactuals (per Pearl’s hierarchy), estimating interventional distributions (e.g., P(E2|do(E1))), or maintaining correct causal ordering of actions in planning contexts. It is broadly framed as a core feature of intelligence for understanding world mechanics, applied across domains like dynamic visual scenes, anomaly detection, and multi-hop question answering.",
+  "expert_reviewed": false,
+  "names": [
+    "Causal Reasoning"
+  ],
+  "papers": [
+    "Advancing Video Anomaly Detection: A Concise Review and a New Dataset",
+    "COLD: Causal reasOning in cLosed Daily activities",
+    "CausalChaos! Dataset for Comprehensive Causal Action Question Answering Over Longer Causal Chains Grounded in Dynamic Visual Scenes",
+    "Does Reasoning Emerge? Examining the Probabilities of Causation in Large Language Models",
+    "Long-Horizon Planning for Multi-Agent Robots in Partially Observable Environments",
+    "MEQA: A Benchmark for Multi-hop Event-centric Question Answering with Explanations",
+    "MMBench-Video: A Long-Form Multi-Shot Benchmark for Holistic Video Understanding",
+    "NewTerm: Benchmarking Real-Time New Terms for Large Language Models with Annual Updates",
+    "Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization",
+    "Unveiling Causal Reasoning in Large Language Models: Reality or Mirage?"
+  ],
+  "paper_count": 10,
+  "group_ids": [
+    300,
+    1244,
+    1266,
+    2060,
+    2186,
+    2653,
+    4342,
+    4343,
+    4836,
+    4837,
+    5341,
+    6123
+  ],
+  "definitions": [
+    {
+      "text": "In LLMs, discerning cause–effect relations in text by comprehending context and answering causality queries consistent with causal laws  .",
+      "paper": "Unveiling Causal Reasoning in Large Language Models: Reality or Mirage?"
+    },
+    {
+      "text": "Judging causal relations as in BBH causal_judgement .",
+      "paper": "Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization"
+    },
+    {
+      "text": "Maintaining correct causal order of actions to achieve goals; observed failures include incorrect causal ordering. ",
+      "paper": "Long-Horizon Planning for Multi-Agent Robots in Partially Observable Environments"
+    },
+    {
+      "text": "Causal Reasoning",
+      "paper": "MMBench-Video: A Long-Form Multi-Shot Benchmark for Holistic Video Understanding"
+    },
+    {
+      "text": "Discerning relationships between causes and effects, including reasoning with interventions and counterfactuals as per Pearl’s hierarchy  .",
+      "paper": "Does Reasoning Emerge? Examining the Probabilities of Causation in Large Language Models"
+    },
+    {
+      "text": "Understanding cause-and-effect relationships surrounding anomalies; targeted by benchmarks that aid VLMs/LLMs in causation understanding .",
+      "paper": "Advancing Video Anomaly Detection: A Concise Review and a New Dataset"
+    },
+    {
+      "text": "Inferring cause–effect relationships and assembling longer causal chains to answer why-questions in dynamic visual scenes .",
+      "paper": "CausalChaos! Dataset for Comprehensive Causal Action Question Answering Over Longer Causal Chains Grounded in Dynamic Visual Scenes"
+    },
+    {
+      "text": "The most effective way to discriminate on this dataset is by inferring the causal relationship rather than exploiting correlations .",
+      "paper": "CausalChaos! Dataset for Comprehensive Causal Action Question Answering Over Longer Causal Chains Grounded in Dynamic Visual Scenes"
+    },
+    {
+      "text": "Estimating cause–effect relations between events using interventional distributions such as P(E2|do(E1)) and contrasts Δ(E1→E2)=P(E2|do(E1))−P(E2|do(¬E1)) .",
+      "paper": "COLD: Causal reasOning in cLosed Daily activities"
+    },
+    {
+      "text": "Often considered a core feature of intelligence for gauging world‑mechanics understanding .",
+      "paper": "COLD: Causal reasOning in cLosed Daily activities"
+    },
+    {
+      "text": "Ability to identify plausible cause–effect relations in context (cast as NLI) .",
+      "paper": "NewTerm: Benchmarking Real-Time New Terms for Large Language Models with Annual Updates"
+    },
+    {
+      "text": "Identifying cause-effect relations between events (Cause, Caused by). ",
+      "paper": "MEQA: A Benchmark for Multi-hop Event-centric Question Answering with Explanations"
+    }
+  ],
+  "definition_count": 12,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Level-1 Causal Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Unveiling Causal Reasoning in Large Language Models: Reality or Mirage?",
+      "evidence": "The paper categorizes LLM causal reasoning into two levels and defines level‑1 as retrieval‑based reasoning for simple cause–effect relations ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Level-2 Causal Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Unveiling Causal Reasoning in Large Language Models: Reality or Mirage?",
+      "evidence": "Defined as a more sophisticated capability that can derive new/unseen causal knowledge beyond training associations ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Counterfactual Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Unveiling Causal Reasoning in Large Language Models: Reality or Mirage?",
+      "evidence": "Counterfactual reasoning is described as a distinctive component of causal reasoning involving hypothetical scenarios ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Causal Discovery",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Unveiling Causal Reasoning in Large Language Models: Reality or Mirage?",
+      "evidence": "Causal reasoning tasks include causal discovery, cause attribution, and effect estimation ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Cause Attribution",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Unveiling Causal Reasoning in Large Language Models: Reality or Mirage?",
+      "evidence": "Listed among core causal reasoning tasks ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Causal Effect Estimation",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Unveiling Causal Reasoning in Large Language Models: Reality or Mirage?",
+      "evidence": "Listed among core causal reasoning tasks ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization",
+      "evidence": "BBH causal_judgement focuses on causal inference within reasoning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BBH: causal_judgement Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization",
+      "evidence": "BBH causal_judgement per‑task accuracy is provided in tables ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning (General)",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Long-Horizon Planning for Multi-Agent Robots in Partially Observable Environments",
+      "evidence": "Observed failures include incorrect causal ordering of steps."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "MMBench-Video: A Long-Form Multi-Shot Benchmark for Holistic Video Understanding",
+      "evidence": "Leaf reasoning capability includes Causal Reasoning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Does Reasoning Emerge? Examining the Probabilities of Causation in Large Language Models",
+      "evidence": "Causal reasoning is described as a form of reasoning in the taxonomy provided ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Counterfactual Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Does Reasoning Emerge? Examining the Probabilities of Causation in Large Language Models",
+      "evidence": "Counterfactuals are a core aspect of causal reasoning and required for human-comparable reasoning per Pearl’s hierarchy ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Advancing Video Anomaly Detection: A Concise Review and a New Dataset",
+      "evidence": "CUVA is introduced to aid VLMs in understanding cause and effect of anomalies, indicating causation as a specific facet of reasoning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CUVA Causation Understanding",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Advancing Video Anomaly Detection: A Concise Review and a New Dataset",
+      "evidence": "CUVA is designed to aid VLMs/LLMs in understanding cause and effect of anomalies, indicating causation tasks for evaluation ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CausalChaos MCQA Protocol 1 (Answer-only)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CausalChaos! Dataset for Comprehensive Causal Action Question Answering Over Longer Causal Chains Grounded in Dynamic Visual Scenes",
+      "evidence": "The dataset focuses on causal reasoning; discriminating correctly requires inferring causal relationships  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CausalChaos MCQA Protocol 2 (Answer+Explanation)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CausalChaos! Dataset for Comprehensive Causal Action Question Answering Over Longer Causal Chains Grounded in Dynamic Visual Scenes",
+      "evidence": "Protocol 2 (answer+explanation) is significantly more difficult, stressing causal reasoning quality ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CausalChaos Causal-Confusion Evaluation",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CausalChaos! Dataset for Comprehensive Causal Action Question Answering Over Longer Causal Chains Grounded in Dynamic Visual Scenes",
+      "evidence": "Reversing/altering cause–effect relationships causes significant drops in accuracy, indicating causal modeling weakness ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Dynamic Scene Linking (DSL)",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "CausalChaos! Dataset for Comprehensive Causal Action Question Answering Over Longer Causal Chains Grounded in Dynamic Visual Scenes",
+      "evidence": "Answering causal questions in this dataset requires linking events across abrupt scene changes to form a causal chain  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ATE-based Causal Prediction (Backdoor Adjusted)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "COLD: Causal reasOning in cLosed Daily activities",
+      "evidence": "Causal estimands P(E2|do(E1)) are approximated via LMs with backdoor adjustment to estimate causal relationships between events ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Temporal Link Prediction Baseline",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "COLD: Causal reasOning in cLosed Daily activities",
+      "evidence": "Temporal order prediction (before/after) is used as a proxy to estimate causal links between events ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Temporal Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "proxy-for",
+      "paper": "COLD: Causal reasOning in cLosed Daily activities",
+      "evidence": "The study uses temporal link prediction as a simple reasoning capability to estimate causal relationships ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Script Knowledge Understanding",
+      "other_type": "constructs",
+      "relationship_type": "does-not-imply",
+      "paper": "COLD: Causal reasOning in cLosed Daily activities",
+      "evidence": "Despite generating valid steps, LLMs perform poorly on causal queries, indicating that script knowledge alone does not entail causal understanding ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "General Intelligence",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "COLD: Causal reasOning in cLosed Daily activities",
+      "evidence": "Causal reasoning is described as a core feature of intelligence for gauging understanding of world mechanics ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "World Knowledge",
+      "other_type": "constructs",
+      "relationship_type": "supports",
+      "paper": "COLD: Causal reasOning in cLosed Daily activities",
+      "evidence": "Pre‑trained LMs' world knowledge provides a proxy for establishing relationships between events used to estimate causal effects ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Pairwise Causal Discovery Ability",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "COLD: Causal reasOning in cLosed Daily activities",
+      "evidence": "COLD focuses on simple causal queries in the form of pairwise causal discovery triplets as a starting point for causal analysis ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "New Term Comprehension",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "NewTerm: Benchmarking Real-Time New Terms for Large Language Models with Annual Updates",
+      "evidence": "Three tasks each target a fundamental aspect of LLM ability; COMA assesses causal reasoning with new terms ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "COMA Accuracy (NewTerm 2022/2023)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "NewTerm: Benchmarking Real-Time New Terms for Large Language Models with Annual Updates",
+      "evidence": "COMA is a causal NLI-style task requiring comprehension of new terms ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Event Relation Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MEQA: A Benchmark for Multi-hop Event-centric Question Answering with Explanations",
+      "evidence": "Relation options include causal relations (Cause, Caused by)."
+    }
+  ],
+  "relationship_count": 28,
+  "incoming_relationship_count": 14,
+  "outgoing_relationship_count": 14
+}

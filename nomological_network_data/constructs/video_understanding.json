@@ -1,0 +1,362 @@
+{
+  "canonical_name": "Video Understanding",
+  "type": "construct",
+  "canonical_definition": "Video Understanding refers to the general capability of models, particularly large video-language models (LVLMs) and vision-language models (Vid-LLMs), to comprehend video content by analyzing spatial and temporal aspects (objects, actions, events, interactions) and leveraging this understanding to perform tasks such as question answering, captioning, action recognition, temporal localization, and procedural reasoning. While some definitions emphasize fine-grained temporal parsing and object-centric action grounding, others highlight holistic reasoning over long-form temporal dynamics or spatiotemporal information parsing for downstream applications. Consensus centers on the ability to faithfully interpret video data and establish video-language correspondence, often operationalized through benchmarks that test descriptive, predictive, and inferential skills.",
+  "expert_reviewed": false,
+  "names": [
+    "Video Understanding"
+  ],
+  "papers": [
+    "CALVIN: Improved Contextual Video Captioning via Instruction Tuning",
+    "Dense Connector for MLLMs",
+    "MMBench-Video: A Long-Form Multi-Shot Benchmark for Holistic Video Understanding",
+    "MaVEn: An Effective Multi-granularity Hybrid Visual Encoding Framework for Multimodal Large Language Model",
+    "ShareGPT4Video: Improving Video Understanding and Generation with Better Captions",
+    "SlowFocus: Enhancing Fine-grained Temporal Understanding in Video LLM",
+    "TOPA: Extending Large Language Models for Video Understanding via Text-Only Pre-Alignment",
+    "VLMimic: Vision Language Models are Visual Imitation Learner for Fine-grained Actions",
+    "VideoLLM-MoD: Efficient Video-Language Streaming with Mixture-of-Depths Vision Computation",
+    "Vript: A Video Is Worth Thousands of Words"
+  ],
+  "paper_count": 10,
+  "group_ids": [
+    522,
+    1055,
+    1365,
+    1415,
+    1896,
+    2033,
+    3671,
+    3767,
+    4168,
+    5217
+  ],
+  "definitions": [
+    {
+      "text": "General ability to comprehend video content (objects, actions, events) and produce faithful descriptions or answers. ",
+      "paper": "Vript: A Video Is Worth Thousands of Words"
+    },
+    {
+      "text": "Temporal parsing and object-centric action grounding from human videos (segmenting videos and identifying interactions)  .",
+      "paper": "VLMimic: Vision Language Models are Visual Imitation Learner for Fine-grained Actions"
+    },
+    {
+      "text": "Ability of large video-language models (LVLMs) to understand and reason about video content. ",
+      "paper": "ShareGPT4Video: Improving Video Understanding and Generation with Better Captions"
+    },
+    {
+      "text": "Understanding actions/procedures in videos (e.g., action prediction/recognition, procedure understanding). ",
+      "paper": "MaVEn: An Effective Multi-granularity Hybrid Visual Encoding Framework for Multimodal Large Language Model"
+    },
+    {
+      "text": "General capability of LMMs to address standard video understanding benchmarks (e.g., temporal action localization, video QA) .",
+      "paper": "VideoLLM-MoD: Efficient Video-Language Streaming with Mixture-of-Depths Vision Computation"
+    },
+    {
+      "text": "Comprehensive ability to understand video content, including spatial and temporal aspects, sufficient to answer questions about it. ",
+      "paper": "MMBench-Video: A Long-Form Multi-Shot Benchmark for Holistic Video Understanding"
+    },
+    {
+      "text": "General capability of Vid‑LLMs to analyze video data and extend reasoning and interactive skills to video‑level tasks (e.g., captioning, QA), establishing video‑language correspondence .",
+      "paper": "SlowFocus: Enhancing Fine-grained Temporal Understanding in Video LLM"
+    },
+    {
+      "text": "Interpreting and answering questions about video content; the model exhibits remarkable zero-shot capabilities despite being trained only on images .",
+      "paper": "Dense Connector for MLLMs"
+    },
+    {
+      "text": "Parsing spatiotemporal information in videos for downstream tasks .",
+      "paper": "CALVIN: Improved Contextual Video Captioning via Instruction Tuning"
+    },
+    {
+      "text": "Capability to comprehend and reason over video content, including long‑form temporal dynamics.",
+      "paper": "TOPA: Extending Large Language Models for Video Understanding via Text-Only Pre-Alignment"
+    }
+  ],
+  "definition_count": 10,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long Video Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Vript: A Video Is Worth Thousands of Words",
+      "evidence": "Vript‑Hard scales videos to 2–40 min (RR) and 2 min–2 h (ERO), explicitly testing long‑form video understanding within overall video comprehension."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Temporal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Vript: A Video Is Worth Thousands of Words",
+      "evidence": "Vript‑ERO evaluates temporal understanding of events in long videos, a facet of video understanding."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Fine-grained Action Recognition",
+      "other_type": "constructs",
+      "relationship_type": "supports",
+      "paper": "VLMimic: Vision Language Models are Visual Imitation Learner for Fine-grained Actions",
+      "evidence": "Human–object interaction grounding parses videos into segments and identifies object-centric interactions, converting low-level action recognition to a pattern reasoning task  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MVBench (Accuracy %)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "ShareGPT4Video: Improving Video Understanding and Generation with Better Captions",
+      "evidence": "MVBench challenges LVLMs on multi-frame video understanding tasks."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VideoBench (Accuracy %)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "ShareGPT4Video: Improving Video Understanding and Generation with Better Captions",
+      "evidence": "VideoBench aggregates QA tasks across multiple sources to evaluate video understanding."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TempCompass (Avg. Accuracy %)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "ShareGPT4Video: Improving Video Understanding and Generation with Better Captions",
+      "evidence": "TempCompass evaluates temporal comprehension and interaction relevant to understanding."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Video Captioning",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "ShareGPT4Video: Improving Video Understanding and Generation with Better Captions",
+      "evidence": "Integrating high-quality video-caption data improves alignment and yields consistent gains across LVLMs and benchmarks, especially those requiring temporal understanding."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Alignment (Video-Language)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "ShareGPT4Video: Improving Video Understanding and Generation with Better Captions",
+      "evidence": "Improved video-language alignment is associated with performance gains on multi-modal video benchmarks."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "has-component",
+      "paper": "MaVEn: An Effective Multi-granularity Hybrid Visual Encoding Framework for Multimodal Large Language Model",
+      "evidence": "SEED‑Bench evaluation includes video understanding tasks."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SEED-Bench Avg. Video Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MaVEn: An Effective Multi-granularity Hybrid Visual Encoding Framework for Multimodal Large Language Model",
+      "evidence": "SEED‑Bench contains video understanding tasks; MaVEn significantly outperforms baselines."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Online Video Understanding",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "VideoLLM-MoD: Efficient Video-Language Streaming with Mixture-of-Depths Vision Computation",
+      "evidence": "Benchmarks for online scenarios are becoming critical, contrasting with offline video understanding ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Spatial-Temporal Scene Understanding",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "VideoLLM-MoD: Efficient Video-Language Streaming with Mixture-of-Depths Vision Computation",
+      "evidence": "The model excels in spatial-temporal scene understanding, a key part of video understanding ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Perception",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "MMBench-Video: A Long-Form Multi-Shot Benchmark for Holistic Video Understanding",
+      "evidence": "Capability taxonomy: the top level encompasses two broad capabilities, Perception and Reasoning, for video comprehension."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "MMBench-Video: A Long-Form Multi-Shot Benchmark for Holistic Video Understanding",
+      "evidence": "Capability taxonomy defines Perception and Reasoning as top-level capabilities for video understanding."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMBench-Video Overall Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MMBench-Video: A Long-Form Multi-Shot Benchmark for Holistic Video Understanding",
+      "evidence": "The benchmark is designed to evaluate the capabilities of LVLMs in understanding video content via free-form QA with GPT-4 scoring."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMBench-Video Overall Score (with Subtitles)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MMBench-Video: A Long-Form Multi-Shot Benchmark for Holistic Video Understanding",
+      "evidence": "Adding subtitles (speech) improves GPT‑4o’s overall performance on MMBench‑Video, though with increased hallucination risk noted."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Fine-grained Video Understanding",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "SlowFocus: Enhancing Fine-grained Temporal Understanding in Video LLM",
+      "evidence": "Vid‑LLMs perform video understanding; paper targets fine‑grained video understanding as a specific capability  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Coarse-grained Video Understanding",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "SlowFocus: Enhancing Fine-grained Temporal Understanding in Video LLM",
+      "evidence": "Coarse‑grained video understanding benchmarks (MSVD‑QA, MSRVTT‑QA, ActivityNet‑QA) are used to evaluate general video‑level abilities ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MSRVTT-QA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Dense Connector for MLLMs",
+      "evidence": "Zero-shot video QA results include MSVD-QA accuracy ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MSVD-QA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Dense Connector for MLLMs",
+      "evidence": "Zero-shot video QA results include MSVD-QA accuracy ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MSRVTT-QA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Dense Connector for MLLMs",
+      "evidence": "Zero-shot video QA includes MSRVTT-QA accuracy ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MSVD-QA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Dense Connector for MLLMs",
+      "evidence": "Zero-shot video QA includes MSRVTT-QA accuracy ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ActivityNet-QA",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Dense Connector for MLLMs",
+      "evidence": "Zero-shot video QA includes ActivityNet-QA accuracy ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Zero-shot Transfer to Video",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Dense Connector for MLLMs",
+      "evidence": "Authors emphasize remarkable zero-shot video understanding without video-specific tuning ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Contextual Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "CALVIN: Improved Contextual Video Captioning via Instruction Tuning",
+      "evidence": "Movie scene descriptions require deeper contextual understanding than general-purpose video captioning ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Temporal Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "CALVIN: Improved Contextual Video Captioning via Instruction Tuning",
+      "evidence": "Useful interpretations prioritize results of interactions through time; understanding long videos is challenging ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Narrative Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "CALVIN: Improved Contextual Video Captioning via Instruction Tuning",
+      "evidence": "Narrative focus on actions and outcomes important to the plot distinguishes contextual captioning from generic captioning  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multi-modal Integration",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "CALVIN: Improved Contextual Video Captioning via Instruction Tuning",
+      "evidence": "A video projection layer integrates vision tokens into an LLM; training unifies image QA and video captioning  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Zero-shot Video Captioning",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CALVIN: Improved Contextual Video Captioning via Instruction Tuning",
+      "evidence": "CALVIN performs significantly better than off‑the‑shelf video LLMs in zero-shot evaluations on TVC ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "EgoSchema Top-1 Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "TOPA: Extending Large Language Models for Video Understanding via Text-Only Pre-Alignment",
+      "evidence": "EgoSchema is a long-form video understanding benchmark; TOPA-Llama2-13B reaches 51.0% Top-1, evidencing video understanding performance ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Temporal Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "TOPA: Extending Large Language Models for Video Understanding via Text-Only Pre-Alignment",
+      "evidence": "EgoSchema explicitly requires intrinsic temporal understanding capabilities, making temporal reasoning a core component of video understanding ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "NExT-QA Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "TOPA: Extending Large Language Models for Video Understanding via Text-Only Pre-Alignment",
+      "evidence": "NExT-QA evaluates temporal, causal, and descriptive video QA categories as indicators of video understanding ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "High-level Semantic Alignment",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "TOPA: Extending Large Language Models for Video Understanding via Text-Only Pre-Alignment",
+      "evidence": "The approach primarily focuses on high-level semantic alignment to enable video understanding ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Cross-Modal Generalization",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "TOPA: Extending Large Language Models for Video Understanding via Text-Only Pre-Alignment",
+      "evidence": "Thanks to CLIP’s aligned image–text feature space, LLMs trained on textual representations can adapt to real video inputs, enabling video understanding ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language Supervision Quality",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "TOPA: Extending Large Language Models for Video Understanding via Text-Only Pre-Alignment",
+      "evidence": "High-quality, precise language supervision is necessary for effective video understanding; TOPA uses LLM-generated supervision that is less noisy and closely aligned with content  ."
+    }
+  ],
+  "relationship_count": 35,
+  "incoming_relationship_count": 17,
+  "outgoing_relationship_count": 18
+}

@@ -1,0 +1,562 @@
+{
+  "canonical_name": "Hallucination",
+  "type": "behavior",
+  "canonical_definition": "Hallucination is the tendency of a system to generate responses containing unverifiable, unsupported, or factually incorrect claims, often operationalized through unanswerable questions or adversarial benchmarks to measure severity. It manifests in text or multimodal outputs (e.g., fabricated visual elements) and is assessed via metrics like hallucination rate (e.g., contradictory/unverifiable sentence labels) or detection frameworks leveraging retrieval-augmented generation, preference optimization, or internal representation analysis. This behavior reflects risks to reliability and trustworthiness in real-world applications, with mitigation strategies including improved retriever recall, model scaling, and architectural enhancements to reduce object/attribute hallucination in vision-language tasks.",
+  "expert_reviewed": false,
+  "names": [
+    "Hallucination"
+  ],
+  "papers": [
+    "ANAH-v2: Scaling Analytical Hallucination Annotation of Large Language Models",
+    "CogVLM: Visual Expert for Pretrained Language Models",
+    "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts",
+    "Efficient Large Multi-modal Models via Visual Context Compression",
+    "ImageNet3D: Towards General-Purpose Object-Level 3D Understanding",
+    "Instruction-Guided Visual Masking",
+    "JourneyBench: A Challenging One-Stop Vision-Language Understanding Benchmark of Generated Images",
+    "LLM-Check: Investigating Detection of Hallucinations in Large Language Models",
+    "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models",
+    "MMBench-Video: A Long-Form Multi-Shot Benchmark for Holistic Video Understanding",
+    "MMLONGBENCH-DOC: Benchmarking Long-context Document Understanding with Visualizations",
+    "Meteor: Mamba-based Traversal of Rationale for Large Language and Vision Models",
+    "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+    "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding",
+    "One Token to Seg Them All: Language Instructed Reasoning Segmentation in Videos",
+    "Personalized Steering of Large Language Models: Versatile Steering Vectors Through Bi-directional Preference Optimization",
+    "RAGChecker: A Fine-grained Framework for Diagnosing Retrieval-Augmented Generation",
+    "RoboMamba: Efficient Vision-Language-Action Model for Robotic Reasoning and Manipulation",
+    "SETLEXSEM CHALLENGE: Using Set Operations to Evaluate the Lexical and Semantic Robustness of Language Models",
+    "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+    "Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment",
+    "Unleashing Region Understanding in Intermediate Layers for MLLM-based Referring Expression Generation",
+    "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+    "Web2Code: A Large-scale Webpage-to-Code Dataset and Evaluation Framework for Multimodal LLMs",
+    "What matters when building vision-language models?"
+  ],
+  "paper_count": 25,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Tendency to answer without supporting evidence; assessed via unanswerable questions intended to measure hallucination severity .",
+      "paper": "MMLONGBENCH-DOC: Benchmarking Long-context Document Understanding with Visualizations"
+    },
+    {
+      "text": "Hallucination benchmarks used to quantify hallucination across tasks .",
+      "paper": "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?"
+    },
+    {
+      "text": "Mitigating hallucination is listed among alignment‑concerning scenarios.",
+      "paper": "Personalized Steering of Large Language Models: Versatile Steering Vectors Through Bi-directional Preference Optimization"
+    },
+    {
+      "text": "By changing vector direction, the method can both induce fabricated content and enhance honesty, controlling hallucination level.",
+      "paper": "Personalized Steering of Large Language Models: Versatile Steering Vectors Through Bi-directional Preference Optimization"
+    },
+    {
+      "text": "Sentences labeled Contradictory or Unverifiable are counted as hallucinations to compute the hallucination rate.",
+      "paper": "ANAH-v2: Scaling Analytical Hallucination Annotation of Large Language Models"
+    },
+    {
+      "text": "Hallucination significantly hinders real-world applications, underscoring the need for reliable and trustworthy outputs for responsible integration.",
+      "paper": "ANAH-v2: Scaling Analytical Hallucination Annotation of Large Language Models"
+    },
+    {
+      "text": "Hallucination is the proportion of incorrect claims not entailed in any retrieved chunk .",
+      "paper": "RAGChecker: A Fine-grained Framework for Diagnosing Retrieval-Augmented Generation"
+    },
+    {
+      "text": "As retriever claim recall improves, hallucination is reduced .",
+      "paper": "RAGChecker: A Fine-grained Framework for Diagnosing Retrieval-Augmented Generation"
+    },
+    {
+      "text": "Larger models exhibit less hallucination under the same retriever .",
+      "paper": "RAGChecker: A Fine-grained Framework for Diagnosing Retrieval-Augmented Generation"
+    },
+    {
+      "text": "FAVA-Annotation labels passages as hallucinated if any hallucination form is present, enabling binary detection of hallucination propensity .",
+      "paper": "LLM-Check: Investigating Detection of Hallucinations in Large Language Models"
+    },
+    {
+      "text": "SelfCheckGPT provides sentence-level hallucination annotations in a multi-response setting for detection tasks  .",
+      "paper": "LLM-Check: Investigating Detection of Hallucinations in Large Language Models"
+    },
+    {
+      "text": "RAGTruth supports hallucination detection when external references are available, testing propensity in RAG scenarios .",
+      "paper": "LLM-Check: Investigating Detection of Hallucinations in Large Language Models"
+    },
+    {
+      "text": "Variations in internal representations between truthful and hallucinated cases are leveraged for single-response hallucination detection .",
+      "paper": "LLM-Check: Investigating Detection of Hallucinations in Large Language Models"
+    },
+    {
+      "text": "Hallucinations are contrasted with truthful, grounded responses; higher factuality implies lower hallucination presence  .",
+      "paper": "LLM-Check: Investigating Detection of Hallucinations in Large Language Models"
+    },
+    {
+      "text": "Unanswerable questions measure hallucination severity in LVLMs/LLMs .",
+      "paper": "MMLONGBENCH-DOC: Benchmarking Long-context Document Understanding with Visualizations"
+    },
+    {
+      "text": "Failure cases show misrecognition (hallucination) leading to wrong segmentation.",
+      "paper": "One Token to Seg Them All: Language Instructed Reasoning Segmentation in Videos"
+    },
+    {
+      "text": "Low propensity to fabricate facts or describe nonexistent visual elements.",
+      "paper": "What matters when building vision-language models?"
+    },
+    {
+      "text": "Robustness against object hallucination in multimodal generation/understanding, as evaluated by POPE .",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models"
+    },
+    {
+      "text": "Robustness to hallucination triggers and avoidance of hallucinated predictions in vision-language tasks  .",
+      "paper": "JourneyBench: A Challenging One-Stop Vision-Language Understanding Benchmark of Generated Images"
+    },
+    {
+      "text": "Reduced tendency of multimodal LLMs to hallucinate objects or attributes due to stronger 3D awareness.",
+      "paper": "ImageNet3D: Towards General-Purpose Object-Level 3D Understanding"
+    },
+    {
+      "text": "POPE is a hallucination adversarial QA benchmark used in the paper's evaluations.",
+      "paper": "Instruction-Guided Visual Masking"
+    },
+    {
+      "text": "Limitations section reports hallucinations such as fabricating facts or describing nonexistent image elements.",
+      "paper": "What matters when building vision-language models?"
+    },
+    {
+      "text": "POPE evaluates object hallucination with multiple subsets (random/popular/adversarial) .",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models"
+    },
+    {
+      "text": "JourneyBench explicitly assesses hallucination tendencies, including with targeted triggers .",
+      "paper": "JourneyBench: A Challenging One-Stop Vision-Language Understanding Benchmark of Generated Images"
+    },
+    {
+      "text": "JourneyBench includes open-ended VQA with hallucination triggers to probe hallucination tendencies .",
+      "paper": "JourneyBench: A Challenging One-Stop Vision-Language Understanding Benchmark of Generated Images"
+    }
+  ],
+  "definition_count": 25,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Propensity",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MMLONGBENCH-DOC: Benchmarking Long-context Document Understanding with Visualizations",
+      "evidence": "Tendency to answer without supporting evidence; assessed via unanswerable questions intended to measure hallucination severity ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Propensity",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+      "evidence": "Hallucination benchmarks used to quantify hallucination across tasks ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Propensity",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Personalized Steering of Large Language Models: Versatile Steering Vectors Through Bi-directional Preference Optimization",
+      "evidence": "Mitigating hallucination is listed among alignment‑concerning scenarios."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Propensity",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Personalized Steering of Large Language Models: Versatile Steering Vectors Through Bi-directional Preference Optimization",
+      "evidence": "By changing vector direction, the method can both induce fabricated content and enhance honesty, controlling hallucination level."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Propensity",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "ANAH-v2: Scaling Analytical Hallucination Annotation of Large Language Models",
+      "evidence": "Sentences labeled Contradictory or Unverifiable are counted as hallucinations to compute the hallucination rate."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Propensity",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "ANAH-v2: Scaling Analytical Hallucination Annotation of Large Language Models",
+      "evidence": "Hallucination significantly hinders real-world applications, underscoring the need for reliable and trustworthy outputs for responsible integration."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Propensity",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "RAGChecker: A Fine-grained Framework for Diagnosing Retrieval-Augmented Generation",
+      "evidence": "Hallucination is the proportion of incorrect claims not entailed in any retrieved chunk ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Propensity",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "RAGChecker: A Fine-grained Framework for Diagnosing Retrieval-Augmented Generation",
+      "evidence": "As retriever claim recall improves, hallucination is reduced ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Propensity",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "RAGChecker: A Fine-grained Framework for Diagnosing Retrieval-Augmented Generation",
+      "evidence": "Larger models exhibit less hallucination under the same retriever ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Propensity",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "LLM-Check: Investigating Detection of Hallucinations in Large Language Models",
+      "evidence": "FAVA-Annotation labels passages as hallucinated if any hallucination form is present, enabling binary detection of hallucination propensity ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Propensity",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "LLM-Check: Investigating Detection of Hallucinations in Large Language Models",
+      "evidence": "SelfCheckGPT provides sentence-level hallucination annotations in a multi-response setting for detection tasks  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Propensity",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "LLM-Check: Investigating Detection of Hallucinations in Large Language Models",
+      "evidence": "RAGTruth supports hallucination detection when external references are available, testing propensity in RAG scenarios ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Propensity",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "LLM-Check: Investigating Detection of Hallucinations in Large Language Models",
+      "evidence": "Variations in internal representations between truthful and hallucinated cases are leveraged for single-response hallucination detection ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Propensity",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "LLM-Check: Investigating Detection of Hallucinations in Large Language Models",
+      "evidence": "Hallucinations are contrasted with truthful, grounded responses; higher factuality implies lower hallucination presence  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Propensity",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MMLONGBENCH-DOC: Benchmarking Long-context Document Understanding with Visualizations",
+      "evidence": "Unanswerable questions measure hallucination severity in LVLMs/LLMs ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Propensity",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "One Token to Seg Them All: Language Instructed Reasoning Segmentation in Videos",
+      "evidence": "Failure cases show misrecognition (hallucination) leading to wrong segmentation."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Resistance",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "What matters when building vision-language models?",
+      "evidence": "Low propensity to fabricate facts or describe nonexistent visual elements."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Resistance",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models",
+      "evidence": "Robustness against object hallucination in multimodal generation/understanding, as evaluated by POPE ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Resistance",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "JourneyBench: A Challenging One-Stop Vision-Language Understanding Benchmark of Generated Images",
+      "evidence": "Robustness to hallucination triggers and avoidance of hallucinated predictions in vision-language tasks  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Resistance",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "ImageNet3D: Towards General-Purpose Object-Level 3D Understanding",
+      "evidence": "Reduced tendency of multimodal LLMs to hallucinate objects or attributes due to stronger 3D awareness."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Resistance",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Instruction-Guided Visual Masking",
+      "evidence": "POPE is a hallucination adversarial QA benchmark used in the paper's evaluations."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Resistance",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "What matters when building vision-language models?",
+      "evidence": "Limitations section reports hallucinations such as fabricating facts or describing nonexistent image elements."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Resistance",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models",
+      "evidence": "POPE evaluates object hallucination with multiple subsets (random/popular/adversarial) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Resistance",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "JourneyBench: A Challenging One-Stop Vision-Language Understanding Benchmark of Generated Images",
+      "evidence": "JourneyBench explicitly assesses hallucination tendencies, including with targeted triggers ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Resistance",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "JourneyBench: A Challenging One-Stop Vision-Language Understanding Benchmark of Generated Images",
+      "evidence": "JourneyBench includes open-ended VQA with hallucination triggers to probe hallucination tendencies ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Resistance",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Unleashing Region Understanding in Intermediate Layers for MLLM-based Referring Expression Generation",
+      "evidence": "Normalized CHAIR variants remove length bias for fairer hallucination comparison  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Resistance",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Unleashing Region Understanding in Intermediate Layers for MLLM-based Referring Expression Generation",
+      "evidence": "PHD measures accuracy on hallucination-sensitive tasks under neutral and misleading prompts  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Resistance",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Unleashing Region Understanding in Intermediate Layers for MLLM-based Referring Expression Generation",
+      "evidence": "The paper observes a trade-off: more detailed descriptions can increase hallucination probability ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination Resistance",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "ImageNet3D: Towards General-Purpose Object-Level 3D Understanding",
+      "evidence": "Embodied or multimodal LLM agents with stronger 3D awareness will alleviate limitations such as hallucination."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "SETLEXSEM CHALLENGE: Using Set Operations to Evaluate the Lexical and Semantic Robustness of Language Models",
+      "evidence": "Models sometimes produce values not present in inputs, especially for symmetric difference on words, indicating instruction drift/hallucination ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models",
+      "evidence": "Truthfulness involves a dual consideration of hallucination and robustness ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction Following",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "SETLEXSEM CHALLENGE: Using Set Operations to Evaluate the Lexical and Semantic Robustness of Language Models",
+      "evidence": "Models sometimes produce values not present in inputs, especially for symmetric difference on words, indicating instruction drift/hallucination ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models",
+      "evidence": "Dual consideration of hallucination and robustness: detecting absence of nonexistent entities and maintaining consistency under noise and position changes."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models",
+      "evidence": "Truthfulness involves a dual consideration of hallucination and robustness ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Video Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MMBench-Video: A Long-Form Multi-Shot Benchmark for Holistic Video Understanding",
+      "evidence": "Adding subtitles (speech) improves GPT‑4o’s overall performance on MMBench‑Video, though with increased hallucination risk noted."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "POPE",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment",
+      "evidence": "Object hallucination evaluation POPE Score (higher is better per table reporting)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "POPE",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "evidence": "Object hallucination evaluation POPE Benchmark score; higher is better per paper table context"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "POPE",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Instruction-Guided Visual Masking",
+      "evidence": "Hallucination adversarial QA measuring resistance to hallucination. POPE Accuracy (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "POPE",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts",
+      "evidence": "Object hallucination evaluation (POPE) reported in the comparison table; POPE evaluates object hallucination in LVLMs . POPE Score"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "POPE",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models",
+      "evidence": "Object hallucination evaluation (random/popular/adversarial subsets) POPE Accuracy/Score (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "POPE",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "RoboMamba: Efficient Vision-Language-Action Model for Robotic Reasoning and Manipulation",
+      "evidence": "Evaluation of perception/hallucination robustness for MLLMs POPE Score"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "POPE",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Meteor: Mamba-based Traversal of Rationale for Large Language and Vision Models",
+      "evidence": "Object hallucination evaluation POPE Higher score indicates fewer hallucinations"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "POPE",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding",
+      "evidence": "Object hallucination evaluation POPE F1 (%)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "POPE",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Web2Code: A Large-scale Webpage-to-Code Dataset and Evaluation Framework for Multimodal LLMs",
+      "evidence": "Anti-hallucination evaluation on object presence/absence POPE POPE score as reported in comparisons ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "POPE",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Efficient Large Multi-modal Models via Visual Context Compression",
+      "evidence": "Object hallucination evaluation for vision-language models POPE Score"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "POPE",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "evidence": "Object hallucination detection/robustness POPE Score (higher indicates fewer hallucinations)"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "POPE",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Instruction-Guided Visual Masking",
+      "evidence": "POPE is a hallucination adversarial QA benchmark used in the paper's evaluations."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "POPE",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models",
+      "evidence": "POPE evaluates object hallucination with multiple subsets (random/popular/adversarial) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "POPE",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Meteor: Mamba-based Traversal of Rationale for Large Language and Vision Models",
+      "evidence": "POPE is used to evaluate hallucination; authors note reductions with rationale  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "POPE",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Web2Code: A Large-scale Webpage-to-Code Dataset and Evaluation Framework for Multimodal LLMs",
+      "evidence": "POPE assesses anti-hallucination ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "POPE",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Efficient Large Multi-modal Models via Visual Context Compression",
+      "evidence": "POPE evaluates object hallucination in a stable and flexible way ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "POPE",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "evidence": "POPE is listed as the object hallucination evaluation criterion ."
+    }
+  ],
+  "relationship_count": 52,
+  "incoming_relationship_count": 35,
+  "outgoing_relationship_count": 17
+}

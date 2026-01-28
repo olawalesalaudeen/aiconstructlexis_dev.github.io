@@ -1,0 +1,14 @@
+{
+  "min_papers": {
+    "construct": 10,
+    "measurement": 10,
+    "behavior": 3 
+  },
+  "min_papers_floor": {
+    "construct": 10,
+    "measurement": 10,
+    "behavior": 3
+  },
+  "graph_root_construct": "Reasoning"
+}
+

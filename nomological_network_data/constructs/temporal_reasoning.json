@@ -1,0 +1,374 @@
+{
+  "canonical_name": "Temporal Reasoning",
+  "type": "construct",
+  "canonical_definition": "Temporal Reasoning is the ability to understand, infer, and logically deduce relationships between events across time, encompassing temporal dependencies (e.g., order, causality, simultaneity), dynamic patterns in sequential data (e.g., video streams, evolving knowledge graphs), and time-sensitive generalizations (e.g., arithmetic, scheduling, long-term relations). It involves analyzing event sequences, contextual changes, and temporal hierarchies to answer questions about timing, causation, or state transitions, with applications spanning video understanding, real-time knowledge adaptation, and multi-hop temporal inference. Some definitions emphasize causal reasoning (e.g., explaining action sequences) or domain-specific challenges (e.g., long-context dependencies, visual time arithmetic), but all center on temporal structure as a core axis of reasoning.",
+  "expert_reviewed": false,
+  "names": [
+    "Temporal Reasoning"
+  ],
+  "papers": [
+    "BABILong: Testing the Limits of LLMs with Long Context Reasoning-in-a-Haystack",
+    "CALVIN: Improved Contextual Video Captioning via Instruction Tuning",
+    "COLD: Causal reasOning in cLosed Daily activities",
+    "CRAG - Comprehensive RAG Benchmark",
+    "CausalChaos! Dataset for Comprehensive Causal Action Question Answering Over Longer Causal Chains Grounded in Dynamic Visual Scenes",
+    "DTGB: A Comprehensive Benchmark for Dynamic Text-Attributed Graphs",
+    "Large Language Models-guided Dynamic Adaptation for Temporal Knowledge Graph Reasoning",
+    "MARPLE: A Benchmark for Long-Horizon Inference",
+    "MEQA: A Benchmark for Multi-hop Event-centric Question Answering with Explanations",
+    "MMBench-Video: A Long-Form Multi-Shot Benchmark for Holistic Video Understanding",
+    "ReMI: A Dataset for Reasoning with Multiple Images",
+    "SlowFocus: Enhancing Fine-grained Temporal Understanding in Video LLM",
+    "Streaming Long Video Understanding with Large Language Models",
+    "TOPA: Extending Large Language Models for Video Understanding via Text-Only Pre-Alignment",
+    "Task Me Anything",
+    "Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization"
+  ],
+  "paper_count": 16,
+  "group_ids": [
+    555,
+    1210,
+    1245,
+    1723,
+    2021,
+    2038,
+    2613,
+    3558,
+    3610,
+    3676,
+    4170,
+    4346,
+    4807,
+    4839,
+    5218,
+    6122
+  ],
+  "definitions": [
+    {
+      "text": "Ability to reason about temporal information, extracting temporal patterns and dependencies from historical data. ",
+      "paper": "Large Language Models-guided Dynamic Adaptation for Temporal Knowledge Graph Reasoning"
+    },
+    {
+      "text": "Reasoning over temporal dynamics and long-term relations across clips in a video stream  .",
+      "paper": "Streaming Long Video Understanding with Large Language Models"
+    },
+    {
+      "text": "Understanding temporal orderings and dates as in BBH temporal_sequences and date_understanding .",
+      "paper": "Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization"
+    },
+    {
+      "text": "Reasoning over events across time in videos .",
+      "paper": "Task Me Anything"
+    },
+    {
+      "text": "Reasoning over time and generalizing to evolving questions (real-time, fast-changing facts) .",
+      "paper": "CRAG - Comprehensive RAG Benchmark"
+    },
+    {
+      "text": "Proficiency in understanding the relationships between events at different points in a video. ",
+      "paper": "MMBench-Video: A Long-Form Multi-Shot Benchmark for Holistic Video Understanding"
+    },
+    {
+      "text": "Time arithmetic and scheduling with visual inputs (e.g., clocks, tables)  .",
+      "paper": "ReMI: A Dataset for Reasoning with Multiple Images"
+    },
+    {
+      "text": "Reasoning over time‑evolving structures; proposed future direction is to inject temporal graph tokens to support reasoning in LLMs .",
+      "paper": "DTGB: A Comprehensive Benchmark for Dynamic Text-Attributed Graphs"
+    },
+    {
+      "text": "Reasoning with temporal dependencies (order matters), which challenges retrieval and aggregation over long contexts. ",
+      "paper": "BABILong: Testing the Limits of LLMs with Long Context Reasoning-in-a-Haystack"
+    },
+    {
+      "text": "Ability to logically infer temporal relations and motives from video (e.g., ordering of actions, action sequences within activities, reasons for actions) .",
+      "paper": "SlowFocus: Enhancing Fine-grained Temporal Understanding in Video LLM"
+    },
+    {
+      "text": "Understanding interactions through time and leveraging longer video context to inform descriptions .",
+      "paper": "CALVIN: Improved Contextual Video Captioning via Instruction Tuning"
+    },
+    {
+      "text": "Reasoning about the sequence of events to explain why action A follows action B .",
+      "paper": "CausalChaos! Dataset for Comprehensive Causal Action Question Answering Over Longer Causal Chains Grounded in Dynamic Visual Scenes"
+    },
+    {
+      "text": "Reasoning about changes across consecutive states over time to consider how an agent may reach a query state .",
+      "paper": "MARPLE: A Benchmark for Long-Horizon Inference"
+    },
+    {
+      "text": "Ability to reason about the temporal order of events (e.g., whether one event occurs before or after another), used as a simple reasoning capability in LMs to estimate causal links .",
+      "paper": "COLD: Causal reasOning in cLosed Daily activities"
+    },
+    {
+      "text": "Ability to understand and reason about sequences and temporal dependencies in video.",
+      "paper": "TOPA: Extending Large Language Models for Video Understanding via Text-Only Pre-Alignment"
+    },
+    {
+      "text": "Ordering events in time (Before, After, At the same time). ",
+      "paper": "MEQA: A Benchmark for Multi-hop Event-centric Question Answering with Explanations"
+    }
+  ],
+  "definition_count": 16,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Large Language Models-guided Dynamic Adaptation for Temporal Knowledge Graph Reasoning",
+      "evidence": "LLMs demonstrate surprising ability in temporal reasoning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Temporal Pattern Extraction",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Large Language Models-guided Dynamic Adaptation for Temporal Knowledge Graph Reasoning",
+      "evidence": "LLMs can extract meaningful temporal patterns from historical data."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Temporal Dependency Modeling",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Large Language Models-guided Dynamic Adaptation for Temporal Knowledge Graph Reasoning",
+      "evidence": "LLMs can capture complex temporal dependencies from historical data."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Contextual Processing",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Large Language Models-guided Dynamic Adaptation for Temporal Knowledge Graph Reasoning",
+      "evidence": "Powerful contextual processing abilities enable extraction of temporal patterns and enhance temporal reasoning."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Pattern Recognition",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Large Language Models-guided Dynamic Adaptation for Temporal Knowledge Graph Reasoning",
+      "evidence": "Pattern recognition abilities support extracting temporal patterns and dependencies."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Temporal Knowledge Graph Reasoning (TKGR) Ability",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "Large Language Models-guided Dynamic Adaptation for Temporal Knowledge Graph Reasoning",
+      "evidence": "TKGR leverages temporal information to forecast future events, requiring temporal reasoning."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Long Video Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Streaming Long Video Understanding with Large Language Models",
+      "evidence": "The method explicitly preserves long-term temporal relations and dynamics during streaming encoding  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization",
+      "evidence": "BBH temporal_sequences and date_understanding capture temporal aspects of reasoning ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BBH: temporal_sequences Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization",
+      "evidence": "BBH temporal_sequences per‑task accuracy is reported ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BBH: date_understanding Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization",
+      "evidence": "BBH date_understanding per‑task accuracy is reported ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual Perception (Vision-Language)",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "Task Me Anything",
+      "evidence": "Temporal reasoning over videos is a listed capability ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Skill-wise VideoQA Accuracy (TASK-ME-ANYTHING DB)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Task Me Anything",
+      "evidence": "Temporal reasoning tasks in videos are evaluated by accuracy  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CRAG Slice: Dynamism",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CRAG - Comprehensive RAG Benchmark",
+      "evidence": "CRAG reports truthfulness across real-time and fast-changing slices, where performance is notably lower ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "MMBench-Video: A Long-Form Multi-Shot Benchmark for Holistic Video Understanding",
+      "evidence": "Temporal Reasoning is an L-2 reasoning capability focusing on relationships across time."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMBench-Video Temporal Reasoning Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MMBench-Video: A Long-Form Multi-Shot Benchmark for Holistic Video Understanding",
+      "evidence": "Temporal Reasoning is included in the taxonomy and evaluated as a capability."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Temporal Indispensability (1f vs 8f) Retention",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MMBench-Video: A Long-Form Multi-Shot Benchmark for Holistic Video Understanding",
+      "evidence": "On MMBench‑Video, GPT‑4o’s 1‑frame performance preserves only 47.8% of its 8‑frame performance (normalized score ≈26.0%), underscoring temporal indispensability."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multi-Image Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "ReMI: A Dataset for Reasoning with Multiple Images",
+      "evidence": "Time arithmetic and scheduling tasks involve temporal reasoning with images/tables  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ReMI — Clocks",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "ReMI: A Dataset for Reasoning with Multiple Images",
+      "evidence": "Time arithmetic with analog clocks; tolerance specified for reading times  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ReMI — Schedule",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "ReMI: A Dataset for Reasoning with Multiple Images",
+      "evidence": "Scheduling with time and tabular inputs (Table 1 domains) ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Graph–Text Co-evolution Understanding",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "DTGB: A Comprehensive Benchmark for Dynamic Text-Attributed Graphs",
+      "evidence": "Future direction to incorporate dynamic graph information into LLMs for reasoning suggests temporal reasoning as a component of co‑evolution understanding ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-Context Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "BABILong: Testing the Limits of LLMs with Long Context Reasoning-in-a-Haystack",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "RAG-C Top-5 Retrieval Quality (QA1)",
+      "other_type": "measurements",
+      "relationship_type": "influences",
+      "paper": "BABILong: Testing the Limits of LLMs with Long Context Reasoning-in-a-Haystack",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Fine-grained Video Understanding",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "SlowFocus: Enhancing Fine-grained Temporal Understanding in Video LLM",
+      "evidence": "Fine‑grained understanding necessitates temporal reasoning about dynamic interactions over time  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Temporal Localization",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "SlowFocus: Enhancing Fine-grained Temporal Understanding in Video LLM",
+      "evidence": "The framework first grounds the relevant segment to help reason the query; ‘Please locate the temporal segment help to reason the <user query>’ (Stage 1)  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Temporal Reasoning (FineAction-CGR)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SlowFocus: Enhancing Fine-grained Temporal Understanding in Video LLM",
+      "evidence": "Temporal reasoning answers are graded for accuracy and score using GPT‑4 ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Video Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "CALVIN: Improved Contextual Video Captioning via Instruction Tuning",
+      "evidence": "Useful interpretations prioritize results of interactions through time; understanding long videos is challenging ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CausalChaos MCQA Protocol 1 (Answer-only)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CausalChaos! Dataset for Comprehensive Causal Action Question Answering Over Longer Causal Chains Grounded in Dynamic Visual Scenes",
+      "evidence": "Example items require reasoning about sequences to explain why action A follows B ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CausalChaos MCQA Protocol 2 (Answer+Explanation)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CausalChaos! Dataset for Comprehensive Causal Action Question Answering Over Longer Causal Chains Grounded in Dynamic Visual Scenes",
+      "evidence": "Explanation selection depends on temporal logic of event order in the videos ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-Horizon Inference",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "MARPLE: A Benchmark for Long-Horizon Inference",
+      "evidence": "Task requires reasoning across time as evidence accrues  ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Causal Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "proxy-for",
+      "paper": "COLD: Causal reasOning in cLosed Daily activities",
+      "evidence": "The study uses temporal link prediction as a simple reasoning capability to estimate causal relationships ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Video Understanding",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "TOPA: Extending Large Language Models for Video Understanding via Text-Only Pre-Alignment",
+      "evidence": "EgoSchema explicitly requires intrinsic temporal understanding capabilities, making temporal reasoning a core component of video understanding ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Event Relation Understanding",
+      "other_type": "constructs",
+      "relationship_type": "is-a-component-of",
+      "paper": "MEQA: A Benchmark for Multi-hop Event-centric Question Answering with Explanations",
+      "evidence": "Relation options include temporal relations such as Before, After, At the same time."
+    }
+  ],
+  "relationship_count": 32,
+  "incoming_relationship_count": 8,
+  "outgoing_relationship_count": 24
+}

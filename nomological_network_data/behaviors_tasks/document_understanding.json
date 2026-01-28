@@ -1,0 +1,173 @@
+{
+  "canonical_name": "Document Understanding",
+  "type": "behavior",
+  "canonical_definition": "Document Understanding is the capability to process and interpret text-rich multimodal documents (e.g., images, charts, tables, layouts) by extracting visual elements, understanding spatial/structural relationships, and integrating this information with linguistic knowledge. It involves tasks like chart interpretation, layout parsing, and positional reasoning, often operationalized as a benchmark for evaluating multimodal systems' ability to handle structured visual-linguistic content. This behavior reflects expertise in combining perception, knowledge, and spatial reasoning to derive structured outputs or explanations from complex document inputs.",
+  "expert_reviewed": false,
+  "names": [
+    "Document Understanding"
+  ],
+  "papers": [
+    "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+    "CausalChaos! Dataset for Comprehensive Causal Action Question Answering Over Longer Causal Chains Grounded in Dynamic Visual Scenes",
+    "Image2Struct: Benchmarking Structure Extraction for Vision-Language Models",
+    "MMDU: A Multi-Turn Multi-Image Dialog Understanding Benchmark and Instruction-Tuning Dataset for LVLMs",
+    "MMLONGBENCH-DOC: Benchmarking Long-context Document Understanding with Visualizations",
+    "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models",
+    "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+    "Web2Code: A Large-scale Webpage-to-Code Dataset and Evaluation Framework for Multimodal LLMs"
+  ],
+  "paper_count": 8,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The evaluation suite spans perception, knowledge, chart interpretation, and visual capabilities as aspects of multimodal capability.",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs"
+    },
+    {
+      "text": "Chart interpretation is a targeted evaluation aspect and category.",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs"
+    },
+    {
+      "text": "Text-rich document, chart, and table understanding form a full task group in evaluation .",
+      "paper": "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models"
+    },
+    {
+      "text": "Understanding layout and positional relations among visual elements on webpages; cited as required capability .",
+      "paper": "Web2Code: A Large-scale Webpage-to-Code Dataset and Evaluation Framework for Multimodal LLMs"
+    },
+    {
+      "text": "Understanding scene layouts and spatial relations to explain actions (e.g., door and basement layout) .",
+      "paper": "CausalChaos! Dataset for Comprehensive Causal Action Question Answering Over Longer Causal Chains Grounded in Dynamic Visual Scenes"
+    },
+    {
+      "text": "Requires spatial reasoning for layout parsing .",
+      "paper": "Web2Code: A Large-scale Webpage-to-Code Dataset and Evaluation Framework for Multimodal LLMs"
+    },
+    {
+      "text": "Example items require understanding layout to explain actions (spatial reasoning) .",
+      "paper": "CausalChaos! Dataset for Comprehensive Causal Action Question Answering Over Longer Causal Chains Grounded in Dynamic Visual Scenes"
+    },
+    {
+      "text": "Accurate extraction/interpretation of visual information (images, charts, layout); a major source of errors in visual contexts .",
+      "paper": "MMLONGBENCH-DOC: Benchmarking Long-context Document Understanding with Visualizations"
+    },
+    {
+      "text": "The evaluation suite spans perception, knowledge, chart interpretation, and visual capabilities as aspects of multimodal capability.",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs"
+    },
+    {
+      "text": "Chart-focused expertise (e.g., Deplot/Vary) is leveraged for chart parsing/understanding  .",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context"
+    },
+    {
+      "text": "ChartQA targets visual/logical reasoning over charts, a specialized visual reasoning skill .",
+      "paper": "MMDU: A Multi-Turn Multi-Image Dialog Understanding Benchmark and Instruction-Tuning Dataset for LVLMs"
+    },
+    {
+      "text": "Processing visual content to identify elements and layout; required alongside language knowledge for high structure-extraction performance .",
+      "paper": "Image2Struct: Benchmarking Structure Extraction for Vision-Language Models"
+    }
+  ],
+  "definition_count": 12,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+      "evidence": "The evaluation suite spans perception, knowledge, chart interpretation, and visual capabilities as aspects of multimodal capability."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+      "evidence": "Chart interpretation is a targeted evaluation aspect and category."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models",
+      "evidence": "Text-rich document, chart, and table understanding form a full task group in evaluation ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Spatial Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Web2Code: A Large-scale Webpage-to-Code Dataset and Evaluation Framework for Multimodal LLMs",
+      "evidence": "Understanding layout and positional relations among visual elements on webpages; cited as required capability ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Spatial Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "CausalChaos! Dataset for Comprehensive Causal Action Question Answering Over Longer Causal Chains Grounded in Dynamic Visual Scenes",
+      "evidence": "Understanding scene layouts and spatial relations to explain actions (e.g., door and basement layout) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Spatial Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Web2Code: A Large-scale Webpage-to-Code Dataset and Evaluation Framework for Multimodal LLMs",
+      "evidence": "Requires spatial reasoning for layout parsing ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Spatial Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "CausalChaos! Dataset for Comprehensive Causal Action Question Answering Over Longer Causal Chains Grounded in Dynamic Visual Scenes",
+      "evidence": "Example items require understanding layout to explain actions (spatial reasoning) ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Perception",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MMLONGBENCH-DOC: Benchmarking Long-context Document Understanding with Visualizations",
+      "evidence": "Accurate extraction/interpretation of visual information (images, charts, layout); a major source of errors in visual contexts ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Perception",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+      "evidence": "The evaluation suite spans perception, knowledge, chart interpretation, and visual capabilities as aspects of multimodal capability."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Perception",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "evidence": "Chart-focused expertise (e.g., Deplot/Vary) is leveraged for chart parsing/understanding  ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "MMDU: A Multi-Turn Multi-Image Dialog Understanding Benchmark and Instruction-Tuning Dataset for LVLMs",
+      "evidence": "ChartQA targets visual/logical reasoning over charts, a specialized visual reasoning skill ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual Understanding",
+      "other_type": "constructs",
+      "relationship_type": "associated-with",
+      "paper": "Image2Struct: Benchmarking Structure Extraction for Vision-Language Models",
+      "evidence": "Processing visual content to identify elements and layout; required alongside language knowledge for high structure-extraction performance ."
+    }
+  ],
+  "relationship_count": 12,
+  "incoming_relationship_count": 12,
+  "outgoing_relationship_count": 0
+}

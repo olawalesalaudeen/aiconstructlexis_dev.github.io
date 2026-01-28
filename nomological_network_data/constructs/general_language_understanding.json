@@ -1,0 +1,346 @@
+{
+  "canonical_name": "General Language Understanding",
+  "type": "construct",
+  "canonical_definition": "General Language Understanding refers to the breadth and depth of language knowledge and competence across diverse subjects and tasks, encompassing semantic comprehension, reasoning, and linguistic abilities. It is commonly assessed through multi-task evaluations such as MMLU, CEval, or GLUE benchmarks, with some definitions emphasizing academic/professional testing frameworks, others highlighting core language understanding in decoder-only LLMs, and varying focus on commonsense reasoning or task-specific metrics.",
+  "expert_reviewed": false,
+  "names": [
+    "General Language Understanding"
+  ],
+  "papers": [
+    "BAM! Just Like That: Simple and Efficient Parameter Upcycling for Mixture of Experts",
+    "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning",
+    "Exploring the Role of Large Language Models in Prompt Encoding for Diffusion Models",
+    "MAmmoTH2: Scaling Instructions from the Web",
+    "MathPile: A Billion-Token-Scale Pretraining Corpus for Math",
+    "Reasons and Solutions for the Decline in Model Performance after Editing",
+    "SciInstruct: a Self-Reflective Instruction Annotated Dataset for Training Scientific Language Models",
+    "Self-playing Adversarial Language Game Enhances LLM Reasoning",
+    "Spectral Editing of Activations for Large Language Model Alignment",
+    "What matters when building vision-language models?"
+  ],
+  "paper_count": 10,
+  "group_ids": [
+    261,
+    1120,
+    1964,
+    2581,
+    3088,
+    3826,
+    4288,
+    5074,
+    5239,
+    6016
+  ],
+  "definitions": [
+    {
+      "text": "Broad academic and multitask knowledge tested across many subjects .",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment"
+    },
+    {
+      "text": "Breadth of language knowledge and reasoning across many text-only tasks (LLM backbone capability). ",
+      "paper": "What matters when building vision-language models?"
+    },
+    {
+      "text": "Broad knowledge and language competence assessed via multi‑task evaluations such as MMLU .",
+      "paper": "Reasons and Solutions for the Decline in Model Performance after Editing"
+    },
+    {
+      "text": "General knowledge/language understanding as assessed by MMLU/CEval; not sacrificed and slightly improved after scientific fine‑tuning.  ",
+      "paper": "SciInstruct: a Self-Reflective Instruction Annotated Dataset for Training Scientific Language Models"
+    },
+    {
+      "text": "Breadth and depth of knowledge and understanding across many subjects, akin to academic/professional testing (as in MMLU) .",
+      "paper": "MAmmoTH2: Scaling Instructions from the Web"
+    },
+    {
+      "text": "Ability measured by GLUE tasks covering sentiment, paraphrase, linguistic acceptability, NLI, textual similarity, and entailment; metrics specified per task ",
+      "paper": "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning"
+    },
+    {
+      "text": "Ability of an LLM to comprehend text semantics and language knowledge; decoder-only LLMs are described as having superior text understanding compared to CLIP/T5-series models. ",
+      "paper": "Exploring the Role of Large Language Models in Prompt Encoding for Diffusion Models"
+    },
+    {
+      "text": "Overall language and commonsense capability on general benchmarks; the paper evaluates \"general language modeling abilities\" post-continual pretraining and notes no significant degradation .",
+      "paper": "MathPile: A Billion-Token-Scale Pretraining Corpus for Math"
+    },
+    {
+      "text": "Broad language and knowledge understanding across domains, used as a general performance proxy.  ",
+      "paper": "Self-playing Adversarial Language Game Enhances LLM Reasoning"
+    },
+    {
+      "text": "Breadth of subject-matter knowledge and language understanding across many tasks.",
+      "paper": "BAM! Just Like That: Simple and Efficient Parameter Upcycling for Mixture of Experts"
+    }
+  ],
+  "definition_count": 10,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment",
+      "evidence": "MMLU serves as the most general benchmark among control tasks ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment",
+      "evidence": "Linear SEA shows limited degradation on MMLU under truthfulness edits ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment",
+      "evidence": "Linear SEA shows limited degradation on MMLU under truthfulness edits ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "What matters when building vision-language models?",
+      "evidence": "MMLU is cited to characterize language model backbone strength (e.g., LLaMA-1-7B vs Mistral-7B)."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Vision-Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "What matters when building vision-language models?",
+      "evidence": "Replacing the LLM backbone with one that performs better on MMLU (Mistral-7B vs LLaMA-1-7B) yields a +5.1 gain on VL benchmarks; authors conclude LLM quality has the larger impact among current backbones."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Robustness to Knowledge Editing (Post‑edit Performance Stability)",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Reasons and Solutions for the Decline in Model Performance after Editing",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Reasons and Solutions for the Decline in Model Performance after Editing",
+      "evidence": ""
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SciInstruct: a Self-Reflective Instruction Annotated Dataset for Training Scientific Language Models",
+      "evidence": "MMLU used to assess general knowledge/language abilities; accuracy metric."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CEval",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "SciInstruct: a Self-Reflective Instruction Annotated Dataset for Training Scientific Language Models",
+      "evidence": "CEval used to assess knowledge abilities; accuracy metric."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Scientific Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "SciInstruct: a Self-Reflective Instruction Annotated Dataset for Training Scientific Language Models",
+      "evidence": "Scientific fine‑tuning does not sacrifice general language understanding and even slightly improves MMLU/CEval."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "STEM Knowledge",
+      "other_type": "constructs",
+      "relationship_type": "part-of",
+      "paper": "MAmmoTH2: Scaling Instructions from the Web",
+      "evidence": "MMLU-STEM is a STEM-specific slice of knowledge breadth/depth, implying a subdomain of general understanding ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MAmmoTH2: Scaling Instructions from the Web",
+      "evidence": "MMLU evaluates knowledge breadth and depth across many disciplines ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU-Pro Score",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MAmmoTH2: Scaling Instructions from the Web",
+      "evidence": "MMLU-Pro used as a robust, challenging general LLM benchmark ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "LLM Capabilities",
+      "other_type": "constructs",
+      "relationship_type": "has-subcomponent",
+      "paper": "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning",
+      "evidence": "General language understanding is evaluated via GLUE with task-appropriate metrics"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SST‑2",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning",
+      "evidence": "GLUE tasks (including SST-2) are used with accuracy as metric except where noted"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SST-5 Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning",
+      "evidence": "GLUE tasks (including SST-2) are used with accuracy as metric except where noted"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MRPC Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning",
+      "evidence": "GLUE/MRPC measured with accuracy"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CoLA Matthews Corr.",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning",
+      "evidence": "CoLA uses Matthews correlation per the paper’s GLUE setup"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "QNLI Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning",
+      "evidence": "QNLI measured with accuracy in GLUE setup"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MNLI",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning",
+      "evidence": "QNLI measured with accuracy in GLUE setup"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "RTE",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning",
+      "evidence": "RTE measured with accuracy in GLUE setup"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "STS-B Pearson Corr.",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning",
+      "evidence": "STS-B uses Pearson correlation per the paper’s GLUE setup"
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Exploring the Role of Large Language Models in Prompt Encoding for Diffusion Models",
+      "evidence": "Figure 2 juxtaposes MMLU (language understanding) with T2I-CompBench, treating MMLU as a language understanding metric."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Prompt Understanding (Text-to-Image)",
+      "other_type": "constructs",
+      "relationship_type": "not-predicts",
+      "paper": "Exploring the Role of Large Language Models in Prompt Encoding for Diffusion Models",
+      "evidence": "Despite stronger language understanding (e.g., LLaMA3-8B), decoder-only LLMs underperform smaller T5 encoders on alignment; the powerful text comprehension and reasoning abilities do not manifest in this scenario."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MathPile: A Billion-Token-Scale Pretraining Corpus for Math",
+      "evidence": "PIQA is one of the general language benchmarks used to check post-pretraining effects ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-challenge Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MathPile: A Billion-Token-Scale Pretraining Corpus for Math",
+      "evidence": "The appendix evaluates ARC-Challenge after math continual pretraining ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-easy Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MathPile: A Billion-Token-Scale Pretraining Corpus for Math",
+      "evidence": "ARC-Easy is included in general language evaluations ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SciQ (Accuracy %)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MathPile: A Billion-Token-Scale Pretraining Corpus for Math",
+      "evidence": "SciQ is reported among general benchmarks with acc_norm ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA Accuracy",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MathPile: A Billion-Token-Scale Pretraining Corpus for Math",
+      "evidence": "HellaSwag is included in the general language modeling evaluation suite ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HellaSwag Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "MathPile: A Billion-Token-Scale Pretraining Corpus for Math",
+      "evidence": "HellaSwag is included in the general language modeling evaluation suite ."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU 5-shot Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "Self-playing Adversarial Language Game Enhances LLM Reasoning",
+      "evidence": "MMLU is used as a general performance evaluation requiring world knowledge and problem‑solving."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Adversarial Game‑Play Skill",
+      "other_type": "constructs",
+      "relationship_type": "influences",
+      "paper": "Self-playing Adversarial Language Game Enhances LLM Reasoning",
+      "evidence": "The game requires understanding to infer from dialogue history."
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU 5-shot Accuracy (%)",
+      "other_type": "measurements",
+      "relationship_type": "measured-by",
+      "paper": "BAM! Just Like That: Simple and Efficient Parameter Upcycling for Mixture of Experts",
+      "evidence": "They use MMLU (5-shot) to test general language understanding ."
+    }
+  ],
+  "relationship_count": 33,
+  "incoming_relationship_count": 6,
+  "outgoing_relationship_count": 27
+}

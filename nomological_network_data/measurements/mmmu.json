@@ -1,0 +1,173 @@
+{
+  "canonical_name": "MMMU",
+  "type": "measurement",
+  "canonical_definition": "MMMU is a multimodal benchmark designed to evaluate multidisciplinary understanding and reasoning, particularly in college-level or expert-level knowledge-based question-answering tasks. It emphasizes cross-disciplinary problem-solving across diverse domains, often framed as exam-style questions requiring integration of textual and visual information. While some papers describe it as a general multimodal understanding benchmark, others highlight its focus on knowledge-intensive reasoning with relatively low visual dependence compared to other vision-centric tasks.",
+  "expert_reviewed": false,
+  "names": [
+    "MMMU",
+    "MMMU Accuracy (%)",
+    "MMMU Performance",
+    "MMMU Score"
+  ],
+  "papers": [
+    "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+    "CogVLM: Visual Expert for Pretrained Language Models",
+    "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts",
+    "Efficient Large Multi-modal Models via Visual Context Compression",
+    "Improving Alignment and Robustness with Circuit Breakers",
+    "InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD",
+    "Measuring Multimodal Mathematical Reasoning with MATH-Vision Dataset",
+    "Prism: A Framework for Decoupling and Assessing the Capabilities of VLMs",
+    "VisMin: Visual Minimal-Change Understanding",
+    "What matters when building vision-language models?"
+  ],
+  "paper_count": 10,
+  "group_ids": [
+    677,
+    1062,
+    1518,
+    1758,
+    1803,
+    3444,
+    4357,
+    4601,
+    4618,
+    5303
+  ],
+  "definitions": [
+    {
+      "text": "Widely used multimodal benchmark clustered as knowledge-based QA; shows low visual dependence in this study. MMMU Accuracy (%)",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs"
+    },
+    {
+      "text": "Multidisciplinary college-level multimodal problems. MMMU MMMU score (val/test)",
+      "paper": "What matters when building vision-language models?"
+    },
+    {
+      "text": "Massive multi-discipline multimodal understanding and reasoning. MMMU Benchmark-specific score",
+      "paper": "VisMin: Visual Minimal-Change Understanding"
+    },
+    {
+      "text": "Reported performance on the MMMU benchmark for multimodal understanding in the paper’s figures . MMMU Score",
+      "paper": "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts"
+    },
+    {
+      "text": "Massive multi-discipline multimodal understanding and reasoning (expert-level) MMMU Accuracy (%)",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models"
+    },
+    {
+      "text": "Multi‑discipline multimodal understanding MMMU Overall score",
+      "paper": "InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD"
+    },
+    {
+      "text": "Massive multi‑discipline multimodal understanding MMMU Score (higher is better)",
+      "paper": "Improving Alignment and Robustness with Circuit Breakers"
+    },
+    {
+      "text": "Massive multi-discipline multimodal exam-style questions MMMU Accuracy (%)  .",
+      "paper": "Prism: A Framework for Decoupling and Assessing the Capabilities of VLMs"
+    },
+    {
+      "text": "Multi-discipline multimodal understanding/exam benchmark MMMU Accuracy (%)",
+      "paper": "Efficient Large Multi-modal Models via Visual Context Compression"
+    },
+    {
+      "text": "Accuracy on the MMMU multimodal benchmark; used for comparison with MATH‑V. MMMU Zero‑shot Accuracy (%)",
+      "paper": "Measuring Multimodal Mathematical Reasoning with MATH-Vision Dataset"
+    }
+  ],
+  "definition_count": 10,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge-based Question Answering",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+      "evidence": "MMMU is clustered as knowledge-based QA and shows distinct correlation patterns."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+      "evidence": "MMMU displays a small vision vs no‑vision gap, implying reliance on language skills."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multidisciplinary Problem Solving (Multimodal)",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "What matters when building vision-language models?",
+      "evidence": "MMMU is used to assess cross-domain multimodal problem solving."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts",
+      "evidence": ""
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models",
+      "evidence": "MMMU is a large-scale, multi-discipline multimodal reasoning benchmark for expert-level tasks ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Scientific Knowledge Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Matryoshka Query Transformer for Large Vision-Language Models",
+      "evidence": "Subject-level scientific knowledge tasks (e.g., MMMU) remain robust with few tokens."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD",
+      "evidence": "MMMU is included in the 16‑benchmark evaluation with resolution stats ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Capability",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Improving Alignment and Robustness with Circuit Breakers",
+      "evidence": "Performance on MMMU preserved with circuit breakers ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Vision-Language Task Solving",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Prism: A Framework for Decoupling and Assessing the Capabilities of VLMs",
+      "evidence": "Evaluation includes MMMU across disciplines ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Efficient Large Multi-modal Models via Visual Context Compression",
+      "evidence": "MMMU appears in the reported benchmark list used to assess broad multimodal capability ."
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal Mathematical Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured-by",
+      "paper": "Measuring Multimodal Mathematical Reasoning with MATH-Vision Dataset",
+      "evidence": "MMMU is used for multimodal understanding/reasoning comparisons; SOTA on MATH‑V is markedly lower than on MMMU."
+    }
+  ],
+  "relationship_count": 11,
+  "incoming_relationship_count": 11,
+  "outgoing_relationship_count": 0
+}
