@@ -121,11 +121,48 @@ h1{
   background: rgba(255,255,255,0.80);
   color: var(--text);
   box-shadow: 0 6px 18px rgba(2, 8, 23, 0.06);
+  font-weight: 700;
+  font-size: 14px;
 }
 .filter-btn:hover{
   background: rgba(248,250,252,0.95);
   transform: translateY(-1px);
 }
+
+/* Static category coloring for tabs (always on, filled like the top menu) */
+.filter-btn[data-type="constructs"],
+.filter-btn[data-type="construct"]{
+  background: linear-gradient(135deg, var(--green), #15803d);
+  border-color: rgba(22, 163, 74, 0.30);
+  color: #ffffff;
+}
+.filter-btn[data-type="constructs"]:hover,
+.filter-btn[data-type="construct"]:hover{
+  background: linear-gradient(135deg, #15803d, #166534);
+}
+
+.filter-btn[data-type="measurements"],
+.filter-btn[data-type="measurement"]{
+  background: linear-gradient(135deg, var(--blue), #1d4ed8);
+  border-color: rgba(37, 99, 235, 0.30);
+  color: #ffffff;
+}
+.filter-btn[data-type="measurements"]:hover,
+.filter-btn[data-type="measurement"]:hover{
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+}
+
+.filter-btn[data-type="behaviors"],
+.filter-btn[data-type="behavior"]{
+  background: linear-gradient(135deg, var(--pink), #be185d);
+  border-color: rgba(219, 39, 119, 0.30);
+  color: #ffffff;
+}
+.filter-btn[data-type="behaviors"]:hover,
+.filter-btn[data-type="behavior"]:hover{
+  background: linear-gradient(135deg, #be185d, #9d174d);
+}
+
 .filter-btn.active{
   background: linear-gradient(135deg, var(--brand), var(--brand2));
   border-color: rgba(37, 99, 235, 0.25);
@@ -133,6 +170,43 @@ h1{
 }
 .filter-btn.active:hover{
   background: linear-gradient(135deg, var(--brand2), #1d4ed8);
+}
+
+/* Category-colored active tabs (match constructs/measurements/behaviors palette) */
+.filter-btn.active[data-type="constructs"],
+.filter-btn.active[data-type="construct"]{
+  background: linear-gradient(135deg, var(--green), #15803d);
+  border-color: rgba(22, 163, 74, 0.30);
+  box-shadow: 0 12px 28px rgba(22, 163, 74, 0.22);
+  color: #ffffff;
+}
+.filter-btn.active[data-type="constructs"]:hover,
+.filter-btn.active[data-type="construct"]:hover{
+  background: linear-gradient(135deg, #15803d, #166534);
+}
+
+.filter-btn.active[data-type="measurements"],
+.filter-btn.active[data-type="measurement"]{
+  background: linear-gradient(135deg, var(--blue), #1d4ed8);
+  border-color: rgba(37, 99, 235, 0.30);
+  box-shadow: 0 12px 28px rgba(37, 99, 235, 0.22);
+  color: #ffffff;
+}
+.filter-btn.active[data-type="measurements"]:hover,
+.filter-btn.active[data-type="measurement"]:hover{
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+}
+
+.filter-btn.active[data-type="behaviors"],
+.filter-btn.active[data-type="behavior"]{
+  background: linear-gradient(135deg, var(--pink), #be185d);
+  border-color: rgba(219, 39, 119, 0.30);
+  box-shadow: 0 12px 28px rgba(219, 39, 119, 0.22);
+  color: #ffffff;
+}
+.filter-btn.active[data-type="behaviors"]:hover,
+.filter-btn.active[data-type="behavior"]:hover{
+  background: linear-gradient(135deg, #be185d, #9d174d);
 }
 
 /* Inputs */
@@ -154,6 +228,34 @@ h1{
 /* Panels */
 .main-content{
   height: calc(100vh - 270px);
+}
+
+.empty-state.home-intro{
+  color: #000000;
+}
+.empty-state.home-intro p{
+  color: #000000;
+}
+.empty-state.home-intro h3{
+  color: #000000;
+}
+
+.home-intro-section{
+  box-shadow: 0 10px 24px rgba(2, 8, 23, 0.08);
+}
+
+/* Home cards: match category palette */
+.home-intro-section-construct{
+  border-color: rgba(22, 163, 74, 0.30) !important;
+  background: rgba(22, 163, 74, 0.08) !important;
+}
+.home-intro-section-measurement{
+  border-color: rgba(37, 99, 235, 0.30) !important;
+  background: rgba(37, 99, 235, 0.08) !important;
+}
+.home-intro-section-behavior{
+  border-color: rgba(219, 39, 119, 0.30) !important;
+  background: rgba(219, 39, 119, 0.08) !important;
 }
 
 .results-panel{

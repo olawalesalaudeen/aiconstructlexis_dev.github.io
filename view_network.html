@@ -414,19 +414,6 @@
                     <div><strong>Verification Status:</strong> We have incorporated a flag to indicate if a specific definition or connection has undergone expert review and verification. Where this flag is absent, the content has not been manually verified.</div>
                 </div>
             </div>
-            <div class="contact-box">
-                <div class="contact-box-title">Contact &amp; Updates</div>
-                <div class="contact-box-row">
-                    For questions or collaboration, email
-                    <a href="mailto:aiconstructlexis@gmail.com" class="contact-link">aiconstructlexis@gmail.com</a>.
-                </div>
-                <div>
-                    Subscribe to our Substack for project updates and insights:
-                    <a href="https://substack.com/@aiconstructlexis" target="_blank" rel="noopener" class="substack-link">
-                        @aiconstructlexis
-                    </a>
-                </div>
-            </div>
             <div class="filter-buttons">
                 <button class="filter-btn active" data-type="home">Home</button>
                 <a href="network_graph.html" class="graph-btn" aria-label="View nomological network">
@@ -459,7 +446,7 @@
             <div class="filter-controls">
                 <div class="filter-control">
                     <label style="margin-right: 6px;">
-                        Term Referenced in Min Papers
+                        Only display terms cited in ≥ N papers (per category)
                         <span class="info-icon" aria-label="About min papers filter">
                             i
                             <span class="info-tooltip" role="tooltip">
@@ -489,6 +476,21 @@
                 </div>
             </div>
         </div>
+        <footer class="site-footer" aria-label="Site footer">
+            <div class="contact-box" style="margin: 0;">
+                <div class="contact-box-title">Contact &amp; Updates</div>
+                <div class="contact-box-row">
+                    For questions or collaboration, email
+                    <a href="mailto:aiconstructlexis@gmail.com" class="contact-link">aiconstructlexis@gmail.com</a>.
+                </div>
+                <div>
+                    Subscribe to our Substack for project updates and insights:
+                    <a href="https://substack.com/@aiconstructlexis" target="_blank" rel="noopener" class="substack-link">
+                        @aiconstructlexis
+                    </a>
+                </div>
+            </div>
+        </footer>
     </div>
 
     <script>
@@ -1033,22 +1035,22 @@
                                 Conjointly’s overview
                             </a>).
                         </p>
-                        <div class="home-intro-section">
+                        <div class="home-intro-section home-intro-section-construct">
                             <div class="home-intro-section-title">Constructs</div>
                             <p>
                                 Defined theoretical concepts that characterize AI systems, including capabilities (e.g., reasoning and software engineering ability) and risks (e.g., safety and bias). Each construct anchors how we interpret behavior and design measurements.
                             </p>
                         </div>
-                        <div class="home-intro-section">
-                            <div class="home-intro-section-title">Associated Behaviors</div>
-                            <p>
-                                Observed behavioral patterns that reveal how constructs manifest, interact, and generalize across models, tasks, and environments (e.g., goal misalignment during tool use and the emergence of social bias in generated outputs).
-                            </p>
-                        </div>
-                        <div class="home-intro-section" style="margin-bottom: 20px;">
-                            <div class="home-intro-section-title">Valid Measurements</div>
+                        <div class="home-intro-section home-intro-section-measurement">
+                            <div class="home-intro-section-title">Measurement Instruments</div>
                             <p>
                                 Operational definitions and measurements that translate constructs into observable quantities (e.g., benchmarks and user surveys). Each measurement is evaluated for its validity—whether it captures the intended construct and supports sound inferences about model behavior.
+                            </p>
+                        </div>
+                        <div class="home-intro-section home-intro-section-behavior" style="margin-bottom: 20px;">
+                            <div class="home-intro-section-title">Behaviors/Tasks</div>
+                            <p>
+                                Observed behavioral patterns that reveal how constructs manifest, interact, and generalize across models, tasks, and environments (e.g., goal misalignment during tool use and the emergence of social bias in generated outputs).
                             </p>
                         </div>
                         ${networkData ? `
@@ -1056,7 +1058,11 @@
                             <button class="filter-btn" data-type="constructs" onclick="document.querySelector('.filter-btn[data-type=constructs]').click()">Constructs (${counts.constructs})</button>
                             <button class="filter-btn" data-type="measurements" onclick="document.querySelector('.filter-btn[data-type=measurements]').click()">Measurement Instruments (${counts.measurements})</button>
                             <button class="filter-btn" data-type="behaviors" onclick="document.querySelector('.filter-btn[data-type=behaviors]').click()">Behaviors/Tasks (${counts.behaviors})</button>
-                        </div>` : '<p style="margin-top: 20px; color: #e74c3c;">Please load a JSON file first.</p>'}
+                            <a href="network_graph.html" class="graph-btn home-graph-btn" aria-label="View nomological network">
+                                View Nomological Network
+                            </a>
+                        </div>
+                        ` : '<p style="margin-top: 20px; color: #e74c3c;">Please load a JSON file first.</p>'}
                     </div>
                 `;
                 return;
@@ -1477,6 +1483,12 @@
             const expertReviewed = !!node.expertReviewed;
             const expertTitle = expertReviewed ? 'Expert reviewed' : 'Not expert reviewed';
             const expertColor = expertReviewed ? '#2e7d32' : '#c0392b';
+            const accentByType = {
+                construct: { accent: '#16a34a', chipBg: 'rgba(22,163,74,0.12)', chipFg: '#14532d', panelBg: 'rgba(22,163,74,0.06)' },
+                measurement: { accent: '#2563eb', chipBg: 'rgba(37,99,235,0.12)', chipFg: '#1e3a8a', panelBg: 'rgba(37,99,235,0.06)' },
+                behavior: { accent: '#db2777', chipBg: 'rgba(219,39,119,0.12)', chipFg: '#831843', panelBg: 'rgba(219,39,119,0.06)' },
+            };
+            const theme = accentByType[node.type] || accentByType.construct;
             let html = `<div class="details-header">${escapeHtml(node.name)}</div>
                 <div style="margin-top: -8px; margin-bottom: 14px; font-size: 12px; font-weight: 600; color: ${expertColor};">
                     ${expertTitle}
@@ -1489,16 +1501,16 @@
                 : [];
             html += `<div class="definitions-dropdown" style="margin-bottom: 15px;">
                     <label style="font-weight: 600; color: #2c3e50;">Implied Definitions from Papers</label>
-                    <div style="padding: 12px; background: #f8f9fa; border: 2px solid #3498db; border-radius: 6px; margin-top: 6px;">
+                    <div style="padding: 12px; background: ${theme.panelBg}; border: 2px solid ${theme.accent}; border-radius: 6px; margin-top: 6px;">
                         <div style="font-size: 13px; color: ${displayConsensus === 'N/A' ? '#95a5a6' : '#2c3e50'}; margin-bottom: 8px; line-height: 1.5;">${escapeHtml(displayConsensus)}</div>
                         <div style="font-size: 11px; color: #7f8c8d;">
                             ${canonicalPapers.map(p => {
                     const url = (networkData.paperUrlByTitle && networkData.paperUrlByTitle[p]) ? networkData.paperUrlByTitle[p] : null;
                     const label = escapeHtml(p.length > 35 ? p.substring(0, 35) + '...' : p);
                     if (url) {
-                        return `<a href="${url}" target="_blank" rel="noopener" title="${escapeHtml(p)}" style="display: inline-block; margin-right: 6px; margin-bottom: 4px; padding: 3px 8px; background: #e3f2fd; border-radius: 3px; color: #1565c0; text-decoration: none; cursor: pointer;">${label}</a>`;
+                        return `<a href="${url}" target="_blank" rel="noopener" title="${escapeHtml(p)}" style="display: inline-block; margin-right: 6px; margin-bottom: 4px; padding: 3px 8px; background: ${theme.chipBg}; border-radius: 3px; color: ${theme.chipFg}; text-decoration: none; cursor: pointer;">${label}</a>`;
                     }
-                    return `<a href="#" onclick="searchForPaper('${escapeHtml(p).replace(/'/g, "\\'")}'); return false;" title="${escapeHtml(p)}" style="display: inline-block; margin-right: 6px; margin-bottom: 4px; padding: 3px 8px; background: #e3f2fd; border-radius: 3px; color: #1565c0; text-decoration: none; cursor: pointer;">${label}</a>`;
+                    return `<a href="#" onclick="searchForPaper('${escapeHtml(p).replace(/'/g, "\\'")}'); return false;" title="${escapeHtml(p)}" style="display: inline-block; margin-right: 6px; margin-bottom: 4px; padding: 3px 8px; background: ${theme.chipBg}; border-radius: 3px; color: ${theme.chipFg}; text-decoration: none; cursor: pointer;">${label}</a>`;
                 }).join('')}
                             <span style="font-size: 10px; color: #95a5a6; margin-left: 4px;">(${canonicalPapers.length} paper${canonicalPapers.length !== 1 ? 's' : ''})</span>
                             </div>
@@ -1511,19 +1523,19 @@
                     .filter(def => !canonicalDefinition || def !== canonicalDefinition); // Exclude canonical if it exists
                 html += `<div class="definitions-dropdown">
                     <label for="definitions-select">References in Papers (${definitionsArray.length + (canonicalDefinition ? 1 : 0)})</label>
-                    <div id="definitions-list" style="border: 1px solid #ddd; border-radius: 6px; background: white; max-height: 200px; overflow-y: auto;">
+                    <div id="definitions-list" style="border: 1px solid ${theme.accent}; border-radius: 6px; background: ${theme.panelBg}; max-height: 200px; overflow-y: auto;">
                         ${definitionsArray.map((def, idx) => {
                     const papers = Array.from(definitionToPapers.get(def));
-                    return `<div style="padding: 8px 12px; border-bottom: 1px solid #f0f0f0; ${idx === 0 ? 'background: #f8f9fa;' : ''}">
+                    return `<div style="padding: 8px 12px; border-bottom: 1px solid rgba(0,0,0,0.06); background: ${idx % 2 === 0 ? 'rgba(255,255,255,0.65)' : 'rgba(255,255,255,0.40)'};">
                                 <div style="font-size: 13px; color: #2c3e50; margin-bottom: 6px;">${escapeHtml(def)}</div>
                                 <div style="font-size: 11px; color: #7f8c8d;">
                                     ${papers.map(p => {
                         const url = (networkData.paperUrlByTitle && networkData.paperUrlByTitle[p]) ? networkData.paperUrlByTitle[p] : null;
                         const label = escapeHtml(p.length > 35 ? p.substring(0, 35) + '...' : p);
                         if (url) {
-                            return `<a href="${url}" target="_blank" rel="noopener" title="${escapeHtml(p)}" style="display: inline-block; margin-right: 6px; margin-bottom: 4px; padding: 3px 8px; background: #e3f2fd; border-radius: 3px; color: #1565c0; text-decoration: none; cursor: pointer;">${label}</a>`;
+                            return `<a href="${url}" target="_blank" rel="noopener" title="${escapeHtml(p)}" style="display: inline-block; margin-right: 6px; margin-bottom: 4px; padding: 3px 8px; background: ${theme.chipBg}; border-radius: 3px; color: ${theme.chipFg}; text-decoration: none; cursor: pointer;">${label}</a>`;
                         }
-                        return `<a href="#" onclick="searchForPaper('${escapeHtml(p).replace(/'/g, "\\'")}'); return false;" title="${escapeHtml(p)}" style="display: inline-block; margin-right: 6px; margin-bottom: 4px; padding: 3px 8px; background: #e3f2fd; border-radius: 3px; color: #1565c0; text-decoration: none; cursor: pointer;">${label}</a>`;
+                        return `<a href="#" onclick="searchForPaper('${escapeHtml(p).replace(/'/g, "\\'")}'); return false;" title="${escapeHtml(p)}" style="display: inline-block; margin-right: 6px; margin-bottom: 4px; padding: 3px 8px; background: ${theme.chipBg}; border-radius: 3px; color: ${theme.chipFg}; text-decoration: none; cursor: pointer;">${label}</a>`;
                     }).join('')}
                                     <span style="font-size: 10px; color: #95a5a6; margin-left: 4px;">(${papers.length} paper${papers.length !== 1 ? 's' : ''})</span>
                             </div>

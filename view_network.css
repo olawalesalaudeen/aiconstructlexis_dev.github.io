@@ -408,24 +408,32 @@ h1 {
     max-width: 900px;
     margin: 0 auto;
     text-align: left;
+    color: #000000;
 }
 
 .home-intro-title {
     text-align: center;
     margin-bottom: 16px;
+    color: #000000;
 }
 
 .home-intro-section {
     margin-bottom: 12px;
+    padding: 14px 16px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.95);
 }
 
 .home-intro-section-title {
     font-weight: 600;
     margin-bottom: 4px;
+    color: #000000;
 }
 
 .home-intro-section p {
     margin: 0;
+    color: #000000;
 }
 
 .empty-state h3 {
@@ -457,11 +465,28 @@ h1 {
 }
 
 .home-quick-filters {
-    display: flex;
-    gap: 16px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px 16px;
     justify-content: center;
     margin-top: 30px;
-    flex-wrap: wrap;
+    align-items: center;
+}
+
+.home-quick-filters .filter-btn{
+    width: 100%;
+    justify-content: center;
+}
+
+.home-quick-filters .home-graph-btn{
+    grid-column: 2;
+    justify-self: center;
+}
+
+/* Footer */
+.site-footer{
+    margin-top: 16px;
+    padding: 0 0 20px 0;
 }
 
 @keyframes spin {
