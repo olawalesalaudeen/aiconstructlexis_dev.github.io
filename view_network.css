@@ -231,6 +231,17 @@ h1 {
     padding: 10px;
 }
 
+/* Home layout: expand panel so you don't scroll inside it */
+body.home-mode .main-content{
+    height: auto !important;
+}
+body.home-mode .results-panel{
+    height: auto !important;
+}
+body.home-mode .results-list{
+    overflow-y: visible !important;
+}
+
 .result-item {
     padding: 15px;
     border-bottom: 1px solid #ecf0f1;

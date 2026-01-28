@@ -1014,6 +1014,11 @@
             const resultsList = document.getElementById('resultsList');
 
             const search = currentSearch.trim().toLowerCase();
+            // Layout mode: Home (no search) should not force an internal scroll panel
+            try {
+                const homeMode = (currentFilter === 'home') && !search;
+                document.body.classList.toggle('home-mode', homeMode);
+            } catch (e) {}
 
             // Home page rendering (only when not searching)
             if (currentFilter === 'home' && !search) {
