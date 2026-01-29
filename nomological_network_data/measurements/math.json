@@ -1,5 +1,5 @@
 {
-  "canonical_name": "MATH Accuracy",
+  "canonical_name": "MATH",
   "type": "measurement",
   "canonical_definition": "MATH Accuracy refers to a benchmark for evaluating mathematical problem-solving ability using competition-level problems from the MATH dataset (Hendrycks MATH). It assesses accuracy on formal mathematics tasks spanning subjects such as Algebra, Prealgebra, Intermediate Algebra, Counting and Probability, Number Theory, Geometry, and Precalculus, often framed as a core evaluation metric for mathematical reasoning. The benchmark is commonly applied to measure performance across varying model architectures, fine-tuning methods, and decoding strategies in solving complex mathematical problems.",
   "expert_reviewed": false,

@@ -1,7 +1,7 @@
 {
-  "canonical_name": "GQA Accuracy (%)",
+  "canonical_name": "GQA",
   "type": "measurement",
-  "canonical_definition": "GQA Accuracy (%) measures performance on the GQA dataset, a benchmark for compositional visual question answering that evaluates real-world visual reasoning and language-image understanding capabilities in multimodal models. The task involves answering open-ended questions about images with compositional structure, requiring spatial and logical reasoning, and is commonly used to assess generalization in vision-language systems. Some papers note its application to identify language bias or domain-specific gaps in model performance.",
+  "canonical_definition": "GQA is a benchmark for compositional visual question answering that evaluates real-world visual reasoning and language-image understanding capabilities in multimodal models. The task involves answering open-ended questions about images with compositional structure, requiring spatial and logical reasoning, and is commonly used to assess generalization in vision-language systems. Some papers note its application to identify language bias or domain-specific gaps in model performance.",
   "expert_reviewed": false,
   "names": [
     "GQA",

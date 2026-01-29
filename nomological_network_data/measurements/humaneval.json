@@ -1,5 +1,5 @@
 {
-  "canonical_name": "HumanEval Score (%)",
+  "canonical_name": "HumanEval",
   "type": "measurement",
   "canonical_definition": "HumanEval is a code generation/function synthesis benchmark that evaluates the functional correctness of generated code against hidden test cases. It presents programming problems where models must synthesize complete functions to satisfy specified behaviors, assessing core coding capabilities like algorithm implementation, API usage, and problem decomposition. Some papers frame it with Pass@k metrics (notably Pass@1) while others report normalized accuracy scores, but the benchmark fundamentally measures code generation correctness through executable test validation.",
   "expert_reviewed": false,

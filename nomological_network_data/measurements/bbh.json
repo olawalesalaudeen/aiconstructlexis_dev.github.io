@@ -1,5 +1,5 @@
 {
-  "canonical_name": "BBH Accuracy (%)",
+  "canonical_name": "BBH",
   "type": "measurement",
   "canonical_definition": "BIG-Bench Hard (BBH) is a reasoning evaluation benchmark comprising 23 challenging tasks spanning diverse domains, designed to assess general reasoning capabilities in language models. The tasks often involve multi-step logical inference, with some variants incorporating chain-of-thought reasoning extraction or few-shot settings (e.g., 3-shot). While some papers frame it as a multidomain reasoning benchmark, others emphasize its use for evaluating logical reasoning or task-specific cognitive capabilities, with evaluations typically conducted via accuracy metrics.",
   "expert_reviewed": false,
