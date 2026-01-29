@@ -1,7 +1,7 @@
 {
   "canonical_name": "VQAv2",
   "type": "measurement",
-  "canonical_definition": "N/A",
+  "canonical_definition": "VQAv2 refers to the Visual Question Answering v2 benchmark, a dataset and task format designed to assess vision-language understanding through open-ended question answering about images. It evaluates a model's ability to comprehend visual content and generate accurate answers to natural language questions, with variants emphasizing general, academic, open-world, or daily-life contexts. Some papers frame it as a k-shot evaluation or highlight its role as a standard benchmark for multimodal models.",
   "expert_reviewed": false,
   "names": [
     "GQA Accuracy (%)",

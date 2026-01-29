@@ -1,7 +1,7 @@
 {
   "canonical_name": "TruthfulQA",
   "type": "measurement",
-  "canonical_definition": "N/A",
+  "canonical_definition": "TruthfulQA is a question-answering benchmark designed to evaluate the truthfulness of language models' responses, particularly under prompts likely to elicit falsehoods or requiring resistance to misleading contexts. It typically employs multiple-choice or open-ended QA formats, with tasks emphasizing accurate and factually correct answering behavior over other response qualities. Some papers frame it as assessing truthfulness in adversarial or safety-critical scenarios, while others focus on general capability retention in truthful reasoning.",
   "expert_reviewed": false,
   "names": [
     "TruthfulQA",

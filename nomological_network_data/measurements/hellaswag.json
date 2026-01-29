@@ -1,7 +1,7 @@
 {
   "canonical_name": "HellaSwag",
   "type": "measurement",
-  "canonical_definition": "HellaSwag Accuracy (%) refers to a benchmark measuring performance on the HellaSwag dataset, which evaluates commonsense sentence completion through multiple-choice questions. The task involves selecting the most plausible continuation of a given context, assessing models' abilities in commonsense reasoning and contextual understanding of everyday scenarios. Some papers describe it as a multiple-choice commonsense inference benchmark with adversarial choice construction, while others emphasize its role in evaluating grounded or narrative-based commonsense reasoning.",
+  "canonical_definition": "HellaSwag is a benchmark that evaluates commonsense sentence completion through multiple-choice questions. The task involves selecting the most plausible continuation of a given context, assessing models' abilities in commonsense reasoning and contextual understanding of everyday scenarios. Some papers describe it as a multiple-choice commonsense inference benchmark with adversarial choice construction, while others emphasize its role in evaluating grounded or narrative-based commonsense reasoning.",
   "expert_reviewed": false,
   "names": [
     "HellaSwag",
