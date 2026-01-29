@@ -516,7 +516,8 @@
                 nodes: {
                     borderWidth: 2,
                     shadow: true,
-                    font: { size: 12 }
+                    font: { size: 14 },
+                    margin: 18
                 },
                 edges: {
                     width: 1.5,
@@ -524,19 +525,18 @@
                 },
                 physics: {
                     enabled: true,
-                    // OPTIMIZATION: Reduced iterations for faster initial stabilization
                     stabilization: {
-                        iterations: 100,  // Reduced from 200 for faster load
-                        updateInterval: 25  // Update every 25ms for smoother progress
+                        iterations: 500,
+                        updateInterval: 25
                     },
-                    barnesHut: {
-                        gravitationalConstant: -2200,
-                        centralGravity: 0.03,
-                        springLength: 280,
-                        springConstant: 0.018,
-                        damping: 0.25,
-                        // OPTIMIZATION: Improve performance for large graphs
-                        avoidOverlap: 0.1
+                    // Use the repulsion solver to reduce node overlap (slightly reduced)
+                    solver: 'repulsion',
+                    repulsion: {
+                        nodeDistance: 260,
+                        centralGravity: 0.012,
+                        springLength: 420,
+                        springConstant: 0.02,
+                        damping: 0.58
                     }
                 },
                 interaction: {
