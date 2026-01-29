@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nomological Network  – AI Construct Lexis</title>
+    <title>Nomological Network – AI Construct Lexis</title>
     <link rel="stylesheet" href="view_network.css">
     <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
     <style>
@@ -28,7 +29,7 @@
         .graph-header {
             background: #ffffff;
             padding: 16px 20px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             margin: 0;
             display: flex;
             justify-content: space-between;
@@ -106,7 +107,7 @@
         .graph-controls {
             background: #ffffff;
             padding: 10px 16px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             margin: 0;
             display: flex;
             gap: 12px;
@@ -163,12 +164,13 @@
             text-align: right;
             flex-shrink: 0;
             background: #ffffff;
-            box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
         }
     </style>
     <!-- Theme overrides (visual-only). Loaded after inline styles to win cascade. -->
     <link rel="stylesheet" href="view_network_theme.css">
 </head>
+
 <body>
     <div class="graph-container">
         <div class="graph-header">
@@ -178,7 +180,8 @@
                 </div>
                 <div class="graph-title">Nomological Network</div>
                 <div class="graph-subtitle">
-                    Click a node to highlight its connections • Double-click to view details • Click empty space to reset
+                    Click a node to highlight its connections • Double-click to view details • Click empty space to
+                    reset
                 </div>
             </div>
             <div class="legend">
@@ -211,7 +214,8 @@
                 </div>
                 <div>
                     Subscribe to our Substack for project updates and insights:
-                    <a href="https://substack.com/@aiconstructlexis" target="_blank" rel="noopener" class="substack-link">
+                    <a href="https://substack.com/@aiconstructlexis" target="_blank" rel="noopener"
+                        class="substack-link">
                         @aiconstructlexis
                     </a>
                 </div>
@@ -226,7 +230,40 @@
         let nodeMap = new Map(); // canonical_name -> node data
         let nameToCanonical = new Map(); // any name/alias -> canonical_name
 
+        // OPTIMIZATION: Request deduplication cache
+        const fetchCache = new Map();
+
+        // OPTIMIZATION: DOM element cache
+        const domCache = {
+            network: null,
+            graphSearchInput: null,
+            resetViewBtn: null,
+            togglePhysicsBtn: null,
+            graphStats: null,
+            init: function () {
+                this.network = document.getElementById('network');
+                this.graphSearchInput = document.getElementById('graphSearchInput');
+                this.resetViewBtn = document.getElementById('resetViewBtn');
+                this.togglePhysicsBtn = document.getElementById('togglePhysicsBtn');
+                this.graphStats = document.getElementById('graphStats');
+            }
+        };
+
+        // OPTIMIZATION: Tooltip cache
+        const tooltipCache = new Map();
+
+        // OPTIMIZATION: Display name cache
+        const displayNameCache = new Map();
+
+        // OPTIMIZATION: Edge adjacency map for fast neighbor lookups
+        let edgeAdjacencyMap = new Map(); // nodeId -> Set of connected nodeIds
+
         async function fetchFromPossiblePaths(relativePath) {
+            // Check cache first
+            if (fetchCache.has(relativePath)) {
+                return fetchCache.get(relativePath);
+            }
+
             const pathParts = window.location.pathname.split('/').filter(p => p);
             const baseParts = pathParts.slice(0, -2);
             const basePath = baseParts.length > 0 ? '/' + baseParts.join('/') : '';
@@ -237,57 +274,97 @@
                 '../' + relativePath
             ];
             const uniquePaths = [...new Set(possiblePaths)];
-            for (const path of uniquePaths) {
-                try {
-                    const resp = await fetch(path);
-                    if (resp.ok) return await resp.text();
-                } catch (e) {}
-            }
-            throw new Error('Could not load ' + relativePath);
+
+            // Create promise and cache it
+            const fetchPromise = (async () => {
+                for (const path of uniquePaths) {
+                    try {
+                        const resp = await fetch(path);
+                        if (resp.ok) {
+                            const text = await resp.text();
+                            fetchCache.set(relativePath, text);
+                            return text;
+                        }
+                    } catch (e) { }
+                }
+                throw new Error('Could not load ' + relativePath);
+            })();
+
+            // Cache the promise (not the result) to deduplicate concurrent requests
+            fetchCache.set(relativePath, fetchPromise);
+            return fetchPromise;
         }
 
+        // OPTIMIZATION: Memoized display name calculation
         function getDisplayNameFromConfig(cfg, type) {
-            if (type === 'construct') return cfg.canonical_name || '';
-            const candidates = [cfg.canonical_name].concat(cfg.names || []);
-            const valid = candidates.filter(Boolean);
-            return valid.length ? valid.reduce(function (a, b) { return a.length <= b.length ? a : b; }) : (cfg.canonical_name || '');
+            const cacheKey = `${type}_${cfg.canonical_name}`;
+            if (displayNameCache.has(cacheKey)) {
+                return displayNameCache.get(cacheKey);
+            }
+
+            let result;
+            if (type === 'construct') {
+                result = cfg.canonical_name || '';
+            } else {
+                const candidates = [cfg.canonical_name].concat(cfg.names || []);
+                const valid = candidates.filter(Boolean);
+                result = valid.length ? valid.reduce(function (a, b) { return a.length <= b.length ? a : b; }) : (cfg.canonical_name || '');
+            }
+
+            displayNameCache.set(cacheKey, result);
+            return result;
         }
 
         function getNodeId(type, canonicalName) {
             return type + '::' + canonicalName;
         }
 
+        // OPTIMIZED: Parallel file loading
         async function loadConfigs(index, type, folder) {
             const files = index[folder] || [];
             const configs = [];
-            for (const file of files) {
+
+            // Load all files in parallel
+            const loadPromises = files.map(async (file) => {
                 try {
                     const text = await fetchFromPossiblePaths('nomological_network_data/' + folder + '/' + file);
                     const cfg = JSON.parse(text);
                     const canonicalName = cfg.canonical_name || file.replace('.json', '');
                     const displayName = getDisplayNameFromConfig(cfg, type);
-                    
-                    configs.push({
+
+                    return {
                         canonicalName: canonicalName,
                         displayName: displayName,
                         type: type,
                         config: cfg
-                    });
-
-                    // Build name mappings
-                    nodeMap.set(canonicalName, { canonicalName, displayName, type, config: cfg });
-                    nameToCanonical.set(canonicalName, canonicalName);
-                    if (Array.isArray(cfg.names)) {
-                        cfg.names.forEach(name => {
-                            if (name && name !== canonicalName) {
-                                nameToCanonical.set(name, canonicalName);
-                            }
-                        });
-                    }
+                    };
                 } catch (e) {
                     console.warn('Failed to load', file, e);
+                    return null;
                 }
-            }
+            });
+
+            const results = await Promise.all(loadPromises);
+
+            // Process results and build mappings
+            results.forEach(result => {
+                if (!result) return;
+                configs.push(result);
+
+                const { canonicalName, displayName, type, config: cfg } = result;
+
+                // Build name mappings
+                nodeMap.set(canonicalName, { canonicalName, displayName, type, config: cfg });
+                nameToCanonical.set(canonicalName, canonicalName);
+                if (Array.isArray(cfg.names)) {
+                    cfg.names.forEach(name => {
+                        if (name && name !== canonicalName) {
+                            nameToCanonical.set(name, canonicalName);
+                        }
+                    });
+                }
+            });
+
             return configs;
         }
 
@@ -295,15 +372,23 @@
             const indexText = await fetchFromPossiblePaths('nomological_network_data/index.json');
             const index = JSON.parse(indexText);
 
-            const constructs = await loadConfigs(index, 'construct', 'constructs');
-            const measurements = await loadConfigs(index, 'measurement', 'measurements');
-            const behaviors = await loadConfigs(index, 'behavior', 'behaviors_tasks');
+            // OPTIMIZED: Load all configs in parallel
+            const [constructs, measurements, behaviors] = await Promise.all([
+                loadConfigs(index, 'construct', 'constructs'),
+                loadConfigs(index, 'measurement', 'measurements'),
+                loadConfigs(index, 'behavior', 'behaviors_tasks')
+            ]);
 
             const allConfigs = constructs.concat(measurements).concat(behaviors);
             const indexCanonicalNames = new Set(allConfigs.map(c => c.canonicalName));
 
-            // Helper function to create HTML tooltip element with wrapping
+            // OPTIMIZATION: Cached tooltip creation
             function createTooltip(name, type, definition) {
+                const cacheKey = `${name}_${type}_${definition.substring(0, 50)}`;
+                if (tooltipCache.has(cacheKey)) {
+                    return tooltipCache.get(cacheKey);
+                }
+
                 const element = document.createElement('div');
                 element.style.maxWidth = '400px';
                 element.style.lineHeight = '1.5';
@@ -311,6 +396,13 @@
                 element.style.wordWrap = 'break-word';
                 element.style.whiteSpace = 'normal';
                 element.innerHTML = '<strong>' + name + '</strong> (' + type + ')<br><br>' + definition;
+
+                // Cache tooltip (limit cache size)
+                if (tooltipCache.size > 100) {
+                    const firstKey = tooltipCache.keys().next().value;
+                    tooltipCache.delete(firstKey);
+                }
+                tooltipCache.set(cacheKey, element);
                 return element;
             }
 
@@ -362,8 +454,8 @@
                     // Determine other node's type from relationships
                     const otherType = rel.other_type || 'construct';
                     const otherTypeShort = otherType.includes('construct') ? 'construct' :
-                                          otherType.includes('measurement') ? 'measurement' :
-                                          otherType.includes('behavior') ? 'behavior' : 'construct';
+                        otherType.includes('measurement') ? 'measurement' :
+                            otherType.includes('behavior') ? 'behavior' : 'construct';
 
                     const targetId = getNodeId(otherTypeShort, otherCanonical);
                     if (!nodeIdToType.has(targetId)) return;
@@ -386,11 +478,24 @@
             allNodesData = visNodes;
             allEdgesData = visEdges;
 
-            // Store original edge data for reset
+            // OPTIMIZATION: Precompute edge adjacency map for fast neighbor lookups
+            edgeAdjacencyMap.clear();
+            visEdges.forEach(edge => {
+                if (!edgeAdjacencyMap.has(edge.from)) {
+                    edgeAdjacencyMap.set(edge.from, new Set());
+                }
+                if (!edgeAdjacencyMap.has(edge.to)) {
+                    edgeAdjacencyMap.set(edge.to, new Set());
+                }
+                edgeAdjacencyMap.get(edge.from).add(edge.to);
+                edgeAdjacencyMap.get(edge.to).add(edge.from);
+            });
+
+            // OPTIMIZATION: Store original edge data for reset (avoid expensive JSON operations)
             const originalEdgeData = visEdges.map(edge => ({
                 from: edge.from,
                 to: edge.to,
-                color: JSON.parse(JSON.stringify(edge.color)),
+                color: { color: edge.color.color || '#95a5a6', highlight: edge.color.highlight || '#3498db' },
                 width: edge.width
             }));
 
@@ -410,13 +515,19 @@
                 },
                 physics: {
                     enabled: true,
-                    stabilization: { iterations: 200 },
+                    // OPTIMIZATION: Reduced iterations for faster initial stabilization
+                    stabilization: {
+                        iterations: 100,  // Reduced from 200 for faster load
+                        updateInterval: 25  // Update every 25ms for smoother progress
+                    },
                     barnesHut: {
                         gravitationalConstant: -2200,
                         centralGravity: 0.03,
                         springLength: 280,
                         springConstant: 0.018,
-                        damping: 0.25
+                        damping: 0.25,
+                        // OPTIMIZATION: Improve performance for large graphs
+                        avoidOverlap: 0.1
                     }
                 },
                 interaction: {
@@ -435,14 +546,14 @@
                 network.setOptions({ physics: { enabled: false } });
             });
 
-            // Store original node data for reset
+            // OPTIMIZATION: Store original node data for reset (avoid expensive JSON operations)
             const originalNodeData = new Map();
             visNodes.forEach(node => {
                 originalNodeData.set(node.id, {
-                    color: JSON.parse(JSON.stringify(node.color)),
+                    color: { background: node.color.background, border: node.color.border },
                     opacity: 1,
                     size: node.size || 20,
-                    font: JSON.parse(JSON.stringify(node.font))
+                    font: { size: node.font.size, color: node.font.color }
                 });
             });
 
@@ -450,42 +561,45 @@
             let doubleClickFlag = false;
 
             function resetHighlighting() {
-                // Reset all nodes to full opacity and original appearance
-                const updateNodes = visNodes.map(node => {
-                    const original = originalNodeData.get(node.id);
-                    return {
-                        id: node.id,
-                        label: node.label,
-                        title: node.title,
-                        color: original.color,
-                        font: original.font,
-                        shape: node.shape,
-                        margin: node.margin,
-                        size: original.size,
-                        opacity: 1.0
-                    };
+                // OPTIMIZATION: Use requestAnimationFrame for smoother updates
+                requestAnimationFrame(() => {
+                    // Reset all nodes to full opacity and original appearance
+                    const updateNodes = visNodes.map(node => {
+                        const original = originalNodeData.get(node.id);
+                        return {
+                            id: node.id,
+                            label: node.label,
+                            title: node.title,
+                            color: original.color,
+                            font: original.font,
+                            shape: node.shape,
+                            margin: node.margin,
+                            size: original.size,
+                            opacity: 1.0
+                        };
+                    });
+                    // Reset edges to original
+                    const resetEdges = originalEdgeData.map(edge => ({
+                        from: edge.from,
+                        to: edge.to,
+                        color: edge.color,
+                        width: edge.width,
+                        smooth: { type: 'continuous', roundness: 0.2 }
+                    }));
+                    network.setData({ nodes: updateNodes, edges: resetEdges });
+                    selectedNodeId = null;
                 });
-                // Reset edges to original
-                const resetEdges = originalEdgeData.map(edge => ({
-                    from: edge.from,
-                    to: edge.to,
-                    color: edge.color,
-                    width: edge.width,
-                    smooth: { type: 'continuous', roundness: 0.2 }
-                }));
-                network.setData({ nodes: updateNodes, edges: resetEdges });
-                selectedNodeId = null;
             }
 
             function highlightNodeAndNeighbors(nodeId) {
                 selectedNodeId = nodeId;
-                
-                // Find all neighbors (nodes connected to selected node)
+
+                // OPTIMIZATION: Use precomputed adjacency map instead of iterating edges
                 const connectedNodeIds = new Set([nodeId]);
-                visEdges.forEach(edge => {
-                    if (edge.from === nodeId) connectedNodeIds.add(edge.to);
-                    if (edge.to === nodeId) connectedNodeIds.add(edge.from);
-                });
+                const neighbors = edgeAdjacencyMap.get(nodeId);
+                if (neighbors) {
+                    neighbors.forEach(neighborId => connectedNodeIds.add(neighborId));
+                }
 
                 // Update nodes: connected nodes stay fully visible, others muted (box + dim label)
                 const mutedFontColor = '#999999'; // Dim gray so muted labels don't overlap as bright white
@@ -539,15 +653,18 @@
                 updateEdges.sort(function (a, b) { return (a._highlight ? 1 : 0) - (b._highlight ? 1 : 0); });
                 updateEdges.forEach(e => delete e._highlight);
 
-                network.setData({ nodes: updateNodes, edges: updateEdges });
-                
-                // Focus on selected node
-                network.focus(nodeId, {
-                    scale: 1.5,
-                    animation: {
-                        duration: 500,
-                        easingFunction: 'easeInOutQuad'
-                    }
+                // OPTIMIZATION: Use requestAnimationFrame for smoother updates
+                requestAnimationFrame(() => {
+                    network.setData({ nodes: updateNodes, edges: updateEdges });
+
+                    // Focus on selected node
+                    network.focus(nodeId, {
+                        scale: 1.5,
+                        animation: {
+                            duration: 500,
+                            easingFunction: 'easeInOutQuad'
+                        }
+                    });
                 });
             }
 
@@ -566,7 +683,7 @@
 
             // Click handler: highlight node and neighbors, focus (delayed to avoid double-click interference)
             network.on('click', function (params) {
-                setTimeout(function() {
+                setTimeout(function () {
                     if (!doubleClickFlag) {
                         if (params.nodes.length > 0) {
                             const nodeId = params.nodes[0];
@@ -581,42 +698,70 @@
                 }, 300);
             });
 
-            // Update stats
-            const statsEl = document.getElementById('graphStats');
-            if (statsEl) {
-                statsEl.textContent = 'Constructs: ' + constructs.length +
-                    ' · Measurements: ' + measurements.length +
-                    ' · Behaviors/Tasks: ' + behaviors.length +
-                    ' · Edges: ' + visEdges.length;
-            }
+            // OPTIMIZATION: Debounced search with caching
+            let searchDebounceTimer = null;
+            const searchCache = new Map();
 
-            // Search filter
-            const searchEl = document.getElementById('graphSearchInput');
+            const searchEl = domCache.graphSearchInput || document.getElementById('graphSearchInput');
             if (searchEl) {
                 searchEl.addEventListener('input', function () {
                     const query = (this.value || '').toLowerCase().trim();
-                    if (!query) {
-                        resetHighlighting();
-                        return;
+
+                    // Clear debounce timer
+                    if (searchDebounceTimer) {
+                        clearTimeout(searchDebounceTimer);
                     }
 
-                    // Find matching nodes
-                    const matchedNodeIds = new Set();
-                    visNodes.forEach(node => {
-                        const label = (node.label || '').toLowerCase();
-                        const title = (node.title || '').toLowerCase();
-                        if (label.includes(query) || title.includes(query)) {
-                            matchedNodeIds.add(node.id);
+                    // Debounce search
+                    searchDebounceTimer = setTimeout(() => {
+                        if (!query) {
+                            resetHighlighting();
+                            return;
                         }
-                    });
 
-                    // Find all nodes connected to matches (neighbors)
-                    const connectedNodeIds = new Set(matchedNodeIds);
-                    visEdges.forEach(edge => {
-                        if (matchedNodeIds.has(edge.from)) connectedNodeIds.add(edge.to);
-                        if (matchedNodeIds.has(edge.to)) connectedNodeIds.add(edge.from);
-                    });
+                        // Check cache
+                        if (searchCache.has(query)) {
+                            const cached = searchCache.get(query);
+                            updateGraphForSearch(cached.matchedNodeIds, cached.connectedNodeIds);
+                            return;
+                        }
 
+                        // Find matching nodes
+                        const matchedNodeIds = new Set();
+                        visNodes.forEach(node => {
+                            const label = (node.label || '').toLowerCase();
+                            const title = (node.title || '').toLowerCase();
+                            if (label.includes(query) || title.includes(query)) {
+                                matchedNodeIds.add(node.id);
+                            }
+                        });
+
+                        // OPTIMIZATION: Use precomputed adjacency map instead of iterating edges
+                        const connectedNodeIds = new Set(matchedNodeIds);
+                        matchedNodeIds.forEach(nodeId => {
+                            const neighbors = edgeAdjacencyMap.get(nodeId);
+                            if (neighbors) {
+                                neighbors.forEach(neighborId => connectedNodeIds.add(neighborId));
+                            }
+                        });
+
+                        // Cache result (limit cache size)
+                        if (searchCache.size > 20) {
+                            const firstKey = searchCache.keys().next().value;
+                            searchCache.delete(firstKey);
+                        }
+                        searchCache.set(query, { matchedNodeIds, connectedNodeIds });
+
+                        updateGraphForSearch(matchedNodeIds, connectedNodeIds);
+                    }, 200); // 200ms debounce
+                });
+            }
+
+            // OPTIMIZATION: Extracted search update logic for reuse
+            function updateGraphForSearch(matchedNodeIds, connectedNodeIds) {
+
+                // OPTIMIZATION: Use requestAnimationFrame for smoother updates
+                requestAnimationFrame(() => {
                     // Update all nodes: matching nodes + their neighbors stay fully visible, others muted
                     const mutedFontColor = '#999999';
                     const updateNodes = visNodes.map(node => {
@@ -674,8 +819,8 @@
                 });
             }
 
-            // Reset view button
-            const resetBtn = document.getElementById('resetViewBtn');
+            // OPTIMIZATION: Use cached DOM elements
+            const resetBtn = domCache.resetViewBtn || document.getElementById('resetViewBtn');
             if (resetBtn) {
                 resetBtn.addEventListener('click', function () {
                     resetHighlighting();
@@ -685,7 +830,7 @@
 
             // Toggle physics button
             let physicsEnabled = true;
-            const toggleBtn = document.getElementById('togglePhysicsBtn');
+            const toggleBtn = domCache.togglePhysicsBtn || document.getElementById('togglePhysicsBtn');
             if (toggleBtn) {
                 toggleBtn.addEventListener('click', function () {
                     physicsEnabled = !physicsEnabled;
@@ -693,12 +838,24 @@
                     this.textContent = physicsEnabled ? 'Pause Physics' : 'Resume Physics';
                 });
             }
+
+            // OPTIMIZATION: Use cached DOM element for stats
+            const statsEl = domCache.graphStats || document.getElementById('graphStats');
+            if (statsEl) {
+                statsEl.textContent = 'Constructs: ' + constructs.length +
+                    ' · Measurements: ' + measurements.length +
+                    ' · Behaviors/Tasks: ' + behaviors.length +
+                    ' · Edges: ' + visEdges.length;
+            }
         }
 
         (function init() {
+            // OPTIMIZATION: Initialize DOM cache early
+            domCache.init();
+
             buildGraph().catch(function (e) {
                 console.error('Failed to build graph:', e);
-                const container = document.getElementById('network');
+                const container = domCache.network || document.getElementById('network');
                 if (container) {
                     container.innerHTML = '<div style="padding:40px; color:#e74c3c; text-align:center;"><h3>Unable to load graph</h3><p>' + e.message + '</p></div>';
                 }
@@ -706,4 +863,5 @@
         })();
     </script>
 </body>
+
 </html>

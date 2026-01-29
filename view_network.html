@@ -393,6 +393,58 @@
             background: #e8f5e9;
             color: #2e7d32;
         }
+
+        /* Pagination styles */
+        .pagination-controls {
+            padding: 15px;
+            border-top: 1px solid #ecf0f1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+        }
+
+        .pagination-info {
+            font-size: 13px;
+            color: #7f8c8d;
+        }
+
+        .pagination-buttons {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .pagination-btn {
+            padding: 6px 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: white;
+            cursor: pointer;
+            font-size: 13px;
+            transition: all 0.2s;
+        }
+
+        .pagination-btn:hover {
+            background: #f0f0f0;
+            border-color: #3498db;
+        }
+
+        .pagination-btn.active {
+            background: #3498db;
+            color: white;
+            border-color: #3498db;
+        }
+
+        .pagination-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .pagination-ellipsis {
+            padding: 6px;
+            color: #7f8c8d;
+        }
     </style>
     <!-- Theme overrides (visual-only). Loaded after inline styles to win cascade. -->
     <link rel="stylesheet" href="view_network_theme.css">
@@ -401,7 +453,8 @@
 <body>
     <div class="container">
         <header>
-            <div style="display: flex; justify-content: space-between; align-items: center; gap: 14px; flex-wrap: wrap;">
+            <div
+                style="display: flex; justify-content: space-between; align-items: center; gap: 14px; flex-wrap: wrap;">
                 <h1 style="margin-bottom: 0;">🔍 AI Construct Lexis</h1>
                 <div class="filter-buttons" style="margin-bottom: 0;">
                     <button class="filter-btn active" data-type="home">Home</button>
@@ -414,17 +467,11 @@
                 </div>
             </div>
             <div class="search-section" style="margin-top: 14px;">
-                <input
-                    id="searchInput"
-                    type="text"
+                <input id="searchInput" type="text"
                     placeholder="Search constructs, measurement instruments, behaviors and tasks by name…"
-                    style="flex: 1; padding: 8px 10px; border-radius: 6px; border: 1px solid #ddd; font-size: 14px;"
-                />
-                <button
-                    id="clearSearchBtn"
-                    type="button"
-                    style="padding: 8px 12px; border-radius: 6px; border: 1px solid #ddd; background: #ecf0f1; cursor: pointer; font-size: 13px;"
-                >
+                    style="flex: 1; padding: 8px 10px; border-radius: 6px; border: 1px solid #ddd; font-size: 14px;" />
+                <button id="clearSearchBtn" type="button"
+                    style="padding: 8px 12px; border-radius: 6px; border: 1px solid #ddd; background: #ecf0f1; cursor: pointer; font-size: 13px;">
                     Clear
                 </button>
             </div>
@@ -440,29 +487,41 @@
                         <span class="info-icon" aria-label="About min papers filter">
                             i
                             <span class="info-tooltip" role="tooltip">
-                                Filters the list to terms referenced in more than this many papers (per category), based on this dataset’s extracted paper mentions.
+                                Filters the list to terms referenced in more than this many papers (per category), based
+                                on this dataset’s extracted paper mentions.
                             </span>
                         </span>
                         :
                     </label>
                     <span style="font-size: 13px; font-weight: 500; margin-right: 4px;">Constructs:</span>
-                    <input type="number" id="minPapersConstruct" min="0" value="10" step="1" style="width: 60px; margin-right: 10px;">
+                    <input type="number" id="minPapersConstruct" min="0" value="10" step="1"
+                        style="width: 60px; margin-right: 10px;">
                     <span style="font-size: 13px; font-weight: 500; margin-right: 4px;">Measurement Instruments:</span>
-                    <input type="number" id="minPapersMeasurement" min="0" value="10" step="1" style="width: 60px; margin-right: 10px;">
+                    <input type="number" id="minPapersMeasurement" min="0" value="10" step="1"
+                        style="width: 60px; margin-right: 10px;">
                     <span style="font-size: 13px; font-weight: 500; margin-right: 4px;">Behaviors/Tasks:</span>
                     <input type="number" id="minPapersBehavior" min="0" value="10" step="1" style="width: 60px;">
                 </div>
             </div>
             <div class="disclaimer-banner">
                 <div style="margin-bottom: 10px;">
-                    This viewer is a research prototype. The content presented here, including relationships, constructs, and suggested behaviors/tasks, is derived from automatically extracting implied definitions and connections from academic papers from NeurIPS 2024 only, primarily using Large Language Models (LLMs).
+                    This viewer is a research prototype. The content presented here, including relationships,
+                    constructs, and suggested behaviors/tasks, is derived from automatically extracting implied
+                    definitions and connections from academic papers from NeurIPS 2024 only, primarily using Large
+                    Language Models (LLMs).
                 </div>
                 <div style="font-weight: 700; margin-bottom: 6px;">Please Note:</div>
                 <div style="display: grid; gap: 4px;">
-                    <div><strong>Indicative Only:</strong> All content is indicative, not definitive. It is intended to reflect the current landscape of agreement and disagreement within the field, not to serve as a verified source of truth.</div>
-                    <div><strong>No Endorsement:</strong> The inclusion of any definition or connection does not constitute an endorsement by the developers.</div>
-                    <div><strong>LLM Extraction:</strong> As LLMs are used for extraction, the content may contain errors, omissions, or misclassifications.</div>
-                    <div><strong>Verification Status:</strong> We have incorporated a flag to indicate if a specific definition or connection has undergone expert review and verification. Where this flag is absent, the content has not been manually verified.</div>
+                    <div><strong>Indicative Only:</strong> All content is indicative, not definitive. It is intended to
+                        reflect the current landscape of agreement and disagreement within the field, not to serve as a
+                        verified source of truth.</div>
+                    <div><strong>No Endorsement:</strong> The inclusion of any definition or connection does not
+                        constitute an endorsement by the developers.</div>
+                    <div><strong>LLM Extraction:</strong> As LLMs are used for extraction, the content may contain
+                        errors, omissions, or misclassifications.</div>
+                    <div><strong>Verification Status:</strong> We have incorporated a flag to indicate if a specific
+                        definition or connection has undergone expert review and verification. Where this flag is
+                        absent, the content has not been manually verified.</div>
                 </div>
             </div>
         </header>
@@ -487,7 +546,8 @@
                 </div>
                 <div>
                     Subscribe to our Substack for project updates and insights:
-                    <a href="https://substack.com/@aiconstructlexis" target="_blank" rel="noopener" class="substack-link">
+                    <a href="https://substack.com/@aiconstructlexis" target="_blank" rel="noopener"
+                        class="substack-link">
                         @aiconstructlexis
                     </a>
                 </div>
@@ -514,9 +574,62 @@
             }
         };
 
+        // OPTIMIZATION: Search index for faster filtering
+        let searchIndex = {
+            nodes: [], // Array of {node, searchableText}
+            indexMap: new Map() // word -> Set of node indices
+        };
+
+        // OPTIMIZATION: Debounce timer for search
+        let searchDebounceTimer = null;
+
+        // OPTIMIZATION: Pagination state
+        let paginationState = {
+            page: 0,
+            pageSize: 50,
+            totalItems: 0
+        };
+
+        // OPTIMIZATION: Cache DOM elements to avoid repeated queries
+        const domCache = {
+            resultsList: null,
+            resultsHeader: null,
+            searchInput: null,
+            clearSearchBtn: null,
+            minPapersConstruct: null,
+            minPapersMeasurement: null,
+            minPapersBehavior: null,
+            selectedCount: null,
+            init: function () {
+                this.resultsList = document.getElementById('resultsList');
+                this.resultsHeader = document.getElementById('resultsHeader');
+                this.searchInput = document.getElementById('searchInput');
+                this.clearSearchBtn = document.getElementById('clearSearchBtn');
+                this.minPapersConstruct = document.getElementById('minPapersConstruct');
+                this.minPapersMeasurement = document.getElementById('minPapersMeasurement');
+                this.minPapersBehavior = document.getElementById('minPapersBehavior');
+                this.selectedCount = document.getElementById('selectedCount');
+            }
+        };
+
+        // OPTIMIZATION: Request deduplication cache
+        const fetchCache = new Map();
+
+        // OPTIMIZATION: Memoization cache
+        const memoCache = new Map();
+
+        // OPTIMIZATION: Filtered results cache
+        const filteredResultsCache = new Map();
+
         // Try to fetch a file from multiple possible paths
         // Handles both local server and GitHub Pages
+        // OPTIMIZATION: Request deduplication - cache in-flight requests
         async function fetchFromPossiblePaths(relativePath) {
+            // Check cache first
+            if (fetchCache.has(relativePath)) {
+                return fetchCache.get(relativePath);
+            }
+
             // Get base path (empty for root, or repo name for GitHub Pages)
             const pathParts = window.location.pathname.split('/').filter(p => p);
             // Remove last 2 parts (visualize_networks, view_network.html)
@@ -531,15 +644,27 @@
             ];
             // Remove duplicates
             const uniquePaths = [...new Set(possiblePaths)];
-            for (const path of uniquePaths) {
-                try {
-                    const resp = await fetch(path);
-                    if (resp.ok) return await resp.text();
-                } catch (e) {
-                    // try next
+
+            // Create promise and cache it
+            const fetchPromise = (async () => {
+                for (const path of uniquePaths) {
+                    try {
+                        const resp = await fetch(path);
+                        if (resp.ok) {
+                            const text = await resp.text();
+                            fetchCache.set(relativePath, text);
+                            return text;
+                        }
+                    } catch (e) {
+                        // try next
+                    }
                 }
-            }
-            throw new Error(`Could not load ${relativePath} from any known path`);
+                throw new Error(`Could not load ${relativePath} from any known path`);
+            })();
+
+            // Cache the promise (not the result) to deduplicate concurrent requests
+            fetchCache.set(relativePath, fetchPromise);
+            return fetchPromise;
         }
 
         // All known network files
@@ -596,9 +721,13 @@
             // Apply config to inputs and set min attribute from floor per type
             try {
                 const floors = uiConfig.min_papers_floor;
-                const c = document.getElementById('minPapersConstruct');
-                const m = document.getElementById('minPapersMeasurement');
-                const b = document.getElementById('minPapersBehavior');
+                // Initialize DOM cache if not already done
+                if (!domCache.minPapersConstruct) {
+                    domCache.init();
+                }
+                const c = domCache.minPapersConstruct || document.getElementById('minPapersConstruct');
+                const m = domCache.minPapersMeasurement || document.getElementById('minPapersMeasurement');
+                const b = domCache.minPapersBehavior || document.getElementById('minPapersBehavior');
                 if (c) {
                     c.min = Math.max(0, Number(floors.construct ?? 0));
                     c.value = clampMinPapers(uiConfig.min_papers.construct, 'construct');
@@ -617,7 +746,34 @@
         }
 
         // Load all node configs from nomological_network_data/index.json
+        // OPTIMIZED: Parallel loading with caching support
         async function loadConfigsFromIndex() {
+            // Check localStorage cache first
+            const cacheKey = 'network_data_cache_v1';
+            const cacheTimestampKey = 'network_data_cache_timestamp';
+            const CACHE_DURATION = 24 * 60 * 60 * 1000; // 24 hours
+
+            try {
+                const cachedData = localStorage.getItem(cacheKey);
+                const cacheTimestamp = localStorage.getItem(cacheTimestampKey);
+                if (cachedData && cacheTimestamp) {
+                    const age = Date.now() - parseInt(cacheTimestamp, 10);
+                    if (age < CACHE_DURATION) {
+                        console.log('Loading from cache...');
+                        networkData = JSON.parse(cachedData);
+                        // Restore Set objects from arrays
+                        Object.values(networkData.nodesMap).forEach(node => {
+                            if (Array.isArray(node.papers)) {
+                                node.papers = new Set(node.papers);
+                            }
+                        });
+                        return;
+                    }
+                }
+            } catch (e) {
+                console.warn('Cache load failed:', e);
+            }
+
             const indexText = await fetchFromPossiblePaths('nomological_network_data/index.json');
             const index = JSON.parse(indexText);
 
@@ -632,56 +788,71 @@
 
             const allConfigs = [];
 
+            // OPTIMIZED: Load files in parallel instead of sequentially
             async function loadGroup(subdir, typeShort) {
                 const files = index[subdir] || [];
-                for (const file of files) {
+                // Load all files in parallel
+                const loadPromises = files.map(async (file) => {
                     try {
                         const text = await fetchFromPossiblePaths(`nomological_network_data/${subdir}/${file}`);
                         const cfg = JSON.parse(text);
-                        allConfigs.push(cfg);
-
-                        const nodeTypeShort = typeShort; // 'construct' | 'measurement' | 'behavior'
-                        const listKey = subdir === 'behaviors_tasks' ? 'behaviors' : subdir;
-                        const key = `${nodeTypeShort}_${cfg.canonical_name}`;
-
-                        const node = {
-                            name: cfg.canonical_name,
-                            type: nodeTypeShort,
-                            canonicalDefinition: cfg.canonical_definition || 'N/A',
-                            expertReviewed: !!cfg.expert_reviewed,
-                            definitions: (cfg.definitions || []).map(d => d.text),
-                            definitionEntries: cfg.definitions || [],
-                            papers: new Set(cfg.papers || []),
-                            groupIds: cfg.group_ids || [],
-                            rawConfig: cfg,
-                        };
-
-                        networkData.nodesMap[key] = node;
-                        networkData.nodesByType[listKey].push(node);
-
-                        // Use canonical name for node identity, but remember all aliases
-                        const canonicalName = cfg.canonical_name;
-                        if (canonicalName) {
-                            if (!networkData.nameToNode[canonicalName]) {
-                                networkData.nameToNode[canonicalName] = [];
-                            }
-                            networkData.nameToNode[canonicalName].push(node);
-                        }
-                        // Map every known name/alias back to the canonical name
-                        const aliasNames = new Set([cfg.canonical_name, ...(cfg.names || [])]);
-                        aliasNames.forEach(n => {
-                            if (!n) return;
-                            networkData.nameToCanonical[n] = cfg.canonical_name;
-                        });
+                        return { cfg, subdir, typeShort };
                     } catch (e) {
                         console.warn(`Failed to load config ${subdir}/${file}:`, e);
+                        return null;
                     }
-                }
+                });
+
+                const results = await Promise.all(loadPromises);
+
+                // Process all loaded configs
+                results.forEach(result => {
+                    if (!result) return;
+                    const { cfg, subdir, typeShort } = result;
+                    allConfigs.push(cfg);
+
+                    const nodeTypeShort = typeShort; // 'construct' | 'measurement' | 'behavior'
+                    const listKey = subdir === 'behaviors_tasks' ? 'behaviors' : subdir;
+                    const key = `${nodeTypeShort}_${cfg.canonical_name}`;
+
+                    const node = {
+                        name: cfg.canonical_name,
+                        type: nodeTypeShort,
+                        canonicalDefinition: cfg.canonical_definition || 'N/A',
+                        expertReviewed: !!cfg.expert_reviewed,
+                        definitions: (cfg.definitions || []).map(d => d.text),
+                        definitionEntries: cfg.definitions || [],
+                        papers: new Set(cfg.papers || []),
+                        groupIds: cfg.group_ids || [],
+                        rawConfig: cfg,
+                    };
+
+                    networkData.nodesMap[key] = node;
+                    networkData.nodesByType[listKey].push(node);
+
+                    // Use canonical name for node identity, but remember all aliases
+                    const canonicalName = cfg.canonical_name;
+                    if (canonicalName) {
+                        if (!networkData.nameToNode[canonicalName]) {
+                            networkData.nameToNode[canonicalName] = [];
+                        }
+                        networkData.nameToNode[canonicalName].push(node);
+                    }
+                    // Map every known name/alias back to the canonical name
+                    const aliasNames = new Set([cfg.canonical_name, ...(cfg.names || [])]);
+                    aliasNames.forEach(n => {
+                        if (!n) return;
+                        networkData.nameToCanonical[n] = cfg.canonical_name;
+                    });
+                });
             }
 
-            await loadGroup('constructs', 'construct');
-            await loadGroup('measurements', 'measurement');
-            await loadGroup('behaviors_tasks', 'behavior');
+            // Load all groups in parallel
+            await Promise.all([
+                loadGroup('constructs', 'construct'),
+                loadGroup('measurements', 'measurement'),
+                loadGroup('behaviors_tasks', 'behavior')
+            ]);
 
             // Only nodes that exist in nomological_network_data (index) are in the graph.
             const indexCanonicalNames = new Set(allConfigs.map(c => c.canonical_name));
@@ -735,6 +906,51 @@
             });
 
             networkData.relationshipIndex = relIndex;
+
+            // Build search index for faster filtering
+            buildSearchIndex();
+
+            // Cache the data for future loads
+            try {
+                // Convert Sets to arrays for JSON serialization
+                const dataToCache = JSON.parse(JSON.stringify(networkData, (key, value) => {
+                    if (value instanceof Set) {
+                        return Array.from(value);
+                    }
+                    return value;
+                }));
+                localStorage.setItem(cacheKey, JSON.stringify(dataToCache));
+                localStorage.setItem(cacheTimestampKey, Date.now().toString());
+                console.log('Data cached successfully');
+            } catch (e) {
+                console.warn('Cache save failed:', e);
+            }
+        }
+
+        // OPTIMIZATION: Build search index for faster filtering
+        function buildSearchIndex() {
+            searchIndex.nodes = [];
+            searchIndex.indexMap = new Map();
+
+            Object.values(networkData.nodesMap).forEach((node, idx) => {
+                const searchableText = [
+                    node.name,
+                    node.canonicalDefinition,
+                    ...(node.definitions || []),
+                    ...(node.rawConfig?.names || [])
+                ].join(' ').toLowerCase();
+
+                searchIndex.nodes.push({ node, searchableText });
+
+                // Index by words
+                const words = searchableText.split(/\s+/).filter(w => w.length > 2);
+                words.forEach(word => {
+                    if (!searchIndex.indexMap.has(word)) {
+                        searchIndex.indexMap.set(word, new Set());
+                    }
+                    searchIndex.indexMap.get(word).add(idx);
+                });
+            });
         }
 
         // Automatically load all LLM paper lists from paper_list/
@@ -826,6 +1042,9 @@
 
         // Initialize on page load (load UI config, then node configs and paper lists)
         (async function init() {
+            // OPTIMIZATION: Initialize DOM cache early
+            domCache.init();
+
             await loadUiConfig();
             await loadConfigsFromIndex();
             await loadPaperLists();
@@ -835,14 +1054,23 @@
         })();
 
         // Filter buttons
-        document.querySelectorAll('.filter-btn').forEach(btn => {
+        // OPTIMIZATION: Cache filter buttons and use cached header
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        filterButtons.forEach(btn => {
             btn.addEventListener('click', () => {
-                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                filterButtons.forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
                 currentFilter = btn.dataset.type;
 
+                // Reset pagination on filter change
+                paginationState.page = 0;
+
+                // Clear filtered results cache when filter changes
+                filteredResultsCache.clear();
+                minPapersCache.clear();
+
                 // Update header based on current page
-                const header = document.getElementById('resultsHeader');
+                const header = domCache.resultsHeader || document.getElementById('resultsHeader');
                 if (header) {
                     if (currentFilter === 'home') {
                         header.textContent = 'Home';
@@ -861,48 +1089,96 @@
 
 
         // Min papers input handlers: enforce floor per type and re-render
+        // OPTIMIZATION: Debounced filter updates
+        let filterDebounceTimer = null;
         function enforceMinPapersFloor(inputEl, type) {
             const v = clampMinPapers(inputEl.value, type);
             if (Number(inputEl.value) !== v) inputEl.value = v;
         }
-        document.getElementById('minPapersConstruct').addEventListener('input', (e) => {
-            enforceMinPapersFloor(e.target, 'construct');
-            renderResults();
-        });
-        document.getElementById('minPapersConstruct').addEventListener('change', (e) => {
-            enforceMinPapersFloor(e.target, 'construct');
-            renderResults();
-        });
-        document.getElementById('minPapersMeasurement').addEventListener('input', (e) => {
-            enforceMinPapersFloor(e.target, 'measurement');
-            renderResults();
-        });
-        document.getElementById('minPapersMeasurement').addEventListener('change', (e) => {
-            enforceMinPapersFloor(e.target, 'measurement');
-            renderResults();
-        });
-        document.getElementById('minPapersBehavior').addEventListener('input', (e) => {
-            enforceMinPapersFloor(e.target, 'behavior');
-            renderResults();
-        });
-        document.getElementById('minPapersBehavior').addEventListener('change', (e) => {
-            enforceMinPapersFloor(e.target, 'behavior');
-            renderResults();
-        });
+
+        function scheduleFilterUpdate() {
+            paginationState.page = 0; // Reset to first page on filter change
+
+            // Clear caches when filters change
+            filteredResultsCache.clear();
+            minPapersCache.clear();
+
+            if (filterDebounceTimer) {
+                clearTimeout(filterDebounceTimer);
+            }
+            filterDebounceTimer = setTimeout(() => {
+                renderResults();
+            }, 200); // 200ms debounce for filters
+        }
+
+        // OPTIMIZATION: Use cached DOM elements
+        (function initFilterInputs() {
+            // Wait for DOM to be ready
+            setTimeout(() => {
+                if (!domCache.minPapersConstruct) domCache.init();
+
+                const c = domCache.minPapersConstruct || document.getElementById('minPapersConstruct');
+                const m = domCache.minPapersMeasurement || document.getElementById('minPapersMeasurement');
+                const b = domCache.minPapersBehavior || document.getElementById('minPapersBehavior');
+
+                if (c) {
+                    c.addEventListener('input', (e) => {
+                        enforceMinPapersFloor(e.target, 'construct');
+                        scheduleFilterUpdate();
+                    });
+                    c.addEventListener('change', (e) => {
+                        enforceMinPapersFloor(e.target, 'construct');
+                        scheduleFilterUpdate();
+                    });
+                }
+                if (m) {
+                    m.addEventListener('input', (e) => {
+                        enforceMinPapersFloor(e.target, 'measurement');
+                        scheduleFilterUpdate();
+                    });
+                    m.addEventListener('change', (e) => {
+                        enforceMinPapersFloor(e.target, 'measurement');
+                        scheduleFilterUpdate();
+                    });
+                }
+                if (b) {
+                    b.addEventListener('input', (e) => {
+                        enforceMinPapersFloor(e.target, 'behavior');
+                        scheduleFilterUpdate();
+                    });
+                    b.addEventListener('change', (e) => {
+                        enforceMinPapersFloor(e.target, 'behavior');
+                        scheduleFilterUpdate();
+                    });
+                }
+            }, 100);
+        })();
 
         // Helper function to get min papers threshold for a node type (never below floor for that type)
+        // OPTIMIZATION: Memoized and uses cached DOM elements
+        const minPapersCache = new Map();
         function getMinPapersForType(nodeType) {
+            // Check cache first (cache key includes current filter values)
+            const cacheKey = `${nodeType}_${domCache.minPapersConstruct?.value || uiConfig.min_papers.construct}_${domCache.minPapersMeasurement?.value || uiConfig.min_papers.measurement}_${domCache.minPapersBehavior?.value || uiConfig.min_papers.behavior}`;
+            if (minPapersCache.has(cacheKey)) {
+                return minPapersCache.get(cacheKey);
+            }
+
             let raw;
             if (nodeType === 'construct') {
-                raw = parseInt(document.getElementById('minPapersConstruct').value, 10) ?? uiConfig.min_papers.construct ?? 0;
+                raw = parseInt(domCache.minPapersConstruct?.value || uiConfig.min_papers.construct || 0, 10);
             } else if (nodeType === 'measurement') {
-                raw = parseInt(document.getElementById('minPapersMeasurement').value, 10) ?? uiConfig.min_papers.measurement ?? 0;
+                raw = parseInt(domCache.minPapersMeasurement?.value || uiConfig.min_papers.measurement || 0, 10);
             } else if (nodeType === 'behavior') {
-                raw = parseInt(document.getElementById('minPapersBehavior').value, 10) ?? uiConfig.min_papers.behavior ?? 0;
+                raw = parseInt(domCache.minPapersBehavior?.value || uiConfig.min_papers.behavior || 0, 10);
             } else {
-                return clampMinPapers(10, 'construct');
+                const result = clampMinPapers(10, 'construct');
+                minPapersCache.set(cacheKey, result);
+                return result;
             }
-            return clampMinPapers(isNaN(raw) ? 0 : raw, nodeType);
+            const result = clampMinPapers(isNaN(raw) ? 0 : raw, nodeType);
+            minPapersCache.set(cacheKey, result);
+            return result;
         }
 
         // Initialize data structures (from aggregated JSON or prebuilt configs)
@@ -1007,18 +1283,72 @@
                 `Relationships: ${relationships.length}`;
         }
 
+        // OPTIMIZATION: Fast search using index
+        function searchNodes(searchQuery, nodeTypeFilter = null) {
+            if (!searchQuery || searchQuery.length < 2) {
+                // Return all nodes if no search query
+                return Object.values(networkData.nodesMap);
+            }
+
+            const query = searchQuery.toLowerCase().trim();
+            const queryWords = query.split(/\s+/).filter(w => w.length > 0);
+
+            // Use index for fast lookup
+            const matchingIndices = new Set();
+
+            if (queryWords.length === 1) {
+                // Single word - use index directly
+                const word = queryWords[0];
+                if (searchIndex.indexMap.has(word)) {
+                    searchIndex.indexMap.get(word).forEach(idx => matchingIndices.add(idx));
+                }
+            } else {
+                // Multiple words - find intersection
+                const wordSets = queryWords.map(word => {
+                    if (searchIndex.indexMap.has(word)) {
+                        return searchIndex.indexMap.get(word);
+                    }
+                    return new Set();
+                });
+
+                if (wordSets.length > 0) {
+                    // Start with first set, then intersect
+                    let intersection = wordSets[0];
+                    for (let i = 1; i < wordSets.length; i++) {
+                        intersection = new Set([...intersection].filter(x => wordSets[i].has(x)));
+                    }
+                    intersection.forEach(idx => matchingIndices.add(idx));
+                }
+            }
+
+            // Fallback: if index doesn't have results, do full text search
+            if (matchingIndices.size === 0) {
+                return searchIndex.nodes
+                    .filter(item => item.searchableText.includes(query))
+                    .map(item => item.node);
+            }
+
+            // Convert indices to nodes
+            const results = Array.from(matchingIndices)
+                .map(idx => searchIndex.nodes[idx].node);
+
+            return results;
+        }
+
         // Render results for current page
+        // OPTIMIZATION: Uses cached DOM elements and requestAnimationFrame
         function renderResults() {
             if (!networkData) return;
 
-            const resultsList = document.getElementById('resultsList');
+            const resultsList = domCache.resultsList || document.getElementById('resultsList');
+            if (!resultsList) return;
 
             const search = currentSearch.trim().toLowerCase();
             // Layout mode: Home (no search) should not force an internal scroll panel
             try {
                 const homeMode = (currentFilter === 'home') && !search;
                 document.body.classList.toggle('home-mode', homeMode);
-            } catch (e) {}
+            } catch (e) { }
 
             // Home page rendering (only when not searching)
             if (currentFilter === 'home' && !search) {
@@ -1079,7 +1409,29 @@
 
             const inSearchMode = !!search;
 
-            Object.values(networkData.nodesMap).forEach(node => {
+            // OPTIMIZATION: Check filtered results cache
+            const filterCacheKey = `${currentFilter}_${search}_${getMinPapersForType('construct')}_${getMinPapersForType('measurement')}_${getMinPapersForType('behavior')}`;
+            let candidateNodes = [];
+
+            if (filteredResultsCache.has(filterCacheKey)) {
+                candidateNodes = filteredResultsCache.get(filterCacheKey);
+            } else {
+                // OPTIMIZATION: Use search index for faster filtering
+                if (search) {
+                    candidateNodes = searchNodes(search);
+                } else {
+                    candidateNodes = Object.values(networkData.nodesMap);
+                }
+
+                // Cache the results (limit cache size)
+                if (filteredResultsCache.size > 20) {
+                    const firstKey = filteredResultsCache.keys().next().value;
+                    filteredResultsCache.delete(firstKey);
+                }
+                filteredResultsCache.set(filterCacheKey, candidateNodes);
+            }
+
+            candidateNodes.forEach(node => {
                 const paperCount = node.papers ? node.papers.size : 0;
                 const minPapers = getMinPapersForType(node.type);
 
@@ -1094,13 +1446,6 @@
                     : (currentFilter !== 'home') && (node.type === currentFilter.slice(0, -1)); // Remove 's'
 
                 if (matchesType) {
-                    // Apply simple name-based search filter (case-insensitive)
-                    if (search) {
-                        const name = (node.name || '').toLowerCase();
-                        if (!name.includes(search)) {
-                            return;
-                        }
-                    }
                     const key = `${node.type}_${node.name}`;
                     if (!seenKeys.has(key)) {
                         results.push(node);
@@ -1113,14 +1458,26 @@
             // Only nodes from semantic sets with 5+ papers are shown
 
             // Prefer shortest name for display EXCEPT constructs (constructs always show canonical_name)
+            // OPTIMIZATION: Memoized
             function getDisplayName(node) {
                 if (!node) return '';
-                if (node.type === 'construct') return node.name;
-                const candidates = [node.name];
-                if (node.rawConfig && Array.isArray(node.rawConfig.names)) {
-                    candidates.push(...node.rawConfig.names);
+                const cacheKey = `display_${node.type}_${node.name}`;
+                if (memoCache.has(cacheKey)) {
+                    return memoCache.get(cacheKey);
                 }
-                return candidates.reduce((a, b) => (a.length <= b.length ? a : b));
+
+                let result;
+                if (node.type === 'construct') {
+                    result = node.name;
+                } else {
+                    const candidates = [node.name];
+                    if (node.rawConfig && Array.isArray(node.rawConfig.names)) {
+                        candidates.push(...node.rawConfig.names);
+                    }
+                    result = candidates.reduce((a, b) => (a.length <= b.length ? a : b));
+                }
+                memoCache.set(cacheKey, result);
+                return result;
             }
 
             // Deduplicate by name and aggregate
@@ -1151,20 +1508,32 @@
             const deduplicatedResults = Array.from(deduplicated.values())
                 .sort((a, b) => a.name.localeCompare(b.name));
 
+            // OPTIMIZATION: Pagination
+            paginationState.totalItems = deduplicatedResults.length;
+            const startIdx = paginationState.page * paginationState.pageSize;
+            const endIdx = Math.min(startIdx + paginationState.pageSize, deduplicatedResults.length);
+            const paginatedResults = deduplicatedResults.slice(startIdx, endIdx);
+
             // Render
             if (deduplicatedResults.length === 0) {
                 resultsList.innerHTML = '<div class="empty-state"><h3>No items found</h3><p>Try adjusting the minimum papers threshold</p></div>';
                 return;
             }
 
-            resultsList.innerHTML = deduplicatedResults.map(agg => {
-                const nodeKey = `${agg.firstNode.type}_${agg.firstNode.name}`;
-                const isSelected = selectedNode && networkData.nodesMap[nodeKey] === selectedNode;
-                const definitionCount = agg.allDefinitions.size;
-                const paperCount = agg.allPapers.size;
-                const description = `${definitionCount} definition${definitionCount !== 1 ? 's' : ''} in ${paperCount} paper${paperCount !== 1 ? 's' : ''}`;
-                const safeKey = nodeKey.replace(/'/g, "\\'").replace(/"/g, '&quot;');
-                return `
+            // OPTIMIZATION: Use requestAnimationFrame for smoother rendering
+            requestAnimationFrame(() => {
+                // OPTIMIZATION: Use document fragment for batch DOM updates
+                const fragment = document.createDocumentFragment();
+                const container = document.createElement('div');
+
+                container.innerHTML = paginatedResults.map(agg => {
+                    const nodeKey = `${agg.firstNode.type}_${agg.firstNode.name}`;
+                    const isSelected = selectedNode && networkData.nodesMap[nodeKey] === selectedNode;
+                    const definitionCount = agg.allDefinitions.size;
+                    const paperCount = agg.allPapers.size;
+                    const description = `${definitionCount} definition${definitionCount !== 1 ? 's' : ''} in ${paperCount} paper${paperCount !== 1 ? 's' : ''}`;
+                    const safeKey = nodeKey.replace(/'/g, "\\'").replace(/"/g, '&quot;');
+                    return `
                 <div class="result-item ${isSelected ? 'selected' : ''}"
                      data-key="${escapeHtml(nodeKey)}"
                      onclick="selectNode('${safeKey}')"
@@ -1180,10 +1549,68 @@
                     <div class="result-definition">${escapeHtml(description)}</div>
                 </div>
             `;
-            }).join('');
+                }).join('');
 
-            const selectedCountEl = document.getElementById('selectedCount');
-            if (selectedCountEl) selectedCountEl.textContent = `Showing: ${deduplicatedResults.length}`;
+                // Add pagination controls
+                const totalPages = Math.ceil(deduplicatedResults.length / paginationState.pageSize);
+                if (totalPages > 1) {
+                    let paginationHtml = '<div class="pagination-controls">';
+                    paginationHtml += `<div class="pagination-info">Showing ${startIdx + 1}-${endIdx} of ${deduplicatedResults.length}</div>`;
+                    paginationHtml += '<div class="pagination-buttons">';
+
+                    if (paginationState.page > 0) {
+                        paginationHtml += `<button class="pagination-btn" onclick="changePage(${paginationState.page - 1})">Previous</button>`;
+                    }
+
+                    // Page numbers
+                    const maxVisiblePages = 5;
+                    let startPage = Math.max(0, paginationState.page - Math.floor(maxVisiblePages / 2));
+                    let endPage = Math.min(totalPages - 1, startPage + maxVisiblePages - 1);
+                    if (endPage - startPage < maxVisiblePages - 1) {
+                        startPage = Math.max(0, endPage - maxVisiblePages + 1);
+                    }
+
+                    if (startPage > 0) {
+                        paginationHtml += `<button class="pagination-btn" onclick="changePage(0)">1</button>`;
+                        if (startPage > 1) paginationHtml += '<span class="pagination-ellipsis">...</span>';
+                    }
+
+                    for (let i = startPage; i <= endPage; i++) {
+                        const isActive = i === paginationState.page;
+                        paginationHtml += `<button class="pagination-btn ${isActive ? 'active' : ''}" onclick="changePage(${i})">${i + 1}</button>`;
+                    }
+
+                    if (endPage < totalPages - 1) {
+                        if (endPage < totalPages - 2) paginationHtml += '<span class="pagination-ellipsis">...</span>';
+                        paginationHtml += `<button class="pagination-btn" onclick="changePage(${totalPages - 1})">${totalPages}</button>`;
+                    }
+
+                    if (paginationState.page < totalPages - 1) {
+                        paginationHtml += `<button class="pagination-btn" onclick="changePage(${paginationState.page + 1})">Next</button>`;
+                    }
+
+                    paginationHtml += '</div></div>';
+                    container.innerHTML += paginationHtml;
+                }
+
+                fragment.appendChild(container);
+                resultsList.innerHTML = '';
+                resultsList.appendChild(fragment);
+
+                const selectedCountEl = domCache.selectedCount || document.getElementById('selectedCount');
+                if (selectedCountEl) selectedCountEl.textContent = `Showing: ${deduplicatedResults.length}`;
+            });
+        }
+
+        // OPTIMIZATION: Pagination helper
+        function changePage(newPage) {
+            paginationState.page = newPage;
+            renderResults();
+            // Scroll to top of results
+            const resultsList = document.getElementById('resultsList');
+            if (resultsList) {
+                resultsList.scrollTop = 0;
+            }
         }
 
         // Open a paper in a new tab (from definitions). Does NOT change filters/search.
@@ -1292,15 +1719,29 @@
             return paperCount > minPapers;
         }
 
+        // OPTIMIZATION: Cache for relationship data
+        const relationshipCache = new Map();
+
         // Render details panel with categorized relationships
         function renderDetails(node, replaceList = false) {
-            const resultsList = document.getElementById('resultsList');
-            const resultsHeader = document.getElementById('resultsHeader');
+            const resultsList = domCache.resultsList || document.getElementById('resultsList');
+            const resultsHeader = domCache.resultsHeader || document.getElementById('resultsHeader');
 
             // If replacing the list, render in resultsList instead
             const targetContainer = replaceList ? resultsList : document.getElementById('detailsPanel');
 
             if (!targetContainer) return;
+
+            // OPTIMIZATION: Check cache first
+            const cacheKey = `${node.type}_${node.name}`;
+            if (relationshipCache.has(cacheKey)) {
+                const cachedHtml = relationshipCache.get(cacheKey);
+                targetContainer.innerHTML = cachedHtml;
+                if (replaceList && resultsHeader) {
+                    resultsHeader.innerHTML = `<span style="cursor: pointer;" onclick="goBackToList()">← Back</span> | <span>${escapeHtml(node.name)}</span>`;
+                }
+                return;
+            }
 
             // Update header if replacing
             if (replaceList && resultsHeader) {
@@ -1404,7 +1845,7 @@
                                     evText = evText.split(alias).join(canonicalName);
                                 });
                             }
-                        } catch (e) {}
+                        } catch (e) { }
                         agg.evidence.push(evText);
                     }
                 });
@@ -1512,13 +1953,13 @@
                         <div style="font-size: 13px; color: ${displayConsensus === 'N/A' ? '#95a5a6' : '#2c3e50'}; margin-bottom: 8px; line-height: 1.5;">${escapeHtml(displayConsensus)}</div>
                         <div style="font-size: 11px; color: #7f8c8d;">
                             ${canonicalPapers.map(p => {
-                    const url = (networkData.paperUrlByTitle && networkData.paperUrlByTitle[p]) ? networkData.paperUrlByTitle[p] : null;
-                    const label = escapeHtml(p.length > 35 ? p.substring(0, 35) + '...' : p);
-                    if (url) {
-                        return `<a href="${url}" target="_blank" rel="noopener" title="${escapeHtml(p)}" style="display: inline-block; margin-right: 6px; margin-bottom: 4px; padding: 3px 8px; background: ${theme.chipBg}; border-radius: 3px; color: ${theme.chipFg}; text-decoration: none; cursor: pointer;">${label}</a>`;
-                    }
-                    return `<a href="#" onclick="searchForPaper('${escapeHtml(p).replace(/'/g, "\\'")}'); return false;" title="${escapeHtml(p)}" style="display: inline-block; margin-right: 6px; margin-bottom: 4px; padding: 3px 8px; background: ${theme.chipBg}; border-radius: 3px; color: ${theme.chipFg}; text-decoration: none; cursor: pointer;">${label}</a>`;
-                }).join('')}
+                const url = (networkData.paperUrlByTitle && networkData.paperUrlByTitle[p]) ? networkData.paperUrlByTitle[p] : null;
+                const label = escapeHtml(p.length > 35 ? p.substring(0, 35) + '...' : p);
+                if (url) {
+                    return `<a href="${url}" target="_blank" rel="noopener" title="${escapeHtml(p)}" style="display: inline-block; margin-right: 6px; margin-bottom: 4px; padding: 3px 8px; background: ${theme.chipBg}; border-radius: 3px; color: ${theme.chipFg}; text-decoration: none; cursor: pointer;">${label}</a>`;
+                }
+                return `<a href="#" onclick="searchForPaper('${escapeHtml(p).replace(/'/g, "\\'")}'); return false;" title="${escapeHtml(p)}" style="display: inline-block; margin-right: 6px; margin-bottom: 4px; padding: 3px 8px; background: ${theme.chipBg}; border-radius: 3px; color: ${theme.chipFg}; text-decoration: none; cursor: pointer;">${label}</a>`;
+            }).join('')}
                             <span style="font-size: 10px; color: #95a5a6; margin-left: 4px;">(${canonicalPapers.length} paper${canonicalPapers.length !== 1 ? 's' : ''})</span>
                             </div>
                         </div>
@@ -1652,6 +2093,14 @@
             }
 
             targetContainer.innerHTML = html;
+
+            // OPTIMIZATION: Cache the rendered HTML (limit cache size)
+            if (relationshipCache.size > 50) {
+                // Remove oldest entry (simple FIFO)
+                const firstKey = relationshipCache.keys().next().value;
+                relationshipCache.delete(firstKey);
+            }
+            relationshipCache.set(cacheKey, html);
         }
 
         // Go back to the list view
@@ -1696,19 +2145,42 @@
         }
 
         // Search input handlers
+        // OPTIMIZATION: Debounced search with cache clearing
         (function initSearch() {
-            const input = document.getElementById('searchInput');
-            const clearBtn = document.getElementById('clearSearchBtn');
+            const input = domCache.searchInput || document.getElementById('searchInput');
+            const clearBtn = domCache.clearSearchBtn || document.getElementById('clearSearchBtn');
             if (!input || !clearBtn) return;
 
             input.addEventListener('input', () => {
                 currentSearch = input.value || '';
-                renderResults();
+
+                // Reset pagination on search
+                paginationState.page = 0;
+
+                // Clear filtered results cache on search change
+                filteredResultsCache.clear();
+
+                // Debounce search to avoid excessive re-renders
+                if (searchDebounceTimer) {
+                    clearTimeout(searchDebounceTimer);
+                }
+
+                searchDebounceTimer = setTimeout(() => {
+                    renderResults();
+                }, 150); // 150ms debounce
             });
 
             clearBtn.addEventListener('click', () => {
                 currentSearch = '';
                 input.value = '';
+                paginationState.page = 0;
+
+                // Clear caches
+                filteredResultsCache.clear();
+
+                if (searchDebounceTimer) {
+                    clearTimeout(searchDebounceTimer);
+                }
                 renderResults();
             });
         })();
