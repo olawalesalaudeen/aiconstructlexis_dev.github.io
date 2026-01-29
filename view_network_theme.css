@@ -258,6 +258,49 @@ h1{
   background: rgba(219, 39, 119, 0.08) !important;
 }
 
+/* Mobile / small screens adjustments */
+@media (max-width: 800px) {
+  /* Stack title and menu */
+  header > div:first-child {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  /* Make top menu buttons easier to tap and horizontally scrollable */
+  .filter-buttons {
+    display: flex !important;
+    gap: 8px !important;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 6px;
+  }
+
+  .filter-btn, .graph-btn {
+    min-width: 110px;
+    padding: 10px 12px;
+    font-size: 15px;
+    white-space: nowrap;
+  }
+
+  /* Search and filters stack vertically */
+  .search-section {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .filter-controls {
+    flex-direction: column;
+    gap: 8px;
+    align-items: stretch;
+  }
+
+  /* Footer contact centered and compact */
+  .site-footer .contact-box {
+    text-align: center;
+    padding: 12px 10px;
+  }
+}
+
 .results-panel{
   border-radius: var(--radius);
   border: 1px solid var(--border);

@@ -108,7 +108,7 @@
             background: #ffffff;
             padding: 10px 16px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            margin: 0;
+            margin: 0 0 12px 0;
             display: flex;
             gap: 12px;
             align-items: center;
@@ -152,19 +152,22 @@
         #network {
             flex: 1 1 auto;
             width: 100%;
-            height: 100%;
+            min-height: 300px;
             background: #ffffff;
-            border: none;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 16px;
+            box-sizing: border-box;
         }
 
         .graph-footer {
-            padding: 8px 16px;
+            padding: 4px 8px;
             font-size: 11px;
             color: #7f8c8d;
             text-align: right;
             flex-shrink: 0;
             background: #ffffff;
-            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.06);
         }
     </style>
     <!-- Theme overrides (visual-only). Loaded after inline styles to win cascade. -->
@@ -541,9 +544,13 @@
 
             network = new vis.Network(container, data, options);
 
-            // After initial layout stabilizes, turn off physics so dragging doesn't snap nodes back
-            network.on('stabilizationIterationsDone', function () {
+            // After initial layout stabilizes, turn off physics so dragging doesn't snap nodes back,
+            // and set an initial zoom so the graph appears slightly more "zoomed in".
+            network.once('stabilizationIterationsDone', function () {
                 network.setOptions({ physics: { enabled: false } });
+                try {
+                    network.moveTo({ scale: 1.25 });
+                } catch (e) { /* ignore if moveTo not supported */ }
             });
 
             // OPTIMIZATION: Store original node data for reset (avoid expensive JSON operations)

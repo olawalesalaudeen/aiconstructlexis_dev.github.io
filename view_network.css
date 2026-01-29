@@ -242,6 +242,33 @@ body.home-mode .results-list{
     overflow-y: visible !important;
 }
 
+/* Home quick filters: collapse to single column on small screens */
+@media (max-width: 800px) {
+  .home-quick-filters {
+    grid-template-columns: 1fr !important;
+    gap: 10px;
+  }
+  .home-quick-filters .filter-btn,
+  .home-quick-filters .home-graph-btn {
+    width: 100%;
+  }
+  /* Make results list less cramped */
+  .results-list {
+    padding: 8px;
+  }
+  .results-panel {
+    margin-bottom: 12px;
+  }
+  /* Increase touch target for relationship items */
+  .relationship-item {
+    padding: 14px;
+  }
+  /* Adjust header spacing */
+  header h1 {
+    font-size: 20px;
+  }
+}
+
 .result-item {
     padding: 15px;
     border-bottom: 1px solid #ecf0f1;
