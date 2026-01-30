@@ -482,15 +482,6 @@
                 <a href="https://angelina-wang.github.io/" target="_blank" rel="noopener noreferrer"
                     class="contact-link">Angelina Wang</a> <span style="color: #95a5a6;">(Cornell Tech)</span>
             </div>
-            <div class="search-section" style="margin-top: 14px;">
-                <input id="searchInput" type="text"
-                    placeholder="Search constructs, measurement instruments, behaviors and tasks by name…"
-                    style="flex: 1; padding: 8px 10px; border-radius: 6px; border: 1px solid #ddd; font-size: 14px;" />
-                <button id="clearSearchBtn" type="button"
-                    style="padding: 8px 12px; border-radius: 6px; border: 1px solid #ddd; background: #ecf0f1; cursor: pointer; font-size: 13px;">
-                    Clear
-                </button>
-            </div>
             <div class="stats" style="display:none;">
                 <span id="totalNodes">Total: 0</span>
                 <span id="selectedCount">Selected: 0</span>
@@ -541,6 +532,16 @@
                 </div>
             </div>
         </header>
+
+        <div class="search-section" style="margin: 0 20px 20px 20px; display: flex; gap: 10px;">
+            <input id="searchInput" type="text"
+                placeholder="Search constructs, measurement instruments, behaviors and tasks by name…"
+                style="flex: 1; padding: 8px 10px; border-radius: 6px; border: 1px solid #ddd; font-size: 14px;" />
+            <button id="clearSearchBtn" type="button"
+                style="padding: 8px 12px; border-radius: 6px; border: 1px solid #ddd; background: #ecf0f1; cursor: pointer; font-size: 13px;">
+                Clear
+            </button>
+        </div>
 
         <div class="main-content">
             <div class="results-panel">
