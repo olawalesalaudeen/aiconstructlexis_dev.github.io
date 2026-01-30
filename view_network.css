@@ -8,12 +8,19 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     background: #f5f5f5;
     color: #333;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .container {
     max-width: 1400px;
     margin: 0 auto;
     padding: 20px;
+    overflow-x: hidden;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 header {
@@ -22,6 +29,10 @@ header {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .disclaimer-banner {
@@ -94,6 +105,10 @@ h1 {
     cursor: pointer;
     transition: all 0.3s;
     font-weight: 500;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    box-sizing: border-box;
 }
 
 .filter-btn.active {
@@ -107,6 +122,28 @@ h1 {
 
 .filter-btn.active:hover {
     background: #2980b9;
+}
+
+.graph-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background: #ecf0f1;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 500;
+    text-decoration: none;
+    color: #2c3e50;
+    display: inline-block;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.graph-btn:hover {
+    background: #bdc3c7;
 }
 
 .stats {
@@ -255,6 +292,14 @@ body.home-mode .results-list {
     .home-quick-filters .filter-btn,
     .home-quick-filters .home-graph-btn {
         width: 100%;
+        word-wrap: break-word;
+        white-space: normal;
+        text-align: center;
+        padding: 12px 8px;
+        font-size: 13px;
+        line-height: 1.4;
+        overflow-wrap: break-word;
+        hyphens: auto;
     }
 
     /* Make results list less cramped */
@@ -281,14 +326,19 @@ body.home-mode .results-list {
         flex-direction: column !important;
         align-items: flex-start !important;
         gap: 12px;
+        width: 100%;
+        overflow-x: hidden;
     }
 
     .filter-control {
         flex-direction: column !important;
         align-items: flex-start !important;
-        width: 100%;
+        width: 100% !important;
+        max-width: 100% !important;
         gap: 12px;
         flex-wrap: wrap !important;
+        overflow-x: hidden;
+        box-sizing: border-box;
     }
 
     .filter-control label {
@@ -296,42 +346,50 @@ body.home-mode .results-list {
         margin-bottom: 12px !important;
         display: block !important;
         width: 100% !important;
+        max-width: 100% !important;
         margin-right: 0 !important;
         line-height: 1.4;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        box-sizing: border-box;
     }
 
-    /* Stack each input group on mobile */
-    .filter-control>span {
-        display: inline-block;
-        margin-bottom: 8px;
-        white-space: nowrap;
+    /* Stack each input group on mobile - force wrapping */
+    .filter-control>span,
+    .filter-control .filter-input-label {
+        display: block !important;
+        margin-bottom: 8px !important;
+        margin-right: 0 !important;
+        white-space: normal !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        box-sizing: border-box;
     }
 
-    .filter-control input {
-        display: inline-block;
-        margin-bottom: 8px;
-        margin-right: 12px;
+    .filter-control input,
+    .filter-control .filter-input {
+        display: block !important;
+        margin-bottom: 12px !important;
+        margin-right: 0 !important;
+        width: 80px !important;
+        max-width: 100% !important;
+        box-sizing: border-box;
     }
 
-    /* On very small screens, put each label-input pair on its own line */
-    @media (max-width: 600px) {
-        .filter-control {
-            flex-direction: column !important;
-        }
+    /* Group label and input together */
+    .filter-control .filter-input-label+.filter-input {
+        margin-left: 0;
+        margin-top: 4px;
+    }
 
-        .filter-control>span {
-            display: block;
-            margin-bottom: 4px;
-            margin-right: 0;
-            white-space: normal;
-        }
-
-        .filter-control input {
-            display: block;
-            margin-bottom: 12px;
-            margin-right: 0;
-            width: 80px !important;
-        }
+    /* Ensure header doesn't overflow */
+    header {
+        overflow-x: hidden;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
     }
 
     /* Add spacing to home intro sections */
@@ -601,6 +659,11 @@ body.home-mode .results-list {
 .home-quick-filters .home-graph-btn {
     grid-column: 2;
     justify-self: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    text-align: center;
+    box-sizing: border-box;
 }
 
 /* Footer */
