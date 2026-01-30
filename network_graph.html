@@ -155,7 +155,7 @@
             min-height: 300px;
             background: #ffffff;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             padding: 16px;
             box-sizing: border-box;
         }
@@ -577,7 +577,7 @@
             document.body.appendChild(vTooltip);
 
             // Show tooltip on hoverNode
-            network.on('hoverNode', function(params) {
+            network.on('hoverNode', function (params) {
                 try {
                     const nodeId = params.node;
                     const node = visNodes.find(n => n.id === nodeId);
@@ -590,16 +590,16 @@
                     const y = ev.clientY || (ev.pageY || 0);
                     vTooltip.style.left = (x + 12) + 'px';
                     vTooltip.style.top = (y + 12) + 'px';
-                } catch (e) {}
+                } catch (e) { }
             });
 
-            network.on('blurNode', function() {
-                try { vTooltip.style.display = 'none'; } catch(e) {}
+            network.on('blurNode', function () {
+                try { vTooltip.style.display = 'none'; } catch (e) { }
             });
 
             // Hide tooltip on drag or click interactions
-            network.on('dragStart', function() { try { vTooltip.style.display = 'none'; } catch(e) {} });
-            network.on('zoom', function() { try { vTooltip.style.display = 'none'; } catch(e) {} });
+            network.on('dragStart', function () { try { vTooltip.style.display = 'none'; } catch (e) { } });
+            network.on('zoom', function () { try { vTooltip.style.display = 'none'; } catch (e) { } });
 
             // OPTIMIZATION: Store original node data for reset (avoid expensive JSON operations)
             const originalNodeData = new Map();
@@ -726,8 +726,9 @@
             // Double-click: navigate to detail page (register first to set flag)
             network.on('doubleClick', function (params) {
                 doubleClickFlag = true;
-                if (params.nodes.length > 0) {
-                    const nodeId = params.nodes[0];
+                // vis-network doubleClick event uses params.node (singular), not params.nodes
+                const nodeId = params.node || (params.nodes && params.nodes.length > 0 ? params.nodes[0] : null);
+                if (nodeId) {
                     const parts = nodeId.split('::');
                     if (parts.length === 2) {
                         const [type, canonicalName] = parts;

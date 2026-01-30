@@ -1032,9 +1032,15 @@
                     else if (currentFilter === 'behaviors') header.textContent = 'Behaviors/Tasks';
                 }
 
-                // Re-render list under this filter, then select node
+                // Re-render list under this filter to set up the UI state (filter buttons, header, etc.)
                 renderResults();
-                selectNodeByName(nodeName, nodeType);
+                // Then immediately show the detail view (renderDetails will replace the list content)
+                // Use requestAnimationFrame + setTimeout to ensure renderResults has completed
+                requestAnimationFrame(() => {
+                    setTimeout(() => {
+                        selectNodeByName(nodeName, nodeType);
+                    }, 100);
+                });
             } catch (e) {
                 console.warn('Failed to select node from URL params:', e);
             }
@@ -1629,7 +1635,11 @@
 
         // Select a node by name and type (used for clicking relationships)
         function selectNodeByName(nodeName, nodeType) {
-            const nodeKey = `${nodeType}_${nodeName}`;
+            // Resolve to canonical name if needed
+            const canonicalName = networkData.nameToCanonical && networkData.nameToCanonical[nodeName]
+                ? networkData.nameToCanonical[nodeName]
+                : nodeName;
+            const nodeKey = `${nodeType}_${canonicalName}`;
             selectNode(nodeKey);
         }
 
@@ -1953,13 +1963,13 @@
                         <div style="font-size: 13px; color: ${displayConsensus === 'N/A' ? '#95a5a6' : '#2c3e50'}; margin-bottom: 8px; line-height: 1.5;">${escapeHtml(displayConsensus)}</div>
                         <div style="font-size: 11px; color: #7f8c8d;">
                             ${canonicalPapers.map(p => {
-                    const url = (networkData.paperUrlByTitle && networkData.paperUrlByTitle[p]) ? networkData.paperUrlByTitle[p] : null;
-                    const label = escapeHtml(p.length > 35 ? p.substring(0, 35) + '...' : p);
-                    if (url) {
-                        return `<a href="${url}" target="_blank" rel="noopener" title="${escapeHtml(p)}" style="display: inline-block; margin-right: 6px; margin-bottom: 4px; padding: 3px 8px; background: ${theme.chipBg}; border-radius: 3px; color: ${theme.chipFg}; text-decoration: none; cursor: pointer;">${label}</a>`;
-                    }
-                    return `<a href="#" onclick="searchForPaper('${escapeHtml(p).replace(/'/g, "\\'")}'); return false;" title="${escapeHtml(p)}" style="display: inline-block; margin-right: 6px; margin-bottom: 4px; padding: 3px 8px; background: ${theme.chipBg}; border-radius: 3px; color: ${theme.chipFg}; text-decoration: none; cursor: pointer;">${label}</a>`;
-                }).join('')}${canonicalPapers.length > 0 ? `<span style="font-size: 10px; color: #95a5a6; margin-left: 4px;">(${canonicalPapers.length} paper${canonicalPapers.length !== 1 ? 's' : ''})</span>` : ''}
+                const url = (networkData.paperUrlByTitle && networkData.paperUrlByTitle[p]) ? networkData.paperUrlByTitle[p] : null;
+                const label = escapeHtml(p.length > 35 ? p.substring(0, 35) + '...' : p);
+                if (url) {
+                    return `<a href="${url}" target="_blank" rel="noopener" title="${escapeHtml(p)}" style="display: inline-block; margin-right: 6px; margin-bottom: 4px; padding: 3px 8px; background: ${theme.chipBg}; border-radius: 3px; color: ${theme.chipFg}; text-decoration: none; cursor: pointer;">${label}</a>`;
+                }
+                return `<a href="#" onclick="searchForPaper('${escapeHtml(p).replace(/'/g, "\\'")}'); return false;" title="${escapeHtml(p)}" style="display: inline-block; margin-right: 6px; margin-bottom: 4px; padding: 3px 8px; background: ${theme.chipBg}; border-radius: 3px; color: ${theme.chipFg}; text-decoration: none; cursor: pointer;">${label}</a>`;
+            }).join('')}${canonicalPapers.length > 0 ? `<span style="font-size: 10px; color: #95a5a6; margin-left: 4px;">(${canonicalPapers.length} paper${canonicalPapers.length !== 1 ? 's' : ''})</span>` : ''}
                             </div>
                         </div>
                 </div>`;
