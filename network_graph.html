@@ -6,168 +6,650 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nomological Network – AI Construct Lexis</title>
     <link rel="stylesheet" href="view_network.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Editorial type stack: Newsreader (serif display) + Inter (sans body) +
+         JetBrains Mono (small-caps section labels). -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600;6..72,700&family=JetBrains+Mono:wght@400;500;600&display=swap">
     <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
     <style>
-        body {
-            background: #f5f5f5;
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            overflow: hidden;
+        /* ---- Editorial design tokens (matches view_network_theme.css) ---- */
+        :root {
+            /* Category hues — desaturated to fit a warm paper palette. */
+            --c-construct:   #166534;   /* deep forest    */
+            --c-measurement: #1d4ed8;   /* ink navy       */
+            --c-behavior:    #9a3412;   /* terracotta     */
+            /* Single confident accent: deep cardinal / oxblood. */
+            --brand:         #9b2c2c;
+            --brand-2:       #7a1f1f;
+            /* Surfaces & ink */
+            --paper:         #faf7f2;
+            --paper-shade:   #f3efe6;
+            --surface:       #ffffff;
+            --text:          #1c1917;
+            --ink-2:         #292524;
+            --muted:         #57534e;
+            --muted-2:       #78716c;
+            --border:        #e7e5e4;
+            --border-strong: #d6d3d1;
+            /* Restrained shadows — favor hairlines + composition. */
+            --shadow-sm: 0 1px 0 rgba(28, 25, 23, 0.04);
+            --shadow-md: 0 2px 0 rgba(28, 25, 23, 0.06);
+            --radius:    8px;
+            --radius-sm: 6px;
+            /* Type stack */
+            --font-serif: 'Newsreader', 'Source Serif 4', Georgia, 'Times New Roman', serif;
+            --font-sans:  'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --font-mono:  'JetBrains Mono', 'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, monospace;
         }
 
-        .graph-container {
-            width: 100%;
-            height: 100vh;
+        * { box-sizing: border-box; }
+
+        body {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            min-height: 100vh;
+            font-family: var(--font-sans);
+            font-feature-settings: "ss01", "cv11", "ss03";
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            color: var(--text);
+            /* Warm paper background + thin cardinal stripe at the top
+               (publication style).  Stripe is a fixed background so it
+               never moves on scroll. */
+            background-color: var(--paper);
+            background-image: linear-gradient(var(--brand), var(--brand));
+            background-repeat: no-repeat;
+            background-size: 100% 3px;
+            background-position: top left;
+            background-attachment: fixed;
+        }
+
+        .graph-app {
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
         }
 
-        .graph-header {
-            background: #ffffff;
-            padding: 16px 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            margin: 0;
+        /* ---- Hero header ---------------------------------------------------- */
+        /* Reset inherited <header> rules from view_network_theme.css */
+        header.graph-hero {
             display: flex;
             justify-content: space-between;
-            align-items: center;
-            gap: 12px;
-            flex-shrink: 0;
+            align-items: flex-start;
+            gap: 24px;
+            padding: 24px 28px 20px 28px;
+            background: var(--surface);
+            border: 0;
+            border-bottom: 1px solid var(--border);
+            border-radius: 0;
+            box-shadow: none;
+            backdrop-filter: none;
+            -webkit-backdrop-filter: none;
         }
 
-        .graph-header-left {
-            display: flex;
-            flex-direction: column;
-            gap: 4px;
+        .graph-hero-left { display: flex; flex-direction: column; gap: 6px; }
+
+        .back-link {
+            color: var(--brand);
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-decoration-color: rgba(155, 44, 44, 0.30);
+            text-underline-offset: 3px;
+            font-size: 12.5px;
+            font-weight: 500;
+            letter-spacing: 0.005em;
+        }
+        .back-link:hover {
+            color: var(--brand-2);
+            text-decoration-color: var(--brand);
+            text-decoration-thickness: 2px;
         }
 
         .graph-title {
-            font-size: 18px;
+            font-family: var(--font-serif);
+            font-size: 28px;
             font-weight: 600;
-            color: #2c3e50;
+            letter-spacing: -0.012em;
+            line-height: 1.15;
+            color: var(--text);
         }
 
         .graph-subtitle {
             font-size: 13px;
-            color: #7f8c8d;
+            color: var(--muted);
+            line-height: 1.55;
         }
-
-        .back-link {
-            color: #0969da;
-            text-decoration: none;
-            font-size: 13px;
+        .graph-subtitle kbd {
+            display: inline-block;
+            padding: 1px 6px;
+            font-size: 11px;
+            font-family: var(--font-mono);
             font-weight: 500;
-        }
-
-        .back-link:hover {
-            text-decoration: underline;
-        }
-
-        .legend {
-            display: flex;
-            gap: 12px;
-            align-items: center;
-            font-size: 12px;
-        }
-
-        .legend-item {
-            display: inline-flex;
-            align-items: center;
-            gap: 4px;
-        }
-
-        .legend-dot {
-            width: 14px;
-            height: 14px;
+            color: var(--text);
+            background: var(--paper-shade);
+            border: 1px solid var(--border);
             border-radius: 3px;
-            border: 2px solid #2c3e50;
+        }
+
+        .graph-stats { display: flex; gap: 6px; flex-wrap: wrap; align-items: flex-start; }
+        .stat-chip {
             display: inline-flex;
             align-items: center;
-            justify-content: center;
-            font-size: 9px;
-            font-weight: 700;
-            color: #ffffff;
+            gap: 6px;
+            padding: 5px 10px;
+            font-family: var(--font-mono);
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: var(--muted);
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            box-shadow: none;
+        }
+        .stat-chip .dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: var(--muted-2);
+        }
+        .stat-chip.construct .dot   { background: var(--c-construct); }
+        .stat-chip.measurement .dot { background: var(--c-measurement); }
+        .stat-chip.behavior .dot    { background: var(--c-behavior); }
+        .stat-chip.edges .dot       { background: var(--muted-2); }
+        .stat-chip .num {
+            font-variant-numeric: tabular-nums;
+            color: var(--text);
+            font-weight: 600;
+            letter-spacing: 0;
         }
 
-        .legend-dot.construct {
-            background: #2e7d32;
+        /* ---- Main two-column layout ---------------------------------------- */
+        .graph-main {
+            flex: 1 1 auto;
+            display: grid;
+            grid-template-columns: 320px 1fr;
+            gap: 18px;
+            padding: 18px 28px 24px 28px;
+            min-height: 0;
         }
 
-        .legend-dot.measurement {
-            background: #1565c0;
+        @media (max-width: 920px) {
+            .graph-main { grid-template-columns: 1fr; }
+            .graph-hero { flex-direction: column; }
         }
 
-        .legend-dot.behavior {
-            background: #c2185b;
-        }
-
-        .graph-controls {
-            background: #ffffff;
-            padding: 10px 16px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            margin: 0 0 12px 0;
+        /* ---- Sidebar -------------------------------------------------------- */
+        .graph-sidebar {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 18px;
+            box-shadow: none;
             display: flex;
-            gap: 12px;
-            align-items: center;
-            flex-wrap: wrap;
-            flex-shrink: 0;
+            flex-direction: column;
+            gap: 16px;
+            backdrop-filter: none;
+            -webkit-backdrop-filter: none;
+            align-self: start;
+            position: sticky;
+            top: 18px;
         }
 
-        .graph-search {
-            flex: 1;
-            min-width: 200px;
+        .controls-section-label {
+            font-family: var(--font-mono);
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--muted);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .controls-section-label .hint {
+            font-family: var(--font-sans);
+            font-weight: 400;
+            color: var(--muted-2);
+            text-transform: none;
+            letter-spacing: 0;
+            font-size: 11.5px;
         }
 
         .graph-search input {
             width: 100%;
-            padding: 6px 10px;
-            border-radius: 6px;
-            border: 1px solid #ddd;
-            font-size: 13px;
-            box-sizing: border-box;
-        }
-
-        .graph-search input:focus {
+            padding: 9px 12px;
+            font-size: 13.5px;
+            font-family: inherit;
+            color: var(--text);
+            background: var(--surface);
+            border: 1px solid var(--border-strong);
+            border-radius: var(--radius-sm);
             outline: none;
-            border-color: #3498db;
+            transition: border-color 0.12s, box-shadow 0.12s;
+        }
+        .graph-search input:focus-visible {
+            border-color: var(--brand);
+            box-shadow: 0 0 0 3px rgba(155, 44, 44, 0.16);
         }
 
-        .graph-controls button {
-            padding: 6px 12px;
-            border-radius: 6px;
-            border: 1px solid #ddd;
-            background: #ecf0f1;
+        /* Type-toggle rows */
+        .type-toggles { display: flex; flex-direction: column; gap: 4px; }
+        .type-toggle {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            padding: 7px 10px;
+            font-size: 13px;
+            font-weight: 500;
+            font-family: inherit;
+            color: var(--text);
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
             cursor: pointer;
+            transition: background 0.12s, border-color 0.12s, opacity 0.12s;
+        }
+        .type-toggle .swatch {
+            width: 10px;
+            height: 10px;
+            border-radius: 2px;
+            background: var(--muted-2);
+        }
+        .type-toggle[data-type="construct"]   .swatch { background: var(--c-construct); }
+        .type-toggle[data-type="measurement"] .swatch { background: var(--c-measurement); }
+        .type-toggle[data-type="behavior"]    .swatch { background: var(--c-behavior); }
+        .type-toggle:hover { background: var(--paper-shade); border-color: var(--border-strong); }
+        .type-toggle.muted { opacity: 0.40; }
+        .type-toggle.muted .swatch { background: var(--border-strong) !important; }
+
+        /* Segmented control (Top-K + edge mode) — flat, editorial. */
+        .segmented {
+            display: flex;
+            gap: 0;
+            padding: 0;
+            background: var(--surface);
+            border: 1px solid var(--border-strong);
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+        }
+        .segmented button {
+            flex: 1 1 0;
+            min-width: 0;
+            padding: 7px 8px;
             font-size: 12px;
             font-weight: 500;
+            font-family: var(--font-sans);
+            color: var(--muted);
+            background: transparent;
+            border: 0;
+            border-right: 1px solid var(--border);
+            border-radius: 0;
+            cursor: pointer;
+            transition: background 0.12s, color 0.12s;
+        }
+        .segmented button:last-child { border-right: 0; }
+        .segmented button:hover {
+            color: var(--text);
+            background: var(--paper-shade);
+        }
+        .segmented button.active {
+            color: var(--paper);
+            background: var(--text);
+            box-shadow: none;
         }
 
-        .graph-controls button:hover {
-            background: #dde3e6;
-        }
-
-        #network {
+        /* Custom-K input row */
+        .topk-custom { display: flex; gap: 6px; }
+        .topk-custom input[type="number"] {
             flex: 1 1 auto;
-            width: 100%;
-            min-height: 300px;
-            background: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            padding: 16px;
-            box-sizing: border-box;
+            min-width: 0;
+            padding: 7px 10px;
+            font-size: 13px;
+            font-family: inherit;
+            color: var(--text);
+            background: var(--surface);
+            border: 1px solid var(--border-strong);
+            border-radius: var(--radius-sm);
+            outline: none;
+            -moz-appearance: textfield;
+        }
+        .topk-custom input[type="number"]::-webkit-outer-spin-button,
+        .topk-custom input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+        .topk-custom input[type="number"]:focus-visible {
+            border-color: var(--brand);
+            box-shadow: 0 0 0 3px rgba(155, 44, 44, 0.16);
         }
 
-        .graph-footer {
-            padding: 4px 8px;
+        /* Action buttons */
+        .button-row { display: flex; gap: 6px; }
+        .btn {
+            flex: 1 1 0;
+            padding: 8px 12px;
+            font-size: 12.5px;
+            font-weight: 500;
+            font-family: inherit;
+            color: var(--text);
+            background: var(--surface);
+            border: 1px solid var(--border-strong);
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            transition: background 0.12s, border-color 0.12s;
+        }
+        .btn:hover { background: var(--paper-shade); border-color: var(--muted-2); }
+        .btn.primary {
+            color: var(--paper);
+            background: var(--text);
+            border-color: var(--text);
+            box-shadow: none;
+        }
+        .btn.primary:hover { background: var(--ink-2); border-color: var(--ink-2); filter: none; }
+
+        /* ---- Selection panel (appears when a node is clicked) ------------ */
+        /* Layout strategy: the panel itself never scrolls.  The header (name +
+           meta + buttons), the definition, and the "Open details" button stay
+           pinned, while only the connection list scrolls in the middle.  This
+           way the node name is always visible no matter how long the list is. */
+        .selection-panel {
+            background: var(--surface);
+            border: 0;
+            border-top:    2px solid var(--text);
+            border-bottom: 1px solid var(--border);
+            border-radius: 0;
+            padding: 16px 16px 18px;
+            box-shadow: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 14px;
+            max-height: calc(100vh - 80px);
+            min-height: 0;
+            overflow: hidden;
+        }
+        .selection-panel[hidden] { display: none; }
+        .selection-panel > .selection-header,
+        .selection-panel > .selection-definition,
+        .selection-panel > .btn { flex: 0 0 auto; }
+
+        .selection-header { display: flex; gap: 10px; align-items: flex-start; }
+        .selection-title  { flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 6px; }
+        .selection-name {
+            font-family: var(--font-serif);
+            font-size: 19px;
+            font-weight: 600;
+            letter-spacing: -0.005em;
+            color: var(--text);
+            line-height: 1.22;
+            word-wrap: break-word;
+        }
+        .selection-meta { display: flex; gap: 6px; flex-wrap: wrap; }
+        .selection-meta .stat-chip {
+            padding: 3px 8px;
+            font-size: 10px;
+        }
+        .btn-icon {
+            flex: 0 0 auto;
+            width: 28px;
+            height: 28px;
+            padding: 0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            line-height: 1;
+            font-family: inherit;
+            color: var(--muted);
+            background: transparent;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+        }
+        .btn-icon:hover { background: var(--paper-shade); color: var(--text); }
+
+        .selection-definition {
+            font-family: var(--font-serif);
+            font-size: 14px;
+            line-height: 1.55;
+            color: var(--ink-2);
+            border-left: 2px solid var(--border-strong);
+            padding: 2px 0 2px 12px;
+            margin: 2px 0;
+            max-height: 7.5em;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+        }
+
+        .selection-connections {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            flex: 1 1 auto;
+            min-height: 0;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+            padding-right: 4px;
+            margin-right: -4px;
+            scrollbar-width: thin;
+            scrollbar-color: var(--border-strong) transparent;
+        }
+        .selection-connections::-webkit-scrollbar { width: 8px; }
+        .selection-connections::-webkit-scrollbar-thumb {
+            background: var(--border-strong);
+            border-radius: 999px;
+        }
+        .selection-connections::-webkit-scrollbar-thumb:hover { background: var(--muted-2); }
+        .conn-group {}
+        .conn-group-label {
+            font-family: var(--font-mono);
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin-bottom: 4px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .conn-count {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 20px;
+            padding: 1px 6px;
+            font-family: var(--font-mono);
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 0;
+            color: var(--muted);
+            background: var(--paper-shade);
+            border-radius: 3px;
+        }
+        .conn-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 1px; }
+        .conn-link {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            width: 100%;
+            padding: 6px 8px;
+            font-size: 13px;
+            font-family: inherit;
+            color: var(--text);
+            background: transparent;
+            border: 0;
+            border-radius: 4px;
+            text-align: left;
+            cursor: pointer;
+            line-height: 1.3;
+        }
+        .conn-link:hover { background: var(--paper-shade); color: var(--brand); }
+        .conn-link.preview { background: rgba(155, 44, 44, 0.08); color: var(--brand); }
+        .conn-name { flex: 1 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+        .conn-weight {
+            flex: 0 0 auto;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 20px;
+            padding: 0 6px;
+            height: 18px;
+            font-family: var(--font-mono);
+            font-size: 10.5px;
+            font-weight: 600;
+            color: var(--muted);
+            background: var(--paper-shade);
+            border-radius: 3px;
+            font-variant-numeric: tabular-nums;
+        }
+        .conn-link:hover .conn-weight { color: var(--brand); background: rgba(155, 44, 44, 0.10); }
+        .conn-dot {
+            flex: 0 0 auto;
+            width: 8px;
+            height: 8px;
+            border-radius: 2px;
+            background: var(--muted-2);
+        }
+        .conn-dot.construct   { background: var(--c-construct); }
+        .conn-dot.measurement { background: var(--c-measurement); }
+        .conn-dot.behavior    { background: var(--c-behavior); }
+
+        /* Floating "preview" halo over the canvas when hovering a neighbor. */
+        .preview-halo {
+            position: absolute;
+            pointer-events: none;
+            width: 56px;
+            height: 56px;
+            margin: -28px 0 0 -28px;
+            border-radius: 50%;
+            border: 2px solid var(--brand);
+            box-shadow: 0 0 0 5px rgba(155, 44, 44, 0.14), 0 0 16px rgba(155, 44, 44, 0.30);
+            opacity: 0;
+            transition: opacity 0.15s ease;
+            z-index: 9;
+        }
+        .preview-halo.visible {
+            opacity: 1;
+            animation: previewPulse 1.4s ease-in-out infinite;
+        }
+        @keyframes previewPulse {
+            0%, 100% { box-shadow: 0 0 0 5px  rgba(155, 44, 44, 0.14), 0 0 16px rgba(155, 44, 44, 0.30); }
+            50%      { box-shadow: 0 0 0 11px rgba(155, 44, 44, 0.06), 0 0 24px rgba(155, 44, 44, 0.40); }
+        }
+
+        /* Pin button — active state */
+        .btn-icon.is-active {
+            color: var(--brand);
+            border-color: var(--brand);
+            background: rgba(155, 44, 44, 0.06);
+        }
+        .btn-icon svg { display: block; }
+
+        .selection-empty {
+            font-family: var(--font-serif);
+            font-size: 13.5px;
+            color: var(--muted-2);
+            font-style: italic;
+        }
+
+        /* ---- Network frame -------------------------------------------------- */
+        .network-frame {
+            position: relative;
+            min-height: 82vh;
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            background: var(--surface);
+            box-shadow: none;
+            overflow: hidden;
+        }
+        #network {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            outline: none;
+        }
+        #network:focus-visible {
+            box-shadow: inset 0 0 0 2px rgba(155, 44, 44, 0.30);
+        }
+
+        /* Floating legend overlay inside the canvas */
+        .legend-floating {
+            position: absolute;
+            top: 14px;
+            right: 14px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            padding: 10px 12px;
+            font-size: 12px;
+            color: var(--text);
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            box-shadow: none;
+            pointer-events: none;
+            backdrop-filter: none;
+            -webkit-backdrop-filter: none;
+        }
+        .legend-title {
+            font-family: var(--font-mono);
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin-bottom: 2px;
+        }
+        .legend-item { display: inline-flex; align-items: center; gap: 6px; font-weight: 400; }
+        .legend-dot {
+            width: 9px;
+            height: 9px;
+            border-radius: 2px;
+            background: var(--muted-2);
+        }
+        .legend-dot.construct   { background: var(--c-construct); }
+        .legend-dot.measurement { background: var(--c-measurement); }
+        .legend-dot.behavior    { background: var(--c-behavior); }
+
+        /* ---- Footer --------------------------------------------------------- */
+        .site-footer {
+            padding: 16px 28px 24px 28px;
+            font-size: 13px;
+            color: var(--muted);
+        }
+        .contact-box {
+            background: var(--paper-shade);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 14px 18px;
+            box-shadow: none;
+        }
+        .contact-box-title {
+            font-family: var(--font-mono);
             font-size: 11px;
-            color: #7f8c8d;
-            text-align: right;
-            flex-shrink: 0;
-            background: #ffffff;
-            box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.06);
+            font-weight: 600;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin-bottom: 6px;
+        }
+        .contact-link, .substack-link {
+            color: var(--brand);
+            text-decoration: underline;
+            text-decoration-color: rgba(155, 44, 44, 0.30);
+            text-underline-offset: 3px;
+            text-decoration-thickness: 1px;
+            font-weight: 500;
+        }
+        .contact-link:hover, .substack-link:hover {
+            color: var(--brand-2);
+            text-decoration-color: var(--brand);
+            text-decoration-thickness: 2px;
         }
     </style>
     <!-- Theme overrides (visual-only). Loaded after inline styles to win cascade. -->
@@ -175,80 +657,153 @@
 </head>
 
 <body>
-    <div class="graph-container">
-        <div class="graph-header">
-            <div class="graph-header-left">
-                <div>
-                    <a href="view_network.html" class="back-link">← Back to Explorer</a>
-                </div>
-                <div class="graph-title">Nomological Network</div>
-                <div class="graph-subtitle">
-                    Click a node to highlight its connections • Double-click to view details • Click empty space to
-                    reset
-                </div>
+    <div class="graph-app">
+
+        <!-- ----- Hero header ------------------------------------------------ -->
+        <header class="graph-hero">
+            <div class="graph-hero-left">
+                <a href="view_network.html" class="back-link">← Back to Explorer</a>
+                <h1 class="graph-title">Nomological Network</h1>
+                <p class="graph-subtitle">
+                    <kbd>Click</kbd> a node to highlight • <kbd>Double-click</kbd> to open •
+                    <kbd>Scroll</kbd> to zoom • <kbd>Drag</kbd> or
+                    <kbd>↑</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd> to pan
+                </p>
             </div>
-            <div class="legend">
-                <div class="legend-item">
-                    <span class="legend-dot construct">C</span>Construct
-                </div>
-                <div class="legend-item">
-                    <span class="legend-dot measurement">M</span>Measurement Instrument
-                </div>
-                <div class="legend-item">
-                    <span class="legend-dot behavior">B</span>Behavior/Task
-                </div>
+
+            <div class="graph-stats" id="graphStats" aria-label="Graph statistics">
+                <span class="stat-chip construct"><span class="dot"></span><span class="num"
+                        id="statConstructs">0</span> Constructs</span>
+                <span class="stat-chip measurement"><span class="dot"></span><span class="num"
+                        id="statMeasurements">0</span> Measure.</span>
+                <span class="stat-chip behavior"><span class="dot"></span><span class="num"
+                        id="statBehaviors">0</span> Behaviors</span>
+                <span class="stat-chip edges"><span class="dot"></span><span class="num"
+                        id="statEdges">0</span> Edges</span>
             </div>
+        </header>
+
+        <!-- ----- Main two-column layout ------------------------------------- -->
+        <div class="graph-main">
+
+            <!-- Sidebar: search, type toggles, Top-K, edge mode, actions -->
+            <aside class="graph-sidebar" aria-label="Graph controls">
+
+                <!-- Selection panel — appears when a node is clicked. -->
+                <section class="selection-panel" id="selectionPanel" hidden aria-live="polite"
+                    aria-label="Selected node details">
+                    <header class="selection-header">
+                        <div class="selection-title">
+                            <div class="selection-name" id="selName"></div>
+                            <div class="selection-meta">
+                                <span class="stat-chip" id="selTypeChip"><span class="dot"></span><span
+                                        id="selType"></span></span>
+                                <span class="stat-chip"><span class="dot"></span><span id="selDegree">0</span>
+                                    connections</span>
+                            </div>
+                        </div>
+                        <button class="btn-icon" id="selPin" type="button" aria-label="Pin selection"
+                            aria-pressed="false"
+                            title="Pin selection — clicks on empty space won't clear it">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <line x1="12" y1="17" x2="12" y2="22"></line>
+                                <path d="M9 6V2h6v4l3 8H6l3-8z"></path>
+                            </svg>
+                        </button>
+                        <button class="btn-icon" id="selClose" type="button" aria-label="Clear selection (Esc)"
+                            title="Clear selection (Esc)">×</button>
+                    </header>
+                    <div class="selection-definition" id="selDefinition"></div>
+                    <div class="selection-connections" id="selConnections"></div>
+                    <a class="btn primary" id="selOpenDetails" href="#" style="text-align: center;">Open details
+                        →</a>
+                </section>
+
+                <div class="controls-section-label">Search</div>
+                <div class="graph-search">
+                    <input id="graphSearchInput" type="text" placeholder="Search nodes…" autocomplete="off" />
+                </div>
+
+                <div class="controls-section-label">Show</div>
+                <div class="type-toggles" role="group" aria-label="Filter by entity type">
+                    <button type="button" class="type-toggle active" data-type="construct"
+                        aria-pressed="true"><span class="swatch"></span>Constructs</button>
+                    <button type="button" class="type-toggle active" data-type="behavior"
+                        aria-pressed="true"><span class="swatch"></span>Behaviors / Tasks</button>
+                    <button type="button" class="type-toggle active" data-type="measurement"
+                        aria-pressed="true"><span class="swatch"></span>Measurement Instruments</button>
+                </div>
+
+                <div class="controls-section-label">Show top
+                    <span class="hint" id="topKActiveLabel" aria-live="polite"></span>
+                </div>
+                <div class="segmented" id="topKControl" role="group"
+                    aria-label="Limit to most-connected entities">
+                    <button type="button" data-k="100" aria-pressed="false" title="Top 100 most-connected">100</button>
+                    <button type="button" class="active" data-k="250" aria-pressed="true"
+                        title="Top 250 most-connected (default)">250</button>
+                    <button type="button" data-k="500" aria-pressed="false" title="Top 500 most-connected">500</button>
+                    <button type="button" data-k="1000" aria-pressed="false" title="Top 1000 most-connected">1000</button>
+                    <button type="button" data-k="all" aria-pressed="false"
+                        title="Render every entity (may be slow with thousands of nodes)">All</button>
+                </div>
+                <div class="topk-custom" role="group" aria-label="Custom top-K value">
+                    <input type="number" id="topKCustomInput" min="1" step="1"
+                        placeholder="Custom K (e.g., 350)" inputmode="numeric" autocomplete="off" />
+                    <button type="button" id="topKCustomApply" class="btn">Apply</button>
+                </div>
+
+                <div class="controls-section-label">Layout</div>
+                <div class="segmented" id="layoutControl" role="group" aria-label="Layout mode">
+                    <button type="button" class="active" data-layout="layered" aria-pressed="true"
+                        title="Top-down nomological hierarchy — Constructs → Behaviors / Tasks → Measurement Instruments">Layered</button>
+                    <button type="button" data-layout="force" aria-pressed="false"
+                        title="Free force-directed clustering by type">Force</button>
+                </div>
+
+                <div class="controls-section-label">Edges</div>
+                <div class="segmented" id="edgeModeControl" role="group" aria-label="Edge density">
+                    <button type="button" class="active" data-mode="subtle" aria-pressed="true"
+                        title="Default — edges fade into the background">Subtle</button>
+                    <button type="button" data-mode="normal" aria-pressed="false"
+                        title="Show all edges at moderate intensity">Normal</button>
+                    <button type="button" data-mode="hidden" aria-pressed="false"
+                        title="Hide edges; only reveal those of the selected / searched nodes">Focus</button>
+                </div>
+
+                <div class="controls-section-label">View</div>
+                <div class="button-row">
+                    <button id="resetViewBtn" class="btn primary" type="button">Reset View</button>
+                    <button id="togglePhysicsBtn" class="btn" type="button">Pause Physics</button>
+                </div>
+            </aside>
+
+            <!-- Main canvas -->
+            <main class="network-frame">
+                <div id="network"></div>
+                <div class="preview-halo" id="previewHalo" aria-hidden="true"></div>
+                <div class="legend-floating" aria-hidden="true">
+                    <div class="legend-title">Tiers (top → bottom)</div>
+                    <div class="legend-item"><span class="legend-dot construct"></span>Construct</div>
+                    <div class="legend-item"><span class="legend-dot behavior"></span>Behavior / Task</div>
+                    <div class="legend-item"><span class="legend-dot measurement"></span>Measurement</div>
+                </div>
+            </main>
         </div>
-        <div
-            style="background: #ffffff; padding: 10px 16px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); margin: 0 0 12px 0; font-size: 13px; color: #7f8c8d; line-height: 1.5;">
-            <strong style="color: #2c3e50;">Team.</strong>
-            <a href="https://www.olawalesalaudeen.com/" target="_blank" rel="noopener noreferrer"
-                style="color: #0969da; text-decoration: none;">Olawale (Wale) Salaudeen</a> <span
-                style="color: #95a5a6;">(MIT, Schmidt Sciences)</span>,
-            <a href="https://flodorner.github.io/" target="_blank" rel="noopener noreferrer"
-                style="color: #0969da; text-decoration: none;">Florian Dorner</a> <span style="color: #95a5a6;">(MPI-IS,
-                ETH-Zürich)</span>,
-            <a href="https://tomsuehr.com/" target="_blank" rel="noopener noreferrer"
-                style="color: #0969da; text-decoration: none;">Tom Sühr</a> <span
-                style="color: #95a5a6;">(MPI-IS)</span>,
-            <a href="https://ai.stanford.edu/~sttruong/" target="_blank" rel="noopener noreferrer"
-                style="color: #0969da; text-decoration: none;">Sang Truong</a> <span
-                style="color: #95a5a6;">(Stanford)</span>,
-            <a href="https://haoran.ca/" target="_blank" rel="noopener noreferrer"
-                style="color: #0969da; text-decoration: none;">Haoran Zhang</a> <span
-                style="color: #95a5a6;">(MIT)</span>,
-            <a href="https://healthyml.org/marzyeh/" target="_blank" rel="noopener noreferrer"
-                style="color: #0969da; text-decoration: none;">Marzyeh Ghassemi</a> <span
-                style="color: #95a5a6;">(MIT)</span>,
-            <a href="https://cs.stanford.edu/~sanmi/" target="_blank" rel="noopener noreferrer"
-                style="color: #0969da; text-decoration: none;">Sanmi Koyejo</a> <span
-                style="color: #95a5a6;">(Stanford)</span>,
-            <a href="https://angelina-wang.github.io/" target="_blank" rel="noopener noreferrer"
-                style="color: #0969da; text-decoration: none;">Angelina Wang</a> <span style="color: #95a5a6;">(Cornell
-                Tech)</span>
-        </div>
-        <div class="graph-controls">
-            <div class="graph-search">
-                <input id="graphSearchInput" type="text" placeholder="Search nodes…" />
-            </div>
-            <button id="resetViewBtn" type="button">Reset View</button>
-            <button id="togglePhysicsBtn" type="button">Pause Physics</button>
-        </div>
-        <div id="network"></div>
-        <div class="graph-footer" id="graphStats"></div>
+
+        <!-- ----- Footer ----------------------------------------------------- -->
         <footer class="site-footer" aria-label="Site footer">
-            <div class="contact-box" style="margin: 0 16px 16px 16px;">
+            <div class="contact-box">
                 <div class="contact-box-title">Contact &amp; Updates</div>
-                <div class="contact-box-row">
+                <div>
                     For questions or collaboration, email
                     <a href="mailto:aiconstructlexis@gmail.com" class="contact-link">aiconstructlexis@gmail.com</a>.
                 </div>
-                <div>
-                    Subscribe to our Substack for project updates and insights:
+                <div style="margin-top:6px;">
+                    Subscribe on Substack:
                     <a href="https://substack.com/@aiconstructlexis" target="_blank" rel="noopener"
-                        class="substack-link">
-                        @aiconstructlexis
-                    </a>
+                        class="substack-link">@aiconstructlexis</a>
                 </div>
             </div>
         </footer>
@@ -443,39 +998,52 @@
             const visNodes = [];
             const nodeIdToType = new Map();
 
+            // Editorial palette — desaturated category hues that pass WCAG AA against white text
+            // and harmonize with the warm cream page background.
+            //   construct   = deep forest
+            //   measurement = ink navy
+            //   behavior    = terracotta
+            const NODE_COLORS = {
+                construct:   { background: '#166534', border: '#14532d', highlight: { background: '#15803d', border: '#14532d' }, hover: { background: '#15803d', border: '#14532d' } },
+                measurement: { background: '#1d4ed8', border: '#1e3a8a', highlight: { background: '#2563eb', border: '#1e3a8a' }, hover: { background: '#2563eb', border: '#1e3a8a' } },
+                behavior:    { background: '#9a3412', border: '#7c2d12', highlight: { background: '#c2410c', border: '#7c2d12' }, hover: { background: '#c2410c', border: '#7c2d12' } }
+            };
+            const FONT_BASE = { color: '#ffffff', face: '"Inter", -apple-system, "Segoe UI", sans-serif', strokeWidth: 0 };
+
             allConfigs.forEach(cfg => {
                 const nodeId = getNodeId(cfg.type, cfg.canonicalName);
                 nodeIdToType.set(nodeId, cfg.type);
 
-                const colors = {
-                    construct: { background: '#2e7d32', border: '#1b5e20' },
-                    measurement: { background: '#1565c0', border: '#0d47a1' },
-                    behavior: { background: '#c2185b', border: '#880e4f' }
-                };
-
-                // Build tooltip with definition
                 const definition = cfg.config.canonical_definition || 'No definition available';
                 const tooltip = createTooltip(cfg.canonicalName, cfg.type, definition);
-                // append an info marker to the label so users see an info affordance
-                const labelText = `${cfg.displayName} ⓘ`;
 
                 visNodes.push({
                     id: nodeId,
-                    label: labelText,
-                    // remove title (we'll use custom tooltip on hover to allow HTML)
-                    // title: tooltip,
+                    label: cfg.displayName,        // clean label — definition lives in the hover tooltip
                     rawTooltip: tooltip,
-                    color: colors[cfg.type],
-                    font: { size: 12, color: '#ffffff' },
+                    color: NODE_COLORS[cfg.type],
+                    font: { ...FONT_BASE, size: 13 },
                     shape: 'box',
-                    margin: 8,
-                    size: 20
+                    margin: 12,
+                    widthConstraint: { maximum: 220 },
+                    shadow: { enabled: true, size: 6, x: 0, y: 2, color: 'rgba(15,23,42,0.18)' },
+                    typeCategory: cfg.type,
+                    canonicalName: cfg.canonicalName,
+                    canonicalDefinition: definition,
+                    hidden: false
                 });
             });
 
-            // Build vis-network edges (only between nodes that exist in index)
-            const visEdges = [];
-            const edgeSet = new Set(); // Avoid duplicates
+            // Build vis-network edges (only between nodes that exist in index).
+            // Each unique (source, target) pair becomes ONE edge, but we count
+            // every relationship occurrence into edgeWeight — so the connection
+            // panel can show "(N papers)" per neighbor.
+            const visEdges  = [];
+            const edgeMade  = new Set();             // dedupe edge objects
+            const edgeWeight = new Map();            // edgeKey → number of relationships
+            const edgePapers = new Map();            // edgeKey → Set of distinct paper titles
+
+            function makeEdgeKey(a, b) { return a < b ? a + '|' + b : b + '|' + a; }
 
             allConfigs.forEach(cfg => {
                 const sourceId = getNodeId(cfg.type, cfg.canonicalName);
@@ -488,7 +1056,6 @@
                     const otherCanonical = nameToCanonical.get(rawOther) || rawOther;
                     if (!indexCanonicalNames.has(otherCanonical)) return;
 
-                    // Determine other node's type from relationships
                     const otherType = rel.other_type || 'construct';
                     const otherTypeShort = otherType.includes('construct') ? 'construct' :
                         otherType.includes('measurement') ? 'measurement' :
@@ -497,20 +1064,34 @@
                     const targetId = getNodeId(otherTypeShort, otherCanonical);
                     if (!nodeIdToType.has(targetId)) return;
 
-                    // Avoid duplicate edges
-                    const edgeKey = sourceId < targetId ? sourceId + '|' + targetId : targetId + '|' + sourceId;
-                    if (edgeSet.has(edgeKey)) return;
-                    edgeSet.add(edgeKey);
+                    const edgeKey = makeEdgeKey(sourceId, targetId);
+                    edgeWeight.set(edgeKey, (edgeWeight.get(edgeKey) || 0) + 1);
+                    if (rel.paper) {
+                        if (!edgePapers.has(edgeKey)) edgePapers.set(edgeKey, new Set());
+                        edgePapers.get(edgeKey).add(rel.paper);
+                    }
 
-                    visEdges.push({
-                        from: sourceId,
-                        to: targetId,
-                        color: { color: '#95a5a6', highlight: '#3498db' },
-                        width: 1,
-                        smooth: { type: 'continuous', roundness: 0.2 }
-                    });
+                    if (!edgeMade.has(edgeKey)) {
+                        edgeMade.add(edgeKey);
+                        visEdges.push({
+                            from: sourceId,
+                            to: targetId,
+                            color: { color: '#95a5a6', highlight: '#3498db' },
+                            width: 1,
+                            smooth: { type: 'continuous', roundness: 0.2 }
+                        });
+                    }
                 });
             });
+
+            // For the connection-panel: papers per neighbor pair.  Falls back to
+            // the raw relationship count when no `paper` field was attached.
+            function getEdgeStrength(idA, idB) {
+                const k = makeEdgeKey(idA, idB);
+                const papers = edgePapers.get(k);
+                if (papers && papers.size) return { count: papers.size, label: 'paper' };
+                return { count: edgeWeight.get(k) || 1, label: 'mention' };
+            }
 
             allNodesData = visNodes;
             allEdgesData = visEdges;
@@ -528,13 +1109,303 @@
                 edgeAdjacencyMap.get(edge.to).add(edge.from);
             });
 
-            // OPTIMIZATION: Store original edge data for reset (avoid expensive JSON operations)
-            const originalEdgeData = visEdges.map(edge => ({
-                from: edge.from,
-                to: edge.to,
-                color: { color: edge.color.color || '#95a5a6', highlight: edge.color.highlight || '#3498db' },
-                width: edge.width
-            }));
+            // ---- Top-K + type + edge-mode filtering ----------------------
+            // Compute global degree, sort nodes by degree desc (stable on label).
+            const globalDegree = new Map();
+            visNodes.forEach(n => globalDegree.set(n.id, 0));
+            visEdges.forEach(e => {
+                globalDegree.set(e.from, (globalDegree.get(e.from) || 0) + 1);
+                globalDegree.set(e.to, (globalDegree.get(e.to) || 0) + 1);
+            });
+            const nodesByDegreeDesc = visNodes.slice().sort((a, b) => {
+                const d = (globalDegree.get(b.id) || 0) - (globalDegree.get(a.id) || 0);
+                if (d !== 0) return d;
+                return (a.label || '').localeCompare(b.label || '');
+            });
+
+            // Degree-driven font + shadow scaling: hubs read larger AND look "raised".
+            const maxDegree = Math.max(1, ...Array.from(globalDegree.values()));
+            visNodes.forEach(n => {
+                const deg = globalDegree.get(n.id) || 0;
+                const t   = Math.min(1, deg / Math.max(8, maxDegree));   // 0..1
+                n.font  = { ...n.font, size: Math.round(12 + t * 6) };    // 12..18
+                n.value = deg;                                            // drives scaling.label
+                // Degree-scaled drop shadow gives the network depth: leaves sit close
+                // to the canvas, hubs hover above it.
+                const shadowSize  = Math.round(4 + t * 12);               // 4..16
+                const shadowYoff  = Math.round(2 + t * 5);                // 2..7
+                const shadowAlpha = (0.10 + t * 0.20).toFixed(2);         // 0.10..0.30
+                n.shadow = { enabled: true, size: shadowSize, x: 0, y: shadowYoff, color: `rgba(15,23,42,${shadowAlpha})` };
+            });
+
+            // ---- Layout modes -------------------------------------------
+            // 'layered'  → top-down nomological hierarchy.
+            //              y is pinned per tier (and per construct sub-tier);
+            //              x is free for physics, so connected nodes drift to
+            //              similar x within their row to minimise crossings.
+            //              Tier order (top → bottom):
+            //                Constructs   (split into 1-N sub-rows by degree)
+            //                Behaviors / Tasks
+            //                Measurement Instruments
+            // 'force'    → free force-directed layout, with type-clustered
+            //              initial positions to seed three rough communities.
+            const FORCE_CENTERS = {
+                construct:   { x: -1100, y:  -50 },
+                measurement: { x:   100, y: -250 },
+                behavior:    { x:   900, y:  450 }
+            };
+            const TIER_ORDER = ['construct', 'behavior', 'measurement'];   // top → bottom
+            const X_SPAN     = 1800;                                       // total layered-row width
+            const ROW_GAP    = 240;                                        // y-gap between sub-rows of the same tier
+            const TIER_GAP   = 280;                                        // y-gap between tiers
+            const MAX_PER_ROW = 14;                                        // soft target row width (in nodes)
+            const MAX_SUBROWS = 6;
+            // Cached positions per mode so toggling Layout is instant on the second visit.
+            const savedLayouts = { layered: Object.create(null), force: Object.create(null) };
+
+            // Tier index lookup: 0 = construct (top) … 2 = measurement (bottom).
+            const tierIndex = new Map();
+            visNodes.forEach(n => tierIndex.set(n.id, TIER_ORDER.indexOf(n.typeCategory)));
+
+            // Fast id → node lookup (used by the selection panel).
+            const nodeById = new Map();
+            visNodes.forEach(n => nodeById.set(n.id, n));
+
+            const TYPE_LABEL = {
+                construct: 'Construct',
+                behavior: 'Behavior / Task',
+                measurement: 'Measurement Instrument'
+            };
+
+            // Cheap deterministic hash → for stable jitter per node.
+            function _idHash(s) {
+                let h = 0;
+                for (let i = 0; i < s.length; i++) { h = ((h << 5) - h) + s.charCodeAt(i); h |= 0; }
+                return Math.abs(h);
+            }
+
+            // For a node in tier T, return a fractional offset in [-1, +1]:
+            //   −1 = lean strongly UP (most edges point to a higher tier)
+            //   +1 = lean strongly DOWN (most edges point to a lower tier)
+            // Combined with a small deterministic jitter so two same-lean nodes
+            // don't sit at the exact same y.  Returns 0 for isolated nodes.
+            function getTierLean(node) {
+                const myTier = tierIndex.get(node.id);
+                if (myTier < 0) return 0;
+                const neighbors = edgeAdjacencyMap.get(node.id);
+                if (!neighbors || !neighbors.size) return 0;
+                let down = 0, up = 0, lat = 0;
+                neighbors.forEach(otherId => {
+                    const t = tierIndex.get(otherId);
+                    if (t < 0)        lat++;
+                    else if (t > myTier) down++;
+                    else if (t < myTier) up++;
+                    else lat++;
+                });
+                const total = down + up + lat;
+                if (!total) return 0;
+                return (down - up) / total;        // [-1, +1]
+            }
+
+            // Lay nodes out evenly across [leftX, rightX] at a base y, with three
+            // independent y-offsets so a row never reads as a flat line:
+            //   • lean    — structural pull toward whichever adjacent tier has
+            //               the most edges (semantic depth)
+            //   • degBias — high-degree nodes push slightly outward from the row
+            //               center (visual hierarchy within the row)
+            //   • jitter  — deterministic per-id wobble (organic texture)
+            // Offsets are capped so the worst-case combined offset is < ROW_GAP/2,
+            // which guarantees no overlap with the adjacent sub-row.
+            function placeRow(list, baseY, leftX, rightX, modeKey, leanScale) {
+                const N = list.length;
+                if (!N) return;
+                const span = rightX - leftX;
+                const LEAN_AMP    = (leanScale != null ? leanScale : 0.22) * ROW_GAP;  // up to ±53 on a 240 row
+                const JIT_AMP     = 0.20 * ROW_GAP;                                    // up to ±48
+                const DEG_AMP     = 0.07 * ROW_GAP;                                    // up to ±17
+                // Worst-case |offset| ≈ 0.49·ROW_GAP → ≥ 4 px clearance to the next sub-row.
+                list.forEach((n, i) => {
+                    const cached = savedLayouts[modeKey][n.id];
+                    if (cached) {
+                        n.x = cached.x; n.y = cached.y;
+                    } else {
+                        const lean = getTierLean(n);                                  // [-1, +1]
+                        const jit  = ((_idHash(n.id) % 1000) / 1000 - 0.5) * 2;        // [-1, +1]
+                        // Degree bias: high-degree nodes drift slightly *outward* in
+                        // y (the same direction as their lean) so hubs stand apart.
+                        const deg  = globalDegree.get(n.id) || 0;
+                        const t    = Math.min(1, deg / Math.max(8, maxDegree));        // 0..1
+                        const degOffset = (lean >= 0 ? 1 : -1) * t;
+                        n.x = N > 1 ? leftX + (i / (N - 1)) * span : (leftX + rightX) / 2;
+                        n.y = baseY
+                              + lean * LEAN_AMP
+                              + degOffset * DEG_AMP
+                              + jit * JIT_AMP;
+                    }
+                    n.fixed = { x: false, y: true };
+                });
+            }
+
+            function applyLayoutToNodes(mode) {
+                if (mode === 'layered') {
+                    // Bucket + sort each tier by degree desc so the most-connected
+                    // hubs end up in the highest sub-row of their tier.
+                    const buckets = { construct: [], measurement: [], behavior: [] };
+                    visNodes.forEach(n => { (buckets[n.typeCategory] || buckets.construct).push(n); });
+                    Object.keys(buckets).forEach(t => {
+                        buckets[t].sort((a, b) => (globalDegree.get(b.id) || 0) - (globalDegree.get(a.id) || 0));
+                    });
+
+                    let yCursor = 0;
+                    TIER_ORDER.forEach((tier, tierIdx) => {
+                        const list = buckets[tier];
+                        if (!list.length) return;
+                        // Constructs always get sub-rows when populous; behaviors / measurements
+                        // only get sub-rows once they exceed MAX_PER_ROW.
+                        const subRows = Math.max(1, Math.min(MAX_SUBROWS, Math.ceil(list.length / MAX_PER_ROW)));
+                        const perRow  = Math.ceil(list.length / subRows);
+                        for (let r = 0; r < subRows; r++) {
+                            const slice = list.slice(r * perRow, (r + 1) * perRow);
+                            placeRow(slice, yCursor + r * ROW_GAP, -X_SPAN / 2, X_SPAN / 2, 'layered');
+                        }
+                        // Advance cursor past this tier's sub-rows + the inter-tier gap.
+                        yCursor += (subRows - 1) * ROW_GAP + (tierIdx === TIER_ORDER.length - 1 ? 0 : TIER_GAP);
+                    });
+                } else {
+                    // force mode
+                    const buckets = { construct: [], measurement: [], behavior: [] };
+                    visNodes.forEach(n => { (buckets[n.typeCategory] || buckets.construct).push(n); });
+                    Object.keys(buckets).forEach(type => {
+                        const list = buckets[type];
+                        if (!list.length) return;
+                        const c = FORCE_CENTERS[type];
+                        const ringR = 260 + Math.min(450, list.length * 14);
+                        list.forEach((n, i) => {
+                            const cached = savedLayouts.force[n.id];
+                            if (cached) {
+                                n.x = cached.x; n.y = cached.y;
+                            } else {
+                                const angle  = (i / list.length) * Math.PI * 2;
+                                const jitter = (Math.sin(i * 12.9898) * 43758.5453) % 1;
+                                const r      = ringR * (0.45 + Math.abs(jitter) * 0.55);
+                                n.x = c.x + Math.cos(angle) * r;
+                                n.y = c.y + Math.sin(angle) * r;
+                            }
+                            delete n.fixed;
+                        });
+                    });
+                }
+            }
+
+            const activeTypes = new Set(['construct', 'measurement', 'behavior']);
+            let topKLimit = 250;            // default — manageable default for thousands of nodes
+            let edgeMode = 'subtle';         // 'subtle' | 'normal' | 'hidden'
+            let layoutMode = 'layered';      // 'layered' | 'force'  (default = layered)
+            let selectedNodeId = null;
+
+            // Seed initial positions for the default layout mode.
+            applyLayoutToNodes(layoutMode);
+
+            const EDGE_BASE = {
+                subtle: { color: 'rgba(120, 113, 108, 0.34)', highlight: '#9b2c2c', width: 0.08 },
+                normal: { color: 'rgba(87, 83, 78, 0.70)',    highlight: '#9b2c2c', width: 0.22 },
+                hidden: { color: 'rgba(0, 0, 0, 0)',          highlight: '#9b2c2c', width: 0.001 }
+            };
+            const EDGE_HIGHLIGHT_WIDTH = 0.55;
+            const EDGE_DIM_WIDTH       = 0.05;
+
+            // Edge curvature is layout-aware: in layered (top-down) mode we use
+            // cubic-bezier curves with a vertical force direction so cross-tier
+            // edges flow as gentle s-curves instead of straight grid lines.  In
+            // force mode we keep continuous curves which look more organic.
+            function getEdgeSmoothConfig() {
+                if (layoutMode === 'layered') {
+                    return { enabled: true, type: 'cubicBezier', forceDirection: 'vertical', roundness: 0.45 };
+                }
+                return { enabled: true, type: 'continuous', roundness: 0.18 };
+            }
+
+            function getVisibleNodeSet() {
+                const total = nodesByDegreeDesc.length;
+                const limit = (topKLimit === 'all' || topKLimit >= total) ? total : Math.max(1, topKLimit);
+                const top = nodesByDegreeDesc.slice(0, limit);
+                const visible = new Set();
+                top.forEach(n => { if (activeTypes.has(n.typeCategory)) visible.add(n.id); });
+                return visible;
+            }
+
+            function setStatNum(id, n) {
+                const el = document.getElementById(id);
+                if (el) el.textContent = n.toLocaleString();
+            }
+
+            function updateTopKLabel() {
+                const labelEl = document.getElementById('topKActiveLabel');
+                if (!labelEl) return;
+                const total = visNodes.length;
+                const visible = (topKLimit === 'all' || topKLimit >= total) ? total : topKLimit;
+                labelEl.textContent = '(' + visible.toLocaleString() + ' of ' + total.toLocaleString() + ')';
+            }
+
+            // Apply current filter state to visNodes/visEdges in place. Optionally push to network.
+            function applyAllFilters({ pushToNetwork = true } = {}) {
+                const visible = getVisibleNodeSet();
+                const style = EDGE_BASE[edgeMode] || EDGE_BASE.subtle;
+
+                let cC = 0, cM = 0, cB = 0;
+                visNodes.forEach(n => {
+                    n.hidden = !visible.has(n.id);
+                    if (!n.hidden) {
+                        if (n.typeCategory === 'construct') cC++;
+                        else if (n.typeCategory === 'measurement') cM++;
+                        else if (n.typeCategory === 'behavior') cB++;
+                    }
+                });
+
+                let edgeCount = 0;
+                visEdges.forEach(e => {
+                    const both = visible.has(e.from) && visible.has(e.to);
+                    e.hidden = !both || edgeMode === 'hidden';
+                    e.color = { color: style.color, highlight: style.highlight };
+                    e.width = style.width;
+                    if (both && edgeMode !== 'hidden') edgeCount++;
+                });
+
+                setStatNum('statConstructs', cC);
+                setStatNum('statMeasurements', cM);
+                setStatNum('statBehaviors', cB);
+                setStatNum('statEdges', edgeCount);
+                updateTopKLabel();
+
+                selectedNodeId = null;
+
+                if (pushToNetwork && network) {
+                    network.setData({ nodes: visNodes, edges: visEdges });
+                    // NOTE: we deliberately do NOT call stabilize() on a plain
+                    // filter change.  After the initial stabilization the nodes
+                    // are unfixed (so the user can drag them freely in any
+                    // direction); kicking off a 180-iter physics pass here would
+                    // visibly drift those free nodes every time a checkbox or
+                    // Top-K value changes.  Layout-mode toggles handle their own
+                    // re-stabilization where it actually matters.
+                }
+            }
+
+            // Release every node's `fixed` flag so the user can drag in any
+            // direction (vis-network blocks dragging on whichever axis is
+            // fixed, so layered mode's `fixed.y = true` is what was preventing
+            // vertical drags).  We also push the change into the live dataset
+            // so the network picks it up immediately.
+            function unfixAllNodes() {
+                visNodes.forEach(n => { n.fixed = false; });
+                if (!network || !network.body || !network.body.data || !network.body.data.nodes) return;
+                try {
+                    network.body.data.nodes.update(visNodes.map(n => ({ id: n.id, fixed: false })));
+                } catch (e) { /* dataset not ready yet — initial seeding will pick it up */ }
+            }
+
+            // ---- Build initial dataset using current filters ---------------
+            applyAllFilters({ pushToNetwork: false });
 
             // Create network
             const container = document.getElementById('network');
@@ -542,49 +1413,91 @@
 
             const options = {
                 nodes: {
-                    borderWidth: 2,
-                    shadow: true,
-                    font: { size: 14 },
-                    margin: 18
+                    borderWidth: 1.5,
+                    chosen: { node: true },
+                    // value-driven scaling: hubs render bigger and their labels stay
+                    // readable across zoom levels; leaves stay subtle.
+                    scaling: {
+                        min: 12, max: 38,
+                        label: { enabled: true, min: 10, max: 17, drawThreshold: 6, maxVisible: 24 }
+                    }
                 },
                 edges: {
-                    width: 1.5,
-                    smooth: { type: 'continuous', roundness: 0.2 }
+                    width: 0.08,
+                    selectionWidth: 0,
+                    color: { color: 'rgba(120, 113, 108, 0.34)', highlight: '#9b2c2c', hover: '#78716c' },
+                    smooth: getEdgeSmoothConfig(),
+                    arrows: { to: { enabled: false } },
+                    hoverWidth: 0
                 },
                 physics: {
                     enabled: true,
                     stabilization: {
-                        iterations: 500,
-                        updateInterval: 25
+                        enabled: true,
+                        iterations: 600,
+                        updateInterval: 25,
+                        fit: true
                     },
-                    // Use the repulsion solver to reduce node overlap (slightly reduced)
-                    solver: 'repulsion',
-                    repulsion: {
-                        nodeDistance: 260,
-                        centralGravity: 0.012,
-                        springLength: 420,
-                        springConstant: 0.02,
-                        damping: 0.58
-                    }
+                    // ForceAtlas2 produces visibly better community structure than
+                    // the older repulsion solver: edges stay shorter, hubs gravitate
+                    // to the center of their type cluster, leaves drift outward.
+                    solver: 'forceAtlas2Based',
+                    forceAtlas2Based: {
+                        gravitationalConstant: -65,
+                        centralGravity: 0.005,
+                        springLength: 150,
+                        springConstant: 0.05,
+                        damping: 0.55,
+                        avoidOverlap: 0.55
+                    },
+                    minVelocity: 0.6,
+                    timestep: 0.35
                 },
                 interaction: {
                     dragNodes: true,
                     dragView: true,
                     zoomView: true,
                     hover: true,
-                    tooltipDelay: 100
-                }
+                    hoverConnectedEdges: true,
+                    tooltipDelay: 120,
+                    multiselect: false,
+                    navigationButtons: false,
+                    // Keyboard panning so the user can move ↑ ↓ ← → through dense
+                    // layouts without having to find empty canvas to drag.  bindToWindow
+                    // is false so arrow keys in the search box / form fields still
+                    // navigate text — the canvas only steals keyboard input once it
+                    // is focused (clicked).
+                    keyboard: {
+                        enabled: true,
+                        bindToWindow: false,
+                        speed: { x: 14, y: 14, zoom: 0.04 }
+                    }
+                },
+                layout: { improvedLayout: true, randomSeed: 7 }
             };
 
             network = new vis.Network(container, data, options);
 
-            // After initial layout stabilizes, turn off physics so dragging doesn't snap nodes back,
-            // and set an initial zoom so the graph appears slightly more "zoomed in".
-            network.once('stabilizationIterationsDone', function () {
-                network.setOptions({ physics: { enabled: false } });
+            // Fires after EVERY stabilization (initial + every layout-toggle
+            // restabilize).  Snapshot final positions so future setData /
+            // mode-toggle calls don't reset the layout the user is looking at,
+            // unfix every node so the user can drag them freely in both
+            // directions, disable physics so nothing drifts on its own, and
+            // refit the camera to the new layout.
+            network.on('stabilizationIterationsDone', function () {
                 try {
-                    network.moveTo({ scale: 1.25 });
-                } catch (e) { /* ignore if moveTo not supported */ }
+                    const positions = network.getPositions();
+                    visNodes.forEach(n => {
+                        const p = positions[n.id];
+                        if (p) {
+                            n.x = p.x; n.y = p.y;
+                            savedLayouts[layoutMode][n.id] = { x: p.x, y: p.y };
+                        }
+                    });
+                    unfixAllNodes();
+                    network.setOptions({ physics: { enabled: false } });
+                    network.fit({ animation: { duration: 400, easingFunction: 'easeInOutQuad' } });
+                } catch (e) { /* older vis-network builds */ }
             });
 
             // Create a custom tooltip element for richer HTML tooltips on hover
@@ -595,13 +1508,15 @@
             vTooltip.style.pointerEvents = 'none';
             vTooltip.style.display = 'none';
             vTooltip.style.maxWidth = '420px';
-            vTooltip.style.padding = '8px';
-            vTooltip.style.background = 'rgba(255,255,255,0.98)';
-            vTooltip.style.color = '#122229';
-            vTooltip.style.borderRadius = '8px';
-            vTooltip.style.boxShadow = '0 10px 30px rgba(2,8,23,0.12)';
-            vTooltip.style.fontSize = '13px';
-            vTooltip.style.lineHeight = '1.4';
+            vTooltip.style.padding = '10px 12px';
+            vTooltip.style.background = '#1c1917';
+            vTooltip.style.color = '#faf7f2';
+            vTooltip.style.borderRadius = '6px';
+            vTooltip.style.border = '1px solid #292524';
+            vTooltip.style.boxShadow = '0 8px 22px rgba(28, 25, 23, 0.22)';
+            vTooltip.style.fontFamily = "'Inter', -apple-system, BlinkMacSystemFont, sans-serif";
+            vTooltip.style.fontSize = '12.5px';
+            vTooltip.style.lineHeight = '1.5';
             document.body.appendChild(vTooltip);
 
             // Show tooltip on hoverNode
@@ -629,126 +1544,310 @@
             network.on('dragStart', function () { try { vTooltip.style.display = 'none'; } catch (e) { } });
             network.on('zoom', function () { try { vTooltip.style.display = 'none'; } catch (e) { } });
 
-            // OPTIMIZATION: Store original node data for reset (avoid expensive JSON operations)
-            const originalNodeData = new Map();
-            visNodes.forEach(node => {
-                originalNodeData.set(node.id, {
-                    color: { background: node.color.background, border: node.color.border },
-                    opacity: 1,
-                    size: node.size || 20,
-                    font: { size: node.font.size, color: node.font.color }
-                });
-            });
-
-            let selectedNodeId = null;
             let doubleClickFlag = false;
 
+            // Reset clears any selection / search highlight by re-applying current filter state.
             function resetHighlighting() {
-                // OPTIMIZATION: Use requestAnimationFrame for smoother updates
                 requestAnimationFrame(() => {
-                    // Reset all nodes to full opacity and original appearance
-                    const updateNodes = visNodes.map(node => {
-                        const original = originalNodeData.get(node.id);
-                        return {
-                            id: node.id,
-                            label: node.label,
-                            title: node.title,
-                            color: original.color,
-                            font: original.font,
-                            shape: node.shape,
-                            margin: node.margin,
-                            size: original.size,
-                            opacity: 1.0
-                        };
-                    });
-                    // Reset edges to original
-                    const resetEdges = originalEdgeData.map(edge => ({
-                        from: edge.from,
-                        to: edge.to,
-                        color: edge.color,
-                        width: edge.width,
-                        smooth: { type: 'continuous', roundness: 0.2 }
-                    }));
-                    network.setData({ nodes: updateNodes, edges: resetEdges });
-                    selectedNodeId = null;
+                    applyAllFilters();   // also clears selectedNodeId
+                    hideSelectionPanel();
+                    hidePreviewHalo();
+                    setPinned(false);
                 });
             }
+
+            // ---- Selection info panel ------------------------------------
+            const selectionPanel    = document.getElementById('selectionPanel');
+            const selNameEl         = document.getElementById('selName');
+            const selTypeEl         = document.getElementById('selType');
+            const selTypeChipEl     = document.getElementById('selTypeChip');
+            const selDegreeEl       = document.getElementById('selDegree');
+            const selDefinitionEl   = document.getElementById('selDefinition');
+            const selConnectionsEl  = document.getElementById('selConnections');
+            const selOpenDetailsEl  = document.getElementById('selOpenDetails');
+            const selCloseEl        = document.getElementById('selClose');
+            const selPinEl          = document.getElementById('selPin');
+            const previewHaloEl     = document.getElementById('previewHalo');
+
+            // Pin state — when true, clicks on empty canvas don't clear the selection.
+            let pinnedSelection = false;
+            function setPinned(state) {
+                pinnedSelection = !!state;
+                if (selPinEl) {
+                    selPinEl.classList.toggle('is-active', pinnedSelection);
+                    selPinEl.setAttribute('aria-pressed', pinnedSelection ? 'true' : 'false');
+                }
+            }
+
+            // Hover halo — drawn over the canvas at the previewed node's position.
+            let previewedNodeId = null;
+            function showPreviewHalo(nodeId) {
+                if (!previewHaloEl || !network) return;
+                previewedNodeId = nodeId;
+                updatePreviewHaloPosition();
+                previewHaloEl.classList.add('visible');
+            }
+            function hidePreviewHalo() {
+                if (!previewHaloEl) return;
+                previewedNodeId = null;
+                previewHaloEl.classList.remove('visible');
+            }
+            function updatePreviewHaloPosition() {
+                if (!previewedNodeId || !network || !previewHaloEl) return;
+                try {
+                    const positions = network.getPositions([previewedNodeId]);
+                    const p = positions[previewedNodeId];
+                    if (!p) return;
+                    const dom = network.canvasToDOM(p);
+                    previewHaloEl.style.left = dom.x + 'px';
+                    previewHaloEl.style.top  = dom.y + 'px';
+                } catch (e) { /* ignore */ }
+            }
+
+            function hideSelectionPanel() {
+                if (selectionPanel) selectionPanel.hidden = true;
+            }
+
+            function showSelectionPanel(nodeId, connectedSet) {
+                if (!selectionPanel) return;
+                const node = nodeById.get(nodeId);
+                if (!node) return;
+
+                selNameEl.textContent   = node.label || node.canonicalName || nodeId;
+                selTypeEl.textContent   = TYPE_LABEL[node.typeCategory] || node.typeCategory || '';
+                if (selTypeChipEl) {
+                    selTypeChipEl.classList.remove('construct', 'measurement', 'behavior');
+                    selTypeChipEl.classList.add(node.typeCategory);
+                }
+                const degree = (globalDegree.get(nodeId) || 0);
+                selDegreeEl.textContent = degree.toLocaleString();
+                selDefinitionEl.textContent = node.canonicalDefinition || '';
+                selDefinitionEl.style.display = node.canonicalDefinition ? '' : 'none';
+
+                selOpenDetailsEl.href =
+                    'view_network.html?node=' + encodeURIComponent(node.canonicalName || '')
+                    + '&type=' + encodeURIComponent(node.typeCategory || '');
+
+                renderConnectionsList(nodeId, connectedSet);
+                selectionPanel.hidden = false;
+                // Outer panel no longer scrolls; reset the inner connections list instead so
+                // every new selection starts at the top of its neighbor list.
+                if (selConnectionsEl) selConnectionsEl.scrollTop = 0;
+            }
+
+            function renderConnectionsList(nodeId, connectedSet) {
+                if (!selConnectionsEl) return;
+
+                // Connected set excludes the hub itself; fall back to adjacency map if not given.
+                let neighborIds;
+                if (connectedSet && connectedSet.size) {
+                    neighborIds = new Set(connectedSet);
+                    neighborIds.delete(nodeId);
+                } else {
+                    neighborIds = edgeAdjacencyMap.get(nodeId) || new Set();
+                }
+
+                if (!neighborIds.size) {
+                    selConnectionsEl.innerHTML = '<div class="selection-empty">No connections in the current view.</div>';
+                    return;
+                }
+
+                const grouped = { construct: [], behavior: [], measurement: [] };
+                neighborIds.forEach(id => {
+                    const n = nodeById.get(id);
+                    if (n && grouped[n.typeCategory]) grouped[n.typeCategory].push(n);
+                });
+                Object.keys(grouped).forEach(t => {
+                    grouped[t].sort((a, b) => (globalDegree.get(b.id) || 0) - (globalDegree.get(a.id) || 0));
+                });
+
+                const tierLabels = {
+                    construct: 'Constructs',
+                    behavior: 'Behaviors / Tasks',
+                    measurement: 'Measurement Instruments'
+                };
+                const escapeHtmlSmall = (s) => String(s == null ? '' : s)
+                    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+                    .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+
+                let html = '';
+                ['construct', 'behavior', 'measurement'].forEach(tier => {
+                    const list = grouped[tier];
+                    if (!list.length) return;
+                    html += '<div class="conn-group">'
+                          + '<div class="conn-group-label">' + tierLabels[tier]
+                          + '<span class="conn-count">' + list.length + '</span></div>'
+                          + '<ul class="conn-list">';
+                    list.forEach(n => {
+                        const w = getEdgeStrength(nodeId, n.id);
+                        const weightHtml = w.count > 1
+                            ? '<span class="conn-weight" title="Attested by ' + w.count + ' ' + w.label + 's">'
+                              + w.count + '</span>'
+                            : '';
+                        html += '<li><button type="button" class="conn-link" data-node-id="'
+                              + escapeHtmlSmall(n.id) + '">'
+                              + '<span class="conn-dot ' + tier + '"></span>'
+                              + '<span class="conn-name">' + escapeHtmlSmall(n.label || n.canonicalName || '') + '</span>'
+                              + weightHtml
+                              + '</button></li>';
+                    });
+                    html += '</ul></div>';
+                });
+                selConnectionsEl.innerHTML = html;
+            }
+
+            if (selectionPanel) {
+                selConnectionsEl.addEventListener('click', function (e) {
+                    const btn = e.target.closest('.conn-link');
+                    if (!btn) return;
+                    const newId = btn.getAttribute('data-node-id');
+                    if (newId && nodeById.has(newId)) {
+                        hidePreviewHalo();
+                        highlightNodeAndNeighbors(newId);
+                    }
+                });
+
+                // Hover preview — pulse a halo over the hovered neighbor's
+                // position so you can locate it on the canvas without clicking.
+                let lastPreviewLink = null;
+                selConnectionsEl.addEventListener('mouseover', function (e) {
+                    const btn = e.target.closest('.conn-link');
+                    if (!btn || btn === lastPreviewLink) return;
+                    if (lastPreviewLink) lastPreviewLink.classList.remove('preview');
+                    lastPreviewLink = btn;
+                    btn.classList.add('preview');
+                    const newId = btn.getAttribute('data-node-id');
+                    if (newId && nodeById.has(newId)) showPreviewHalo(newId);
+                });
+                selConnectionsEl.addEventListener('mouseleave', function () {
+                    if (lastPreviewLink) lastPreviewLink.classList.remove('preview');
+                    lastPreviewLink = null;
+                    hidePreviewHalo();
+                });
+
+                if (selCloseEl) selCloseEl.addEventListener('click', resetHighlighting);
+                if (selPinEl) selPinEl.addEventListener('click', () => setPinned(!pinnedSelection));
+            }
+
+            // Esc clears selection.  Also clears search if focus is on the search input.
+            document.addEventListener('keydown', function (e) {
+                if (e.key !== 'Escape') return;
+                const inSearch = document.activeElement &&
+                    document.activeElement.id === 'graphSearchInput';
+                if (inSearch && document.activeElement.value) {
+                    document.activeElement.value = '';
+                    document.activeElement.dispatchEvent(new Event('input', { bubbles: true }));
+                    return;
+                }
+                if (selectedNodeId != null || (selectionPanel && !selectionPanel.hidden)) {
+                    resetHighlighting();
+                }
+            });
 
             function highlightNodeAndNeighbors(nodeId) {
                 selectedNodeId = nodeId;
 
-                // OPTIMIZATION: Use precomputed adjacency map instead of iterating edges
+                const visibleSet = getVisibleNodeSet();
+                if (!visibleSet.has(nodeId)) return;       // node was filtered out
+
                 const connectedNodeIds = new Set([nodeId]);
                 const neighbors = edgeAdjacencyMap.get(nodeId);
                 if (neighbors) {
-                    neighbors.forEach(neighborId => connectedNodeIds.add(neighborId));
+                    neighbors.forEach(id => {
+                        if (visibleSet.has(id)) connectedNodeIds.add(id);
+                    });
                 }
 
-                // Update nodes: connected nodes stay fully visible, others muted (box + dim label)
-                const mutedFontColor = '#999999'; // Dim gray so muted labels don't overlap as bright white
-                const updateNodes = visNodes.map(node => {
-                    const original = originalNodeData.get(node.id);
-                    const isConnected = connectedNodeIds.has(node.id);
-                    const font = isConnected
-                        ? original.font
-                        : { ...original.font, color: mutedFontColor };
-                    return {
-                        id: node.id,
-                        label: node.label,
-                        title: node.title,
-                        color: original.color,
-                        font: font,
-                        shape: node.shape,
-                        margin: node.margin,
-                        size: original.size,
-                        opacity: isConnected ? 1.0 : 0.08,  // Connected: full opacity, others: very muted
-                        isConnected: isConnected
-                    };
-                });
-                // Draw muted nodes first (background), connected nodes last (foreground) so they don't overlay
-                updateNodes.sort(function (a, b) { return (a.isConnected ? 1 : 0) - (b.isConnected ? 1 : 0); });
-                updateNodes.forEach(n => delete n.isConnected);
+                const updateNodes = buildNodeView(visibleSet, connectedNodeIds, nodeId);
+                const updateEdges = buildEdgeView(visibleSet, connectedNodeIds);
 
-                // Update edges: dim edges first (background), highlighted edges last (foreground)
-                const updateEdges = [];
-                visEdges.forEach(edge => {
-                    const isHighlighted = edge.from === nodeId || edge.to === nodeId;
-                    if (isHighlighted) {
-                        updateEdges.push({
-                            from: edge.from,
-                            to: edge.to,
-                            color: { color: '#3498db', highlight: '#2980b9' },
-                            width: 4,
-                            smooth: { type: 'continuous', roundness: 0.2 },
-                            _highlight: true
+                requestAnimationFrame(() => {
+                    network.setData({ nodes: updateNodes, edges: updateEdges });
+                    // Frame the WHOLE neighborhood, not just the hub — so dense
+                    // subnetworks (e.g. clicking "reasoning") fit on screen.
+                    const fitNodes = Array.from(connectedNodeIds);
+                    if (fitNodes.length <= 1) {
+                        network.focus(nodeId, {
+                            scale: 1.2,
+                            animation: { duration: 450, easingFunction: 'easeInOutQuad' }
                         });
                     } else {
-                        updateEdges.push({
-                            from: edge.from,
-                            to: edge.to,
-                            color: { color: '#e0e0e0', highlight: '#95a5a6' },
-                            width: 0.5,
-                            smooth: { type: 'continuous', roundness: 0.2 },
-                            _highlight: false
+                        network.fit({
+                            nodes: fitNodes,
+                            animation: { duration: 500, easingFunction: 'easeInOutQuad' }
                         });
                     }
                 });
-                updateEdges.sort(function (a, b) { return (a._highlight ? 1 : 0) - (b._highlight ? 1 : 0); });
-                updateEdges.forEach(e => delete e._highlight);
 
-                // OPTIMIZATION: Use requestAnimationFrame for smoother updates
-                requestAnimationFrame(() => {
-                    network.setData({ nodes: updateNodes, edges: updateEdges });
+                showSelectionPanel(nodeId, connectedNodeIds);
+            }
 
-                    // Focus on selected node
-                    network.focus(nodeId, {
-                        scale: 1.5,
-                        animation: {
-                            duration: 500,
-                            easingFunction: 'easeInOutQuad'
-                        }
-                    });
+            // Build a node array that preserves all source styling (font face,
+            // shadow, scaling value, etc.) and only overrides what dim/highlight
+            // states need to change.  Pass null `connectedSet` to render no dimming.
+            // Pass `selectedId` to give that node an anchor treatment (thick border
+            // + indigo halo shadow + drawn on top).
+            function buildNodeView(visibleSet, connectedSet, selectedId) {
+                const dim = !!connectedSet;
+                const SELECTED_SHADOW = { enabled: true, size: 26, x: 0, y: 0, color: 'rgba(155, 44, 44, 0.55)' };
+                const out = visNodes.map(node => {
+                    const inView      = visibleSet.has(node.id);
+                    const isConnected = !dim || connectedSet.has(node.id);
+                    const isSelected  = selectedId != null && node.id === selectedId;
+                    return {
+                        ...node,
+                        font: isConnected
+                            ? node.font
+                            : { ...node.font, color: '#94a3b8' },
+                        borderWidth: isSelected ? 4 : 1.5,
+                        shadow: isSelected ? SELECTED_SHADOW : node.shadow,
+                        hidden: !inView,
+                        opacity: !inView ? 0 : (isConnected ? 1.0 : 0.18),
+                        _front: isSelected ? 2 : (isConnected ? 1 : 0)
+                    };
                 });
+                // Selected last (top), then connected, then dimmed (bottom).
+                out.sort((a, b) => a._front - b._front);
+                out.forEach(n => delete n._front);
+                return out;
+            }
+
+            // Build an edge array. If connectedSet is given, edges touching that
+            // set are drawn brightly (highlight); the rest stay subtle.
+            function buildEdgeView(visibleSet, connectedSet) {
+                const dim = !!connectedSet;
+                const base = EDGE_BASE[edgeMode] || EDGE_BASE.subtle;
+                const out = [];
+                visEdges.forEach(edge => {
+                    const both = visibleSet.has(edge.from) && visibleSet.has(edge.to);
+                    const baseHidden = !both || edgeMode === 'hidden';
+                    const isHighlighted = dim && both
+                        && (connectedSet.has(edge.from) && connectedSet.has(edge.to));
+                    if (isHighlighted) {
+                        out.push({
+                            from: edge.from, to: edge.to,
+                            color: { color: '#9b2c2c', highlight: '#7a1f1f' },
+                            width: EDGE_HIGHLIGHT_WIDTH,
+                            smooth: getEdgeSmoothConfig(),
+                            hidden: false,
+                            _front: 1
+                        });
+                    } else {
+                        out.push({
+                            from: edge.from, to: edge.to,
+                            color: dim
+                                ? { color: 'rgba(203, 213, 225, 0.55)', highlight: '#94a3b8' }
+                                : { color: base.color, highlight: base.highlight },
+                            width: dim ? EDGE_DIM_WIDTH : base.width,
+                            smooth: getEdgeSmoothConfig(),
+                            hidden: baseHidden,
+                            _front: 0
+                        });
+                    }
+                });
+                out.sort((a, b) => a._front - b._front);
+                out.forEach(e => delete e._front);
+                return out;
             }
 
             // Double-click: navigate to detail page (register first to set flag)
@@ -772,8 +1871,8 @@
                         if (params.nodes.length > 0) {
                             const nodeId = params.nodes[0];
                             highlightNodeAndNeighbors(nodeId);
-                        } else {
-                            // Click on empty space: reset highlighting
+                        } else if (!pinnedSelection) {
+                            // Click on empty space: reset highlighting (unless pinned).
                             resetHighlighting();
                         }
                     } else {
@@ -781,6 +1880,9 @@
                     }
                 }, 300);
             });
+
+            // Keep the hover halo glued to the node as the user pans / zooms.
+            network.on('afterDrawing', updatePreviewHaloPosition);
 
             // OPTIMIZATION: Debounced search with caching
             let searchDebounceTimer = null;
@@ -843,63 +1945,41 @@
 
             // OPTIMIZATION: Extracted search update logic for reuse
             function updateGraphForSearch(matchedNodeIds, connectedNodeIds) {
-
-                // OPTIMIZATION: Use requestAnimationFrame for smoother updates
                 requestAnimationFrame(() => {
-                    // Update all nodes: matching nodes + their neighbors stay fully visible, others muted
-                    const mutedFontColor = '#999999';
-                    const updateNodes = visNodes.map(node => {
-                        const original = originalNodeData.get(node.id);
-                        const isConnected = connectedNodeIds.has(node.id);
-                        const font = isConnected
-                            ? original.font
-                            : { ...original.font, color: mutedFontColor };
+                    const visibleSet = getVisibleNodeSet();
+                    const updateNodes = buildNodeView(visibleSet, connectedNodeIds, null);
+
+                    // Edges: bright if BOTH endpoints are in connected set, OR either endpoint
+                    // is in the matched set (so search hits show their immediate connections).
+                    const base = EDGE_BASE[edgeMode] || EDGE_BASE.subtle;
+                    const updateEdges = visEdges.map(edge => {
+                        const both = visibleSet.has(edge.from) && visibleSet.has(edge.to);
+                        const baseHidden = !both || edgeMode === 'hidden';
+                        const touchesMatch = both && (matchedNodeIds.has(edge.from) || matchedNodeIds.has(edge.to));
+                        if (touchesMatch) {
+                            return {
+                                from: edge.from, to: edge.to,
+                                color: { color: '#9b2c2c', highlight: '#7a1f1f' },
+                                width: EDGE_HIGHLIGHT_WIDTH,
+                                smooth: getEdgeSmoothConfig(),
+                                hidden: false,
+                                _front: 1
+                            };
+                        }
                         return {
-                            id: node.id,
-                            label: node.label,
-                            title: node.title,
-                            color: original.color,
-                            font: font,
-                            shape: node.shape,
-                            margin: node.margin,
-                            size: original.size,
-                            opacity: isConnected ? 1.0 : 0.08,
-                            isConnected: isConnected
+                            from: edge.from, to: edge.to,
+                            color: { color: 'rgba(203, 213, 225, 0.55)', highlight: '#94a3b8' },
+                            width: EDGE_DIM_WIDTH,
+                            smooth: getEdgeSmoothConfig(),
+                            hidden: baseHidden,
+                            _front: 0
                         };
                     });
-                    // Draw muted nodes first (background), connected nodes last (foreground)
-                    updateNodes.sort(function (a, b) { return (a.isConnected ? 1 : 0) - (b.isConnected ? 1 : 0); });
-                    updateNodes.forEach(n => delete n.isConnected);
-
-                    // Update edges: highlight edges connected to matches, dim others
-                    const updateEdges = [];
-                    visEdges.forEach(edge => {
-                        const isHighlighted = matchedNodeIds.has(edge.from) || matchedNodeIds.has(edge.to);
-                        if (isHighlighted) {
-                            updateEdges.push({
-                                from: edge.from,
-                                to: edge.to,
-                                color: { color: '#3498db', highlight: '#2980b9' },
-                                width: 4,
-                                smooth: { type: 'continuous', roundness: 0.2 },
-                                _highlight: true
-                            });
-                        } else {
-                            updateEdges.push({
-                                from: edge.from,
-                                to: edge.to,
-                                color: { color: '#e0e0e0', highlight: '#95a5a6' },
-                                width: 0.5,
-                                smooth: { type: 'continuous', roundness: 0.2 },
-                                _highlight: false
-                            });
-                        }
-                    });
-                    updateEdges.sort(function (a, b) { return (a._highlight ? 1 : 0) - (b._highlight ? 1 : 0); });
-                    updateEdges.forEach(e => delete e._highlight);
+                    updateEdges.sort((a, b) => a._front - b._front);
+                    updateEdges.forEach(e => delete e._front);
 
                     network.setData({ nodes: updateNodes, edges: updateEdges });
-                    selectedNodeId = null; // Clear any selected node
+                    selectedNodeId = null;
                 });
             }
 
@@ -923,14 +2003,139 @@
                 });
             }
 
-            // OPTIMIZATION: Use cached DOM element for stats
-            const statsEl = domCache.graphStats || document.getElementById('graphStats');
-            if (statsEl) {
-                statsEl.textContent = 'Constructs: ' + constructs.length +
-                    ' · Measurements: ' + measurements.length +
-                    ' · Behaviors/Tasks: ' + behaviors.length +
-                    ' · Edges: ' + visEdges.length;
+            // ---- Wire up Top-K filter (preset segments + custom input) ----
+            const topKControl = document.getElementById('topKControl');
+            const customInput = document.getElementById('topKCustomInput');
+            const customApply = document.getElementById('topKCustomApply');
+            const layoutControl = document.getElementById('layoutControl');
+
+            function setActiveSegment(group, predicate) {
+                if (!group) return;
+                Array.from(group.querySelectorAll('button')).forEach(btn => {
+                    const match = predicate(btn);
+                    btn.classList.toggle('active', match);
+                    btn.setAttribute('aria-pressed', match ? 'true' : 'false');
+                });
             }
+
+            // Layout mode switching: snapshot the outgoing layout, recompute the
+            // incoming one, push to the network, and refit the camera.
+            function applyLayoutMode(newMode) {
+                if (newMode === layoutMode) return;
+                if (newMode !== 'layered' && newMode !== 'force') return;
+
+                try {
+                    const positions = network.getPositions();
+                    visNodes.forEach(n => {
+                        const p = positions[n.id];
+                        if (p) savedLayouts[layoutMode][n.id] = { x: p.x, y: p.y };
+                    });
+                } catch (e) { /* ignore */ }
+
+                layoutMode = newMode;
+                setActiveSegment(layoutControl, b => b.getAttribute('data-layout') === newMode);
+
+                // Edge curvature is layout-aware — refresh it before re-layout so
+                // the curves are already correct when stabilize() runs.
+                try { network.setOptions({ edges: { smooth: getEdgeSmoothConfig() } }); } catch (e) {}
+
+                applyLayoutToNodes(newMode);   // re-seeds positions + re-applies fixed.y for layered
+                applyAllFilters();             // pushes the new positions / fixed flags to the network
+
+                // Briefly turn physics back on so the seeded layout settles
+                // (x converges in layered mode; the whole graph re-finds force
+                // equilibrium in force mode).  The shared stabilizationIterationsDone
+                // handler above will snapshot positions, unfix everything for
+                // free dragging, disable physics again, and refit the camera.
+                try {
+                    network.setOptions({ physics: { enabled: true } });
+                    network.stabilize(220);
+                } catch (e) { /* ignore */ }
+            }
+
+            if (layoutControl) {
+                layoutControl.addEventListener('click', function (e) {
+                    const btn = e.target.closest('button');
+                    if (!btn) return;
+                    const mode = btn.getAttribute('data-layout');
+                    if (mode) applyLayoutMode(mode);
+                });
+            }
+
+            function setTopK(k) {
+                topKLimit = k;
+                setActiveSegment(topKControl, btn => {
+                    const v = btn.getAttribute('data-k');
+                    return (k === 'all' && v === 'all') || (typeof k === 'number' && Number(v) === k);
+                });
+                applyAllFilters();
+                if (network) {
+                    try { network.fit({ animation: { duration: 350, easingFunction: 'easeInOutQuad' } }); } catch (e) {}
+                }
+            }
+
+            if (topKControl) {
+                topKControl.addEventListener('click', function (e) {
+                    const btn = e.target.closest('button');
+                    if (!btn) return;
+                    const v = btn.getAttribute('data-k');
+                    if (customInput) customInput.value = '';
+                    setTopK(v === 'all' ? 'all' : Number(v));
+                });
+            }
+            if (customApply && customInput) {
+                const applyCustom = () => {
+                    const raw = parseInt(customInput.value, 10);
+                    if (!Number.isFinite(raw) || raw < 1) return;
+                    const total = visNodes.length;
+                    const k = Math.min(Math.max(1, raw), total);
+                    customInput.value = String(k);
+                    setTopK(k);
+                };
+                customApply.addEventListener('click', applyCustom);
+                customInput.addEventListener('keydown', function (e) {
+                    if (e.key === 'Enter') { e.preventDefault(); applyCustom(); }
+                });
+            }
+
+            // ---- Wire up type toggles -------------------------------------
+            const typeToggles = document.querySelectorAll('.type-toggle');
+            typeToggles.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    const t = this.getAttribute('data-type');
+                    if (!t) return;
+                    if (activeTypes.has(t)) {
+                        if (activeTypes.size === 1) return;   // keep at least one type on
+                        activeTypes.delete(t);
+                        this.classList.add('muted');
+                        this.classList.remove('active');
+                        this.setAttribute('aria-pressed', 'false');
+                    } else {
+                        activeTypes.add(t);
+                        this.classList.remove('muted');
+                        this.classList.add('active');
+                        this.setAttribute('aria-pressed', 'true');
+                    }
+                    applyAllFilters();
+                });
+            });
+
+            // ---- Wire up edge-mode segmented control ---------------------
+            const edgeModeControl = document.getElementById('edgeModeControl');
+            if (edgeModeControl) {
+                edgeModeControl.addEventListener('click', function (e) {
+                    const btn = e.target.closest('button');
+                    if (!btn) return;
+                    const m = btn.getAttribute('data-mode');
+                    if (!m || !EDGE_BASE[m]) return;
+                    edgeMode = m;
+                    setActiveSegment(edgeModeControl, b => b === btn);
+                    applyAllFilters();
+                });
+            }
+
+            // Initial label sync (totals are already populated by applyAllFilters above).
+            updateTopKLabel();
         }
 
         (function init() {
